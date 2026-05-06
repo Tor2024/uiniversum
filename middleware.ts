@@ -12,21 +12,34 @@ const intlMiddleware = createMiddleware({
 export default function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
-  // Защита админ-панели (исключаем /admin/login чтобы избежать бесконечного редиректа)
-  if (pathname.includes('/admin') && !pathname.startsWith('/admin/login')) {
+  // Пропускаем API маршруты без обработки
+  if (pathname.startsWith('/api/')) {
+    return NextResponse.next();
+  }
+
+  // Защита админ-панели — исключаем /admin/login чтобы не было бесконечного редиректа
+  if (pathname.startsWith('/admin')) {
+    if (pathname.startsWith('/admin/login')) {
+      return NextResponse.next();
+    }
+
     const token = request.cookies.get('admin_token')?.value;
     const expectedHash = process.env.ADMIN_TOKEN_HASH;
 
-    // Если нет токена или он не совпадает, редирект на логин
     if (!token || token !== expectedHash) {
       return NextResponse.redirect(new URL('/admin/login', request.url));
     }
+
+    return NextResponse.next();
   }
 
-  // Применяем интернационализацию для остальных маршрутов
+  // Интернационализация только для публичных маршрутов (не /admin)
   return intlMiddleware(request);
 }
 
 export const config = {
-  matcher: ['/((?!_next/static|_next/image|favicon.ico).*)']
+  matcher: [
+    // Исключаем статику, изображения, favicon
+    '/((?!_next/static|_next/image|favicon.ico|.*\\..*).*)' 
+  ]
 };
