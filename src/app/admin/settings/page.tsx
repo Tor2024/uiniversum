@@ -8,109 +8,215 @@ export default async function SettingsPage() {
   try {
     const content = await fs.readFile(sitePath, 'utf-8')
     siteData = JSON.parse(content)
-  } catch (error) {
-    console.error('Error reading site data:', error)
+  } catch {
+    siteData = {}
   }
 
   return (
     <div>
-      <div className="mb-8">
-        <h1 className="text-2xl font-bold text-gray-900">Settings</h1>
-        <p className="mt-1 text-sm text-gray-500">
-          Configure your website settings
+      {/* Header */}
+      <div style={{ marginBottom: '24px' }}>
+        <h1 style={{ fontSize: '24px', fontWeight: 700, color: '#111', margin: '0 0 4px' }}>
+          ⚙️ Настройки сайта
+        </h1>
+        <p style={{ fontSize: '14px', color: '#6b7280', margin: 0 }}>
+          Основные параметры, SEO и публикация
         </p>
       </div>
 
-      <div className="space-y-6">
-        {/* General Settings */}
-        <div className="bg-white shadow rounded-lg p-6">
-          <h2 className="text-lg font-medium text-gray-900 mb-4">General</h2>
-          <div className="space-y-4">
+      {/* Info */}
+      <div style={{
+        background: '#fff7ed',
+        border: '1px solid #fed7aa',
+        borderRadius: '10px',
+        padding: '14px 16px',
+        marginBottom: '24px',
+        display: 'flex',
+        gap: '10px',
+      }}>
+        <span style={{ fontSize: '18px', flexShrink: 0 }}>⚠️</span>
+        <p style={{ fontSize: '13px', color: '#9a3412', margin: 0 }}>
+          Сохранение настроек через интерфейс будет доступно в следующей версии.
+          Сейчас изменения вносятся в файл <code style={{ background: '#fed7aa', padding: '1px 5px', borderRadius: '3px' }}>data/site.json</code> и публикуются через GitHub.
+        </p>
+      </div>
+
+      <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
+
+        {/* General */}
+        <div style={{ background: '#fff', borderRadius: '12px', boxShadow: '0 1px 4px rgba(0,0,0,0.08)', padding: '20px' }}>
+          <h2 style={{ fontSize: '16px', fontWeight: 600, color: '#111', margin: '0 0 4px' }}>
+            Основное
+          </h2>
+          <p style={{ fontSize: '13px', color: '#9ca3af', margin: '0 0 16px' }}>
+            Название и описание отображаются во вкладке браузера и в поисковиках
+          </p>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
             <div>
-              <label htmlFor="site-title" className="block text-sm font-medium text-gray-700 mb-1">
-                Site Title
+              <label style={{ display: 'block', fontSize: '13px', fontWeight: 600, color: '#374151', marginBottom: '6px' }}>
+                Название сайта
               </label>
               <input
-                id="site-title"
                 type="text"
                 defaultValue={siteData.meta?.title || ''}
-                className="w-full px-3 py-2 border border-gray-300 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500"
-                placeholder="My Website"
+                readOnly
+                style={{
+                  width: '100%',
+                  padding: '10px 14px',
+                  border: '1px solid #e5e7eb',
+                  borderRadius: '8px',
+                  fontSize: '14px',
+                  color: '#374151',
+                  background: '#f9fafb',
+                  boxSizing: 'border-box',
+                }}
               />
+              <p style={{ fontSize: '11px', color: '#9ca3af', margin: '4px 0 0' }}>
+                Отображается во вкладке браузера и в результатах поиска Google
+              </p>
             </div>
             <div>
-              <label htmlFor="site-description" className="block text-sm font-medium text-gray-700 mb-1">
-                Site Description
+              <label style={{ display: 'block', fontSize: '13px', fontWeight: 600, color: '#374151', marginBottom: '6px' }}>
+                Описание сайта (meta description)
               </label>
               <textarea
-                id="site-description"
                 defaultValue={siteData.meta?.description || ''}
+                readOnly
                 rows={3}
-                className="w-full px-3 py-2 border border-gray-300 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500"
-                placeholder="A short description of your website"
+                style={{
+                  width: '100%',
+                  padding: '10px 14px',
+                  border: '1px solid #e5e7eb',
+                  borderRadius: '8px',
+                  fontSize: '14px',
+                  color: '#374151',
+                  background: '#f9fafb',
+                  boxSizing: 'border-box',
+                  resize: 'none',
+                }}
               />
+              <p style={{ fontSize: '11px', color: '#9ca3af', margin: '4px 0 0' }}>
+                Краткое описание для поисковиков. Оптимально: 120–160 символов
+              </p>
             </div>
             <div>
-              <label htmlFor="default-language" className="block text-sm font-medium text-gray-700 mb-1">
-                Default Language
+              <label style={{ display: 'block', fontSize: '13px', fontWeight: 600, color: '#374151', marginBottom: '6px' }}>
+                Язык сайта по умолчанию
               </label>
-              <select
-                id="default-language"
-                defaultValue={siteData.meta?.language || 'de'}
-                className="w-full px-3 py-2 border border-gray-300 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500"
-              >
-                <option value="de">Deutsch</option>
-                <option value="en">English</option>
-                <option value="ru">Русский</option>
-              </select>
+              <div style={{
+                padding: '10px 14px',
+                border: '1px solid #e5e7eb',
+                borderRadius: '8px',
+                fontSize: '14px',
+                color: '#374151',
+                background: '#f9fafb',
+              }}>
+                {siteData.meta?.language === 'de' ? '🇩🇪 Немецкий' :
+                 siteData.meta?.language === 'en' ? '🇬🇧 Английский' :
+                 siteData.meta?.language === 'ru' ? '🇷🇺 Русский' :
+                 siteData.meta?.language || 'de'}
+              </div>
             </div>
           </div>
         </div>
 
-        {/* SEO Settings */}
-        <div className="bg-white shadow rounded-lg p-6">
-          <h2 className="text-lg font-medium text-gray-900 mb-4">SEO</h2>
-          <div className="space-y-4">
+        {/* SEO */}
+        <div style={{ background: '#fff', borderRadius: '12px', boxShadow: '0 1px 4px rgba(0,0,0,0.08)', padding: '20px' }}>
+          <h2 style={{ fontSize: '16px', fontWeight: 600, color: '#111', margin: '0 0 4px' }}>
+            SEO и аналитика
+          </h2>
+          <p style={{ fontSize: '13px', color: '#9ca3af', margin: '0 0 16px' }}>
+            Настройки для поисковых систем и отслеживания посещаемости
+          </p>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
             <div>
-              <label htmlFor="og-image" className="block text-sm font-medium text-gray-700 mb-1">
-                OG Image URL
+              <label style={{ display: 'block', fontSize: '13px', fontWeight: 600, color: '#374151', marginBottom: '6px' }}>
+                OG Image (картинка для соцсетей)
               </label>
               <input
-                id="og-image"
                 type="text"
                 defaultValue={siteData.seo?.ogImage || ''}
-                className="w-full px-3 py-2 border border-gray-300 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500"
-                placeholder="/media/og-default.jpg"
+                readOnly
+                style={{
+                  width: '100%',
+                  padding: '10px 14px',
+                  border: '1px solid #e5e7eb',
+                  borderRadius: '8px',
+                  fontSize: '14px',
+                  color: '#374151',
+                  background: '#f9fafb',
+                  boxSizing: 'border-box',
+                }}
               />
+              <p style={{ fontSize: '11px', color: '#9ca3af', margin: '4px 0 0' }}>
+                Показывается при репосте ссылки в WhatsApp, Telegram, Facebook. Размер: 1200×630px
+              </p>
             </div>
             <div>
-              <label htmlFor="ga-id" className="block text-sm font-medium text-gray-700 mb-1">
+              <label style={{ display: 'block', fontSize: '13px', fontWeight: 600, color: '#374151', marginBottom: '6px' }}>
                 Google Analytics ID
               </label>
               <input
-                id="ga-id"
                 type="text"
                 defaultValue={siteData.seo?.googleAnalyticsId || ''}
-                className="w-full px-3 py-2 border border-gray-300 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                readOnly
                 placeholder="G-XXXXXXXXXX"
+                style={{
+                  width: '100%',
+                  padding: '10px 14px',
+                  border: '1px solid #e5e7eb',
+                  borderRadius: '8px',
+                  fontSize: '14px',
+                  color: '#374151',
+                  background: '#f9fafb',
+                  boxSizing: 'border-box',
+                }}
               />
+              <p style={{ fontSize: '11px', color: '#9ca3af', margin: '4px 0 0' }}>
+                Получите ID на <a href="https://analytics.google.com" target="_blank" rel="noopener noreferrer" style={{ color: '#6366f1' }}>analytics.google.com</a> для отслеживания посещаемости
+              </p>
             </div>
           </div>
         </div>
 
         {/* Publish */}
-        <div className="bg-white shadow rounded-lg p-6">
-          <h2 className="text-lg font-medium text-gray-900 mb-2">Publish</h2>
-          <p className="text-sm text-gray-500 mb-4">
-            Save changes to GitHub and trigger a new deployment on Vercel.
+        <div style={{ background: '#fff', borderRadius: '12px', boxShadow: '0 1px 4px rgba(0,0,0,0.08)', padding: '20px' }}>
+          <h2 style={{ fontSize: '16px', fontWeight: 600, color: '#111', margin: '0 0 4px' }}>
+            🚀 Публикация
+          </h2>
+          <p style={{ fontSize: '13px', color: '#6b7280', margin: '0 0 16px' }}>
+            Нажмите кнопку чтобы сохранить все изменения в GitHub и запустить обновление сайта на Vercel.
+            Обновление занимает около 1–2 минут.
           </p>
+          <div style={{
+            background: '#f0fdf4',
+            border: '1px solid #bbf7d0',
+            borderRadius: '8px',
+            padding: '12px 14px',
+            marginBottom: '16px',
+            fontSize: '13px',
+            color: '#166534',
+          }}>
+            ✓ Репозиторий: <strong>Tor2024/uiniversum</strong> · Ветка: <strong>master</strong>
+          </div>
           <button
             type="button"
-            className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700"
+            style={{
+              padding: '12px 24px',
+              background: 'linear-gradient(135deg, #22c55e, #16a34a)',
+              color: '#fff',
+              border: 'none',
+              borderRadius: '10px',
+              fontSize: '14px',
+              fontWeight: 700,
+              cursor: 'pointer',
+              letterSpacing: '0.3px',
+            }}
           >
-            Save & Publish
+            🚀 Опубликовать сайт
           </button>
         </div>
+
       </div>
     </div>
   )

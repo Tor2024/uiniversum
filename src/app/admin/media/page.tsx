@@ -1,21 +1,17 @@
-import Link from 'next/link'
 import fs from 'fs/promises'
 import path from 'path'
 
 export default async function MediaPage() {
   const mediaDir = path.join(process.cwd(), 'public', 'media')
-  const mediaJsonPath = path.join(process.cwd(), 'data', 'media.json')
-  
   let mediaFiles: any[] = []
-  
+
   try {
-    if (await fs.access(mediaDir).then(() => true).catch(() => false)) {
+    const exists = await fs.access(mediaDir).then(() => true).catch(() => false)
+    if (exists) {
       const files = await fs.readdir(mediaDir)
-      mediaFiles = files.map(file => ({
-        filename: file,
-        path: `/media/${file}`,
-        // В реальном проекте здесь должны быть метаданные из media.json
-      }))
+      mediaFiles = files
+        .filter(f => /\.(jpg|jpeg|png|gif|webp|svg|pdf)$/i.test(f))
+        .map(file => ({ filename: file, path: `/media/${file}` }))
     }
   } catch (error) {
     console.error('Error reading media:', error)
@@ -23,51 +19,155 @@ export default async function MediaPage() {
 
   return (
     <div>
-      <div className="flex justify-between items-center mb-8">
+      {/* Header */}
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '24px' }}>
         <div>
-          <h1 className="text-2xl font-bold text-gray-900">Media Library</h1>
-          <p className="mt-1 text-sm text-gray-500">
-            Manage your images and files
+          <h1 style={{ fontSize: '24px', fontWeight: 700, color: '#111', margin: '0 0 4px' }}>
+            🖼️ Медиатека
+          </h1>
+          <p style={{ fontSize: '14px', color: '#6b7280', margin: 0 }}>
+            Изображения и файлы вашего сайта
           </p>
         </div>
-        <button
-          type="button"
-          className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700"
-        >
-          Upload Files
-        </button>
       </div>
 
-      <div className="bg-white shadow overflow-hidden sm:rounded-md">
-        <ul className="divide-y divide-gray-200">
-          {mediaFiles.length === 0 ? (
-            <li className="px-4 py-8 text-center text-gray-500">
-              No files uploaded yet. Click "Upload Files" to add media.
-            </li>
-          ) : (
-            mediaFiles.map((file) => (
-              <li key={file.filename} className="px-4 py-4">
-                <div className="flex items-center justify-between">
-                  <div className="flex items-center">
-                    <div className="flex-shrink-0 h-10 w-10 bg-gray-100 rounded flex items-center justify-center">
-                      📎
-                    </div>
-                    <div className="ml-4">
-                      <p className="text-sm font-medium text-gray-900">{file.filename}</p>
-                      <p className="text-sm text-gray-500">{file.path}</p>
-                    </div>
-                  </div>
-                  <div>
-                    <button className="text-sm text-red-600 hover:text-red-800">
-                      Delete
-                    </button>
-                  </div>
-                </div>
-              </li>
-            ))
-          )}
-        </ul>
+      {/* Info banner */}
+      <div style={{
+        background: '#fff7ed',
+        border: '1px solid #fed7aa',
+        borderRadius: '10px',
+        padding: '14px 16px',
+        marginBottom: '20px',
+        display: 'flex',
+        gap: '10px',
+      }}>
+        <span style={{ fontSize: '18px', flexShrink: 0 }}>⚠️</span>
+        <div>
+          <p style={{ fontSize: '13px', fontWeight: 600, color: '#9a3412', margin: '0 0 2px' }}>
+            Важно: загрузка файлов на Vercel
+          </p>
+          <p style={{ fontSize: '13px', color: '#c2410c', margin: 0 }}>
+            На Vercel файлы нельзя сохранять локально — они исчезнут при следующем деплое.
+            Для постоянного хранения изображений используйте внешние сервисы:
+            <strong> Cloudinary, Uploadthing или GitHub</strong> (через кнопку «Опубликовать»).
+          </p>
+        </div>
       </div>
+
+      {/* Upload area */}
+      <div style={{
+        background: '#fff',
+        borderRadius: '12px',
+        boxShadow: '0 1px 4px rgba(0,0,0,0.08)',
+        padding: '32px',
+        textAlign: 'center',
+        border: '2px dashed #e5e7eb',
+        marginBottom: '20px',
+        cursor: 'pointer',
+      }}>
+        <div style={{ fontSize: '40px', marginBottom: '12px' }}>📤</div>
+        <p style={{ fontSize: '15px', fontWeight: 600, color: '#374151', margin: '0 0 4px' }}>
+          Загрузить изображение
+        </p>
+        <p style={{ fontSize: '13px', color: '#9ca3af', margin: '0 0 16px' }}>
+          JPG, PNG, WebP, SVG · Максимум 5 МБ
+        </p>
+        <form action="/api/upload" method="POST" encType="multipart/form-data">
+          <label style={{
+            display: 'inline-block',
+            padding: '10px 24px',
+            background: '#6366f1',
+            color: '#fff',
+            borderRadius: '8px',
+            fontSize: '14px',
+            fontWeight: 600,
+            cursor: 'pointer',
+          }}>
+            Выбрать файл
+            <input type="file" name="file" accept="image/*,.pdf" style={{ display: 'none' }} />
+          </label>
+        </form>
+      </div>
+
+      {/* Files grid */}
+      {mediaFiles.length === 0 ? (
+        <div style={{
+          background: '#fff',
+          borderRadius: '12px',
+          padding: '48px',
+          textAlign: 'center',
+          color: '#9ca3af',
+          boxShadow: '0 1px 4px rgba(0,0,0,0.08)',
+        }}>
+          <div style={{ fontSize: '40px', marginBottom: '12px' }}>🗂️</div>
+          <p style={{ fontSize: '15px', fontWeight: 500, color: '#6b7280' }}>Файлов пока нет</p>
+          <p style={{ fontSize: '13px', marginTop: '4px' }}>
+            Загрузите первое изображение с помощью формы выше
+          </p>
+        </div>
+      ) : (
+        <div style={{
+          display: 'grid',
+          gridTemplateColumns: 'repeat(auto-fill, minmax(160px, 1fr))',
+          gap: '12px',
+        }}>
+          {mediaFiles.map((file) => (
+            <div
+              key={file.filename}
+              style={{
+                background: '#fff',
+                borderRadius: '10px',
+                overflow: 'hidden',
+                boxShadow: '0 1px 4px rgba(0,0,0,0.08)',
+                border: '1px solid #f3f4f6',
+              }}
+            >
+              <div style={{
+                height: '120px',
+                background: '#f9fafb',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                overflow: 'hidden',
+              }}>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src={file.path}
+                  alt={file.filename}
+                  style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'cover' }}
+                  onError={() => {}}
+                />
+              </div>
+              <div style={{ padding: '8px 10px' }}>
+                <p style={{
+                  fontSize: '11px',
+                  color: '#374151',
+                  margin: 0,
+                  overflow: 'hidden',
+                  textOverflow: 'ellipsis',
+                  whiteSpace: 'nowrap',
+                }}>
+                  {file.filename}
+                </p>
+                <button
+                  style={{
+                    marginTop: '6px',
+                    fontSize: '11px',
+                    color: '#6b7280',
+                    background: 'none',
+                    border: 'none',
+                    cursor: 'pointer',
+                    padding: 0,
+                  }}
+                  onClick={() => navigator.clipboard?.writeText(file.path)}
+                >
+                  📋 Скопировать путь
+                </button>
+              </div>
+            </div>
+          ))}
+        </div>
+      )}
     </div>
   )
 }
