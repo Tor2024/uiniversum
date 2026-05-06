@@ -1,5 +1,5 @@
 {
-  "title": "Glow Up Beauty | Premium Salon",
+  "title": "Skill Up | Online Courses",
   "blocks": [
     {
       "id": "hero-1",
@@ -9,62 +9,62 @@
       "settings": {
         "heading": {
           "en": {
-            "heading": "Feel Beautiful",
-            "subheading": "Hair, makeup, and skincare services to make you look and feel beautiful.",
-            "cta": "Book Appointment",
-            "image": "/media/presets/beauty/hero.jpg"
+            "heading": "Learn Without Limits",
+            "subheading": "Learn new skills from industry experts. Flexible learning anytime, anywhere.",
+            "cta": "Get Started",
+            "image": "/media/presets/online_courses/hero.jpg"
           },
           "de": {
-            "heading": "Fühl dich schön",
-            "subheading": "Haar-, Make-up- und Hautpflege, die dich strahlen lässt.",
-            "cta": "Termin buchen",
-            "image": "/media/presets/beauty/hero.jpg"
+            "heading": "Lernen ohne Grenzen",
+            "subheading": "Learn new skills from industry experts. Flexible learning anytime, anywhere.",
+            "cta": "Jetzt starten",
+            "image": "/media/presets/online_courses/hero.jpg"
           },
           "ru": {
-            "heading": "Почувствуй красоту",
-            "subheading": "Услуги по уходу за волосами, макияжу и коже, чтобы вы выглядели и чувствовали себя прекрасно.",
-            "cta": "Записаться",
-            "image": "/media/presets/beauty/hero.jpg"
+            "heading": "Учись без границ",
+            "subheading": "Learn new skills from industry experts. Flexible learning anytime, anywhere.",
+            "cta": "Начать",
+            "image": "/media/presets/online_courses/hero.jpg"
           }
         },
         "subheading": {
           "en": {
-            "heading": "Feel Beautiful",
-            "subheading": "Hair, makeup, and skincare services to make you look and feel beautiful.",
-            "cta": "Book Appointment",
-            "image": "/media/presets/beauty/hero.jpg"
+            "heading": "Learn Without Limits",
+            "subheading": "Learn new skills from industry experts. Flexible learning anytime, anywhere.",
+            "cta": "Get Started",
+            "image": "/media/presets/online_courses/hero.jpg"
           },
           "de": {
-            "heading": "Fühl dich schön",
-            "subheading": "Haar-, Make-up- und Hautpflege, die dich strahlen lässt.",
-            "cta": "Termin buchen",
-            "image": "/media/presets/beauty/hero.jpg"
+            "heading": "Lernen ohne Grenzen",
+            "subheading": "Learn new skills from industry experts. Flexible learning anytime, anywhere.",
+            "cta": "Jetzt starten",
+            "image": "/media/presets/online_courses/hero.jpg"
           },
           "ru": {
-            "heading": "Почувствуй красоту",
-            "subheading": "Услуги по уходу за волосами, макияжу и коже, чтобы вы выглядели и чувствовали себя прекрасно.",
-            "cta": "Записаться",
-            "image": "/media/presets/beauty/hero.jpg"
+            "heading": "Учись без границ",
+            "subheading": "Learn new skills from industry experts. Flexible learning anytime, anywhere.",
+            "cta": "Начать",
+            "image": "/media/presets/online_courses/hero.jpg"
           }
         },
         "buttonText": {
           "en": {
-            "heading": "Feel Beautiful",
-            "subheading": "Hair, makeup, and skincare services to make you look and feel beautiful.",
-            "cta": "Book Appointment",
-            "image": "/media/presets/beauty/hero.jpg"
+            "heading": "Learn Without Limits",
+            "subheading": "Learn new skills from industry experts. Flexible learning anytime, anywhere.",
+            "cta": "Get Started",
+            "image": "/media/presets/online_courses/hero.jpg"
           },
           "de": {
-            "heading": "Fühl dich schön",
-            "subheading": "Haar-, Make-up- und Hautpflege, die dich strahlen lässt.",
-            "cta": "Termin buchen",
-            "image": "/media/presets/beauty/hero.jpg"
+            "heading": "Lernen ohne Grenzen",
+            "subheading": "Learn new skills from industry experts. Flexible learning anytime, anywhere.",
+            "cta": "Jetzt starten",
+            "image": "/media/presets/online_courses/hero.jpg"
           },
           "ru": {
-            "heading": "Почувствуй красоту",
-            "subheading": "Услуги по уходу за волосами, макияжу и коже, чтобы вы выглядели и чувствовали себя прекрасно.",
-            "cta": "Записаться",
-            "image": "/media/presets/beauty/hero.jpg"
+            "heading": "Учись без границ",
+            "subheading": "Learn new skills from industry experts. Flexible learning anytime, anywhere.",
+            "cta": "Начать",
+            "image": "/media/presets/online_courses/hero.jpg"
           }
         },
         "buttonUrl": "#contact",
@@ -88,16 +88,16 @@
       "settings": {
         "content": {
           "en": {
-            "title": "Our Mission",
-            "text": "Our mission is to enhance your natural beauty with top-quality products and expert stylists."
+            "title": "About Us",
+            "text": "Empowering individuals with knowledge and skills to advance their careers."
           },
           "de": {
-            "title": "Unsere Mission",
-            "text": "Unsere Mission ist es, Ihre natürliche Schönheit mit erstklassigen Produkten und Expertinpflege zu betonen."
+            "title": "Über uns",
+            "text": "Wir stärken Individuen mit Wissen für ihre Karriere."
           },
           "ru": {
-            "title": "Наша миссия",
-            "text": "Наша миссия — подчеркнуть вашу природную красоту с помощью качественных продуктов и экспертного ухода."
+            "title": "О нас",
+            "text": "Мы наделяем людей знаниями для продвижения по карьерной лестнице."
           }
         }
       },
