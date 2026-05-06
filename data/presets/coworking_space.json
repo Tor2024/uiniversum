@@ -4,7 +4,11 @@
     "description": "Flexible desk spaces, high-speed internet, and a community of creators.",
     "favicon": "/media/presets/coworking_space/favicon.ico",
     "language": "en",
-    "availableLanguages": ["en", "de", "ru"]
+    "availableLanguages": [
+      "en",
+      "de",
+      "ru"
+    ]
   },
   "design": {
     "preset": "coworking_space",
@@ -62,9 +66,21 @@
   },
   "content": {
     "slogans": {
-      "en": ["Create Together", "Work Smarter", "Join the Hub"],
-      "de": ["Gemeinsam schaffen", "Intelligenter arbeiten", "Tritt dem Hub bei"],
-      "ru": ["Творим вместе", "Работай умнее", "Присоединяйся к Хабу"]
+      "en": [
+        "Create Together",
+        "Work Smarter",
+        "Join the Hub"
+      ],
+      "de": [
+        "Gemeinsam schaffen",
+        "Intelligenter arbeiten",
+        "Tritt dem Hub bei"
+      ],
+      "ru": [
+        "Творим вместе",
+        "Работай умнее",
+        "Присоединяйся к Хабу"
+      ]
     },
     "hero": {
       "en": {
@@ -75,13 +91,13 @@
       },
       "de": {
         "heading": "Gemeinsam schaffen",
-        "subheading": "Flexible Arbeitsplätze, High-Speed-Internet und eine Community von Creatorn.",
+        "subheading": "Flexible desk spaces, high-speed internet, and a community of creators.",
         "cta": "Jetzt starten",
         "image": "/media/presets/coworking_space/hero.jpg"
       },
       "ru": {
         "heading": "Творим вместе",
-        "subheading": "Гибкие рабочие места, высокоскоростной интернет и сообщество творцов.",
+        "subheading": "Flexible desk spaces, high-speed internet, and a community of creators.",
         "cta": "Начать",
         "image": "/media/presets/coworking_space/hero.jpg"
       }
@@ -97,7 +113,7 @@
       },
       "ru": {
         "title": "О нас",
-        "text": "Место, где фрилансеры и стартапы растут вместе в продуктивной среде."
+        "text": "Место, где фрилансеры и стартапы растут вместе."
       }
     },
     "services": [
@@ -122,8 +138,8 @@
       {
         "name": "Startup X",
         "text_en": "The networking opportunities here are incredible.",
-        "text_de": "Die Networking-Möglichkeiten hier sind unglaublich.",
-        "text_ru": "Возможности для нетворкинга здесь потрясающие.",
+        "text_de": "The networking opportunities here are incredible.",
+        "text_ru": "The networking opportunities here are incredible.",
         "rating": 5,
         "avatar": "/media/presets/coworking_space/avatars/startup.jpg"
       }
@@ -149,7 +165,12 @@
   },
   "booking": {
     "enabled": true,
-    "slots": ["09:00", "10:00", "14:00", "16:00"],
+    "slots": [
+      "09:00",
+      "10:00",
+      "14:00",
+      "16:00"
+    ],
     "duration": 60
   },
   "logo": {

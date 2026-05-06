@@ -4,7 +4,11 @@
     "description": "Expert car repair and maintenance. Honest service you can trust.",
     "favicon": "/media/presets/auto_service/favicon.ico",
     "language": "en",
-    "availableLanguages": ["en", "de", "ru"]
+    "availableLanguages": [
+      "en",
+      "de",
+      "ru"
+    ]
   },
   "design": {
     "preset": "auto_service",
@@ -62,9 +66,21 @@
   },
   "content": {
     "slogans": {
-      "en": ["Drive with Confidence", "Engine Experts", "Honest Repair"],
-      "de": ["Fahren mit Vertrauen", "Motoren-Experten", "Ehrliche Reparatur"],
-      "ru": ["Води с уверенностью", "Эксперты по двигателям", "Честный ремонт"]
+      "en": [
+        "Drive with Confidence",
+        "Engine Experts",
+        "Honest Repair"
+      ],
+      "de": [
+        "Fahren mit Vertrauen",
+        "Motoren-Experten",
+        "Ehrliche Reparatur"
+      ],
+      "ru": [
+        "Води с уверенностью",
+        "Эксперты по двигателям",
+        "Честный ремонт"
+      ]
     },
     "hero": {
       "en": {
@@ -122,8 +138,8 @@
       {
         "name": "Driver P.",
         "text_en": "Finally an honest mechanic. Fast and reliable work.",
-        "text_de": "Endlich ein ehrlicher Mechaniker. Schnell und zuverlässig.",
-        "text_ru": "Наконец-то честный механик. Быстро и надёжно.",
+        "text_de": "Finally an honest mechanic. Fast and reliable work.",
+        "text_ru": "Finally an honest mechanic. Fast and reliable work.",
         "rating": 5,
         "avatar": "/media/presets/auto_service/avatars/driver.jpg"
       }
@@ -149,7 +165,12 @@
   },
   "booking": {
     "enabled": true,
-    "slots": ["09:00", "10:00", "14:00", "16:00"],
+    "slots": [
+      "09:00",
+      "10:00",
+      "14:00",
+      "16:00"
+    ],
     "duration": 60
   },
   "logo": {

@@ -1,10 +1,14 @@
 {
   "meta": {
-    "title": "Tranquil Spa & Wellness | Luxus-Wohlbefinden",
-    "description": "Erleben Sie pure Entspannung in unserem Luxus-Spa. Massagen, Gesichtsbehandlungen und Wellness-Rituale für Körper und Seele.",
+    "title": "Tranquil Spa | Wellness Center",
+    "description": "Rejuvenate your mind and body with our luxury spa treatments.",
     "favicon": "/media/presets/spa/favicon.ico",
     "language": "de",
-    "availableLanguages": ["de", "en", "ru"]
+    "availableLanguages": [
+      "de",
+      "en",
+      "ru"
+    ]
   },
   "design": {
     "preset": "spa_center",
@@ -58,30 +62,42 @@
     "ogImage": "/media/presets/spa/og-default.jpg",
     "twitterCard": "summary_large_image",
     "googleAnalyticsId": "",
-    "keywords": "Spa, Wellness, Massage, Entspannung, Gesichtsbehandlung, Luxus"
+    "keywords": "spa, wellness, relaxation"
   },
   "content": {
     "slogans": {
-      "de": ["Wo Stille zur Kraft wird", "Luxus für Körper und Seele", "Ihr Moment der Ruhe"],
-      "en": ["Where Silence Becomes Strength", "Luxury for Body and Soul", "Your Moment of Peace"],
-      "ru": ["Где тишина становится силой", "Роскошь для тела и души", "Ваш момент покоя"]
+      "en": [
+        "Relax & Rejuvenate",
+        "Pure Bliss",
+        "Inner Harmony"
+      ],
+      "de": [
+        "Entspannen & Verjüngen",
+        "Reine Seligkeit",
+        "Innere Harmonie"
+      ],
+      "ru": [
+        "Расслабься и обновись",
+        "Чистое блаженство",
+        "Внутренняя гармония"
+      ]
     },
     "hero": {
       "de": {
-        "heading": "Entfliehen Sie dem Alltag",
-        "subheading": "Tauchen Sie ein in eine Welt der Ruhe. Unsere Experten verwöhnen Sie mit exklusiven Behandlungen für vollständige Erholung.",
+        "heading": "Entspannen & Verjüngen",
+        "subheading": "Rejuvenate your mind and body with our luxury spa treatments.",
         "cta": "Termin buchen",
         "image": "/media/presets/spa/hero.jpg"
       },
       "en": {
-        "heading": "Escape the Everyday",
-        "subheading": "Immerse yourself in a world of tranquility. Our experts pamper you with exclusive treatments for complete rejuvenation.",
+        "heading": "Relax & Rejuvenate",
+        "subheading": "Rejuvenate your mind and body with our luxury spa treatments.",
         "cta": "Book a Treatment",
         "image": "/media/presets/spa/hero.jpg"
       },
       "ru": {
-        "heading": "Побег от повседневности",
-        "subheading": "Погрузитесь в мир покоя. Наши эксперты побалуют вас эксклюзивными процедурами для полного восстановления.",
+        "heading": "Расслабься и обновись",
+        "subheading": "Rejuvenate your mind and body with our luxury spa treatments.",
         "cta": "Записаться",
         "image": "/media/presets/spa/hero.jpg"
       }
@@ -89,87 +105,43 @@
     "about": {
       "de": {
         "title": "Unsere Philosophie",
-        "text": "Tranquil Spa ist ein Ort, an dem Zeit langsamer vergeht. Wir verbinden uralte Wellness-Rituale mit modernen Techniken und ausschließlich natürlichen Produkten. Jede Behandlung ist eine Reise zu sich selbst."
+        "text": "Eine Oase der Ruhe mit organischen Produkten."
       },
       "en": {
         "title": "Our Philosophy",
-        "text": "Tranquil Spa is a place where time slows down. We combine ancient wellness rituals with modern techniques and exclusively natural products. Every treatment is a journey to yourself."
+        "text": "An oasis of calm where we use organic products to soothe your senses."
       },
       "ru": {
         "title": "Наша философия",
-        "text": "Tranquil Spa — место, где время замедляется. Мы сочетаем древние ритуалы велнеса с современными техниками и исключительно натуральными продуктами. Каждая процедура — это путешествие к себе."
+        "text": "Оазис спокойствия с органическими продуктами."
       }
     },
     "services": [
       {
-        "name_de": "Hot-Stone-Massage",
-        "name_en": "Hot Stone Massage",
-        "name_ru": "Массаж горячими камнями",
-        "price": "120€",
-        "desc_de": "Warme Basaltsteine lösen tiefe Muskelverspannungen und fördern die Durchblutung.",
-        "desc_en": "Warm basalt stones release deep muscle tension and improve circulation.",
-        "desc_ru": "Тёплые базальтовые камни снимают глубокое мышечное напряжение и улучшают кровообращение.",
-        "duration_de": "90 Min.",
-        "duration_en": "90 min",
-        "duration_ru": "90 мин",
-        "image": "/media/presets/spa/services/hotstone.jpg"
+        "name_en": "Deep Tissue Massage",
+        "name_de": "Tiefengewebsmassage",
+        "name_ru": "Глубокий массаж",
+        "price": "$120",
+        "desc_en": "Release tension and stress.",
+        "image": "/media/presets/spa_center/services/massage.jpg"
       },
       {
-        "name_de": "Anti-Aging Gesichtsbehandlung",
-        "name_en": "Anti-Aging Facial",
-        "name_ru": "Антивозрастной уход за лицом",
-        "price": "95€",
-        "desc_de": "Revitalisierende Behandlung mit Hyaluron und Vitamin C für strahlende Haut.",
-        "desc_en": "Revitalizing treatment with hyaluronic acid and vitamin C for radiant skin.",
-        "desc_ru": "Восстанавливающая процедура с гиалуроном и витамином C для сияющей кожи.",
-        "duration_de": "60 Min.",
-        "duration_en": "60 min",
-        "duration_ru": "60 мин",
-        "image": "/media/presets/spa/services/facial.jpg"
-      },
-      {
-        "name_de": "Aromatherapie-Massage",
-        "name_en": "Aromatherapy Massage",
-        "name_ru": "Ароматерапевтический массаж",
-        "price": "85€",
-        "desc_de": "Ätherische Öle und sanfte Massagetechniken für tiefe Entspannung.",
-        "desc_en": "Essential oils and gentle massage techniques for deep relaxation.",
-        "desc_ru": "Эфирные масла и мягкие техники массажа для глубокого расслабления.",
-        "duration_de": "75 Min.",
-        "duration_en": "75 min",
-        "duration_ru": "75 мин",
-        "image": "/media/presets/spa/services/aroma.jpg"
-      },
-      {
-        "name_de": "Körperpeeling & Wrap",
-        "name_en": "Body Scrub & Wrap",
-        "name_ru": "Скраб и обёртывание тела",
-        "price": "110€",
-        "desc_de": "Tiefenreinigung und Nährung der Haut mit natürlichen Inhaltsstoffen.",
-        "desc_en": "Deep cleansing and nourishment of the skin with natural ingredients.",
-        "desc_ru": "Глубокое очищение и питание кожи натуральными ингредиентами.",
-        "duration_de": "80 Min.",
-        "duration_en": "80 min",
-        "duration_ru": "80 мин",
-        "image": "/media/presets/spa/services/wrap.jpg"
+        "name_en": "Facial Treatment",
+        "name_de": "Gesichtsbehandlung",
+        "name_ru": "Уход за лицом",
+        "price": "$90",
+        "desc_en": "Glowing skin guaranteed.",
+        "image": "/media/presets/spa_center/services/facial.jpg"
       }
     ],
     "testimonials": [
       {
-        "name": "Sabine K.",
-        "text_de": "Absolut traumhaft. Die Hot-Stone-Massage war das Beste, was ich je erlebt habe. Ich komme jeden Monat wieder.",
-        "text_en": "Absolutely dreamy. The hot stone massage was the best experience I've ever had. I come back every month.",
-        "text_ru": "Абсолютно сказочно. Массаж горячими камнями — лучшее, что я когда-либо испытывала. Возвращаюсь каждый месяц.",
+        "name": "Relaxed R.",
+        "text_en": "Best massage of my life. I feel like a new person.",
+        "text_de": "Best massage of my life. I feel like a new person.",
+        "text_ru": "Best massage of my life. I feel like a new person.",
         "rating": 5,
-        "avatar": "/media/presets/spa/avatars/sabine.jpg"
-      },
-      {
-        "name": "Michael T.",
-        "text_de": "Das Personal ist unglaublich aufmerksam. Die Atmosphäre ist wie in einem 5-Sterne-Hotel.",
-        "text_en": "The staff is incredibly attentive. The atmosphere is like a 5-star hotel.",
-        "text_ru": "Персонал невероятно внимателен. Атмосфера как в пятизвёздочном отеле.",
-        "rating": 5,
-        "avatar": "/media/presets/spa/avatars/michael.jpg"
+        "avatar": "/media/presets/spa_center/avatars/relaxed.jpg"
       }
     ],
     "contact": {
@@ -201,12 +173,19 @@
   },
   "booking": {
     "enabled": true,
-    "slots": ["10:00", "11:30", "13:00", "14:30", "16:00", "17:30"],
+    "slots": [
+      "10:00",
+      "11:30",
+      "13:00",
+      "14:30",
+      "16:00",
+      "17:30"
+    ],
     "duration": 90
   },
   "logo": {
-    "text": "Tranquil",
-    "tagline": "SPA & WELLNESS",
-    "font": "Cormorant Garamond"
+    "text": "TRANQUIL",
+    "tagline": "SPA",
+    "font": "Cinzel"
   }
 }

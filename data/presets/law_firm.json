@@ -1,54 +1,54 @@
 {
   "meta": {
-    "title": "Justice & Co. | Law Firm",
-    "description": "Experienced legal representation for corporate and private clients.",
+    "title": "Kanzlei Hartmann & Partner | Rechtsanwälte",
+    "description": "Renommierte Rechtsanwaltskanzlei in Frankfurt. Gesellschaftsrecht, Arbeitsrecht, Immobilienrecht und Familienrecht. Erstberatung kostenlos.",
     "favicon": "/media/presets/law_firm/favicon.ico",
-    "language": "en",
-    "availableLanguages": ["en", "de", "ru"]
+    "language": "de",
+    "availableLanguages": ["de", "en", "ru"]
   },
   "design": {
     "preset": "law_firm",
     "tokens": {
-      "colorBackground": "#001F3F",
-      "colorSurface": "#FFFFFF",
-      "colorPrimary": "#FFD700",
-      "colorSecondary": "#6C757D",
-      "colorBorder": "#DEE2E6",
-      "colorAccent": "#FFFFFF",
-      "colorAccentHover": "#FFFFFF",
-      "fontDisplay": "Times New Roman",
-      "fontHeading": "Times New Roman",
-      "fontBody": "Helvetica",
-      "fontCaption": "Helvetica",
-      "fontMono": "Roboto Mono",
+      "colorBackground": "#0F1923",
+      "colorSurface": "#162030",
+      "colorPrimary": "#F0EAD6",
+      "colorSecondary": "#9A8E78",
+      "colorBorder": "#243040",
+      "colorAccent": "#C9A96E",
+      "colorAccentHover": "#E8C88A",
+      "fontDisplay": "Libre Baskerville",
+      "fontHeading": "Libre Baskerville",
+      "fontBody": "Inter",
+      "fontCaption": "Inter",
+      "fontMono": "JetBrains Mono",
       "fontSizeDisplay": "72px",
       "fontSizeHeading": "36px",
       "fontSizeBody": "17px",
-      "lineHeightBody": "1.7",
+      "lineHeightBody": "1.8",
       "lineHeightHeading": "1.3",
       "spacingUnit": "8px",
-      "spacingSection": "120px",
-      "spacingElement": "24px",
-      "spacingCard": "32px",
+      "spacingSection": "140px",
+      "spacingElement": "28px",
+      "spacingCard": "36px",
       "spacingButtonVertical": "16px",
-      "spacingButtonHorizontal": "32px",
+      "spacingButtonHorizontal": "36px",
       "maxWidthContent": "1200px",
       "maxWidthText": "700px",
       "gridColumns": "12",
-      "gridGutter": "30px",
-      "horizontalPaddingMobile": "20px",
-      "horizontalPaddingTablet": "50px",
-      "horizontalPaddingDesktop": "80px",
-      "borderRadius": "8",
-      "borderRadiusSmall": "4px",
-      "borderRadiusMedium": "8px",
-      "borderRadiusLarge": "16px",
-      "shadowStyle": "soft",
-      "shadowResting": "0 4px 14px rgba(0,0,0,0.05)",
-      "shadowHover": "0 8px 24px rgba(0,0,0,0.1)",
-      "transitionDuration": "200ms",
-      "transitionTiming": "ease-in-out",
-      "imageRatioHero": "21:9",
+      "gridGutter": "32px",
+      "horizontalPaddingMobile": "24px",
+      "horizontalPaddingTablet": "48px",
+      "horizontalPaddingDesktop": "96px",
+      "borderRadius": "2",
+      "borderRadiusSmall": "2px",
+      "borderRadiusMedium": "4px",
+      "borderRadiusLarge": "8px",
+      "shadowStyle": "dark",
+      "shadowResting": "0 4px 24px rgba(0,0,0,0.4)",
+      "shadowHover": "0 12px 48px rgba(201,169,110,0.15)",
+      "transitionDuration": "250ms",
+      "transitionTiming": "ease-out",
+      "imageRatioHero": "16:9",
       "imageRatioCard": "4:3",
       "imageRatioAvatar": "1:1"
     },
@@ -58,103 +58,235 @@
     "ogImage": "/media/presets/law_firm/og-default.jpg",
     "twitterCard": "summary_large_image",
     "googleAnalyticsId": "",
-    "keywords": "law, legal, justice"
+    "keywords": "Rechtsanwalt Frankfurt, Gesellschaftsrecht, Arbeitsrecht, Immobilienrecht, Familienrecht"
+  },
+  "layout": {
+    "style": "dark_elegant",
+    "heroType": "fullscreen_overlay",
+    "navStyle": "transparent_dark_gold",
+    "servicesLayout": "grid_2col_dark",
+    "testimonialsLayout": "dark_background",
+    "footerStyle": "dark_rich"
   },
   "content": {
     "slogans": {
-      "en": ["Your Legal Shield", "Defending Rights", "Justice Served"],
-      "de": ["Dein Rechtsschirm", "Rechte verteidigen", "Gerechtigkeit"],
-      "ru": ["Твой правовой щит", "Защита прав", "Правосудие"]
+      "de": ["Ihr Recht. Unser Auftrag.", "Kompetenz, die schützt", "Seit 1998 für Ihre Interessen"],
+      "en": ["Your rights. Our mission.", "Expertise that protects", "Since 1998 for your interests"],
+      "ru": ["Ваши права. Наша миссия.", "Компетентность, которая защищает", "С 1998 года в ваших интересах"]
     },
     "hero": {
-      "en": {
-        "heading": "Your Legal Shield",
-        "subheading": "Experienced legal representation for corporate and private clients.",
-        "cta": "Get Started",
-        "image": "/media/presets/law_firm/hero.jpg"
-      },
       "de": {
-        "heading": "Dein Rechtsschirm",
-        "subheading": "Erfahrene Rechtsvertretung für Unternehmen und Privatpersonen.",
-        "cta": "Jetzt starten",
-        "image": "/media/presets/law_firm/hero.jpg"
+        "heading": "Ihr Recht. Unser Auftrag.",
+        "subheading": "Hartmann & Partner steht seit 1998 für kompromisslose Interessenvertretung. Wir kämpfen für Ihre Rechte — mit Präzision, Erfahrung und dem Willen zu gewinnen.",
+        "cta": "Kostenlose Erstberatung",
+        "secondaryCta": "Unsere Rechtsgebiete",
+        "image": "/media/presets/law_firm/hero.jpg",
+        "imageAlt": "Elegantes Kanzleibüro mit Bibliothek"
+      },
+      "en": {
+        "heading": "Your rights. Our mission.",
+        "subheading": "Hartmann & Partner has stood for uncompromising representation since 1998. We fight for your rights — with precision, experience and the will to win.",
+        "cta": "Free Initial Consultation",
+        "secondaryCta": "Our Practice Areas",
+        "image": "/media/presets/law_firm/hero.jpg",
+        "imageAlt": "Elegant law firm office with library"
       },
       "ru": {
-        "heading": "Твой правовой щит",
-        "subheading": "Опытное юридическое представительство для корпоративных и частных клиентов.",
-        "cta": "Начать",
-        "image": "/media/presets/law_firm/hero.jpg"
+        "heading": "Ваши права. Наша миссия.",
+        "subheading": "Hartmann & Partner с 1998 года стоит за бескомпромиссное представление интересов. Мы боремся за ваши права — с точностью, опытом и волей к победе.",
+        "cta": "Бесплатная первичная консультация",
+        "secondaryCta": "Наши практики",
+        "image": "/media/presets/law_firm/hero.jpg",
+        "imageAlt": "Элегантный офис юридической фирмы с библиотекой"
       }
     },
     "about": {
-      "en": {
-        "title": "About Us",
-        "text": "Providing robust legal strategies to protect your interests and assets."
-      },
       "de": {
-        "title": "Über uns",
-        "text": "Wir bieten robuste Rechtsstrategien zum Schutz Ihrer Interessen."
+        "title": "Vertrauen durch Kompetenz",
+        "subtitle": "Seit 1998 in Frankfurt am Main",
+        "text": "Hartmann & Partner wurde 1998 von Dr. Klaus Hartmann gegründet — mit dem Ziel, Mandanten nicht nur rechtlich zu vertreten, sondern echte Partner zu sein. Heute umfasst die Kanzlei 14 Rechtsanwälte und Fachanwälte, die in allen wesentlichen Rechtsgebieten tätig sind. Wir vertreten Unternehmen, Unternehmer und Privatpersonen — national und international.",
+        "image": "/media/presets/law_firm/about.jpg",
+        "imageAlt": "Dr. Klaus Hartmann und sein Team",
+        "stats": [
+          { "value": "26", "label": "Jahre Erfahrung" },
+          { "value": "14", "label": "Rechtsanwälte" },
+          { "value": "2.500+", "label": "Erfolgreich vertretene Mandate" }
+        ]
+      },
+      "en": {
+        "title": "Trust Through Expertise",
+        "subtitle": "Since 1998 in Frankfurt am Main",
+        "text": "Hartmann & Partner was founded in 1998 by Dr. Klaus Hartmann — with the goal of not only representing clients legally, but being true partners. Today the firm comprises 14 lawyers and specialist attorneys active in all major areas of law. We represent companies, entrepreneurs and private individuals — nationally and internationally.",
+        "image": "/media/presets/law_firm/about.jpg",
+        "imageAlt": "Dr. Klaus Hartmann and his team",
+        "stats": [
+          { "value": "26", "label": "Years of experience" },
+          { "value": "14", "label": "Lawyers" },
+          { "value": "2,500+", "label": "Successfully represented mandates" }
+        ]
       },
       "ru": {
-        "title": "О нас",
-        "text": "Мы предоставляем надежные юридические стратегии для защиты ваших интересов и активов."
+        "title": "Доверие через компетентность",
+        "subtitle": "С 1998 года во Франкфурте-на-Майне",
+        "text": "Hartmann & Partner была основана в 1998 году доктором Клаусом Хартманном — с целью не только юридически представлять клиентов, но и быть настоящими партнёрами. Сегодня фирма включает 14 адвокатов и специализированных юристов, работающих во всех основных областях права.",
+        "image": "/media/presets/law_firm/about.jpg",
+        "imageAlt": "Доктор Клаус Хартманн и его команда",
+        "stats": [
+          { "value": "26", "label": "Лет опыта" },
+          { "value": "14", "label": "Адвокатов" },
+          { "value": "2.500+", "label": "Успешно представленных дел" }
+        ]
       }
     },
     "services": [
       {
+        "name_de": "Gesellschaftsrecht",
         "name_en": "Corporate Law",
-        "name_de": "Unternehmensrecht",
         "name_ru": "Корпоративное право",
-        "price": "$400/hr",
-        "desc_en": "Contracts and mergers.",
-        "image": "/media/presets/law_firm/services/corporate.jpg"
+        "price": "ab 300€/Std.",
+        "desc_de": "Gründung, Umstrukturierung, M&A, Gesellschafterstreitigkeiten. Für GmbH, AG und Personengesellschaften.",
+        "desc_en": "Formation, restructuring, M&A, shareholder disputes. For GmbH, AG and partnerships.",
+        "desc_ru": "Создание, реструктуризация, M&A, споры акционеров. Для GmbH, AG и товариществ.",
+        "image": "/media/presets/law_firm/services/corporate.jpg",
+        "tags": ["Schwerpunkt"]
       },
       {
-        "name_en": "Family Law",
+        "name_de": "Arbeitsrecht",
+        "name_en": "Employment Law",
+        "name_ru": "Трудовое право",
+        "price": "ab 250€/Std.",
+        "desc_de": "Kündigungsschutz, Abfindungen, Arbeitsverträge, Betriebsrat. Für Arbeitgeber und Arbeitnehmer.",
+        "desc_en": "Unfair dismissal, severance, employment contracts, works council. For employers and employees.",
+        "desc_ru": "Защита от увольнения, выходные пособия, трудовые договоры, производственный совет. Для работодателей и работников.",
+        "image": "/media/presets/law_firm/services/employment.jpg",
+        "tags": ["Schwerpunkt"]
+      },
+      {
+        "name_de": "Immobilienrecht",
+        "name_en": "Real Estate Law",
+        "name_ru": "Право недвижимости",
+        "price": "ab 280€/Std.",
+        "desc_de": "Kauf, Verkauf, Mietrecht, WEG-Recht, Baurecht. Für Investoren, Eigentümer und Mieter.",
+        "desc_en": "Purchase, sale, tenancy law, condominium law, construction law. For investors, owners and tenants.",
+        "desc_ru": "Покупка, продажа, арендное право, право кондоминиума, строительное право. Для инвесторов, владельцев и арендаторов.",
+        "image": "/media/presets/law_firm/services/realestate.jpg",
+        "tags": []
+      },
+      {
         "name_de": "Familienrecht",
+        "name_en": "Family Law",
         "name_ru": "Семейное право",
-        "price": "$250/hr",
-        "desc_en": "Divorce and custody.",
-        "image": "/media/presets/law_firm/services/family.jpg"
+        "price": "ab 220€/Std.",
+        "desc_de": "Scheidung, Unterhalt, Sorgerecht, Erbrecht. Einfühlsam und zielorientiert.",
+        "desc_en": "Divorce, maintenance, custody, inheritance law. Empathetic and goal-oriented.",
+        "desc_ru": "Развод, алименты, опека, наследственное право. Чутко и целенаправленно.",
+        "image": "/media/presets/law_firm/services/family.jpg",
+        "tags": []
+      },
+      {
+        "name_de": "Vertragsrecht",
+        "name_en": "Contract Law",
+        "name_ru": "Договорное право",
+        "price": "ab 200€/Std.",
+        "desc_de": "Prüfung, Gestaltung und Durchsetzung von Verträgen aller Art. Präventiv und streitig.",
+        "desc_en": "Review, drafting and enforcement of all types of contracts. Preventive and contentious.",
+        "desc_ru": "Проверка, составление и исполнение договоров всех видов. Превентивно и в спорных ситуациях.",
+        "image": "/media/presets/law_firm/services/contract.jpg",
+        "tags": []
+      },
+      {
+        "name_de": "Erstberatung",
+        "name_en": "Initial Consultation",
+        "name_ru": "Первичная консультация",
+        "price": "Kostenlos",
+        "desc_de": "30-minütige kostenlose Erstberatung. Wir hören zu, analysieren und zeigen Optionen auf.",
+        "desc_en": "30-minute free initial consultation. We listen, analyse and present options.",
+        "desc_ru": "30-минутная бесплатная первичная консультация. Мы слушаем, анализируем и предлагаем варианты.",
+        "image": "/media/presets/law_firm/services/consultation.jpg",
+        "tags": ["Kostenlos"]
       }
     ],
     "testimonials": [
       {
-        "name": "Client X.",
-        "text_en": "They won a seemingly impossible case. Top tier lawyers.",
-        "text_de": "Sie haben einen scheinbar unmöglichen Fall gewonnen. Top-Anwälte.",
-        "text_ru": "Они выиграли, казалось бы, невозможное дело. Юристы высшего класса.",
+        "name": "Dr. Michael S.",
+        "location_de": "Frankfurt",
+        "text_de": "Hartmann & Partner hat unsere Unternehmensübernahme rechtlich begleitet — komplex, zeitkritisch, mit hohem Risiko. Das Team war zu jeder Zeit erreichbar, präzise und hat das Beste für uns herausgeholt.",
+        "text_en": "Hartmann & Partner legally accompanied our company acquisition — complex, time-critical, high-risk. The team was reachable at all times, precise and got the best outcome for us.",
+        "text_ru": "Hartmann & Partner юридически сопровождали наше поглощение компании — сложное, срочное, с высоким риском. Команда была доступна в любое время, точна и добилась лучшего результата для нас.",
         "rating": 5,
-        "avatar": "/media/presets/law_firm/avatars/client.jpg"
+        "source": "Kanzlei-Bewertung",
+        "avatar": "/media/presets/law_firm/avatars/michael.jpg"
+      },
+      {
+        "name": "Sandra K.",
+        "location_de": "Frankfurt",
+        "text_de": "In einer schwierigen Scheidungssituation war Dr. Hartmann nicht nur mein Anwalt, sondern ein echter Rückhalt. Professionell, einfühlsam und immer ehrlich — auch wenn die Wahrheit unbequem war.",
+        "text_en": "In a difficult divorce situation Dr. Hartmann was not only my lawyer but a real support. Professional, empathetic and always honest — even when the truth was uncomfortable.",
+        "text_ru": "В сложной ситуации развода доктор Хартманн был не только моим адвокатом, но и настоящей опорой. Профессиональный, чуткий и всегда честный — даже когда правда была неудобной.",
+        "rating": 5,
+        "source": "Google",
+        "avatar": "/media/presets/law_firm/avatars/sandra.jpg"
+      },
+      {
+        "name": "Thomas B., CEO",
+        "location_de": "Frankfurt am Main",
+        "text_de": "Wir haben Hartmann & Partner als Dauermandat für alle arbeitsrechtlichen Fragen. Die Reaktionszeiten sind beeindruckend, die Qualität konstant hoch. Eine Kanzlei, der man vertrauen kann.",
+        "text_en": "We have Hartmann & Partner as a standing mandate for all employment law matters. Response times are impressive, quality consistently high. A firm you can trust.",
+        "text_ru": "У нас Hartmann & Partner на постоянном мандате по всем вопросам трудового права. Время реакции впечатляет, качество стабильно высокое. Фирма, которой можно доверять.",
+        "rating": 5,
+        "source": "Kanzlei-Bewertung",
+        "avatar": "/media/presets/law_firm/avatars/thomas.jpg"
+      }
+    ],
+    "faq": [
+      {
+        "q_de": "Wie läuft die Erstberatung ab?",
+        "q_en": "How does the initial consultation work?",
+        "q_ru": "Как проходит первичная консультация?",
+        "a_de": "Die 30-minütige Erstberatung ist kostenlos und unverbindlich. Sie schildern Ihr Anliegen, wir analysieren die Rechtslage und erläutern mögliche Vorgehensweisen.",
+        "a_en": "The 30-minute initial consultation is free and non-binding. You describe your concern, we analyse the legal situation and explain possible courses of action.",
+        "a_ru": "30-минутная первичная консультация бесплатна и ни к чему не обязывает. Вы описываете свою проблему, мы анализируем правовую ситуацию и объясняем возможные действия."
+      },
+      {
+        "q_de": "Wie werden Ihre Honorare berechnet?",
+        "q_en": "How are your fees calculated?",
+        "q_ru": "Как рассчитываются ваши гонорары?",
+        "a_de": "Wir rechnen nach dem Rechtsanwaltsvergütungsgesetz (RVG) oder nach Zeitaufwand ab. Transparente Kostenvoranschläge vor Mandatsübernahme.",
+        "a_en": "We bill according to the Lawyers' Remuneration Act (RVG) or by time spent. Transparent cost estimates before taking on the mandate.",
+        "a_ru": "Мы выставляем счета согласно Закону о вознаграждении адвокатов (RVG) или по затраченному времени. Прозрачные сметы до принятия мандата."
+      },
+      {
+        "q_de": "Vertreten Sie auch international?",
+        "q_en": "Do you also represent internationally?",
+        "q_ru": "Представляете ли вы интересы на международном уровне?",
+        "a_de": "Ja, wir haben ein Netzwerk von Partnerkanzleien in 20 Ländern und vertreten Mandanten in grenzüberschreitenden Angelegenheiten.",
+        "a_en": "Yes, we have a network of partner firms in 20 countries and represent clients in cross-border matters.",
+        "a_ru": "Да, у нас есть сеть партнёрских фирм в 20 странах, и мы представляем клиентов в трансграничных делах."
       }
     ],
     "contact": {
-      "address": "123 Main St, City",
-      "phone": "+1 234 567 890",
-      "email": "info@law_firm.com",
-      "hours_en": "Mon-Fri: 9:00 AM - 6:00 PM",
-      "hours_de": "Mo-Fr: 09:00 - 18:00 Uhr",
-      "hours_ru": "Пн-Пт: 09:00 - 18:00"
+      "address": "Bockenheimer Landstraße 51, 60325 Frankfurt am Main",
+      "phone": "+49 69 9988 7766",
+      "email": "kontakt@hartmann-partner.de",
+      "hours_de": "Mo–Fr: 08:30–18:00 Uhr · Termine außerhalb der Bürozeiten nach Vereinbarung",
+      "hours_en": "Mon–Fri: 8:30 AM–6:00 PM · Appointments outside office hours by arrangement",
+      "hours_ru": "Пн–Пт: 08:30–18:00 · Встречи вне рабочего времени по договорённости"
     },
-    "faq": [
-      {
-        "q_en": "How to start?",
-        "q_de": "Wie anfangen?",
-        "q_ru": "Как начать?",
-        "a_en": "Contact us today!",
-        "a_de": "Kontaktieren Sie uns!",
-        "a_ru": "Свяжитесь с нами!"
-      }
-    ]
-  },
-  "booking": {
-    "enabled": true,
-    "slots": ["09:00", "10:00", "14:00", "16:00"],
-    "duration": 60
+    "legal": {
+      "braoPflicht_de": "Rechtsanwälte sind gemäß § 43a BRAO zur Verschwiegenheit verpflichtet. Alle Mandatsinformationen werden streng vertraulich behandelt.",
+      "haftpflicht_de": "Die Kanzlei verfügt über eine Berufshaftpflichtversicherung gemäß § 51 BRAO.",
+      "priceNote_de": "Honorare gemäß RVG oder Honorarvereinbarung. Erstberatung kostenlos und unverbindlich."
+    }
   },
   "logo": {
-    "text": "JUSTICE",
-    "tagline": "& CO.",
-    "font": "Times New Roman"
+    "text": "Hartmann & Partner",
+    "tagline": "RECHTSANWÄLTE · FRANKFURT",
+    "font": "Libre Baskerville",
+    "style": "text_serif"
+  },
+  "social": {
+    "instagram": "",
+    "facebook": "https://facebook.com/hartmannpartner.frankfurt",
+    "linkedin": "https://linkedin.com/company/hartmann-partner-rechtsanwaelte"
   }
 }

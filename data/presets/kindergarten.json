@@ -4,7 +4,11 @@
     "description": "A safe and fun environment for children to learn, play, and grow.",
     "favicon": "/media/presets/kindergarten/favicon.ico",
     "language": "en",
-    "availableLanguages": ["en", "de", "ru"]
+    "availableLanguages": [
+      "en",
+      "de",
+      "ru"
+    ]
   },
   "design": {
     "preset": "kindergarten",
@@ -62,9 +66,21 @@
   },
   "content": {
     "slogans": {
-      "en": ["Learn Through Play", "Happy Kids", "Bright Future"],
-      "de": ["Lernen durch Spielen", "Glückliche Kinder", "Bright Future"],
-      "ru": ["Учись играя", "Счастливые дети", "Светлое будущее"]
+      "en": [
+        "Learn Through Play",
+        "Happy Kids",
+        "Bright Future"
+      ],
+      "de": [
+        "Lernen durch Spielen",
+        "Glückliche Kinder",
+        "Bright Future"
+      ],
+      "ru": [
+        "Учись играя",
+        "Счастливые дети",
+        "Светлое будущее"
+      ]
     },
     "hero": {
       "en": {
@@ -75,13 +91,13 @@
       },
       "de": {
         "heading": "Lernen durch Spielen",
-        "subheading": "Eine sichere und lustige Umgebung für Kinder zum Lernen, Spielen und Wachsen.",
+        "subheading": "A safe and fun environment for children to learn, play, and grow.",
         "cta": "Jetzt starten",
         "image": "/media/presets/kindergarten/hero.jpg"
       },
       "ru": {
         "heading": "Учись играя",
-        "subheading": "Безопасная и веселая среда для обучения, игр и роста детей.",
+        "subheading": "A safe and fun environment for children to learn, play, and grow.",
         "cta": "Начать",
         "image": "/media/presets/kindergarten/hero.jpg"
       }
@@ -106,7 +122,7 @@
         "name_de": "Frühe Bildung",
         "name_ru": "Раннее развитие",
         "price": "$800/mo",
-        "desc_en": "ABC's and 123's.",
+        "desc_en": "ABCs and 123s.",
         "image": "/media/presets/kindergarten/services/learning.jpg"
       },
       {
@@ -122,8 +138,8 @@
       {
         "name": "Mom T.",
         "text_en": "My daughter loves it here! She learns so much every day.",
-        "text_de": "Meine Tochter liebt es hier! Sie lernt jeden Tag so viel.",
-        "text_ru": "Моя дочь обожает это место! Она каждый день узнает много нового.",
+        "text_de": "My daughter loves it here! She learns so much every day.",
+        "text_ru": "My daughter loves it here! She learns so much every day.",
         "rating": 5,
         "avatar": "/media/presets/kindergarten/avatars/mom.jpg"
       }
@@ -149,7 +165,12 @@
   },
   "booking": {
     "enabled": true,
-    "slots": ["09:00", "10:00", "14:00", "16:00"],
+    "slots": [
+      "09:00",
+      "10:00",
+      "14:00",
+      "16:00"
+    ],
     "duration": 60
   },
   "logo": {

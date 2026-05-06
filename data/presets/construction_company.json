@@ -4,7 +4,11 @@
     "description": "Quality construction services from residential to commercial projects.",
     "favicon": "/media/presets/construction_company/favicon.ico",
     "language": "en",
-    "availableLanguages": ["en", "de", "ru"]
+    "availableLanguages": [
+      "en",
+      "de",
+      "ru"
+    ]
   },
   "design": {
     "preset": "construction_company",
@@ -62,9 +66,21 @@
   },
   "content": {
     "slogans": {
-      "en": ["Building Futures", "Solid Foundations", "Built to Last"],
-      "de": ["Zukunft bauen", "Solide Fundamente", "Gebaut für die Ewigkeit"],
-      "ru": ["Строим будущее", "Крепкий фундамент", "Построено на века"]
+      "en": [
+        "Building Futures",
+        "Solid Foundations",
+        "Built to Last"
+      ],
+      "de": [
+        "Zukunft bauen",
+        "Solide Fundamente",
+        "Gebaut für die Ewigkeit"
+      ],
+      "ru": [
+        "Строим будущее",
+        "Крепкий фундамент",
+        "Построено на века"
+      ]
     },
     "hero": {
       "en": {
@@ -75,13 +91,13 @@
       },
       "de": {
         "heading": "Zukunft bauen",
-        "subheading": "Qualitätsbauleistungen von Wohn- bis Gewerbeprojekte.",
+        "subheading": "Quality construction services from residential to commercial projects.",
         "cta": "Jetzt starten",
         "image": "/media/presets/construction_company/hero.jpg"
       },
       "ru": {
         "heading": "Строим будущее",
-        "subheading": "Качественное строительство от жилых до коммерческих проектов.",
+        "subheading": "Quality construction services from residential to commercial projects.",
         "cta": "Начать",
         "image": "/media/presets/construction_company/hero.jpg"
       }
@@ -93,11 +109,11 @@
       },
       "de": {
         "title": "Über uns",
-        "text": "Mit 20 Jahren Erfahrung liefern wir Qualität pünktlich und im Budget."
+        "text": "Mit 20 Jahren Erfahrung liefern wir Qualität."
       },
       "ru": {
         "title": "О нас",
-        "text": "С 20-летним опытом мы гарантируем качественное строительство в срок и в рамках бюджета."
+        "text": "С 20-летним опытом мы гарантируем качество."
       }
     },
     "services": [
@@ -122,8 +138,8 @@
       {
         "name": "Homeowner",
         "text_en": "Professional team, clean work, amazing results.",
-        "text_de": "Professionelles Team, saubere Arbeit, erstaunliche Ergebnisse.",
-        "text_ru": "Профессиональная команда, чистая работа, потрясающие результаты.",
+        "text_de": "Professional team, clean work, amazing results.",
+        "text_ru": "Professional team, clean work, amazing results.",
         "rating": 5,
         "avatar": "/media/presets/construction_company/avatars/home.jpg"
       }
@@ -149,7 +165,12 @@
   },
   "booking": {
     "enabled": true,
-    "slots": ["09:00", "10:00", "14:00", "16:00"],
+    "slots": [
+      "09:00",
+      "10:00",
+      "14:00",
+      "16:00"
+    ],
     "duration": 60
   },
   "logo": {

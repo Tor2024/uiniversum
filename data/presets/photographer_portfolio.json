@@ -4,7 +4,11 @@
     "description": "Capturing timeless moments with a creative touch. Portraits, Landscapes, and Events.",
     "favicon": "/media/presets/photographer/favicon.ico",
     "language": "en",
-    "availableLanguages": ["en", "de", "ru"]
+    "availableLanguages": [
+      "en",
+      "de",
+      "ru"
+    ]
   },
   "design": {
     "preset": "photographer_portfolio",
@@ -62,9 +66,21 @@
   },
   "content": {
     "slogans": {
-      "en": ["Capture the Moment", "Through the Lens", "Timeless Art"],
-      "de": ["Den Moment festhalten", "Durch das Objektiv", "Zeitlose Kunst"],
-      "ru": ["Поймай момент", "Взгляд через объектив", "Вечное искусство"]
+      "en": [
+        "Capture the Moment",
+        "Through the Lens",
+        "Timeless Art"
+      ],
+      "de": [
+        "Den Moment festhalten",
+        "Durch das Objektiv",
+        "Zeitlose Kunst"
+      ],
+      "ru": [
+        "Поймай момент",
+        "Взгляд через объектив",
+        "Вечное искусство"
+      ]
     },
     "hero": {
       "en": {
@@ -75,13 +91,13 @@
       },
       "de": {
         "heading": "Den Moment festhalten",
-        "subheading": "Zeitlose Momente mit kreativer Note einfangen. Porträts, Landschaften und Events.",
+        "subheading": "Capturing timeless moments with a creative touch. Portraits, Landscapes, and Events.",
         "cta": "Portfolio ansehen",
         "image": "/media/presets/photographer/hero.jpg"
       },
       "ru": {
         "heading": "Поймай момент",
-        "subheading": "Запечатлеваем мгновения с творческим подходом. Портреты, пейзажи и события.",
+        "subheading": "Capturing timeless moments with a creative touch. Portraits, Landscapes, and Events.",
         "cta": "Смотреть портфолио",
         "image": "/media/presets/photographer/hero.jpg"
       }
@@ -97,7 +113,7 @@
       },
       "ru": {
         "title": "Наше видение",
-        "text": "Мы превращаем мимолётные мгновения в долгие воспоминания через искусство фотографии."
+        "text": "Мы превращаем мимолётные мгновения в долгие воспоминания."
       }
     },
     "services": [
@@ -107,7 +123,7 @@
         "name_ru": "Сессия портрета",
         "price": "$300",
         "desc_en": "Professional indoor/outdoor portraits.",
-        "image": "/media/presets/photographer/services/portrait.jpg"
+        "image": "/media/presets/photographer_portfolio/services/portrait.jpg"
       },
       {
         "name_en": "Wedding Day",
@@ -115,17 +131,17 @@
         "name_ru": "Свадебный день",
         "price": "$2000",
         "desc_en": "Full day coverage of your special day.",
-        "image": "/media/presets/photographer/services/wedding.jpg"
+        "image": "/media/presets/photographer_portfolio/services/wedding.jpg"
       }
     ],
     "testimonials": [
       {
         "name": "Emma W.",
         "text_en": "Absolutely stunning photos! She captured our day perfectly.",
-        "text_de": "Absolut atemberaubende Fotos! Sie hat unseren Tag perfekt eingefangen.",
-        "text_ru": "Абсолютно потрясающие фото! Она идеально запечатлела наш день.",
+        "text_de": "Absolutely stunning photos! She captured our day perfectly.",
+        "text_ru": "Absolutely stunning photos! She captured our day perfectly.",
         "rating": 5,
-        "avatar": "/media/presets/photographer/avatars/emma.jpg"
+        "avatar": "/media/presets/photographer_portfolio/avatars/emma.jpg"
       }
     ],
     "contact": {

@@ -4,7 +4,11 @@
     "description": "We build stunning websites and apps that drive results for your business.",
     "favicon": "/media/presets/web/favicon.ico",
     "language": "en",
-    "availableLanguages": ["en", "de", "ru"]
+    "availableLanguages": [
+      "en",
+      "de",
+      "ru"
+    ]
   },
   "design": {
     "preset": "web_agency",
@@ -62,9 +66,21 @@
   },
   "content": {
     "slogans": {
-      "en": ["Code the Future", "Digital Excellence", "Innovate Now"],
-      "de": ["Coden für die Zukunft", "Digitale Exzellenz", "Jetzt innovieren"],
-      "ru": ["Кодируй будущее", "Цифровое совершенство", "Инновации сейчас"]
+      "en": [
+        "Code the Future",
+        "Digital Excellence",
+        "Innovate Now"
+      ],
+      "de": [
+        "Coden für die Zukunft",
+        "Digitale Exzellenz",
+        "Jetzt innovieren"
+      ],
+      "ru": [
+        "Кодируй будущее",
+        "Цифровое совершенство",
+        "Инновации сейчас"
+      ]
     },
     "hero": {
       "en": {
@@ -75,13 +91,13 @@
       },
       "de": {
         "heading": "Coden für die Zukunft",
-        "subheading": "Wir bauen beeindruckende Webseiten und Apps, die Ergebnisse liefern.",
+        "subheading": "We build stunning websites and apps that drive results for your business.",
         "cta": "Projekt starten",
         "image": "/media/presets/web/hero.jpg"
       },
       "ru": {
         "heading": "Кодируй будущее",
-        "subheading": "Мы создаём потрясающие веб-сайты и приложения, которые приносят результаты.",
+        "subheading": "We build stunning websites and apps that drive results for your business.",
         "cta": "Начать проект",
         "image": "/media/presets/web/hero.jpg"
       }
@@ -93,11 +109,11 @@
       },
       "de": {
         "title": "Unsere Mission",
-        "text": "Wir sind ein Team leidenschaftlicher Designer und Entwickler, die digitale Meisterwerke schaffen."
+        "text": "Wir sind ein Team leidenschaftlicher Designer und Entwickler."
       },
       "ru": {
         "title": "Наша миссия",
-        "text": "Мы — команда увлечённых дизайнеров и разработчиков, создающих цифровые шедевры."
+        "text": "Мы команда увлеченных дизайнеров и разработчиков."
       }
     },
     "services": [
@@ -121,9 +137,9 @@
     "testimonials": [
       {
         "name": "TechCorp",
-        "text_en": "Our new website increased leads by 200%. Incredible work!",
-        "text_de": "Unsere neue Webseite hat die Leads um 200% gesteigert. Unglaubliche Arbeit!",
-        "text_ru": "Наш новый сайт увеличил лиды на 200%. Невероятная работа!",
+        "text_en": "Our new website increased leads by 200%. Incredible work.",
+        "text_de": "Our new website increased leads by 200%. Incredible work.",
+        "text_ru": "Our new website increased leads by 200%. Incredible work.",
         "rating": 5,
         "avatar": "/media/presets/web_agency/avatars/techcorp.jpg"
       }

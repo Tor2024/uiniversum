@@ -4,7 +4,11 @@
     "description": "Experience luxury and comfort in the heart of the city. Your perfect stay awaits.",
     "favicon": "/media/presets/boutique_hotel/favicon.ico",
     "language": "en",
-    "availableLanguages": ["en", "de", "ru"]
+    "availableLanguages": [
+      "en",
+      "de",
+      "ru"
+    ]
   },
   "design": {
     "preset": "boutique_hotel",
@@ -62,9 +66,21 @@
   },
   "content": {
     "slogans": {
-      "en": ["Live Luxury", "Your Oasis", "Unforgettable Stay"],
-      "de": ["Leben Sie luxuriös", "Ihre Oase", "Unvergesslicher Aufenthalt"],
-      "ru": ["Живи роскошно", "Твой оазис", "Незабываемый отдых"]
+      "en": [
+        "Live Luxury",
+        "Your Oasis",
+        "Unforgettable Stay"
+      ],
+      "de": [
+        "Leben Sie luxuriös",
+        "Ihre Oase",
+        "Unvergesslicher Aufenthalt"
+      ],
+      "ru": [
+        "Живи роскошно",
+        "Твой оазис",
+        "Незабываемый отдых"
+      ]
     },
     "hero": {
       "en": {
@@ -75,13 +91,13 @@
       },
       "de": {
         "heading": "Leben Sie luxuriös",
-        "subheading": "Erleben Sie Luxus und Komfort im Herzen der Stadt. Ihr perfekter Aufenthalt wartet.",
+        "subheading": "Experience luxury and comfort in the heart of the city. Your perfect stay awaits.",
         "cta": "Jetzt starten",
         "image": "/media/presets/boutique_hotel/hero.jpg"
       },
       "ru": {
         "heading": "Живи роскошно",
-        "subheading": "Испытайте роскошь и комфорт в самом сердце города. Ваш идеальный отдых ждёт.",
+        "subheading": "Experience luxury and comfort in the heart of the city. Your perfect stay awaits.",
         "cta": "Начать",
         "image": "/media/presets/boutique_hotel/hero.jpg"
       }
@@ -93,11 +109,11 @@
       },
       "de": {
         "title": "Über uns",
-        "text": "Im Herzen der Stadt bietet Grand Plaza eine Oase der Ruhe und Sophistication."
+        "text": "Im Herzen der Stadt bietet Grand Plaza eine Oase der Ruhe."
       },
       "ru": {
         "title": "О нас",
-        "text": "Расположенный в центре города, Grand Plaza предлагает оазис спокойствия и утончённости."
+        "text": "В центре города Grand Plaza предлагает оазис спокойствия."
       }
     },
     "services": [
@@ -122,8 +138,8 @@
       {
         "name": "Mr. Smith",
         "text_en": "The service was impeccable. Will definitely return.",
-        "text_de": "Der Service war makellos. Werde definitiv wiederkommen.",
-        "text_ru": "Обслуживание было безупречным. Обязательно вернусь.",
+        "text_de": "The service was impeccable. Will definitely return.",
+        "text_ru": "The service was impeccable. Will definitely return.",
         "rating": 5,
         "avatar": "/media/presets/boutique_hotel/avatars/smith.jpg"
       }
@@ -149,7 +165,12 @@
   },
   "booking": {
     "enabled": true,
-    "slots": ["09:00", "10:00", "14:00", "16:00"],
+    "slots": [
+      "09:00",
+      "10:00",
+      "14:00",
+      "16:00"
+    ],
     "duration": 60
   },
   "logo": {

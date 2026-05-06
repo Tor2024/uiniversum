@@ -4,7 +4,11 @@
     "description": "Scalable cloud solutions for modern businesses. Automate and grow.",
     "favicon": "/media/presets/saas_startup/favicon.ico",
     "language": "en",
-    "availableLanguages": ["en", "de", "ru"]
+    "availableLanguages": [
+      "en",
+      "de",
+      "ru"
+    ]
   },
   "design": {
     "preset": "saas_startup",
@@ -62,9 +66,21 @@
   },
   "content": {
     "slogans": {
-      "en": ["Scale Infinite", "Future Ready", "Cloud Native"],
-      "de": ["Unendlich skalieren", "Zukunftsbereit", "Cloud Native"],
-      "ru": ["Бесконечный масштаб", "Готов к будущему", "Облачные технологии"]
+      "en": [
+        "Scale Infinite",
+        "Future Ready",
+        "Cloud Native"
+      ],
+      "de": [
+        "Unendlich skalieren",
+        "Zukunftsbereit",
+        "Cloud Native"
+      ],
+      "ru": [
+        "Бесконечный масштаб",
+        "Готов к будущему",
+        "Облачные технологии"
+      ]
     },
     "hero": {
       "en": {
@@ -75,13 +91,13 @@
       },
       "de": {
         "heading": "Unendlich skalieren",
-        "subheading": "Skalierbare Cloud-Lösungen für moderne Unternehmen. Automatisieren und wachsen.",
+        "subheading": "Scalable cloud solutions for modern businesses. Automate and grow.",
         "cta": "Jetzt starten",
         "image": "/media/presets/saas_startup/hero.jpg"
       },
       "ru": {
         "heading": "Бесконечный масштаб",
-        "subheading": "Масштабируемые облачные решения для современного бизнеса. Автоматизируйте и растите.",
+        "subheading": "Scalable cloud solutions for modern businesses. Automate and grow.",
         "cta": "Начать",
         "image": "/media/presets/saas_startup/hero.jpg"
       }
@@ -93,11 +109,11 @@
       },
       "de": {
         "title": "Über uns",
-        "text": "Wir bauen die Infrastruktur für die nächste Generation digitaler Produkte."
+        "text": "Wir bauen die Infrastruktur für die nächste Generation."
       },
       "ru": {
         "title": "О нас",
-        "text": "Мы строим инфраструктуру, которая обеспечивает работу следующего поколения цифровых продуктов."
+        "text": "Мы строим инфраструктуру для следующего поколения продуктов."
       }
     },
     "services": [
@@ -121,9 +137,9 @@
     "testimonials": [
       {
         "name": "Dev Inc",
-        "text_en": "CloudScale helped us handle 10x traffic overnight. Amazing!",
-        "text_de": "CloudScale hat uns geholfen, über Nacht den 10-fachen Traffic zu bewältigen. Erstaunlich!",
-        "text_ru": "CloudScale помог нам справиться с 10-кратным ростом трафика за одну ночь. Потрясающе!",
+        "text_en": "CloudScale helped us handle 10x traffic overnight.",
+        "text_de": "CloudScale helped us handle 10x traffic overnight.",
+        "text_ru": "CloudScale helped us handle 10x traffic overnight.",
         "rating": 5,
         "avatar": "/media/presets/saas_startup/avatars/dev.jpg"
       }
@@ -149,7 +165,12 @@
   },
   "booking": {
     "enabled": true,
-    "slots": ["09:00", "10:00", "14:00", "16:00"],
+    "slots": [
+      "09:00",
+      "10:00",
+      "14:00",
+      "16:00"
+    ],
     "duration": 60
   },
   "logo": {

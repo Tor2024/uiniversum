@@ -4,7 +4,11 @@
     "description": "Discover the latest trends in fashion for men and women. Premium quality apparel.",
     "favicon": "/media/presets/fashion/favicon.ico",
     "language": "en",
-    "availableLanguages": ["en", "de", "ru"]
+    "availableLanguages": [
+      "en",
+      "de",
+      "ru"
+    ]
   },
   "design": {
     "preset": "fashion_store",
@@ -62,9 +66,21 @@
   },
   "content": {
     "slogans": {
-      "en": ["Dress to Impress", "Trendy & Chic", "Style Redefined"],
-      "de": ["Kleide dich, um zu beeindrucken", "Trendig & Schick", "Stil neu definiert"],
-      "ru": ["Оденься, чтобы впечатлять", "Модно и стильно", "Стиль переосмыслен"]
+      "en": [
+        "Dress to Impress",
+        "Trendy & Chic",
+        "Style Redefined"
+      ],
+      "de": [
+        "Kleide dich, um zu beeindrucken",
+        "Trendig & Schick",
+        "Stil neu definiert"
+      ],
+      "ru": [
+        "Оденься, чтобы впечатлять",
+        "Модно и стильно",
+        "Стиль переосмыслен"
+      ]
     },
     "hero": {
       "en": {
@@ -75,13 +91,13 @@
       },
       "de": {
         "heading": "Kleide dich, um zu beeindrucken",
-        "subheading": "Entdecke die neuesten Modetrends für Damen und Herren. Premium-Qualität.",
+        "subheading": "Discover the latest trends in fashion for men and women. Premium quality apparel.",
         "cta": "Jetzt shoppen",
         "image": "/media/presets/fashion/hero.jpg"
       },
       "ru": {
         "heading": "Оденься, чтобы впечатлять",
-        "subheading": "Откройте для себя последние модные тренды для мужчин и женщин. Премиальное качество.",
+        "subheading": "Discover the latest trends in fashion for men and women. Premium quality apparel.",
         "cta": "Купить сейчас",
         "image": "/media/presets/fashion/hero.jpg"
       }
@@ -122,8 +138,8 @@
       {
         "name": "Olivia F.",
         "text_en": "Always find something unique here. Love the quality!",
-        "text_de": "Immer etwas Einzigartiges hier. Liebe die Qualität!",
-        "text_ru": "Всегда нахожу здесь что-то уникальное. Обожаю качество!",
+        "text_de": "Always find something unique here. Love the quality!",
+        "text_ru": "Always find something unique here. Love the quality!",
         "rating": 5,
         "avatar": "/media/presets/fashion_store/avatars/olivia.jpg"
       }

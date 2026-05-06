@@ -4,7 +4,11 @@
     "description": "Exquisite jewelry pieces crafted with precision and passion.",
     "favicon": "/media/presets/jewelry_store/favicon.ico",
     "language": "en",
-    "availableLanguages": ["en", "de", "ru"]
+    "availableLanguages": [
+      "en",
+      "de",
+      "ru"
+    ]
   },
   "design": {
     "preset": "jewelry_store",
@@ -62,9 +66,21 @@
   },
   "content": {
     "slogans": {
-      "en": ["Timeless Elegance", "Shine Bright", "Exquisite Gems"],
-      "de": ["Zeitlose Eleganz", "Strahlend schön", "Exquisite Edelsteine"],
-      "ru": ["Вечная элегантность", "Сияй ярко", "Изысканные камни"]
+      "en": [
+        "Timeless Elegance",
+        "Shine Bright",
+        "Exquisite Gems"
+      ],
+      "de": [
+        "Zeitlose Eleganz",
+        "Strahlend schön",
+        "Exquisite Edelsteine"
+      ],
+      "ru": [
+        "Вечная элегантность",
+        "Сияй ярко",
+        "Изысканные камни"
+      ]
     },
     "hero": {
       "en": {
@@ -149,7 +165,12 @@
   },
   "booking": {
     "enabled": true,
-    "slots": ["09:00", "10:00", "14:00", "16:00"],
+    "slots": [
+      "09:00",
+      "10:00",
+      "14:00",
+      "16:00"
+    ],
     "duration": 60
   },
   "logo": {

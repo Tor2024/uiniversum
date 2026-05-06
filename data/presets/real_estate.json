@@ -1,29 +1,29 @@
 {
   "meta": {
-    "title": "Prime Property | Real Estate",
-    "description": "Find your dream home or investment property with our expert agents.",
+    "title": "Meridian Immobilien | Premium Real Estate",
+    "description": "Exklusive Immobilien in München und Umgebung. Kauf, Verkauf und Vermietung von Wohnungen, Häusern und Gewerbeimmobilien. Persönliche Beratung seit 2003.",
     "favicon": "/media/presets/real_estate/favicon.ico",
-    "language": "en",
-    "availableLanguages": ["en", "de", "ru"]
+    "language": "de",
+    "availableLanguages": ["de", "en", "ru"]
   },
   "design": {
     "preset": "real_estate",
     "tokens": {
-      "colorBackground": "#F5FFFA",
+      "colorBackground": "#FAFAF8",
       "colorSurface": "#FFFFFF",
-      "colorPrimary": "#2E8B57",
-      "colorSecondary": "#6C757D",
-      "colorBorder": "#DEE2E6",
-      "colorAccent": "#FF6347",
-      "colorAccentHover": "#FF6347",
-      "fontDisplay": "Georgia",
-      "fontHeading": "Georgia",
-      "fontBody": "Arial",
-      "fontCaption": "Arial",
-      "fontMono": "Roboto Mono",
-      "fontSizeDisplay": "72px",
-      "fontSizeHeading": "36px",
-      "fontSizeBody": "17px",
+      "colorPrimary": "#1A1A1A",
+      "colorSecondary": "#6B6B6B",
+      "colorBorder": "#E5E0D8",
+      "colorAccent": "#8B7355",
+      "colorAccentHover": "#6B5535",
+      "fontDisplay": "Cormorant Garamond",
+      "fontHeading": "Inter",
+      "fontBody": "Inter",
+      "fontCaption": "Inter",
+      "fontMono": "JetBrains Mono",
+      "fontSizeDisplay": "76px",
+      "fontSizeHeading": "34px",
+      "fontSizeBody": "16px",
       "lineHeightBody": "1.7",
       "lineHeightHeading": "1.3",
       "spacingUnit": "8px",
@@ -32,24 +32,24 @@
       "spacingCard": "32px",
       "spacingButtonVertical": "16px",
       "spacingButtonHorizontal": "32px",
-      "maxWidthContent": "1200px",
-      "maxWidthText": "700px",
+      "maxWidthContent": "1280px",
+      "maxWidthText": "680px",
       "gridColumns": "12",
-      "gridGutter": "30px",
+      "gridGutter": "28px",
       "horizontalPaddingMobile": "20px",
-      "horizontalPaddingTablet": "50px",
+      "horizontalPaddingTablet": "48px",
       "horizontalPaddingDesktop": "80px",
-      "borderRadius": "8",
-      "borderRadiusSmall": "4px",
-      "borderRadiusMedium": "8px",
-      "borderRadiusLarge": "16px",
+      "borderRadius": "4",
+      "borderRadiusSmall": "2px",
+      "borderRadiusMedium": "4px",
+      "borderRadiusLarge": "8px",
       "shadowStyle": "soft",
-      "shadowResting": "0 4px 14px rgba(0,0,0,0.05)",
-      "shadowHover": "0 8px 24px rgba(0,0,0,0.1)",
+      "shadowResting": "0 2px 16px rgba(0,0,0,0.06)",
+      "shadowHover": "0 8px 32px rgba(139,115,85,0.15)",
       "transitionDuration": "200ms",
-      "transitionTiming": "ease-in-out",
+      "transitionTiming": "ease-out",
       "imageRatioHero": "21:9",
-      "imageRatioCard": "4:3",
+      "imageRatioCard": "16:9",
       "imageRatioAvatar": "1:1"
     },
     "customCss": ""
@@ -58,103 +58,235 @@
     "ogImage": "/media/presets/real_estate/og-default.jpg",
     "twitterCard": "summary_large_image",
     "googleAnalyticsId": "",
-    "keywords": "real estate, property, housing"
+    "keywords": "Immobilien München, Wohnung kaufen, Haus verkaufen, Makler München, Luxusimmobilien"
+  },
+  "layout": {
+    "style": "clean_minimal",
+    "heroType": "fullscreen_overlay",
+    "navStyle": "light_minimal",
+    "servicesLayout": "grid_3col",
+    "testimonialsLayout": "light_background",
+    "footerStyle": "professional_minimal"
   },
   "content": {
     "slogans": {
-      "en": ["Find Your Dream", "Home Sweet Home", "Invest Wise"],
-      "de": ["Finde deinen Traum", "Zuhause ist es am schönsten", "Klug investieren"],
-      "ru": ["Найди свою мечту", "Все дороги ведут домой", "Инвестируй с умом"]
+      "de": ["Ihr Zuhause. Unsere Leidenschaft.", "Immobilien mit Geschichte", "Mehr als vier Wände"],
+      "en": ["Your home. Our passion.", "Properties with character", "More than four walls"],
+      "ru": ["Ваш дом. Наша страсть.", "Недвижимость с историей", "Больше, чем четыре стены"]
     },
     "hero": {
-      "en": {
-        "heading": "Find Your Dream",
-        "subheading": "Find your dream home or investment property with our expert agents.",
-        "cta": "Get Started",
-        "image": "/media/presets/real_estate/hero.jpg"
-      },
       "de": {
-        "heading": "Finde deinen Traum",
-        "subheading": "Finden Sie Ihr Traumhaus oder Investitionsimmobilien mit unseren Experten.",
-        "cta": "Jetzt starten",
-        "image": "/media/presets/real_estate/hero.jpg"
+        "heading": "Ihr Zuhause. Unsere Leidenschaft.",
+        "subheading": "Meridian Immobilien vermittelt seit 2003 exklusive Wohn- und Gewerbeimmobilien in München. Persönliche Beratung, diskrete Abwicklung, nachhaltige Ergebnisse.",
+        "cta": "Kostenlose Bewertung",
+        "secondaryCta": "Aktuelle Objekte",
+        "image": "/media/presets/real_estate/hero.jpg",
+        "imageAlt": "Exklusive Immobilie in München"
+      },
+      "en": {
+        "heading": "Your home. Our passion.",
+        "subheading": "Meridian Immobilien has been brokering exclusive residential and commercial properties in Munich since 2003. Personal advice, discreet handling, sustainable results.",
+        "cta": "Free Valuation",
+        "secondaryCta": "Current Properties",
+        "image": "/media/presets/real_estate/hero.jpg",
+        "imageAlt": "Exclusive property in Munich"
       },
       "ru": {
-        "heading": "Найди свою мечту",
-        "subheading": "Найдите свой дом мечты или инвестиционную недвижимость с нашими экспертами.",
-        "cta": "Начать",
-        "image": "/media/presets/real_estate/hero.jpg"
+        "heading": "Ваш дом. Наша страсть.",
+        "subheading": "Meridian Immobilien с 2003 года занимается посредничеством в сфере эксклюзивной жилой и коммерческой недвижимости в Мюнхене. Личная консультация, дискретное ведение, устойчивые результаты.",
+        "cta": "Бесплатная оценка",
+        "secondaryCta": "Актуальные объекты",
+        "image": "/media/presets/real_estate/hero.jpg",
+        "imageAlt": "Эксклюзивная недвижимость в Мюнхене"
       }
     },
     "about": {
-      "en": {
-        "title": "About Us",
-        "text": "Connecting people with properties that match their lifestyle and budget."
-      },
       "de": {
-        "title": "Über uns",
-        "text": "Wir verbinden Menschen mit Immobilien, die zu ihrem Lebensstil und Budget passen."
+        "title": "Vertrauen seit 2003",
+        "subtitle": "München & Umgebung",
+        "text": "Meridian Immobilien wurde 2003 von Christine und Robert Bauer gegründet — mit dem Anspruch, Immobilienvermittlung persönlich, transparent und nachhaltig zu gestalten. Unser Team aus 18 Spezialisten kennt den Münchner Markt wie kein anderer. Wir haben über 1.200 Objekte erfolgreich vermittelt — von der Erstlingswohnung bis zur Luxusvilla.",
+        "image": "/media/presets/real_estate/about.jpg",
+        "imageAlt": "Christine und Robert Bauer, Gründer von Meridian Immobilien",
+        "stats": [
+          { "value": "21", "label": "Jahre Erfahrung" },
+          { "value": "1.200+", "label": "Vermittelte Objekte" },
+          { "value": "98%", "label": "Kundenzufriedenheit" }
+        ]
+      },
+      "en": {
+        "title": "Trust Since 2003",
+        "subtitle": "Munich & Surroundings",
+        "text": "Meridian Immobilien was founded in 2003 by Christine and Robert Bauer — with the ambition to make property brokerage personal, transparent and sustainable. Our team of 18 specialists knows the Munich market like no other. We have successfully brokered over 1,200 properties — from first apartments to luxury villas.",
+        "image": "/media/presets/real_estate/about.jpg",
+        "imageAlt": "Christine and Robert Bauer, founders of Meridian Immobilien",
+        "stats": [
+          { "value": "21", "label": "Years of experience" },
+          { "value": "1,200+", "label": "Properties brokered" },
+          { "value": "98%", "label": "Client satisfaction" }
+        ]
       },
       "ru": {
-        "title": "О нас",
-        "text": "Мы соединяем людей с недвижимостью, которая соответствует их образу жизни и бюджету."
+        "title": "Доверие с 2003 года",
+        "subtitle": "Мюнхен и окрестности",
+        "text": "Meridian Immobilien была основана в 2003 году Кристиной и Робертом Бауэр — с амбицией сделать посредничество в сфере недвижимости личным, прозрачным и устойчивым. Наша команда из 18 специалистов знает мюнхенский рынок как никто другой. Мы успешно посредничали в более чем 1200 объектах.",
+        "image": "/media/presets/real_estate/about.jpg",
+        "imageAlt": "Кристина и Роберт Бауэр, основатели Meridian Immobilien",
+        "stats": [
+          { "value": "21", "label": "Лет опыта" },
+          { "value": "1.200+", "label": "Посреднических объектов" },
+          { "value": "98%", "label": "Удовлетворённость клиентов" }
+        ]
       }
     },
     "services": [
       {
-        "name_en": "Property Listing",
-        "name_de": "Immobilienangebote",
-        "name_ru": "Продажа недвижимости",
-        "price": "2% Commission",
-        "desc_en": "Sell your property fast.",
-        "image": "/media/presets/real_estate/services/listing.jpg"
+        "name_de": "Immobilienkauf",
+        "name_en": "Property Purchase",
+        "name_ru": "Покупка недвижимости",
+        "price": "Provision: 3,57%",
+        "desc_de": "Wir finden Ihre Traumimmobilie. Marktanalyse, Besichtigungen, Verhandlung, Notartermin — alles aus einer Hand.",
+        "desc_en": "We find your dream property. Market analysis, viewings, negotiation, notary appointment — all from one source.",
+        "desc_ru": "Мы найдём вашу недвижимость мечты. Анализ рынка, просмотры, переговоры, нотариус — всё из одних рук.",
+        "image": "/media/presets/real_estate/services/buy.jpg",
+        "tags": ["Beliebt"]
       },
       {
-        "name_en": "Buying Assistance",
-        "name_de": "Kaufhilfe",
-        "name_ru": "Помощь в покупке",
-        "price": "1.5% Fee",
-        "desc_en": "Find the best deals.",
-        "image": "/media/presets/real_estate/services/buying.jpg"
+        "name_de": "Immobilienverkauf",
+        "name_en": "Property Sale",
+        "name_ru": "Продажа недвижимости",
+        "price": "Provision: 3,57%",
+        "desc_de": "Professionelle Bewertung, Premium-Marketing, diskrete Vermarktung. Wir erzielen den besten Preis für Ihre Immobilie.",
+        "desc_en": "Professional valuation, premium marketing, discreet marketing. We achieve the best price for your property.",
+        "desc_ru": "Профессиональная оценка, премиальный маркетинг, дискретное продвижение. Мы добиваемся лучшей цены для вашей недвижимости.",
+        "image": "/media/presets/real_estate/services/sell.jpg",
+        "tags": []
+      },
+      {
+        "name_de": "Vermietung",
+        "name_en": "Rental",
+        "name_ru": "Аренда",
+        "price": "2 Kaltmieten",
+        "desc_de": "Mietersuche, Bonitätsprüfung, Mietvertrag, Übergabe. Für Eigentümer und Mieter.",
+        "desc_en": "Tenant search, credit check, rental agreement, handover. For owners and tenants.",
+        "desc_ru": "Поиск арендаторов, проверка кредитоспособности, договор аренды, передача. Для владельцев и арендаторов.",
+        "image": "/media/presets/real_estate/services/rent.jpg",
+        "tags": []
+      },
+      {
+        "name_de": "Immobilienbewertung",
+        "name_en": "Property Valuation",
+        "name_ru": "Оценка недвижимости",
+        "price": "Kostenlos",
+        "desc_de": "Kostenlose Marktwertermittlung durch zertifizierte Gutachter. Für Kauf, Verkauf, Erbschaft oder Scheidung.",
+        "desc_en": "Free market value assessment by certified appraisers. For purchase, sale, inheritance or divorce.",
+        "desc_ru": "Бесплатная оценка рыночной стоимости сертифицированными оценщиками. Для покупки, продажи, наследства или развода.",
+        "image": "/media/presets/real_estate/services/valuation.jpg",
+        "tags": ["Kostenlos"]
+      },
+      {
+        "name_de": "Kapitalanlage",
+        "name_en": "Investment Property",
+        "name_ru": "Инвестиционная недвижимость",
+        "price": "auf Anfrage",
+        "desc_de": "Renditeoptimierte Immobilien für Investoren. Analyse, Auswahl, Due Diligence, Verwaltung.",
+        "desc_en": "Return-optimised properties for investors. Analysis, selection, due diligence, management.",
+        "desc_ru": "Оптимизированная по доходности недвижимость для инвесторов. Анализ, выбор, due diligence, управление.",
+        "image": "/media/presets/real_estate/services/investment.jpg",
+        "tags": ["Premium"]
+      },
+      {
+        "name_de": "Gewerbeimmobilien",
+        "name_en": "Commercial Properties",
+        "name_ru": "Коммерческая недвижимость",
+        "price": "auf Anfrage",
+        "desc_de": "Büros, Einzelhandel, Logistik, Hotels. Für Unternehmen und institutionelle Investoren.",
+        "desc_en": "Offices, retail, logistics, hotels. For companies and institutional investors.",
+        "desc_ru": "Офисы, розничная торговля, логистика, отели. Для компаний и институциональных инвесторов.",
+        "image": "/media/presets/real_estate/services/commercial.jpg",
+        "tags": []
       }
     ],
     "testimonials": [
       {
-        "name": "Family G.",
-        "text_en": "They found us a house in 2 weeks. Amazing service!",
-        "text_de": "Sie haben uns innerhalb von 2 Wochen ein Haus gefunden. Erstaunlicher Service!",
-        "text_ru": "Они нашли нам дом за 2 недели. Потрясающее обслуживание!",
+        "name": "Familie Schneider",
+        "location_de": "München-Bogenhausen",
+        "text_de": "Meridian hat uns unser Traumhaus gefunden — in einem Markt, der als unmöglich gilt. Christine hat uns durch jeden Schritt begleitet, war immer erreichbar und hat für uns verhandelt wie für sich selbst.",
+        "text_en": "Meridian found us our dream house — in a market considered impossible. Christine guided us through every step, was always reachable and negotiated for us as if for herself.",
+        "text_ru": "Meridian нашёл нам дом мечты — на рынке, который считается невозможным. Кристина сопровождала нас на каждом шагу, всегда была доступна и вела переговоры за нас как за себя.",
         "rating": 5,
-        "avatar": "/media/presets/real_estate/avatars/family.jpg"
+        "source": "Google",
+        "avatar": "/media/presets/real_estate/avatars/schneider.jpg"
+      },
+      {
+        "name": "Dr. Andreas K.",
+        "location_de": "München",
+        "text_de": "Ich habe meine Eigentumswohnung über Meridian verkauft — 12% über dem Schätzwert. Das professionelle Marketing und die diskrete Vermarktung haben den Unterschied gemacht.",
+        "text_en": "I sold my apartment through Meridian — 12% above the estimated value. The professional marketing and discreet handling made the difference.",
+        "text_ru": "Я продал свою квартиру через Meridian — на 12% выше оценочной стоимости. Профессиональный маркетинг и дискретное ведение сделали разницу.",
+        "rating": 5,
+        "source": "Google",
+        "avatar": "/media/presets/real_estate/avatars/andreas.jpg"
+      },
+      {
+        "name": "Investorengruppe Bayern",
+        "location_de": "München",
+        "text_de": "Wir arbeiten seit 8 Jahren mit Meridian für unser Immobilienportfolio. Zuverlässig, diskret, mit exzellentem Marktzugang. Für institutionelle Investoren die erste Adresse in München.",
+        "text_en": "We have been working with Meridian for 8 years for our property portfolio. Reliable, discreet, with excellent market access. The first address in Munich for institutional investors.",
+        "text_ru": "Мы работаем с Meridian 8 лет для нашего портфеля недвижимости. Надёжно, дискретно, с отличным доступом к рынку. Первый адрес в Мюнхене для институциональных инвесторов.",
+        "rating": 5,
+        "source": "Direktbewertung",
+        "avatar": "/media/presets/real_estate/avatars/investor.jpg"
+      }
+    ],
+    "faq": [
+      {
+        "q_de": "Wie hoch ist die Maklerprovision?",
+        "q_en": "How high is the broker's commission?",
+        "q_ru": "Каков размер комиссии брокера?",
+        "a_de": "Gemäß dem Gesetz zur Verteilung der Maklerkosten (seit 23.12.2020) teilen sich Käufer und Verkäufer die Provision. Unsere Provision beträgt jeweils 3,57% inkl. MwSt.",
+        "a_en": "According to the law on the distribution of broker costs (since 23.12.2020), buyers and sellers share the commission. Our commission is 3.57% each including VAT.",
+        "a_ru": "Согласно закону о распределении расходов на брокера (с 23.12.2020) покупатель и продавец делят комиссию. Наша комиссия составляет по 3,57% включая НДС."
+      },
+      {
+        "q_de": "Wie lange dauert ein Verkauf?",
+        "q_en": "How long does a sale take?",
+        "q_ru": "Сколько времени занимает продажа?",
+        "a_de": "Im Münchner Markt durchschnittlich 6–10 Wochen vom Auftrag bis zum Notartermin. Bei Premiumobjekten oft schneller durch unser Käufernetzwerk.",
+        "a_en": "In the Munich market, an average of 6–10 weeks from mandate to notary appointment. For premium properties often faster through our buyer network.",
+        "a_ru": "На мюнхенском рынке в среднем 6–10 недель от мандата до нотариуса. Для премиальных объектов часто быстрее через нашу сеть покупателей."
+      },
+      {
+        "q_de": "Bieten Sie auch Immobilienverwaltung an?",
+        "q_en": "Do you also offer property management?",
+        "q_ru": "Предлагаете ли вы управление недвижимостью?",
+        "a_de": "Ja, über unsere Partnergesellschaft Meridian Verwaltung GmbH bieten wir vollständige WEG- und Mietverwaltung an.",
+        "a_en": "Yes, through our partner company Meridian Verwaltung GmbH we offer complete condominium and rental management.",
+        "a_ru": "Да, через нашу партнёрскую компанию Meridian Verwaltung GmbH мы предлагаем полное управление кондоминиумом и арендой."
       }
     ],
     "contact": {
-      "address": "123 Main St, City",
-      "phone": "+1 234 567 890",
-      "email": "info@real_estate.com",
-      "hours_en": "Mon-Fri: 9:00 AM - 6:00 PM",
-      "hours_de": "Mo-Fr: 09:00 - 18:00 Uhr",
-      "hours_ru": "Пн-Пт: 09:00 - 18:00"
+      "address": "Maximilianstraße 35, 80539 München",
+      "phone": "+49 89 2244 6688",
+      "email": "info@meridian-immobilien.de",
+      "hours_de": "Mo–Fr: 09:00–18:00 Uhr · Sa: 10:00–14:00 Uhr · Termine außerhalb nach Vereinbarung",
+      "hours_en": "Mon–Fri: 9:00 AM–6:00 PM · Sat: 10:00 AM–2:00 PM · Appointments outside by arrangement",
+      "hours_ru": "Пн–Пт: 09:00–18:00 · Сб: 10:00–14:00 · Встречи вне рабочего времени по договорённости"
     },
-    "faq": [
-      {
-        "q_en": "How to start?",
-        "q_de": "Wie anfangen?",
-        "q_ru": "Как начать?",
-        "a_en": "Contact us today!",
-        "a_de": "Kontaktieren Sie uns!",
-        "a_ru": "Свяжитесь с нами!"
-      }
-    ]
-  },
-  "booking": {
-    "enabled": true,
-    "slots": ["09:00", "10:00", "14:00", "16:00"],
-    "duration": 60
+    "legal": {
+      "mabvNote_de": "Meridian Immobilien GmbH ist gemäß § 34c GewO zugelassen. Provision gemäß Gesetz über die Verteilung der Maklerkosten bei der Vermittlung von Kaufverträgen über Wohnungen und Einfamilienhäuser (MaklPrG) vom 23.12.2020.",
+      "priceNote_de": "Alle Preisangaben sind Richtwerte. Endpreise nach individueller Vereinbarung. Alle Preise inkl. MwSt.",
+      "privacyNote_de": "Ihre Daten werden gemäß DSGVO verarbeitet. Keine Weitergabe an Dritte ohne Ihre Zustimmung."
+    }
   },
   "logo": {
-    "text": "PRIME",
-    "tagline": "PROPERTY",
-    "font": "Georgia"
+    "text": "Meridian",
+    "tagline": "IMMOBILIEN · MÜNCHEN",
+    "font": "Cormorant Garamond",
+    "style": "text_serif"
+  },
+  "social": {
+    "instagram": "https://instagram.com/meridian.immobilien",
+    "facebook": "https://facebook.com/meridianimmobilienmuenchen",
+    "linkedin": "https://linkedin.com/company/meridian-immobilien"
   }
 }

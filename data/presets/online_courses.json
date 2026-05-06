@@ -4,7 +4,11 @@
     "description": "Learn new skills from industry experts. Flexible learning anytime, anywhere.",
     "favicon": "/media/presets/online_courses/favicon.ico",
     "language": "en",
-    "availableLanguages": ["en", "de", "ru"]
+    "availableLanguages": [
+      "en",
+      "de",
+      "ru"
+    ]
   },
   "design": {
     "preset": "online_courses",
@@ -62,9 +66,21 @@
   },
   "content": {
     "slogans": {
-      "en": ["Learn Without Limits", "Skill Up", "Future Ready"],
-      "de": ["Lernen ohne Grenzen", "Skill Up", "Zukunftsbereit"],
-      "ru": ["Учись без границ", "Прокачай навыки", "Готов к будущему"]
+      "en": [
+        "Learn Without Limits",
+        "Skill Up",
+        "Future Ready"
+      ],
+      "de": [
+        "Lernen ohne Grenzen",
+        "Skill Up",
+        "Zukunftsbereit"
+      ],
+      "ru": [
+        "Учись без границ",
+        "Прокачай навыки",
+        "Готов к будущему"
+      ]
     },
     "hero": {
       "en": {
@@ -75,13 +91,13 @@
       },
       "de": {
         "heading": "Lernen ohne Grenzen",
-        "subheading": "Lernen Sie neue Fähigkeiten von Branchenexperten. Flexibles Lernen jederzeit und überall.",
+        "subheading": "Learn new skills from industry experts. Flexible learning anytime, anywhere.",
         "cta": "Jetzt starten",
         "image": "/media/presets/online_courses/hero.jpg"
       },
       "ru": {
         "heading": "Учись без границ",
-        "subheading": "Учись новым навыкам от экспертов индустрии. Гибкое обучение в любое время и в любом месте.",
+        "subheading": "Learn new skills from industry experts. Flexible learning anytime, anywhere.",
         "cta": "Начать",
         "image": "/media/presets/online_courses/hero.jpg"
       }
@@ -97,7 +113,7 @@
       },
       "ru": {
         "title": "О нас",
-        "text": "Мы наделяем людей знаниями и навыками для продвижения по карьерной лестнице."
+        "text": "Мы наделяем людей знаниями для продвижения по карьерной лестнице."
       }
     },
     "services": [
@@ -122,8 +138,8 @@
       {
         "name": "Student A.",
         "text_en": "Changed my career path completely. Best investment ever.",
-        "text_de": "Hat meinen Karriereweg komplett verändert. Beste Investition ever.",
-        "text_ru": "Полностью изменил мой карьерный путь. Лучшая инвестиция.",
+        "text_de": "Changed my career path completely. Best investment ever.",
+        "text_ru": "Changed my career path completely. Best investment ever.",
         "rating": 5,
         "avatar": "/media/presets/online_courses/avatars/student.jpg"
       }
@@ -149,7 +165,12 @@
   },
   "booking": {
     "enabled": true,
-    "slots": ["09:00", "10:00", "14:00", "16:00"],
+    "slots": [
+      "09:00",
+      "10:00",
+      "14:00",
+      "16:00"
+    ],
     "duration": 60
   },
   "logo": {

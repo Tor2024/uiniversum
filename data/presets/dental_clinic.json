@@ -1,54 +1,54 @@
 {
   "meta": {
-    "title": "Bright Smile | Dental Clinic",
-    "description": "Modern dentistry with a gentle touch. Your smile is our priority.",
+    "title": "Zahnarztpraxis Dr. Müller | Moderne Zahnmedizin",
+    "description": "Moderne Zahnarztpraxis in Düsseldorf. Prophylaxe, Implantate, Ästhetische Zahnmedizin und Kinderzahnheilkunde. Angstpatienten willkommen. Jetzt Termin buchen.",
     "favicon": "/media/presets/dental_clinic/favicon.ico",
-    "language": "en",
-    "availableLanguages": ["en", "de", "ru"]
+    "language": "de",
+    "availableLanguages": ["de", "en", "ru"]
   },
   "design": {
     "preset": "dental_clinic",
     "tokens": {
-      "colorBackground": "#F0FFFF",
-      "colorSurface": "#FFFFFF",
-      "colorPrimary": "#40E0D0",
-      "colorSecondary": "#6C757D",
-      "colorBorder": "#DEE2E6",
-      "colorAccent": "#87CEEB",
-      "colorAccentHover": "#87CEEB",
-      "fontDisplay": "Quicksand",
-      "fontHeading": "Quicksand",
-      "fontBody": "Raleway",
-      "fontCaption": "Raleway",
-      "fontMono": "Roboto Mono",
-      "fontSizeDisplay": "72px",
-      "fontSizeHeading": "36px",
-      "fontSizeBody": "17px",
+      "colorBackground": "#FFFFFF",
+      "colorSurface": "#F8FBFF",
+      "colorPrimary": "#0A1628",
+      "colorSecondary": "#4A6080",
+      "colorBorder": "#D8E4F0",
+      "colorAccent": "#003087",
+      "colorAccentHover": "#004DB3",
+      "fontDisplay": "Inter",
+      "fontHeading": "Inter",
+      "fontBody": "Inter",
+      "fontCaption": "Inter",
+      "fontMono": "JetBrains Mono",
+      "fontSizeDisplay": "64px",
+      "fontSizeHeading": "32px",
+      "fontSizeBody": "16px",
       "lineHeightBody": "1.7",
       "lineHeightHeading": "1.3",
       "spacingUnit": "8px",
-      "spacingSection": "120px",
+      "spacingSection": "100px",
       "spacingElement": "24px",
-      "spacingCard": "32px",
-      "spacingButtonVertical": "16px",
-      "spacingButtonHorizontal": "32px",
+      "spacingCard": "28px",
+      "spacingButtonVertical": "14px",
+      "spacingButtonHorizontal": "28px",
       "maxWidthContent": "1200px",
-      "maxWidthText": "700px",
+      "maxWidthText": "680px",
       "gridColumns": "12",
-      "gridGutter": "30px",
+      "gridGutter": "28px",
       "horizontalPaddingMobile": "20px",
-      "horizontalPaddingTablet": "50px",
+      "horizontalPaddingTablet": "48px",
       "horizontalPaddingDesktop": "80px",
       "borderRadius": "8",
       "borderRadiusSmall": "4px",
       "borderRadiusMedium": "8px",
       "borderRadiusLarge": "16px",
       "shadowStyle": "soft",
-      "shadowResting": "0 4px 14px rgba(0,0,0,0.05)",
-      "shadowHover": "0 8px 24px rgba(0,0,0,0.1)",
+      "shadowResting": "0 2px 16px rgba(0,48,135,0.08)",
+      "shadowHover": "0 8px 32px rgba(0,48,135,0.14)",
       "transitionDuration": "200ms",
-      "transitionTiming": "ease-in-out",
-      "imageRatioHero": "21:9",
+      "transitionTiming": "ease-out",
+      "imageRatioHero": "16:9",
       "imageRatioCard": "4:3",
       "imageRatioAvatar": "1:1"
     },
@@ -58,103 +58,241 @@
     "ogImage": "/media/presets/dental_clinic/og-default.jpg",
     "twitterCard": "summary_large_image",
     "googleAnalyticsId": "",
-    "keywords": "dental, health, smile"
+    "keywords": "Zahnarzt Düsseldorf, Implantate, Prophylaxe, Ästhetische Zahnmedizin, Angstpatienten"
+  },
+  "layout": {
+    "style": "clean_minimal",
+    "heroType": "split_screen",
+    "navStyle": "light_professional",
+    "servicesLayout": "grid_3col",
+    "testimonialsLayout": "light_background",
+    "footerStyle": "professional_minimal"
   },
   "content": {
     "slogans": {
-      "en": ["Smile with Confidence", "Healthy Teeth", "Gentle Care"],
-      "de": ["Lächeln mit Vertrauen", "Gesunde Zähne", "Sanfte Pflege"],
-      "ru": ["Улыбайся с уверенностью", "Здоровые зубы", "Заботливое лечение"]
+      "de": ["Ihr Lächeln ist unsere Leidenschaft", "Moderne Zahnmedizin ohne Angst", "Für ein Leben lang gesunde Zähne"],
+      "en": ["Your smile is our passion", "Modern dentistry without fear", "For a lifetime of healthy teeth"],
+      "ru": ["Ваша улыбка — наша страсть", "Современная стоматология без страха", "Здоровые зубы на всю жизнь"]
     },
     "hero": {
-      "en": {
-        "heading": "Smile with Confidence",
-        "subheading": "Modern dentistry with a gentle touch. Your smile is our priority.",
-        "cta": "Get Started",
-        "image": "/media/presets/dental_clinic/hero.jpg"
-      },
       "de": {
-        "heading": "Lächeln mit Vertrauen",
-        "subheading": "Moderne Zahnmedizin mit sanfterm Touch. Ihr Lächeln ist unsere Priorität.",
-        "cta": "Jetzt starten",
-        "image": "/media/presets/dental_clinic/hero.jpg"
+        "heading": "Ihr Lächeln ist unsere Leidenschaft.",
+        "subheading": "Moderne Zahnmedizin auf höchstem Niveau — einfühlsam, schmerzarm und transparent. Angstpatienten sind bei uns besonders willkommen.",
+        "cta": "Termin buchen",
+        "secondaryCta": "Leistungen ansehen",
+        "image": "/media/presets/dental_clinic/hero.jpg",
+        "imageAlt": "Moderne Zahnarztpraxis mit freundlichem Team"
+      },
+      "en": {
+        "heading": "Your smile is our passion.",
+        "subheading": "Modern dentistry at the highest level — empathetic, low-pain and transparent. Anxious patients are especially welcome with us.",
+        "cta": "Book Appointment",
+        "secondaryCta": "View Services",
+        "image": "/media/presets/dental_clinic/hero.jpg",
+        "imageAlt": "Modern dental practice with friendly team"
       },
       "ru": {
-        "heading": "Улыбайся с уверенностью",
-        "subheading": "Современная стоматология с деликатным подходом. Ваша улыбка — наш приоритет.",
-        "cta": "Начать",
-        "image": "/media/presets/dental_clinic/hero.jpg"
+        "heading": "Ваша улыбка — наша страсть.",
+        "subheading": "Современная стоматология на высшем уровне — чуткая, малоболезненная и прозрачная. Пациентам с тревожностью у нас особенно рады.",
+        "cta": "Записаться",
+        "secondaryCta": "Наши услуги",
+        "image": "/media/presets/dental_clinic/hero.jpg",
+        "imageAlt": "Современная стоматологическая клиника с дружелюбной командой"
       }
     },
     "about": {
-      "en": {
-        "title": "About Us",
-        "text": "Using the latest technology to provide painless and effective dental treatments."
-      },
       "de": {
-        "title": "Über uns",
-        "text": "Modernste Technologie für schmerzfreie Behandlungen."
+        "title": "Zahnmedizin mit Herz und Verstand",
+        "subtitle": "Seit 2005 in Düsseldorf-Pempelfort",
+        "text": "Dr. Sarah Müller gründete die Praxis 2005 mit einer klaren Vision: Zahnmedizin, die nicht Angst macht, sondern Vertrauen schafft. Unser Team aus sechs Zahnärzten und zwölf Fachkräften behandelt jährlich über 3.000 Patienten — von Kleinkindern bis Senioren. Modernste Technologie (3D-Röntgen, Laser, CAD/CAM) trifft auf menschliche Wärme.",
+        "image": "/media/presets/dental_clinic/about.jpg",
+        "imageAlt": "Dr. Sarah Müller und ihr Team",
+        "stats": [
+          { "value": "19", "label": "Jahre Erfahrung" },
+          { "value": "6", "label": "Zahnärzte" },
+          { "value": "3.000+", "label": "Patienten/Jahr" }
+        ]
+      },
+      "en": {
+        "title": "Dentistry with Heart and Mind",
+        "subtitle": "Since 2005 in Düsseldorf-Pempelfort",
+        "text": "Dr. Sarah Müller founded the practice in 2005 with a clear vision: dentistry that does not cause fear but builds trust. Our team of six dentists and twelve specialists treats over 3,000 patients annually — from toddlers to seniors. State-of-the-art technology (3D X-ray, laser, CAD/CAM) meets human warmth.",
+        "image": "/media/presets/dental_clinic/about.jpg",
+        "imageAlt": "Dr. Sarah Müller and her team",
+        "stats": [
+          { "value": "19", "label": "Years of experience" },
+          { "value": "6", "label": "Dentists" },
+          { "value": "3,000+", "label": "Patients/year" }
+        ]
       },
       "ru": {
-        "title": "О нас",
-        "text": "Используем новейшие технологии для безболезненного и эффективного лечения зубов."
+        "title": "Стоматология с сердцем и умом",
+        "subtitle": "С 2005 года в Дюссельдорф-Пемпельфорте",
+        "text": "Доктор Сара Мюллер основала практику в 2005 году с чёткой миссией: стоматология, которая не вызывает страха, а создаёт доверие. Наша команда из шести стоматологов и двенадцати специалистов ежегодно лечит более 3000 пациентов — от малышей до пожилых людей.",
+        "image": "/media/presets/dental_clinic/about.jpg",
+        "imageAlt": "Доктор Сара Мюллер и её команда",
+        "stats": [
+          { "value": "19", "label": "Лет опыта" },
+          { "value": "6", "label": "Стоматологов" },
+          { "value": "3.000+", "label": "Пациентов/год" }
+        ]
       }
     },
     "services": [
       {
-        "name_en": "Teeth Whitening",
-        "name_de": "Zahnaufhellung",
-        "name_ru": "Отбеливание",
-        "price": "$300",
-        "desc_en": "Brighten your smile in an hour.",
-        "image": "/media/presets/dental_clinic/services/whiten.jpg"
+        "name_de": "Prophylaxe & Reinigung",
+        "name_en": "Prophylaxis & Cleaning",
+        "name_ru": "Профилактика и чистка",
+        "price": "ab 80€",
+        "desc_de": "Professionelle Zahnreinigung, Kariesvorsorge, Ernährungsberatung. Empfohlen 2× jährlich.",
+        "desc_en": "Professional teeth cleaning, caries prevention, nutritional advice. Recommended twice yearly.",
+        "desc_ru": "Профессиональная чистка зубов, профилактика кариеса, консультация по питанию. Рекомендуется 2 раза в год.",
+        "image": "/media/presets/dental_clinic/services/prophylaxis.jpg",
+        "tags": ["Empfehlung"]
       },
       {
-        "name_en": "Check-up",
-        "name_de": "Check-up",
-        "name_ru": "Осмотр",
-        "price": "$80",
-        "desc_en": "Regular dental health monitoring.",
-        "image": "/media/presets/dental_clinic/services/checkup.jpg"
+        "name_de": "Implantate",
+        "name_en": "Implants",
+        "name_ru": "Импланты",
+        "price": "ab 1.200€",
+        "desc_de": "Hochwertige Titan-Implantate, 3D-Planung, sofortige Belastung möglich. 10 Jahre Garantie.",
+        "desc_en": "High-quality titanium implants, 3D planning, immediate loading possible. 10-year guarantee.",
+        "desc_ru": "Высококачественные титановые импланты, 3D-планирование, возможна немедленная нагрузка. Гарантия 10 лет.",
+        "image": "/media/presets/dental_clinic/services/implants.jpg",
+        "tags": ["Premium"]
+      },
+      {
+        "name_de": "Ästhetische Zahnmedizin",
+        "name_en": "Aesthetic Dentistry",
+        "name_ru": "Эстетическая стоматология",
+        "price": "ab 300€",
+        "desc_de": "Bleaching, Veneers, Keramikkronen. Für ein strahlendes, natürliches Lächeln.",
+        "desc_en": "Bleaching, veneers, ceramic crowns. For a radiant, natural smile.",
+        "desc_ru": "Отбеливание, виниры, керамические коронки. Для сияющей, естественной улыбки.",
+        "image": "/media/presets/dental_clinic/services/aesthetic.jpg",
+        "tags": ["Beliebt"]
+      },
+      {
+        "name_de": "Kinderzahnheilkunde",
+        "name_en": "Paediatric Dentistry",
+        "name_ru": "Детская стоматология",
+        "price": "ab 40€",
+        "desc_de": "Einfühlsame Behandlung für Kinder ab 1 Jahr. Spielecke, Belohnungssystem, keine Angst.",
+        "desc_en": "Empathetic treatment for children from age 1. Play corner, reward system, no fear.",
+        "desc_ru": "Чуткое лечение детей с 1 года. Игровой уголок, система поощрений, без страха.",
+        "image": "/media/presets/dental_clinic/services/kids.jpg",
+        "tags": ["Kinder"]
+      },
+      {
+        "name_de": "Angstpatienten",
+        "name_en": "Anxious Patients",
+        "name_ru": "Пациенты с тревожностью",
+        "price": "auf Anfrage",
+        "desc_de": "Behandlung unter Lachgas oder Dämmerschlaf. Einfühlsames Team, keine Hektik, kein Druck.",
+        "desc_en": "Treatment under laughing gas or twilight sleep. Empathetic team, no rush, no pressure.",
+        "desc_ru": "Лечение под закисью азота или в состоянии полусна. Чуткая команда, без спешки, без давления.",
+        "image": "/media/presets/dental_clinic/services/anxiety.jpg",
+        "tags": ["Spezial"]
+      },
+      {
+        "name_de": "Notfallbehandlung",
+        "name_en": "Emergency Treatment",
+        "name_ru": "Экстренная помощь",
+        "price": "ab 60€",
+        "desc_de": "Zahnschmerzen? Wir reservieren täglich Notfalltermine. Anruf genügt.",
+        "desc_en": "Toothache? We reserve emergency appointments daily. Just call.",
+        "desc_ru": "Зубная боль? Мы ежедневно резервируем экстренные приёмы. Просто позвоните.",
+        "image": "/media/presets/dental_clinic/services/emergency.jpg",
+        "tags": ["Notfall"]
       }
     ],
     "testimonials": [
       {
-        "name": "Patient K.",
-        "text_en": "The dentist was so gentle, I actually fell asleep!",
-        "text_de": "Der Zahnarzt war so sanft, ich bin tatsächlich eingeschlafen!",
-        "text_ru": "Врач был таким деликатным, что я даже уснул!",
+        "name": "Claudia R.",
+        "location_de": "Düsseldorf",
+        "text_de": "Als extreme Angstpatientin habe ich jahrelang den Zahnarzt gemieden. Dr. Müller hat das geändert. Die Behandlung unter Lachgas war entspannt, das Team unglaublich einfühlsam. Ich komme jetzt regelmäßig.",
+        "text_en": "As an extreme anxiety patient I avoided the dentist for years. Dr. Müller changed that. The treatment under laughing gas was relaxed, the team incredibly empathetic. I now come regularly.",
+        "text_ru": "Как пациент с сильной тревожностью я годами избегала стоматолога. Доктор Мюллер изменила это. Лечение под закисью азота было расслабленным, команда невероятно чуткой. Теперь хожу регулярно.",
         "rating": 5,
-        "avatar": "/media/presets/dental_clinic/avatars/patient.jpg"
+        "source": "Google",
+        "avatar": "/media/presets/dental_clinic/avatars/claudia.jpg"
+      },
+      {
+        "name": "Peter H.",
+        "location_de": "Düsseldorf-Pempelfort",
+        "text_de": "Implantat-Behandlung auf höchstem Niveau. Die 3D-Planung hat mir gezeigt, was mich erwartet. Kein Schmerz, perfektes Ergebnis. Das Implantat sitzt wie ein echter Zahn.",
+        "text_en": "Implant treatment at the highest level. The 3D planning showed me what to expect. No pain, perfect result. The implant sits like a real tooth.",
+        "text_ru": "Имплантация на высшем уровне. 3D-планирование показало мне, чего ожидать. Никакой боли, идеальный результат. Имплант сидит как настоящий зуб.",
+        "rating": 5,
+        "source": "Google",
+        "avatar": "/media/presets/dental_clinic/avatars/peter.jpg"
+      },
+      {
+        "name": "Familie Weber",
+        "location_de": "Düsseldorf",
+        "text_de": "Unsere drei Kinder lieben Dr. Müller. Das ist kein Witz — sie freuen sich auf den Zahnarzt. Die Spielecke, die Geduld des Teams und die Belohnungen machen den Unterschied.",
+        "text_en": "Our three children love Dr. Müller. That is no joke — they look forward to the dentist. The play corner, the team's patience and the rewards make the difference.",
+        "text_ru": "Наши трое детей обожают доктора Мюллер. Это не шутка — они с нетерпением ждут похода к стоматологу. Игровой уголок, терпение команды и поощрения делают разницу.",
+        "rating": 5,
+        "source": "Google",
+        "avatar": "/media/presets/dental_clinic/avatars/weber.jpg"
+      }
+    ],
+    "faq": [
+      {
+        "q_de": "Nehmen Sie Kassenpatienten an?",
+        "q_en": "Do you accept statutory health insurance patients?",
+        "q_ru": "Принимаете ли вы пациентов с государственной страховкой?",
+        "a_de": "Ja, wir behandeln sowohl Kassen- als auch Privatpatienten. Alle gesetzlichen Leistungen werden erbracht.",
+        "a_en": "Yes, we treat both statutory and private health insurance patients. All statutory services are provided.",
+        "a_ru": "Да, мы лечим как пациентов с государственной, так и с частной страховкой. Все законные услуги предоставляются."
+      },
+      {
+        "q_de": "Wie schnell bekomme ich einen Termin?",
+        "q_en": "How quickly can I get an appointment?",
+        "q_ru": "Как быстро можно получить приём?",
+        "a_de": "Routinetermine innerhalb von 1–2 Wochen. Notfälle werden täglich eingeschoben — rufen Sie einfach an.",
+        "a_en": "Routine appointments within 1–2 weeks. Emergencies are fitted in daily — just call.",
+        "a_ru": "Плановые приёмы в течение 1–2 недель. Экстренные случаи вставляются ежедневно — просто позвоните."
+      },
+      {
+        "q_de": "Bieten Sie Ratenzahlung an?",
+        "q_en": "Do you offer payment in instalments?",
+        "q_ru": "Предлагаете ли вы рассрочку?",
+        "a_de": "Ja, für größere Behandlungen (Implantate, Veneers) bieten wir zinsfreie Ratenzahlung über 12–24 Monate an.",
+        "a_en": "Yes, for larger treatments (implants, veneers) we offer interest-free instalments over 12–24 months.",
+        "a_ru": "Да, для крупных процедур (импланты, виниры) мы предлагаем беспроцентную рассрочку на 12–24 месяца."
       }
     ],
     "contact": {
-      "address": "123 Main St, City",
-      "phone": "+1 234 567 890",
-      "email": "info@dental_clinic.com",
-      "hours_en": "Mon-Fri: 9:00 AM - 6:00 PM",
-      "hours_de": "Mo-Fr: 09:00 - 18:00 Uhr",
-      "hours_ru": "Пн-Пт: 09:00 - 18:00"
+      "address": "Pempelforter Straße 55, 40211 Düsseldorf-Pempelfort",
+      "phone": "+49 211 3344 5566",
+      "email": "termin@zahnarzt-mueller-duesseldorf.de",
+      "hours_de": "Mo–Do: 08:00–18:00 Uhr · Fr: 08:00–14:00 Uhr · Sa: Notfälle nach Vereinbarung",
+      "hours_en": "Mon–Thu: 8:00 AM–6:00 PM · Fri: 8:00 AM–2:00 PM · Sat: Emergencies by arrangement",
+      "hours_ru": "Пн–Чт: 08:00–18:00 · Пт: 08:00–14:00 · Сб: Экстренные случаи по договорённости"
     },
-    "faq": [
-      {
-        "q_en": "How to start?",
-        "q_de": "Wie anfangen?",
-        "q_ru": "Как начать?",
-        "a_en": "Contact us today!",
-        "a_de": "Kontaktieren Sie uns!",
-        "a_ru": "Свяжитесь с нами!"
-      }
-    ]
+    "legal": {
+      "priceNote_de": "Alle Preise sind Richtpreise. Endpreise nach Befund und Behandlungsplan. Kassenpatienten: gesetzliche Leistungen gemäß BEMA. Privatpatienten: Abrechnung nach GOZ.",
+      "privacyNote_de": "Ihre Gesundheitsdaten werden gemäß DSGVO und ärztlicher Schweigepflicht streng vertraulich behandelt.",
+      "hwgNote_de": "Diese Praxis unterliegt dem Heilmittelwerbegesetz (HWG). Alle Aussagen zu Behandlungsergebnissen sind individuelle Erfahrungsberichte."
+    }
   },
   "booking": {
     "enabled": true,
-    "slots": ["09:00", "10:00", "14:00", "16:00"],
-    "duration": 60
+    "slots": ["08:00", "08:30", "09:00", "09:30", "10:00", "10:30", "11:00", "14:00", "14:30", "15:00", "15:30", "16:00", "16:30", "17:00"],
+    "duration": 30,
+    "maxGuests": 1,
+    "note_de": "Bitte Versicherungskarte und ggf. Röntgenbilder mitbringen."
   },
   "logo": {
-    "text": "BRIGHT",
-    "tagline": "SMILE",
-    "font": "Quicksand"
+    "text": "Dr. Müller",
+    "tagline": "ZAHNARZTPRAXIS · DÜSSELDORF",
+    "font": "Inter",
+    "style": "text_professional"
+  },
+  "social": {
+    "instagram": "https://instagram.com/zahnarzt.mueller.duesseldorf",
+    "facebook": "https://facebook.com/zahnarztmuellerduesseldorf"
   }
 }

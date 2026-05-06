@@ -484,24 +484,47 @@ export default async function PresetsPage() {
                   </span>
                 </div>
 
-                {/* Apply button */}
-                <form action="/api/clone-preset" method="POST">
-                  <input type="hidden" name="presetId" value={p.id} />
-                  <button type="submit" style={{
-                    width: '100%',
-                    padding: '10px',
-                    background: p.accent,
-                    color: '#fff',
-                    border: 'none',
-                    borderRadius: '8px',
-                    fontSize: '13px',
-                    fontWeight: 700,
-                    cursor: 'pointer',
-                    letterSpacing: '0.2px',
-                  }}>
-                    Применить шаблон →
-                  </button>
-                </form>
+                {/* Buttons */}
+                <div style={{ display: 'flex', gap: '8px' }}>
+                  <a
+                    href={`/de/preview/${p.id}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{
+                      flex: 1,
+                      padding: '10px',
+                      background: 'transparent',
+                      color: p.accent,
+                      border: `1.5px solid ${p.accent}`,
+                      borderRadius: '8px',
+                      fontSize: '13px',
+                      fontWeight: 600,
+                      cursor: 'pointer',
+                      textAlign: 'center',
+                      textDecoration: 'none',
+                      display: 'block',
+                    }}
+                  >
+                    👁 Vorschau
+                  </a>
+                  <form action="/api/clone-preset" method="POST" style={{ flex: 1 }}>
+                    <input type="hidden" name="presetId" value={p.id} />
+                    <button type="submit" style={{
+                      width: '100%',
+                      padding: '10px',
+                      background: p.accent,
+                      color: '#fff',
+                      border: 'none',
+                      borderRadius: '8px',
+                      fontSize: '13px',
+                      fontWeight: 700,
+                      cursor: 'pointer',
+                      letterSpacing: '0.2px',
+                    }}>
+                      Применить →
+                    </button>
+                  </form>
+                </div>
               </div>
             </div>
           )

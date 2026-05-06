@@ -1,160 +1,304 @@
 {
   "meta": {
-    "title": "Glow Up Beauty | Premium Salon",
-    "description": "Hair, makeup, and skincare services to make you look and feel beautiful.",
-    "favicon": "/media/presets/beauty/favicon.ico",
-    "language": "en",
-    "availableLanguages": ["en", "de", "ru"]
+    "title": "Lumière Beauty | Premium Salon",
+    "description": "Ihr Premium-Schönheitssalon in München. Haare, Make-up, Nägel und Hautpflege von zertifizierten Expertinnen. Jetzt Termin buchen.",
+    "favicon": "/media/presets/beauty_salon/favicon.ico",
+    "language": "de",
+    "availableLanguages": ["de", "en", "ru"]
   },
   "design": {
     "preset": "beauty_salon",
     "tokens": {
-      "colorBackground": "#FFF0F5",
-      "colorSurface": "#FFFFFF",
-      "colorPrimary": "#D63384",
-      "colorSecondary": "#E75480",
-      "colorBorder": "#F8C8DC",
-      "colorAccent": "#FFB6C1",
-      "colorAccentHover": "#FF69B4",
-      "fontDisplay": "Dancing Script",
-      "fontHeading": "Dancing Script",
+      "colorBackground": "#FDFCFB",
+      "colorSurface": "#FFF5F5",
+      "colorPrimary": "#2D1B1B",
+      "colorSecondary": "#8B6B6B",
+      "colorBorder": "#F0E0E0",
+      "colorAccent": "#D4A0A0",
+      "colorAccentHover": "#C08080",
+      "fontDisplay": "Cormorant Garamond",
+      "fontHeading": "Raleway",
       "fontBody": "Raleway",
       "fontCaption": "Raleway",
       "fontMono": "Roboto Mono",
-      "fontSizeDisplay": "70px",
+      "fontSizeDisplay": "76px",
       "fontSizeHeading": "34px",
       "fontSizeBody": "16px",
-      "lineHeightBody": "1.7",
+      "lineHeightBody": "1.8",
       "lineHeightHeading": "1.3",
       "spacingUnit": "8px",
       "spacingSection": "120px",
       "spacingElement": "24px",
-      "spacingCard": "30px",
-      "spacingButtonVertical": "14px",
-      "spacingButtonHorizontal": "32px",
-      "maxWidthContent": "1100px",
+      "spacingCard": "32px",
+      "spacingButtonVertical": "16px",
+      "spacingButtonHorizontal": "36px",
+      "maxWidthContent": "1200px",
       "maxWidthText": "680px",
       "gridColumns": "12",
       "gridGutter": "28px",
       "horizontalPaddingMobile": "20px",
-      "horizontalPaddingTablet": "45px",
+      "horizontalPaddingTablet": "48px",
       "horizontalPaddingDesktop": "80px",
       "borderRadius": "20",
       "borderRadiusSmall": "10px",
-      "borderRadiusMedium": "15px",
-      "borderRadiusLarge": "25px",
+      "borderRadiusMedium": "20px",
+      "borderRadiusLarge": "32px",
       "shadowStyle": "soft",
-      "shadowResting": "0 4px 15px rgba(214,51,132,0.1)",
-      "shadowHover": "0 8px 25px rgba(214,51,132,0.15)",
-      "transitionDuration": "200ms",
-      "transitionTiming": "ease-in-out",
+      "shadowResting": "0 4px 24px rgba(212,160,160,0.12)",
+      "shadowHover": "0 12px 40px rgba(212,160,160,0.22)",
+      "transitionDuration": "250ms",
+      "transitionTiming": "ease-out",
       "imageRatioHero": "16:9",
-      "imageRatioCard": "4:3",
+      "imageRatioCard": "3:4",
       "imageRatioAvatar": "1:1"
     },
     "customCss": ""
   },
   "seo": {
-    "ogImage": "/media/presets/beauty/og-default.jpg",
+    "ogImage": "/media/presets/beauty_salon/og-default.jpg",
     "twitterCard": "summary_large_image",
     "googleAnalyticsId": "",
-    "keywords": "beauty, salon, makeup"
+    "keywords": "Beauty Salon München, Haare, Make-up, Nägel, Hautpflege, Termin buchen"
+  },
+  "layout": {
+    "style": "clean_minimal",
+    "heroType": "split_screen",
+    "navStyle": "light_rose",
+    "servicesLayout": "grid_3col_with_price",
+    "testimonialsLayout": "light_background",
+    "footerStyle": "light_elegant"
   },
   "content": {
     "slogans": {
-      "en": ["Feel Beautiful", "Unleash Your Glow", "Expert Care"],
-      "de": ["Fühl dich schön", "Entfessle deinen Glow", "Expertinpflege"],
-      "ru": ["Почувствуй красоту", "Раскрой свое сияние", "Экспертный уход"]
+      "de": ["Schönheit, die von innen strahlt", "Ihr Moment der Verwöhnung", "Expertinnen für Ihre Schönheit"],
+      "en": ["Beauty that radiates from within", "Your moment of indulgence", "Experts for your beauty"],
+      "ru": ["Красота, которая сияет изнутри", "Ваш момент удовольствия", "Эксперты вашей красоты"]
     },
     "hero": {
-      "en": {
-        "heading": "Feel Beautiful",
-        "subheading": "Hair, makeup, and skincare services to make you look and feel beautiful.",
-        "cta": "Book Appointment",
-        "image": "/media/presets/beauty/hero.jpg"
-      },
       "de": {
-        "heading": "Fühl dich schön",
-        "subheading": "Haar-, Make-up- und Hautpflege, die dich strahlen lässt.",
+        "heading": "Schönheit, die von innen strahlt.",
+        "subheading": "Lumière Beauty vereint Wissenschaft und Ästhetik. Unsere zertifizierten Expertinnen begleiten Sie auf Ihrem Weg zu Ihrer schönsten Version.",
         "cta": "Termin buchen",
-        "image": "/media/presets/beauty/hero.jpg"
+        "secondaryCta": "Leistungen entdecken",
+        "image": "/media/presets/beauty_salon/hero.jpg",
+        "imageAlt": "Eleganter Schönheitssalon mit warmem Licht"
+      },
+      "en": {
+        "heading": "Beauty that radiates from within.",
+        "subheading": "Lumière Beauty combines science and aesthetics. Our certified experts guide you on your journey to your most beautiful self.",
+        "cta": "Book Appointment",
+        "secondaryCta": "Discover Services",
+        "image": "/media/presets/beauty_salon/hero.jpg",
+        "imageAlt": "Elegant beauty salon with warm lighting"
       },
       "ru": {
-        "heading": "Почувствуй красоту",
-        "subheading": "Услуги по уходу за волосами, макияжу и коже, чтобы вы выглядели и чувствовали себя прекрасно.",
+        "heading": "Красота, которая сияет изнутри.",
+        "subheading": "Lumière Beauty объединяет науку и эстетику. Наши сертифицированные эксперты сопровождают вас на пути к вашей лучшей версии.",
         "cta": "Записаться",
-        "image": "/media/presets/beauty/hero.jpg"
+        "secondaryCta": "Наши услуги",
+        "image": "/media/presets/beauty_salon/hero.jpg",
+        "imageAlt": "Элегантный салон красоты с тёплым освещением"
       }
     },
     "about": {
-      "en": {
-        "title": "Our Mission",
-        "text": "Our mission is to enhance your natural beauty with top-quality products and expert stylists."
-      },
       "de": {
-        "title": "Unsere Mission",
-        "text": "Unsere Mission ist es, Ihre natürliche Schönheit mit erstklassigen Produkten und Expertinpflege zu betonen."
+        "title": "Schönheit mit Seele",
+        "subtitle": "Seit 2012 in München-Schwabing",
+        "text": "Lumière Beauty entstand aus der Überzeugung, dass wahre Schönheit Pflege, Zeit und Expertise verdient. Unsere Gründerin Marie-Claire Hoffmann, ausgebildet in Paris und London, hat ein Team von zwölf Spezialistinnen aufgebaut, die jeden Besuch zu einem persönlichen Erlebnis machen. Wir arbeiten ausschließlich mit zertifizierten, tierversuchsfreien Produkten.",
+        "image": "/media/presets/beauty_salon/about.jpg",
+        "imageAlt": "Innenansicht des Lumière Beauty Salons",
+        "stats": [
+          { "value": "12", "label": "Jahre Erfahrung" },
+          { "value": "12", "label": "Spezialistinnen" },
+          { "value": "8.000+", "label": "Zufriedene Kundinnen" }
+        ]
+      },
+      "en": {
+        "title": "Beauty with Soul",
+        "subtitle": "Since 2012 in Munich-Schwabing",
+        "text": "Lumière Beauty was born from the conviction that true beauty deserves care, time and expertise. Our founder Marie-Claire Hoffmann, trained in Paris and London, has built a team of twelve specialists who make every visit a personal experience. We work exclusively with certified, cruelty-free products.",
+        "image": "/media/presets/beauty_salon/about.jpg",
+        "imageAlt": "Interior of Lumière Beauty Salon",
+        "stats": [
+          { "value": "12", "label": "Years of experience" },
+          { "value": "12", "label": "Specialists" },
+          { "value": "8,000+", "label": "Happy clients" }
+        ]
       },
       "ru": {
-        "title": "Наша миссия",
-        "text": "Наша миссия — подчеркнуть вашу природную красоту с помощью качественных продуктов и экспертного ухода."
+        "title": "Красота с душой",
+        "subtitle": "С 2012 года в Мюнхен-Швабинге",
+        "text": "Lumière Beauty родился из убеждения, что настоящая красота заслуживает ухода, времени и экспертизы. Наша основательница Мари-Клер Хоффманн, обученная в Париже и Лондоне, создала команду из двенадцати специалистов, которые делают каждый визит личным опытом. Мы работаем исключительно с сертифицированными продуктами без тестирования на животных.",
+        "image": "/media/presets/beauty_salon/about.jpg",
+        "imageAlt": "Интерьер салона Lumière Beauty",
+        "stats": [
+          { "value": "12", "label": "Лет опыта" },
+          { "value": "12", "label": "Специалистов" },
+          { "value": "8.000+", "label": "Довольных клиентов" }
+        ]
       }
     },
     "services": [
       {
-        "name_en": "Hair Styling",
-        "name_de": "Haarstyling",
-        "name_ru": "Укладка волос",
-        "price": "$80",
-        "desc_en": "Cut, color, and style.",
-        "image": "/media/presets/beauty/services/hair.jpg"
+        "name_de": "Haarpflege & Styling",
+        "name_en": "Hair Care & Styling",
+        "name_ru": "Уход за волосами и укладка",
+        "price": "ab 65€",
+        "duration_de": "60–120 Min.",
+        "desc_de": "Schnitt, Farbe, Balayage, Keratin-Behandlung. Maßgeschneidert für Ihren Haartyp.",
+        "desc_en": "Cut, colour, balayage, keratin treatment. Tailored to your hair type.",
+        "desc_ru": "Стрижка, окрашивание, балаяж, кератиновое выпрямление. Подобрано под ваш тип волос.",
+        "image": "/media/presets/beauty_salon/services/hair.jpg",
+        "tags": ["Beliebt"]
       },
       {
-        "name_en": "Makeup Application",
-        "name_de": "Make-up",
-        "name_ru": "Макияж",
-        "price": "$60",
-        "desc_en": "Bridal and evening makeup.",
-        "image": "/media/presets/beauty/services/makeup.jpg"
+        "name_de": "Gesichtspflege & Peeling",
+        "name_en": "Facial & Peeling",
+        "name_ru": "Уход за лицом и пилинг",
+        "price": "ab 85€",
+        "duration_de": "60–90 Min.",
+        "desc_de": "Tiefenreinigung, Hyaluron-Infusion, chemisches Peeling. Für strahlende Haut.",
+        "desc_en": "Deep cleansing, hyaluronic infusion, chemical peel. For radiant skin.",
+        "desc_ru": "Глубокое очищение, гиалуроновая инфузия, химический пилинг. Для сияющей кожи.",
+        "image": "/media/presets/beauty_salon/services/facial.jpg",
+        "tags": ["Premium"]
+      },
+      {
+        "name_de": "Maniküre & Nägel",
+        "name_en": "Manicure & Nails",
+        "name_ru": "Маникюр и ногти",
+        "price": "ab 45€",
+        "duration_de": "45–75 Min.",
+        "desc_de": "Klassische Maniküre, Gel-Nägel, Nail Art. Langanhaltende Ergebnisse.",
+        "desc_en": "Classic manicure, gel nails, nail art. Long-lasting results.",
+        "desc_ru": "Классический маникюр, гель-ногти, нейл-арт. Долговременный результат.",
+        "image": "/media/presets/beauty_salon/services/nails.jpg",
+        "tags": []
+      },
+      {
+        "name_de": "Braut-Paket",
+        "name_en": "Bridal Package",
+        "name_ru": "Свадебный пакет",
+        "price": "ab 280€",
+        "duration_de": "3–4 Std.",
+        "desc_de": "Haare, Make-up und Nägel für Ihren besonderen Tag. Inklusive Probe-Termin.",
+        "desc_en": "Hair, make-up and nails for your special day. Including trial appointment.",
+        "desc_ru": "Волосы, макияж и ногти для вашего особого дня. Включая пробный визит.",
+        "image": "/media/presets/beauty_salon/services/bridal.jpg",
+        "tags": ["Beliebt", "Paket"]
+      },
+      {
+        "name_de": "Wimpern & Brauen",
+        "name_en": "Lashes & Brows",
+        "name_ru": "Ресницы и брови",
+        "price": "ab 55€",
+        "duration_de": "45–90 Min.",
+        "desc_de": "Wimpernverlängerung, Laminierung, Microblading. Für ausdrucksstarke Augen.",
+        "desc_en": "Lash extensions, lamination, microblading. For expressive eyes.",
+        "desc_ru": "Наращивание ресниц, ламинирование, микроблейдинг. Для выразительных глаз.",
+        "image": "/media/presets/beauty_salon/services/lashes.jpg",
+        "tags": ["Trend"]
+      },
+      {
+        "name_de": "Make-up & Styling",
+        "name_en": "Make-up & Styling",
+        "name_ru": "Макияж и стайлинг",
+        "price": "ab 75€",
+        "duration_de": "60 Min.",
+        "desc_de": "Tages-, Abend- und Event-Make-up. Mit professionellen Produkten von Charlotte Tilbury.",
+        "desc_en": "Day, evening and event make-up. With professional products by Charlotte Tilbury.",
+        "desc_ru": "Дневной, вечерний и событийный макияж. С профессиональными продуктами Charlotte Tilbury.",
+        "image": "/media/presets/beauty_salon/services/makeup.jpg",
+        "tags": []
       }
     ],
     "testimonials": [
       {
-        "name": "Sophia R.",
-        "text_en": "Best salon in town, my hair has never looked better!",
-        "text_de": "Best salon in town, my hair has never looked better!",
-        "text_ru": "Best salon in town, my hair has never looked better!",
+        "name": "Laura M.",
+        "location_de": "München",
+        "text_de": "Lumière ist mein Wohlfühlort. Marie-Claire und ihr Team verstehen genau, was ich möchte — und liefern jedes Mal mehr als erwartet. Die Balayage-Behandlung hat mein Haar komplett transformiert.",
+        "text_en": "Lumière is my happy place. Marie-Claire and her team understand exactly what I want — and deliver more than expected every time. The balayage treatment completely transformed my hair.",
+        "text_ru": "Lumière — моё место счастья. Мари-Клер и её команда точно понимают, чего я хочу — и каждый раз превосходят ожидания. Балаяж полностью преобразил мои волосы.",
         "rating": 5,
-        "avatar": "/media/presets/beauty/avatars/sophia.jpg"
+        "source": "Google",
+        "avatar": "/media/presets/beauty_salon/avatars/laura.jpg"
+      },
+      {
+        "name": "Sophie K.",
+        "location_de": "München-Schwabing",
+        "text_de": "Für meine Hochzeit war Lumière die beste Wahl. Das Braut-Paket war perfekt organisiert, der Probe-Termin hat mir so viel Sicherheit gegeben. Ich habe mich wie eine Prinzessin gefühlt.",
+        "text_en": "For my wedding, Lumière was the best choice. The bridal package was perfectly organised, the trial appointment gave me so much confidence. I felt like a princess.",
+        "text_ru": "Для свадьбы Lumière был лучшим выбором. Свадебный пакет был идеально организован, пробный визит дал мне уверенность. Я чувствовала себя принцессой.",
+        "rating": 5,
+        "source": "Google",
+        "avatar": "/media/presets/beauty_salon/avatars/sophie.jpg"
+      },
+      {
+        "name": "Anna B.",
+        "location_de": "München",
+        "text_de": "Die Gesichtsbehandlung mit Hyaluron war ein Erlebnis. Meine Haut strahlt seit Wochen. Das Team ist professionell, herzlich und nimmt sich wirklich Zeit für jeden Kunden.",
+        "text_en": "The hyaluronic facial was an experience. My skin has been glowing for weeks. The team is professional, warm and really takes time for each client.",
+        "text_ru": "Процедура с гиалуроном была незабываемой. Моя кожа сияет уже несколько недель. Команда профессиональна, сердечна и действительно уделяет время каждому клиенту.",
+        "rating": 5,
+        "source": "Instagram",
+        "avatar": "/media/presets/beauty_salon/avatars/anna.jpg"
+      }
+    ],
+    "faq": [
+      {
+        "q_de": "Wie buche ich einen Termin?",
+        "q_en": "How do I book an appointment?",
+        "q_ru": "Как записаться на приём?",
+        "a_de": "Online über unser Buchungsformular, telefonisch oder per E-Mail. Wir empfehlen mindestens 1 Woche Vorlauf, besonders für Braut-Pakete.",
+        "a_en": "Online via our booking form, by phone or email. We recommend at least 1 week in advance, especially for bridal packages.",
+        "a_ru": "Онлайн через форму бронирования, по телефону или электронной почте. Рекомендуем записываться минимум за 1 неделю, особенно для свадебных пакетов."
+      },
+      {
+        "q_de": "Verwenden Sie tierversuchsfreie Produkte?",
+        "q_en": "Do you use cruelty-free products?",
+        "q_ru": "Используете ли вы продукты без тестирования на животных?",
+        "a_de": "Ja, wir arbeiten ausschließlich mit zertifizierten, tierversuchsfreien Marken: Aveda, Wella Professionals und Charlotte Tilbury.",
+        "a_en": "Yes, we work exclusively with certified cruelty-free brands: Aveda, Wella Professionals and Charlotte Tilbury.",
+        "a_ru": "Да, мы работаем исключительно с сертифицированными брендами без тестирования на животных: Aveda, Wella Professionals и Charlotte Tilbury."
+      },
+      {
+        "q_de": "Gibt es eine Stornierungsrichtlinie?",
+        "q_en": "Is there a cancellation policy?",
+        "q_ru": "Есть ли политика отмены?",
+        "a_de": "Kostenlose Stornierung bis 24 Stunden vor dem Termin. Bei Nichterscheinen berechnen wir 50% des Servicepreises.",
+        "a_en": "Free cancellation up to 24 hours before the appointment. No-shows are charged 50% of the service price.",
+        "a_ru": "Бесплатная отмена за 24 часа до визита. При неявке взимается 50% стоимости услуги."
       }
     ],
     "contact": {
-      "address": "222 Glow Street, Beverly Hills, CA",
-      "phone": "+1 310 555 0160",
-      "email": "hello@glowupbeauty.com",
-      "hours_en": "Tue-Sat: 10:00 AM - 7:00 PM",
-      "hours_de": "Di-Sa: 10:00 - 19:00 Uhr",
-      "hours_ru": "Вт-Сб: 10:00 - 19:00"
+      "address": "Leopoldstraße 88, 80802 München-Schwabing",
+      "phone": "+49 89 3456 7890",
+      "email": "termin@lumiere-beauty.de",
+      "hours_de": "Di–Fr: 09:00–19:00 Uhr · Sa: 09:00–17:00 Uhr · Mo & So: Ruhetag",
+      "hours_en": "Tue–Fri: 9:00 AM–7:00 PM · Sat: 9:00 AM–5:00 PM · Mon & Sun: Closed",
+      "hours_ru": "Вт–Пт: 09:00–19:00 · Сб: 09:00–17:00 · Пн и Вс: выходной"
     },
-    "faq": [
-      {
-        "q_en": "Do I need an appointment?",
-        "q_de": "Benötige ich einen Termin?",
-        "q_ru": "Нужно ли записываться?",
-        "a_en": "Walk-ins welcome, but appointments recommended.",
-        "a_de": "Spontanbesuche willkommen, Termine empfohlen.",
-        "a_ru": "Ждем без записи, но рекомендуем записаться."
-      }
-    ]
+    "legal": {
+      "priceNote_de": "Alle Preise sind Endpreise gemäß PAngV inkl. gesetzlicher MwSt. (19%). Preise können je nach Haarlänge und Aufwand variieren.",
+      "cancellationPolicy_de": "Kostenlose Stornierung bis 24 Stunden vor dem Termin. Bei Nichterscheinen ohne Absage behalten wir uns vor, 50% des Servicepreises zu berechnen.",
+      "privacyNote_de": "Ihre Daten werden gemäß DSGVO verarbeitet und nicht an Dritte weitergegeben."
+    }
   },
   "booking": {
     "enabled": true,
-    "slots": ["10:00", "12:00", "14:00", "16:00"],
-    "duration": 60
+    "slots": ["09:00", "10:00", "11:00", "12:00", "13:30", "14:30", "15:30", "16:30", "17:30"],
+    "duration": 60,
+    "maxGuests": 1,
+    "note_de": "Bitte wählen Sie Ihre gewünschte Leistung und Spezialistin bei der Buchung."
   },
   "logo": {
-    "text": "GLOW",
-    "tagline": "UP",
-    "font": "Dancing Script"
+    "text": "Lumière",
+    "tagline": "BEAUTY · MÜNCHEN",
+    "font": "Cormorant Garamond",
+    "style": "text_italic"
+  },
+  "social": {
+    "instagram": "https://instagram.com/lumiere.beauty.munich",
+    "facebook": "https://facebook.com/lumierebeautymuenchen"
   }
 }

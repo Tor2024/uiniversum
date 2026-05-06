@@ -4,7 +4,11 @@
     "description": "Your journey begins here. Custom travel packages and exotic destinations.",
     "favicon": "/media/presets/travel_agency/favicon.ico",
     "language": "en",
-    "availableLanguages": ["en", "de", "ru"]
+    "availableLanguages": [
+      "en",
+      "de",
+      "ru"
+    ]
   },
   "design": {
     "preset": "travel_agency",
@@ -62,9 +66,21 @@
   },
   "content": {
     "slogans": {
-      "en": ["Explore the World", "Adventure Awaits", "Travel More"],
-      "de": ["Entdecke die Welt", "Abenteuer wartet", "Reise mehr"],
-      "ru": ["Исследуй мир", "Приключение ждёт", "Путешествуй больше"]
+      "en": [
+        "Explore the World",
+        "Adventure Awaits",
+        "Travel More"
+      ],
+      "de": [
+        "Entdecke die Welt",
+        "Abenteuer wartet",
+        "Reise mehr"
+      ],
+      "ru": [
+        "Исследуй мир",
+        "Приключение ждет",
+        "Путешествуй больше"
+      ]
     },
     "hero": {
       "en": {
@@ -75,13 +91,13 @@
       },
       "de": {
         "heading": "Entdecke die Welt",
-        "subheading": "Ihre Reise beginnt hier. Maßgeschneiderte Reisepakete und exotische Ziele.",
+        "subheading": "Your journey begins here. Custom travel packages and exotic destinations.",
         "cta": "Jetzt starten",
         "image": "/media/presets/travel_agency/hero.jpg"
       },
       "ru": {
         "heading": "Исследуй мир",
-        "subheading": "Ваше путешествие начинается здесь. Индивидуальные турпакеты и экзотические направления.",
+        "subheading": "Your journey begins here. Custom travel packages and exotic destinations.",
         "cta": "Начать",
         "image": "/media/presets/travel_agency/hero.jpg"
       }
@@ -93,11 +109,11 @@
       },
       "de": {
         "title": "Über uns",
-        "text": "Wir kreieren unvergessliche Reiseerlebnisse, die auf Ihre Wünsche und Ihr Budget zugeschnitten sind."
+        "text": "Wir kreieren unvergessliche Reiseerlebnisse."
       },
       "ru": {
         "title": "О нас",
-        "text": "Мы создаём незабываемые путешествия, адаптированные под ваши желания и бюджет."
+        "text": "Мы создаем незабываемые путешествия под ваш бюджет."
       }
     },
     "services": [
@@ -122,8 +138,8 @@
       {
         "name": "Traveler J.",
         "text_en": "They booked the perfect honeymoon. Exceeded expectations!",
-        "text_de": "Sie haben den perfekten Flitterwochenurlaub gebucht. Übertraf die Erwartungen!",
-        "text_ru": "Они забронировали идеальный свадебный тур. Превзошло ожидания!",
+        "text_de": "They booked the perfect honeymoon. Exceeded expectations!",
+        "text_ru": "They booked the perfect honeymoon. Exceeded expectations!",
         "rating": 5,
         "avatar": "/media/presets/travel_agency/avatars/traveler.jpg"
       }
@@ -149,7 +165,12 @@
   },
   "booking": {
     "enabled": true,
-    "slots": ["09:00", "10:00", "14:00", "16:00"],
+    "slots": [
+      "09:00",
+      "10:00",
+      "14:00",
+      "16:00"
+    ],
     "duration": 60
   },
   "logo": {

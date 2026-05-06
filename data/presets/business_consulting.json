@@ -4,7 +4,11 @@
     "description": "Strategic business consulting to drive growth, efficiency, and innovation.",
     "favicon": "/media/presets/business_consulting/favicon.ico",
     "language": "en",
-    "availableLanguages": ["en", "de", "ru"]
+    "availableLanguages": [
+      "en",
+      "de",
+      "ru"
+    ]
   },
   "design": {
     "preset": "business_consulting",
@@ -62,9 +66,21 @@
   },
   "content": {
     "slogans": {
-      "en": ["Growth Partners", "Think Strategic", "Business Evolved"],
-      "de": ["Wachstumspartner", "Denke strategisch", "Business entwickelt"],
-      "ru": ["Партнеры по росту", "Мысли стратегически", "Бизнес эволюционирует"]
+      "en": [
+        "Growth Partners",
+        "Think Strategic",
+        "Business Evolved"
+      ],
+      "de": [
+        "Wachstumspartner",
+        "Denke strategisch",
+        "Business entwickelt"
+      ],
+      "ru": [
+        "Партнеры по росту",
+        "Мысли стратегически",
+        "Бизнес эволюционирует"
+      ]
     },
     "hero": {
       "en": {
@@ -75,13 +91,13 @@
       },
       "de": {
         "heading": "Wachstumspartner",
-        "subheading": "Strategische Unternehmensberatung für Wachstum, Effizienz und Innovation.",
+        "subheading": "Strategic business consulting to drive growth, efficiency, and innovation.",
         "cta": "Jetzt starten",
         "image": "/media/presets/business_consulting/hero.jpg"
       },
       "ru": {
         "heading": "Партнеры по росту",
-        "subheading": "Стратегический бизнес-консалтинг для роста, эффективности и инноваций.",
+        "subheading": "Strategic business consulting to drive growth, efficiency, and innovation.",
         "cta": "Начать",
         "image": "/media/presets/business_consulting/hero.jpg"
       }
@@ -97,7 +113,7 @@
       },
       "ru": {
         "title": "О нас",
-        "text": "Мы помогаем бизнесу раскрыть свой полный потенциал через стратегическое планирование."
+        "text": "Мы помогаем бизнесу раскрыть свой полный потенциал."
       }
     },
     "services": [
@@ -122,8 +138,8 @@
       {
         "name": "CEO Corp",
         "text_en": "Their insights saved our Q3. Highly recommended.",
-        "text_de": "Ihre Einblicke haben unser Q3 gerettet. Sehr empfehlenswert.",
-        "text_ru": "Их идеи спасли наш Q3. Настоятельно рекомендую.",
+        "text_de": "Their insights saved our Q3. Highly recommended.",
+        "text_ru": "Their insights saved our Q3. Highly recommended.",
         "rating": 5,
         "avatar": "/media/presets/business_consulting/avatars/ceo.jpg"
       }
@@ -149,7 +165,12 @@
   },
   "booking": {
     "enabled": true,
-    "slots": ["09:00", "10:00", "14:00", "16:00"],
+    "slots": [
+      "09:00",
+      "10:00",
+      "14:00",
+      "16:00"
+    ],
     "duration": 60
   },
   "logo": {

@@ -4,7 +4,11 @@
     "description": "Thoughts on life, travel, and everything in between. Join the journey.",
     "favicon": "/media/presets/personal_blog/favicon.ico",
     "language": "en",
-    "availableLanguages": ["en", "de", "ru"]
+    "availableLanguages": [
+      "en",
+      "de",
+      "ru"
+    ]
   },
   "design": {
     "preset": "personal_blog",
@@ -62,9 +66,21 @@
   },
   "content": {
     "slogans": {
-      "en": ["Stories & Thoughts", "Live Authentic", "Unscripted Life"],
-      "de": ["Geschichten & Gedanken", "Leb authentisch", "Unscripted Leben"],
-      "ru": ["Истории и мысли", "Живи аутентично", "Несценарная жизнь"]
+      "en": [
+        "Stories & Thoughts",
+        "Live Authentic",
+        "Unscripted Life"
+      ],
+      "de": [
+        "Geschichten & Gedanken",
+        "Leb authentisch",
+        "Unscripted Leben"
+      ],
+      "ru": [
+        "Истории и мысли",
+        "Живи аутентично",
+        "Несценарная жизнь"
+      ]
     },
     "hero": {
       "en": {
@@ -75,13 +91,13 @@
       },
       "de": {
         "heading": "Geschichten & Gedanken",
-        "subheading": "Gedanken über Leben, Reisen und alles dazwischen. Mach mit auf der Reise.",
+        "subheading": "Thoughts on life, travel, and everything in between. Join the journey.",
         "cta": "Jetzt starten",
         "image": "/media/presets/personal_blog/hero.jpg"
       },
       "ru": {
         "heading": "Истории и мысли",
-        "subheading": "Мысли о жизни, путешествиях и всём, что между ними. Присоединяйся к путешествию.",
+        "subheading": "Thoughts on life, travel, and everything in between. Join the journey.",
         "cta": "Начать",
         "image": "/media/presets/personal_blog/hero.jpg"
       }
@@ -122,8 +138,8 @@
       {
         "name": "Reader R.",
         "text_en": "Your blog is my weekly dose of inspiration. Thank you!",
-        "text_de": "Dein Blog ist meine wöchentliche Dosis Inspiration. Danke!",
-        "text_ru": "Твой блог — моя еженедельная доза вдохновения. Спасибо!",
+        "text_de": "Your blog is my weekly dose of inspiration. Thank you!",
+        "text_ru": "Your blog is my weekly dose of inspiration. Thank you!",
         "rating": 5,
         "avatar": "/media/presets/personal_blog/avatars/reader.jpg"
       }
@@ -149,7 +165,12 @@
   },
   "booking": {
     "enabled": true,
-    "slots": ["09:00", "10:00", "14:00", "16:00"],
+    "slots": [
+      "09:00",
+      "10:00",
+      "14:00",
+      "16:00"
+    ],
     "duration": 60
   },
   "logo": {

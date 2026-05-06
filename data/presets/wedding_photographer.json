@@ -4,7 +4,11 @@
     "description": "Capturing the romance and joy of your wedding day with artistic flair.",
     "favicon": "/media/presets/wedding_photographer/favicon.ico",
     "language": "en",
-    "availableLanguages": ["en", "de", "ru"]
+    "availableLanguages": [
+      "en",
+      "de",
+      "ru"
+    ]
   },
   "design": {
     "preset": "wedding_photographer",
@@ -62,9 +66,21 @@
   },
   "content": {
     "slogans": {
-      "en": ["Love Stories", "Forever Yours", "Pure Emotion"],
-      "de": ["Liebesgeschichten", "Für immer dir", "Reine Emotion"],
-      "ru": ["Истории любви", "Навеки твое", "Чистая эмоция"]
+      "en": [
+        "Love Stories",
+        "Forever Yours",
+        "Pure Emotion"
+      ],
+      "de": [
+        "Liebesgeschichten",
+        "Für immer dir",
+        "Reine Emotion"
+      ],
+      "ru": [
+        "Истории любви",
+        "Навеки твое",
+        "Чистая эмоция"
+      ]
     },
     "hero": {
       "en": {
@@ -75,13 +91,13 @@
       },
       "de": {
         "heading": "Liebesgeschichten",
-        "subheading": "Wir fangen die Romantik und Freude Ihres Hochzeitstages mit künstlerischem Flair ein.",
+        "subheading": "Capturing the romance and joy of your wedding day with artistic flair.",
         "cta": "Jetzt starten",
         "image": "/media/presets/wedding_photographer/hero.jpg"
       },
       "ru": {
         "heading": "Истории любви",
-        "subheading": "Запечатлим романтику и радость вашего свадебного дня с артистичным флером.",
+        "subheading": "Capturing the romance and joy of your wedding day with artistic flair.",
         "cta": "Начать",
         "image": "/media/presets/wedding_photographer/hero.jpg"
       }
@@ -122,8 +138,8 @@
       {
         "name": "James & Lily",
         "text_en": "Our photos are breathtaking. Thank you for everything!",
-        "text_de": "Unsere Fotos sind atemberaubend. Danke für alles!",
-        "text_ru": "Наши фото просто завораживают. Спасибо за всё!",
+        "text_de": "Our photos are breathtaking. Thank you for everything!",
+        "text_ru": "Our photos are breathtaking. Thank you for everything!",
         "rating": 5,
         "avatar": "/media/presets/wedding_photographer/avatars/couple.jpg"
       }
@@ -149,7 +165,12 @@
   },
   "booking": {
     "enabled": true,
-    "slots": ["09:00", "10:00", "14:00", "16:00"],
+    "slots": [
+      "09:00",
+      "10:00",
+      "14:00",
+      "16:00"
+    ],
     "duration": 60
   },
   "logo": {

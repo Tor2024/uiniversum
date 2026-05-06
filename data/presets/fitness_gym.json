@@ -1,168 +1,297 @@
 {
   "meta": {
-    "title": "Iron Core Fitness | Transform Your Body",
-    "description": "Premium gym with state-of-the-art equipment, personal training, and group classes. Achieve your fitness goals.",
-    "favicon": "/media/presets/fitness/favicon.ico",
-    "language": "en",
-    "availableLanguages": ["en", "de", "ru"]
+    "title": "IRON FORGE | Fitness & Performance",
+    "description": "Kein Ort für Ausreden. Professionelles Fitnessstudio mit Personal Training, HIIT-Kursen und modernster Ausstattung in Frankfurt. Jetzt Probetraining buchen.",
+    "favicon": "/media/presets/fitness_gym/favicon.ico",
+    "language": "de",
+    "availableLanguages": ["de", "en", "ru"]
   },
   "design": {
     "preset": "fitness_gym",
     "tokens": {
       "colorBackground": "#0A0A0A",
-      "colorSurface": "#1C1C1C",
-      "colorPrimary": "#FF3C00",
-      "colorSecondary": "#B0B0B0",
-      "colorBorder": "#2A2A2A",
-      "colorAccent": "#FF3C00",
-      "colorAccentHover": "#E03500",
+      "colorSurface": "#141414",
+      "colorPrimary": "#FFFFFF",
+      "colorSecondary": "#A0A0A0",
+      "colorBorder": "#222222",
+      "colorAccent": "#FF4500",
+      "colorAccentHover": "#E03D00",
       "fontDisplay": "Montserrat",
       "fontHeading": "Montserrat",
-      "fontBody": "Roboto",
-      "fontCaption": "Roboto",
-      "fontMono": "Roboto Mono",
-      "fontSizeDisplay": "76px",
-      "fontSizeHeading": "34px",
+      "fontBody": "Inter",
+      "fontCaption": "Inter",
+      "fontMono": "JetBrains Mono",
+      "fontSizeDisplay": "96px",
+      "fontSizeHeading": "40px",
       "fontSizeBody": "16px",
       "lineHeightBody": "1.7",
-      "lineHeightHeading": "1.3",
+      "lineHeightHeading": "1.1",
       "spacingUnit": "8px",
-      "spacingSection": "130px",
-      "spacingElement": "26px",
-      "spacingCard": "30px",
-      "spacingButtonVertical": "16px",
-      "spacingButtonHorizontal": "34px",
-      "maxWidthContent": "1200px",
-      "maxWidthText": "680px",
+      "spacingSection": "140px",
+      "spacingElement": "24px",
+      "spacingCard": "28px",
+      "spacingButtonVertical": "18px",
+      "spacingButtonHorizontal": "40px",
+      "maxWidthContent": "1280px",
+      "maxWidthText": "700px",
       "gridColumns": "12",
-      "gridGutter": "28px",
+      "gridGutter": "24px",
       "horizontalPaddingMobile": "20px",
-      "horizontalPaddingTablet": "45px",
-      "horizontalPaddingDesktop": "85px",
-      "borderRadius": "6",
-      "borderRadiusSmall": "4px",
-      "borderRadiusMedium": "8px",
-      "borderRadiusLarge": "12px",
-      "shadowStyle": "sharp",
-      "shadowResting": "0 5px 20px rgba(255,60,0,0.1)",
-      "shadowHover": "0 8px 30px rgba(255,60,0,0.2)",
+      "horizontalPaddingTablet": "48px",
+      "horizontalPaddingDesktop": "96px",
+      "borderRadius": "4",
+      "borderRadiusSmall": "2px",
+      "borderRadiusMedium": "4px",
+      "borderRadiusLarge": "8px",
+      "shadowStyle": "dark",
+      "shadowResting": "0 4px 24px rgba(0,0,0,0.6)",
+      "shadowHover": "0 8px 40px rgba(255,69,0,0.25)",
       "transitionDuration": "150ms",
       "transitionTiming": "ease-out",
-      "imageRatioHero": "16:9",
-      "imageRatioCard": "4:3",
+      "imageRatioHero": "21:9",
+      "imageRatioCard": "16:9",
       "imageRatioAvatar": "1:1"
     },
     "customCss": ""
   },
   "seo": {
-    "ogImage": "/media/presets/fitness/og-default.jpg",
+    "ogImage": "/media/presets/fitness_gym/og-default.jpg",
     "twitterCard": "summary_large_image",
     "googleAnalyticsId": "",
-    "keywords": "Gym, Fitness, Personal Training, Workout, Health, Iron Core"
+    "keywords": "Fitnessstudio Frankfurt, Personal Training, HIIT, Krafttraining, Probetraining"
+  },
+  "layout": {
+    "style": "dark_masculine",
+    "heroType": "fullscreen_video_overlay",
+    "navStyle": "transparent_dark",
+    "servicesLayout": "grid_3col_dark",
+    "testimonialsLayout": "dark_background",
+    "footerStyle": "dark_minimal"
   },
   "content": {
     "slogans": {
-      "en": ["Train Like a Beast", "Stronger Every Day", "Your Body, Your Temple"],
-      "de": ["Trainiere wie ein Profi", "Jeden Tag stärker", "Dein Körper, dein Tempel"],
-      "ru": ["Тренируйся как зверь", "Сильнее с каждым днём", "Твое тело — твой храм"]
+      "de": ["Kein Ort für Ausreden", "Forge Your Best Self", "Stärker. Schneller. Besser."],
+      "en": ["No Place for Excuses", "Forge Your Best Self", "Stronger. Faster. Better."],
+      "ru": ["Нет места для отговорок", "Выкуй лучшую версию себя", "Сильнее. Быстрее. Лучше."]
     },
     "hero": {
-      "en": {
-        "heading": "Forge Your Potential",
-        "subheading": "Join the elite. State-of-the-art equipment and expert coaching to get you in the best shape of your life.",
-        "cta": "Start Free Trial",
-        "image": "/media/presets/fitness/hero.jpg"
-      },
       "de": {
-        "heading": "Entfalte dein Potenzial",
-        "subheading": "Werde Teil der Elite. Modernste Geräte und professionelles Coaching für deine Bestform.",
-        "cta": "Kostenlos testen",
-        "image": "/media/presets/fitness/hero.jpg"
+        "heading": "Kein Ort für Ausreden.",
+        "subheading": "Iron Forge ist kein gewöhnliches Fitnessstudio. Es ist ein Ort, an dem Grenzen gesprengt werden. Personal Training, HIIT, Kraftsport — alles unter einem Dach.",
+        "cta": "Probetraining buchen",
+        "secondaryCta": "Mitgliedschaft ansehen",
+        "image": "/media/presets/fitness_gym/hero.jpg",
+        "imageAlt": "Modernes Fitnessstudio mit Gewichten und Trainingsgeräten"
+      },
+      "en": {
+        "heading": "No Place for Excuses.",
+        "subheading": "Iron Forge is not an ordinary gym. It is a place where limits are broken. Personal training, HIIT, strength sports — all under one roof.",
+        "cta": "Book Trial Training",
+        "secondaryCta": "View Membership",
+        "image": "/media/presets/fitness_gym/hero.jpg",
+        "imageAlt": "Modern gym with weights and training equipment"
       },
       "ru": {
-        "heading": "Раскрой свой потенциал",
-        "subheading": "Присоединяйся к элите. Современное оборудование и экспертный коучинг для лучшей формы жизни.",
-        "cta": "Начать бесплатно",
-        "image": "/media/presets/fitness/hero.jpg"
+        "heading": "Нет места для отговорок.",
+        "subheading": "Iron Forge — не обычный спортзал. Это место, где ломают границы. Персональные тренировки, HIIT, силовой спорт — всё под одной крышей.",
+        "cta": "Записаться на пробную",
+        "secondaryCta": "Членство",
+        "image": "/media/presets/fitness_gym/hero.jpg",
+        "imageAlt": "Современный спортзал с весами и тренажёрами"
       }
     },
     "about": {
+      "de": {
+        "title": "Mehr als ein Gym",
+        "subtitle": "Seit 2015 in Frankfurt-Sachsenhausen",
+        "text": "Iron Forge wurde 2015 von Ex-Profi-Athleten Marcus Steiner gegründet. Die Idee: Ein Studio, das professionelle Athleten und Einsteiger gleichermaßen fordert und fördert. Heute trainieren hier über 1.200 Mitglieder — von Büroangestellten bis zu Wettkampfsportlern. Unsere 20 zertifizierten Trainer entwickeln individuelle Programme, die wirklich funktionieren.",
+        "image": "/media/presets/fitness_gym/about.jpg",
+        "imageAlt": "Iron Forge Gym Innenansicht",
+        "stats": [
+          { "value": "1.200+", "label": "Aktive Mitglieder" },
+          { "value": "20", "label": "Zertifizierte Trainer" },
+          { "value": "60+", "label": "Kurse pro Woche" }
+        ]
+      },
       "en": {
         "title": "More Than a Gym",
-        "text": "We provide a motivating environment and results-driven programs to help you crush your fitness goals."
-      },
-      "de": {
-        "title": "Mehr als ein Fitnessstudio",
-        "text": "Wir bieten eine motivierende Umgebung und ergebnisorientierte Programme für deine Ziele."
+        "subtitle": "Since 2015 in Frankfurt-Sachsenhausen",
+        "text": "Iron Forge was founded in 2015 by ex-professional athlete Marcus Steiner. The idea: a studio that challenges and supports professional athletes and beginners alike. Today over 1,200 members train here — from office workers to competitive athletes. Our 20 certified trainers develop individual programmes that really work.",
+        "image": "/media/presets/fitness_gym/about.jpg",
+        "imageAlt": "Iron Forge Gym interior",
+        "stats": [
+          { "value": "1,200+", "label": "Active members" },
+          { "value": "20", "label": "Certified trainers" },
+          { "value": "60+", "label": "Classes per week" }
+        ]
       },
       "ru": {
         "title": "Больше, чем спортзал",
-        "text": "Мы создаём мотивирующую среду и программы, ориентированные на результат."
+        "subtitle": "С 2015 года во Франкфурт-Захсенхаузене",
+        "text": "Iron Forge был основан в 2015 году бывшим профессиональным атлетом Маркусом Штайнером. Идея: студия, которая одинаково бросает вызов и поддерживает профессиональных спортсменов и новичков. Сегодня здесь тренируются более 1200 членов — от офисных работников до соревновательных спортсменов.",
+        "image": "/media/presets/fitness_gym/about.jpg",
+        "imageAlt": "Интерьер Iron Forge Gym",
+        "stats": [
+          { "value": "1.200+", "label": "Активных членов" },
+          { "value": "20", "label": "Сертифицированных тренеров" },
+          { "value": "60+", "label": "Занятий в неделю" }
+        ]
       }
     },
     "services": [
       {
-        "name_en": "Personal Training",
         "name_de": "Personal Training",
+        "name_en": "Personal Training",
         "name_ru": "Персональные тренировки",
-        "price": "$60/session",
-        "desc_en": "One-on-one coaching tailored to your goals.",
-        "image": "/media/presets/fitness/services/training.jpg"
+        "price": "ab 80€/Std.",
+        "desc_de": "1:1 Training mit zertifiziertem Coach. Individueller Trainingsplan, Ernährungsberatung, Fortschrittstracking.",
+        "desc_en": "1:1 training with certified coach. Individual training plan, nutrition advice, progress tracking.",
+        "desc_ru": "Тренировки 1:1 с сертифицированным тренером. Индивидуальный план, консультация по питанию, отслеживание прогресса.",
+        "image": "/media/presets/fitness_gym/services/personal.jpg",
+        "tags": ["Premium"]
       },
       {
-        "name_en": "Group Classes",
-        "name_de": "Gruppenkurse",
-        "name_ru": "Групповые занятия",
-        "price": "$25/class",
-        "desc_en": "High-energy classes including HIIT, Spin, and Yoga.",
-        "image": "/media/presets/fitness/services/classes.jpg"
+        "name_de": "HIIT & Cardio",
+        "name_en": "HIIT & Cardio",
+        "name_ru": "HIIT и кардио",
+        "price": "im Abo",
+        "desc_de": "Hochintensives Intervalltraining in der Gruppe. 45 Minuten, maximale Wirkung. Täglich 6 Kurse.",
+        "desc_en": "High-intensity interval training in a group. 45 minutes, maximum effect. 6 classes daily.",
+        "desc_ru": "Высокоинтенсивные интервальные тренировки в группе. 45 минут, максимальный эффект. 6 занятий ежедневно.",
+        "image": "/media/presets/fitness_gym/services/hiit.jpg",
+        "tags": ["Beliebt"]
       },
       {
-        "name_en": "Nutrition Plan",
-        "name_de": "Ernährungsplan",
-        "name_ru": "План питания",
-        "price": "$100",
-        "desc_en": "Custom meal plans designed by nutrition experts.",
-        "image": "/media/presets/fitness/services/nutrition.jpg"
+        "name_de": "Krafttraining",
+        "name_en": "Strength Training",
+        "name_ru": "Силовые тренировки",
+        "price": "im Abo",
+        "desc_de": "Freie Gewichte, Maschinen, Functional Training. 800m² Trainingsfläche, modernste Ausstattung.",
+        "desc_en": "Free weights, machines, functional training. 800m² training area, state-of-the-art equipment.",
+        "desc_ru": "Свободные веса, тренажёры, функциональный тренинг. 800 м² тренировочной площади, современное оборудование.",
+        "image": "/media/presets/fitness_gym/services/strength.jpg",
+        "tags": []
+      },
+      {
+        "name_de": "Mitgliedschaft Basic",
+        "name_en": "Basic Membership",
+        "name_ru": "Базовое членство",
+        "price": "49€/Monat",
+        "desc_de": "Unbegrenzter Zugang zum Gym, alle Geräte, Umkleiden und Duschen. Monatlich kündbar.",
+        "desc_en": "Unlimited gym access, all equipment, changing rooms and showers. Monthly cancellable.",
+        "desc_ru": "Неограниченный доступ в зал, всё оборудование, раздевалки и душевые. Ежемесячная отмена.",
+        "image": "/media/presets/fitness_gym/services/basic.jpg",
+        "tags": []
+      },
+      {
+        "name_de": "Mitgliedschaft Pro",
+        "name_en": "Pro Membership",
+        "name_ru": "Про-членство",
+        "price": "79€/Monat",
+        "desc_de": "Alles aus Basic + alle Gruppenkurse, Ernährungsberatung, monatliche Körperanalyse.",
+        "desc_en": "Everything from Basic + all group classes, nutrition advice, monthly body analysis.",
+        "desc_ru": "Всё из Basic + все групповые занятия, консультация по питанию, ежемесячный анализ тела.",
+        "image": "/media/presets/fitness_gym/services/pro.jpg",
+        "tags": ["Beliebt", "Empfehlung"]
+      },
+      {
+        "name_de": "Probetraining",
+        "name_en": "Trial Training",
+        "name_ru": "Пробная тренировка",
+        "price": "Kostenlos",
+        "desc_de": "Einmalig kostenlos testen. Geführte Tour, Einweisung in die Geräte, 1 Stunde freies Training.",
+        "desc_en": "Try once for free. Guided tour, equipment induction, 1 hour free training.",
+        "desc_ru": "Попробуйте один раз бесплатно. Экскурсия, инструктаж по оборудованию, 1 час свободных тренировок.",
+        "image": "/media/presets/fitness_gym/services/trial.jpg",
+        "tags": ["Gratis"]
       }
     ],
     "testimonials": [
       {
-        "name": "Alex P.",
-        "text_en": "Lost 20kg in 3 months. The trainers here are the best!",
-        "text_de": "20kg in 3 Monaten verloren. Die Trainer sind die Besten!",
-        "text_ru": "Сбросил 20 кг за 3 месяца. Лучшие тренеры!",
+        "name": "Tobias R.",
+        "location_de": "Frankfurt",
+        "text_de": "In 6 Monaten 15 kg abgenommen und mehr Muskeln aufgebaut als in 3 Jahren woanders. Das Personal Training mit Marcus hat mein Leben verändert. Kein Vergleich zu anderen Studios.",
+        "text_en": "Lost 15 kg in 6 months and built more muscle than in 3 years elsewhere. Personal training with Marcus changed my life. No comparison to other gyms.",
+        "text_ru": "За 6 месяцев сбросил 15 кг и набрал больше мышц, чем за 3 года в других залах. Персональные тренировки с Маркусом изменили мою жизнь.",
         "rating": 5,
-        "avatar": "/media/presets/fitness/avatars/alex.jpg"
+        "source": "Google",
+        "avatar": "/media/presets/fitness_gym/avatars/tobias.jpg"
+      },
+      {
+        "name": "Jana S.",
+        "location_de": "Frankfurt-Sachsenhausen",
+        "text_de": "Die HIIT-Kurse sind brutal gut. Ich komme seit 2 Jahren jeden Morgen um 6:30 Uhr — und vermisse keinen einzigen. Die Community hier ist einzigartig.",
+        "text_en": "The HIIT classes are brutally good. I have been coming every morning at 6:30 AM for 2 years — and miss not a single one. The community here is unique.",
+        "text_ru": "HIIT-занятия просто потрясающие. Я хожу каждое утро в 6:30 уже 2 года — и не пропускаю ни одного. Сообщество здесь уникальное.",
+        "rating": 5,
+        "source": "Google",
+        "avatar": "/media/presets/fitness_gym/avatars/jana.jpg"
+      },
+      {
+        "name": "Kevin M.",
+        "location_de": "Frankfurt",
+        "text_de": "Als ehemaliger Leistungssportler hatte ich hohe Ansprüche. Iron Forge erfüllt sie alle. Die Ausstattung ist auf Profi-Niveau, die Trainer wissen wovon sie reden.",
+        "text_en": "As a former competitive athlete I had high standards. Iron Forge meets them all. The equipment is at professional level, the trainers know what they are talking about.",
+        "text_ru": "Как бывший спортсмен у меня были высокие требования. Iron Forge соответствует всем. Оборудование на профессиональном уровне, тренеры знают своё дело.",
+        "rating": 5,
+        "source": "Google",
+        "avatar": "/media/presets/fitness_gym/avatars/kevin.jpg"
+      }
+    ],
+    "faq": [
+      {
+        "q_de": "Gibt es ein Probetraining?",
+        "q_en": "Is there a trial training?",
+        "q_ru": "Есть ли пробная тренировка?",
+        "a_de": "Ja, das erste Training ist kostenlos. Einfach online buchen oder direkt vorbeikommen. Wir zeigen Ihnen alles.",
+        "a_en": "Yes, the first training is free. Simply book online or come directly. We will show you everything.",
+        "a_ru": "Да, первая тренировка бесплатна. Просто запишитесь онлайн или приходите напрямую. Мы всё покажем."
+      },
+      {
+        "q_de": "Wie lange ist die Mindestlaufzeit?",
+        "q_en": "What is the minimum contract term?",
+        "q_ru": "Каков минимальный срок договора?",
+        "a_de": "Unsere Mitgliedschaften sind monatlich kündbar — keine Mindestlaufzeit, keine versteckten Kosten.",
+        "a_en": "Our memberships are cancellable monthly — no minimum term, no hidden costs.",
+        "a_ru": "Наши членства отменяются ежемесячно — без минимального срока, без скрытых расходов."
+      },
+      {
+        "q_de": "Gibt es Parkplätze?",
+        "q_en": "Is there parking?",
+        "q_ru": "Есть ли парковка?",
+        "a_de": "Ja, wir haben 30 kostenlose Parkplätze direkt vor dem Studio. Außerdem sind wir gut mit dem ÖPNV erreichbar.",
+        "a_en": "Yes, we have 30 free parking spaces directly in front of the studio. We are also easily accessible by public transport.",
+        "a_ru": "Да, у нас есть 30 бесплатных парковочных мест прямо перед студией. Также мы хорошо доступны на общественном транспорте."
       }
     ],
     "contact": {
-      "address": "456 Fitness Ave, Los Angeles, CA",
-      "phone": "+1 310 555 0123",
-      "email": "train@ironcore.com",
-      "hours_en": "Mon-Fri: 6:00 AM - 10:00 PM, Sat-Sun: 8:00 AM - 8:00 PM",
-      "hours_de": "Mo-Fr: 06:00 - 22:00 Uhr, Sa-So: 08:00 - 20:00 Uhr",
-      "hours_ru": "Пн-Пт: 06:00 - 22:00, Сб-Вс: 08:00 - 20:00"
+      "address": "Darmstädter Landstraße 120, 60598 Frankfurt-Sachsenhausen",
+      "phone": "+49 69 7788 9900",
+      "email": "info@ironforge-gym.de",
+      "hours_de": "Mo–Fr: 06:00–23:00 Uhr · Sa–So: 08:00–21:00 Uhr",
+      "hours_en": "Mon–Fri: 6:00 AM–11:00 PM · Sat–Sun: 8:00 AM–9:00 PM",
+      "hours_ru": "Пн–Пт: 06:00–23:00 · Сб–Вс: 08:00–21:00"
     },
-    "faq": [
-      {
-        "q_en": "Is there a free trial?",
-        "q_de": "Gibt es eine kostenlose Probestunde?",
-        "q_ru": "Есть ли бесплатная пробная тренировка?",
-        "a_en": "Yes, we offer a 3-day free pass for new members.",
-        "a_de": "Ja, wir bieten eine 3-Tage-FreeCard für neue Mitglieder.",
-        "a_ru": "Да, мы предлагаем бесплатный 3-дневный пропуск для новичков."
-      }
-    ]
+    "legal": {
+      "priceNote_de": "Alle Preise inkl. MwSt. Mitgliedschaften monatlich kündbar. Keine Aufnahmegebühr.",
+      "cancellationPolicy_de": "Kündigung jederzeit zum Monatsende möglich. Schriftliche Kündigung per E-Mail oder Post."
+    }
   },
   "booking": {
     "enabled": true,
-    "slots": ["07:00", "09:00", "17:00", "18:00", "19:00"],
-    "duration": 60
+    "slots": ["06:00", "07:00", "08:00", "09:00", "10:00", "12:00", "14:00", "16:00", "17:00", "18:00", "19:00", "20:00"],
+    "duration": 60,
+    "maxGuests": 1,
+    "note_de": "Probetraining kostenlos. Bitte sportliche Kleidung und Handtuch mitbringen."
   },
   "logo": {
-    "text": "IRON",
-    "tagline": "CORE",
-    "font": "Montserrat"
+    "text": "IRON FORGE",
+    "tagline": "GYM · FRANKFURT",
+    "font": "Montserrat",
+    "style": "text_uppercase_bold"
+  },
+  "social": {
+    "instagram": "https://instagram.com/ironforge.gym",
+    "facebook": "https://facebook.com/ironforgefrankfurt"
   }
 }

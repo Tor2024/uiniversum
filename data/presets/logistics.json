@@ -4,7 +4,11 @@
     "description": "Fast and reliable logistics solutions for global shipping needs.",
     "favicon": "/media/presets/logistics/favicon.ico",
     "language": "en",
-    "availableLanguages": ["en", "de", "ru"]
+    "availableLanguages": [
+      "en",
+      "de",
+      "ru"
+    ]
   },
   "design": {
     "preset": "logistics",
@@ -62,9 +66,21 @@
   },
   "content": {
     "slogans": {
-      "en": ["Delivered on Time", "Global Reach", "Swift & Safe"],
-      "de": ["Pünktlich geliefert", "Globaler Reach", "Schnell & Sicher"],
-      "ru": ["Доставлено вовремя", "Глобальный охват", "Быстро и безопасно"]
+      "en": [
+        "Delivered on Time",
+        "Global Reach",
+        "Swift & Safe"
+      ],
+      "de": [
+        "Pünktlich geliefert",
+        "Globaler Reach",
+        "Schnell & Sicher"
+      ],
+      "ru": [
+        "Доставлено вовремя",
+        "Глобальный охват",
+        "Быстро и безопасно"
+      ]
     },
     "hero": {
       "en": {
@@ -75,13 +91,13 @@
       },
       "de": {
         "heading": "Pünktlich geliefert",
-        "subheading": "Schnelle und zuverlässige Logistiklösungen für globalen Versand.",
+        "subheading": "Fast and reliable logistics solutions for global shipping needs.",
         "cta": "Jetzt starten",
         "image": "/media/presets/logistics/hero.jpg"
       },
       "ru": {
         "heading": "Доставлено вовремя",
-        "subheading": "Быстрые и надежные логистические решения для глобальных перевозок.",
+        "subheading": "Fast and reliable logistics solutions for global shipping needs.",
         "cta": "Начать",
         "image": "/media/presets/logistics/hero.jpg"
       }
@@ -93,11 +109,11 @@
       },
       "de": {
         "title": "Über uns",
-        "text": "Wir optimieren Lieferketten mit Technologie und einem großen Netzwerk von Transportunternehmen."
+        "text": "Wir optimieren Lieferketten mit Technologie."
       },
       "ru": {
         "title": "О нас",
-        "text": "Мы оптимизируем цепочки поставок с помощью технологий и обширной сети перевозчиков."
+        "text": "Мы оптимизируем цепочки поставок с помощью технологий."
       }
     },
     "services": [
@@ -106,7 +122,7 @@
         "name_de": "Frachtschifffahrt",
         "name_ru": "Грузоперевозки",
         "price": "Quote",
-        "desc_en": "Sea, air, and land transportation.",
+        "desc_en": "Sea, air, and land.",
         "image": "/media/presets/logistics/services/freight.jpg"
       },
       {
@@ -120,12 +136,12 @@
     ],
     "testimonials": [
       {
-        "name": "Logistics Manager",
+        "name": "Logistics Mgr",
         "text_en": "Reduced our shipping costs by 30%. Highly efficient.",
-        "text_de": "Unsere Versandkosten um 30% gesenkt. Sehr effizient.",
-        "text_ru": "Сократили наши расходы на доставку на 30%. Очень эффективно.",
+        "text_de": "Reduced our shipping costs by 30%. Highly efficient.",
+        "text_ru": "Reduced our shipping costs by 30%. Highly efficient.",
         "rating": 5,
-        "avatar": "/media/presets/logistics/avatars/manager.jpg"
+        "avatar": "/media/presets/logistics/avatars/mgr.jpg"
       }
     ],
     "contact": {
@@ -149,7 +165,12 @@
   },
   "booking": {
     "enabled": true,
-    "slots": ["09:00", "10:00", "14:00", "16:00"],
+    "slots": [
+      "09:00",
+      "10:00",
+      "14:00",
+      "16:00"
+    ],
     "duration": 60
   },
   "logo": {

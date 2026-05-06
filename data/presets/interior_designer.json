@@ -4,7 +4,11 @@
     "description": "Transforming houses into dream homes with innovative design solutions.",
     "favicon": "/media/presets/interior_designer/favicon.ico",
     "language": "en",
-    "availableLanguages": ["en", "de", "ru"]
+    "availableLanguages": [
+      "en",
+      "de",
+      "ru"
+    ]
   },
   "design": {
     "preset": "interior_designer",
@@ -62,9 +66,21 @@
   },
   "content": {
     "slogans": {
-      "en": ["Design Your Life", "Spaces That Inspire", "Modern Living"],
-      "de": ["Gestalte dein Leben", "Räume, die inspirieren", "Modernes Wohnen"],
-      "ru": ["Спроектируй свою жизнь", "Пространства, вдохновляющие", "Современная жизнь"]
+      "en": [
+        "Design Your Life",
+        "Spaces That Inspire",
+        "Modern Living"
+      ],
+      "de": [
+        "Gestalte dein Leben",
+        "Räume, die inspirieren",
+        "Modernes Wohnen"
+      ],
+      "ru": [
+        "Спроектируй свою жизнь",
+        "Пространства, вдохновляющие",
+        "Современная жизнь"
+      ]
     },
     "hero": {
       "en": {
@@ -75,13 +91,13 @@
       },
       "de": {
         "heading": "Gestalte dein Leben",
-        "subheading": "Häuser in Traumhäuser verwandeln mit innovativen Designlösungen.",
+        "subheading": "Transforming houses into dream homes with innovative design solutions.",
         "cta": "Jetzt starten",
         "image": "/media/presets/interior_designer/hero.jpg"
       },
       "ru": {
         "heading": "Спроектируй свою жизнь",
-        "subheading": "Превращаем дома в жилые пространства мечты с инновационными дизайнерскими решениями.",
+        "subheading": "Transforming houses into dream homes with innovative design solutions.",
         "cta": "Начать",
         "image": "/media/presets/interior_designer/hero.jpg"
       }
@@ -97,7 +113,7 @@
       },
       "ru": {
         "title": "О нас",
-        "text": "Мы верим в создание пространств, которые отражают вашу личность и образ жизни."
+        "text": "Мы верим в создание пространств, отражающих вашу личность."
       }
     },
     "services": [
@@ -122,8 +138,8 @@
       {
         "name": "Anna B.",
         "text_en": "They transformed my small apartment into a palace!",
-        "text_de": "Sie haben meine kleine Wohnung in einen Palast verwandelt!",
-        "text_ru": "Они превратили мою маленькую квартиру в дворец!",
+        "text_de": "They transformed my small apartment into a palace!",
+        "text_ru": "They transformed my small apartment into a palace!",
         "rating": 5,
         "avatar": "/media/presets/interior_designer/avatars/anna.jpg"
       }
@@ -149,7 +165,12 @@
   },
   "booking": {
     "enabled": true,
-    "slots": ["09:00", "10:00", "14:00", "16:00"],
+    "slots": [
+      "09:00",
+      "10:00",
+      "14:00",
+      "16:00"
+    ],
     "duration": 60
   },
   "logo": {

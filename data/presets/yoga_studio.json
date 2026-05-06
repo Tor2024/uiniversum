@@ -1,176 +1,297 @@
 {
   "meta": {
-    "title": "Zen Yoga Studio | Find Your Inner Peace",
-    "description": "Transform your body and mind with our expert-led yoga classes. Vinyasa, Hatha, and Meditation in a serene environment.",
-    "favicon": "/media/presets/yoga/favicon.ico",
-    "language": "en",
-    "availableLanguages": ["en", "de", "ru"]
+    "title": "Atma Yoga | Studio & Retreats",
+    "description": "Yoga-Studio in Stuttgart. Hatha, Vinyasa, Yin Yoga und Meditation für alle Levels. Kleine Gruppen, erfahrene Lehrer, authentische Praxis.",
+    "favicon": "/media/presets/yoga_studio/favicon.ico",
+    "language": "de",
+    "availableLanguages": ["de", "en", "ru"]
   },
   "design": {
     "preset": "yoga_studio",
     "tokens": {
-      "colorBackground": "#F5F5F0",
+      "colorBackground": "#FAFAF8",
       "colorSurface": "#FFFFFF",
-      "colorPrimary": "#5C8A6F",
-      "colorSecondary": "#8A9A8C",
-      "colorBorder": "#D8E3DC",
-      "colorAccent": "#E8A87C",
-      "colorAccentHover": "#D4946A",
-      "fontDisplay": "Lora",
-      "fontHeading": "Lora",
-      "fontBody": "Nunito",
-      "fontCaption": "Nunito",
-      "fontMono": "Roboto Mono",
-      "fontSizeDisplay": "68px",
-      "fontSizeHeading": "34px",
+      "colorPrimary": "#1A1A2E",
+      "colorSecondary": "#6B7280",
+      "colorBorder": "#E8E8F0",
+      "colorAccent": "#E8A0BF",
+      "colorAccentHover": "#D080A0",
+      "fontDisplay": "Raleway",
+      "fontHeading": "Raleway",
+      "fontBody": "Inter",
+      "fontCaption": "Inter",
+      "fontMono": "JetBrains Mono",
+      "fontSizeDisplay": "76px",
+      "fontSizeHeading": "36px",
       "fontSizeBody": "17px",
       "lineHeightBody": "1.8",
       "lineHeightHeading": "1.3",
       "spacingUnit": "8px",
-      "spacingSection": "140px",
-      "spacingElement": "28px",
+      "spacingSection": "130px",
+      "spacingElement": "24px",
       "spacingCard": "32px",
       "spacingButtonVertical": "16px",
       "spacingButtonHorizontal": "36px",
-      "maxWidthContent": "1100px",
+      "maxWidthContent": "1200px",
       "maxWidthText": "680px",
       "gridColumns": "12",
-      "gridGutter": "30px",
+      "gridGutter": "28px",
       "horizontalPaddingMobile": "20px",
-      "horizontalPaddingTablet": "50px",
-      "horizontalPaddingDesktop": "90px",
+      "horizontalPaddingTablet": "48px",
+      "horizontalPaddingDesktop": "80px",
       "borderRadius": "16",
       "borderRadiusSmall": "8px",
-      "borderRadiusMedium": "12px",
+      "borderRadiusMedium": "16px",
       "borderRadiusLarge": "24px",
       "shadowStyle": "soft",
-      "shadowResting": "0 4px 20px rgba(92,138,111,0.08)",
-      "shadowHover": "0 8px 30px rgba(92,138,111,0.12)",
+      "shadowResting": "0 4px 20px rgba(26,26,46,0.06)",
+      "shadowHover": "0 10px 36px rgba(232,160,191,0.2)",
       "transitionDuration": "250ms",
-      "transitionTiming": "ease-in-out",
+      "transitionTiming": "ease-out",
       "imageRatioHero": "16:9",
-      "imageRatioCard": "3:4",
+      "imageRatioCard": "4:3",
       "imageRatioAvatar": "1:1"
     },
     "customCss": ""
   },
   "seo": {
-    "ogImage": "/media/presets/yoga/og-default.jpg",
+    "ogImage": "/media/presets/yoga_studio/og-default.jpg",
     "twitterCard": "summary_large_image",
     "googleAnalyticsId": "",
-    "keywords": "Yoga, Studio, Meditation, Wellness, Mindfulness, Zen"
+    "keywords": "Yoga Stuttgart, Hatha Yoga, Vinyasa, Yin Yoga, Meditation, Yoga Kurs"
+  },
+  "layout": {
+    "style": "clean_minimal",
+    "heroType": "centered_text",
+    "navStyle": "light_minimal",
+    "servicesLayout": "grid_3col",
+    "testimonialsLayout": "light_background",
+    "footerStyle": "light_minimal"
   },
   "content": {
     "slogans": {
-      "en": ["Find Your Inner Peace", "Breathe. Stretch. Live.", "Balance Your Life"],
-      "de": ["Finde deinen inneren Frieden", "Atme. Dehne. Lebe.", "Balance für dein Leben"],
-      "ru": ["Найди внутренний покой", "Дыши. Тянись. Живи.", "Баланс для жизни"]
+      "de": ["Atme. Bewege dich. Sei.", "Yoga für jeden Körper", "Dein Weg nach innen"],
+      "en": ["Breathe. Move. Be.", "Yoga for every body", "Your path inward"],
+      "ru": ["Дыши. Двигайся. Будь.", "Йога для каждого тела", "Твой путь внутрь"]
     },
     "hero": {
-      "en": {
-        "heading": "Find Your Inner Peace",
-        "subheading": "Join our community and start your journey to a healthier, more balanced life through yoga.",
-        "cta": "Book a Class",
-        "image": "/media/presets/yoga/hero.jpg"
-      },
       "de": {
-        "heading": "Finde deinen inneren Frieden",
-        "subheading": "Werde Teil unserer Community und starte deine Reise zu einem gesünderen, ausgewogeneren Leben.",
-        "cta": "Kurs buchen",
-        "image": "/media/presets/yoga/hero.jpg"
+        "heading": "Atme. Bewege dich. Sei.",
+        "subheading": "Atma Yoga ist ein Ort der Stille und Transformation. Kleine Gruppen, erfahrene Lehrer und eine Praxis, die sich an Ihren Körper anpasst — nicht umgekehrt.",
+        "cta": "Probestunde buchen",
+        "secondaryCta": "Stundenplan ansehen",
+        "image": "/media/presets/yoga_studio/hero.jpg",
+        "imageAlt": "Yoga-Praxis in einem hellen, ruhigen Studio"
+      },
+      "en": {
+        "heading": "Breathe. Move. Be.",
+        "subheading": "Atma Yoga is a place of stillness and transformation. Small groups, experienced teachers and a practice that adapts to your body — not the other way around.",
+        "cta": "Book Trial Class",
+        "secondaryCta": "View Schedule",
+        "image": "/media/presets/yoga_studio/hero.jpg",
+        "imageAlt": "Yoga practice in a bright, calm studio"
       },
       "ru": {
-        "heading": "Найди внутренний покой",
-        "subheading": "Присоединяйся к нашему сообществу и начни путь к здоровой и гармоничной жизни через йогу.",
-        "cta": "Записаться на класс",
-        "image": "/media/presets/yoga/hero.jpg"
+        "heading": "Дыши. Двигайся. Будь.",
+        "subheading": "Atma Yoga — место тишины и трансформации. Небольшие группы, опытные преподаватели и практика, которая адаптируется к вашему телу — а не наоборот.",
+        "cta": "Записаться на пробный урок",
+        "secondaryCta": "Расписание",
+        "image": "/media/presets/yoga_studio/hero.jpg",
+        "imageAlt": "Практика йоги в светлой, спокойной студии"
       }
     },
     "about": {
-      "en": {
-        "title": "Our Philosophy",
-        "text": "At Zen Yoga Studio, we believe in the power of mindful movement. Our certified instructors guide you through practices that strengthen the body and calm the mind."
-      },
       "de": {
-        "title": "Unsere Philosophie",
-        "text": "Im Zen Yoga Studio glauben wir an die Kraft der achtsamen Bewegung. Unsere zertifizierten Lehrer führen dich durch Praktiken, die Körper und Geist stärken."
+        "title": "Yoga als Lebensweg",
+        "subtitle": "Seit 2014 in Stuttgart-Mitte",
+        "text": "Atma Yoga wurde 2014 von Priya Sharma gegründet — nach 10 Jahren Studium in Mysore, Indien. Ihr Ansatz: Yoga ist keine Sportart, sondern ein Weg zur Selbsterkenntnis. Jede Stunde ist eine Einladung, tiefer in sich hineinzuhören. Unser Studio bietet Platz für maximal 12 Personen — damit jeder die Aufmerksamkeit bekommt, die er verdient.",
+        "image": "/media/presets/yoga_studio/about.jpg",
+        "imageAlt": "Yoga-Lehrerin Priya Sharma im Studio",
+        "stats": [
+          { "value": "10", "label": "Jahre Erfahrung" },
+          { "value": "8", "label": "Zertifizierte Lehrer" },
+          { "value": "500+", "label": "Aktive Schüler" }
+        ]
+      },
+      "en": {
+        "title": "Yoga as a Way of Life",
+        "subtitle": "Since 2014 in Stuttgart-Mitte",
+        "text": "Atma Yoga was founded in 2014 by Priya Sharma — after 10 years of study in Mysore, India. Her approach: yoga is not a sport, but a path to self-knowledge. Every class is an invitation to listen more deeply to yourself. Our studio accommodates a maximum of 12 people — so everyone gets the attention they deserve.",
+        "image": "/media/presets/yoga_studio/about.jpg",
+        "imageAlt": "Yoga teacher Priya Sharma in the studio",
+        "stats": [
+          { "value": "10", "label": "Years of experience" },
+          { "value": "8", "label": "Certified teachers" },
+          { "value": "500+", "label": "Active students" }
+        ]
       },
       "ru": {
-        "title": "Наша философия",
-        "text": "В Zen Yoga Studio мы верим в силу осознанного движения. Наши сертифицированные инструкторы проведут вас через практики, укрепляющие тело и разум."
+        "title": "Йога как путь жизни",
+        "subtitle": "С 2014 года в Штутгарт-Митте",
+        "text": "Atma Yoga была основана в 2014 году Прией Шармой — после 10 лет обучения в Майсуре, Индия. Её подход: йога — это не спорт, а путь к самопознанию. Каждый урок — это приглашение прислушаться к себе глубже. Наша студия вмещает максимум 12 человек — чтобы каждый получил внимание, которого заслуживает.",
+        "image": "/media/presets/yoga_studio/about.jpg",
+        "imageAlt": "Преподаватель йоги Прия Шарма в студии",
+        "stats": [
+          { "value": "10", "label": "Лет опыта" },
+          { "value": "8", "label": "Сертифицированных учителей" },
+          { "value": "500+", "label": "Активных учеников" }
+        ]
       }
     },
-    "classes": [
+    "services": [
       {
-        "name_en": "Vinyasa Flow",
-        "name_de": "Vinyasa Flow",
-        "name_ru": "Виньяса Флоу",
-        "price": "$20",
-        "desc_en": "Dynamic movement synchronized with breath.",
-        "image": "/media/presets/yoga/classes/vinyasa.jpg"
-      },
-      {
-        "name_en": "Hatha Yoga",
         "name_de": "Hatha Yoga",
-        "name_ru": "Хатха Йога",
-        "price": "$18",
-        "desc_en": "Foundational postures for alignment and strength.",
-        "image": "/media/presets/yoga/classes/hatha.jpg"
+        "name_en": "Hatha Yoga",
+        "name_ru": "Хатха-йога",
+        "price": "im Abo",
+        "desc_de": "Klassische Körperhaltungen, Atemübungen, Entspannung. Ideal für Einsteiger und alle Levels.",
+        "desc_en": "Classic postures, breathing exercises, relaxation. Ideal for beginners and all levels.",
+        "desc_ru": "Классические позы, дыхательные упражнения, расслабление. Идеально для начинающих и всех уровней.",
+        "image": "/media/presets/yoga_studio/services/hatha.jpg",
+        "tags": ["Einsteiger"]
       },
       {
-        "name_en": "Guided Meditation",
+        "name_de": "Vinyasa Flow",
+        "name_en": "Vinyasa Flow",
+        "name_ru": "Виньяса Флоу",
+        "price": "im Abo",
+        "desc_de": "Dynamische Abfolgen, synchronisiert mit dem Atem. Kraft, Flexibilität und Fokus.",
+        "desc_en": "Dynamic sequences synchronised with the breath. Strength, flexibility and focus.",
+        "desc_ru": "Динамические последовательности, синхронизированные с дыханием. Сила, гибкость и фокус.",
+        "image": "/media/presets/yoga_studio/services/vinyasa.jpg",
+        "tags": ["Beliebt"]
+      },
+      {
+        "name_de": "Yin Yoga",
+        "name_en": "Yin Yoga",
+        "name_ru": "Инь-йога",
+        "price": "im Abo",
+        "desc_de": "Lange gehaltene Positionen, tiefe Entspannung, Faszienarbeit. Perfekt nach einem langen Tag.",
+        "desc_en": "Long-held positions, deep relaxation, fascia work. Perfect after a long day.",
+        "desc_ru": "Долго удерживаемые позиции, глубокое расслабление, работа с фасциями. Идеально после долгого дня.",
+        "image": "/media/presets/yoga_studio/services/yin.jpg",
+        "tags": []
+      },
+      {
         "name_de": "Meditation",
+        "name_en": "Meditation",
         "name_ru": "Медитация",
-        "price": "$15",
-        "desc_en": "Quiet the mind and reduce stress.",
-        "image": "/media/presets/yoga/classes/meditation.jpg"
+        "price": "im Abo",
+        "desc_de": "Geführte Meditationen, Pranayama, Yoga Nidra. Für innere Ruhe und Klarheit.",
+        "desc_en": "Guided meditations, pranayama, yoga nidra. For inner calm and clarity.",
+        "desc_ru": "Управляемые медитации, пранаяма, йога-нидра. Для внутреннего покоя и ясности.",
+        "image": "/media/presets/yoga_studio/services/meditation.jpg",
+        "tags": []
+      },
+      {
+        "name_de": "Monatskarte",
+        "name_en": "Monthly Pass",
+        "name_ru": "Месячный абонемент",
+        "price": "89€/Monat",
+        "desc_de": "Unbegrenzte Kurse, alle Stile. Monatlich kündbar. Inkl. 1 Privatstunde pro Quartal.",
+        "desc_en": "Unlimited classes, all styles. Monthly cancellable. Incl. 1 private lesson per quarter.",
+        "desc_ru": "Неограниченные занятия, все стили. Ежемесячная отмена. Включая 1 индивидуальный урок в квартал.",
+        "image": "/media/presets/yoga_studio/services/pass.jpg",
+        "tags": ["Empfehlung"]
+      },
+      {
+        "name_de": "Probestunde",
+        "name_en": "Trial Class",
+        "name_ru": "Пробный урок",
+        "price": "15€",
+        "desc_de": "Einmalig alle Stile kennenlernen. Matte und Hilfsmittel werden gestellt.",
+        "desc_en": "Try all styles once. Mat and props provided.",
+        "desc_ru": "Попробуйте все стили один раз. Коврик и реквизит предоставляются.",
+        "image": "/media/presets/yoga_studio/services/trial.jpg",
+        "tags": ["Einsteiger"]
       }
     ],
     "testimonials": [
       {
-        "name": "Sarah L.",
-        "text_en": "This studio changed my life. The atmosphere is so peaceful and welcoming.",
-        "text_de": "Dieses Studio hat mein Leben verändert. Die Atmosphäre ist so friedlich.",
-        "text_ru": "Эта студия изменила мою жизнь. Атмосфера невероятно спокойная.",
+        "name": "Clara M.",
+        "location_de": "Stuttgart",
+        "text_de": "Atma Yoga hat mein Leben verändert. Ich kam mit Rückenschmerzen und chronischem Stress — nach 3 Monaten bin ich ein anderer Mensch. Priya ist eine außergewöhnliche Lehrerin.",
+        "text_en": "Atma Yoga changed my life. I came with back pain and chronic stress — after 3 months I am a different person. Priya is an extraordinary teacher.",
+        "text_ru": "Atma Yoga изменила мою жизнь. Я пришла с болями в спине и хроническим стрессом — через 3 месяца я другой человек. Прия — выдающийся преподаватель.",
         "rating": 5,
-        "avatar": "/media/presets/yoga/avatars/sarah.jpg"
+        "source": "Google",
+        "avatar": "/media/presets/yoga_studio/avatars/clara.jpg"
       },
       {
-        "name": "Markus B.",
-        "text_en": "Best yoga classes in town. Highly recommended for all levels.",
-        "text_de": "Die besten Yogakurse in der Stadt. Für alle Levels empfohlen.",
-        "text_ru": "Лучшие уроки йоги в городе. Рекомендую для всех уровней.",
+        "name": "Thomas B.",
+        "location_de": "Stuttgart-Mitte",
+        "text_de": "Als Mann war ich skeptisch. Jetzt komme ich dreimal pro Woche. Der Yin-Kurs am Donnerstagabend ist mein Highlight der Woche. Die kleine Gruppengröße macht den Unterschied.",
+        "text_en": "As a man I was sceptical. Now I come three times a week. The yin class on Thursday evening is my highlight of the week. The small group size makes the difference.",
+        "text_ru": "Как мужчина я был скептичен. Теперь хожу три раза в неделю. Инь-занятие в четверг вечером — мой еженедельный хайлайт. Небольшой размер группы имеет значение.",
         "rating": 5,
-        "avatar": "/media/presets/yoga/avatars/markus.jpg"
+        "source": "Google",
+        "avatar": "/media/presets/yoga_studio/avatars/thomas.jpg"
+      },
+      {
+        "name": "Lena K.",
+        "location_de": "Stuttgart",
+        "text_de": "Ich habe viele Studios ausprobiert. Atma ist das einzige, wo ich mich wirklich gesehen fühle. Priya kennt jeden Schüler persönlich und passt die Stunden individuell an.",
+        "text_en": "I have tried many studios. Atma is the only one where I truly feel seen. Priya knows every student personally and adapts the classes individually.",
+        "text_ru": "Я пробовала много студий. Atma — единственная, где я действительно чувствую себя замеченной. Прия знает каждого ученика лично и адаптирует занятия индивидуально.",
+        "rating": 5,
+        "source": "Google",
+        "avatar": "/media/presets/yoga_studio/avatars/lena.jpg"
+      }
+    ],
+    "faq": [
+      {
+        "q_de": "Brauche ich Vorkenntnisse?",
+        "q_en": "Do I need prior experience?",
+        "q_ru": "Нужен ли предварительный опыт?",
+        "a_de": "Nein. Unsere Hatha-Kurse sind explizit für Einsteiger geeignet. Bitte bei der Buchung angeben, dass Sie Anfänger sind.",
+        "a_en": "No. Our Hatha classes are explicitly suitable for beginners. Please indicate when booking that you are a beginner.",
+        "a_ru": "Нет. Наши занятия Хатха явно подходят для начинающих. Пожалуйста, укажите при бронировании, что вы новичок."
+      },
+      {
+        "q_de": "Was soll ich mitbringen?",
+        "q_en": "What should I bring?",
+        "q_ru": "Что нужно взять с собой?",
+        "a_de": "Bequeme Kleidung und Socken. Matten, Blöcke und Gurte stellen wir. Wasser ist willkommen.",
+        "a_en": "Comfortable clothing and socks. We provide mats, blocks and straps. Water is welcome.",
+        "a_ru": "Удобная одежда и носки. Коврики, блоки и ремни мы предоставляем. Вода приветствуется."
+      },
+      {
+        "q_de": "Gibt es Online-Kurse?",
+        "q_en": "Are there online classes?",
+        "q_ru": "Есть ли онлайн-занятия?",
+        "a_de": "Ja, alle Kurse sind auch als Live-Stream buchbar. Aufzeichnungen sind 7 Tage verfügbar.",
+        "a_en": "Yes, all classes are also bookable as live stream. Recordings are available for 7 days.",
+        "a_ru": "Да, все занятия также доступны в прямом эфире. Записи доступны 7 дней."
       }
     ],
     "contact": {
-      "address": "789 Serenity Blvd, Boulder, CO",
-      "phone": "+1 303 555 0145",
-      "email": "info@zenyogastudio.com",
-      "hours_en": "Mon-Fri: 7:00 AM - 8:00 PM, Sat-Sun: 8:00 AM - 4:00 PM",
-      "hours_de": "Mo-Fr: 07:00 - 20:00 Uhr, Sa-So: 08:00 - 16:00 Uhr",
-      "hours_ru": "Пн-Пт: 07:00 - 20:00, Сб-Вс: 08:00 - 16:00"
+      "address": "Calwer Straße 22, 70173 Stuttgart-Mitte",
+      "phone": "+49 711 2233 4455",
+      "email": "namaste@atma-yoga.de",
+      "hours_de": "Mo–Fr: 07:00–21:00 Uhr · Sa–So: 08:00–18:00 Uhr",
+      "hours_en": "Mon–Fri: 7:00 AM–9:00 PM · Sat–Sun: 8:00 AM–6:00 PM",
+      "hours_ru": "Пн–Пт: 07:00–21:00 · Сб–Вс: 08:00–18:00"
     },
-    "faq": [
-      {
-        "q_en": "Do I need to bring my own mat?",
-        "q_de": "Muss ich meine eigene Matte mitbringen?",
-        "q_ru": "Нужно ли приносить свой коврик?",
-        "a_en": "We provide mats and props, but you are welcome to bring your own.",
-        "a_de": "Wir stellen Matten und Zubehör, aber du kannst gerne deine eigene mitbringen.",
-        "a_ru": "Мы предоставляем коврики и инвентарь, но можете принести свой."
-      }
-    ]
+    "legal": {
+      "priceNote_de": "Alle Preise inkl. MwSt. Monatskarte monatlich kündbar. Keine Aufnahmegebühr.",
+      "cancellationPolicy_de": "Kursstornierung bis 2 Stunden vor Beginn kostenlos. Danach wird die Einheit vom Kontingent abgezogen."
+    }
   },
   "booking": {
     "enabled": true,
-    "slots": ["07:00", "09:00", "17:00", "18:30"],
-    "duration": 90
+    "slots": ["07:00", "08:30", "10:00", "12:00", "17:30", "19:00", "20:30"],
+    "duration": 75,
+    "maxGuests": 12,
+    "note_de": "Maximale Gruppengröße: 12 Personen. Bitte rechtzeitig buchen."
   },
   "logo": {
-    "text": "ZEN",
-    "tagline": "YOGA STUDIO",
-    "font": "Lora"
+    "text": "Atma",
+    "tagline": "YOGA · STUTTGART",
+    "font": "Raleway",
+    "style": "text_light"
+  },
+  "social": {
+    "instagram": "https://instagram.com/atma.yoga.stuttgart",
+    "facebook": "https://facebook.com/atmayogastuttgart"
   }
 }

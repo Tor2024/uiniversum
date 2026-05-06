@@ -4,7 +4,11 @@
     "description": "Professional music production, mixing, and mastering for artists.",
     "favicon": "/media/presets/musician/favicon.ico",
     "language": "en",
-    "availableLanguages": ["en", "de", "ru"]
+    "availableLanguages": [
+      "en",
+      "de",
+      "ru"
+    ]
   },
   "design": {
     "preset": "musician",
@@ -62,9 +66,21 @@
   },
   "content": {
     "slogans": {
-      "en": ["Feel the Rhythm", "Sound of Art", "Create Magic"],
-      "de": ["Spüre den Rhythmus", "Klang der Kunst", "Magie erschaffen"],
-      "ru": ["Почувствуй ритм", "Звук искусства", "Создай магию"]
+      "en": [
+        "Feel the Rhythm",
+        "Sound of Art",
+        "Create Magic"
+      ],
+      "de": [
+        "Spüre den Rhythmus",
+        "Klang der Kunst",
+        "Magie erschaffen"
+      ],
+      "ru": [
+        "Почувствуй ритм",
+        "Звук искусства",
+        "Создай магию"
+      ]
     },
     "hero": {
       "en": {
@@ -75,13 +91,13 @@
       },
       "de": {
         "heading": "Spüre den Rhythmus",
-        "subheading": "Professionelle Musikproduktion, Mixing und Mastering für Künstler.",
+        "subheading": "Professional music production, mixing, and mastering for artists.",
         "cta": "Jetzt starten",
         "image": "/media/presets/musician/hero.jpg"
       },
       "ru": {
         "heading": "Почувствуй ритм",
-        "subheading": "Профессиональная музыкальная продукция, сведение и мастеринг для артистов.",
+        "subheading": "Professional music production, mixing, and mastering for artists.",
         "cta": "Начать",
         "image": "/media/presets/musician/hero.jpg"
       }
@@ -97,7 +113,7 @@
       },
       "ru": {
         "title": "О нас",
-        "text": "Мы помогаем артистам воплотить музыкальные идеи в жизнь с профессиональным оборудованием."
+        "text": "Мы помогаем артистам воплотить музыкальные идеи в жизнь."
       }
     },
     "services": [
@@ -122,8 +138,8 @@
       {
         "name": "DJ Pulse",
         "text_en": "The acoustics in this studio are out of this world.",
-        "text_de": "Die Akustik in diesem Studio ist von dieser Welt.",
-        "text_ru": "Акустика в этой студии - вне этого мира.",
+        "text_de": "The acoustics in this studio are out of this world.",
+        "text_ru": "The acoustics in this studio are out of this world.",
         "rating": 5,
         "avatar": "/media/presets/musician/avatars/dj.jpg"
       }
@@ -149,7 +165,12 @@
   },
   "booking": {
     "enabled": true,
-    "slots": ["09:00", "10:00", "14:00", "16:00"],
+    "slots": [
+      "09:00",
+      "10:00",
+      "14:00",
+      "16:00"
+    ],
     "duration": 60
   },
   "logo": {
