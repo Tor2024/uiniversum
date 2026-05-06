@@ -1,7 +1,147 @@
 # План развития проекта 1universum (SaaS Конструктор Сайтов)
 
 > **ВАЖНО:** Это живой документ. При получении новых задач, дополняй этот файл.
-> **Правило:** Перед началом работы всегда читать этот файл. При сбое или новом чате — весь контекст здесь.
+> **Правило:** Перед началом работы ВСЕГДА читать этот файл. При сбое или новом чате — весь контекст здесь.
+
+---
+
+## 🔴 ТЕКУЩИЙ СТАТУС (читать в первую очередь при новом чате)
+
+### Деплой и доступ
+- **Сайт:** https://1universum.vercel.app
+- **Админка:** https://1universum.vercel.app/admin/login — пароль `181077`
+- **GitHub:** https://github.com/Tor2024/uiniversum (ветка master)
+- **Vercel Token:** хранится в .env.local (VERCEL_TOKEN) — не коммитить!
+- **GitHub Token:** хранится в .env.local (GITHUB_TOKEN) — не коммитить!
+
+### Команды деплоя
+```bash
+npx next build
+vercel --token "VERCEL_TOKEN_FROM_ENV" --yes --prod
+git add -A; git commit -m "описание"; git push origin master
+```
+
+---
+
+## 🟢 ЧТО УЖЕ СДЕЛАНО
+
+### Инфраструктура
+- Next.js 16.2.4, React 19, Tailwind 4, next-intl (de/en/ru)
+- Авторизация: bcryptjs, cookie admin_token, middleware защита
+- API: /api/auth, /api/auth/logout, /api/contact (сохраняет в JSON), /api/upload, /api/publish (GitHub Octokit), /api/clone-preset, /api/booking
+- Все env variables на Vercel: ADMIN_PASSWORD_HASH, ADMIN_TOKEN_HASH, GITHUB_TOKEN, GITHUB_OWNER, GITHUB_REPO, GITHUB_BRANCH, NEXT_PUBLIC_SITE_URL, NEXT_PUBLIC_DEFAULT_LANGUAGE, REVALIDATION_SECRET, NODE_ENV
+
+### Админ-панель (полностью на русском)
+- Переключатель языка RU/DE/EN в шапке (localStorage)
+- Все страницы с подсказками: Dashboard, Шаблоны, Страницы, Медиа, Дизайн, Заявки, Навигация, Настройки, Редактор
+- Редактор блоков: показывает список 22 блоков с русскими названиями
+
+### Шаблоны (пресеты)
+- Карточки: мини-макет с цветами, шрифтами, услугами, статистикой, отзывом, кнопкой «Применить»
+- **Переработанные пресеты (полный немецкий контент + немецкое право):**
+  - `restaurant_modern.json` — «Das Feuer» (Dishoom стиль): тёмный #1C1208, золото #C9A96E, Playfair Display. Меню с аллергенами LMIV, MwSt 19%, DSGVO
+  - `restaurant_pizza.json` — «Napoli Vera» (Pizzeria Vetri стиль): белый #FAFAF8, красный #D63B1F, DM Serif Display. Storytelling, MwSt 7%/19%
+  - `barbershop_classic.json` — «Herr Schmidt» (Bruno's стиль): чёрный #0D0D0D, золото #B8860B, Oswald. 6 услуг, PAngV, политика отмены
+  - `spa_center.json` — «Tranquil Spa» (Ocean Gaze стиль): бежевый #F5F0EB, коричневый #A67C52, Cormorant Garamond. HWG, DSGVO
+
+---
+
+## 🔴 СЛЕДУЮЩИЕ ЗАДАЧИ (строго по порядку)
+
+### ЗАДАЧА 1: Живые превью шаблонов (В ПРОЦЕССЕ — 50%)
+
+**Уже создано:**
+- `src/app/[lang]/preview/[presetId]/page.tsx` ✅ — роут с preview banner и кнопкой «Использовать»
+- `src/components/presets/` ✅ — папка создана
+
+**Осталось создать:**
+
+**A) `src/components/presets/PresetRenderer.tsx`**
+Полноценный рендерер сайта из данных пресета. Структура:
+```
+<PresetSiteNav preset locale />        ← Navbar с логотипом и ссылками
+<PresetHero preset locale />           ← Fullscreen hero с overlay
+<PresetAbout preset locale />          ← About: image left + text right (или centered)
+<PresetServices preset locale />       ← Services/Menu grid
+<PresetTestimonials preset locale />   ← Отзывы на тёмном/светлом фоне
+<PresetFAQ preset locale />            ← FAQ accordion
+<PresetContact preset locale />        ← Контакты + карта
+<PresetFooter preset locale />         ← Footer с legal info
+```
+- Стили: CSS переменные из `preset.design.tokens` (уже генерируются через `generateCssVariables`)
+- Google Fonts: динамически из `tokens.fontDisplay` и `tokens.fontBody`
+- Layout зависит от `preset.layout.style` (dark_elegant / clean_minimal / dark_masculine)
+- Адаптивность: mobile-first
+
+**B) Обновить `src/app/admin/presets/page.tsx`**
+Добавить кнопку «Предпросмотр» в каждую карточку:
+```tsx
+<a href={`/de/preview/${p.id}`} target="_blank">
+  👁 Vorschau
+</a>
+```
+
+**C) Обновить `middleware.ts`**
+Добавить `/de/preview/*` в исключения (не требует авторизации):
+```ts
+if (pathname.startsWith('/admin') && !pathname.startsWith('/admin/login')) {
+  // auth check
+}
+// /de/preview/* — публичный, проходит через intlMiddleware
+```
+(Сейчас middleware уже правильный — preview роут публичный, проверить что работает)
+
+---
+
+### ЗАДАЧА 2: UI выбора шрифтов в /admin/design
+
+В `src/app/admin/design/page.tsx` добавить секцию «Шрифты»:
+- 20+ Google Fonts сгруппированных: Serif (Playfair Display, Cormorant Garamond, Libre Baskerville...), Sans-Serif (Inter, DM Sans, Raleway...), Display (Oswald, Montserrat, Space Grotesk...), Handwriting (Dancing Script, Lora...)
+- При клике: обновляет `data/site.json` через `/api/publish`
+- Live preview: текст меняет шрифт через CSS переменную без перезагрузки
+
+---
+
+### ЗАДАЧА 3: Продолжить пресеты (осталось 24 из 28)
+
+Порядок (по референсам пользователя):
+1. `beauty_salon.json` — aestheticbarnj.com стиль: белый #FDFCFB, роза #D4A0A0, Cormorant Garamond + Raleway. Split-screen hero, HWG
+2. `fitness_gym.json` — fhittingroom.com стиль: чёрный #0A0A0A, оранжевый #FF4500, Montserrat ExtraBold. Видео-фон, HIIT факты
+3. `coffee_shop.json` — thecoffeemovement.com стиль: тёплый белый #F7F3EE, кофейный #2C1A0E, Libre Baskerville. Ультраминимализм
+4. `bakery.json` — napoleonsbakery.com стиль: кремовый #FFF8F0, шоколад #3D2B1F, Playfair Display + Nunito
+5. `yoga_studio.json` — powerhousepilates.ca стиль: белый #FAFAF8, тёмно-синий #1A1A2E, розовый #E8A0BF, Raleway
+6. `dental_clinic.json` — dentalia.com стиль: белый #FFFFFF, синий #003087, Inter. HWG строго
+7. `law_firm.json` — alazazi.com стиль: тёмно-синий #0F1923, золото #C9A96E, Libre Baskerville. BRAO
+8. `real_estate.json` — luxuryportfolio.com стиль: белый #FAFAF8, золото #8B7355, Cormorant Garamond. MaBV
+9. `fashion_store.json` — juste.uk стиль: белый #FFFFFF, чёрный #1A1A1A, DM Sans. Widerrufsrecht 14 Tage
+10. `jewelry_store.json` — Maison Doree стиль: кремовый #F5F0E8, антик-золото #C9A96E, Cormorant Garamond
+11. `boutique_hotel.json` — numberonebruton.com стиль: тёмный дуб #2C2416, пергамент #F5EDD8, Playfair Display. Beherbergungsrecht
+12. `travel_agency.json` — тёмно-синий #0A2342, оранжевый #F5A623, Montserrat. §§ 651a ff. BGB
+13. `photographer_portfolio.json` — ivoryfayre.co.uk стиль: чёрный #1A1A1A, золото #C9A96E, Cormorant Garamond
+14. `wedding_photographer.json` — daniloandsharon.com стиль: кремовый #F8F4EF, роза #D4A0A0, Playfair Display Italic
+15. `musician.json` — чёрный #0A0A0A, фиолетовый #7B2FBE, Space Grotesk. GEMA
+16. `personal_blog.json` — 121-salon.com стиль: белый #FAFAF8, шалфей #6B9E78, Lora. Impressum обязателен для блогов
+17. `online_courses.json` — тёмно-синий #0F172A, индиго #6366F1, Inter. Fernunterrichtsschutzgesetz
+18. `saas_startup.json` — secgra.com стиль: тёмно-синий #0A0F1E, cyan #00D4FF, Inter. DSGVO
+19. `web_agency.json` — adaline.ai стиль: чёрный #0D0D0D, фиолетовый #A855F7, Syne + Inter
+20. `business_consulting.json` — тёмно-синий #1A2332, золото #C9A96E, Libre Baskerville
+21. `construction_company.json` — чёрный #1A1A1A, оранжевый #F5A623, Montserrat. VOB
+22. `auto_service.json` — чёрный #0D0D0D, красный #E63946, Oswald. KFZ-Recht
+23. `logistics.json` — синий #003087, оранжевый #F5A623, Montserrat. CMR, GüKG
+24. `kindergarten.json` — коралловый #FF6B6B, бирюзовый #4ECDC4, Nunito. KiTaG, DSGVO для детей
+
+---
+
+### ЗАДАЧА 4: Полноценный рендерер блоков
+
+Переписать `src/components/blocks/renderer.tsx`:
+- Реализовать все 22 типа блоков с реальными стилями
+- Каждый блок использует CSS переменные из токенов пресета
+- Адаптивность mobile-first
+
+---
+
+
 
 ---
 
