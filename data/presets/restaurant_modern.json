@@ -1,53 +1,53 @@
 {
   "meta": {
-    "title": "L'Atelier Gourmet | Modern Cuisine",
-    "description": "Erleben Sie moderne Küche in entspannter Atmosphäre. Frische Zutaten, kreative Rezepte und exzellenter Service.",
-    "favicon": "/media/presets/restaurant/favicon.ico",
+    "title": "Das Feuer | Moderne Deutsche Küche",
+    "description": "Erleben Sie moderne deutsche Küche in dunkler, eleganter Atmosphäre. Saisonale Zutaten aus der Region, handwerkliche Zubereitung und ein Weinkeller, der begeistert.",
+    "favicon": "/media/presets/restaurant_modern/favicon.ico",
     "language": "de",
     "availableLanguages": ["de", "en", "ru"]
   },
   "design": {
     "preset": "restaurant_modern",
     "tokens": {
-      "colorBackground": "#FFF8F0",
-      "colorSurface": "#FFFFFF",
-      "colorPrimary": "#2C1810",
-      "colorSecondary": "#8B7355",
-      "colorBorder": "#E6D5C3",
-      "colorAccent": "#D4A574",
-      "colorAccentHover": "#C08A5A",
+      "colorBackground": "#1C1208",
+      "colorSurface": "#2A1E10",
+      "colorPrimary": "#F5E6C8",
+      "colorSecondary": "#B8A080",
+      "colorBorder": "#3D2E1A",
+      "colorAccent": "#C9A96E",
+      "colorAccentHover": "#E8C88A",
       "fontDisplay": "Playfair Display",
       "fontHeading": "Playfair Display",
       "fontBody": "Lato",
       "fontCaption": "Lato",
       "fontMono": "Roboto Mono",
-      "fontSizeDisplay": "80px",
-      "fontSizeHeading": "36px",
-      "fontSizeBody": "18px",
-      "lineHeightBody": "1.8",
-      "lineHeightHeading": "1.4",
+      "fontSizeDisplay": "84px",
+      "fontSizeHeading": "38px",
+      "fontSizeBody": "17px",
+      "lineHeightBody": "1.9",
+      "lineHeightHeading": "1.3",
       "spacingUnit": "8px",
-      "spacingSection": "140px",
-      "spacingElement": "28px",
-      "spacingCard": "36px",
+      "spacingSection": "160px",
+      "spacingElement": "32px",
+      "spacingCard": "40px",
       "spacingButtonVertical": "18px",
-      "spacingButtonHorizontal": "36px",
-      "maxWidthContent": "1200px",
-      "maxWidthText": "700px",
+      "spacingButtonHorizontal": "40px",
+      "maxWidthContent": "1280px",
+      "maxWidthText": "720px",
       "gridColumns": "12",
-      "gridGutter": "30px",
-      "horizontalPaddingMobile": "20px",
-      "horizontalPaddingTablet": "50px",
-      "horizontalPaddingDesktop": "90px",
-      "borderRadius": "12",
-      "borderRadiusSmall": "8px",
-      "borderRadiusMedium": "16px",
-      "borderRadiusLarge": "24px",
-      "shadowStyle": "warm",
-      "shadowResting": "0 4px 20px rgba(44,24,16,0.08)",
-      "shadowHover": "0 8px 30px rgba(44,24,16,0.12)",
-      "transitionDuration": "180ms",
-      "transitionTiming": "ease-in-out",
+      "gridGutter": "32px",
+      "horizontalPaddingMobile": "24px",
+      "horizontalPaddingTablet": "48px",
+      "horizontalPaddingDesktop": "96px",
+      "borderRadius": "2",
+      "borderRadiusSmall": "2px",
+      "borderRadiusMedium": "4px",
+      "borderRadiusLarge": "8px",
+      "shadowStyle": "dark",
+      "shadowResting": "0 4px 24px rgba(0,0,0,0.4)",
+      "shadowHover": "0 12px 48px rgba(0,0,0,0.6)",
+      "transitionDuration": "300ms",
+      "transitionTiming": "ease-out",
       "imageRatioHero": "21:9",
       "imageRatioCard": "3:2",
       "imageRatioAvatar": "1:1"
@@ -55,49 +55,93 @@
     "customCss": ""
   },
   "seo": {
-    "ogImage": "/media/presets/restaurant/og-default.jpg",
+    "ogImage": "/media/presets/restaurant_modern/og-default.jpg",
     "twitterCard": "summary_large_image",
     "googleAnalyticsId": "",
-    "keywords": "Restaurant, Modern Cuisine, Fine Dining, Reservierung, L'Atelier Gourmet"
+    "keywords": "Restaurant Berlin, Moderne Deutsche Küche, Fine Dining, Tisch reservieren, Saisonale Küche"
+  },
+  "layout": {
+    "style": "dark_elegant",
+    "heroType": "fullscreen_overlay",
+    "navStyle": "transparent_dark",
+    "menuLayout": "categories_horizontal",
+    "aboutLayout": "image_left_text_right",
+    "testimonialsLayout": "dark_background",
+    "footerStyle": "dark_rich"
   },
   "content": {
     "slogans": {
-      "de": ["Genuss in Perfektion", "Modern. Leidenschaftlich. Lecker.", "Ihr Tisch ist bereit."],
-      "en": ["Taste Perfected", "Modern. Passionate. Delicious.", "Your table is ready."],
-      "ru": ["Совершенство вкуса", "Современно. Страстно. Вкусно.", "Ваш стол уже накрыт."]
+      "de": ["Wo Feuer auf Geschmack trifft", "Handwerk. Leidenschaft. Genuss.", "Ihr Abend beginnt hier."],
+      "en": ["Where Fire Meets Flavour", "Craft. Passion. Pleasure.", "Your evening starts here."],
+      "ru": ["Где огонь встречает вкус", "Мастерство. Страсть. Наслаждение.", "Ваш вечер начинается здесь."]
     },
     "hero": {
       "de": {
-        "heading": "Kulinarik neu erleben",
-        "subheading": "Frische Zutaten, kreative Rezepte und eine Atmosphäre, die zum Verweilen einlädt.",
+        "heading": "Feuer trifft auf Geschmack",
+        "subheading": "Moderne deutsche Küche — handwerklich zubereitet, saisonal inspiriert, unvergesslich serviert.",
         "cta": "Tisch reservieren",
-        "image": "/media/presets/restaurant/hero.jpg"
+        "secondaryCta": "Speisekarte ansehen",
+        "image": "/media/presets/restaurant_modern/hero.jpg",
+        "imageAlt": "Elegantes Restaurantinterieur mit warmem Kerzenlicht"
       },
       "en": {
-        "heading": "Experience Culinary Art",
-        "subheading": "Fresh ingredients, creative recipes, and an atmosphere that invites you to stay.",
+        "heading": "Fire Meets Flavour",
+        "subheading": "Modern German cuisine — crafted by hand, inspired by seasons, served unforgettably.",
         "cta": "Reserve a Table",
-        "image": "/media/presets/restaurant/hero.jpg"
+        "secondaryCta": "View Menu",
+        "image": "/media/presets/restaurant_modern/hero.jpg",
+        "imageAlt": "Elegant restaurant interior with warm candlelight"
       },
       "ru": {
-        "heading": "Искусство гастрономии",
-        "subheading": "Свежие ингредиенты, креативные рецепты и атмосфера, в которой хочется задержаться.",
+        "heading": "Огонь встречает вкус",
+        "subheading": "Современная немецкая кухня — ручная работа, сезонное вдохновение, незабываемая подача.",
         "cta": "Забронировать столик",
-        "image": "/media/presets/restaurant/hero.jpg"
+        "secondaryCta": "Смотреть меню",
+        "image": "/media/presets/restaurant_modern/hero.jpg",
+        "imageAlt": "Элегантный интерьер ресторана при свечах"
       }
+    },
+    "announcement": {
+      "de": "Jeden Freitag & Samstag: Live-Jazz ab 20:00 Uhr · Reservierungen empfohlen",
+      "en": "Every Friday & Saturday: Live Jazz from 8 PM · Reservations recommended",
+      "ru": "Каждую пятницу и субботу: живой джаз с 20:00 · Рекомендуем бронировать"
     },
     "about": {
       "de": {
-        "title": "Unsere Philosophie",
-        "text": "Wir glauben, dass gutes Essen Menschen verbindet. In L'Atelier Gourmet kombinieren wir traditionelle Techniken mit modernen Einflüssen, um ein unvergessliches Geschmackserlebnis zu schaffen."
+        "title": "Unsere Geschichte",
+        "subtitle": "Seit 2009 in Berlin-Mitte",
+        "text": "Das Feuer entstand aus einer einfachen Überzeugung: Gutes Essen braucht Zeit, Sorgfalt und die besten Zutaten. Küchenchef Marcus Weber, ausgebildet in Lyon und Kopenhagen, kehrt mit Das Feuer zu seinen deutschen Wurzeln zurück — und interpretiert sie neu. Jedes Gericht erzählt eine Geschichte: von Bauernhöfen in Brandenburg, Fischern an der Ostsee und Winzern an der Mosel.",
+        "image": "/media/presets/restaurant_modern/about.jpg",
+        "imageAlt": "Küchenchef Marcus Weber bei der Arbeit",
+        "stats": [
+          { "value": "15+", "label": "Jahre Erfahrung" },
+          { "value": "3", "label": "Michelin-Empfehlungen" },
+          { "value": "100%", "label": "Regionale Zutaten" }
+        ]
       },
       "en": {
-        "title": "Our Philosophy",
-        "text": "We believe that good food brings people together. At L'Atelier Gourmet, we combine traditional techniques with modern influences to create an unforgettable taste experience."
+        "title": "Our Story",
+        "subtitle": "Since 2009 in Berlin-Mitte",
+        "text": "Das Feuer was born from a simple conviction: good food needs time, care, and the finest ingredients. Head chef Marcus Weber, trained in Lyon and Copenhagen, returns to his German roots with Das Feuer — and reinterprets them. Every dish tells a story: of farms in Brandenburg, fishermen on the Baltic Sea, and vintners on the Moselle.",
+        "image": "/media/presets/restaurant_modern/about.jpg",
+        "imageAlt": "Head chef Marcus Weber at work",
+        "stats": [
+          { "value": "15+", "label": "Years of experience" },
+          { "value": "3", "label": "Michelin recommendations" },
+          { "value": "100%", "label": "Regional ingredients" }
+        ]
       },
       "ru": {
-        "title": "Наша философия",
-        "text": "Мы верим, что хорошая еда объединяет людей. В L'Atelier Gourmet мы сочетаем традиционные техники с современными веяниями, создавая незабываемые гастрономические впечатления."
+        "title": "Наша история",
+        "subtitle": "С 2009 года в Берлин-Митте",
+        "text": "Das Feuer родился из простого убеждения: хорошая еда требует времени, заботы и лучших ингредиентов. Шеф-повар Маркус Вебер, обученный в Лионе и Копенгагене, возвращается к своим немецким корням — и переосмысляет их. Каждое блюдо рассказывает историю: о фермах Бранденбурга, рыбаках Балтийского моря и виноделах Мозеля.",
+        "image": "/media/presets/restaurant_modern/about.jpg",
+        "imageAlt": "Шеф-повар Маркус Вебер за работой",
+        "stats": [
+          { "value": "15+", "label": "Лет опыта" },
+          { "value": "3", "label": "Рекомендации Michelin" },
+          { "value": "100%", "label": "Региональные продукты" }
+        ]
       }
     },
     "menu": [
@@ -106,8 +150,42 @@
         "category_en": "Starters",
         "category_ru": "Закуски",
         "items": [
-          {"name_de": "Tartare vom Rind", "name_en": "Beef Tartare", "name_ru": "Тартар из говядины", "price": "24€", "desc_de": "Mit Kapern, Eigelb und Crostini", "desc_en": "With capers, egg yolk and crostini", "desc_ru": "С каперсами, желтком и кростини", "image": "/media/presets/restaurant/menu/tartare.jpg"},
-          {"name_de": "Burrata", "name_en": "Burrata", "name_ru": "Буррата", "price": "18€", "desc_de": "Mit Tomaten und Basilikum", "desc_en": "With tomatoes and basil", "desc_ru": "С томатами и базиликом", "image": "/media/presets/restaurant/menu/burrata.jpg"}
+          {
+            "name_de": "Tatar vom Brandenburger Rind",
+            "name_en": "Brandenburg Beef Tartare",
+            "name_ru": "Тартар из бранденбургской говядины",
+            "price": "22€",
+            "desc_de": "Handgeschnitten, Eigelb-Emulsion, Kapern, geröstetes Sauerteigbrot",
+            "desc_en": "Hand-cut, egg yolk emulsion, capers, toasted sourdough",
+            "desc_ru": "Ручная нарезка, эмульсия из желтка, каперсы, поджаренный хлеб на закваске",
+            "allergens_de": "Enthält: Ei, Gluten, Senf",
+            "image": "/media/presets/restaurant_modern/menu/tartare.jpg",
+            "tags": ["Signature"]
+          },
+          {
+            "name_de": "Geräucherte Ostsee-Makrele",
+            "name_en": "Smoked Baltic Mackerel",
+            "name_ru": "Копчёная балтийская скумбрия",
+            "price": "18€",
+            "desc_de": "Kalt geräuchert, Meerrettichcreme, Apfel-Gurken-Salat, Dill",
+            "desc_en": "Cold smoked, horseradish cream, apple-cucumber salad, dill",
+            "desc_ru": "Холодного копчения, крем из хрена, салат из яблока и огурца, укроп",
+            "allergens_de": "Enthält: Fisch, Milch, Sellerie",
+            "image": "/media/presets/restaurant_modern/menu/mackerel.jpg",
+            "tags": ["Saisonal"]
+          },
+          {
+            "name_de": "Kürbissuppe",
+            "name_en": "Pumpkin Soup",
+            "name_ru": "Тыквенный суп",
+            "price": "14€",
+            "desc_de": "Hokkaido-Kürbis, Ingwer, Kokosmilch, geröstete Kürbiskerne (V)",
+            "desc_en": "Hokkaido pumpkin, ginger, coconut milk, toasted pumpkin seeds (V)",
+            "desc_ru": "Тыква хоккайдо, имбирь, кокосовое молоко, жареные семена тыквы (V)",
+            "allergens_de": "Enthält: Schalenfrüchte",
+            "image": "/media/presets/restaurant_modern/menu/soup.jpg",
+            "tags": ["Vegetarisch"]
+          }
         ]
       },
       {
@@ -115,41 +193,234 @@
         "category_en": "Main Courses",
         "category_ru": "Основные блюда",
         "items": [
-          {"name_de": "Lachsfilet", "name_en": "Salmon Fillet", "name_ru": "Филе лосося", "price": "32€", "desc_de": "Glasierter Spargel, Kartoffelpüree", "desc_en": "Glazed asparagus, mashed potatoes", "desc_ru": "Глазированная спаржа, пюре", "image": "/media/presets/restaurant/menu/salmon.jpg"}
+          {
+            "name_de": "Gebratenes Lachsfilet",
+            "name_en": "Pan-Seared Salmon Fillet",
+            "name_ru": "Жареное филе лосося",
+            "price": "34€",
+            "desc_de": "Wildlachs aus Schottland, glasierter Spargel, Kartoffelschaum, Beurre blanc",
+            "desc_en": "Wild salmon from Scotland, glazed asparagus, potato foam, beurre blanc",
+            "desc_ru": "Дикий лосось из Шотландии, глазированная спаржа, картофельный мусс, бёр блан",
+            "allergens_de": "Enthält: Fisch, Milch, Sellerie",
+            "image": "/media/presets/restaurant_modern/menu/salmon.jpg",
+            "tags": ["Signature"]
+          },
+          {
+            "name_de": "Geschmorte Kalbsbacke",
+            "name_en": "Braised Veal Cheek",
+            "name_ru": "Тушёная телячья щёчка",
+            "price": "38€",
+            "desc_de": "12 Stunden geschmort, Selleriepüree, Rotweinreduktion, Petersilienwurzel",
+            "desc_en": "Braised 12 hours, celeriac purée, red wine reduction, parsley root",
+            "desc_ru": "Тушится 12 часов, пюре из сельдерея, редукция красного вина, корень петрушки",
+            "allergens_de": "Enthält: Sellerie, Sulphite",
+            "image": "/media/presets/restaurant_modern/menu/veal.jpg",
+            "tags": ["Chef's Choice"]
+          },
+          {
+            "name_de": "Pilz-Risotto",
+            "name_en": "Mushroom Risotto",
+            "name_ru": "Грибное ризотто",
+            "price": "28€",
+            "desc_de": "Steinpilze, Pfifferlinge, Parmesan, Trüffelöl, frische Kräuter (V)",
+            "desc_en": "Porcini, chanterelles, parmesan, truffle oil, fresh herbs (V)",
+            "desc_ru": "Белые грибы, лисички, пармезан, трюфельное масло, свежие травы (V)",
+            "allergens_de": "Enthält: Milch, Gluten",
+            "image": "/media/presets/restaurant_modern/menu/risotto.jpg",
+            "tags": ["Vegetarisch"]
+          }
+        ]
+      },
+      {
+        "category_de": "Desserts",
+        "category_en": "Desserts",
+        "category_ru": "Десерты",
+        "items": [
+          {
+            "name_de": "Schokoladen-Fondant",
+            "name_en": "Chocolate Fondant",
+            "name_ru": "Шоколадный фондан",
+            "price": "14€",
+            "desc_de": "Valrhona 70%, flüssiger Kern, Vanilleeis, Karamellsauce",
+            "desc_en": "Valrhona 70%, liquid centre, vanilla ice cream, caramel sauce",
+            "desc_ru": "Valrhona 70%, жидкая начинка, ванильное мороженое, карамельный соус",
+            "allergens_de": "Enthält: Ei, Milch, Gluten",
+            "image": "/media/presets/restaurant_modern/menu/fondant.jpg",
+            "tags": ["Signature"]
+          },
+          {
+            "name_de": "Käseauswahl",
+            "name_en": "Cheese Selection",
+            "name_ru": "Сырная тарелка",
+            "price": "18€",
+            "desc_de": "5 deutsche Käsesorten, Feigensenf, Walnüsse, Trauben, Sauerteigbrot",
+            "desc_en": "5 German cheeses, fig mustard, walnuts, grapes, sourdough bread",
+            "desc_ru": "5 немецких сыров, инжирная горчица, грецкие орехи, виноград, хлеб на закваске",
+            "allergens_de": "Enthält: Milch, Gluten, Schalenfrüchte",
+            "image": "/media/presets/restaurant_modern/menu/cheese.jpg",
+            "tags": []
+          }
+        ]
+      },
+      {
+        "category_de": "Getränke",
+        "category_en": "Drinks",
+        "category_ru": "Напитки",
+        "items": [
+          {
+            "name_de": "Weinbegleitung (4 Gänge)",
+            "name_en": "Wine Pairing (4 courses)",
+            "name_ru": "Винное сопровождение (4 блюда)",
+            "price": "55€",
+            "desc_de": "Kuratierte Auswahl deutscher und europäischer Weine",
+            "desc_en": "Curated selection of German and European wines",
+            "desc_ru": "Подобранная коллекция немецких и европейских вин",
+            "allergens_de": "Enthält: Sulphite. Alkohol. Nur für Personen ab 18 Jahren.",
+            "image": "/media/presets/restaurant_modern/menu/wine.jpg",
+            "tags": ["Empfehlung"]
+          }
         ]
       }
     ],
     "testimonials": [
-      {"name": "Julia M.", "text_de": "Das beste Restaurant in der Stadt. Die Atmosphäre ist einfach traumhaft.", "text_en": "The best restaurant in town. The atmosphere is just dreamy.", "text_ru": "Лучший ресторан в городе. Атмосфера просто сказочная.", "rating": 5, "avatar": "/media/presets/restaurant/avatars/julia.jpg"},
-      {"name": "Thomas S.", "text_de": "Kulinarisch auf höchstem Niveau. Kommen wir definitiv wieder.", "text_en": "Culinary at the highest level. We will definitely come back.", "text_ru": "Гастрономия на высшем уровне. Обязательно вернёмся.", "rating": 5, "avatar": "/media/presets/restaurant/avatars/thomas.jpg"}
+      {
+        "name": "Julia M.",
+        "location_de": "Berlin",
+        "text_de": "Das Feuer ist schlicht außergewöhnlich. Die Kalbsbacke war das Beste, was ich je gegessen habe — und die Atmosphäre erinnert mich an die besten Restaurants in Paris. Absolut empfehlenswert.",
+        "text_en": "Das Feuer is simply extraordinary. The veal cheek was the best thing I have ever eaten — and the atmosphere reminds me of the best restaurants in Paris. Absolutely recommended.",
+        "text_ru": "Das Feuer — просто исключительное место. Телячья щёчка — лучшее, что я когда-либо ела, а атмосфера напоминает лучшие рестораны Парижа. Абсолютно рекомендую.",
+        "rating": 5,
+        "source": "Google",
+        "avatar": "/media/presets/restaurant_modern/avatars/julia.jpg"
+      },
+      {
+        "name": "Thomas S.",
+        "location_de": "München",
+        "text_de": "Wir haben hier unseren Hochzeitstag gefeiert und es war perfekt. Das Team ist aufmerksam, ohne aufdringlich zu sein. Die Weinbegleitung war eine Offenbarung.",
+        "text_en": "We celebrated our wedding anniversary here and it was perfect. The team is attentive without being intrusive. The wine pairing was a revelation.",
+        "text_ru": "Мы отмечали здесь годовщину свадьбы, и это было идеально. Команда внимательна, но ненавязчива. Винное сопровождение стало откровением.",
+        "rating": 5,
+        "source": "TripAdvisor",
+        "avatar": "/media/presets/restaurant_modern/avatars/thomas.jpg"
+      },
+      {
+        "name": "Sabine K.",
+        "location_de": "Hamburg",
+        "text_de": "Endlich ein Restaurant, das zeigt, was deutsche Küche wirklich kann. Kein Klischee, keine Kompromisse — nur Qualität auf höchstem Niveau.",
+        "text_en": "Finally a restaurant that shows what German cuisine can really do. No clichés, no compromises — just quality at the highest level.",
+        "text_ru": "Наконец-то ресторан, который показывает, на что способна немецкая кухня. Никаких клише, никаких компромиссов — только качество высшего уровня.",
+        "rating": 5,
+        "source": "Google",
+        "avatar": "/media/presets/restaurant_modern/avatars/sabine.jpg"
+      }
+    ],
+    "awards": [
+      { "title_de": "Michelin-Empfehlung", "year": "2023" },
+      { "title_de": "Gault&Millau 16 Punkte", "year": "2024" },
+      { "title_de": "Berlins Bestes Restaurant", "year": "2024", "source": "Tagesspiegel" }
+    ],
+    "team": [
+      {
+        "name": "Marcus Weber",
+        "role_de": "Küchenchef & Inhaber",
+        "role_en": "Head Chef & Owner",
+        "role_ru": "Шеф-повар и владелец",
+        "bio_de": "Ausgebildet in Lyon und Kopenhagen. 15 Jahre internationale Erfahrung. Zurück in Berlin, um deutsche Küche neu zu definieren.",
+        "image": "/media/presets/restaurant_modern/team/marcus.jpg"
+      },
+      {
+        "name": "Anna Richter",
+        "role_de": "Sous-Chefin",
+        "role_en": "Sous Chef",
+        "role_ru": "Су-шеф",
+        "bio_de": "Spezialistin für Patisserie und Desserts. Ausgebildet an der École Ferrandi Paris.",
+        "image": "/media/presets/restaurant_modern/team/anna.jpg"
+      },
+      {
+        "name": "Klaus Hoffmann",
+        "role_de": "Sommelier",
+        "role_en": "Sommelier",
+        "role_ru": "Сомелье",
+        "bio_de": "Zertifizierter Sommelier WSET Level 4. Kuratiert unseren Weinkeller mit über 300 Positionen.",
+        "image": "/media/presets/restaurant_modern/team/klaus.jpg"
+      }
     ],
     "contact": {
-      "address": "Hauptstraße 1, 10115 Berlin",
-      "phone": "+49 30 1234567",
-      "email": "info@lateliergourmet.de",
-      "hours_de": "Mo-Sa: 18:00 - 23:00 Uhr",
-      "hours_en": "Mon-Sat: 6:00 PM - 11:00 PM",
-      "hours_ru": "Пн-Сб: 18:00 - 23:00"
+      "address": "Auguststraße 77, 10117 Berlin-Mitte",
+      "phone": "+49 30 2809 4455",
+      "email": "reservierung@dasfeuer-berlin.de",
+      "hours_de": "Di–Sa: 18:00–23:00 Uhr · Küche bis 22:00 Uhr · Mo & So: Ruhetag",
+      "hours_en": "Tue–Sat: 6:00 PM–11:00 PM · Kitchen until 10:00 PM · Mon & Sun: Closed",
+      "hours_ru": "Вт–Сб: 18:00–23:00 · Кухня до 22:00 · Пн и Вс: выходной",
+      "mapEmbed": "https://maps.google.com/?q=Auguststraße+77,+10117+Berlin",
+      "parking_de": "Parkhaus Auguststraße, 5 Gehminuten entfernt",
+      "transport_de": "U-Bahn: Oranienburger Tor (U6), 3 Minuten zu Fuß"
     },
     "faq": [
       {
-        "q_de": "Kann ich vegetarische Gerichte bestellen?",
-        "q_en": "Can I order vegetarian dishes?",
-        "q_ru": "Можно ли заказать вегетарианские блюда?",
-        "a_de": "Ja, wir bieten eine Auswahl an vegetarischen und veganen Optionen an.",
-        "a_en": "Yes, we offer a selection of vegetarian and vegan options.",
-        "a_ru": "Да, у нас есть выбор вегетарианских и веганских опций."
+        "q_de": "Wie kann ich einen Tisch reservieren?",
+        "q_en": "How can I make a reservation?",
+        "q_ru": "Как забронировать столик?",
+        "a_de": "Sie können online über unser Reservierungsformular, telefonisch unter +49 30 2809 4455 oder per E-Mail an reservierung@dasfeuer-berlin.de buchen. Wir empfehlen, mindestens 2 Wochen im Voraus zu reservieren.",
+        "a_en": "You can book online via our reservation form, by phone at +49 30 2809 4455, or by email at reservierung@dasfeuer-berlin.de. We recommend booking at least 2 weeks in advance.",
+        "a_ru": "Вы можете забронировать онлайн через нашу форму, по телефону +49 30 2809 4455 или по электронной почте. Рекомендуем бронировать минимум за 2 недели."
+      },
+      {
+        "q_de": "Gibt es vegetarische und vegane Optionen?",
+        "q_en": "Are there vegetarian and vegan options?",
+        "q_ru": "Есть ли вегетарианские и веганские блюда?",
+        "a_de": "Ja, wir bieten stets mehrere vegetarische Gerichte an. Vegane Optionen sind auf Anfrage möglich — bitte informieren Sie uns bei der Reservierung.",
+        "a_en": "Yes, we always offer several vegetarian dishes. Vegan options are available on request — please let us know when booking.",
+        "a_ru": "Да, у нас всегда есть несколько вегетарианских блюд. Веганские варианты возможны по запросу — сообщите нам при бронировании."
+      },
+      {
+        "q_de": "Wie gehen Sie mit Allergien um?",
+        "q_en": "How do you handle allergies?",
+        "q_ru": "Как вы работаете с аллергиями?",
+        "a_de": "Alle Allergene sind gemäß EU-Lebensmittelinformationsverordnung (LMIV) auf unserer Speisekarte gekennzeichnet. Bitte informieren Sie uns bei der Reservierung über Ihre Unverträglichkeiten — wir passen Gerichte gerne an.",
+        "a_en": "All allergens are labelled on our menu in accordance with EU food information regulations. Please inform us of any intolerances when booking — we are happy to adapt dishes.",
+        "a_ru": "Все аллергены указаны в меню согласно EU LMIV. Сообщите нам о непереносимостях при бронировании — мы с удовольствием адаптируем блюда."
+      },
+      {
+        "q_de": "Gibt es einen Dresscode?",
+        "q_en": "Is there a dress code?",
+        "q_ru": "Есть ли дресс-код?",
+        "a_de": "Wir bitten um Smart Casual. Wir möchten, dass Sie sich wohlfühlen — und gleichzeitig den besonderen Charakter unseres Restaurants respektieren.",
+        "a_en": "We ask for smart casual. We want you to feel comfortable — while respecting the special character of our restaurant.",
+        "a_ru": "Просим придерживаться стиля smart casual. Мы хотим, чтобы вам было комфортно — и чтобы вы уважали особый характер нашего ресторана."
+      },
+      {
+        "q_de": "Können Sie Gruppen und Events empfangen?",
+        "q_en": "Can you accommodate groups and events?",
+        "q_ru": "Принимаете ли вы группы и мероприятия?",
+        "a_de": "Ja, wir bieten einen privaten Salon für bis zu 20 Personen an. Für Firmenevents, Geburtstage und besondere Anlässe erstellen wir gerne ein individuelles Angebot.",
+        "a_en": "Yes, we offer a private dining room for up to 20 guests. For corporate events, birthdays and special occasions, we are happy to create a bespoke offer.",
+        "a_ru": "Да, у нас есть приватный зал до 20 человек. Для корпоративных мероприятий, дней рождения и особых случаев мы с удовольствием составим индивидуальное предложение."
       }
-    ]
+    ],
+    "legal": {
+      "allergenNote_de": "Alle Allergene sind gemäß Lebensmittelinformationsverordnung (LMIV / EU Nr. 1169/2011) auf der Speisekarte gekennzeichnet. (V) = Vegetarisch · (Ve) = Vegan · (S) = Scharf. Trotz sorgfältiger Zubereitung können Spuren von Allergenen nicht ausgeschlossen werden.",
+      "alcoholNote_de": "Alkoholische Getränke werden nur an Personen ab 18 Jahren abgegeben. Bitte weisen Sie sich auf Verlangen aus.",
+      "serviceChargeNote_de": "Alle Preise sind Endpreise inkl. gesetzlicher MwSt. (19% auf Speisen und Getränke). Ein Serviceentgelt wird nicht automatisch berechnet — Trinkgeld ist freiwillig und geht vollständig an unser Team.",
+      "privacyNote_de": "Ihre Reservierungsdaten werden gemäß DSGVO verarbeitet und nicht an Dritte weitergegeben."
+    }
   },
   "booking": {
     "enabled": true,
     "slots": ["18:00", "18:30", "19:00", "19:30", "20:00", "20:30", "21:00"],
-    "duration": 120
+    "duration": 120,
+    "maxGuests": 8,
+    "note_de": "Für Gruppen ab 6 Personen bitten wir um telefonische Reservierung.",
+    "cancellationPolicy_de": "Kostenlose Stornierung bis 24 Stunden vor dem Termin."
   },
   "logo": {
-    "text": "L'Atelier",
-    "tagline": "Gourmet",
-    "font": "Playfair Display"
+    "text": "Das Feuer",
+    "tagline": "BERLIN",
+    "font": "Playfair Display",
+    "style": "text_with_ornament"
+  },
+  "social": {
+    "instagram": "https://instagram.com/dasfeuer.berlin",
+    "facebook": "https://facebook.com/dasfeuberlin"
   }
 }

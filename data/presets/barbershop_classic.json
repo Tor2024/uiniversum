@@ -1,174 +1,348 @@
 {
   "meta": {
-    "title": "The Gentleman's Cut | Classic Barbershop",
-    "description": "Traditional barbershop with modern style. Expert haircuts, beard trims, and hot towel shaves.",
-    "favicon": "/media/presets/barbershop/favicon.ico",
-    "language": "en",
-    "availableLanguages": ["en", "de", "ru"]
+    "title": "Herr Schmidt | Barbershop & Grooming",
+    "description": "Traditioneller Barbershop mit modernem Stil. Präzise Haarschnitte, klassische Rasuren und professionelle Bartpflege seit 1995. Jetzt online Termin buchen.",
+    "favicon": "/media/presets/barbershop_classic/favicon.ico",
+    "language": "de",
+    "availableLanguages": ["de", "en", "ru"]
   },
   "design": {
     "preset": "barbershop_classic",
     "tokens": {
-      "colorBackground": "#1A1A1A",
-      "colorSurface": "#2C2C2C",
-      "colorPrimary": "#C9A96E",
-      "colorSecondary": "#8A8A8A",
-      "colorBorder": "#3A3A3A",
-      "colorAccent": "#C9A96E",
-      "colorAccentHover": "#B8945A",
+      "colorBackground": "#0D0D0D",
+      "colorSurface": "#1A1A1A",
+      "colorPrimary": "#F5F0E8",
+      "colorSecondary": "#A09080",
+      "colorBorder": "#2A2A2A",
+      "colorAccent": "#B8860B",
+      "colorAccentHover": "#D4A017",
       "fontDisplay": "Oswald",
       "fontHeading": "Oswald",
       "fontBody": "Open Sans",
       "fontCaption": "Open Sans",
       "fontMono": "Roboto Mono",
-      "fontSizeDisplay": "72px",
-      "fontSizeHeading": "32px",
+      "fontSizeDisplay": "80px",
+      "fontSizeHeading": "36px",
       "fontSizeBody": "16px",
-      "lineHeightBody": "1.6",
+      "lineHeightBody": "1.7",
       "lineHeightHeading": "1.2",
       "spacingUnit": "8px",
-      "spacingSection": "120px",
-      "spacingElement": "24px",
+      "spacingSection": "140px",
+      "spacingElement": "28px",
       "spacingCard": "32px",
-      "spacingButtonVertical": "14px",
-      "spacingButtonHorizontal": "32px",
-      "maxWidthContent": "1100px",
-      "maxWidthText": "650px",
+      "spacingButtonVertical": "16px",
+      "spacingButtonHorizontal": "36px",
+      "maxWidthContent": "1200px",
+      "maxWidthText": "680px",
       "gridColumns": "12",
-      "gridGutter": "24px",
+      "gridGutter": "28px",
       "horizontalPaddingMobile": "20px",
-      "horizontalPaddingTablet": "40px",
-      "horizontalPaddingDesktop": "80px",
-      "borderRadius": "4",
-      "borderRadiusSmall": "2px",
-      "borderRadiusMedium": "6px",
-      "borderRadiusLarge": "10px",
+      "horizontalPaddingTablet": "44px",
+      "horizontalPaddingDesktop": "88px",
+      "borderRadius": "0",
+      "borderRadiusSmall": "0px",
+      "borderRadiusMedium": "2px",
+      "borderRadiusLarge": "4px",
       "shadowStyle": "dark",
-      "shadowResting": "0 4px 15px rgba(0,0,0,0.3)",
-      "shadowHover": "0 6px 20px rgba(201,169,110,0.2)",
+      "shadowResting": "0 4px 20px rgba(0,0,0,0.5)",
+      "shadowHover": "0 8px 32px rgba(184,134,11,0.2)",
       "transitionDuration": "200ms",
       "transitionTiming": "ease-in-out",
       "imageRatioHero": "16:9",
-      "imageRatioCard": "4:3",
+      "imageRatioCard": "3:4",
       "imageRatioAvatar": "1:1"
     },
     "customCss": ""
   },
   "seo": {
-    "ogImage": "/media/presets/barbershop/og-default.jpg",
+    "ogImage": "/media/presets/barbershop_classic/og-default.jpg",
     "twitterCard": "summary_large_image",
     "googleAnalyticsId": "",
-    "keywords": "Barbershop, Haircut, Beard Trim, Shave, Gentleman, Classic"
+    "keywords": "Barbershop Berlin, Haarschnitt Herren, Bartpflege, Rasur, Termin buchen"
+  },
+  "layout": {
+    "style": "dark_masculine",
+    "heroType": "fullscreen_video_overlay",
+    "navStyle": "transparent_dark_gold",
+    "servicesLayout": "grid_3col_with_price",
+    "teamLayout": "dark_cards",
+    "testimonialsLayout": "dark_quotes",
+    "footerStyle": "dark_minimal"
   },
   "content": {
     "slogans": {
-      "en": ["Classic Cuts, Modern Style", "Look Sharp, Feel Confident", "For the Modern Gentleman"],
-      "de": ["Klassische Schnitte, moderner Stil", "Gut aussehen, sich wohlfühlen", "Für den modernen Gentleman"],
-      "ru": ["Классические стрижки, современный стиль", "Выгляди остро, чувствуй уверенность", "Для современного джентльмена"]
+      "de": ["Seit 1995 für den modernen Gentleman", "Präzision ist kein Zufall", "Ihr Stil. Unsere Leidenschaft."],
+      "en": ["Since 1995 for the modern gentleman", "Precision is no accident", "Your style. Our passion."],
+      "ru": ["С 1995 года для современного джентльмена", "Точность — не случайность", "Ваш стиль. Наша страсть."]
     },
     "hero": {
-      "en": {
-        "heading": "Precision Cuts & Classic Grooming",
-        "subheading": "Experience the finest barbering services in a relaxed, masculine atmosphere.",
-        "cta": "Book an Appointment",
-        "image": "/media/presets/barbershop/hero.jpg"
-      },
       "de": {
-        "heading": "Präzisionsschnitte & Klassische Pflege",
-        "subheading": "Erleben Sie erstklassige Barberservices in entspannter, maskuliner Atmosphäre.",
+        "heading": "Der Schnitt, der zählt.",
+        "subheading": "Seit fast 30 Jahren pflegen wir den Stil des modernen Mannes. Präzise Schnitte, klassische Rasuren, professionelle Bartpflege — in einer Atmosphäre, die Respekt atmet.",
         "cta": "Termin buchen",
-        "image": "/media/presets/barbershop/hero.jpg"
+        "secondaryCta": "Unsere Leistungen",
+        "image": "/media/presets/barbershop_classic/hero.jpg",
+        "imageAlt": "Barbier bei der Arbeit im klassischen Barbershop"
+      },
+      "en": {
+        "heading": "The cut that counts.",
+        "subheading": "For nearly 30 years we have been grooming the style of the modern man. Precise cuts, classic shaves, professional beard care — in an atmosphere that breathes respect.",
+        "cta": "Book Appointment",
+        "secondaryCta": "Our Services",
+        "image": "/media/presets/barbershop_classic/hero.jpg",
+        "imageAlt": "Barber at work in a classic barbershop"
       },
       "ru": {
-        "heading": "Точные стрижки и классический уход",
-        "subheading": "Оцените лучшие услуги барбершопа в расслабляющей мужской атмосфере.",
+        "heading": "Стрижка, которая имеет значение.",
+        "subheading": "Почти 30 лет мы ухаживаем за стилем современного мужчины. Точные стрижки, классическое бритьё, профессиональный уход за бородой — в атмосфере, которая дышит уважением.",
         "cta": "Записаться",
-        "image": "/media/presets/barbershop/hero.jpg"
+        "secondaryCta": "Наши услуги",
+        "image": "/media/presets/barbershop_classic/hero.jpg",
+        "imageAlt": "Барбер за работой в классическом барбершопе"
       }
     },
     "about": {
-      "en": {
-        "title": "Our Craft",
-        "text": "We combine traditional barbering techniques with modern trends to give you the perfect look. Our master barbers are dedicated to their craft."
-      },
       "de": {
-        "title": "Unser Handwerk",
-        "text": "Wir kombinieren traditionelle Barbiertechniken mit modernen Trends, um Ihnen den perfekten Look zu verleihen."
+        "title": "Tradition trifft Moderne",
+        "subtitle": "Seit 1995 in Hamburg-Altona",
+        "text": "Herr Schmidt begann 1995 als Einzel-Barbier in einem kleinen Laden in Hamburg-Altona. Was als Leidenschaft für das Handwerk begann, ist heute ein Team von acht Meistern, die täglich Väter, Söhne und Großväter empfangen. Wir glauben: Ein guter Haarschnitt ist mehr als Ästhetik — er ist ein Ritual, das Selbstvertrauen schenkt.",
+        "image": "/media/presets/barbershop_classic/about.jpg",
+        "imageAlt": "Innenansicht des Herr Schmidt Barbershops",
+        "stats": [
+          { "value": "29", "label": "Jahre Erfahrung" },
+          { "value": "8", "label": "Meister-Barbiere" },
+          { "value": "50.000+", "label": "Zufriedene Kunden" }
+        ]
+      },
+      "en": {
+        "title": "Tradition Meets Modernity",
+        "subtitle": "Since 1995 in Hamburg-Altona",
+        "text": "Herr Schmidt started in 1995 as a solo barber in a small shop in Hamburg-Altona. What began as a passion for the craft is today a team of eight masters who welcome fathers, sons and grandfathers every day. We believe: a good haircut is more than aesthetics — it is a ritual that gives confidence.",
+        "image": "/media/presets/barbershop_classic/about.jpg",
+        "imageAlt": "Interior view of Herr Schmidt Barbershop",
+        "stats": [
+          { "value": "29", "label": "Years of experience" },
+          { "value": "8", "label": "Master barbers" },
+          { "value": "50,000+", "label": "Satisfied clients" }
+        ]
       },
       "ru": {
-        "title": "Наше мастерство",
-        "text": "Мы сочетаем традиционные техники барберинга с современными трендами, чтобы создать ваш идеальный образ."
+        "title": "Традиция встречает современность",
+        "subtitle": "С 1995 года в Гамбург-Альтоне",
+        "text": "Herr Schmidt начал в 1995 году как одиночный барбер в небольшом магазине в Гамбург-Альтоне. То, что началось как страсть к ремеслу, сегодня — команда из восьми мастеров, которые ежедневно принимают отцов, сыновей и дедушек. Мы верим: хорошая стрижка — это больше, чем эстетика — это ритуал, дарящий уверенность.",
+        "image": "/media/presets/barbershop_classic/about.jpg",
+        "imageAlt": "Интерьер барбершопа Herr Schmidt",
+        "stats": [
+          { "value": "29", "label": "Лет опыта" },
+          { "value": "8", "label": "Мастеров-барберов" },
+          { "value": "50.000+", "label": "Довольных клиентов" }
+        ]
       }
     },
     "services": [
       {
-        "name_en": "Classic Haircut",
         "name_de": "Klassischer Haarschnitt",
+        "name_en": "Classic Haircut",
         "name_ru": "Классическая стрижка",
-        "price": "$35",
-        "desc_en": "Precision cut with scissor and clipper finish.",
-        "desc_de": "Präzisionsschnitt mit Schere und Maschine.",
-        "desc_ru": "Точная стрижка ножницами и машинкой.",
-        "image": "/media/presets/barbershop/services/haircut.jpg"
+        "price": "38€",
+        "duration_de": "45 Min.",
+        "duration_en": "45 min",
+        "duration_ru": "45 мин",
+        "desc_de": "Waschen, Schneiden, Stylen. Mit Schere und Maschine, abgestimmt auf Ihre Kopfform und Ihren Stil.",
+        "desc_en": "Wash, cut, style. With scissors and clippers, tailored to your head shape and style.",
+        "desc_ru": "Мытьё, стрижка, укладка. Ножницами и машинкой, подобранными под форму вашей головы и стиль.",
+        "image": "/media/presets/barbershop_classic/services/haircut.jpg",
+        "tags": ["Beliebt"]
       },
       {
+        "name_de": "Bart-Trimmen & Formen",
         "name_en": "Beard Trim & Shape",
-        "name_de": "Bartpflege & Formen",
         "name_ru": "Стрижка и моделирование бороды",
-        "price": "$25",
-        "desc_en": "Expert shaping and trimming for the perfect beard.",
-        "desc_de": "Expert-Bartpflege und Formgebung für den perfekten Bart.",
-        "desc_ru": "Профессиональная форма и подстригание бороды.",
-        "image": "/media/presets/barbershop/services/beard.jpg"
+        "price": "28€",
+        "duration_de": "30 Min.",
+        "duration_en": "30 min",
+        "duration_ru": "30 мин",
+        "desc_de": "Professionelles Trimmen, Formen und Pflegen Ihres Bartes. Mit Bartöl und Finishing.",
+        "desc_en": "Professional trimming, shaping and grooming of your beard. With beard oil and finishing.",
+        "desc_ru": "Профессиональная стрижка, моделирование и уход за бородой. С маслом для бороды и финишингом.",
+        "image": "/media/presets/barbershop_classic/services/beard.jpg",
+        "tags": []
       },
       {
-        "name_en": "Hot Towel Shave",
         "name_de": "Heißtuch-Rasur",
+        "name_en": "Hot Towel Shave",
         "name_ru": "Бритьё с горячим полотенцем",
-        "price": "$40",
-        "desc_en": "Traditional straight razor shave with hot towels.",
-        "desc_de": "Traditionelle Rasur mit heißem Handtuch.",
-        "desc_ru": "Традиционное бритьё опасной бритвой с горячими полотенцами.",
-        "image": "/media/presets/barbershop/services/shave.jpg"
+        "price": "45€",
+        "duration_de": "45 Min.",
+        "duration_en": "45 min",
+        "duration_ru": "45 мин",
+        "desc_de": "Traditionelle Rasur mit dem Rasiermesser. Heißes Tuch, Rasierschaum, Aftershave — ein Erlebnis für sich.",
+        "desc_en": "Traditional straight razor shave. Hot towel, shaving cream, aftershave — an experience in itself.",
+        "desc_ru": "Традиционное бритьё опасной бритвой. Горячее полотенце, крем для бритья, лосьон — незабываемый опыт.",
+        "image": "/media/presets/barbershop_classic/services/shave.jpg",
+        "tags": ["Premium"]
+      },
+      {
+        "name_de": "Haarschnitt + Bart",
+        "name_en": "Haircut + Beard",
+        "name_ru": "Стрижка + борода",
+        "price": "58€",
+        "duration_de": "70 Min.",
+        "duration_en": "70 min",
+        "duration_ru": "70 мин",
+        "desc_de": "Kombination aus klassischem Haarschnitt und Bart-Trimmen. Unser beliebtestes Paket.",
+        "desc_en": "Combination of classic haircut and beard trim. Our most popular package.",
+        "desc_ru": "Комбинация классической стрижки и стрижки бороды. Наш самый популярный пакет.",
+        "image": "/media/presets/barbershop_classic/services/combo.jpg",
+        "tags": ["Beliebt", "Paket"]
+      },
+      {
+        "name_de": "Kopfhaut-Massage",
+        "name_en": "Scalp Massage",
+        "name_ru": "Массаж кожи головы",
+        "price": "20€",
+        "duration_de": "20 Min.",
+        "duration_en": "20 min",
+        "duration_ru": "20 мин",
+        "desc_de": "Entspannende Kopfhautmassage mit ätherischen Ölen. Ideal als Ergänzung zu jedem Service.",
+        "desc_en": "Relaxing scalp massage with essential oils. Ideal as an addition to any service.",
+        "desc_ru": "Расслабляющий массаж кожи головы с эфирными маслами. Идеально как дополнение к любой услуге.",
+        "image": "/media/presets/barbershop_classic/services/massage.jpg",
+        "tags": ["Add-on"]
+      },
+      {
+        "name_de": "Kinder-Haarschnitt",
+        "name_en": "Children's Haircut",
+        "name_ru": "Детская стрижка",
+        "price": "22€",
+        "duration_de": "30 Min.",
+        "duration_en": "30 min",
+        "duration_ru": "30 мин",
+        "desc_de": "Für Jungs bis 12 Jahre. Geduldig, professionell und mit Spaß dabei.",
+        "desc_en": "For boys up to 12 years. Patient, professional and fun.",
+        "desc_ru": "Для мальчиков до 12 лет. Терпеливо, профессионально и с удовольствием.",
+        "image": "/media/presets/barbershop_classic/services/kids.jpg",
+        "tags": ["Kinder"]
+      }
+    ],
+    "team": [
+      {
+        "name": "Klaus Schmidt",
+        "role_de": "Inhaber & Meister-Barbier",
+        "role_en": "Owner & Master Barber",
+        "role_ru": "Владелец и мастер-барбер",
+        "bio_de": "Seit 1995 im Handwerk. Ausgebildet in London und New York. Spezialist für klassische Rasuren und Fade-Schnitte.",
+        "image": "/media/presets/barbershop_classic/team/klaus.jpg",
+        "instagram": "@herrschmidt_barbier"
+      },
+      {
+        "name": "Marco Rossi",
+        "role_de": "Senior Barbier",
+        "role_en": "Senior Barber",
+        "role_ru": "Старший барбер",
+        "bio_de": "10 Jahre Erfahrung. Spezialist für Bart-Design und moderne Schnitte.",
+        "image": "/media/presets/barbershop_classic/team/marco.jpg",
+        "instagram": "@marco_barbier"
+      },
+      {
+        "name": "Jan Weber",
+        "role_de": "Barbier",
+        "role_en": "Barber",
+        "role_ru": "Барбер",
+        "bio_de": "Frisch ausgebildet, voller Energie. Spezialist für Skin Fades und moderne Styles.",
+        "image": "/media/presets/barbershop_classic/team/jan.jpg",
+        "instagram": "@jan_cuts"
       }
     ],
     "testimonials": [
       {
-        "name": "Michael R.",
-        "text_en": "Best haircut I've ever had. The attention to detail is incredible.",
-        "text_de": "Den besten Haarschnitt, den ich je hatte. Die Liebe zum Detail ist unglaublich.",
-        "text_ru": "Лучшая стрижка в моей жизни. Внимание к деталям невероятное.",
+        "name": "Michael B.",
+        "location_de": "Hamburg",
+        "text_de": "Seit 8 Jahren mein Barbier. Klaus kennt meinen Stil besser als ich selbst. Die Heißtuch-Rasur ist ein Erlebnis, das ich mir jeden Monat gönne.",
+        "text_en": "My barber for 8 years. Klaus knows my style better than I do. The hot towel shave is an experience I treat myself to every month.",
+        "text_ru": "Мой барбер уже 8 лет. Клаус знает мой стиль лучше меня самого. Бритьё с горячим полотенцем — это удовольствие, которое я позволяю себе каждый месяц.",
         "rating": 5,
-        "avatar": "/media/presets/barbershop/avatars/michael.jpg"
+        "source": "Google",
+        "avatar": "/media/presets/barbershop_classic/avatars/michael.jpg"
+      },
+      {
+        "name": "Stefan H.",
+        "location_de": "Hamburg-Altona",
+        "text_de": "Mein Vater hat hier seinen ersten Haarschnitt bekommen, ich meinen, und jetzt bringe ich meinen Sohn. Das ist mehr als ein Barbershop — das ist Tradition.",
+        "text_en": "My father had his first haircut here, I had mine, and now I bring my son. This is more than a barbershop — it is tradition.",
+        "text_ru": "Мой отец получил здесь первую стрижку, я — свою, а теперь привожу сына. Это больше, чем барбершоп — это традиция.",
+        "rating": 5,
+        "source": "Google",
+        "avatar": "/media/presets/barbershop_classic/avatars/stefan.jpg"
+      },
+      {
+        "name": "David K.",
+        "location_de": "Hamburg",
+        "text_de": "Endlich ein Barbershop, der versteht, was ein Fade wirklich bedeutet. Marco ist ein Künstler. Ich komme aus dem anderen Ende der Stadt — es lohnt sich.",
+        "text_en": "Finally a barbershop that understands what a fade really means. Marco is an artist. I come from the other end of the city — it is worth it.",
+        "text_ru": "Наконец-то барбершоп, который понимает, что такое настоящий фейд. Марко — художник. Я приезжаю с другого конца города — оно того стоит.",
+        "rating": 5,
+        "source": "Instagram",
+        "avatar": "/media/presets/barbershop_classic/avatars/david.jpg"
       }
     ],
     "contact": {
-      "address": "123 Main St, New York, NY",
-      "phone": "+1 212 555 0199",
-      "email": "info@gentlemanscut.com",
-      "hours_en": "Tue-Sat: 9:00 AM - 7:00 PM",
-      "hours_de": "Di-Sa: 09:00 - 19:00 Uhr",
-      "hours_ru": "Вт-Сб: 09:00 - 19:00"
+      "address": "Ottenser Hauptstraße 44, 22765 Hamburg-Altona",
+      "phone": "+49 40 3987 5544",
+      "email": "termin@herrschmidt-barbershop.de",
+      "hours_de": "Mo–Fr: 09:00–19:00 Uhr · Sa: 09:00–17:00 Uhr · So: Ruhetag",
+      "hours_en": "Mon–Fri: 9:00 AM–7:00 PM · Sat: 9:00 AM–5:00 PM · Sun: Closed",
+      "hours_ru": "Пн–Пт: 09:00–19:00 · Сб: 09:00–17:00 · Вс: выходной",
+      "mapEmbed": "https://maps.google.com/?q=Ottenser+Hauptstraße+44,+22765+Hamburg",
+      "transport_de": "S-Bahn: Altona (S1/S3), 5 Minuten zu Fuß"
     },
     "faq": [
       {
-        "q_en": "Do I need an appointment?",
-        "q_de": "Benötige ich einen Termin?",
+        "q_de": "Muss ich einen Termin buchen?",
+        "q_en": "Do I need to book an appointment?",
         "q_ru": "Нужно ли записываться?",
-        "a_en": "Walk-ins are welcome, but appointments are recommended to ensure availability.",
-        "a_de": "Spontanbesuche sind willkommen, Termine werden jedoch empfohlen.",
-        "a_ru": "Добро пожаловать без записи, но рекомендуем записаться заранее."
+        "a_de": "Wir empfehlen eine Online-Buchung, um Wartezeiten zu vermeiden. Laufkundschaft ist willkommen, sofern Kapazitäten frei sind.",
+        "a_en": "We recommend online booking to avoid waiting times. Walk-ins are welcome if capacity allows.",
+        "a_ru": "Рекомендуем онлайн-запись, чтобы избежать ожидания. Без записи принимаем при наличии свободных мест."
+      },
+      {
+        "q_de": "Welche Zahlungsmethoden akzeptieren Sie?",
+        "q_en": "What payment methods do you accept?",
+        "q_ru": "Какие способы оплаты вы принимаете?",
+        "a_de": "Wir akzeptieren Barzahlung, EC-Karte und alle gängigen Kreditkarten. Alle Preise sind Endpreise inkl. MwSt.",
+        "a_en": "We accept cash, debit card and all major credit cards. All prices are final prices including VAT.",
+        "a_ru": "Принимаем наличные, дебетовые и все основные кредитные карты. Все цены окончательные, включая НДС."
+      },
+      {
+        "q_de": "Bieten Sie Geschenkgutscheine an?",
+        "q_en": "Do you offer gift vouchers?",
+        "q_ru": "Есть ли подарочные сертификаты?",
+        "a_de": "Ja, Geschenkgutscheine sind in unserem Shop oder online erhältlich. Das perfekte Geschenk für jeden Mann.",
+        "a_en": "Yes, gift vouchers are available in our shop or online. The perfect gift for any man.",
+        "a_ru": "Да, подарочные сертификаты доступны в нашем магазине или онлайн. Идеальный подарок для любого мужчины."
       }
-    ]
+    ],
+    "legal": {
+      "priceNote_de": "Alle Preise sind Endpreise gemäß Preisangabenverordnung (PAngV) inkl. gesetzlicher MwSt. (19%). Keine versteckten Kosten.",
+      "cancellationPolicy_de": "Kostenlose Stornierung bis 2 Stunden vor dem Termin. Bei Nichterscheinen ohne Absage behalten wir uns vor, eine Ausfallgebühr von 50% des Servicepreises zu berechnen."
+    }
   },
   "booking": {
     "enabled": true,
-    "slots": ["09:00", "10:00", "11:00", "13:00", "14:00", "15:00", "16:00"],
-    "duration": 60
+    "slots": ["09:00", "09:45", "10:30", "11:15", "12:00", "13:00", "13:45", "14:30", "15:15", "16:00", "16:45", "17:30", "18:15"],
+    "duration": 45,
+    "maxGuests": 1,
+    "note_de": "Bitte wählen Sie Ihren gewünschten Barbier und Service bei der Buchung.",
+    "cancellationPolicy_de": "Kostenlose Stornierung bis 2 Stunden vor dem Termin."
   },
   "logo": {
-    "text": "The Gentleman's",
-    "tagline": "CUT",
-    "font": "Oswald"
+    "text": "Herr Schmidt",
+    "tagline": "BARBERSHOP · SEIT 1995",
+    "font": "Oswald",
+    "style": "text_uppercase"
+  },
+  "social": {
+    "instagram": "https://instagram.com/herrschmidt.barbershop",
+    "facebook": "https://facebook.com/herrschmidtbarbershop"
   }
 }
