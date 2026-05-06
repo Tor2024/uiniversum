@@ -1,23 +1,92 @@
 {
-  "slug": "home",
-  "title": { "de": "Startseite", "en": "Home", "ru": "Главная" },
-  "status": "published",
-  "seo": {
-    "metaTitle": { "de": "", "en": "", "ru": "" },
-    "metaDescription": { "de": "", "en": "", "ru": "" }
-  },
+  "title": "Herr Schmidt | Barbershop & Grooming",
   "blocks": [
     {
-      "id": "block_001",
+      "id": "hero-1",
       "type": "hero",
       "visible": true,
       "order": 0,
       "settings": {
-        "heading": { "de": "Willkommen", "en": "Welcome", "ru": "Добро пожаловать" },
-        "subheading": { "de": "", "en": "", "ru": "" },
-        "buttonText": { "de": "Mehr erfahren", "en": "Learn more", "ru": "Узнать больше" },
-        "buttonUrl": "/about",
-        "backgroundImage": "/media/hero-bg.jpg",
+        "heading": {
+          "de": {
+            "heading": "Der Schnitt, der zählt.",
+            "subheading": "Seit fast 30 Jahren pflegen wir den Stil des modernen Mannes. Präzise Schnitte, klassische Rasuren, professionelle Bartpflege — in einer Atmosphäre, die Respekt atmet.",
+            "cta": "Termin buchen",
+            "secondaryCta": "Unsere Leistungen",
+            "image": "/media/presets/barbershop_classic/hero.jpg",
+            "imageAlt": "Barbier bei der Arbeit im klassischen Barbershop"
+          },
+          "en": {
+            "heading": "The cut that counts.",
+            "subheading": "For nearly 30 years we have been grooming the style of the modern man. Precise cuts, classic shaves, professional beard care — in an atmosphere that breathes respect.",
+            "cta": "Book Appointment",
+            "secondaryCta": "Our Services",
+            "image": "/media/presets/barbershop_classic/hero.jpg",
+            "imageAlt": "Barber at work in a classic barbershop"
+          },
+          "ru": {
+            "heading": "Стрижка, которая имеет значение.",
+            "subheading": "Почти 30 лет мы ухаживаем за стилем современного мужчины. Точные стрижки, классическое бритьё, профессиональный уход за бородой — в атмосфере, которая дышит уважением.",
+            "cta": "Записаться",
+            "secondaryCta": "Наши услуги",
+            "image": "/media/presets/barbershop_classic/hero.jpg",
+            "imageAlt": "Барбер за работой в классическом барбершопе"
+          }
+        },
+        "subheading": {
+          "de": {
+            "heading": "Der Schnitt, der zählt.",
+            "subheading": "Seit fast 30 Jahren pflegen wir den Stil des modernen Mannes. Präzise Schnitte, klassische Rasuren, professionelle Bartpflege — in einer Atmosphäre, die Respekt atmet.",
+            "cta": "Termin buchen",
+            "secondaryCta": "Unsere Leistungen",
+            "image": "/media/presets/barbershop_classic/hero.jpg",
+            "imageAlt": "Barbier bei der Arbeit im klassischen Barbershop"
+          },
+          "en": {
+            "heading": "The cut that counts.",
+            "subheading": "For nearly 30 years we have been grooming the style of the modern man. Precise cuts, classic shaves, professional beard care — in an atmosphere that breathes respect.",
+            "cta": "Book Appointment",
+            "secondaryCta": "Our Services",
+            "image": "/media/presets/barbershop_classic/hero.jpg",
+            "imageAlt": "Barber at work in a classic barbershop"
+          },
+          "ru": {
+            "heading": "Стрижка, которая имеет значение.",
+            "subheading": "Почти 30 лет мы ухаживаем за стилем современного мужчины. Точные стрижки, классическое бритьё, профессиональный уход за бородой — в атмосфере, которая дышит уважением.",
+            "cta": "Записаться",
+            "secondaryCta": "Наши услуги",
+            "image": "/media/presets/barbershop_classic/hero.jpg",
+            "imageAlt": "Барбер за работой в классическом барбершопе"
+          }
+        },
+        "buttonText": {
+          "de": {
+            "heading": "Der Schnitt, der zählt.",
+            "subheading": "Seit fast 30 Jahren pflegen wir den Stil des modernen Mannes. Präzise Schnitte, klassische Rasuren, professionelle Bartpflege — in einer Atmosphäre, die Respekt atmet.",
+            "cta": "Termin buchen",
+            "secondaryCta": "Unsere Leistungen",
+            "image": "/media/presets/barbershop_classic/hero.jpg",
+            "imageAlt": "Barbier bei der Arbeit im klassischen Barbershop"
+          },
+          "en": {
+            "heading": "The cut that counts.",
+            "subheading": "For nearly 30 years we have been grooming the style of the modern man. Precise cuts, classic shaves, professional beard care — in an atmosphere that breathes respect.",
+            "cta": "Book Appointment",
+            "secondaryCta": "Our Services",
+            "image": "/media/presets/barbershop_classic/hero.jpg",
+            "imageAlt": "Barber at work in a classic barbershop"
+          },
+          "ru": {
+            "heading": "Стрижка, которая имеет значение.",
+            "subheading": "Почти 30 лет мы ухаживаем за стилем современного мужчины. Точные стрижки, классическое бритьё, профессиональный уход за бородой — в атмосфере, которая дышит уважением.",
+            "cta": "Записаться",
+            "secondaryCta": "Наши услуги",
+            "image": "/media/presets/barbershop_classic/hero.jpg",
+            "imageAlt": "Барбер за работой в классическом барбершопе"
+          }
+        },
+        "buttonUrl": "#contact",
+        "backgroundImage": "/media/presets/restaurant/hero.jpg",
         "backgroundOverlay": 40,
         "height": "large"
       },
@@ -27,6 +96,86 @@
         "backgroundColor": "",
         "textAlign": "center",
         "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "text-1",
+      "type": "text_rich",
+      "visible": true,
+      "order": 1,
+      "settings": {
+        "content": {
+          "de": {
+            "title": "Tradition trifft Moderne",
+            "subtitle": "Seit 1995 in Hamburg-Altona",
+            "text": "Herr Schmidt begann 1995 als Einzel-Barbier in einem kleinen Laden in Hamburg-Altona. Was als Leidenschaft für das Handwerk begann, ist heute ein Team von acht Meistern, die täglich Väter, Söhne und Großväter empfangen. Wir glauben: Ein guter Haarschnitt ist mehr als Ästhetik — er ist ein Ritual, das Selbstvertrauen schenkt.",
+            "image": "/media/presets/barbershop_classic/about.jpg",
+            "imageAlt": "Innenansicht des Herr Schmidt Barbershops",
+            "stats": [
+              {
+                "value": "29",
+                "label": "Jahre Erfahrung"
+              },
+              {
+                "value": "8",
+                "label": "Meister-Barbiere"
+              },
+              {
+                "value": "50.000+",
+                "label": "Zufriedene Kunden"
+              }
+            ]
+          },
+          "en": {
+            "title": "Tradition Meets Modernity",
+            "subtitle": "Since 1995 in Hamburg-Altona",
+            "text": "Herr Schmidt started in 1995 as a solo barber in a small shop in Hamburg-Altona. What began as a passion for the craft is today a team of eight masters who welcome fathers, sons and grandfathers every day. We believe: a good haircut is more than aesthetics — it is a ritual that gives confidence.",
+            "image": "/media/presets/barbershop_classic/about.jpg",
+            "imageAlt": "Interior view of Herr Schmidt Barbershop",
+            "stats": [
+              {
+                "value": "29",
+                "label": "Years of experience"
+              },
+              {
+                "value": "8",
+                "label": "Master barbers"
+              },
+              {
+                "value": "50,000+",
+                "label": "Satisfied clients"
+              }
+            ]
+          },
+          "ru": {
+            "title": "Традиция встречает современность",
+            "subtitle": "С 1995 года в Гамбург-Альтоне",
+            "text": "Herr Schmidt начал в 1995 году как одиночный барбер в небольшом магазине в Гамбург-Альтоне. То, что началось как страсть к ремеслу, сегодня — команда из восьми мастеров, которые ежедневно принимают отцов, сыновей и дедушек. Мы верим: хорошая стрижка — это больше, чем эстетика — это ритуал, дарящий уверенность.",
+            "image": "/media/presets/barbershop_classic/about.jpg",
+            "imageAlt": "Интерьер барбершопа Herr Schmidt",
+            "stats": [
+              {
+                "value": "29",
+                "label": "Лет опыта"
+              },
+              {
+                "value": "8",
+                "label": "Мастеров-барберов"
+              },
+              {
+                "value": "50.000+",
+                "label": "Довольных клиентов"
+              }
+            ]
+          }
+        }
+      },
+      "styles": {
+        "paddingTop": 60,
+        "paddingBottom": 60,
+        "backgroundColor": "var(--color-surface)",
+        "textAlign": "left",
+        "maxWidth": "md"
       }
     }
   ]
