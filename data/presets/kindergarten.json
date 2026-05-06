@@ -1,0 +1,160 @@
+{
+  "meta": {
+    "title": "Little Explorers | Kindergarten",
+    "description": "A safe and fun environment for children to learn, play, and grow.",
+    "favicon": "/media/presets/kindergarten/favicon.ico",
+    "language": "en",
+    "availableLanguages": ["en", "de", "ru"]
+  },
+  "design": {
+    "preset": "kindergarten",
+    "tokens": {
+      "colorBackground": "#E0FFFF",
+      "colorSurface": "#FFFFFF",
+      "colorPrimary": "#FF69B4",
+      "colorSecondary": "#6C757D",
+      "colorBorder": "#DEE2E6",
+      "colorAccent": "#FFD700",
+      "colorAccentHover": "#FFD700",
+      "fontDisplay": "Comfortaa",
+      "fontHeading": "Comfortaa",
+      "fontBody": "Nunito",
+      "fontCaption": "Nunito",
+      "fontMono": "Roboto Mono",
+      "fontSizeDisplay": "72px",
+      "fontSizeHeading": "36px",
+      "fontSizeBody": "17px",
+      "lineHeightBody": "1.7",
+      "lineHeightHeading": "1.3",
+      "spacingUnit": "8px",
+      "spacingSection": "120px",
+      "spacingElement": "24px",
+      "spacingCard": "32px",
+      "spacingButtonVertical": "16px",
+      "spacingButtonHorizontal": "32px",
+      "maxWidthContent": "1200px",
+      "maxWidthText": "700px",
+      "gridColumns": "12",
+      "gridGutter": "30px",
+      "horizontalPaddingMobile": "20px",
+      "horizontalPaddingTablet": "50px",
+      "horizontalPaddingDesktop": "80px",
+      "borderRadius": "8",
+      "borderRadiusSmall": "4px",
+      "borderRadiusMedium": "8px",
+      "borderRadiusLarge": "16px",
+      "shadowStyle": "soft",
+      "shadowResting": "0 4px 14px rgba(0,0,0,0.05)",
+      "shadowHover": "0 8px 24px rgba(0,0,0,0.1)",
+      "transitionDuration": "200ms",
+      "transitionTiming": "ease-in-out",
+      "imageRatioHero": "21:9",
+      "imageRatioCard": "4:3",
+      "imageRatioAvatar": "1:1"
+    },
+    "customCss": ""
+  },
+  "seo": {
+    "ogImage": "/media/presets/kindergarten/og-default.jpg",
+    "twitterCard": "summary_large_image",
+    "googleAnalyticsId": "",
+    "keywords": "kindergarten, kids, education"
+  },
+  "content": {
+    "slogans": {
+      "en": ["Learn Through Play", "Happy Kids", "Bright Future"],
+      "de": ["Lernen durch Spielen", "Glückliche Kinder", "Bright Future"],
+      "ru": ["Учись играя", "Счастливые дети", "Светлое будущее"]
+    },
+    "hero": {
+      "en": {
+        "heading": "Learn Through Play",
+        "subheading": "A safe and fun environment for children to learn, play, and grow.",
+        "cta": "Get Started",
+        "image": "/media/presets/kindergarten/hero.jpg"
+      },
+      "de": {
+        "heading": "Lernen durch Spielen",
+        "subheading": "Eine sichere und lustige Umgebung für Kinder zum Lernen, Spielen und Wachsen.",
+        "cta": "Jetzt starten",
+        "image": "/media/presets/kindergarten/hero.jpg"
+      },
+      "ru": {
+        "heading": "Учись играя",
+        "subheading": "Безопасная и веселая среда для обучения, игр и роста детей.",
+        "cta": "Начать",
+        "image": "/media/presets/kindergarten/hero.jpg"
+      }
+    },
+    "about": {
+      "en": {
+        "title": "About Us",
+        "text": "We foster creativity and curiosity in a nurturing environment for early development."
+      },
+      "de": {
+        "title": "Über uns",
+        "text": "Wir fördern Kreativität und Neugier im frühen Alter."
+      },
+      "ru": {
+        "title": "О нас",
+        "text": "Мы поощряем креативность и любознательность у детей."
+      }
+    },
+    "services": [
+      {
+        "name_en": "Early Learning",
+        "name_de": "Frühe Bildung",
+        "name_ru": "Раннее развитие",
+        "price": "$800/mo",
+        "desc_en": "ABC's and 123's.",
+        "image": "/media/presets/kindergarten/services/learning.jpg"
+      },
+      {
+        "name_en": "Arts & Crafts",
+        "name_de": "Kunst & Handwerk",
+        "name_ru": "Творчество",
+        "price": "Included",
+        "desc_en": "Unleashing creativity.",
+        "image": "/media/presets/kindergarten/services/art.jpg"
+      }
+    ],
+    "testimonials": [
+      {
+        "name": "Mom T.",
+        "text_en": "My daughter loves it here! She learns so much every day.",
+        "text_de": "Meine Tochter liebt es hier! Sie lernt jeden Tag so viel.",
+        "text_ru": "Моя дочь обожает это место! Она каждый день узнает много нового.",
+        "rating": 5,
+        "avatar": "/media/presets/kindergarten/avatars/mom.jpg"
+      }
+    ],
+    "contact": {
+      "address": "123 Main St, City",
+      "phone": "+1 234 567 890",
+      "email": "info@kindergarten.com",
+      "hours_en": "Mon-Fri: 9:00 AM - 6:00 PM",
+      "hours_de": "Mo-Fr: 09:00 - 18:00 Uhr",
+      "hours_ru": "Пн-Пт: 09:00 - 18:00"
+    },
+    "faq": [
+      {
+        "q_en": "How to start?",
+        "q_de": "Wie anfangen?",
+        "q_ru": "Как начать?",
+        "a_en": "Contact us today!",
+        "a_de": "Kontaktieren Sie uns!",
+        "a_ru": "Свяжитесь с нами!"
+      }
+    ]
+  },
+  "booking": {
+    "enabled": true,
+    "slots": ["09:00", "10:00", "14:00", "16:00"],
+    "duration": 60
+  },
+  "logo": {
+    "text": "LITTLE",
+    "tagline": "EXPLORERS",
+    "font": "Comfortaa"
+  }
+}

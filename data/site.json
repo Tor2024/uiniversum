@@ -1,0 +1,62 @@
+{
+  "meta": {
+    "title": "Meine Webseite",
+    "description": "",
+    "favicon": "/media/favicon.ico",
+    "language": "de",
+    "availableLanguages": ["de", "en", "ru"]
+  },
+  "design": {
+    "preset": "warm_minimalism",
+    "tokens": {
+      "colorBackground": "#F8F7F4",
+      "colorSurface": "#FFFFFF",
+      "colorPrimary": "#1A1A1A",
+      "colorSecondary": "#6B6B6B",
+      "colorBorder": "#E5E3DE",
+      "colorAccent": "#C9A96E",
+      "colorAccentHover": "#B8945A",
+      "fontDisplay": "Playfair Display",
+      "fontHeading": "Inter",
+      "fontBody": "Inter",
+      "fontCaption": "Inter",
+      "fontMono": "JetBrains Mono",
+      "fontSizeDisplay": "72px",
+      "fontSizeHeading": "32px",
+      "fontSizeBody": "17px",
+      "lineHeightBody": "1.7",
+      "lineHeightHeading": "1.3",
+      "spacingUnit": "8px",
+      "spacingSection": "120px",
+      "spacingElement": "24px",
+      "spacingCard": "32px",
+      "spacingButtonVertical": "16px",
+      "spacingButtonHorizontal": "32px",
+      "maxWidthContent": "1280px",
+      "maxWidthText": "680px",
+      "gridColumns": "12",
+      "gridGutter": "32px",
+      "horizontalPaddingMobile": "24px",
+      "horizontalPaddingTablet": "48px",
+      "horizontalPaddingDesktop": "80px",
+      "borderRadius": "8",
+      "borderRadiusSmall": "6px",
+      "borderRadiusMedium": "12px",
+      "borderRadiusLarge": "16px",
+      "shadowStyle": "soft",
+      "shadowResting": "0 4px 24px rgba(0,0,0,0.06)",
+      "shadowHover": "0 10px 40px rgba(0,0,0,0.1)",
+      "transitionDuration": "200ms",
+      "transitionTiming": "ease-out",
+      "imageRatioHero": "16:9",
+      "imageRatioCard": "4:3",
+      "imageRatioAvatar": "1:1"
+    },
+    "customCss": ""
+  },
+  "seo": {
+    "ogImage": "/media/og-default.jpg",
+    "twitterCard": "summary_large_image",
+    "googleAnalyticsId": ""
+  }
+}

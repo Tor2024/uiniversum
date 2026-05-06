@@ -1,0 +1,160 @@
+{
+  "meta": {
+    "title": "Gem Gallery | Jewelry Store",
+    "description": "Exquisite jewelry pieces crafted with precision and passion.",
+    "favicon": "/media/presets/jewelry_store/favicon.ico",
+    "language": "en",
+    "availableLanguages": ["en", "de", "ru"]
+  },
+  "design": {
+    "preset": "jewelry_store",
+    "tokens": {
+      "colorBackground": "#000000",
+      "colorSurface": "#FFFFFF",
+      "colorPrimary": "#FFD700",
+      "colorSecondary": "#6C757D",
+      "colorBorder": "#DEE2E6",
+      "colorAccent": "#FFFFFF",
+      "colorAccentHover": "#FFFFFF",
+      "fontDisplay": "Cormorant",
+      "fontHeading": "Cormorant",
+      "fontBody": "Raleway",
+      "fontCaption": "Raleway",
+      "fontMono": "Roboto Mono",
+      "fontSizeDisplay": "72px",
+      "fontSizeHeading": "36px",
+      "fontSizeBody": "17px",
+      "lineHeightBody": "1.7",
+      "lineHeightHeading": "1.3",
+      "spacingUnit": "8px",
+      "spacingSection": "120px",
+      "spacingElement": "24px",
+      "spacingCard": "32px",
+      "spacingButtonVertical": "16px",
+      "spacingButtonHorizontal": "32px",
+      "maxWidthContent": "1200px",
+      "maxWidthText": "700px",
+      "gridColumns": "12",
+      "gridGutter": "30px",
+      "horizontalPaddingMobile": "20px",
+      "horizontalPaddingTablet": "50px",
+      "horizontalPaddingDesktop": "80px",
+      "borderRadius": "8",
+      "borderRadiusSmall": "4px",
+      "borderRadiusMedium": "8px",
+      "borderRadiusLarge": "16px",
+      "shadowStyle": "soft",
+      "shadowResting": "0 4px 14px rgba(0,0,0,0.05)",
+      "shadowHover": "0 8px 24px rgba(0,0,0,0.1)",
+      "transitionDuration": "200ms",
+      "transitionTiming": "ease-in-out",
+      "imageRatioHero": "21:9",
+      "imageRatioCard": "4:3",
+      "imageRatioAvatar": "1:1"
+    },
+    "customCss": ""
+  },
+  "seo": {
+    "ogImage": "/media/presets/jewelry_store/og-default.jpg",
+    "twitterCard": "summary_large_image",
+    "googleAnalyticsId": "",
+    "keywords": "jewelry, luxury, gems"
+  },
+  "content": {
+    "slogans": {
+      "en": ["Timeless Elegance", "Shine Bright", "Exquisite Gems"],
+      "de": ["Zeitlose Eleganz", "Strahlend schön", "Exquisite Edelsteine"],
+      "ru": ["Вечная элегантность", "Сияй ярко", "Изысканные камни"]
+    },
+    "hero": {
+      "en": {
+        "heading": "Timeless Elegance",
+        "subheading": "Exquisite jewelry pieces crafted with precision and passion.",
+        "cta": "Get Started",
+        "image": "/media/presets/jewelry_store/hero.jpg"
+      },
+      "de": {
+        "heading": "Zeitlose Eleganz",
+        "subheading": "Exquisite jewelry pieces crafted with precision and passion.",
+        "cta": "Jetzt starten",
+        "image": "/media/presets/jewelry_store/hero.jpg"
+      },
+      "ru": {
+        "heading": "Вечная элегантность",
+        "subheading": "Exquisite jewelry pieces crafted with precision and passion.",
+        "cta": "Начать",
+        "image": "/media/presets/jewelry_store/hero.jpg"
+      }
+    },
+    "about": {
+      "en": {
+        "title": "About Us",
+        "text": "Every piece tells a story. We craft jewelry that becomes a family heirloom."
+      },
+      "de": {
+        "title": "Über uns",
+        "text": "Jedes Stück erzählt eine Geschichte. Wir fertigen Schmuck für Generationen."
+      },
+      "ru": {
+        "title": "О нас",
+        "text": "Каждое изделие рассказывает историю. Мы создаем украшения на поколения."
+      }
+    },
+    "services": [
+      {
+        "name_en": "Custom Rings",
+        "name_de": "Maßgefertigte Ringe",
+        "name_ru": "Кольца на заказ",
+        "price": "$1000+",
+        "desc_en": "Engagement and wedding rings.",
+        "image": "/media/presets/jewelry_store/services/rings.jpg"
+      },
+      {
+        "name_en": "Watch Collection",
+        "name_de": "Uhrensammlung",
+        "name_ru": "Коллекция часов",
+        "price": "$500+",
+        "desc_en": "Luxury timepieces.",
+        "image": "/media/presets/jewelry_store/services/watches.jpg"
+      }
+    ],
+    "testimonials": [
+      {
+        "name": "Fiance M.",
+        "text_en": "She said yes! The ring is absolutely stunning.",
+        "text_de": "She said yes! The ring is absolutely stunning.",
+        "text_ru": "She said yes! The ring is absolutely stunning.",
+        "rating": 5,
+        "avatar": "/media/presets/jewelry_store/avatars/fiance.jpg"
+      }
+    ],
+    "contact": {
+      "address": "123 Main St, City",
+      "phone": "+1 234 567 890",
+      "email": "info@jewelry_store.com",
+      "hours_en": "Mon-Fri: 9:00 AM - 6:00 PM",
+      "hours_de": "Mo-Fr: 09:00 - 18:00 Uhr",
+      "hours_ru": "Пн-Пт: 09:00 - 18:00"
+    },
+    "faq": [
+      {
+        "q_en": "How to start?",
+        "q_de": "Wie anfangen?",
+        "q_ru": "Как начать?",
+        "a_en": "Contact us today!",
+        "a_de": "Kontaktieren Sie uns!",
+        "a_ru": "Свяжитесь с нами!"
+      }
+    ]
+  },
+  "booking": {
+    "enabled": true,
+    "slots": ["09:00", "10:00", "14:00", "16:00"],
+    "duration": 60
+  },
+  "logo": {
+    "text": "GEM",
+    "tagline": "GALLERY",
+    "font": "Cormorant"
+  }
+}

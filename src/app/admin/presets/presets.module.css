@@ -1,0 +1,392 @@
+/* Presets Catalog Page Styles */
+/* Using CSS Variables from Design System (Warm Minimalism 2.0) */
+
+.presets-page {
+  padding: var(--spacing-section) var(--horizontal-padding-desktop);
+  background-color: var(--color-background);
+  min-height: 100vh;
+}
+
+/* Grid Layout */
+.presets-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: var(--grid-gutter);
+  max-width: var(--max-width-content);
+  margin: 0 auto;
+}
+
+/* Preset Card - Base Style */
+.preset-card {
+  background-color: var(--color-surface);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-resting);
+  transition: transform var(--transition-duration) var(--transition-timing),
+              box-shadow var(--transition-duration) var(--transition-timing);
+  cursor: pointer;
+  border: 1px solid var(--color-border);
+}
+
+.preset-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-hover);
+}
+
+/* Image Preview */
+.preset-card-image {
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+/* Content Area */
+.preset-card-content {
+  padding: var(--spacing-card);
+}
+
+.preset-card-title {
+  font-family: var(--font-heading);
+  font-size: var(--font-size-heading);
+  color: var(--color-primary);
+  margin-bottom: var(--spacing-element);
+}
+
+.preset-card-description {
+  font-family: var(--font-body);
+  font-size: var(--font-size-body);
+  color: var(--color-secondary);
+  line-height: var(--line-height-body);
+  margin-bottom: var(--spacing-card);
+}
+
+/* Select Button */
+.preset-card-button {
+  width: 100%;
+  padding: var(--spacing-btn-vertical) var(--spacing-btn-horizontal);
+  background-color: var(--color-accent);
+  color: white;
+  border: none;
+  border-radius: var(--radius-md);
+  font-family: var(--font-body);
+  font-size: var(--font-size-body);
+  cursor: pointer;
+  transition: background-color var(--transition-duration) var(--transition-timing);
+}
+
+.preset-card-button:hover {
+  background-color: var(--color-accent-hover);
+}
+
+/* ========================================= */
+/* TOP 3 STYLES FOR CLASSIFIEDS */
+/* ========================================= */
+
+/*
+  TOP 1: Clean Minimal (Default)
+  - Best for: Small towns (50k-100k population)
+  - Features: Lots of white space, clean lines, Inter font
+  - Psychology: Trust, Simplicity, Easy to scan
+  - Use case: Official city portal, government announcements
+*/
+.style-clean-minimal .preset-card {
+  border-radius: var(--radius-md);
+}
+
+.style-clean-minimal .preset-card-image {
+  border-bottom: 3px solid var(--color-accent);
+}
+
+.style-clean-minimal .preset-card-button {
+  background-color: var(--color-primary);
+}
+
+.style-clean-minimal .preset-card-button:hover {
+  background-color: #000;
+}
+
+/*
+  TOP 2: Vibrant Community (Recommended for 100k-300k)
+  - Best for: Active cities with young population
+  - Features: Blue accent (#3498DB), more images, social feel
+  - Psychology: Energy, Connection, Activity
+  - Use case: Student towns, resort cities
+*/
+.style-vibrant-community .preset-card {
+  border-radius: var(--radius-lg);
+  border: 2px solid var(--color-accent);
+}
+
+.style-vibrant-community .preset-card-image {
+  height: 240px;
+  border-radius: var(--radius-md) var(--radius-md) 0 0;
+}
+
+.style-vibrant-community .preset-card-content {
+  background: linear-gradient(to bottom, var(--color-surface), #F0F8FF);
+}
+
+.style-vibrant-community .preset-card-button {
+  background: linear-gradient(135deg, var(--color-accent), #2980B9);
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/*
+  TOP 3: Cozy Local (Best for family-oriented towns)
+  - Best for: Family towns, suburbs, retirement areas
+  - Features: Warm colors, rounded corners, friendly feel
+  - Psychology: Safety, Comfort, Neighborhood
+  - Use case: Residential areas, family services
+*/
+.style-cozy-local .preset-card {
+  border-radius: 16px;
+  background-color: #FFFAF5;
+  border: 1px solid #FFE4CC;
+}
+
+.style-cozy-local .preset-card-image {
+  border-radius: 12px 12px 0 0;
+  margin: 8px;
+  margin-bottom: 0;
+  height: 180px;
+}
+
+.style-cozy-local .preset-card-content {
+  padding: 20px;
+}
+
+.style-cozy-local .preset-card-button {
+  background-color: #E67E22;
+  border-radius: 20px;
+  font-family: var(--font-display);
+}
+
+.style-cozy-local .preset-card-button:hover {
+  background-color: #D35400;
+}
+
+/* ========================================= */
+/* ADDITIONAL STYLES */
+/* ========================================= */
+
+/* Style: Modern Dark (For tech-savvy cities) */
+.style-modern-dark .preset-card {
+  background-color: #2C3E50;
+  color: white;
+  border-color: #34495E;
+}
+
+.style-modern-dark .preset-card-title {
+  color: #ECF0F1;
+}
+
+.style-modern-dark .preset-card-description {
+  color: #BDC3C7;
+}
+
+.style-modern-dark .preset-card-button {
+  background-color: #1ABC9C;
+}
+
+/* Style: Eco Green (For environmentally conscious areas) */
+.style-eco-green .preset-card {
+  background-color: #F0FFF4;
+  border-color: #27AE60;
+}
+
+.style-eco-green .preset-card-button {
+  background-color: #27AE60;
+}
+
+/* Style: Retro Classic (For historic towns) */
+.style-retro-classic .preset-card {
+  background-color: #FFF8E7;
+  border: 2px dashed #D35400;
+}
+
+.style-retro-classic .preset-card-title {
+  font-family: 'Times New Roman', serif;
+}
+
+/* ========================================= */
+/* NEW STYLES FOR PAGE.TSX (Replacing inline styles) */
+/* ========================================= */
+
+/* Header Section */
+.header-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.header-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 48px;
+  color: #1A1A1A;
+  line-height: 1.2;
+}
+
+.header-description {
+  font-family: 'Inter', sans-serif;
+  font-size: 17px;
+  color: #6B6B6B;
+  margin-top: 16px;
+  line-height: 1.7;
+}
+
+/* Top 3 Explanation Section */
+.top3-section {
+  max-width: 1200px;
+  margin: 0 auto 60px;
+  padding: 32px;
+  background-color: white;
+  border-radius: 12px;
+  border-left: 4px solid #C9A96E;
+}
+
+.top3-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 32px;
+  color: #1A1A1A;
+  margin-bottom: 16px;
+}
+
+.top3-description {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  color: #6B6B6B;
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+.top3-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+/* Individual Top Style Cards */
+.top-style-card {
+  padding: 24px;
+  border: 1px solid #E5E3DE;
+  border-radius: 8px;
+}
+
+.top-style-card-vibrant {
+  padding: 24px;
+  border: 2px solid #3498DB;
+  border-radius: 12px;
+}
+
+.top-style-card-cozy {
+  padding: 24px;
+  border: 1px solid #FFE4CC;
+  border-radius: 16px;
+  background-color: #FFFAF5;
+}
+
+.top-style-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.top-style-badge {
+  background-color: #C9A96E;
+  color: white;
+  padding: 4px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: bold;
+  margin-right: 12px;
+}
+
+.top-style-badge-vibrant {
+  background: linear-gradient(135deg, #C9A96E, #2980B9);
+  color: white;
+  padding: 4px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: bold;
+  margin-right: 12px;
+}
+
+.top-style-badge-cozy {
+  background-color: #E67E22;
+  color: white;
+  padding: 4px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: bold;
+  margin-right: 12px;
+}
+
+.top-style-name {
+  font-family: 'Inter', sans-serif;
+  color: #1A1A1A;
+  margin: 0;
+}
+
+.top-style-name-serif {
+  font-family: 'Playfair Display', serif;
+  color: #1A1A1A;
+  margin: 0;
+}
+
+.top-style-details {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  color: #6B6B6B;
+  line-height: 1.5;
+}
+
+/* Badge for preset type */
+.preset-type-badge {
+  font-size: 12px;
+  color: #2C3E50;
+}
+
+.preset-type-badge-vibrant {
+  font-size: 12px;
+  color: #3498DB;
+}
+
+.preset-type-badge-cozy {
+  font-size: 12px;
+  color: #E67E22;
+}
+
+/* Free + Email Auth Badge */
+.free-badge {
+  font-size: 12px;
+  background-color: #27AE60;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 4px;
+  margin-left: 8px;
+}
+
+/* Dynamic image background */
+.preset-image-bg {
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Badge color dynamic */
+.badge-cozy {
+  color: #E67E22;
+}
+
+.badge-vibrant {
+  color: #3498DB;
+}
+
+.badge-clean {
+  color: #2C3E50;
+}

@@ -1,0 +1,168 @@
+{
+  "meta": {
+    "title": "Iron Core Fitness | Transform Your Body",
+    "description": "Premium gym with state-of-the-art equipment, personal training, and group classes. Achieve your fitness goals.",
+    "favicon": "/media/presets/fitness/favicon.ico",
+    "language": "en",
+    "availableLanguages": ["en", "de", "ru"]
+  },
+  "design": {
+    "preset": "fitness_gym",
+    "tokens": {
+      "colorBackground": "#0A0A0A",
+      "colorSurface": "#1C1C1C",
+      "colorPrimary": "#FF3C00",
+      "colorSecondary": "#B0B0B0",
+      "colorBorder": "#2A2A2A",
+      "colorAccent": "#FF3C00",
+      "colorAccentHover": "#E03500",
+      "fontDisplay": "Montserrat",
+      "fontHeading": "Montserrat",
+      "fontBody": "Roboto",
+      "fontCaption": "Roboto",
+      "fontMono": "Roboto Mono",
+      "fontSizeDisplay": "76px",
+      "fontSizeHeading": "34px",
+      "fontSizeBody": "16px",
+      "lineHeightBody": "1.7",
+      "lineHeightHeading": "1.3",
+      "spacingUnit": "8px",
+      "spacingSection": "130px",
+      "spacingElement": "26px",
+      "spacingCard": "30px",
+      "spacingButtonVertical": "16px",
+      "spacingButtonHorizontal": "34px",
+      "maxWidthContent": "1200px",
+      "maxWidthText": "680px",
+      "gridColumns": "12",
+      "gridGutter": "28px",
+      "horizontalPaddingMobile": "20px",
+      "horizontalPaddingTablet": "45px",
+      "horizontalPaddingDesktop": "85px",
+      "borderRadius": "6",
+      "borderRadiusSmall": "4px",
+      "borderRadiusMedium": "8px",
+      "borderRadiusLarge": "12px",
+      "shadowStyle": "sharp",
+      "shadowResting": "0 5px 20px rgba(255,60,0,0.1)",
+      "shadowHover": "0 8px 30px rgba(255,60,0,0.2)",
+      "transitionDuration": "150ms",
+      "transitionTiming": "ease-out",
+      "imageRatioHero": "16:9",
+      "imageRatioCard": "4:3",
+      "imageRatioAvatar": "1:1"
+    },
+    "customCss": ""
+  },
+  "seo": {
+    "ogImage": "/media/presets/fitness/og-default.jpg",
+    "twitterCard": "summary_large_image",
+    "googleAnalyticsId": "",
+    "keywords": "Gym, Fitness, Personal Training, Workout, Health, Iron Core"
+  },
+  "content": {
+    "slogans": {
+      "en": ["Train Like a Beast", "Stronger Every Day", "Your Body, Your Temple"],
+      "de": ["Trainiere wie ein Profi", "Jeden Tag stärker", "Dein Körper, dein Tempel"],
+      "ru": ["Тренируйся как зверь", "Сильнее с каждым днём", "Твое тело — твой храм"]
+    },
+    "hero": {
+      "en": {
+        "heading": "Forge Your Potential",
+        "subheading": "Join the elite. State-of-the-art equipment and expert coaching to get you in the best shape of your life.",
+        "cta": "Start Free Trial",
+        "image": "/media/presets/fitness/hero.jpg"
+      },
+      "de": {
+        "heading": "Entfalte dein Potenzial",
+        "subheading": "Werde Teil der Elite. Modernste Geräte und professionelles Coaching für deine Bestform.",
+        "cta": "Kostenlos testen",
+        "image": "/media/presets/fitness/hero.jpg"
+      },
+      "ru": {
+        "heading": "Раскрой свой потенциал",
+        "subheading": "Присоединяйся к элите. Современное оборудование и экспертный коучинг для лучшей формы жизни.",
+        "cta": "Начать бесплатно",
+        "image": "/media/presets/fitness/hero.jpg"
+      }
+    },
+    "about": {
+      "en": {
+        "title": "More Than a Gym",
+        "text": "We provide a motivating environment and results-driven programs to help you crush your fitness goals."
+      },
+      "de": {
+        "title": "Mehr als ein Fitnessstudio",
+        "text": "Wir bieten eine motivierende Umgebung und ergebnisorientierte Programme für deine Ziele."
+      },
+      "ru": {
+        "title": "Больше, чем спортзал",
+        "text": "Мы создаём мотивирующую среду и программы, ориентированные на результат."
+      }
+    },
+    "services": [
+      {
+        "name_en": "Personal Training",
+        "name_de": "Personal Training",
+        "name_ru": "Персональные тренировки",
+        "price": "$60/session",
+        "desc_en": "One-on-one coaching tailored to your goals.",
+        "image": "/media/presets/fitness/services/training.jpg"
+      },
+      {
+        "name_en": "Group Classes",
+        "name_de": "Gruppenkurse",
+        "name_ru": "Групповые занятия",
+        "price": "$25/class",
+        "desc_en": "High-energy classes including HIIT, Spin, and Yoga.",
+        "image": "/media/presets/fitness/services/classes.jpg"
+      },
+      {
+        "name_en": "Nutrition Plan",
+        "name_de": "Ernährungsplan",
+        "name_ru": "План питания",
+        "price": "$100",
+        "desc_en": "Custom meal plans designed by nutrition experts.",
+        "image": "/media/presets/fitness/services/nutrition.jpg"
+      }
+    ],
+    "testimonials": [
+      {
+        "name": "Alex P.",
+        "text_en": "Lost 20kg in 3 months. The trainers here are the best!",
+        "text_de": "20kg in 3 Monaten verloren. Die Trainer sind die Besten!",
+        "text_ru": "Сбросил 20 кг за 3 месяца. Лучшие тренеры!",
+        "rating": 5,
+        "avatar": "/media/presets/fitness/avatars/alex.jpg"
+      }
+    ],
+    "contact": {
+      "address": "456 Fitness Ave, Los Angeles, CA",
+      "phone": "+1 310 555 0123",
+      "email": "train@ironcore.com",
+      "hours_en": "Mon-Fri: 6:00 AM - 10:00 PM, Sat-Sun: 8:00 AM - 8:00 PM",
+      "hours_de": "Mo-Fr: 06:00 - 22:00 Uhr, Sa-So: 08:00 - 20:00 Uhr",
+      "hours_ru": "Пн-Пт: 06:00 - 22:00, Сб-Вс: 08:00 - 20:00"
+    },
+    "faq": [
+      {
+        "q_en": "Is there a free trial?",
+        "q_de": "Gibt es eine kostenlose Probestunde?",
+        "q_ru": "Есть ли бесплатная пробная тренировка?",
+        "a_en": "Yes, we offer a 3-day free pass for new members.",
+        "a_de": "Ja, wir bieten eine 3-Tage-FreeCard für neue Mitglieder.",
+        "a_ru": "Да, мы предлагаем бесплатный 3-дневный пропуск для новичков."
+      }
+    ]
+  },
+  "booking": {
+    "enabled": true,
+    "slots": ["07:00", "09:00", "17:00", "18:00", "19:00"],
+    "duration": 60
+  },
+  "logo": {
+    "text": "IRON",
+    "tagline": "CORE",
+    "font": "Montserrat"
+  }
+}

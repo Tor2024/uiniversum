@@ -1,0 +1,160 @@
+{
+  "meta": {
+    "title": "Wanderlust | Travel Agency",
+    "description": "Your journey begins here. Custom travel packages and exotic destinations.",
+    "favicon": "/media/presets/travel_agency/favicon.ico",
+    "language": "en",
+    "availableLanguages": ["en", "de", "ru"]
+  },
+  "design": {
+    "preset": "travel_agency",
+    "tokens": {
+      "colorBackground": "#87CEEB",
+      "colorSurface": "#FFFFFF",
+      "colorPrimary": "#1E90FF",
+      "colorSecondary": "#6C757D",
+      "colorBorder": "#DEE2E6",
+      "colorAccent": "#FF6347",
+      "colorAccentHover": "#FF6347",
+      "fontDisplay": "Pacifico",
+      "fontHeading": "Pacifico",
+      "fontBody": "Montserrat",
+      "fontCaption": "Montserrat",
+      "fontMono": "Roboto Mono",
+      "fontSizeDisplay": "72px",
+      "fontSizeHeading": "36px",
+      "fontSizeBody": "17px",
+      "lineHeightBody": "1.7",
+      "lineHeightHeading": "1.3",
+      "spacingUnit": "8px",
+      "spacingSection": "120px",
+      "spacingElement": "24px",
+      "spacingCard": "32px",
+      "spacingButtonVertical": "16px",
+      "spacingButtonHorizontal": "32px",
+      "maxWidthContent": "1200px",
+      "maxWidthText": "700px",
+      "gridColumns": "12",
+      "gridGutter": "30px",
+      "horizontalPaddingMobile": "20px",
+      "horizontalPaddingTablet": "50px",
+      "horizontalPaddingDesktop": "80px",
+      "borderRadius": "8",
+      "borderRadiusSmall": "4px",
+      "borderRadiusMedium": "8px",
+      "borderRadiusLarge": "16px",
+      "shadowStyle": "soft",
+      "shadowResting": "0 4px 14px rgba(0,0,0,0.05)",
+      "shadowHover": "0 8px 24px rgba(0,0,0,0.1)",
+      "transitionDuration": "200ms",
+      "transitionTiming": "ease-in-out",
+      "imageRatioHero": "21:9",
+      "imageRatioCard": "4:3",
+      "imageRatioAvatar": "1:1"
+    },
+    "customCss": ""
+  },
+  "seo": {
+    "ogImage": "/media/presets/travel_agency/og-default.jpg",
+    "twitterCard": "summary_large_image",
+    "googleAnalyticsId": "",
+    "keywords": "travel, vacation, tours"
+  },
+  "content": {
+    "slogans": {
+      "en": ["Explore the World", "Adventure Awaits", "Travel More"],
+      "de": ["Entdecke die Welt", "Abenteuer wartet", "Reise mehr"],
+      "ru": ["Исследуй мир", "Приключение ждёт", "Путешествуй больше"]
+    },
+    "hero": {
+      "en": {
+        "heading": "Explore the World",
+        "subheading": "Your journey begins here. Custom travel packages and exotic destinations.",
+        "cta": "Get Started",
+        "image": "/media/presets/travel_agency/hero.jpg"
+      },
+      "de": {
+        "heading": "Entdecke die Welt",
+        "subheading": "Ihre Reise beginnt hier. Maßgeschneiderte Reisepakete und exotische Ziele.",
+        "cta": "Jetzt starten",
+        "image": "/media/presets/travel_agency/hero.jpg"
+      },
+      "ru": {
+        "heading": "Исследуй мир",
+        "subheading": "Ваше путешествие начинается здесь. Индивидуальные турпакеты и экзотические направления.",
+        "cta": "Начать",
+        "image": "/media/presets/travel_agency/hero.jpg"
+      }
+    },
+    "about": {
+      "en": {
+        "title": "About Us",
+        "text": "Creating unforgettable travel experiences tailored to your desires and budget."
+      },
+      "de": {
+        "title": "Über uns",
+        "text": "Wir kreieren unvergessliche Reiseerlebnisse, die auf Ihre Wünsche und Ihr Budget zugeschnitten sind."
+      },
+      "ru": {
+        "title": "О нас",
+        "text": "Мы создаём незабываемые путешествия, адаптированные под ваши желания и бюджет."
+      }
+    },
+    "services": [
+      {
+        "name_en": "Honeymoon Packages",
+        "name_de": "Flitterwochenpakete",
+        "name_ru": "Свадебные путешествия",
+        "price": "$3000+",
+        "desc_en": "Romantic getaways.",
+        "image": "/media/presets/travel_agency/services/honeymoon.jpg"
+      },
+      {
+        "name_en": "Adventure Tours",
+        "name_de": "Abenteuertouren",
+        "name_ru": "Туры с приключениями",
+        "price": "$1500+",
+        "desc_en": "Hiking and extreme sports.",
+        "image": "/media/presets/travel_agency/services/adventure.jpg"
+      }
+    ],
+    "testimonials": [
+      {
+        "name": "Traveler J.",
+        "text_en": "They booked the perfect honeymoon. Exceeded expectations!",
+        "text_de": "Sie haben den perfekten Flitterwochenurlaub gebucht. Übertraf die Erwartungen!",
+        "text_ru": "Они забронировали идеальный свадебный тур. Превзошло ожидания!",
+        "rating": 5,
+        "avatar": "/media/presets/travel_agency/avatars/traveler.jpg"
+      }
+    ],
+    "contact": {
+      "address": "123 Main St, City",
+      "phone": "+1 234 567 890",
+      "email": "info@travel_agency.com",
+      "hours_en": "Mon-Fri: 9:00 AM - 6:00 PM",
+      "hours_de": "Mo-Fr: 09:00 - 18:00 Uhr",
+      "hours_ru": "Пн-Пт: 09:00 - 18:00"
+    },
+    "faq": [
+      {
+        "q_en": "How to start?",
+        "q_de": "Wie anfangen?",
+        "q_ru": "Как начать?",
+        "a_en": "Contact us today!",
+        "a_de": "Kontaktieren Sie uns!",
+        "a_ru": "Свяжитесь с нами!"
+      }
+    ]
+  },
+  "booking": {
+    "enabled": true,
+    "slots": ["09:00", "10:00", "14:00", "16:00"],
+    "duration": 60
+  },
+  "logo": {
+    "text": "WANDERLUST",
+    "tagline": "",
+    "font": "Pacifico"
+  }
+}

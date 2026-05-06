@@ -1,0 +1,40 @@
+{
+  "admin": {
+    "title": "Admin Panel",
+    "dashboard": "Dashboard",
+    "pages": "Pages",
+    "editor": "Editor",
+    "menu": "Menu",
+    "media": "Media",
+    "design": "Design",
+    "forms": "Forms",
+    "settings": "Settings",
+    "login": "Login",
+    "logout": "Logout",
+    "saveDraft": "Save Draft",
+    "publish": "Publish",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "addBlock": "Add Block",
+    "blocks": "Blocks",
+    "content": "Content",
+    "styles": "Styles",
+    "seo": "SEO",
+    "preview": "Preview",
+    "desktop": "Desktop",
+    "tablet": "Tablet",
+    "mobile": "Mobile",
+    "language": "Language",
+    "german": "German",
+    "english": "English",
+    "russian": "Russian"
+  },
+  "site": {
+    "home": "Home",
+    "readMore": "Read More",
+    "contactUs": "Contact Us",
+    "submit": "Submit",
+    "loading": "Loading..."
+  }
+}

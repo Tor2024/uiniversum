@@ -1,0 +1,160 @@
+{
+  "meta": {
+    "title": "Justice & Co. | Law Firm",
+    "description": "Experienced legal representation for corporate and private clients.",
+    "favicon": "/media/presets/law_firm/favicon.ico",
+    "language": "en",
+    "availableLanguages": ["en", "de", "ru"]
+  },
+  "design": {
+    "preset": "law_firm",
+    "tokens": {
+      "colorBackground": "#001F3F",
+      "colorSurface": "#FFFFFF",
+      "colorPrimary": "#FFD700",
+      "colorSecondary": "#6C757D",
+      "colorBorder": "#DEE2E6",
+      "colorAccent": "#FFFFFF",
+      "colorAccentHover": "#FFFFFF",
+      "fontDisplay": "Times New Roman",
+      "fontHeading": "Times New Roman",
+      "fontBody": "Helvetica",
+      "fontCaption": "Helvetica",
+      "fontMono": "Roboto Mono",
+      "fontSizeDisplay": "72px",
+      "fontSizeHeading": "36px",
+      "fontSizeBody": "17px",
+      "lineHeightBody": "1.7",
+      "lineHeightHeading": "1.3",
+      "spacingUnit": "8px",
+      "spacingSection": "120px",
+      "spacingElement": "24px",
+      "spacingCard": "32px",
+      "spacingButtonVertical": "16px",
+      "spacingButtonHorizontal": "32px",
+      "maxWidthContent": "1200px",
+      "maxWidthText": "700px",
+      "gridColumns": "12",
+      "gridGutter": "30px",
+      "horizontalPaddingMobile": "20px",
+      "horizontalPaddingTablet": "50px",
+      "horizontalPaddingDesktop": "80px",
+      "borderRadius": "8",
+      "borderRadiusSmall": "4px",
+      "borderRadiusMedium": "8px",
+      "borderRadiusLarge": "16px",
+      "shadowStyle": "soft",
+      "shadowResting": "0 4px 14px rgba(0,0,0,0.05)",
+      "shadowHover": "0 8px 24px rgba(0,0,0,0.1)",
+      "transitionDuration": "200ms",
+      "transitionTiming": "ease-in-out",
+      "imageRatioHero": "21:9",
+      "imageRatioCard": "4:3",
+      "imageRatioAvatar": "1:1"
+    },
+    "customCss": ""
+  },
+  "seo": {
+    "ogImage": "/media/presets/law_firm/og-default.jpg",
+    "twitterCard": "summary_large_image",
+    "googleAnalyticsId": "",
+    "keywords": "law, legal, justice"
+  },
+  "content": {
+    "slogans": {
+      "en": ["Your Legal Shield", "Defending Rights", "Justice Served"],
+      "de": ["Dein Rechtsschirm", "Rechte verteidigen", "Gerechtigkeit"],
+      "ru": ["Твой правовой щит", "Защита прав", "Правосудие"]
+    },
+    "hero": {
+      "en": {
+        "heading": "Your Legal Shield",
+        "subheading": "Experienced legal representation for corporate and private clients.",
+        "cta": "Get Started",
+        "image": "/media/presets/law_firm/hero.jpg"
+      },
+      "de": {
+        "heading": "Dein Rechtsschirm",
+        "subheading": "Erfahrene Rechtsvertretung für Unternehmen und Privatpersonen.",
+        "cta": "Jetzt starten",
+        "image": "/media/presets/law_firm/hero.jpg"
+      },
+      "ru": {
+        "heading": "Твой правовой щит",
+        "subheading": "Опытное юридическое представительство для корпоративных и частных клиентов.",
+        "cta": "Начать",
+        "image": "/media/presets/law_firm/hero.jpg"
+      }
+    },
+    "about": {
+      "en": {
+        "title": "About Us",
+        "text": "Providing robust legal strategies to protect your interests and assets."
+      },
+      "de": {
+        "title": "Über uns",
+        "text": "Wir bieten robuste Rechtsstrategien zum Schutz Ihrer Interessen."
+      },
+      "ru": {
+        "title": "О нас",
+        "text": "Мы предоставляем надежные юридические стратегии для защиты ваших интересов и активов."
+      }
+    },
+    "services": [
+      {
+        "name_en": "Corporate Law",
+        "name_de": "Unternehmensrecht",
+        "name_ru": "Корпоративное право",
+        "price": "$400/hr",
+        "desc_en": "Contracts and mergers.",
+        "image": "/media/presets/law_firm/services/corporate.jpg"
+      },
+      {
+        "name_en": "Family Law",
+        "name_de": "Familienrecht",
+        "name_ru": "Семейное право",
+        "price": "$250/hr",
+        "desc_en": "Divorce and custody.",
+        "image": "/media/presets/law_firm/services/family.jpg"
+      }
+    ],
+    "testimonials": [
+      {
+        "name": "Client X.",
+        "text_en": "They won a seemingly impossible case. Top tier lawyers.",
+        "text_de": "Sie haben einen scheinbar unmöglichen Fall gewonnen. Top-Anwälte.",
+        "text_ru": "Они выиграли, казалось бы, невозможное дело. Юристы высшего класса.",
+        "rating": 5,
+        "avatar": "/media/presets/law_firm/avatars/client.jpg"
+      }
+    ],
+    "contact": {
+      "address": "123 Main St, City",
+      "phone": "+1 234 567 890",
+      "email": "info@law_firm.com",
+      "hours_en": "Mon-Fri: 9:00 AM - 6:00 PM",
+      "hours_de": "Mo-Fr: 09:00 - 18:00 Uhr",
+      "hours_ru": "Пн-Пт: 09:00 - 18:00"
+    },
+    "faq": [
+      {
+        "q_en": "How to start?",
+        "q_de": "Wie anfangen?",
+        "q_ru": "Как начать?",
+        "a_en": "Contact us today!",
+        "a_de": "Kontaktieren Sie uns!",
+        "a_ru": "Свяжитесь с нами!"
+      }
+    ]
+  },
+  "booking": {
+    "enabled": true,
+    "slots": ["09:00", "10:00", "14:00", "16:00"],
+    "duration": 60
+  },
+  "logo": {
+    "text": "JUSTICE",
+    "tagline": "& CO.",
+    "font": "Times New Roman"
+  }
+}

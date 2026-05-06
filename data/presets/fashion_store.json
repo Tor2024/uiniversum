@@ -1,0 +1,160 @@
+{
+  "meta": {
+    "title": "Vogue Corner | Fashion Store",
+    "description": "Discover the latest trends in fashion for men and women. Premium quality apparel.",
+    "favicon": "/media/presets/fashion/favicon.ico",
+    "language": "en",
+    "availableLanguages": ["en", "de", "ru"]
+  },
+  "design": {
+    "preset": "fashion_store",
+    "tokens": {
+      "colorBackground": "#FFFFFF",
+      "colorSurface": "#F9F9F9",
+      "colorPrimary": "#000000",
+      "colorSecondary": "#555555",
+      "colorBorder": "#E0E0E0",
+      "colorAccent": "#D4AF37",
+      "colorAccentHover": "#B8941F",
+      "fontDisplay": "Playfair Display",
+      "fontHeading": "Playfair Display",
+      "fontBody": "Lato",
+      "fontCaption": "Lato",
+      "fontMono": "Roboto Mono",
+      "fontSizeDisplay": "74px",
+      "fontSizeHeading": "36px",
+      "fontSizeBody": "17px",
+      "lineHeightBody": "1.7",
+      "lineHeightHeading": "1.3",
+      "spacingUnit": "8px",
+      "spacingSection": "130px",
+      "spacingElement": "26px",
+      "spacingCard": "32px",
+      "spacingButtonVertical": "16px",
+      "spacingButtonHorizontal": "36px",
+      "maxWidthContent": "1200px",
+      "maxWidthText": "700px",
+      "gridColumns": "12",
+      "gridGutter": "28px",
+      "horizontalPaddingMobile": "20px",
+      "horizontalPaddingTablet": "50px",
+      "horizontalPaddingDesktop": "90px",
+      "borderRadius": "2",
+      "borderRadiusSmall": "0px",
+      "borderRadiusMedium": "4px",
+      "borderRadiusLarge": "8px",
+      "shadowStyle": "sharp",
+      "shadowResting": "0 4px 15px rgba(0,0,0,0.05)",
+      "shadowHover": "0 8px 25px rgba(0,0,0,0.1)",
+      "transitionDuration": "200ms",
+      "transitionTiming": "ease-in-out",
+      "imageRatioHero": "21:9",
+      "imageRatioCard": "3:4",
+      "imageRatioAvatar": "1:1"
+    },
+    "customCss": ""
+  },
+  "seo": {
+    "ogImage": "/media/presets/fashion/og-default.jpg",
+    "twitterCard": "summary_large_image",
+    "googleAnalyticsId": "",
+    "keywords": "fashion, store, clothing"
+  },
+  "content": {
+    "slogans": {
+      "en": ["Dress to Impress", "Trendy & Chic", "Style Redefined"],
+      "de": ["Kleide dich, um zu beeindrucken", "Trendig & Schick", "Stil neu definiert"],
+      "ru": ["Оденься, чтобы впечатлять", "Модно и стильно", "Стиль переосмыслен"]
+    },
+    "hero": {
+      "en": {
+        "heading": "Dress to Impress",
+        "subheading": "Discover the latest trends in fashion for men and women. Premium quality apparel.",
+        "cta": "Shop Now",
+        "image": "/media/presets/fashion/hero.jpg"
+      },
+      "de": {
+        "heading": "Kleide dich, um zu beeindrucken",
+        "subheading": "Entdecke die neuesten Modetrends für Damen und Herren. Premium-Qualität.",
+        "cta": "Jetzt shoppen",
+        "image": "/media/presets/fashion/hero.jpg"
+      },
+      "ru": {
+        "heading": "Оденься, чтобы впечатлять",
+        "subheading": "Откройте для себя последние модные тренды для мужчин и женщин. Премиальное качество.",
+        "cta": "Купить сейчас",
+        "image": "/media/presets/fashion/hero.jpg"
+      }
+    },
+    "about": {
+      "en": {
+        "title": "Our Style",
+        "text": "Curating the best fashion pieces from around the world for the modern wardrobe."
+      },
+      "de": {
+        "title": "Unser Stil",
+        "text": "Die besten Mode-Stücke für den modernen Kleiderschrank."
+      },
+      "ru": {
+        "title": "Наш стиль",
+        "text": "Лучшие модные вещи со всего мира для современного гардероба."
+      }
+    },
+    "services": [
+      {
+        "name_en": "Summer Collection",
+        "name_de": "Sommerkollektion",
+        "name_ru": "Летняя коллекция",
+        "price": "$50+",
+        "desc_en": "Light and breathable fabrics.",
+        "image": "/media/presets/fashion_store/services/summer.jpg"
+      },
+      {
+        "name_en": "Accessories",
+        "name_de": "Accessoires",
+        "name_ru": "Аксессуары",
+        "price": "$30+",
+        "desc_en": "Complete your look.",
+        "image": "/media/presets/fashion_store/services/accessories.jpg"
+      }
+    ],
+    "testimonials": [
+      {
+        "name": "Olivia F.",
+        "text_en": "Always find something unique here. Love the quality!",
+        "text_de": "Immer etwas Einzigartiges hier. Liebe die Qualität!",
+        "text_ru": "Всегда нахожу здесь что-то уникальное. Обожаю качество!",
+        "rating": 5,
+        "avatar": "/media/presets/fashion_store/avatars/olivia.jpg"
+      }
+    ],
+    "contact": {
+      "address": "333 Style Ave, Milan, Italy",
+      "phone": "+39 02 1234 5678",
+      "email": "hello@voguecorner.com",
+      "hours_en": "Mon-Sat: 10:00 AM - 8:00 PM",
+      "hours_de": "Mo-Sa: 10:00 - 20:00 Uhr",
+      "hours_ru": "Пн-Сб: 10:00 - 20:00"
+    },
+    "faq": [
+      {
+        "q_en": "Do you offer international shipping?",
+        "q_de": "Bieten Sie internationalen Versand an?",
+        "q_ru": "Вы делаете международную доставку?",
+        "a_en": "Yes, we ship worldwide with DHL Express.",
+        "a_de": "Ja, wir versenden weltweit mit DHL Express.",
+        "a_ru": "Да, мы доставляем по всему миру через DHL Express."
+      }
+    ]
+  },
+  "booking": {
+    "enabled": false,
+    "slots": [],
+    "duration": 0
+  },
+  "logo": {
+    "text": "VOGUE",
+    "tagline": "CORNER",
+    "font": "Playfair Display"
+  }
+}

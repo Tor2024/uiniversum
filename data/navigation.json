@@ -1,0 +1,14 @@
+{
+  "header": [
+    {
+      "id": "nav_001",
+      "label": { "de": "Start", "en": "Home", "ru": "Главная" },
+      "url": "/",
+      "order": 0,
+      "visible": true,
+      "openNewTab": false,
+      "children": []
+    }
+  ],
+  "footer": []
+}

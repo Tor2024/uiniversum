@@ -1,0 +1,263 @@
+{
+  "meta": {
+    "title": "ГородОК | Доска объявлений",
+    "description": "Бесплатные объявления для жителей города. Аренда, работа, услуги, обмен. Все в одном месте.",
+    "favicon": "/media/presets/classifieds/favicon.ico",
+    "language": "ru",
+    "availableLanguages": ["ru", "de", "en"],
+    "category": "classifieds"
+  },
+  "design": {
+    "preset": "local_classifieds",
+    "tokens": {
+      "colorBackground": "#F0F4F8",
+      "colorSurface": "#FFFFFF",
+      "colorPrimary": "#2C3E50",
+      "colorSecondary": "#7F8C8D",
+      "colorBorder": "#E0E6ED",
+      "colorAccent": "#3498DB",
+      "colorAccentHover": "#2980B9",
+      "fontDisplay": "Playfair Display",
+      "fontHeading": "Inter",
+      "fontBody": "Inter",
+      "fontCaption": "Inter",
+      "fontMono": "JetBrains Mono",
+      "fontSizeDisplay": "48px",
+      "fontSizeHeading": "28px",
+      "fontSizeBody": "16px",
+      "lineHeightBody": "1.6",
+      "lineHeightHeading": "1.3",
+      "spacingUnit": "8px",
+      "spacingSection": "80px",
+      "spacingElement": "20px",
+      "spacingCard": "24px",
+      "spacingButtonVertical": "12px",
+      "spacingButtonHorizontal": "24px",
+      "maxWidthContent": "1200px",
+      "maxWidthText": "700px",
+      "gridColumns": "12",
+      "gridGutter": "24px",
+      "horizontalPaddingMobile": "16px",
+      "horizontalPaddingTablet": "32px",
+      "horizontalPaddingDesktop": "48px",
+      "borderRadius": "8",
+      "borderRadiusSmall": "4px",
+      "borderRadiusMedium": "8px",
+      "borderRadiusLarge": "12px",
+      "shadowStyle": "clean",
+      "shadowResting": "0 2px 8px rgba(0,0,0,0.05)",
+      "shadowHover": "0 4px 16px rgba(0,0,0,0.1)",
+      "transitionDuration": "150ms",
+      "transitionTiming": "ease-in-out",
+      "imageRatioHero": "16:9",
+      "imageRatioCard": "4:3",
+      "imageRatioAvatar": "1:1"
+    },
+    "customCss": ""
+  },
+  "seo": {
+    "ogImage": "/media/presets/classifieds/og-default.jpg",
+    "twitterCard": "summary_large_image",
+    "googleAnalyticsId": "",
+    "keywords": "объявления, город, бесплатно, аренда, работа, услуги, купля-продажа"
+  },
+  "content": {
+    "slogans": {
+      "ru": ["Находи то, что нужно рядом", "Бесплатные объявления для своих", "Твой город — твои возможности"],
+      "de": ["Finde was du brauchst", "Kostenlose Anzeigen für Nachbarn", "Deine Stadt, deine Chancen"],
+      "en": ["Find what you need nearby", "Free ads for locals", "Your city, your opportunities"]
+    },
+    "hero": {
+      "ru": {
+        "heading": "ГородОК",
+        "subheading": "Бесплатная доска объявлений для жителей города. Размещай и находи!",
+        "cta": "Разместить объявление",
+        "image": "/media/presets/classifieds/hero.jpg"
+      },
+      "de": {
+        "heading": "StadtAnzeiger",
+        "subheading": "Kostenlose Kleinanzeigen für Einwohner. Schalte und finde!",
+        "cta": "Anzeige aufgeben",
+        "image": "/media/presets/classifieds/hero.jpg"
+      },
+      "en": {
+        "heading": "CityBoard",
+        "subheading": "Free classifieds for residents. Post and find!",
+        "cta": "Post an ad",
+        "image": "/media/presets/classifieds/hero.jpg"
+      }
+    },
+    "about": {
+      "ru": {
+        "title": "О проекте",
+        "text": "ГородОК — это современная платформа для размещения бесплатных объявлений. Мы соединяем продавцов и покупателей, работодателей и соискателей, соседей и друзей. Все самое актуальное для города с населением до 300 000 человек."
+      },
+      "de": {
+        "title": "Über uns",
+        "text": "StadtAnzeiger ist eine moderne Plattform für kostenlose Kleinanzeigen. Wir verbinden Verkäufer mit Käufern, Arbeitgeber mit Bewerbern, Nachbarn mit Freunden."
+      },
+      "en": {
+        "title": "About Us",
+        "text": "CityBoard is a modern platform for free classified ads. We connect sellers with buyers, employers with job seekers, neighbors with friends."
+      }
+    },
+    "categories": [
+      {
+        "id": "real_estate",
+        "name_ru": "Недвижимость",
+        "name_de": "Immobilien",
+        "name_en": "Real Estate",
+        "icon": "home",
+        "subcategories_ru": ["Аренда квартир", "Продажа домов", "Коммерческая недвижимость", "Дачи и участки"],
+        "subcategories_de": ["Wohnungsmiete", "Häuser verkaufen", "Gewerbeimmobilien", "Datschen und Grundstücke"],
+        "subcategories_en": ["Apartment Rental", "House Sales", "Commercial Real Estate", "Dachas & Plots"]
+      },
+      {
+        "id": "jobs",
+        "name_ru": "Работа",
+        "name_de": "Jobs",
+        "name_en": "Jobs",
+        "icon": "briefcase",
+        "subcategories_ru": ["Вакансии", "Резюме", "Подработка", "Удаленная работа"],
+        "subcategories_de": ["Stellenangebote", "Bewerbungen", "Nebenjobs", "Homeoffice"],
+        "subcategories_en": ["Vacancies", "Resumes", "Part-time", "Remote Work"]
+      },
+      {
+        "id": "services",
+        "name_ru": "Услуги",
+        "name_de": "Dienstleistungen",
+        "name_en": "Services",
+        "icon": "tools",
+        "subcategories_ru": ["Ремонт и строительство", "Красота и здоровье", "Автоуслуги", "Компьютерная помощь"],
+        "subcategories_de": ["Reparatur & Bau", "Schönheit & Gesundheit", "Auto services", "IT-Hilfe"],
+        "subcategories_en": ["Repair & Construction", "Beauty & Health", "Auto Services", "Computer Help"]
+      },
+      {
+        "id": "electronics",
+        "name_ru": "Электроника",
+        "name_de": "Elektronik",
+        "name_en": "Electronics",
+        "icon": "smartphone",
+        "subcategories_ru": ["Телефоны", "Ноутбуки", "Бытовая техника", "Фото и видео"],
+        "subcategories_de": ["Handys", "Laptops", "Haushaltsgeräte", "Foto & Video"],
+        "subcategories_en": ["Phones", "Laptops", "Appliances", "Photo & Video"]
+      },
+      {
+        "id": "clothing",
+        "name_ru": "Одежда и обувь",
+        "name_de": "Kleidung & Schuhe",
+        "name_en": "Clothing & Shoes",
+        "icon": "shirt",
+        "subcategories_ru": ["Женская одежда", "Мужская одежда", "Детская одежда", "Спорт и аутдор"],
+        "subcategories_de": ["Damenmode", "Herrenmode", "Kindermode", "Sport & Outdoor"],
+        "subcategories_en": ["Women's Clothing", "Men's Clothing", "Kids' Clothing", "Sport & Outdoor"]
+      },
+      {
+        "id": "transport",
+        "name_ru": "Транспорт",
+        "name_de": "Fahrzeuge",
+        "name_en": "Transport",
+        "icon": "car",
+        "subcategories_ru": ["Автомобили", "Мотоциклы", "Запчасти", "Спецтехника"],
+        "subcategories_de": ["Autos", "Motorräder", "Ersatzteile", "Baumaschinen"],
+        "subcategories_en": ["Cars", "Motorcycles", "Parts", "Special Machinery"]
+      }
+    ],
+    "sample_ads": [
+      {
+        "title_ru": "Сдается 2-комнатная квартира",
+        "title_de": "2-Zimmer-Wohnung zu vermieten",
+        "title_en": "2-room apartment for rent",
+        "price": "25 000 ₽",
+        "category": "real_estate",
+        "location_ru": "Центр",
+        "location_de": "Zentrum",
+        "location_en": "Center",
+        "desc_ru": "Уютная квартира с ремонтом, рядом парк и школа",
+        "desc_de": "Gemütliche Wohnung mit Renovierung, nahe Park und Schule",
+        "desc_en": "Cozy apartment with renovation, near park and school",
+        "image": "/media/presets/classifieds/ads/apartment.jpg",
+        "date": "2026-05-05"
+      },
+      {
+        "title_ru": "Требуется мастер по ремонту",
+        "title_de": "Reparaturmeister gesucht",
+        "title_en": "Repair master needed",
+        "price": "от 2 000 ₽/день",
+        "category": "jobs",
+        "location_ru": "Район Северный",
+        "location_de": "Nordbezirk",
+        "location_en": "North District",
+        "desc_ru": "Опыт работы от 3 лет, свои инструменты",
+        "desc_de": "3 Jahre Erfahrung, eigene Werkzeuge",
+        "desc_en": "3+ years experience, own tools",
+        "image": "/media/presets/classifieds/ads/job.jpg",
+        "date": "2026-05-04"
+      },
+      {
+        "title_ru": "iPhone 15 Pro Max 256GB",
+        "title_de": "iPhone 15 Pro Max 256GB",
+        "title_en": "iPhone 15 Pro Max 256GB",
+        "price": "95 000 ₽",
+        "category": "electronics",
+        "location_ru": "Весь город",
+        "location_de": "Ganz Stadt",
+        "location_en": "Whole city",
+        "desc_ru": "Идеальное состояние, полный комплект, гарантия",
+        "desc_de": "Perfekter Zustand, vollständiges Set, Garantie",
+        "desc_en": "Perfect condition, full set, warranty",
+        "image": "/media/presets/classifieds/ads/iphone.jpg",
+        "date": "2026-05-03"
+      },
+      {
+        "title_ru": "Отдам щенков лабрадора",
+        "title_de": "Labrador-Welpen zu verschenken",
+        "title_en": "Giving away Labrador puppies",
+        "price": "Бесплатно",
+        "category": "services",
+        "location_ru": "Пригород",
+        "location_de": "Vorort",
+        "location_en": "Suburb",
+        "desc_ru": "2 месяца, привиты, готовы к новому дому",
+        "desc_de": "2 Monate, geimpft, bereit für ein neues Zuhause",
+        "desc_en": "2 months, vaccinated, ready for new home",
+        "image": "/media/presets/classifieds/ads/puppies.jpg",
+        "date": "2026-05-05"
+      }
+    ],
+    "contact": {
+      "address": "ул. Центральная, 1, оф. 205",
+      "phone": "+7 (495) 123-45-67",
+      "email": "info@gorodok.ru",
+      "hours_ru": "Пн-Пт: 9:00 - 18:00, Сб: 10:00 - 15:00",
+      "hours_de": "Mo-Fr: 9:00 - 18:00, Sa: 10:00 - 15:00",
+      "hours_en": "Mon-Fri: 9:00 AM - 6:00 PM, Sat: 10:00 AM - 3:00 PM"
+    },
+    "faq": [
+      {
+        "q_ru": "Как разместить объявление?",
+        "q_de": "Wie schalte ich eine Anzeige?",
+        "q_en": "How do I post an ad?",
+        "a_ru": "Нажмите кнопку 'Разместить объявление', выберите категорию, заполните форму и загрузите фото. Все бесплатно!",
+        "a_de": "Klicken Sie auf 'Anzeige aufgeben', wählen Sie eine Kategorie, füllen Sie das Formular aus und laden Sie Fotos hoch. Alles kostenlos!",
+        "a_en": "Click 'Post an ad', select a category, fill out the form and upload photos. All free!"
+      },
+      {
+        "q_ru": "Можно ли продавать товары?",
+        "q_de": "Kann man Waren verkaufen?",
+        "q_en": "Can I sell goods?",
+        "a_ru": "Да, вы можете продавать как новые, так и б/у товары. Главное — соблюдать правила сообщества.",
+        "a_de": "Ja, Sie können sowohl neue als auch gebrauchte Waren verkaufen. Halten Sie sich nur an die Community-Regeln.",
+        "a_en": "Yes, you can sell both new and used goods. Just follow the community rules."
+      }
+    ]
+  },
+  "booking": {
+    "enabled": false
+  },
+  "logo": {
+    "text": "ГородОК",
+    "tagline": "Доска объявлений",
+    "font": "Playfair Display"
+  }
+}

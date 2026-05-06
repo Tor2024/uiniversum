@@ -1,0 +1,155 @@
+{
+  "meta": {
+    "title": "L'Atelier Gourmet | Modern Cuisine",
+    "description": "Erleben Sie moderne Küche in entspannter Atmosphäre. Frische Zutaten, kreative Rezepte und exzellenter Service.",
+    "favicon": "/media/presets/restaurant/favicon.ico",
+    "language": "de",
+    "availableLanguages": ["de", "en", "ru"]
+  },
+  "design": {
+    "preset": "restaurant_modern",
+    "tokens": {
+      "colorBackground": "#FFF8F0",
+      "colorSurface": "#FFFFFF",
+      "colorPrimary": "#2C1810",
+      "colorSecondary": "#8B7355",
+      "colorBorder": "#E6D5C3",
+      "colorAccent": "#D4A574",
+      "colorAccentHover": "#C08A5A",
+      "fontDisplay": "Playfair Display",
+      "fontHeading": "Playfair Display",
+      "fontBody": "Lato",
+      "fontCaption": "Lato",
+      "fontMono": "Roboto Mono",
+      "fontSizeDisplay": "80px",
+      "fontSizeHeading": "36px",
+      "fontSizeBody": "18px",
+      "lineHeightBody": "1.8",
+      "lineHeightHeading": "1.4",
+      "spacingUnit": "8px",
+      "spacingSection": "140px",
+      "spacingElement": "28px",
+      "spacingCard": "36px",
+      "spacingButtonVertical": "18px",
+      "spacingButtonHorizontal": "36px",
+      "maxWidthContent": "1200px",
+      "maxWidthText": "700px",
+      "gridColumns": "12",
+      "gridGutter": "30px",
+      "horizontalPaddingMobile": "20px",
+      "horizontalPaddingTablet": "50px",
+      "horizontalPaddingDesktop": "90px",
+      "borderRadius": "12",
+      "borderRadiusSmall": "8px",
+      "borderRadiusMedium": "16px",
+      "borderRadiusLarge": "24px",
+      "shadowStyle": "warm",
+      "shadowResting": "0 4px 20px rgba(44,24,16,0.08)",
+      "shadowHover": "0 8px 30px rgba(44,24,16,0.12)",
+      "transitionDuration": "180ms",
+      "transitionTiming": "ease-in-out",
+      "imageRatioHero": "21:9",
+      "imageRatioCard": "3:2",
+      "imageRatioAvatar": "1:1"
+    },
+    "customCss": ""
+  },
+  "seo": {
+    "ogImage": "/media/presets/restaurant/og-default.jpg",
+    "twitterCard": "summary_large_image",
+    "googleAnalyticsId": "",
+    "keywords": "Restaurant, Modern Cuisine, Fine Dining, Reservierung, L'Atelier Gourmet"
+  },
+  "content": {
+    "slogans": {
+      "de": ["Genuss in Perfektion", "Modern. Leidenschaftlich. Lecker.", "Ihr Tisch ist bereit."],
+      "en": ["Taste Perfected", "Modern. Passionate. Delicious.", "Your table is ready."],
+      "ru": ["Совершенство вкуса", "Современно. Страстно. Вкусно.", "Ваш стол уже накрыт."]
+    },
+    "hero": {
+      "de": {
+        "heading": "Kulinarik neu erleben",
+        "subheading": "Frische Zutaten, kreative Rezepte und eine Atmosphäre, die zum Verweilen einlädt.",
+        "cta": "Tisch reservieren",
+        "image": "/media/presets/restaurant/hero.jpg"
+      },
+      "en": {
+        "heading": "Experience Culinary Art",
+        "subheading": "Fresh ingredients, creative recipes, and an atmosphere that invites you to stay.",
+        "cta": "Reserve a Table",
+        "image": "/media/presets/restaurant/hero.jpg"
+      },
+      "ru": {
+        "heading": "Искусство гастрономии",
+        "subheading": "Свежие ингредиенты, креативные рецепты и атмосфера, в которой хочется задержаться.",
+        "cta": "Забронировать столик",
+        "image": "/media/presets/restaurant/hero.jpg"
+      }
+    },
+    "about": {
+      "de": {
+        "title": "Unsere Philosophie",
+        "text": "Wir glauben, dass gutes Essen Menschen verbindet. In L'Atelier Gourmet kombinieren wir traditionelle Techniken mit modernen Einflüssen, um ein unvergessliches Geschmackserlebnis zu schaffen."
+      },
+      "en": {
+        "title": "Our Philosophy",
+        "text": "We believe that good food brings people together. At L'Atelier Gourmet, we combine traditional techniques with modern influences to create an unforgettable taste experience."
+      },
+      "ru": {
+        "title": "Наша философия",
+        "text": "Мы верим, что хорошая еда объединяет людей. В L'Atelier Gourmet мы сочетаем традиционные техники с современными веяниями, создавая незабываемые гастрономические впечатления."
+      }
+    },
+    "menu": [
+      {
+        "category_de": "Vorspeisen",
+        "category_en": "Starters",
+        "category_ru": "Закуски",
+        "items": [
+          {"name_de": "Tartare vom Rind", "name_en": "Beef Tartare", "name_ru": "Тартар из говядины", "price": "24€", "desc_de": "Mit Kapern, Eigelb und Crostini", "desc_en": "With capers, egg yolk and crostini", "desc_ru": "С каперсами, желтком и кростини", "image": "/media/presets/restaurant/menu/tartare.jpg"},
+          {"name_de": "Burrata", "name_en": "Burrata", "name_ru": "Буррата", "price": "18€", "desc_de": "Mit Tomaten und Basilikum", "desc_en": "With tomatoes and basil", "desc_ru": "С томатами и базиликом", "image": "/media/presets/restaurant/menu/burrata.jpg"}
+        ]
+      },
+      {
+        "category_de": "Hauptgänge",
+        "category_en": "Main Courses",
+        "category_ru": "Основные блюда",
+        "items": [
+          {"name_de": "Lachsfilet", "name_en": "Salmon Fillet", "name_ru": "Филе лосося", "price": "32€", "desc_de": "Glasierter Spargel, Kartoffelpüree", "desc_en": "Glazed asparagus, mashed potatoes", "desc_ru": "Глазированная спаржа, пюре", "image": "/media/presets/restaurant/menu/salmon.jpg"}
+        ]
+      }
+    ],
+    "testimonials": [
+      {"name": "Julia M.", "text_de": "Das beste Restaurant in der Stadt. Die Atmosphäre ist einfach traumhaft.", "text_en": "The best restaurant in town. The atmosphere is just dreamy.", "text_ru": "Лучший ресторан в городе. Атмосфера просто сказочная.", "rating": 5, "avatar": "/media/presets/restaurant/avatars/julia.jpg"},
+      {"name": "Thomas S.", "text_de": "Kulinarisch auf höchstem Niveau. Kommen wir definitiv wieder.", "text_en": "Culinary at the highest level. We will definitely come back.", "text_ru": "Гастрономия на высшем уровне. Обязательно вернёмся.", "rating": 5, "avatar": "/media/presets/restaurant/avatars/thomas.jpg"}
+    ],
+    "contact": {
+      "address": "Hauptstraße 1, 10115 Berlin",
+      "phone": "+49 30 1234567",
+      "email": "info@lateliergourmet.de",
+      "hours_de": "Mo-Sa: 18:00 - 23:00 Uhr",
+      "hours_en": "Mon-Sat: 6:00 PM - 11:00 PM",
+      "hours_ru": "Пн-Сб: 18:00 - 23:00"
+    },
+    "faq": [
+      {
+        "q_de": "Kann ich vegetarische Gerichte bestellen?",
+        "q_en": "Can I order vegetarian dishes?",
+        "q_ru": "Можно ли заказать вегетарианские блюда?",
+        "a_de": "Ja, wir bieten eine Auswahl an vegetarischen und veganen Optionen an.",
+        "a_en": "Yes, we offer a selection of vegetarian and vegan options.",
+        "a_ru": "Да, у нас есть выбор вегетарианских и веганских опций."
+      }
+    ]
+  },
+  "booking": {
+    "enabled": true,
+    "slots": ["18:00", "18:30", "19:00", "19:30", "20:00", "20:30", "21:00"],
+    "duration": 120
+  },
+  "logo": {
+    "text": "L'Atelier",
+    "tagline": "Gourmet",
+    "font": "Playfair Display"
+  }
+}

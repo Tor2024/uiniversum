@@ -1,0 +1,160 @@
+{
+  "meta": {
+    "title": "Life Unscripted | Personal Blog",
+    "description": "Thoughts on life, travel, and everything in between. Join the journey.",
+    "favicon": "/media/presets/personal_blog/favicon.ico",
+    "language": "en",
+    "availableLanguages": ["en", "de", "ru"]
+  },
+  "design": {
+    "preset": "personal_blog",
+    "tokens": {
+      "colorBackground": "#FFFEF7",
+      "colorSurface": "#FFFFFF",
+      "colorPrimary": "#333333",
+      "colorSecondary": "#6C757D",
+      "colorBorder": "#DEE2E6",
+      "colorAccent": "#FF6B6B",
+      "colorAccentHover": "#FF6B6B",
+      "fontDisplay": "Libre Baskerville",
+      "fontHeading": "Libre Baskerville",
+      "fontBody": "Merriweather",
+      "fontCaption": "Merriweather",
+      "fontMono": "Roboto Mono",
+      "fontSizeDisplay": "72px",
+      "fontSizeHeading": "36px",
+      "fontSizeBody": "17px",
+      "lineHeightBody": "1.7",
+      "lineHeightHeading": "1.3",
+      "spacingUnit": "8px",
+      "spacingSection": "120px",
+      "spacingElement": "24px",
+      "spacingCard": "32px",
+      "spacingButtonVertical": "16px",
+      "spacingButtonHorizontal": "32px",
+      "maxWidthContent": "1200px",
+      "maxWidthText": "700px",
+      "gridColumns": "12",
+      "gridGutter": "30px",
+      "horizontalPaddingMobile": "20px",
+      "horizontalPaddingTablet": "50px",
+      "horizontalPaddingDesktop": "80px",
+      "borderRadius": "8",
+      "borderRadiusSmall": "4px",
+      "borderRadiusMedium": "8px",
+      "borderRadiusLarge": "16px",
+      "shadowStyle": "soft",
+      "shadowResting": "0 4px 14px rgba(0,0,0,0.05)",
+      "shadowHover": "0 8px 24px rgba(0,0,0,0.1)",
+      "transitionDuration": "200ms",
+      "transitionTiming": "ease-in-out",
+      "imageRatioHero": "21:9",
+      "imageRatioCard": "4:3",
+      "imageRatioAvatar": "1:1"
+    },
+    "customCss": ""
+  },
+  "seo": {
+    "ogImage": "/media/presets/personal_blog/og-default.jpg",
+    "twitterCard": "summary_large_image",
+    "googleAnalyticsId": "",
+    "keywords": "blog, lifestyle, travel"
+  },
+  "content": {
+    "slogans": {
+      "en": ["Stories & Thoughts", "Live Authentic", "Unscripted Life"],
+      "de": ["Geschichten & Gedanken", "Leb authentisch", "Unscripted Leben"],
+      "ru": ["Истории и мысли", "Живи аутентично", "Несценарная жизнь"]
+    },
+    "hero": {
+      "en": {
+        "heading": "Stories & Thoughts",
+        "subheading": "Thoughts on life, travel, and everything in between. Join the journey.",
+        "cta": "Get Started",
+        "image": "/media/presets/personal_blog/hero.jpg"
+      },
+      "de": {
+        "heading": "Geschichten & Gedanken",
+        "subheading": "Gedanken über Leben, Reisen und alles dazwischen. Mach mit auf der Reise.",
+        "cta": "Jetzt starten",
+        "image": "/media/presets/personal_blog/hero.jpg"
+      },
+      "ru": {
+        "heading": "Истории и мысли",
+        "subheading": "Мысли о жизни, путешествиях и всём, что между ними. Присоединяйся к путешествию.",
+        "cta": "Начать",
+        "image": "/media/presets/personal_blog/hero.jpg"
+      }
+    },
+    "about": {
+      "en": {
+        "title": "About Us",
+        "text": "A personal journey through the ups and downs of life, shared with honesty."
+      },
+      "de": {
+        "title": "Über uns",
+        "text": "Eine persönliche Reise durch das Leben, ehrlich geteilt."
+      },
+      "ru": {
+        "title": "О нас",
+        "text": "Личное путешествие по жизни, честно поделенное с вами."
+      }
+    },
+    "services": [
+      {
+        "name_en": "Weekly Posts",
+        "name_de": "Wöchentliche Posts",
+        "name_ru": "Еженедельные посты",
+        "price": "Free",
+        "desc_en": "Deep dives into topics.",
+        "image": "/media/presets/personal_blog/services/posts.jpg"
+      },
+      {
+        "name_en": "Newsletter",
+        "name_de": "Newsletter",
+        "name_ru": "Рассылка",
+        "price": "$5/mo",
+        "desc_en": "Exclusive content.",
+        "image": "/media/presets/personal_blog/services/newsletter.jpg"
+      }
+    ],
+    "testimonials": [
+      {
+        "name": "Reader R.",
+        "text_en": "Your blog is my weekly dose of inspiration. Thank you!",
+        "text_de": "Dein Blog ist meine wöchentliche Dosis Inspiration. Danke!",
+        "text_ru": "Твой блог — моя еженедельная доза вдохновения. Спасибо!",
+        "rating": 5,
+        "avatar": "/media/presets/personal_blog/avatars/reader.jpg"
+      }
+    ],
+    "contact": {
+      "address": "123 Main St, City",
+      "phone": "+1 234 567 890",
+      "email": "info@personal_blog.com",
+      "hours_en": "Mon-Fri: 9:00 AM - 6:00 PM",
+      "hours_de": "Mo-Fr: 09:00 - 18:00 Uhr",
+      "hours_ru": "Пн-Пт: 09:00 - 18:00"
+    },
+    "faq": [
+      {
+        "q_en": "How to start?",
+        "q_de": "Wie anfangen?",
+        "q_ru": "Как начать?",
+        "a_en": "Contact us today!",
+        "a_de": "Kontaktieren Sie uns!",
+        "a_ru": "Свяжитесь с нами!"
+      }
+    ]
+  },
+  "booking": {
+    "enabled": true,
+    "slots": ["09:00", "10:00", "14:00", "16:00"],
+    "duration": 60
+  },
+  "logo": {
+    "text": "LIFE",
+    "tagline": "UNSCRIPTED",
+    "font": "Libre Baskerville"
+  }
+}

@@ -1,0 +1,160 @@
+{
+  "meta": {
+    "title": "Pro Mechanic | Auto Service",
+    "description": "Expert car repair and maintenance. Honest service you can trust.",
+    "favicon": "/media/presets/auto_service/favicon.ico",
+    "language": "en",
+    "availableLanguages": ["en", "de", "ru"]
+  },
+  "design": {
+    "preset": "auto_service",
+    "tokens": {
+      "colorBackground": "#2F4F4F",
+      "colorSurface": "#FFFFFF",
+      "colorPrimary": "#FF4500",
+      "colorSecondary": "#6C757D",
+      "colorBorder": "#DEE2E6",
+      "colorAccent": "#FFD700",
+      "colorAccentHover": "#FFD700",
+      "fontDisplay": "Staatliches",
+      "fontHeading": "Staatliches",
+      "fontBody": "Oswald",
+      "fontCaption": "Oswald",
+      "fontMono": "Roboto Mono",
+      "fontSizeDisplay": "72px",
+      "fontSizeHeading": "36px",
+      "fontSizeBody": "17px",
+      "lineHeightBody": "1.7",
+      "lineHeightHeading": "1.3",
+      "spacingUnit": "8px",
+      "spacingSection": "120px",
+      "spacingElement": "24px",
+      "spacingCard": "32px",
+      "spacingButtonVertical": "16px",
+      "spacingButtonHorizontal": "32px",
+      "maxWidthContent": "1200px",
+      "maxWidthText": "700px",
+      "gridColumns": "12",
+      "gridGutter": "30px",
+      "horizontalPaddingMobile": "20px",
+      "horizontalPaddingTablet": "50px",
+      "horizontalPaddingDesktop": "80px",
+      "borderRadius": "8",
+      "borderRadiusSmall": "4px",
+      "borderRadiusMedium": "8px",
+      "borderRadiusLarge": "16px",
+      "shadowStyle": "soft",
+      "shadowResting": "0 4px 14px rgba(0,0,0,0.05)",
+      "shadowHover": "0 8px 24px rgba(0,0,0,0.1)",
+      "transitionDuration": "200ms",
+      "transitionTiming": "ease-in-out",
+      "imageRatioHero": "21:9",
+      "imageRatioCard": "4:3",
+      "imageRatioAvatar": "1:1"
+    },
+    "customCss": ""
+  },
+  "seo": {
+    "ogImage": "/media/presets/auto_service/og-default.jpg",
+    "twitterCard": "summary_large_image",
+    "googleAnalyticsId": "",
+    "keywords": "auto, mechanic, repair"
+  },
+  "content": {
+    "slogans": {
+      "en": ["Drive with Confidence", "Engine Experts", "Honest Repair"],
+      "de": ["Fahren mit Vertrauen", "Motoren-Experten", "Ehrliche Reparatur"],
+      "ru": ["Води с уверенностью", "Эксперты по двигателям", "Честный ремонт"]
+    },
+    "hero": {
+      "en": {
+        "heading": "Drive with Confidence",
+        "subheading": "Expert car repair and maintenance. Honest service you can trust.",
+        "cta": "Get Started",
+        "image": "/media/presets/auto_service/hero.jpg"
+      },
+      "de": {
+        "heading": "Fahren mit Vertrauen",
+        "subheading": "Expert car repair and maintenance. Honest service you can trust.",
+        "cta": "Jetzt starten",
+        "image": "/media/presets/auto_service/hero.jpg"
+      },
+      "ru": {
+        "heading": "Води с уверенностью",
+        "subheading": "Expert car repair and maintenance. Honest service you can trust.",
+        "cta": "Начать",
+        "image": "/media/presets/auto_service/hero.jpg"
+      }
+    },
+    "about": {
+      "en": {
+        "title": "About Us",
+        "text": "We treat your car like it's our own. Transparent pricing and expert diagnostics."
+      },
+      "de": {
+        "title": "Über uns",
+        "text": "Wir behandeln Ihr Auto, wie unseres. Transparente Preise."
+      },
+      "ru": {
+        "title": "О нас",
+        "text": "Мы относимся к вашей машине как к своей. Прозрачные цены."
+      }
+    },
+    "services": [
+      {
+        "name_en": "Oil Change",
+        "name_de": "Ölwechsel",
+        "name_ru": "Замена масла",
+        "price": "$50",
+        "desc_en": "Synthetic and conventional.",
+        "image": "/media/presets/auto_service/services/oil.jpg"
+      },
+      {
+        "name_en": "Brake Service",
+        "name_de": "Bremsenservice",
+        "name_ru": "Обслуживание тормозов",
+        "price": "$300",
+        "desc_en": "Safety first.",
+        "image": "/media/presets/auto_service/services/brakes.jpg"
+      }
+    ],
+    "testimonials": [
+      {
+        "name": "Driver P.",
+        "text_en": "Finally an honest mechanic. Fast and reliable work.",
+        "text_de": "Endlich ein ehrlicher Mechaniker. Schnell und zuverlässig.",
+        "text_ru": "Наконец-то честный механик. Быстро и надёжно.",
+        "rating": 5,
+        "avatar": "/media/presets/auto_service/avatars/driver.jpg"
+      }
+    ],
+    "contact": {
+      "address": "123 Main St, City",
+      "phone": "+1 234 567 890",
+      "email": "info@auto_service.com",
+      "hours_en": "Mon-Fri: 9:00 AM - 6:00 PM",
+      "hours_de": "Mo-Fr: 09:00 - 18:00 Uhr",
+      "hours_ru": "Пн-Пт: 09:00 - 18:00"
+    },
+    "faq": [
+      {
+        "q_en": "How to start?",
+        "q_de": "Wie anfangen?",
+        "q_ru": "Как начать?",
+        "a_en": "Contact us today!",
+        "a_de": "Kontaktieren Sie uns!",
+        "a_ru": "Свяжитесь с нами!"
+      }
+    ]
+  },
+  "booking": {
+    "enabled": true,
+    "slots": ["09:00", "10:00", "14:00", "16:00"],
+    "duration": 60
+  },
+  "logo": {
+    "text": "PRO",
+    "tagline": "MECHANIC",
+    "font": "Staatliches"
+  }
+}

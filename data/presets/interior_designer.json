@@ -1,0 +1,160 @@
+{
+  "meta": {
+    "title": "Space Architects | Interior Design",
+    "description": "Transforming houses into dream homes with innovative design solutions.",
+    "favicon": "/media/presets/interior_designer/favicon.ico",
+    "language": "en",
+    "availableLanguages": ["en", "de", "ru"]
+  },
+  "design": {
+    "preset": "interior_designer",
+    "tokens": {
+      "colorBackground": "#F8F8FF",
+      "colorSurface": "#FFFFFF",
+      "colorPrimary": "#36454F",
+      "colorSecondary": "#6C757D",
+      "colorBorder": "#DEE2E6",
+      "colorAccent": "#C0C0C0",
+      "colorAccentHover": "#C0C0C0",
+      "fontDisplay": "Space Mono",
+      "fontHeading": "Space Mono",
+      "fontBody": "Work Sans",
+      "fontCaption": "Work Sans",
+      "fontMono": "Roboto Mono",
+      "fontSizeDisplay": "72px",
+      "fontSizeHeading": "36px",
+      "fontSizeBody": "17px",
+      "lineHeightBody": "1.7",
+      "lineHeightHeading": "1.3",
+      "spacingUnit": "8px",
+      "spacingSection": "120px",
+      "spacingElement": "24px",
+      "spacingCard": "32px",
+      "spacingButtonVertical": "16px",
+      "spacingButtonHorizontal": "32px",
+      "maxWidthContent": "1200px",
+      "maxWidthText": "700px",
+      "gridColumns": "12",
+      "gridGutter": "30px",
+      "horizontalPaddingMobile": "20px",
+      "horizontalPaddingTablet": "50px",
+      "horizontalPaddingDesktop": "80px",
+      "borderRadius": "8",
+      "borderRadiusSmall": "4px",
+      "borderRadiusMedium": "8px",
+      "borderRadiusLarge": "16px",
+      "shadowStyle": "soft",
+      "shadowResting": "0 4px 14px rgba(0,0,0,0.05)",
+      "shadowHover": "0 8px 24px rgba(0,0,0,0.1)",
+      "transitionDuration": "200ms",
+      "transitionTiming": "ease-in-out",
+      "imageRatioHero": "21:9",
+      "imageRatioCard": "4:3",
+      "imageRatioAvatar": "1:1"
+    },
+    "customCss": ""
+  },
+  "seo": {
+    "ogImage": "/media/presets/interior_designer/og-default.jpg",
+    "twitterCard": "summary_large_image",
+    "googleAnalyticsId": "",
+    "keywords": "design, interior, architecture"
+  },
+  "content": {
+    "slogans": {
+      "en": ["Design Your Life", "Spaces That Inspire", "Modern Living"],
+      "de": ["Gestalte dein Leben", "Räume, die inspirieren", "Modernes Wohnen"],
+      "ru": ["Спроектируй свою жизнь", "Пространства, вдохновляющие", "Современная жизнь"]
+    },
+    "hero": {
+      "en": {
+        "heading": "Design Your Life",
+        "subheading": "Transforming houses into dream homes with innovative design solutions.",
+        "cta": "Get Started",
+        "image": "/media/presets/interior_designer/hero.jpg"
+      },
+      "de": {
+        "heading": "Gestalte dein Leben",
+        "subheading": "Häuser in Traumhäuser verwandeln mit innovativen Designlösungen.",
+        "cta": "Jetzt starten",
+        "image": "/media/presets/interior_designer/hero.jpg"
+      },
+      "ru": {
+        "heading": "Спроектируй свою жизнь",
+        "subheading": "Превращаем дома в жилые пространства мечты с инновационными дизайнерскими решениями.",
+        "cta": "Начать",
+        "image": "/media/presets/interior_designer/hero.jpg"
+      }
+    },
+    "about": {
+      "en": {
+        "title": "About Us",
+        "text": "We believe in creating spaces that reflect your personality and lifestyle."
+      },
+      "de": {
+        "title": "Über uns",
+        "text": "Wir glauben an Räume, die Ihre Persönlichkeit widerspiegeln."
+      },
+      "ru": {
+        "title": "О нас",
+        "text": "Мы верим в создание пространств, которые отражают вашу личность и образ жизни."
+      }
+    },
+    "services": [
+      {
+        "name_en": "Residential Design",
+        "name_de": "Wohndesign",
+        "name_ru": "Дизайн жилья",
+        "price": "$5000+",
+        "desc_en": "Full home interior makeover.",
+        "image": "/media/presets/interior_designer/services/residential.jpg"
+      },
+      {
+        "name_en": "Commercial Spaces",
+        "name_de": "Gewerbliche Räume",
+        "name_ru": "Коммерческие помещения",
+        "price": "$10000+",
+        "desc_en": "Office and retail design.",
+        "image": "/media/presets/interior_designer/services/commercial.jpg"
+      }
+    ],
+    "testimonials": [
+      {
+        "name": "Anna B.",
+        "text_en": "They transformed my small apartment into a palace!",
+        "text_de": "Sie haben meine kleine Wohnung in einen Palast verwandelt!",
+        "text_ru": "Они превратили мою маленькую квартиру в дворец!",
+        "rating": 5,
+        "avatar": "/media/presets/interior_designer/avatars/anna.jpg"
+      }
+    ],
+    "contact": {
+      "address": "123 Main St, City",
+      "phone": "+1 234 567 890",
+      "email": "info@interior_designer.com",
+      "hours_en": "Mon-Fri: 9:00 AM - 6:00 PM",
+      "hours_de": "Mo-Fr: 09:00 - 18:00 Uhr",
+      "hours_ru": "Пн-Пт: 09:00 - 18:00"
+    },
+    "faq": [
+      {
+        "q_en": "How to start?",
+        "q_de": "Wie anfangen?",
+        "q_ru": "Как начать?",
+        "a_en": "Contact us today!",
+        "a_de": "Kontaktieren Sie uns!",
+        "a_ru": "Свяжитесь с нами!"
+      }
+    ]
+  },
+  "booking": {
+    "enabled": true,
+    "slots": ["09:00", "10:00", "14:00", "16:00"],
+    "duration": 60
+  },
+  "logo": {
+    "text": "SPACE",
+    "tagline": "ARCHITECTS",
+    "font": "Space Mono"
+  }
+}

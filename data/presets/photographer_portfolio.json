@@ -1,0 +1,160 @@
+{
+  "meta": {
+    "title": "Artistic Lens | Photography",
+    "description": "Capturing timeless moments with a creative touch. Portraits, Landscapes, and Events.",
+    "favicon": "/media/presets/photographer/favicon.ico",
+    "language": "en",
+    "availableLanguages": ["en", "de", "ru"]
+  },
+  "design": {
+    "preset": "photographer_portfolio",
+    "tokens": {
+      "colorBackground": "#1A1A1A",
+      "colorSurface": "#2D2D2D",
+      "colorPrimary": "#C0C0C0",
+      "colorSecondary": "#8A8A8A",
+      "colorBorder": "#3D3D3D",
+      "colorAccent": "#B8860B",
+      "colorAccentHover": "#A2750A",
+      "fontDisplay": "Playfair Display",
+      "fontHeading": "Playfair Display",
+      "fontBody": "Lato",
+      "fontCaption": "Lato",
+      "fontMono": "Roboto Mono",
+      "fontSizeDisplay": "76px",
+      "fontSizeHeading": "36px",
+      "fontSizeBody": "17px",
+      "lineHeightBody": "1.8",
+      "lineHeightHeading": "1.3",
+      "spacingUnit": "8px",
+      "spacingSection": "140px",
+      "spacingElement": "28px",
+      "spacingCard": "32px",
+      "spacingButtonVertical": "16px",
+      "spacingButtonHorizontal": "32px",
+      "maxWidthContent": "1200px",
+      "maxWidthText": "700px",
+      "gridColumns": "12",
+      "gridGutter": "30px",
+      "horizontalPaddingMobile": "20px",
+      "horizontalPaddingTablet": "50px",
+      "horizontalPaddingDesktop": "90px",
+      "borderRadius": "4",
+      "borderRadiusSmall": "2px",
+      "borderRadiusMedium": "6px",
+      "borderRadiusLarge": "10px",
+      "shadowStyle": "sharp",
+      "shadowResting": "0 4px 20px rgba(0,0,0,0.3)",
+      "shadowHover": "0 8px 30px rgba(184,134,11,0.2)",
+      "transitionDuration": "200ms",
+      "transitionTiming": "ease-in-out",
+      "imageRatioHero": "21:9",
+      "imageRatioCard": "3:2",
+      "imageRatioAvatar": "1:1"
+    },
+    "customCss": ""
+  },
+  "seo": {
+    "ogImage": "/media/presets/photographer/og-default.jpg",
+    "twitterCard": "summary_large_image",
+    "googleAnalyticsId": "",
+    "keywords": "photographer, portfolio, art"
+  },
+  "content": {
+    "slogans": {
+      "en": ["Capture the Moment", "Through the Lens", "Timeless Art"],
+      "de": ["Den Moment festhalten", "Durch das Objektiv", "Zeitlose Kunst"],
+      "ru": ["Поймай момент", "Взгляд через объектив", "Вечное искусство"]
+    },
+    "hero": {
+      "en": {
+        "heading": "Capture the Moment",
+        "subheading": "Capturing timeless moments with a creative touch. Portraits, Landscapes, and Events.",
+        "cta": "View Portfolio",
+        "image": "/media/presets/photographer/hero.jpg"
+      },
+      "de": {
+        "heading": "Den Moment festhalten",
+        "subheading": "Zeitlose Momente mit kreativer Note einfangen. Porträts, Landschaften und Events.",
+        "cta": "Portfolio ansehen",
+        "image": "/media/presets/photographer/hero.jpg"
+      },
+      "ru": {
+        "heading": "Поймай момент",
+        "subheading": "Запечатлеваем мгновения с творческим подходом. Портреты, пейзажи и события.",
+        "cta": "Смотреть портфолио",
+        "image": "/media/presets/photographer/hero.jpg"
+      }
+    },
+    "about": {
+      "en": {
+        "title": "Our Vision",
+        "text": "We turn fleeting moments into lasting memories through the art of photography."
+      },
+      "de": {
+        "title": "Unsere Vision",
+        "text": "Wir verwandeln flüchtige Momente in bleibende Erinnerungen."
+      },
+      "ru": {
+        "title": "Наше видение",
+        "text": "Мы превращаем мимолётные мгновения в долгие воспоминания через искусство фотографии."
+      }
+    },
+    "services": [
+      {
+        "name_en": "Portrait Session",
+        "name_de": "Porträt-Session",
+        "name_ru": "Сессия портрета",
+        "price": "$300",
+        "desc_en": "Professional indoor/outdoor portraits.",
+        "image": "/media/presets/photographer/services/portrait.jpg"
+      },
+      {
+        "name_en": "Wedding Day",
+        "name_de": "Hochzeitstag",
+        "name_ru": "Свадебный день",
+        "price": "$2000",
+        "desc_en": "Full day coverage of your special day.",
+        "image": "/media/presets/photographer/services/wedding.jpg"
+      }
+    ],
+    "testimonials": [
+      {
+        "name": "Emma W.",
+        "text_en": "Absolutely stunning photos! She captured our day perfectly.",
+        "text_de": "Absolut atemberaubende Fotos! Sie hat unseren Tag perfekt eingefangen.",
+        "text_ru": "Абсолютно потрясающие фото! Она идеально запечатлела наш день.",
+        "rating": 5,
+        "avatar": "/media/presets/photographer/avatars/emma.jpg"
+      }
+    ],
+    "contact": {
+      "address": "101 Art Studio Ln, New York, NY",
+      "phone": "+1 212 555 0180",
+      "email": "info@artisticlens.com",
+      "hours_en": "Mon-Fri: 10:00 AM - 6:00 PM",
+      "hours_de": "Mo-Fr: 10:00 - 18:00 Uhr",
+      "hours_ru": "Пн-Пт: 10:00 - 18:00"
+    },
+    "faq": [
+      {
+        "q_en": "How long is a session?",
+        "q_de": "Wie lange dauert eine Sitzung?",
+        "q_ru": "Как долго длится сессия?",
+        "a_en": "Typically 2 hours depending on the package.",
+        "a_de": "In der Regel 2 Stunden, je nach Paket.",
+        "a_ru": "Обычно 2 часа, в зависимости от пакета."
+      }
+    ]
+  },
+  "booking": {
+    "enabled": false,
+    "slots": [],
+    "duration": 0
+  },
+  "logo": {
+    "text": "ARTISTIC",
+    "tagline": "LENS",
+    "font": "Playfair Display"
+  }
+}

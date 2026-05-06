@@ -1,0 +1,160 @@
+{
+  "meta": {
+    "title": "Strategic Minds | Consulting",
+    "description": "Strategic business consulting to drive growth, efficiency, and innovation.",
+    "favicon": "/media/presets/business_consulting/favicon.ico",
+    "language": "en",
+    "availableLanguages": ["en", "de", "ru"]
+  },
+  "design": {
+    "preset": "business_consulting",
+    "tokens": {
+      "colorBackground": "#FFFFFF",
+      "colorSurface": "#FFFFFF",
+      "colorPrimary": "#003366",
+      "colorSecondary": "#6C757D",
+      "colorBorder": "#DEE2E6",
+      "colorAccent": "#4682B4",
+      "colorAccentHover": "#4682B4",
+      "fontDisplay": "Merriweather",
+      "fontHeading": "Merriweather",
+      "fontBody": "Source Sans Pro",
+      "fontCaption": "Source Sans Pro",
+      "fontMono": "Roboto Mono",
+      "fontSizeDisplay": "72px",
+      "fontSizeHeading": "36px",
+      "fontSizeBody": "17px",
+      "lineHeightBody": "1.7",
+      "lineHeightHeading": "1.3",
+      "spacingUnit": "8px",
+      "spacingSection": "120px",
+      "spacingElement": "24px",
+      "spacingCard": "32px",
+      "spacingButtonVertical": "16px",
+      "spacingButtonHorizontal": "32px",
+      "maxWidthContent": "1200px",
+      "maxWidthText": "700px",
+      "gridColumns": "12",
+      "gridGutter": "30px",
+      "horizontalPaddingMobile": "20px",
+      "horizontalPaddingTablet": "50px",
+      "horizontalPaddingDesktop": "80px",
+      "borderRadius": "8",
+      "borderRadiusSmall": "4px",
+      "borderRadiusMedium": "8px",
+      "borderRadiusLarge": "16px",
+      "shadowStyle": "soft",
+      "shadowResting": "0 4px 14px rgba(0,0,0,0.05)",
+      "shadowHover": "0 8px 24px rgba(0,0,0,0.1)",
+      "transitionDuration": "200ms",
+      "transitionTiming": "ease-in-out",
+      "imageRatioHero": "21:9",
+      "imageRatioCard": "4:3",
+      "imageRatioAvatar": "1:1"
+    },
+    "customCss": ""
+  },
+  "seo": {
+    "ogImage": "/media/presets/business_consulting/og-default.jpg",
+    "twitterCard": "summary_large_image",
+    "googleAnalyticsId": "",
+    "keywords": "consulting, business, strategy"
+  },
+  "content": {
+    "slogans": {
+      "en": ["Growth Partners", "Think Strategic", "Business Evolved"],
+      "de": ["Wachstumspartner", "Denke strategisch", "Business entwickelt"],
+      "ru": ["Партнеры по росту", "Мысли стратегически", "Бизнес эволюционирует"]
+    },
+    "hero": {
+      "en": {
+        "heading": "Growth Partners",
+        "subheading": "Strategic business consulting to drive growth, efficiency, and innovation.",
+        "cta": "Get Started",
+        "image": "/media/presets/business_consulting/hero.jpg"
+      },
+      "de": {
+        "heading": "Wachstumspartner",
+        "subheading": "Strategische Unternehmensberatung für Wachstum, Effizienz und Innovation.",
+        "cta": "Jetzt starten",
+        "image": "/media/presets/business_consulting/hero.jpg"
+      },
+      "ru": {
+        "heading": "Партнеры по росту",
+        "subheading": "Стратегический бизнес-консалтинг для роста, эффективности и инноваций.",
+        "cta": "Начать",
+        "image": "/media/presets/business_consulting/hero.jpg"
+      }
+    },
+    "about": {
+      "en": {
+        "title": "About Us",
+        "text": "We partner with businesses to unlock their full potential through strategic planning."
+      },
+      "de": {
+        "title": "Über uns",
+        "text": "Wir helfen Unternehmen, ihr volles Potenzial auszuschöpfen."
+      },
+      "ru": {
+        "title": "О нас",
+        "text": "Мы помогаем бизнесу раскрыть свой полный потенциал через стратегическое планирование."
+      }
+    },
+    "services": [
+      {
+        "name_en": "Market Analysis",
+        "name_de": "Marktanalyse",
+        "name_ru": "Анализ рынка",
+        "price": "$2000",
+        "desc_en": "Deep dive into market trends.",
+        "image": "/media/presets/business_consulting/services/market.jpg"
+      },
+      {
+        "name_en": "Financial Planning",
+        "name_de": "Finanzplanung",
+        "name_ru": "Финансовое планирование",
+        "price": "$3000",
+        "desc_en": "Secure your company's future.",
+        "image": "/media/presets/business_consulting/services/finance.jpg"
+      }
+    ],
+    "testimonials": [
+      {
+        "name": "CEO Corp",
+        "text_en": "Their insights saved our Q3. Highly recommended.",
+        "text_de": "Ihre Einblicke haben unser Q3 gerettet. Sehr empfehlenswert.",
+        "text_ru": "Их идеи спасли наш Q3. Настоятельно рекомендую.",
+        "rating": 5,
+        "avatar": "/media/presets/business_consulting/avatars/ceo.jpg"
+      }
+    ],
+    "contact": {
+      "address": "123 Main St, City",
+      "phone": "+1 234 567 890",
+      "email": "info@business_consulting.com",
+      "hours_en": "Mon-Fri: 9:00 AM - 6:00 PM",
+      "hours_de": "Mo-Fr: 09:00 - 18:00 Uhr",
+      "hours_ru": "Пн-Пт: 09:00 - 18:00"
+    },
+    "faq": [
+      {
+        "q_en": "How to start?",
+        "q_de": "Wie anfangen?",
+        "q_ru": "Как начать?",
+        "a_en": "Contact us today!",
+        "a_de": "Kontaktieren Sie uns!",
+        "a_ru": "Свяжитесь с нами!"
+      }
+    ]
+  },
+  "booking": {
+    "enabled": true,
+    "slots": ["09:00", "10:00", "14:00", "16:00"],
+    "duration": 60
+  },
+  "logo": {
+    "text": "STRATEGIC",
+    "tagline": "MINDS",
+    "font": "Merriweather"
+  }
+}

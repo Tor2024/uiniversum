@@ -1,0 +1,26 @@
+/* Стили для страницы home */
+
+.title {
+  color: var(--color-text);
+}
+
+.textMuted {
+  color: var(--color-text-muted);
+}
+
+.button {
+  background-color: var(--color-accent);
+  color: white;
+  border-radius: var(--radius);
+}
+
+.section {
+  /* Стили для секции по умолчанию */
+}
+
+.heroBlock {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: var(--color-surface);
+  text-align: center;
+}

@@ -1,0 +1,174 @@
+{
+  "meta": {
+    "title": "The Gentleman's Cut | Classic Barbershop",
+    "description": "Traditional barbershop with modern style. Expert haircuts, beard trims, and hot towel shaves.",
+    "favicon": "/media/presets/barbershop/favicon.ico",
+    "language": "en",
+    "availableLanguages": ["en", "de", "ru"]
+  },
+  "design": {
+    "preset": "barbershop_classic",
+    "tokens": {
+      "colorBackground": "#1A1A1A",
+      "colorSurface": "#2C2C2C",
+      "colorPrimary": "#C9A96E",
+      "colorSecondary": "#8A8A8A",
+      "colorBorder": "#3A3A3A",
+      "colorAccent": "#C9A96E",
+      "colorAccentHover": "#B8945A",
+      "fontDisplay": "Oswald",
+      "fontHeading": "Oswald",
+      "fontBody": "Open Sans",
+      "fontCaption": "Open Sans",
+      "fontMono": "Roboto Mono",
+      "fontSizeDisplay": "72px",
+      "fontSizeHeading": "32px",
+      "fontSizeBody": "16px",
+      "lineHeightBody": "1.6",
+      "lineHeightHeading": "1.2",
+      "spacingUnit": "8px",
+      "spacingSection": "120px",
+      "spacingElement": "24px",
+      "spacingCard": "32px",
+      "spacingButtonVertical": "14px",
+      "spacingButtonHorizontal": "32px",
+      "maxWidthContent": "1100px",
+      "maxWidthText": "650px",
+      "gridColumns": "12",
+      "gridGutter": "24px",
+      "horizontalPaddingMobile": "20px",
+      "horizontalPaddingTablet": "40px",
+      "horizontalPaddingDesktop": "80px",
+      "borderRadius": "4",
+      "borderRadiusSmall": "2px",
+      "borderRadiusMedium": "6px",
+      "borderRadiusLarge": "10px",
+      "shadowStyle": "dark",
+      "shadowResting": "0 4px 15px rgba(0,0,0,0.3)",
+      "shadowHover": "0 6px 20px rgba(201,169,110,0.2)",
+      "transitionDuration": "200ms",
+      "transitionTiming": "ease-in-out",
+      "imageRatioHero": "16:9",
+      "imageRatioCard": "4:3",
+      "imageRatioAvatar": "1:1"
+    },
+    "customCss": ""
+  },
+  "seo": {
+    "ogImage": "/media/presets/barbershop/og-default.jpg",
+    "twitterCard": "summary_large_image",
+    "googleAnalyticsId": "",
+    "keywords": "Barbershop, Haircut, Beard Trim, Shave, Gentleman, Classic"
+  },
+  "content": {
+    "slogans": {
+      "en": ["Classic Cuts, Modern Style", "Look Sharp, Feel Confident", "For the Modern Gentleman"],
+      "de": ["Klassische Schnitte, moderner Stil", "Gut aussehen, sich wohlfühlen", "Für den modernen Gentleman"],
+      "ru": ["Классические стрижки, современный стиль", "Выгляди остро, чувствуй уверенность", "Для современного джентльмена"]
+    },
+    "hero": {
+      "en": {
+        "heading": "Precision Cuts & Classic Grooming",
+        "subheading": "Experience the finest barbering services in a relaxed, masculine atmosphere.",
+        "cta": "Book an Appointment",
+        "image": "/media/presets/barbershop/hero.jpg"
+      },
+      "de": {
+        "heading": "Präzisionsschnitte & Klassische Pflege",
+        "subheading": "Erleben Sie erstklassige Barberservices in entspannter, maskuliner Atmosphäre.",
+        "cta": "Termin buchen",
+        "image": "/media/presets/barbershop/hero.jpg"
+      },
+      "ru": {
+        "heading": "Точные стрижки и классический уход",
+        "subheading": "Оцените лучшие услуги барбершопа в расслабляющей мужской атмосфере.",
+        "cta": "Записаться",
+        "image": "/media/presets/barbershop/hero.jpg"
+      }
+    },
+    "about": {
+      "en": {
+        "title": "Our Craft",
+        "text": "We combine traditional barbering techniques with modern trends to give you the perfect look. Our master barbers are dedicated to their craft."
+      },
+      "de": {
+        "title": "Unser Handwerk",
+        "text": "Wir kombinieren traditionelle Barbiertechniken mit modernen Trends, um Ihnen den perfekten Look zu verleihen."
+      },
+      "ru": {
+        "title": "Наше мастерство",
+        "text": "Мы сочетаем традиционные техники барберинга с современными трендами, чтобы создать ваш идеальный образ."
+      }
+    },
+    "services": [
+      {
+        "name_en": "Classic Haircut",
+        "name_de": "Klassischer Haarschnitt",
+        "name_ru": "Классическая стрижка",
+        "price": "$35",
+        "desc_en": "Precision cut with scissor and clipper finish.",
+        "desc_de": "Präzisionsschnitt mit Schere und Maschine.",
+        "desc_ru": "Точная стрижка ножницами и машинкой.",
+        "image": "/media/presets/barbershop/services/haircut.jpg"
+      },
+      {
+        "name_en": "Beard Trim & Shape",
+        "name_de": "Bartpflege & Formen",
+        "name_ru": "Стрижка и моделирование бороды",
+        "price": "$25",
+        "desc_en": "Expert shaping and trimming for the perfect beard.",
+        "desc_de": "Expert-Bartpflege und Formgebung für den perfekten Bart.",
+        "desc_ru": "Профессиональная форма и подстригание бороды.",
+        "image": "/media/presets/barbershop/services/beard.jpg"
+      },
+      {
+        "name_en": "Hot Towel Shave",
+        "name_de": "Heißtuch-Rasur",
+        "name_ru": "Бритьё с горячим полотенцем",
+        "price": "$40",
+        "desc_en": "Traditional straight razor shave with hot towels.",
+        "desc_de": "Traditionelle Rasur mit heißem Handtuch.",
+        "desc_ru": "Традиционное бритьё опасной бритвой с горячими полотенцами.",
+        "image": "/media/presets/barbershop/services/shave.jpg"
+      }
+    ],
+    "testimonials": [
+      {
+        "name": "Michael R.",
+        "text_en": "Best haircut I've ever had. The attention to detail is incredible.",
+        "text_de": "Den besten Haarschnitt, den ich je hatte. Die Liebe zum Detail ist unglaublich.",
+        "text_ru": "Лучшая стрижка в моей жизни. Внимание к деталям невероятное.",
+        "rating": 5,
+        "avatar": "/media/presets/barbershop/avatars/michael.jpg"
+      }
+    ],
+    "contact": {
+      "address": "123 Main St, New York, NY",
+      "phone": "+1 212 555 0199",
+      "email": "info@gentlemanscut.com",
+      "hours_en": "Tue-Sat: 9:00 AM - 7:00 PM",
+      "hours_de": "Di-Sa: 09:00 - 19:00 Uhr",
+      "hours_ru": "Вт-Сб: 09:00 - 19:00"
+    },
+    "faq": [
+      {
+        "q_en": "Do I need an appointment?",
+        "q_de": "Benötige ich einen Termin?",
+        "q_ru": "Нужно ли записываться?",
+        "a_en": "Walk-ins are welcome, but appointments are recommended to ensure availability.",
+        "a_de": "Spontanbesuche sind willkommen, Termine werden jedoch empfohlen.",
+        "a_ru": "Добро пожаловать без записи, но рекомендуем записаться заранее."
+      }
+    ]
+  },
+  "booking": {
+    "enabled": true,
+    "slots": ["09:00", "10:00", "11:00", "13:00", "14:00", "15:00", "16:00"],
+    "duration": 60
+  },
+  "logo": {
+    "text": "The Gentleman's",
+    "tagline": "CUT",
+    "font": "Oswald"
+  }
+}

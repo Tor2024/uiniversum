@@ -1,0 +1,160 @@
+{
+  "meta": {
+    "title": "BuildRight | Construction",
+    "description": "Quality construction services from residential to commercial projects.",
+    "favicon": "/media/presets/construction_company/favicon.ico",
+    "language": "en",
+    "availableLanguages": ["en", "de", "ru"]
+  },
+  "design": {
+    "preset": "construction_company",
+    "tokens": {
+      "colorBackground": "#FFFAF0",
+      "colorSurface": "#FFFFFF",
+      "colorPrimary": "#FF8C00",
+      "colorSecondary": "#6C757D",
+      "colorBorder": "#DEE2E6",
+      "colorAccent": "#FFD700",
+      "colorAccentHover": "#FFD700",
+      "fontDisplay": "Bebas Neue",
+      "fontHeading": "Bebas Neue",
+      "fontBody": "Oswald",
+      "fontCaption": "Oswald",
+      "fontMono": "Roboto Mono",
+      "fontSizeDisplay": "72px",
+      "fontSizeHeading": "36px",
+      "fontSizeBody": "17px",
+      "lineHeightBody": "1.7",
+      "lineHeightHeading": "1.3",
+      "spacingUnit": "8px",
+      "spacingSection": "120px",
+      "spacingElement": "24px",
+      "spacingCard": "32px",
+      "spacingButtonVertical": "16px",
+      "spacingButtonHorizontal": "32px",
+      "maxWidthContent": "1200px",
+      "maxWidthText": "700px",
+      "gridColumns": "12",
+      "gridGutter": "30px",
+      "horizontalPaddingMobile": "20px",
+      "horizontalPaddingTablet": "50px",
+      "horizontalPaddingDesktop": "80px",
+      "borderRadius": "8",
+      "borderRadiusSmall": "4px",
+      "borderRadiusMedium": "8px",
+      "borderRadiusLarge": "16px",
+      "shadowStyle": "soft",
+      "shadowResting": "0 4px 14px rgba(0,0,0,0.05)",
+      "shadowHover": "0 8px 24px rgba(0,0,0,0.1)",
+      "transitionDuration": "200ms",
+      "transitionTiming": "ease-in-out",
+      "imageRatioHero": "21:9",
+      "imageRatioCard": "4:3",
+      "imageRatioAvatar": "1:1"
+    },
+    "customCss": ""
+  },
+  "seo": {
+    "ogImage": "/media/presets/construction_company/og-default.jpg",
+    "twitterCard": "summary_large_image",
+    "googleAnalyticsId": "",
+    "keywords": "construction, building, renovation"
+  },
+  "content": {
+    "slogans": {
+      "en": ["Building Futures", "Solid Foundations", "Built to Last"],
+      "de": ["Zukunft bauen", "Solide Fundamente", "Gebaut für die Ewigkeit"],
+      "ru": ["Строим будущее", "Крепкий фундамент", "Построено на века"]
+    },
+    "hero": {
+      "en": {
+        "heading": "Building Futures",
+        "subheading": "Quality construction services from residential to commercial projects.",
+        "cta": "Get Started",
+        "image": "/media/presets/construction_company/hero.jpg"
+      },
+      "de": {
+        "heading": "Zukunft bauen",
+        "subheading": "Qualitätsbauleistungen von Wohn- bis Gewerbeprojekte.",
+        "cta": "Jetzt starten",
+        "image": "/media/presets/construction_company/hero.jpg"
+      },
+      "ru": {
+        "heading": "Строим будущее",
+        "subheading": "Качественное строительство от жилых до коммерческих проектов.",
+        "cta": "Начать",
+        "image": "/media/presets/construction_company/hero.jpg"
+      }
+    },
+    "about": {
+      "en": {
+        "title": "About Us",
+        "text": "With 20 years of experience, we deliver quality construction on time and on budget."
+      },
+      "de": {
+        "title": "Über uns",
+        "text": "Mit 20 Jahren Erfahrung liefern wir Qualität pünktlich und im Budget."
+      },
+      "ru": {
+        "title": "О нас",
+        "text": "С 20-летним опытом мы гарантируем качественное строительство в срок и в рамках бюджета."
+      }
+    },
+    "services": [
+      {
+        "name_en": "Home Renovation",
+        "name_de": "Hausrenovierung",
+        "name_ru": "Ремонт дома",
+        "price": "$10k+",
+        "desc_en": "Transform your living space.",
+        "image": "/media/presets/construction_company/services/reno.jpg"
+      },
+      {
+        "name_en": "New Build",
+        "name_de": "Neubau",
+        "name_ru": "Новое строительство",
+        "price": "$100k+",
+        "desc_en": "From foundation to roof.",
+        "image": "/media/presets/construction_company/services/build.jpg"
+      }
+    ],
+    "testimonials": [
+      {
+        "name": "Homeowner",
+        "text_en": "Professional team, clean work, amazing results.",
+        "text_de": "Professionelles Team, saubere Arbeit, erstaunliche Ergebnisse.",
+        "text_ru": "Профессиональная команда, чистая работа, потрясающие результаты.",
+        "rating": 5,
+        "avatar": "/media/presets/construction_company/avatars/home.jpg"
+      }
+    ],
+    "contact": {
+      "address": "123 Main St, City",
+      "phone": "+1 234 567 890",
+      "email": "info@construction_company.com",
+      "hours_en": "Mon-Fri: 9:00 AM - 6:00 PM",
+      "hours_de": "Mo-Fr: 09:00 - 18:00 Uhr",
+      "hours_ru": "Пн-Пт: 09:00 - 18:00"
+    },
+    "faq": [
+      {
+        "q_en": "How to start?",
+        "q_de": "Wie anfangen?",
+        "q_ru": "Как начать?",
+        "a_en": "Contact us today!",
+        "a_de": "Kontaktieren Sie uns!",
+        "a_ru": "Свяжитесь с нами!"
+      }
+    ]
+  },
+  "booking": {
+    "enabled": true,
+    "slots": ["09:00", "10:00", "14:00", "16:00"],
+    "duration": 60
+  },
+  "logo": {
+    "text": "BUILDRIGHT",
+    "tagline": "",
+    "font": "Bebas Neue"
+  }
+}

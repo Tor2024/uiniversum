@@ -1,0 +1,176 @@
+{
+  "meta": {
+    "title": "Zen Yoga Studio | Find Your Inner Peace",
+    "description": "Transform your body and mind with our expert-led yoga classes. Vinyasa, Hatha, and Meditation in a serene environment.",
+    "favicon": "/media/presets/yoga/favicon.ico",
+    "language": "en",
+    "availableLanguages": ["en", "de", "ru"]
+  },
+  "design": {
+    "preset": "yoga_studio",
+    "tokens": {
+      "colorBackground": "#F5F5F0",
+      "colorSurface": "#FFFFFF",
+      "colorPrimary": "#5C8A6F",
+      "colorSecondary": "#8A9A8C",
+      "colorBorder": "#D8E3DC",
+      "colorAccent": "#E8A87C",
+      "colorAccentHover": "#D4946A",
+      "fontDisplay": "Lora",
+      "fontHeading": "Lora",
+      "fontBody": "Nunito",
+      "fontCaption": "Nunito",
+      "fontMono": "Roboto Mono",
+      "fontSizeDisplay": "68px",
+      "fontSizeHeading": "34px",
+      "fontSizeBody": "17px",
+      "lineHeightBody": "1.8",
+      "lineHeightHeading": "1.3",
+      "spacingUnit": "8px",
+      "spacingSection": "140px",
+      "spacingElement": "28px",
+      "spacingCard": "32px",
+      "spacingButtonVertical": "16px",
+      "spacingButtonHorizontal": "36px",
+      "maxWidthContent": "1100px",
+      "maxWidthText": "680px",
+      "gridColumns": "12",
+      "gridGutter": "30px",
+      "horizontalPaddingMobile": "20px",
+      "horizontalPaddingTablet": "50px",
+      "horizontalPaddingDesktop": "90px",
+      "borderRadius": "16",
+      "borderRadiusSmall": "8px",
+      "borderRadiusMedium": "12px",
+      "borderRadiusLarge": "24px",
+      "shadowStyle": "soft",
+      "shadowResting": "0 4px 20px rgba(92,138,111,0.08)",
+      "shadowHover": "0 8px 30px rgba(92,138,111,0.12)",
+      "transitionDuration": "250ms",
+      "transitionTiming": "ease-in-out",
+      "imageRatioHero": "16:9",
+      "imageRatioCard": "3:4",
+      "imageRatioAvatar": "1:1"
+    },
+    "customCss": ""
+  },
+  "seo": {
+    "ogImage": "/media/presets/yoga/og-default.jpg",
+    "twitterCard": "summary_large_image",
+    "googleAnalyticsId": "",
+    "keywords": "Yoga, Studio, Meditation, Wellness, Mindfulness, Zen"
+  },
+  "content": {
+    "slogans": {
+      "en": ["Find Your Inner Peace", "Breathe. Stretch. Live.", "Balance Your Life"],
+      "de": ["Finde deinen inneren Frieden", "Atme. Dehne. Lebe.", "Balance für dein Leben"],
+      "ru": ["Найди внутренний покой", "Дыши. Тянись. Живи.", "Баланс для жизни"]
+    },
+    "hero": {
+      "en": {
+        "heading": "Find Your Inner Peace",
+        "subheading": "Join our community and start your journey to a healthier, more balanced life through yoga.",
+        "cta": "Book a Class",
+        "image": "/media/presets/yoga/hero.jpg"
+      },
+      "de": {
+        "heading": "Finde deinen inneren Frieden",
+        "subheading": "Werde Teil unserer Community und starte deine Reise zu einem gesünderen, ausgewogeneren Leben.",
+        "cta": "Kurs buchen",
+        "image": "/media/presets/yoga/hero.jpg"
+      },
+      "ru": {
+        "heading": "Найди внутренний покой",
+        "subheading": "Присоединяйся к нашему сообществу и начни путь к здоровой и гармоничной жизни через йогу.",
+        "cta": "Записаться на класс",
+        "image": "/media/presets/yoga/hero.jpg"
+      }
+    },
+    "about": {
+      "en": {
+        "title": "Our Philosophy",
+        "text": "At Zen Yoga Studio, we believe in the power of mindful movement. Our certified instructors guide you through practices that strengthen the body and calm the mind."
+      },
+      "de": {
+        "title": "Unsere Philosophie",
+        "text": "Im Zen Yoga Studio glauben wir an die Kraft der achtsamen Bewegung. Unsere zertifizierten Lehrer führen dich durch Praktiken, die Körper und Geist stärken."
+      },
+      "ru": {
+        "title": "Наша философия",
+        "text": "В Zen Yoga Studio мы верим в силу осознанного движения. Наши сертифицированные инструкторы проведут вас через практики, укрепляющие тело и разум."
+      }
+    },
+    "classes": [
+      {
+        "name_en": "Vinyasa Flow",
+        "name_de": "Vinyasa Flow",
+        "name_ru": "Виньяса Флоу",
+        "price": "$20",
+        "desc_en": "Dynamic movement synchronized with breath.",
+        "image": "/media/presets/yoga/classes/vinyasa.jpg"
+      },
+      {
+        "name_en": "Hatha Yoga",
+        "name_de": "Hatha Yoga",
+        "name_ru": "Хатха Йога",
+        "price": "$18",
+        "desc_en": "Foundational postures for alignment and strength.",
+        "image": "/media/presets/yoga/classes/hatha.jpg"
+      },
+      {
+        "name_en": "Guided Meditation",
+        "name_de": "Meditation",
+        "name_ru": "Медитация",
+        "price": "$15",
+        "desc_en": "Quiet the mind and reduce stress.",
+        "image": "/media/presets/yoga/classes/meditation.jpg"
+      }
+    ],
+    "testimonials": [
+      {
+        "name": "Sarah L.",
+        "text_en": "This studio changed my life. The atmosphere is so peaceful and welcoming.",
+        "text_de": "Dieses Studio hat mein Leben verändert. Die Atmosphäre ist so friedlich.",
+        "text_ru": "Эта студия изменила мою жизнь. Атмосфера невероятно спокойная.",
+        "rating": 5,
+        "avatar": "/media/presets/yoga/avatars/sarah.jpg"
+      },
+      {
+        "name": "Markus B.",
+        "text_en": "Best yoga classes in town. Highly recommended for all levels.",
+        "text_de": "Die besten Yogakurse in der Stadt. Für alle Levels empfohlen.",
+        "text_ru": "Лучшие уроки йоги в городе. Рекомендую для всех уровней.",
+        "rating": 5,
+        "avatar": "/media/presets/yoga/avatars/markus.jpg"
+      }
+    ],
+    "contact": {
+      "address": "789 Serenity Blvd, Boulder, CO",
+      "phone": "+1 303 555 0145",
+      "email": "info@zenyogastudio.com",
+      "hours_en": "Mon-Fri: 7:00 AM - 8:00 PM, Sat-Sun: 8:00 AM - 4:00 PM",
+      "hours_de": "Mo-Fr: 07:00 - 20:00 Uhr, Sa-So: 08:00 - 16:00 Uhr",
+      "hours_ru": "Пн-Пт: 07:00 - 20:00, Сб-Вс: 08:00 - 16:00"
+    },
+    "faq": [
+      {
+        "q_en": "Do I need to bring my own mat?",
+        "q_de": "Muss ich meine eigene Matte mitbringen?",
+        "q_ru": "Нужно ли приносить свой коврик?",
+        "a_en": "We provide mats and props, but you are welcome to bring your own.",
+        "a_de": "Wir stellen Matten und Zubehör, aber du kannst gerne deine eigene mitbringen.",
+        "a_ru": "Мы предоставляем коврики и инвентарь, но можете принести свой."
+      }
+    ]
+  },
+  "booking": {
+    "enabled": true,
+    "slots": ["07:00", "09:00", "17:00", "18:30"],
+    "duration": 90
+  },
+  "logo": {
+    "text": "ZEN",
+    "tagline": "YOGA STUDIO",
+    "font": "Lora"
+  }
+}

@@ -1,0 +1,160 @@
+{
+  "meta": {
+    "title": "Tranquil Spa | Wellness Center",
+    "description": "Rejuvenate your mind and body with our luxury spa treatments.",
+    "favicon": "/media/presets/spa_center/favicon.ico",
+    "language": "en",
+    "availableLanguages": ["en", "de", "ru"]
+  },
+  "design": {
+    "preset": "spa_center",
+    "tokens": {
+      "colorBackground": "#E6E6FA",
+      "colorSurface": "#FFFFFF",
+      "colorPrimary": "#9370DB",
+      "colorSecondary": "#6C757D",
+      "colorBorder": "#DEE2E6",
+      "colorAccent": "#BA55D3",
+      "colorAccentHover": "#BA55D3",
+      "fontDisplay": "Cinzel",
+      "fontHeading": "Cinzel",
+      "fontBody": "Lato",
+      "fontCaption": "Lato",
+      "fontMono": "Roboto Mono",
+      "fontSizeDisplay": "72px",
+      "fontSizeHeading": "36px",
+      "fontSizeBody": "17px",
+      "lineHeightBody": "1.7",
+      "lineHeightHeading": "1.3",
+      "spacingUnit": "8px",
+      "spacingSection": "120px",
+      "spacingElement": "24px",
+      "spacingCard": "32px",
+      "spacingButtonVertical": "16px",
+      "spacingButtonHorizontal": "32px",
+      "maxWidthContent": "1200px",
+      "maxWidthText": "700px",
+      "gridColumns": "12",
+      "gridGutter": "30px",
+      "horizontalPaddingMobile": "20px",
+      "horizontalPaddingTablet": "50px",
+      "horizontalPaddingDesktop": "80px",
+      "borderRadius": "8",
+      "borderRadiusSmall": "4px",
+      "borderRadiusMedium": "8px",
+      "borderRadiusLarge": "16px",
+      "shadowStyle": "soft",
+      "shadowResting": "0 4px 14px rgba(0,0,0,0.05)",
+      "shadowHover": "0 8px 24px rgba(0,0,0,0.1)",
+      "transitionDuration": "200ms",
+      "transitionTiming": "ease-in-out",
+      "imageRatioHero": "21:9",
+      "imageRatioCard": "4:3",
+      "imageRatioAvatar": "1:1"
+    },
+    "customCss": ""
+  },
+  "seo": {
+    "ogImage": "/media/presets/spa_center/og-default.jpg",
+    "twitterCard": "summary_large_image",
+    "googleAnalyticsId": "",
+    "keywords": "spa, wellness, relaxation"
+  },
+  "content": {
+    "slogans": {
+      "en": ["Relax & Rejuvenate", "Pure Bliss", "Inner Harmony"],
+      "de": ["Entspannen & Verjüngen", "Reine Seligkeit", "Innere Harmonie"],
+      "ru": ["Расслабься и обновись", "Чисте блаженство", "Внутрішня гармонія"]
+    },
+    "hero": {
+      "en": {
+        "heading": "Relax & Rejuvenate",
+        "subheading": "Rejuvenate your mind and body with our luxury spa treatments.",
+        "cta": "Get Started",
+        "image": "/media/presets/spa_center/hero.jpg"
+      },
+      "de": {
+        "heading": "Entspannen & Verjüngen",
+        "subheading": "Erneuern Sie Ihren Geist und Körper mit unseren Luxus-Spa-Behandlungen.",
+        "cta": "Jetzt starten",
+        "image": "/media/presets/spa_center/hero.jpg"
+      },
+      "ru": {
+        "heading": "Расслабься і обновись",
+        "subheading": "Обновите свій розум і тіло за допомогою наших розкішних СПА-процедур.",
+        "cta": "Начати",
+        "image": "/media/presets/spa_center/hero.jpg"
+      }
+    },
+    "about": {
+      "en": {
+        "title": "About Us",
+        "text": "An oasis of calm where we use organic products to soothe your senses."
+      },
+      "de": {
+        "title": "Über uns",
+        "text": "Eine Oase der Ruhe, in der wir organische Produkte verwenden, um Ihre Sinne zu beruhigen."
+      },
+      "ru": {
+        "title": "О нас",
+        "text": "Оазис спокою, де ми використовуємо органічні продукти для заспокоєння ваших почуттів."
+      }
+    },
+    "services": [
+      {
+        "name_en": "Deep Tissue Massage",
+        "name_de": "Tiefengewebsmassage",
+        "name_ru": "Глибокий масаж тканин",
+        "price": "$120",
+        "desc_en": "Release tension and stress.",
+        "image": "/media/presets/spa_center/services/massage.jpg"
+      },
+      {
+        "name_en": "Facial Treatment",
+        "name_de": "Gesichtsbehandlung",
+        "name_ru": "Догляд за обличчям",
+        "price": "$90",
+        "desc_en": "Glowing skin guaranteed.",
+        "image": "/media/presets/spa_center/services/facial.jpg"
+      }
+    ],
+    "testimonials": [
+      {
+        "name": "Relaxed R.",
+        "text_en": "Best massage of my life. I feel like a new person.",
+        "text_de": "Die beste Massage meines Lebens. Ich fühle mich wie neugeboren.",
+        "text_ru": "Найкращий масаж у моєму житті. Я почуваюся новою людиною.",
+        "rating": 5,
+        "avatar": "/media/presets/spa_center/avatars/relaxed.jpg"
+      }
+    ],
+    "contact": {
+      "address": "123 Main St, City",
+      "phone": "+1 234 567 890",
+      "email": "info@spa_center.com",
+      "hours_en": "Mon-Fri: 9:00 AM - 6:00 PM",
+      "hours_de": "Mo-Fr: 09:00 - 18:00 Uhr",
+      "hours_ru": "Пн-Пт: 09:00 - 18:00"
+    },
+    "faq": [
+      {
+        "q_en": "How to start?",
+        "q_de": "Wie anfangen?",
+        "q_ru": "Як почати?",
+        "a_en": "Contact us today!",
+        "a_de": "Kontaktieren Sie uns!",
+        "a_ru": "Зв'яжіться з нами!"
+      }
+    ]
+  },
+  "booking": {
+    "enabled": true,
+    "slots": ["09:00", "10:00", "14:00", "16:00"],
+    "duration": 60
+  },
+  "logo": {
+    "text": "TRANQUIL",
+    "tagline": "SPA",
+    "font": "Cinzel"
+  }
+}

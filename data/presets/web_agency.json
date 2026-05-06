@@ -1,0 +1,160 @@
+{
+  "meta": {
+    "title": "Pixel Perfect | Digital Agency",
+    "description": "We build stunning websites and apps that drive results for your business.",
+    "favicon": "/media/presets/web/favicon.ico",
+    "language": "en",
+    "availableLanguages": ["en", "de", "ru"]
+  },
+  "design": {
+    "preset": "web_agency",
+    "tokens": {
+      "colorBackground": "#0F172A",
+      "colorSurface": "#1E293B",
+      "colorPrimary": "#38BDF8",
+      "colorSecondary": "#94A3B8",
+      "colorBorder": "#334155",
+      "colorAccent": "#818CF8",
+      "colorAccentHover": "#6366F1",
+      "fontDisplay": "Inter",
+      "fontHeading": "Inter",
+      "fontBody": "DM Sans",
+      "fontCaption": "DM Sans",
+      "fontMono": "Roboto Mono",
+      "fontSizeDisplay": "72px",
+      "fontSizeHeading": "36px",
+      "fontSizeBody": "17px",
+      "lineHeightBody": "1.7",
+      "lineHeightHeading": "1.3",
+      "spacingUnit": "8px",
+      "spacingSection": "130px",
+      "spacingElement": "26px",
+      "spacingCard": "32px",
+      "spacingButtonVertical": "16px",
+      "spacingButtonHorizontal": "34px",
+      "maxWidthContent": "1200px",
+      "maxWidthText": "700px",
+      "gridColumns": "12",
+      "gridGutter": "30px",
+      "horizontalPaddingMobile": "20px",
+      "horizontalPaddingTablet": "50px",
+      "horizontalPaddingDesktop": "90px",
+      "borderRadius": "8",
+      "borderRadiusSmall": "4px",
+      "borderRadiusMedium": "8px",
+      "borderRadiusLarge": "12px",
+      "shadowStyle": "sharp",
+      "shadowResting": "0 4px 20px rgba(56,189,248,0.1)",
+      "shadowHover": "0 8px 30px rgba(56,189,248,0.2)",
+      "transitionDuration": "200ms",
+      "transitionTiming": "ease-in-out",
+      "imageRatioHero": "21:9",
+      "imageRatioCard": "16:9",
+      "imageRatioAvatar": "1:1"
+    },
+    "customCss": ""
+  },
+  "seo": {
+    "ogImage": "/media/presets/web/og-default.jpg",
+    "twitterCard": "summary_large_image",
+    "googleAnalyticsId": "",
+    "keywords": "web, agency, design"
+  },
+  "content": {
+    "slogans": {
+      "en": ["Code the Future", "Digital Excellence", "Innovate Now"],
+      "de": ["Coden für die Zukunft", "Digitale Exzellenz", "Jetzt innovieren"],
+      "ru": ["Кодируй будущее", "Цифровое совершенство", "Инновации сейчас"]
+    },
+    "hero": {
+      "en": {
+        "heading": "Code the Future",
+        "subheading": "We build stunning websites and apps that drive results for your business.",
+        "cta": "Start Project",
+        "image": "/media/presets/web/hero.jpg"
+      },
+      "de": {
+        "heading": "Coden für die Zukunft",
+        "subheading": "Wir bauen beeindruckende Webseiten und Apps, die Ergebnisse liefern.",
+        "cta": "Projekt starten",
+        "image": "/media/presets/web/hero.jpg"
+      },
+      "ru": {
+        "heading": "Кодируй будущее",
+        "subheading": "Мы создаём потрясающие веб-сайты и приложения, которые приносят результаты.",
+        "cta": "Начать проект",
+        "image": "/media/presets/web/hero.jpg"
+      }
+    },
+    "about": {
+      "en": {
+        "title": "Our Mission",
+        "text": "We are a team of passionate designers and developers creating digital masterpieces."
+      },
+      "de": {
+        "title": "Unsere Mission",
+        "text": "Wir sind ein Team leidenschaftlicher Designer und Entwickler, die digitale Meisterwerke schaffen."
+      },
+      "ru": {
+        "title": "Наша миссия",
+        "text": "Мы — команда увлечённых дизайнеров и разработчиков, создающих цифровые шедевры."
+      }
+    },
+    "services": [
+      {
+        "name_en": "Web Development",
+        "name_de": "Webentwicklung",
+        "name_ru": "Веб-разработка",
+        "price": "$5000+",
+        "desc_en": "Custom websites and platforms.",
+        "image": "/media/presets/web_agency/services/web.jpg"
+      },
+      {
+        "name_en": "UI/UX Design",
+        "name_de": "UI/UX Design",
+        "name_ru": "UI/UX Дизайн",
+        "price": "$3000+",
+        "desc_en": "User-centered design strategies.",
+        "image": "/media/presets/web_agency/services/uiux.jpg"
+      }
+    ],
+    "testimonials": [
+      {
+        "name": "TechCorp",
+        "text_en": "Our new website increased leads by 200%. Incredible work!",
+        "text_de": "Unsere neue Webseite hat die Leads um 200% gesteigert. Unglaubliche Arbeit!",
+        "text_ru": "Наш новый сайт увеличил лиды на 200%. Невероятная работа!",
+        "rating": 5,
+        "avatar": "/media/presets/web_agency/avatars/techcorp.jpg"
+      }
+    ],
+    "contact": {
+      "address": "555 Tech Hub, San Francisco, CA",
+      "phone": "+1 415 555 0190",
+      "email": "hello@pixelperfect.com",
+      "hours_en": "Mon-Fri: 9:00 AM - 6:00 PM",
+      "hours_de": "Mo-Fr: 09:00 - 18:00 Uhr",
+      "hours_ru": "Пн-Пт: 09:00 - 18:00"
+    },
+    "faq": [
+      {
+        "q_en": "How long does a project take?",
+        "q_de": "Wie lange dauert ein Projekt?",
+        "q_ru": "Сколько длится проект?",
+        "a_en": "Typically 3-6 months depending on scope.",
+        "a_de": "In der Regel 3-6 Monate je nach Umfang.",
+        "a_ru": "Обычно 3-6 месяцев в зависимости от объёма."
+      }
+    ]
+  },
+  "booking": {
+    "enabled": false,
+    "slots": [],
+    "duration": 0
+  },
+  "logo": {
+    "text": "PIXEL",
+    "tagline": "PERFECT",
+    "font": "Inter"
+  }
+}

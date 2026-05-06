@@ -1,0 +1,181 @@
+{
+  "meta": {
+    "title": "Helping Hand | Charity Org",
+    "description": "Dedicated to making a difference in the lives of those in need.",
+    "favicon": "/media/presets/non_profit/favicon.ico",
+    "language": "en",
+    "availableLanguages": [
+      "en",
+      "de",
+      "ru"
+    ]
+  },
+  "design": {
+    "preset": "non_profit",
+    "tokens": {
+      "colorBackground": "#F0FFF0",
+      "colorSurface": "#FFFFFF",
+      "colorPrimary": "#228B22",
+      "colorSecondary": "#6C757D",
+      "colorBorder": "#DEE2E6",
+      "colorAccent": "#FFD700",
+      "colorAccentHover": "#FFD700",
+      "fontDisplay": "Nunito",
+      "fontHeading": "Nunito",
+      "fontBody": "Open Sans",
+      "fontCaption": "Open Sans",
+      "fontMono": "Roboto Mono",
+      "fontSizeDisplay": "72px",
+      "fontSizeHeading": "36px",
+      "fontSizeBody": "17px",
+      "lineHeightBody": "1.7",
+      "lineHeightHeading": "1.3",
+      "spacingUnit": "8px",
+      "spacingSection": "120px",
+      "spacingElement": "24px",
+      "spacingCard": "32px",
+      "spacingButtonVertical": "16px",
+      "spacingButtonHorizontal": "32px",
+      "maxWidthContent": "1200px",
+      "maxWidthText": "700px",
+      "gridColumns": "12",
+      "gridGutter": "30px",
+      "horizontalPaddingMobile": "20px",
+      "horizontalPaddingTablet": "50px",
+      "horizontalPaddingDesktop": "80px",
+      "borderRadius": "8",
+      "borderRadiusSmall": "4px",
+      "borderRadiusMedium": "8px",
+      "borderRadiusLarge": "16px",
+      "shadowStyle": "soft",
+      "shadowResting": "0 4px 14px rgba(0,0,0,0.05)",
+      "shadowHover": "0 8px 24px rgba(0,0,0,0.1)",
+      "transitionDuration": "200ms",
+      "transitionTiming": "ease-in-out",
+      "imageRatioHero": "21:9",
+      "imageRatioCard": "4:3",
+      "imageRatioAvatar": "1:1"
+    },
+    "customCss": ""
+  },
+  "seo": {
+    "ogImage": "/media/presets/non_profit/og-default.jpg",
+    "twitterCard": "summary_large_image",
+    "googleAnalyticsId": "",
+    "keywords": "charity, non-profit, donation"
+  },
+  "content": {
+    "slogans": {
+      "en": [
+        "Change the World",
+        "Give Hope",
+        "Together We Can"
+      ],
+      "de": [
+        "Verändere die Welt",
+        "Gib Hoffnung",
+        "Gemeinsam können wir"
+      ],
+      "ru": [
+        "Измени мир",
+        "Дай надежду",
+        "Вместе мы сможем"
+      ]
+    },
+    "hero": {
+      "en": {
+        "heading": "Change the World",
+        "subheading": "Dedicated to making a difference in the lives of those in need.",
+        "cta": "Get Started",
+        "image": "/media/presets/non_profit/hero.jpg"
+      },
+      "de": {
+        "heading": "Verändere die Welt",
+        "subheading": "Dedicated to making a difference in the lives of those in need.",
+        "cta": "Jetzt starten",
+        "image": "/media/presets/non_profit/hero.jpg"
+      },
+      "ru": {
+        "heading": "Измени мир",
+        "subheading": "Dedicated to making a difference in the lives of those in need.",
+        "cta": "Начать",
+        "image": "/media/presets/non_profit/hero.jpg"
+      }
+    },
+    "about": {
+      "en": {
+        "title": "About Us",
+        "text": "Our mission is to provide resources and support to underprivileged communities."
+      },
+      "de": {
+        "title": "Über uns",
+        "text": "Unsere Mission ist es, benachteiligten Gemeinschaften zu helfen."
+      },
+      "ru": {
+        "title": "О нас",
+        "text": "Наша миссия — помогать нуждающимся сообществам."
+      }
+    },
+    "services": [
+      {
+        "name_en": "Food Drives",
+        "name_de": "Lebensmittelsammlungen",
+        "name_ru": "Сбор продуктов",
+        "price": "Donation",
+        "desc_en": "Fighting hunger locally.",
+        "image": "/media/presets/non_profit/services/food.jpg"
+      },
+      {
+        "name_en": "Education Fund",
+        "name_de": "Bildungsfonds",
+        "name_ru": "Фонд образования",
+        "price": "Sponsorship",
+        "desc_en": "Sponsoring children's education.",
+        "image": "/media/presets/non_profit/services/edu.jpg"
+      }
+    ],
+    "testimonials": [
+      {
+        "name": "Volunteer M.",
+        "text_en": "The most rewarding experience of my life.",
+        "text_de": "The most rewarding experience of my life.",
+        "text_ru": "The most rewarding experience of my life.",
+        "rating": 5,
+        "avatar": "/media/presets/non_profit/avatars/volunteer.jpg"
+      }
+    ],
+    "contact": {
+      "address": "123 Main St, City",
+      "phone": "+1 234 567 890",
+      "email": "info@non_profit.com",
+      "hours_en": "Mon-Fri: 9:00 AM - 6:00 PM",
+      "hours_de": "Mo-Fr: 09:00 - 18:00 Uhr",
+      "hours_ru": "Пн-Пт: 09:00 - 18:00"
+    },
+    "faq": [
+      {
+        "q_en": "How to start?",
+        "q_de": "Wie anfangen?",
+        "q_ru": "Как начать?",
+        "a_en": "Contact us today!",
+        "a_de": "Kontaktieren Sie uns!",
+        "a_ru": "Свяжитесь с нами!"
+      }
+    ]
+  },
+  "booking": {
+    "enabled": true,
+    "slots": [
+      "09:00",
+      "10:00",
+      "14:00",
+      "16:00"
+    ],
+    "duration": 60
+  },
+  "logo": {
+    "text": "HELPING",
+    "tagline": "HAND",
+    "font": "Nunito"
+  }
+}

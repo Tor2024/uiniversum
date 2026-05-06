@@ -1,0 +1,33 @@
+{
+  "slug": "home",
+  "title": { "de": "Startseite", "en": "Home", "ru": "Главная" },
+  "status": "published",
+  "seo": {
+    "metaTitle": { "de": "", "en": "", "ru": "" },
+    "metaDescription": { "de": "", "en": "", "ru": "" }
+  },
+  "blocks": [
+    {
+      "id": "block_001",
+      "type": "hero",
+      "visible": true,
+      "order": 0,
+      "settings": {
+        "heading": { "de": "Willkommen", "en": "Welcome", "ru": "Добро пожаловать" },
+        "subheading": { "de": "", "en": "", "ru": "" },
+        "buttonText": { "de": "Mehr erfahren", "en": "Learn more", "ru": "Узнать больше" },
+        "buttonUrl": "/about",
+        "backgroundImage": "/media/hero-bg.jpg",
+        "backgroundOverlay": 40,
+        "height": "large"
+      },
+      "styles": {
+        "paddingTop": 80,
+        "paddingBottom": 80,
+        "backgroundColor": "",
+        "textAlign": "center",
+        "maxWidth": "xl"
+      }
+    }
+  ]
+}

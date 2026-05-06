@@ -1,0 +1,160 @@
+{
+  "meta": {
+    "title": "Grand Plaza | Boutique Hotel",
+    "description": "Experience luxury and comfort in the heart of the city. Your perfect stay awaits.",
+    "favicon": "/media/presets/boutique_hotel/favicon.ico",
+    "language": "en",
+    "availableLanguages": ["en", "de", "ru"]
+  },
+  "design": {
+    "preset": "boutique_hotel",
+    "tokens": {
+      "colorBackground": "#FAF9F6",
+      "colorSurface": "#FFFFFF",
+      "colorPrimary": "#8B4513",
+      "colorSecondary": "#6C757D",
+      "colorBorder": "#DEE2E6",
+      "colorAccent": "#DAA520",
+      "colorAccentHover": "#DAA520",
+      "fontDisplay": "Cormorant Garamond",
+      "fontHeading": "Cormorant Garamond",
+      "fontBody": "Montserrat",
+      "fontCaption": "Montserrat",
+      "fontMono": "Roboto Mono",
+      "fontSizeDisplay": "72px",
+      "fontSizeHeading": "36px",
+      "fontSizeBody": "17px",
+      "lineHeightBody": "1.7",
+      "lineHeightHeading": "1.3",
+      "spacingUnit": "8px",
+      "spacingSection": "120px",
+      "spacingElement": "24px",
+      "spacingCard": "32px",
+      "spacingButtonVertical": "16px",
+      "spacingButtonHorizontal": "32px",
+      "maxWidthContent": "1200px",
+      "maxWidthText": "700px",
+      "gridColumns": "12",
+      "gridGutter": "30px",
+      "horizontalPaddingMobile": "20px",
+      "horizontalPaddingTablet": "50px",
+      "horizontalPaddingDesktop": "80px",
+      "borderRadius": "8",
+      "borderRadiusSmall": "4px",
+      "borderRadiusMedium": "8px",
+      "borderRadiusLarge": "16px",
+      "shadowStyle": "soft",
+      "shadowResting": "0 4px 14px rgba(0,0,0,0.05)",
+      "shadowHover": "0 8px 24px rgba(0,0,0,0.1)",
+      "transitionDuration": "200ms",
+      "transitionTiming": "ease-in-out",
+      "imageRatioHero": "21:9",
+      "imageRatioCard": "4:3",
+      "imageRatioAvatar": "1:1"
+    },
+    "customCss": ""
+  },
+  "seo": {
+    "ogImage": "/media/presets/boutique_hotel/og-default.jpg",
+    "twitterCard": "summary_large_image",
+    "googleAnalyticsId": "",
+    "keywords": "hotel, luxury, travel"
+  },
+  "content": {
+    "slogans": {
+      "en": ["Live Luxury", "Your Oasis", "Unforgettable Stay"],
+      "de": ["Leben Sie luxuriös", "Ihre Oase", "Unvergesslicher Aufenthalt"],
+      "ru": ["Живи роскошно", "Твой оазис", "Незабываемый отдых"]
+    },
+    "hero": {
+      "en": {
+        "heading": "Live Luxury",
+        "subheading": "Experience luxury and comfort in the heart of the city. Your perfect stay awaits.",
+        "cta": "Get Started",
+        "image": "/media/presets/boutique_hotel/hero.jpg"
+      },
+      "de": {
+        "heading": "Leben Sie luxuriös",
+        "subheading": "Erleben Sie Luxus und Komfort im Herzen der Stadt. Ihr perfekter Aufenthalt wartet.",
+        "cta": "Jetzt starten",
+        "image": "/media/presets/boutique_hotel/hero.jpg"
+      },
+      "ru": {
+        "heading": "Живи роскошно",
+        "subheading": "Испытайте роскошь и комфорт в самом сердце города. Ваш идеальный отдых ждёт.",
+        "cta": "Начать",
+        "image": "/media/presets/boutique_hotel/hero.jpg"
+      }
+    },
+    "about": {
+      "en": {
+        "title": "About Us",
+        "text": "Nestled in the city center, Grand Plaza offers an oasis of calm and sophistication."
+      },
+      "de": {
+        "title": "Über uns",
+        "text": "Im Herzen der Stadt bietet Grand Plaza eine Oase der Ruhe und Sophistication."
+      },
+      "ru": {
+        "title": "О нас",
+        "text": "Расположенный в центре города, Grand Plaza предлагает оазис спокойствия и утончённости."
+      }
+    },
+    "services": [
+      {
+        "name_en": "Deluxe Suite",
+        "name_de": "Deluxe Suite",
+        "name_ru": "Люкс Сьют",
+        "price": "$250/night",
+        "desc_en": "Spacious rooms with city views.",
+        "image": "/media/presets/boutique_hotel/services/suite.jpg"
+      },
+      {
+        "name_en": "Spa Access",
+        "name_de": "Spa-Zugang",
+        "name_ru": "Доступ в СПА",
+        "price": "$50",
+        "desc_en": "Rejuvenate with our spa treatments.",
+        "image": "/media/presets/boutique_hotel/services/spa.jpg"
+      }
+    ],
+    "testimonials": [
+      {
+        "name": "Mr. Smith",
+        "text_en": "The service was impeccable. Will definitely return.",
+        "text_de": "Der Service war makellos. Werde definitiv wiederkommen.",
+        "text_ru": "Обслуживание было безупречным. Обязательно вернусь.",
+        "rating": 5,
+        "avatar": "/media/presets/boutique_hotel/avatars/smith.jpg"
+      }
+    ],
+    "contact": {
+      "address": "123 Main St, City",
+      "phone": "+1 234 567 890",
+      "email": "info@boutique_hotel.com",
+      "hours_en": "Mon-Fri: 9:00 AM - 6:00 PM",
+      "hours_de": "Mo-Fr: 09:00 - 18:00 Uhr",
+      "hours_ru": "Пн-Пт: 09:00 - 18:00"
+    },
+    "faq": [
+      {
+        "q_en": "How to start?",
+        "q_de": "Wie anfangen?",
+        "q_ru": "Как начать?",
+        "a_en": "Contact us today!",
+        "a_de": "Kontaktieren Sie uns!",
+        "a_ru": "Свяжитесь с нами!"
+      }
+    ]
+  },
+  "booking": {
+    "enabled": true,
+    "slots": ["09:00", "10:00", "14:00", "16:00"],
+    "duration": 60
+  },
+  "logo": {
+    "text": "GRAND",
+    "tagline": "PLAZA",
+    "font": "Cormorant Garamond"
+  }
+}

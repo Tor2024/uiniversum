@@ -1,0 +1,160 @@
+{
+  "meta": {
+    "title": "Glow Up Beauty | Premium Salon",
+    "description": "Hair, makeup, and skincare services to make you look and feel beautiful.",
+    "favicon": "/media/presets/beauty/favicon.ico",
+    "language": "en",
+    "availableLanguages": ["en", "de", "ru"]
+  },
+  "design": {
+    "preset": "beauty_salon",
+    "tokens": {
+      "colorBackground": "#FFF0F5",
+      "colorSurface": "#FFFFFF",
+      "colorPrimary": "#D63384",
+      "colorSecondary": "#E75480",
+      "colorBorder": "#F8C8DC",
+      "colorAccent": "#FFB6C1",
+      "colorAccentHover": "#FF69B4",
+      "fontDisplay": "Dancing Script",
+      "fontHeading": "Dancing Script",
+      "fontBody": "Raleway",
+      "fontCaption": "Raleway",
+      "fontMono": "Roboto Mono",
+      "fontSizeDisplay": "70px",
+      "fontSizeHeading": "34px",
+      "fontSizeBody": "16px",
+      "lineHeightBody": "1.7",
+      "lineHeightHeading": "1.3",
+      "spacingUnit": "8px",
+      "spacingSection": "120px",
+      "spacingElement": "24px",
+      "spacingCard": "30px",
+      "spacingButtonVertical": "14px",
+      "spacingButtonHorizontal": "32px",
+      "maxWidthContent": "1100px",
+      "maxWidthText": "680px",
+      "gridColumns": "12",
+      "gridGutter": "28px",
+      "horizontalPaddingMobile": "20px",
+      "horizontalPaddingTablet": "45px",
+      "horizontalPaddingDesktop": "80px",
+      "borderRadius": "20",
+      "borderRadiusSmall": "10px",
+      "borderRadiusMedium": "15px",
+      "borderRadiusLarge": "25px",
+      "shadowStyle": "soft",
+      "shadowResting": "0 4px 15px rgba(214,51,132,0.1)",
+      "shadowHover": "0 8px 25px rgba(214,51,132,0.15)",
+      "transitionDuration": "200ms",
+      "transitionTiming": "ease-in-out",
+      "imageRatioHero": "16:9",
+      "imageRatioCard": "4:3",
+      "imageRatioAvatar": "1:1"
+    },
+    "customCss": ""
+  },
+  "seo": {
+    "ogImage": "/media/presets/beauty/og-default.jpg",
+    "twitterCard": "summary_large_image",
+    "googleAnalyticsId": "",
+    "keywords": "beauty, salon, makeup"
+  },
+  "content": {
+    "slogans": {
+      "en": ["Feel Beautiful", "Unleash Your Glow", "Expert Care"],
+      "de": ["Fühl dich schön", "Entfessle deinen Glow", "Expertinpflege"],
+      "ru": ["Почувствуй красоту", "Раскрой свое сияние", "Экспертный уход"]
+    },
+    "hero": {
+      "en": {
+        "heading": "Feel Beautiful",
+        "subheading": "Hair, makeup, and skincare services to make you look and feel beautiful.",
+        "cta": "Book Appointment",
+        "image": "/media/presets/beauty/hero.jpg"
+      },
+      "de": {
+        "heading": "Fühl dich schön",
+        "subheading": "Haar-, Make-up- und Hautpflege, die dich strahlen lässt.",
+        "cta": "Termin buchen",
+        "image": "/media/presets/beauty/hero.jpg"
+      },
+      "ru": {
+        "heading": "Почувствуй красоту",
+        "subheading": "Услуги по уходу за волосами, макияжу и коже, чтобы вы выглядели и чувствовали себя прекрасно.",
+        "cta": "Записаться",
+        "image": "/media/presets/beauty/hero.jpg"
+      }
+    },
+    "about": {
+      "en": {
+        "title": "Our Mission",
+        "text": "Our mission is to enhance your natural beauty with top-quality products and expert stylists."
+      },
+      "de": {
+        "title": "Unsere Mission",
+        "text": "Unsere Mission ist es, Ihre natürliche Schönheit mit erstklassigen Produkten und Expertinpflege zu betonen."
+      },
+      "ru": {
+        "title": "Наша миссия",
+        "text": "Наша миссия — подчеркнуть вашу природную красоту с помощью качественных продуктов и экспертного ухода."
+      }
+    },
+    "services": [
+      {
+        "name_en": "Hair Styling",
+        "name_de": "Haarstyling",
+        "name_ru": "Укладка волос",
+        "price": "$80",
+        "desc_en": "Cut, color, and style.",
+        "image": "/media/presets/beauty/services/hair.jpg"
+      },
+      {
+        "name_en": "Makeup Application",
+        "name_de": "Make-up",
+        "name_ru": "Макияж",
+        "price": "$60",
+        "desc_en": "Bridal and evening makeup.",
+        "image": "/media/presets/beauty/services/makeup.jpg"
+      }
+    ],
+    "testimonials": [
+      {
+        "name": "Sophia R.",
+        "text_en": "Best salon in town, my hair has never looked better!",
+        "text_de": "Best salon in town, my hair has never looked better!",
+        "text_ru": "Best salon in town, my hair has never looked better!",
+        "rating": 5,
+        "avatar": "/media/presets/beauty/avatars/sophia.jpg"
+      }
+    ],
+    "contact": {
+      "address": "222 Glow Street, Beverly Hills, CA",
+      "phone": "+1 310 555 0160",
+      "email": "hello@glowupbeauty.com",
+      "hours_en": "Tue-Sat: 10:00 AM - 7:00 PM",
+      "hours_de": "Di-Sa: 10:00 - 19:00 Uhr",
+      "hours_ru": "Вт-Сб: 10:00 - 19:00"
+    },
+    "faq": [
+      {
+        "q_en": "Do I need an appointment?",
+        "q_de": "Benötige ich einen Termin?",
+        "q_ru": "Нужно ли записываться?",
+        "a_en": "Walk-ins welcome, but appointments recommended.",
+        "a_de": "Spontanbesuche willkommen, Termine empfohlen.",
+        "a_ru": "Ждем без записи, но рекомендуем записаться."
+      }
+    ]
+  },
+  "booking": {
+    "enabled": true,
+    "slots": ["10:00", "12:00", "14:00", "16:00"],
+    "duration": 60
+  },
+  "logo": {
+    "text": "GLOW",
+    "tagline": "UP",
+    "font": "Dancing Script"
+  }
+}
