@@ -62,10 +62,12 @@
   },
   "layout": {
     "style": "clean_minimal",
-    "heroType": "split_screen",
+    "heroType": "centered_with_search",
     "navStyle": "light_professional",
-    "servicesLayout": "grid_3col",
-    "testimonialsLayout": "light_background",
+    "servicesLayout": "scrolling_tags",
+    "testimonialsLayout": "google_carousel",
+    "partnersBar": true,
+    "freeConsultationBanner": true,
     "footerStyle": "professional_minimal"
   },
   "content": {
@@ -76,28 +78,28 @@
     },
     "hero": {
       "de": {
-        "heading": "Ihr Lächeln ist unsere Leidenschaft.",
-        "subheading": "Moderne Zahnmedizin auf höchstem Niveau — einfühlsam, schmerzarm und transparent. Angstpatienten sind bei uns besonders willkommen.",
-        "cta": "Termin buchen",
-        "secondaryCta": "Leistungen ansehen",
+        "heading": "Ihr Lächeln. Unsere Leidenschaft.",
+        "subheading": "20 Jahre moderne Zahnmedizin in Düsseldorf. Kostenlose 360°-Diagnose bei Ihrem ersten Besuch. Angstpatienten besonders willkommen.",
+        "cta": "Termin kostenlos buchen",
+        "secondaryCta": "Promotionen ansehen",
         "image": "/media/presets/dental_clinic/hero.jpg",
-        "imageAlt": "Moderne Zahnarztpraxis mit freundlichem Team"
+        "imageAlt": "Moderne Zahnarztpraxis Dr. Müller Düsseldorf"
       },
       "en": {
-        "heading": "Your smile is our passion.",
-        "subheading": "Modern dentistry at the highest level — empathetic, low-pain and transparent. Anxious patients are especially welcome with us.",
-        "cta": "Book Appointment",
-        "secondaryCta": "View Services",
+        "heading": "Your Smile. Our Passion.",
+        "subheading": "20 years of modern dentistry in Düsseldorf. Free 360° diagnosis on your first visit. Anxious patients especially welcome.",
+        "cta": "Book Free Appointment",
+        "secondaryCta": "View Promotions",
         "image": "/media/presets/dental_clinic/hero.jpg",
-        "imageAlt": "Modern dental practice with friendly team"
+        "imageAlt": "Modern dental practice Dr. Müller Düsseldorf"
       },
       "ru": {
-        "heading": "Ваша улыбка — наша страсть.",
-        "subheading": "Современная стоматология на высшем уровне — чуткая, малоболезненная и прозрачная. Пациентам с тревожностью у нас особенно рады.",
-        "cta": "Записаться",
-        "secondaryCta": "Наши услуги",
+        "heading": "Ваша улыбка. Наша страсть.",
+        "subheading": "20 лет современной стоматологии в Дюссельдорфе. Бесплатная 360°-диагностика при первом визите. Пациентам с тревожностью особенно рады.",
+        "cta": "Записаться бесплатно",
+        "secondaryCta": "Акции",
         "image": "/media/presets/dental_clinic/hero.jpg",
-        "imageAlt": "Современная стоматологическая клиника с дружелюбной командой"
+        "imageAlt": "Современная стоматология доктора Мюллер Дюссельдорф"
       }
     },
     "about": {

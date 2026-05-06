@@ -64,8 +64,11 @@
     "style": "dark_elegant",
     "heroType": "fullscreen_overlay",
     "navStyle": "transparent_dark_gold",
-    "servicesLayout": "grid_2col_dark",
+    "statsBar": true,
+    "servicesLayout": "grid_3col_dark_cards",
+    "whyUsSection": true,
     "testimonialsLayout": "dark_background",
+    "confidentialCta": true,
     "footerStyle": "dark_rich"
   },
   "content": {
@@ -76,30 +79,56 @@
     },
     "hero": {
       "de": {
-        "heading": "Ihr Recht. Unser Auftrag.",
-        "subheading": "Hartmann & Partner steht seit 1998 für kompromisslose Interessenvertretung. Wir kämpfen für Ihre Rechte — mit Präzision, Erfahrung und dem Willen zu gewinnen.",
+        "heading": "Ihr Recht.\nUnser Auftrag.",
+        "subheading": "Eine führende Kanzlei in Frankfurt, die strategische Beratung für Unternehmen, Institutionen und Privatpersonen bietet.",
         "cta": "Kostenlose Erstberatung",
-        "secondaryCta": "Unsere Rechtsgebiete",
+        "secondaryCta": "Rechtsgebiete entdecken",
         "image": "/media/presets/law_firm/hero.jpg",
-        "imageAlt": "Elegantes Kanzleibüro mit Bibliothek"
+        "imageAlt": "Hartmann & Partner Kanzlei Frankfurt"
       },
       "en": {
-        "heading": "Your rights. Our mission.",
-        "subheading": "Hartmann & Partner has stood for uncompromising representation since 1998. We fight for your rights — with precision, experience and the will to win.",
+        "heading": "Your Rights.\nOur Mission.",
+        "subheading": "A leading law firm in Frankfurt providing strategic advice for companies, institutions and private individuals.",
         "cta": "Free Initial Consultation",
-        "secondaryCta": "Our Practice Areas",
+        "secondaryCta": "Discover Practice Areas",
         "image": "/media/presets/law_firm/hero.jpg",
-        "imageAlt": "Elegant law firm office with library"
+        "imageAlt": "Hartmann & Partner law firm Frankfurt"
       },
       "ru": {
-        "heading": "Ваши права. Наша миссия.",
-        "subheading": "Hartmann & Partner с 1998 года стоит за бескомпромиссное представление интересов. Мы боремся за ваши права — с точностью, опытом и волей к победе.",
+        "heading": "Ваши права.\nНаша миссия.",
+        "subheading": "Ведущая юридическая фирма во Франкфурте, предоставляющая стратегические консультации для компаний, учреждений и частных лиц.",
         "cta": "Бесплатная первичная консультация",
         "secondaryCta": "Наши практики",
         "image": "/media/presets/law_firm/hero.jpg",
-        "imageAlt": "Элегантный офис юридической фирмы с библиотекой"
+        "imageAlt": "Юридическая фирма Hartmann & Partner Франкфурт"
       }
     },
+    "whyUs": [
+      {
+        "title_de": "Strategische Beratung",
+        "title_en": "Strategic Advice",
+        "title_ru": "Стратегическая консультация",
+        "desc_de": "Jedes Mandat beginnt mit einer umfassenden Analyse Ihrer Situation. Wir entwickeln maßgeschneiderte Strategien zum Schutz Ihrer Interessen.",
+        "desc_en": "Every mandate begins with a comprehensive assessment of your situation. We develop tailored strategies to protect your interests.",
+        "desc_ru": "Каждый мандат начинается с комплексной оценки вашей ситуации. Мы разрабатываем индивидуальные стратегии для защиты ваших интересов."
+      },
+      {
+        "title_de": "Regionale Tiefe",
+        "title_en": "Regional Depth",
+        "title_ru": "Региональная глубина",
+        "desc_de": "Unsere Anwälte bringen tiefes Wissen über deutsches Bundes- und Landesrecht sowie die wirtschaftliche Realität des Rhein-Main-Gebiets.",
+        "desc_en": "Our lawyers bring deep knowledge of German federal and state law and the economic reality of the Rhine-Main region.",
+        "desc_ru": "Наши адвокаты обладают глубокими знаниями немецкого федерального и земельного права и экономической реальности региона Рейн-Майн."
+      },
+      {
+        "title_de": "Transparenz",
+        "title_en": "Transparency",
+        "title_ru": "Прозрачность",
+        "desc_de": "Klare Honorarstrukturen, regelmäßige Updates und direkter Partnerzugang. Starke Mandantenbeziehungen entstehen durch Vertrauen.",
+        "desc_en": "Clear fee structures, regular updates and direct partner access. Strong client relationships are built on trust.",
+        "desc_ru": "Чёткие структуры гонораров, регулярные обновления и прямой доступ к партнёрам. Крепкие отношения с клиентами строятся на доверии."
+      }
+    ],
     "about": {
       "de": {
         "title": "Vertrauen durch Kompetenz",

@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Morgenrot | Specialty Coffee",
-    "description": "Specialty Coffee, frisch geröstete Bohnen und hausgemachte Kuchen in Hamburg. Unser Café ist Ihr dritter Ort — zwischen Zuhause und Büro.",
+    "title": "Die Bewegung | Specialty Coffee",
+    "description": "Specialty Coffee in Hamburg. Zwei Standorte. Täglich frisch.",
     "favicon": "/media/presets/coffee_shop/favicon.ico",
     "language": "de",
     "availableLanguages": ["de", "en", "ru"]
@@ -32,20 +32,20 @@
       "spacingCard": "32px",
       "spacingButtonVertical": "16px",
       "spacingButtonHorizontal": "32px",
-      "maxWidthContent": "1100px",
-      "maxWidthText": "640px",
+      "maxWidthContent": "900px",
+      "maxWidthText": "600px",
       "gridColumns": "12",
       "gridGutter": "28px",
-      "horizontalPaddingMobile": "20px",
+      "horizontalPaddingMobile": "24px",
       "horizontalPaddingTablet": "48px",
       "horizontalPaddingDesktop": "80px",
-      "borderRadius": "8",
-      "borderRadiusSmall": "4px",
-      "borderRadiusMedium": "8px",
-      "borderRadiusLarge": "16px",
-      "shadowStyle": "warm",
-      "shadowResting": "0 4px 20px rgba(44,26,14,0.08)",
-      "shadowHover": "0 10px 36px rgba(44,26,14,0.14)",
+      "borderRadius": "0",
+      "borderRadiusSmall": "0px",
+      "borderRadiusMedium": "2px",
+      "borderRadiusLarge": "4px",
+      "shadowStyle": "none",
+      "shadowResting": "none",
+      "shadowHover": "none",
       "transitionDuration": "200ms",
       "transitionTiming": "ease-out",
       "imageRatioHero": "16:9",
@@ -58,176 +58,85 @@
     "ogImage": "/media/presets/coffee_shop/og-default.jpg",
     "twitterCard": "summary_large_image",
     "googleAnalyticsId": "",
-    "keywords": "Specialty Coffee Hamburg, Café, frisch geröstet, Filterkaffee, Espresso, Kuchen"
+    "keywords": "Specialty Coffee Hamburg, Café, Filterkaffee, Espresso"
   },
   "layout": {
-    "style": "clean_minimal",
-    "heroType": "centered_text",
-    "navStyle": "light_warm",
-    "servicesLayout": "grid_3col",
-    "testimonialsLayout": "light_background",
-    "footerStyle": "warm_minimal"
+    "style": "ultra_minimal",
+    "heroType": "centered_logo_only",
+    "navStyle": "minimal_text_only",
+    "servicesLayout": "none",
+    "testimonialsLayout": "none",
+    "footerStyle": "ultra_minimal"
   },
   "content": {
     "slogans": {
-      "de": ["Kaffee, der Geschichten erzählt", "Ihr dritter Ort", "Langsam. Bewusst. Gut."],
-      "en": ["Coffee that tells stories", "Your third place", "Slow. Mindful. Good."],
-      "ru": ["Кофе, который рассказывает истории", "Ваше третье место", "Медленно. Осознанно. Хорошо."]
+      "de": ["Gute Zeiten. Besserer Kaffee.", "Täglich frisch.", "Einfach gut."],
+      "en": ["Good Times. Better Coffee.", "Fresh daily.", "Simply good."],
+      "ru": ["Хорошие времена. Лучший кофе.", "Ежедневно свежий.", "Просто хорошо."]
     },
     "hero": {
       "de": {
-        "heading": "Kaffee, der Geschichten erzählt.",
-        "subheading": "Morgenrot ist mehr als ein Café. Es ist ein Ort zum Verweilen, Arbeiten und Genießen. Specialty Coffee aus direktem Handel, frisch geröstet, mit Sorgfalt zubereitet.",
+        "heading": "Gute Zeiten. Besserer Kaffee.",
+        "subheading": "Täglich Kaffee servieren.",
         "cta": "Uns besuchen",
-        "secondaryCta": "Kaffeekarte ansehen",
         "image": "/media/presets/coffee_shop/hero.jpg",
-        "imageAlt": "Gemütliches Café mit warmem Licht und Holzmöbeln"
+        "imageAlt": "Die Bewegung Specialty Coffee Hamburg"
       },
       "en": {
-        "heading": "Coffee that tells stories.",
-        "subheading": "Morgenrot is more than a café. It is a place to linger, work and enjoy. Specialty coffee from direct trade, freshly roasted, prepared with care.",
+        "heading": "Good Times. Better Coffee.",
+        "subheading": "Serving coffee everyday.",
         "cta": "Visit Us",
-        "secondaryCta": "View Coffee Menu",
         "image": "/media/presets/coffee_shop/hero.jpg",
-        "imageAlt": "Cosy café with warm light and wooden furniture"
+        "imageAlt": "Die Bewegung Specialty Coffee Hamburg"
       },
       "ru": {
-        "heading": "Кофе, который рассказывает истории.",
-        "subheading": "Morgenrot — это больше, чем кафе. Это место, где можно задержаться, поработать и насладиться. Specialty Coffee из прямой торговли, свежеобжаренный, приготовленный с заботой.",
+        "heading": "Хорошие времена. Лучший кофе.",
+        "subheading": "Кофе каждый день.",
         "cta": "Посетить нас",
-        "secondaryCta": "Меню кофе",
         "image": "/media/presets/coffee_shop/hero.jpg",
-        "imageAlt": "Уютное кафе с тёплым светом и деревянной мебелью"
+        "imageAlt": "Die Bewegung Specialty Coffee Hamburg"
       }
     },
-    "about": {
-      "de": {
-        "title": "Vom Ursprung bis zur Tasse",
-        "subtitle": "Seit 2018 in Hamburg-Eimsbüttel",
-        "text": "Morgenrot entstand aus einer einfachen Frage: Warum schmeckt Kaffee in manchen Cafés so viel besser? Die Antwort: Herkunft, Röstung und Zubereitung. Wir beziehen unsere Bohnen direkt von Kleinbauern in Äthiopien, Kolumbien und Guatemala — fair bezahlt, nachhaltig angebaut. Jede Charge wird in unserer Micro-Rösterei in Hamburg frisch geröstet.",
-        "image": "/media/presets/coffee_shop/about.jpg",
-        "imageAlt": "Barista bei der Kaffeezubereitung",
-        "stats": [
-          { "value": "6", "label": "Jahre Erfahrung" },
-          { "value": "12", "label": "Kaffee-Ursprünge" },
-          { "value": "100%", "label": "Direkter Handel" }
-        ]
+    "locations": [
+      {
+        "name": "Eimsbüttel",
+        "address": "Osterstraße 112, 20259 Hamburg",
+        "hours_de": "Mo–Fr: 07:30–18:00 · Sa–So: 09:00–17:00"
       },
-      "en": {
-        "title": "From Origin to Cup",
-        "subtitle": "Since 2018 in Hamburg-Eimsbüttel",
-        "text": "Morgenrot was born from a simple question: why does coffee taste so much better in some cafés? The answer: origin, roasting and preparation. We source our beans directly from small farmers in Ethiopia, Colombia and Guatemala — fairly paid, sustainably grown. Each batch is freshly roasted in our micro-roastery in Hamburg.",
-        "image": "/media/presets/coffee_shop/about.jpg",
-        "imageAlt": "Barista preparing coffee",
-        "stats": [
-          { "value": "6", "label": "Years of experience" },
-          { "value": "12", "label": "Coffee origins" },
-          { "value": "100%", "label": "Direct trade" }
-        ]
-      },
-      "ru": {
-        "title": "От происхождения до чашки",
-        "subtitle": "С 2018 года в Гамбург-Аймсбюттеле",
-        "text": "Morgenrot родился из простого вопроса: почему кофе в некоторых кафе вкуснее? Ответ: происхождение, обжарка и приготовление. Мы закупаем зёрна напрямую у мелких фермеров в Эфиопии, Колумбии и Гватемале — справедливая оплата, устойчивое выращивание. Каждая партия свежеобжаривается в нашей микро-обжарочной в Гамбурге.",
-        "image": "/media/presets/coffee_shop/about.jpg",
-        "imageAlt": "Бариста готовит кофе",
-        "stats": [
-          { "value": "6", "label": "Лет опыта" },
-          { "value": "12", "label": "Происхождений кофе" },
-          { "value": "100%", "label": "Прямая торговля" }
-        ]
+      {
+        "name": "Altona",
+        "address": "Ottenser Hauptstraße 55, 22765 Hamburg",
+        "hours_de": "Mo–Fr: 07:00–17:30 · Sa–So: 08:30–16:00"
       }
-    },
+    ],
     "menu": [
       {
-        "category_de": "Espresso-Getränke",
-        "category_en": "Espresso Drinks",
-        "category_ru": "Эспрессо-напитки",
+        "category_de": "Espresso",
+        "category_en": "Espresso",
+        "category_ru": "Эспрессо",
         "items": [
-          {
-            "name_de": "Espresso",
-            "name_en": "Espresso",
-            "name_ru": "Эспрессо",
-            "price": "2,80€",
-            "desc_de": "Doppelter Ristretto, 18g, 25ml. Intensiv, süßlich, mit langer Crema.",
-            "desc_en": "Double ristretto, 18g, 25ml. Intense, sweet, with long crema.",
-            "desc_ru": "Двойной ристретто, 18г, 25мл. Интенсивный, сладковатый, с долгой крема.",
-            "tags": ["Klassiker"]
-          },
-          {
-            "name_de": "Flat White",
-            "name_en": "Flat White",
-            "name_ru": "Флэт Уайт",
-            "price": "4,20€",
-            "desc_de": "Doppelter Ristretto mit 120ml Mikroschaum-Milch. Cremig, stark, ausgewogen.",
-            "desc_en": "Double ristretto with 120ml microfoam milk. Creamy, strong, balanced.",
-            "desc_ru": "Двойной ристретто со 120мл молочного микропены. Кремовый, крепкий, сбалансированный.",
-            "tags": ["Beliebt"]
-          },
-          {
-            "name_de": "Cappuccino",
-            "name_en": "Cappuccino",
-            "name_ru": "Капучино",
-            "price": "3,80€",
-            "desc_de": "Espresso, Milch, Milchschaum im klassischen Verhältnis 1:1:1.",
-            "desc_en": "Espresso, milk, milk foam in the classic 1:1:1 ratio.",
-            "desc_ru": "Эспрессо, молоко, молочная пена в классическом соотношении 1:1:1.",
-            "tags": []
-          }
+          { "name_de": "Espresso", "name_en": "Espresso", "name_ru": "Эспрессо", "price": "2,80€", "desc_de": "Doppelter Ristretto, 18g", "desc_en": "Double ristretto, 18g", "desc_ru": "Двойной ристретто, 18г", "tags": [] },
+          { "name_de": "Flat White", "name_en": "Flat White", "name_ru": "Флэт Уайт", "price": "4,20€", "desc_de": "Ristretto + 120ml Mikroschaum", "desc_en": "Ristretto + 120ml microfoam", "desc_ru": "Ристретто + 120мл микропены", "tags": ["Beliebt"] },
+          { "name_de": "Cappuccino", "name_en": "Cappuccino", "name_ru": "Капучино", "price": "3,80€", "desc_de": "1:1:1 — klassisch", "desc_en": "1:1:1 — classic", "desc_ru": "1:1:1 — классика", "tags": [] },
+          { "name_de": "Latte", "name_en": "Latte", "name_ru": "Латте", "price": "4,50€", "desc_de": "Espresso + 200ml Milch", "desc_en": "Espresso + 200ml milk", "desc_ru": "Эспрессо + 200мл молока", "tags": [] }
         ]
       },
       {
-        "category_de": "Filter & Pour Over",
-        "category_en": "Filter & Pour Over",
-        "category_ru": "Фильтр и пуровер",
+        "category_de": "Filter",
+        "category_en": "Filter",
+        "category_ru": "Фильтр",
         "items": [
-          {
-            "name_de": "V60 Pour Over",
-            "name_en": "V60 Pour Over",
-            "name_ru": "V60 Пуровер",
-            "price": "5,50€",
-            "desc_de": "Handgebrüht, 250ml. Täglich wechselnde Single Origin. Sauber, komplex, aromatisch.",
-            "desc_en": "Hand-brewed, 250ml. Daily changing single origin. Clean, complex, aromatic.",
-            "desc_ru": "Ручное заваривание, 250мл. Ежедневно меняющийся Single Origin. Чистый, сложный, ароматный.",
-            "tags": ["Empfehlung"]
-          },
-          {
-            "name_de": "Cold Brew",
-            "name_en": "Cold Brew",
-            "name_ru": "Колд Брю",
-            "price": "4,80€",
-            "desc_de": "18 Stunden kalt extrahiert. Sanft, süßlich, ohne Bitterkeit. Über Eis serviert.",
-            "desc_en": "Cold extracted for 18 hours. Gentle, sweet, without bitterness. Served over ice.",
-            "desc_ru": "18 часов холодной экстракции. Мягкий, сладковатый, без горечи. Подаётся со льдом.",
-            "tags": ["Saisonal"]
-          }
+          { "name_de": "V60 Pour Over", "name_en": "V60 Pour Over", "name_ru": "V60 Пуровер", "price": "5,50€", "desc_de": "Täglich wechselnde Single Origin", "desc_en": "Daily changing single origin", "desc_ru": "Ежедневно меняющийся Single Origin", "tags": ["Empfehlung"] },
+          { "name_de": "Cold Brew", "name_en": "Cold Brew", "name_ru": "Колд Брю", "price": "4,80€", "desc_de": "18h kalt extrahiert, über Eis", "desc_en": "18h cold extracted, over ice", "desc_ru": "18ч холодной экстракции, со льдом", "tags": [] }
         ]
       },
       {
-        "category_de": "Kuchen & Gebäck",
-        "category_en": "Cakes & Pastries",
-        "category_ru": "Торты и выпечка",
+        "category_de": "Gebäck",
+        "category_en": "Pastries",
+        "category_ru": "Выпечка",
         "items": [
-          {
-            "name_de": "Hausgemachter Bananenkuchen",
-            "name_en": "Homemade Banana Cake",
-            "name_ru": "Домашний банановый кекс",
-            "price": "4,50€",
-            "desc_de": "Täglich frisch gebacken. Mit Walnüssen und Zimt. Vegan möglich.",
-            "desc_en": "Freshly baked daily. With walnuts and cinnamon. Vegan option available.",
-            "desc_ru": "Свежеиспечённый ежедневно. С грецкими орехами и корицей. Возможен веганский вариант.",
-            "tags": ["Hausgemacht"]
-          },
-          {
-            "name_de": "Croissant",
-            "name_en": "Croissant",
-            "name_ru": "Круассан",
-            "price": "3,20€",
-            "desc_de": "Vom lokalen Bäcker, täglich frisch. Pur oder mit Butter und Marmelade.",
-            "desc_en": "From the local bakery, fresh daily. Plain or with butter and jam.",
-            "desc_ru": "От местного пекаря, свежий ежедневно. Чистый или с маслом и джемом.",
-            "tags": []
-          }
+          { "name_de": "Croissant", "name_en": "Croissant", "name_ru": "Круассан", "price": "3,20€", "desc_de": "Täglich frisch vom Bäcker", "desc_en": "Fresh daily from the bakery", "desc_ru": "Ежедневно свежий от пекаря", "tags": [] },
+          { "name_de": "Bananenkuchen", "name_en": "Banana Cake", "name_ru": "Банановый кекс", "price": "4,50€", "desc_de": "Hausgemacht, vegan möglich", "desc_en": "Homemade, vegan option available", "desc_ru": "Домашний, возможен веганский", "tags": ["Hausgemacht"] }
         ]
       }
     ],
@@ -235,32 +144,20 @@
       {
         "name": "Felix W.",
         "location_de": "Hamburg",
-        "text_de": "Der beste Kaffee in Hamburg, ohne Diskussion. Der V60 mit dem äthiopischen Yirgacheffe ist eine Offenbarung. Und die Atmosphäre — ich arbeite hier lieber als im Büro.",
-        "text_en": "The best coffee in Hamburg, without discussion. The V60 with the Ethiopian Yirgacheffe is a revelation. And the atmosphere — I prefer working here to the office.",
-        "text_ru": "Лучший кофе в Гамбурге, без обсуждений. V60 с эфиопским Йиргачеффе — это откровение. И атмосфера — я предпочитаю работать здесь, а не в офисе.",
+        "text_de": "Der beste Kaffee in Hamburg. Der V60 mit dem äthiopischen Yirgacheffe ist eine Offenbarung.",
+        "text_en": "The best coffee in Hamburg. The V60 with Ethiopian Yirgacheffe is a revelation.",
+        "text_ru": "Лучший кофе в Гамбурге. V60 с эфиопским Йиргачеффе — откровение.",
         "rating": 5,
-        "source": "Google",
-        "avatar": "/media/presets/coffee_shop/avatars/felix.jpg"
+        "source": "Google"
       },
       {
         "name": "Mia L.",
         "location_de": "Hamburg-Eimsbüttel",
-        "text_de": "Morgenrot ist mein Morgenritual. Jeden Tag ein Flat White und ein Stück Bananenkuchen. Das Team kennt meinen Namen und meine Bestellung — das ist Gastfreundschaft.",
-        "text_en": "Morgenrot is my morning ritual. Every day a flat white and a slice of banana cake. The team knows my name and my order — that is hospitality.",
-        "text_ru": "Morgenrot — мой утренний ритуал. Каждый день флэт уайт и кусочек бананового кекса. Команда знает моё имя и заказ — это гостеприимство.",
+        "text_de": "Morgenritual seit zwei Jahren. Das Team kennt meinen Namen und meine Bestellung.",
+        "text_en": "Morning ritual for two years. The team knows my name and my order.",
+        "text_ru": "Утренний ритуал два года. Команда знает моё имя и заказ.",
         "rating": 5,
-        "source": "Google",
-        "avatar": "/media/presets/coffee_shop/avatars/mia.jpg"
-      },
-      {
-        "name": "Jonas K.",
-        "location_de": "Hamburg",
-        "text_de": "Als Kaffee-Nerd bin ich anspruchsvoll. Morgenrot erfüllt alle Erwartungen: saubere Extraktion, frische Röstung, kompetente Baristas. Und der Cold Brew im Sommer ist unschlagbar.",
-        "text_en": "As a coffee nerd I am demanding. Morgenrot meets all expectations: clean extraction, fresh roasting, competent baristas. And the cold brew in summer is unbeatable.",
-        "text_ru": "Как кофейный гик я требователен. Morgenrot соответствует всем ожиданиям: чистая экстракция, свежая обжарка, компетентные бариста. И колд брю летом непревзойдён.",
-        "rating": 5,
-        "source": "Instagram",
-        "avatar": "/media/presets/coffee_shop/avatars/jonas.jpg"
+        "source": "Google"
       }
     ],
     "faq": [
@@ -268,48 +165,40 @@
         "q_de": "Woher kommen Ihre Kaffeebohnen?",
         "q_en": "Where do your coffee beans come from?",
         "q_ru": "Откуда ваши кофейные зёрна?",
-        "a_de": "Wir beziehen direkt von Kleinbauern in Äthiopien, Kolumbien, Guatemala und Kenia. Alle Partnerschaften sind langfristig und fair bezahlt.",
-        "a_en": "We source directly from small farmers in Ethiopia, Colombia, Guatemala and Kenya. All partnerships are long-term and fairly paid.",
-        "a_ru": "Мы закупаем напрямую у мелких фермеров в Эфиопии, Колумбии, Гватемале и Кении. Все партнёрства долгосрочные и справедливо оплачиваемые."
+        "a_de": "Direkt von Kleinbauern in Äthiopien, Kolumbien und Guatemala. Alle Partnerschaften sind langfristig und fair bezahlt.",
+        "a_en": "Directly from small farmers in Ethiopia, Colombia and Guatemala. All partnerships are long-term and fairly paid.",
+        "a_ru": "Напрямую от мелких фермеров в Эфиопии, Колумбии и Гватемале."
       },
       {
         "q_de": "Gibt es vegane Optionen?",
         "q_en": "Are there vegan options?",
         "q_ru": "Есть ли веганские варианты?",
-        "a_de": "Ja, alle Espresso-Getränke sind auch mit Hafer-, Soja- oder Mandelmilch erhältlich. Unser Bananenkuchen ist auf Wunsch vegan.",
-        "a_en": "Yes, all espresso drinks are also available with oat, soy or almond milk. Our banana cake is vegan on request.",
-        "a_ru": "Да, все эспрессо-напитки доступны с овсяным, соевым или миндальным молоком. Наш банановый кекс веганский по запросу."
-      },
-      {
-        "q_de": "Kann ich hier arbeiten?",
-        "q_en": "Can I work here?",
-        "q_ru": "Можно ли здесь работать?",
-        "a_de": "Absolut. Wir haben schnelles WLAN, viele Steckdosen und ruhige Ecken. Wir freuen uns über Gäste, die länger bleiben.",
-        "a_en": "Absolutely. We have fast WiFi, many sockets and quiet corners. We welcome guests who stay longer.",
-        "a_ru": "Абсолютно. У нас быстрый Wi-Fi, много розеток и тихие уголки. Мы рады гостям, которые остаются подольше."
+        "a_de": "Ja — Hafer-, Soja- und Mandelmilch für alle Getränke. Bananenkuchen auf Wunsch vegan.",
+        "a_en": "Yes — oat, soy and almond milk for all drinks. Banana cake vegan on request.",
+        "a_ru": "Да — овсяное, соевое и миндальное молоко. Банановый кекс веганский по запросу."
       }
     ],
     "contact": {
-      "address": "Osterstraße 112, 20259 Hamburg-Eimsbüttel",
+      "address": "Osterstraße 112, 20259 Hamburg",
       "phone": "+49 40 5566 7788",
-      "email": "hallo@morgenrot-coffee.de",
-      "hours_de": "Mo–Fr: 07:30–18:00 Uhr · Sa–So: 09:00–17:00 Uhr",
+      "email": "hallo@diebewegung-coffee.de",
+      "hours_de": "Mo–Fr: 07:30–18:00 · Sa–So: 09:00–17:00",
       "hours_en": "Mon–Fri: 7:30 AM–6:00 PM · Sat–Sun: 9:00 AM–5:00 PM",
       "hours_ru": "Пн–Пт: 07:30–18:00 · Сб–Вс: 09:00–17:00"
     },
     "legal": {
-      "allergenNote_de": "Alle Allergene auf Anfrage. Unsere Produkte können Spuren von Gluten, Milch, Nüssen und Ei enthalten. (V) = Vegan möglich.",
-      "privacyNote_de": "Ihre Daten werden gemäß DSGVO verarbeitet."
+      "allergenNote_de": "Allergene auf Anfrage. Produkte können Spuren von Gluten, Milch, Nüssen enthalten.",
+      "privacyNote_de": "Daten werden gemäß DSGVO verarbeitet."
     }
   },
   "logo": {
-    "text": "Morgenrot",
+    "text": "Die Bewegung",
     "tagline": "SPECIALTY COFFEE",
     "font": "Libre Baskerville",
     "style": "text_serif"
   },
   "social": {
-    "instagram": "https://instagram.com/morgenrot.coffee",
-    "facebook": "https://facebook.com/morgenrotcoffee"
+    "instagram": "https://instagram.com/diebewegung.coffee",
+    "facebook": "https://facebook.com/diebewegungcoffee"
   }
 }

@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Goldkruste | Handwerksbäckerei",
-    "description": "Traditionelle Handwerksbäckerei in Köln. Sauerteigbrote, Croissants und Torten aus regionalen Zutaten — täglich frisch gebacken seit 1987.",
+    "description": "Wir machen Köln süßer! Seit 1987 backen wir Brote, Torten und Gebäck für ganz Köln. Maßgefertigte Torten für jeden Anlass.",
     "favicon": "/media/presets/bakery/favicon.ico",
     "language": "de",
     "availableLanguages": ["de", "en", "ru"]
@@ -58,82 +58,107 @@
     "ogImage": "/media/presets/bakery/og-default.jpg",
     "twitterCard": "summary_large_image",
     "googleAnalyticsId": "",
-    "keywords": "Bäckerei Köln, Sauerteigbrot, Handwerk, Torten, frisch gebacken, regional"
+    "keywords": "Bäckerei Köln, Maßgefertigte Torten, Sauerteigbrot, Handwerk, frisch gebacken"
   },
   "layout": {
-    "style": "clean_minimal",
-    "heroType": "centered_warm",
+    "style": "warm_minimal",
+    "heroType": "fullscreen_warm",
     "navStyle": "light_warm",
+    "customCakesSection": true,
+    "whatsNewSection": true,
     "servicesLayout": "grid_3col",
     "testimonialsLayout": "light_background",
     "footerStyle": "warm_minimal"
   },
   "content": {
     "slogans": {
-      "de": ["Täglich frisch. Immer mit Liebe.", "Handwerk, das man schmeckt", "Seit 1987 für Köln"],
-      "en": ["Fresh daily. Always with love.", "Craftsmanship you can taste", "Since 1987 for Cologne"],
-      "ru": ["Ежедневно свежее. Всегда с любовью.", "Мастерство, которое чувствуется", "С 1987 года для Кёльна"]
+      "de": ["Wir machen Köln süßer!", "Täglich frisch. Immer mit Liebe.", "Handwerk, das man schmeckt."],
+      "en": ["We make Cologne sweeter!", "Fresh daily. Always with love.", "Craftsmanship you can taste."],
+      "ru": ["Мы делаем Кёльн слаще!", "Ежедневно свежее. Всегда с любовью.", "Мастерство, которое чувствуется."]
     },
     "hero": {
       "de": {
-        "heading": "Täglich frisch. Immer mit Liebe.",
-        "subheading": "Goldkruste steht seit 1987 für echtes Bäckerhandwerk. Sauerteigbrote, die 48 Stunden reifen. Croissants, die um 4 Uhr morgens in den Ofen kommen. Torten, die Geschichten erzählen.",
+        "heading": "Wir machen Köln süßer!",
+        "subheading": "Seit November 1987 backt und kreiert Goldkruste köstliche Brote, Torten und Gebäck für ganz Köln. In unseren Filialen in Ehrenfeld, Nippes und Sülz.",
         "cta": "Sortiment entdecken",
-        "secondaryCta": "Uns besuchen",
+        "secondaryCta": "Torte bestellen",
         "image": "/media/presets/bakery/hero.jpg",
-        "imageAlt": "Frisch gebackene Brote und Croissants in der Goldkruste Bäckerei"
+        "imageAlt": "Frisch gebackene Brote und Torten bei Goldkruste"
       },
       "en": {
-        "heading": "Fresh daily. Always with love.",
-        "subheading": "Goldkruste has stood for real baking craftsmanship since 1987. Sourdough breads that mature for 48 hours. Croissants that go into the oven at 4 in the morning. Cakes that tell stories.",
+        "heading": "We make Cologne sweeter!",
+        "subheading": "Since November 1987, Goldkruste has been baking and crafting delicious breads, cakes and pastries for all of Cologne. At our locations in Ehrenfeld, Nippes and Sülz.",
         "cta": "Discover Our Range",
-        "secondaryCta": "Visit Us",
+        "secondaryCta": "Order a Cake",
         "image": "/media/presets/bakery/hero.jpg",
-        "imageAlt": "Freshly baked breads and croissants at Goldkruste Bakery"
+        "imageAlt": "Freshly baked breads and cakes at Goldkruste"
       },
       "ru": {
-        "heading": "Ежедневно свежее. Всегда с любовью.",
-        "subheading": "Goldkruste с 1987 года олицетворяет настоящее хлебопекарное мастерство. Хлеб на закваске, который зреет 48 часов. Круассаны, которые отправляются в печь в 4 утра. Торты, которые рассказывают истории.",
+        "heading": "Мы делаем Кёльн слаще!",
+        "subheading": "С ноября 1987 года Goldkruste выпекает вкусный хлеб, торты и выпечку для всего Кёльна. В наших филиалах в Эренфельде, Ниппесе и Зюльце.",
         "cta": "Наш ассортимент",
-        "secondaryCta": "Посетить нас",
+        "secondaryCta": "Заказать торт",
         "image": "/media/presets/bakery/hero.jpg",
-        "imageAlt": "Свежеиспечённый хлеб и круассаны в пекарне Goldkruste"
+        "imageAlt": "Свежеиспечённый хлеб и торты в Goldkruste"
       }
+    },
+    "customCakes": {
+      "title_de": "MASSGEFERTIGTE TORTEN FÜR JEDEN ANLASS",
+      "title_en": "CUSTOM CAKES FOR ANY OCCASION",
+      "title_ru": "ТОРТЫ НА ЗАКАЗ ДЛЯ ЛЮБОГО СЛУЧАЯ",
+      "desc_de": "Brauchst du eine Maßtorte? Egal für welchen Anlass — wir haben etwas für dich! Wähle aus einer Vielzahl von Designs oder lass uns gemeinsam deine eigene kreieren.",
+      "desc_en": "Need a custom cake? No matter the occasion, we have something for you! Choose from a wide range of designs or let us help you create one of your own.",
+      "desc_ru": "Нужен торт на заказ? Для любого случая у нас есть что-то для тебя! Выбери из широкого ассортимента дизайнов или позволь нам создать твой собственный.",
+      "cta_de": "Torte anfragen",
+      "cta_en": "Request a Cake",
+      "cta_ru": "Заказать торт",
+      "image": "/media/presets/bakery/custom-cake.jpg"
+    },
+    "whatsNew": {
+      "title_de": "Was backen wir gerade?",
+      "title_en": "What's Baking?",
+      "title_ru": "Что сейчас в печи?",
+      "desc_de": "Bei Goldkruste bieten wir monatliche Backspezialitäten, die nur für begrenzte Zeit erhältlich sind. Schau in unsere Filialen, was täglich heiß und frisch aus dem Ofen kommt.",
+      "desc_en": "At Goldkruste, we offer monthly bakery specials that are only available for a limited time. Check out our locations to see what is hot and fresh daily.",
+      "desc_ru": "В Goldkruste мы предлагаем ежемесячные специальные предложения, доступные только ограниченное время. Загляни в наши филиалы, чтобы узнать, что сегодня горячее и свежее.",
+      "cta_de": "Aktuelle Spezialitäten",
+      "cta_en": "Current Specials",
+      "cta_ru": "Текущие специальные предложения"
     },
     "about": {
       "de": {
         "title": "Drei Generationen Handwerk",
         "subtitle": "Seit 1987 in Köln-Ehrenfeld",
-        "text": "Was 1987 als kleine Backstube von Heinrich Bauer begann, ist heute eine der bekanntesten Handwerksbäckereien Kölns. Sein Sohn Thomas und Enkelin Lisa führen das Erbe weiter — mit denselben Rezepten, denselben langen Reifezeiten und derselben Überzeugung: Gutes Brot braucht Zeit. Wir verwenden ausschließlich regionale Zutaten aus NRW und mahlen unser Mehl selbst.",
+        "text": "Was 1987 als kleine Backstube von Heinrich Bauer begann, ist heute eine der bekanntesten Handwerksbäckereien Kölns. Sein Sohn Thomas und Enkelin Lisa führen das Erbe weiter — mit denselben Rezepten, denselben langen Reifezeiten und derselben Überzeugung: Gutes Brot braucht Zeit.",
         "image": "/media/presets/bakery/about.jpg",
         "imageAlt": "Bäcker bei der Arbeit in der Goldkruste Backstube",
         "stats": [
           { "value": "37", "label": "Jahre Tradition" },
-          { "value": "3", "label": "Generationen" },
+          { "value": "3", "label": "Filialen in Köln" },
           { "value": "40+", "label": "Brotsorten" }
         ]
       },
       "en": {
         "title": "Three Generations of Craft",
         "subtitle": "Since 1987 in Cologne-Ehrenfeld",
-        "text": "What began in 1987 as a small bakery by Heinrich Bauer is today one of Cologne's best-known artisan bakeries. His son Thomas and granddaughter Lisa carry on the legacy — with the same recipes, the same long maturation times and the same conviction: good bread needs time. We use exclusively regional ingredients from NRW and mill our own flour.",
+        "text": "What began in 1987 as a small bakery by Heinrich Bauer is today one of Cologne's best-known artisan bakeries. His son Thomas and granddaughter Lisa carry on the legacy — with the same recipes, the same long maturation times and the same conviction: good bread needs time.",
         "image": "/media/presets/bakery/about.jpg",
         "imageAlt": "Baker at work in the Goldkruste bakery",
         "stats": [
           { "value": "37", "label": "Years of tradition" },
-          { "value": "3", "label": "Generations" },
+          { "value": "3", "label": "Locations in Cologne" },
           { "value": "40+", "label": "Bread varieties" }
         ]
       },
       "ru": {
         "title": "Три поколения мастерства",
         "subtitle": "С 1987 года в Кёльн-Эренфельде",
-        "text": "То, что в 1987 году началось как небольшая пекарня Генриха Бауэра, сегодня является одной из самых известных ремесленных пекарен Кёльна. Его сын Томас и внучка Лиза продолжают наследие — с теми же рецептами, теми же долгими сроками созревания и тем же убеждением: хороший хлеб требует времени.",
+        "text": "То, что в 1987 году началось как небольшая пекарня Генриха Бауэра, сегодня является одной из самых известных ремесленных пекарен Кёльна. Его сын Томас и внучка Лиза продолжают наследие.",
         "image": "/media/presets/bakery/about.jpg",
         "imageAlt": "Пекарь за работой в пекарне Goldkruste",
         "stats": [
           { "value": "37", "label": "Лет традиции" },
-          { "value": "3", "label": "Поколения" },
+          { "value": "3", "label": "Филиала в Кёльне" },
           { "value": "40+", "label": "Сортов хлеба" }
         ]
       }
@@ -144,36 +169,8 @@
         "category_en": "Breads",
         "category_ru": "Хлеб",
         "items": [
-          {
-            "name_de": "Goldkruste Sauerteig",
-            "name_en": "Goldkruste Sourdough",
-            "name_ru": "Хлеб на закваске Goldkruste",
-            "price": "7,80€",
-            "desc_de": "48 Stunden Reifezeit. Roggen-Weizen-Mischung, knusprige Kruste, saftige Krume. Unser Signature-Brot.",
-            "desc_en": "48 hours maturation. Rye-wheat blend, crispy crust, moist crumb. Our signature bread.",
-            "desc_ru": "48 часов созревания. Ржано-пшеничная смесь, хрустящая корочка, сочный мякиш. Наш фирменный хлеб.",
-            "tags": ["Signature", "Bestseller"]
-          },
-          {
-            "name_de": "Dinkelvollkorn",
-            "name_en": "Spelt Wholegrain",
-            "name_ru": "Цельнозерновой спельтовый",
-            "price": "6,50€",
-            "desc_de": "100% Dinkelmehl, selbst gemahlen. Reich an Ballaststoffen, nussiger Geschmack.",
-            "desc_en": "100% spelt flour, self-milled. Rich in fibre, nutty flavour.",
-            "desc_ru": "100% спельтовая мука, собственного помола. Богат клетчаткой, ореховый вкус.",
-            "tags": ["Bio"]
-          },
-          {
-            "name_de": "Roggenmischbrot",
-            "name_en": "Rye Mixed Bread",
-            "name_ru": "Ржаной смешанный хлеб",
-            "price": "5,90€",
-            "desc_de": "70% Roggen, 30% Weizen. Kräftig, aromatisch, lange haltbar.",
-            "desc_en": "70% rye, 30% wheat. Robust, aromatic, long-lasting.",
-            "desc_ru": "70% рожь, 30% пшеница. Насыщенный, ароматный, долго хранится.",
-            "tags": []
-          }
+          { "name_de": "Goldkruste Sauerteig", "name_en": "Goldkruste Sourdough", "name_ru": "Хлеб на закваске", "price": "7,80€", "desc_de": "48h Reifezeit. Unser Signature-Brot.", "desc_en": "48h maturation. Our signature bread.", "desc_ru": "48ч созревания. Наш фирменный хлеб.", "tags": ["Signature", "Bestseller"] },
+          { "name_de": "Dinkelvollkorn", "name_en": "Spelt Wholegrain", "name_ru": "Цельнозерновой спельтовый", "price": "6,50€", "desc_de": "100% Dinkelmehl, selbst gemahlen.", "desc_en": "100% spelt flour, self-milled.", "desc_ru": "100% спельтовая мука, собственного помола.", "tags": ["Bio"] }
         ]
       },
       {
@@ -181,53 +178,17 @@
         "category_en": "Pastries",
         "category_ru": "Выпечка",
         "items": [
-          {
-            "name_de": "Butter-Croissant",
-            "name_en": "Butter Croissant",
-            "name_ru": "Масляный круассан",
-            "price": "2,80€",
-            "desc_de": "72 Stunden Teigführung, echte Normandie-Butter, 27 Schichten. Täglich ab 7 Uhr.",
-            "desc_en": "72 hours dough preparation, real Normandy butter, 27 layers. Daily from 7 AM.",
-            "desc_ru": "72 часа ведения теста, настоящее нормандское масло, 27 слоёв. Ежедневно с 7 утра.",
-            "tags": ["Bestseller"]
-          },
-          {
-            "name_de": "Zimtschnecke",
-            "name_en": "Cinnamon Roll",
-            "name_ru": "Булочка с корицей",
-            "price": "3,20€",
-            "desc_de": "Hefeteig, Ceylon-Zimt, Frischkäse-Glasur. Warm serviert, solange der Vorrat reicht.",
-            "desc_en": "Yeast dough, Ceylon cinnamon, cream cheese glaze. Served warm while stocks last.",
-            "desc_ru": "Дрожжевое тесто, цейлонская корица, глазурь из сливочного сыра. Подаётся тёплым, пока есть в наличии.",
-            "tags": ["Warm", "Beliebt"]
-          }
+          { "name_de": "Butter-Croissant", "name_en": "Butter Croissant", "name_ru": "Масляный круассан", "price": "2,80€", "desc_de": "72h Teigführung, Normandie-Butter, 27 Schichten.", "desc_en": "72h dough, Normandy butter, 27 layers.", "desc_ru": "72ч теста, нормандское масло, 27 слоёв.", "tags": ["Bestseller"] },
+          { "name_de": "Zimtschnecke", "name_en": "Cinnamon Roll", "name_ru": "Булочка с корицей", "price": "3,20€", "desc_de": "Ceylon-Zimt, Frischkäse-Glasur. Warm serviert.", "desc_en": "Ceylon cinnamon, cream cheese glaze. Served warm.", "desc_ru": "Цейлонская корица, глазурь из сливочного сыра. Тёплая.", "tags": ["Warm"] }
         ]
       },
       {
         "category_de": "Torten & Kuchen",
-        "category_en": "Cakes & Gateaux",
-        "category_ru": "Торты и пирожные",
+        "category_en": "Cakes",
+        "category_ru": "Торты",
         "items": [
-          {
-            "name_de": "Schwarzwälder Kirschtorte",
-            "name_en": "Black Forest Gateau",
-            "name_ru": "Торт Шварцвальд",
-            "price": "4,80€/Stück",
-            "desc_de": "Original Rezept, Kirschwasser aus dem Schwarzwald, frische Sahne. Stück oder ganze Torte (38€).",
-            "desc_en": "Original recipe, kirsch from the Black Forest, fresh cream. Slice or whole cake (€38).",
-            "desc_ru": "Оригинальный рецепт, кирш из Шварцвальда, свежие сливки. Кусочек или целый торт (38€).",
-            "tags": ["Klassiker"]
-          },
-          {
-            "name_de": "Apfelkuchen",
-            "name_en": "Apple Cake",
-            "name_ru": "Яблочный пирог",
-            "price": "3,50€/Stück",
-            "desc_de": "Äpfel aus dem Bergischen Land, Mürbeteig, Zimtstreusel. Omas Rezept.",
-            "desc_en": "Apples from the Bergisches Land, shortcrust pastry, cinnamon crumble. Grandma's recipe.",
-            "desc_ru": "Яблоки из Бергишес-Ланда, песочное тесто, коричная крошка. Бабушкин рецепт.",
-            "tags": ["Hausgemacht"]
-          }
+          { "name_de": "Schwarzwälder Kirschtorte", "name_en": "Black Forest Gateau", "name_ru": "Торт Шварцвальд", "price": "4,80€/Stück", "desc_de": "Original Rezept. Ganze Torte: 38€.", "desc_en": "Original recipe. Whole cake: €38.", "desc_ru": "Оригинальный рецепт. Целый торт: 38€.", "tags": ["Klassiker"] },
+          { "name_de": "Apfelkuchen", "name_en": "Apple Cake", "name_ru": "Яблочный пирог", "price": "3,50€/Stück", "desc_de": "Äpfel aus dem Bergischen Land. Omas Rezept.", "desc_en": "Apples from Bergisches Land. Grandma's recipe.", "desc_ru": "Яблоки из Бергишес-Ланда. Бабушкин рецепт.", "tags": ["Hausgemacht"] }
         ]
       }
     ],
@@ -235,32 +196,20 @@
       {
         "name": "Petra H.",
         "location_de": "Köln-Ehrenfeld",
-        "text_de": "Ich kaufe hier seit 20 Jahren mein Brot. Das Sauerteigbrot ist das Beste, was ich je gegessen habe — und ich habe viel probiert. Wenn Goldkruste zu hat, ist der Sonntag ruiniert.",
-        "text_en": "I have been buying my bread here for 20 years. The sourdough bread is the best I have ever eaten — and I have tried a lot. When Goldkruste is closed, Sunday is ruined.",
-        "text_ru": "Я покупаю здесь хлеб уже 20 лет. Хлеб на закваске — лучший, что я когда-либо ела — а я много пробовала. Когда Goldkruste закрыта, воскресенье испорчено.",
+        "text_de": "Ich kaufe hier seit 20 Jahren mein Brot. Das Sauerteigbrot ist das Beste, was ich je gegessen habe. Wenn Goldkruste zu hat, ist der Sonntag ruiniert.",
+        "text_en": "I have been buying my bread here for 20 years. The sourdough is the best I have ever eaten. When Goldkruste is closed, Sunday is ruined.",
+        "text_ru": "Покупаю здесь хлеб 20 лет. Хлеб на закваске — лучший, что я ела. Когда Goldkruste закрыта, воскресенье испорчено.",
         "rating": 5,
-        "source": "Google",
-        "avatar": "/media/presets/bakery/avatars/petra.jpg"
-      },
-      {
-        "name": "Markus T.",
-        "location_de": "Köln",
-        "text_de": "Die Croissants sind auf Pariser Niveau — das sage ich als jemand, der regelmäßig in Frankreich ist. 72 Stunden Teigführung merkt man wirklich. Jeden Samstag mein Highlight.",
-        "text_en": "The croissants are at Parisian level — I say this as someone who is regularly in France. You can really tell the 72-hour dough preparation. My highlight every Saturday.",
-        "text_ru": "Круассаны на парижском уровне — говорю это как человек, который регулярно бывает во Франции. 72 часа ведения теста действительно чувствуются. Мой субботний ритуал.",
-        "rating": 5,
-        "source": "Google",
-        "avatar": "/media/presets/bakery/avatars/markus.jpg"
+        "source": "Google"
       },
       {
         "name": "Familie Schulz",
         "location_de": "Köln",
-        "text_de": "Die Schwarzwälder Kirschtorte für unsere Hochzeit war ein Traum. Lisa hat sich so viel Zeit genommen, alles zu besprechen. Das Ergebnis hat alle Gäste begeistert.",
-        "text_en": "The Black Forest gateau for our wedding was a dream. Lisa took so much time to discuss everything. The result delighted all guests.",
-        "text_ru": "Торт Шварцвальд для нашей свадьбы был мечтой. Лиза уделила столько времени обсуждению всего. Результат восхитил всех гостей.",
+        "text_de": "Die Schwarzwälder Kirschtorte für unsere Hochzeit war ein Traum. Lisa hat sich so viel Zeit genommen. Das Ergebnis hat alle Gäste begeistert.",
+        "text_en": "The Black Forest gateau for our wedding was a dream. Lisa took so much time. The result delighted all guests.",
+        "text_ru": "Торт Шварцвальд для нашей свадьбы был мечтой. Лиза уделила столько времени. Результат восхитил всех гостей.",
         "rating": 5,
-        "source": "Google",
-        "avatar": "/media/presets/bakery/avatars/schulz.jpg"
+        "source": "Google"
       }
     ],
     "faq": [
@@ -268,38 +217,30 @@
         "q_de": "Kann ich Torten vorbestellen?",
         "q_en": "Can I pre-order cakes?",
         "q_ru": "Можно ли заказать торты заранее?",
-        "a_de": "Ja, Torten und größere Bestellungen bitte mindestens 3 Tage im Voraus per Telefon oder E-Mail bestellen.",
-        "a_en": "Yes, please order cakes and larger orders at least 3 days in advance by phone or email.",
-        "a_ru": "Да, торты и крупные заказы просим оформлять минимум за 3 дня по телефону или электронной почте."
-      },
-      {
-        "q_de": "Haben Sie glutenfreie Produkte?",
-        "q_en": "Do you have gluten-free products?",
-        "q_ru": "Есть ли безглютеновые продукты?",
-        "a_de": "Wir bieten freitags und samstags glutenfreies Sauerteigbrot an. Bitte vorher anrufen, da die Menge begrenzt ist.",
-        "a_en": "We offer gluten-free sourdough bread on Fridays and Saturdays. Please call ahead as quantities are limited.",
-        "a_ru": "Мы предлагаем безглютеновый хлеб на закваске по пятницам и субботам. Пожалуйста, позвоните заранее, так как количество ограничено."
+        "a_de": "Ja, bitte mindestens 3 Tage im Voraus per Telefon oder E-Mail bestellen.",
+        "a_en": "Yes, please order at least 3 days in advance by phone or email.",
+        "a_ru": "Да, просим оформлять минимум за 3 дня по телефону или электронной почте."
       },
       {
         "q_de": "Wann kommen die frischen Brote?",
         "q_en": "When does the fresh bread arrive?",
         "q_ru": "Когда поступает свежий хлеб?",
-        "a_de": "Brote sind ab 7:00 Uhr frisch. Croissants und Feingebäck ab 7:30 Uhr. Wir backen täglich in mehreren Schüben.",
-        "a_en": "Breads are fresh from 7:00 AM. Croissants and pastries from 7:30 AM. We bake daily in several batches.",
-        "a_ru": "Хлеб свежий с 7:00. Круассаны и выпечка с 7:30. Мы выпекаем ежедневно несколькими партиями."
+        "a_de": "Brote ab 7:00 Uhr, Croissants ab 7:30 Uhr. Täglich mehrere Schübe.",
+        "a_en": "Breads from 7:00 AM, croissants from 7:30 AM. Several batches daily.",
+        "a_ru": "Хлеб с 7:00, круассаны с 7:30. Несколько партий ежедневно."
       }
     ],
     "contact": {
       "address": "Venloer Straße 234, 50823 Köln-Ehrenfeld",
       "phone": "+49 221 5544 3322",
       "email": "bestellung@goldkruste-koeln.de",
-      "hours_de": "Mo–Fr: 07:00–18:30 Uhr · Sa: 07:00–15:00 Uhr · So: 08:00–13:00 Uhr",
+      "hours_de": "Mo–Fr: 07:00–18:30 · Sa: 07:00–15:00 · So: 08:00–13:00",
       "hours_en": "Mon–Fri: 7:00 AM–6:30 PM · Sat: 7:00 AM–3:00 PM · Sun: 8:00 AM–1:00 PM",
       "hours_ru": "Пн–Пт: 07:00–18:30 · Сб: 07:00–15:00 · Вс: 08:00–13:00"
     },
     "legal": {
-      "allergenNote_de": "Alle Allergene auf Anfrage. Unsere Produkte enthalten oder können Spuren enthalten von: Gluten, Milch, Ei, Nüssen, Sesam. (Bio) = aus kontrolliert biologischem Anbau.",
-      "priceNote_de": "Alle Preise inkl. MwSt. (7% auf Lebensmittel). Preise können saisonal variieren."
+      "allergenNote_de": "Alle Allergene auf Anfrage. Produkte können Spuren von Gluten, Milch, Ei, Nüssen, Sesam enthalten. MwSt. 7% auf Lebensmittel.",
+      "priceNote_de": "Alle Preise inkl. MwSt. (7% auf Lebensmittel)."
     }
   },
   "logo": {

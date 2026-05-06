@@ -62,9 +62,11 @@
   },
   "layout": {
     "style": "clean_minimal",
-    "heroType": "fullscreen_overlay",
+    "heroType": "fullscreen_property_slider",
     "navStyle": "light_minimal",
+    "lifestyleCollections": true,
     "servicesLayout": "grid_3col",
+    "editorialSection": true,
     "testimonialsLayout": "light_background",
     "footerStyle": "professional_minimal"
   },
@@ -76,30 +78,38 @@
     },
     "hero": {
       "de": {
-        "heading": "Ihr Zuhause. Unsere Leidenschaft.",
-        "subheading": "Meridian Immobilien vermittelt seit 2003 exklusive Wohn- und Gewerbeimmobilien in München. Persönliche Beratung, diskrete Abwicklung, nachhaltige Ergebnisse.",
-        "cta": "Kostenlose Bewertung",
-        "secondaryCta": "Aktuelle Objekte",
+        "heading": "Die Kunst, schön zu leben.",
+        "subheading": "Meridian Immobilien präsentiert jede Woche eine kuratierte Auswahl exklusiver Immobilien aus München und Umgebung. Entdecken Sie außergewöhnliche Objekte und die Kunst des schönen Lebens.",
+        "cta": "Aktuelle Objekte",
+        "secondaryCta": "Kostenlose Bewertung",
         "image": "/media/presets/real_estate/hero.jpg",
         "imageAlt": "Exklusive Immobilie in München"
       },
       "en": {
-        "heading": "Your home. Our passion.",
-        "subheading": "Meridian Immobilien has been brokering exclusive residential and commercial properties in Munich since 2003. Personal advice, discreet handling, sustainable results.",
-        "cta": "Free Valuation",
-        "secondaryCta": "Current Properties",
+        "heading": "The Art of Living Beautifully.",
+        "subheading": "Meridian Immobilien presents a curated selection of exclusive properties from Munich and surroundings every week. Discover exceptional properties and the art of beautiful living.",
+        "cta": "Current Properties",
+        "secondaryCta": "Free Valuation",
         "image": "/media/presets/real_estate/hero.jpg",
         "imageAlt": "Exclusive property in Munich"
       },
       "ru": {
-        "heading": "Ваш дом. Наша страсть.",
-        "subheading": "Meridian Immobilien с 2003 года занимается посредничеством в сфере эксклюзивной жилой и коммерческой недвижимости в Мюнхене. Личная консультация, дискретное ведение, устойчивые результаты.",
-        "cta": "Бесплатная оценка",
-        "secondaryCta": "Актуальные объекты",
+        "heading": "Искусство красиво жить.",
+        "subheading": "Meridian Immobilien еженедельно представляет кураторскую подборку эксклюзивной недвижимости Мюнхена и окрестностей. Откройте для себя исключительные объекты и искусство красивой жизни.",
+        "cta": "Актуальные объекты",
+        "secondaryCta": "Бесплатная оценка",
         "image": "/media/presets/real_estate/hero.jpg",
         "imageAlt": "Эксклюзивная недвижимость в Мюнхене"
       }
     },
+    "lifestyleCollections": [
+      { "id": "waterfront", "label_de": "Wasserlagen", "label_en": "Waterfront", "label_ru": "У воды" },
+      { "id": "penthouse", "label_de": "Penthouse", "label_en": "Penthouse", "label_ru": "Пентхаус" },
+      { "id": "historic", "label_de": "Historisch", "label_en": "Historic", "label_ru": "Исторические" },
+      { "id": "garden", "label_de": "Mit Garten", "label_en": "With Garden", "label_ru": "С садом" },
+      { "id": "new_build", "label_de": "Neubau", "label_en": "New Build", "label_ru": "Новостройки" },
+      { "id": "investment", "label_de": "Kapitalanlage", "label_en": "Investment", "label_ru": "Инвестиции" }
+    ],
     "about": {
       "de": {
         "title": "Vertrauen seit 2003",

@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Atma Yoga | Studio & Retreats",
-    "description": "Yoga-Studio in Stuttgart. Hatha, Vinyasa, Yin Yoga und Meditation für alle Levels. Kleine Gruppen, erfahrene Lehrer, authentische Praxis.",
+    "title": "Kraftwerk Pilates | Online & Studio",
+    "description": "Dein Körper ist ein Kraftwerk. Lass uns den Schalter umlegen. Online-Pilates für weniger als ein Starbucks. 200+ Kurse. Für jedes Level.",
     "favicon": "/media/presets/yoga_studio/favicon.ico",
     "language": "de",
     "availableLanguages": ["de", "en", "ru"]
@@ -39,13 +39,13 @@
       "horizontalPaddingMobile": "20px",
       "horizontalPaddingTablet": "48px",
       "horizontalPaddingDesktop": "80px",
-      "borderRadius": "16",
-      "borderRadiusSmall": "8px",
-      "borderRadiusMedium": "16px",
-      "borderRadiusLarge": "24px",
-      "shadowStyle": "soft",
-      "shadowResting": "0 4px 20px rgba(26,26,46,0.06)",
-      "shadowHover": "0 10px 36px rgba(232,160,191,0.2)",
+      "borderRadius": "0",
+      "borderRadiusSmall": "0px",
+      "borderRadiusMedium": "4px",
+      "borderRadiusLarge": "8px",
+      "shadowStyle": "none",
+      "shadowResting": "none",
+      "shadowHover": "none",
       "transitionDuration": "250ms",
       "transitionTiming": "ease-out",
       "imageRatioHero": "16:9",
@@ -58,184 +58,199 @@
     "ogImage": "/media/presets/yoga_studio/og-default.jpg",
     "twitterCard": "summary_large_image",
     "googleAnalyticsId": "",
-    "keywords": "Yoga Stuttgart, Hatha Yoga, Vinyasa, Yin Yoga, Meditation, Yoga Kurs"
+    "keywords": "Online Pilates, Yoga Studio Stuttgart, Pilates Kurs, Online Training, Mitgliedschaft"
   },
   "layout": {
     "style": "clean_minimal",
-    "heroType": "centered_text",
-    "navStyle": "light_minimal",
-    "servicesLayout": "grid_3col",
-    "testimonialsLayout": "light_background",
-    "footerStyle": "light_minimal"
+    "heroType": "centered_text_with_cta",
+    "navStyle": "minimal_with_cta",
+    "servicesLayout": "signature_series",
+    "pricingLayout": "two_cards",
+    "testimonialsLayout": "quote_carousel",
+    "footerStyle": "minimal_with_instagram"
   },
   "content": {
     "slogans": {
-      "de": ["Atme. Bewege dich. Sei.", "Yoga für jeden Körper", "Dein Weg nach innen"],
-      "en": ["Breathe. Move. Be.", "Yoga for every body", "Your path inward"],
-      "ru": ["Дыши. Двигайся. Будь.", "Йога для каждого тела", "Твой путь внутрь"]
+      "de": ["Dein Körper ist ein Kraftwerk. Lass uns den Schalter umlegen.", "Pilates für weniger als ein Starbucks.", "Spür die Wirkung."],
+      "en": ["Your Body Is a Powerhouse. Let's Flip the Switch.", "Pilates for less than a Starbucks.", "Feel the Burn."],
+      "ru": ["Твоё тело — электростанция. Давай включим рубильник.", "Пилатес дешевле, чем Starbucks.", "Почувствуй эффект."]
+    },
+    "announcement": {
+      "de": "JETZT: Kostenlose Probestunde für neue Mitglieder — kein Kreditkarte erforderlich",
+      "en": "NOW: Free trial class for new members — no credit card required",
+      "ru": "СЕЙЧАС: Бесплатный пробный урок для новых участников — без кредитной карты"
     },
     "hero": {
       "de": {
-        "heading": "Atme. Bewege dich. Sei.",
-        "subheading": "Atma Yoga ist ein Ort der Stille und Transformation. Kleine Gruppen, erfahrene Lehrer und eine Praxis, die sich an Ihren Körper anpasst — nicht umgekehrt.",
-        "cta": "Probestunde buchen",
-        "secondaryCta": "Stundenplan ansehen",
+        "heading": "Dein Körper ist ein Kraftwerk.\nLass uns den Schalter umlegen.",
+        "subheading": "Willkommen in der Ecke des Internets, wo ein privater Pilates-Kurs weniger kostet als ein Starbucks. Wo du ein muskelstärkendes, körperformendes Workout zwischen Meetings und Schule einbauen kannst.",
+        "cta": "Kostenlos starten",
+        "secondaryCta": "Kurse ansehen",
         "image": "/media/presets/yoga_studio/hero.jpg",
-        "imageAlt": "Yoga-Praxis in einem hellen, ruhigen Studio"
+        "imageAlt": "Pilates Training im Kraftwerk Studio"
       },
       "en": {
-        "heading": "Breathe. Move. Be.",
-        "subheading": "Atma Yoga is a place of stillness and transformation. Small groups, experienced teachers and a practice that adapts to your body — not the other way around.",
-        "cta": "Book Trial Class",
-        "secondaryCta": "View Schedule",
+        "heading": "Your Body Is a Powerhouse.\nLet's Flip the Switch.",
+        "subheading": "Welcome to the corner of the Internet where a private Pilates class costs less than a Starbucks. Where you can squeeze in a muscle-lengthening, physique-sculpting workout between meetings and school pick-ups.",
+        "cta": "Start Free Trial",
+        "secondaryCta": "View Classes",
         "image": "/media/presets/yoga_studio/hero.jpg",
-        "imageAlt": "Yoga practice in a bright, calm studio"
+        "imageAlt": "Pilates training at Kraftwerk Studio"
       },
       "ru": {
-        "heading": "Дыши. Двигайся. Будь.",
-        "subheading": "Atma Yoga — место тишины и трансформации. Небольшие группы, опытные преподаватели и практика, которая адаптируется к вашему телу — а не наоборот.",
-        "cta": "Записаться на пробный урок",
-        "secondaryCta": "Расписание",
+        "heading": "Твоё тело — электростанция.\nДавай включим рубильник.",
+        "subheading": "Добро пожаловать в уголок интернета, где частный урок пилатеса стоит меньше, чем Starbucks. Где можно втиснуть тренировку между встречами и школой.",
+        "cta": "Начать бесплатно",
+        "secondaryCta": "Смотреть курсы",
         "image": "/media/presets/yoga_studio/hero.jpg",
-        "imageAlt": "Практика йоги в светлой, спокойной студии"
+        "imageAlt": "Тренировка пилатес в Kraftwerk Studio"
       }
     },
+    "membershipHighlights": [
+      { "de": "200+ Online-Kurse", "en": "200+ Online Classes", "ru": "200+ онлайн-курсов" },
+      { "de": "Von 5 bis 60 Minuten", "en": "From 5 to 60 Minutes", "ru": "От 5 до 60 минут" },
+      { "de": "Für jedes Level", "en": "For Every Level", "ru": "Для каждого уровня" },
+      { "de": "Neue Kurse wöchentlich", "en": "New Classes Weekly", "ru": "Новые курсы еженедельно" }
+    ],
+    "signatureSeries": [
+      {
+        "id": "core",
+        "name_de": "KERN PILATES™",
+        "name_en": "CORE PILATES™",
+        "name_ru": "CORE PILATES™",
+        "desc_de": "Vergiss endlose Crunches: Unsere Kern-Serie ist 360°-Kerntraining, um das Kraftwerk deines Körpers zu stärken. Denn ein stärkerer Kern bedeutet ein stärkeres Du.",
+        "desc_en": "Forget endless crunches: Our signature Core series is 360° core training to strengthen the powerhouse of your body. Because a stronger core means a stronger you.",
+        "desc_ru": "Забудь о бесконечных скручиваниях: наша серия Core — это 360° тренировка кора. Потому что более сильный кор означает более сильное тебя."
+      },
+      {
+        "id": "strong",
+        "name_de": "STARK PILATES™",
+        "name_en": "STRONG PILATES™",
+        "name_ru": "STRONG PILATES™",
+        "desc_de": "Denkst du, du kannst mit Pilates keine Muskeln aufbauen? Denk nochmal. Unsere Stark-Serie nutzt Fitness-Kreis, Hanteln und Widerstandsbänder für lange, schlanke Muskeln.",
+        "desc_en": "Think you can't build muscle with Pilates? Think again. Our Strong series uses the Fitness Circle, hand weights and resistance bands to build long, lean muscle.",
+        "desc_ru": "Думаешь, с пилатесом нельзя нарастить мышцы? Подумай ещё раз. Наша серия Strong использует фитнес-круг, гантели и резинки для длинных, стройных мышц."
+      },
+      {
+        "id": "flow",
+        "name_de": "FLOW PILATES™",
+        "name_en": "FLOW PILATES™",
+        "name_ru": "FLOW PILATES™",
+        "desc_de": "Eine Mischung aus Pilates, Yoga, Tanz und Body Rolling. Unsere Flow-Serie reguliert das Nervensystem und löst Anspannung und Stress. Pilates, aber restorative.",
+        "desc_en": "A blend of Pilates, yoga, dance and body rolling. Our Flow series regulates the nervous system, melting tension and stress. Pilates, but make it restorative.",
+        "desc_ru": "Смесь пилатеса, йоги, танца и боди-роллинга. Наша серия Flow регулирует нервную систему, растворяя напряжение и стресс."
+      }
+    ],
+    "pricing": [
+      {
+        "id": "monthly",
+        "label_de": "MONATLICH",
+        "label_en": "MONTHLY",
+        "label_ru": "ЕЖЕМЕСЯЧНО",
+        "price": "19€",
+        "period_de": "pro Monat",
+        "period_en": "per month",
+        "period_ru": "в месяц",
+        "desc_de": "Unbegrenzte Kurse für weniger als dein durchschnittlicher Gruppenkurs.",
+        "desc_en": "Unlimited Pilates for less than your average group class.",
+        "desc_ru": "Неограниченный пилатес дешевле, чем среднее групповое занятие.",
+        "cta_de": "Kostenlos starten",
+        "cta_en": "Start Free Trial",
+        "cta_ru": "Начать бесплатно",
+        "popular": false
+      },
+      {
+        "id": "annual",
+        "label_de": "JÄHRLICH — AM BELIEBTESTEN!",
+        "label_en": "ANNUAL — MOST POPULAR!",
+        "label_ru": "ГОДОВОЙ — САМЫЙ ПОПУЛЯРНЫЙ!",
+        "price": "169€",
+        "period_de": "pro Jahr",
+        "period_en": "per year",
+        "period_ru": "в год",
+        "desc_de": "Zwölf Monate Pilates zum Preis von neun — 25% Rabatt!",
+        "desc_en": "Twelve months of Pilates for the price of nine — 25% off!",
+        "desc_ru": "Двенадцать месяцев пилатеса по цене девяти — скидка 25%!",
+        "cta_de": "Kostenlos starten",
+        "cta_en": "Start Free Trial",
+        "cta_ru": "Начать бесплатно",
+        "popular": true
+      }
+    ],
     "about": {
       "de": {
-        "title": "Yoga als Lebensweg",
-        "subtitle": "Seit 2014 in Stuttgart-Mitte",
-        "text": "Atma Yoga wurde 2014 von Priya Sharma gegründet — nach 10 Jahren Studium in Mysore, Indien. Ihr Ansatz: Yoga ist keine Sportart, sondern ein Weg zur Selbsterkenntnis. Jede Stunde ist eine Einladung, tiefer in sich hineinzuhören. Unser Studio bietet Platz für maximal 12 Personen — damit jeder die Aufmerksamkeit bekommt, die er verdient.",
+        "title": "Hier für deine Transformation.",
+        "subtitle": "Deine Trainerin",
+        "text": "Egal ob du hier bist, um stärker zu werden, schlanker zu werden oder schmerzfrei zu leben — du schaffst das, und ich bin für dich da. Mit 18+ Jahren Erfahrung als zertifizierte Pilates-Trainerin helfe ich dir, von kraftlos zu Kraftwerk zu werden. Die Transformation liegt in deinen Händen.",
         "image": "/media/presets/yoga_studio/about.jpg",
-        "imageAlt": "Yoga-Lehrerin Priya Sharma im Studio",
+        "imageAlt": "Pilates-Trainerin im Studio",
         "stats": [
-          { "value": "10", "label": "Jahre Erfahrung" },
-          { "value": "8", "label": "Zertifizierte Lehrer" },
-          { "value": "500+", "label": "Aktive Schüler" }
+          { "value": "18+", "label": "Jahre Erfahrung" },
+          { "value": "200+", "label": "Online-Kurse" },
+          { "value": "500+", "label": "Aktive Mitglieder" }
         ]
       },
       "en": {
-        "title": "Yoga as a Way of Life",
-        "subtitle": "Since 2014 in Stuttgart-Mitte",
-        "text": "Atma Yoga was founded in 2014 by Priya Sharma — after 10 years of study in Mysore, India. Her approach: yoga is not a sport, but a path to self-knowledge. Every class is an invitation to listen more deeply to yourself. Our studio accommodates a maximum of 12 people — so everyone gets the attention they deserve.",
+        "title": "Here for Your Transformation.",
+        "subtitle": "Your Instructor",
+        "text": "Whether you're here to become stronger, leaner or live pain-free, you got this — and I got you. With 18+ years of experience as a certified Pilates instructor, I'll help you go from powerless to powerhouse. Transformation is in your hands.",
         "image": "/media/presets/yoga_studio/about.jpg",
-        "imageAlt": "Yoga teacher Priya Sharma in the studio",
+        "imageAlt": "Pilates instructor in the studio",
         "stats": [
-          { "value": "10", "label": "Years of experience" },
-          { "value": "8", "label": "Certified teachers" },
-          { "value": "500+", "label": "Active students" }
+          { "value": "18+", "label": "Years of experience" },
+          { "value": "200+", "label": "Online classes" },
+          { "value": "500+", "label": "Active members" }
         ]
       },
       "ru": {
-        "title": "Йога как путь жизни",
-        "subtitle": "С 2014 года в Штутгарт-Митте",
-        "text": "Atma Yoga была основана в 2014 году Прией Шармой — после 10 лет обучения в Майсуре, Индия. Её подход: йога — это не спорт, а путь к самопознанию. Каждый урок — это приглашение прислушаться к себе глубже. Наша студия вмещает максимум 12 человек — чтобы каждый получил внимание, которого заслуживает.",
+        "title": "Здесь ради твоей трансформации.",
+        "subtitle": "Твой тренер",
+        "text": "Хочешь стать сильнее, стройнее или жить без боли — ты справишься, и я с тобой. С 18+ годами опыта как сертифицированный тренер по пилатесу, я помогу тебе перейти от бессилия к электростанции. Трансформация в твоих руках.",
         "image": "/media/presets/yoga_studio/about.jpg",
-        "imageAlt": "Преподаватель йоги Прия Шарма в студии",
+        "imageAlt": "Тренер по пилатесу в студии",
         "stats": [
-          { "value": "10", "label": "Лет опыта" },
-          { "value": "8", "label": "Сертифицированных учителей" },
-          { "value": "500+", "label": "Активных учеников" }
+          { "value": "18+", "label": "Лет опыта" },
+          { "value": "200+", "label": "Онлайн-курсов" },
+          { "value": "500+", "label": "Активных участников" }
         ]
       }
     },
     "services": [
-      {
-        "name_de": "Hatha Yoga",
-        "name_en": "Hatha Yoga",
-        "name_ru": "Хатха-йога",
-        "price": "im Abo",
-        "desc_de": "Klassische Körperhaltungen, Atemübungen, Entspannung. Ideal für Einsteiger und alle Levels.",
-        "desc_en": "Classic postures, breathing exercises, relaxation. Ideal for beginners and all levels.",
-        "desc_ru": "Классические позы, дыхательные упражнения, расслабление. Идеально для начинающих и всех уровней.",
-        "image": "/media/presets/yoga_studio/services/hatha.jpg",
-        "tags": ["Einsteiger"]
-      },
-      {
-        "name_de": "Vinyasa Flow",
-        "name_en": "Vinyasa Flow",
-        "name_ru": "Виньяса Флоу",
-        "price": "im Abo",
-        "desc_de": "Dynamische Abfolgen, synchronisiert mit dem Atem. Kraft, Flexibilität und Fokus.",
-        "desc_en": "Dynamic sequences synchronised with the breath. Strength, flexibility and focus.",
-        "desc_ru": "Динамические последовательности, синхронизированные с дыханием. Сила, гибкость и фокус.",
-        "image": "/media/presets/yoga_studio/services/vinyasa.jpg",
-        "tags": ["Beliebt"]
-      },
-      {
-        "name_de": "Yin Yoga",
-        "name_en": "Yin Yoga",
-        "name_ru": "Инь-йога",
-        "price": "im Abo",
-        "desc_de": "Lange gehaltene Positionen, tiefe Entspannung, Faszienarbeit. Perfekt nach einem langen Tag.",
-        "desc_en": "Long-held positions, deep relaxation, fascia work. Perfect after a long day.",
-        "desc_ru": "Долго удерживаемые позиции, глубокое расслабление, работа с фасциями. Идеально после долгого дня.",
-        "image": "/media/presets/yoga_studio/services/yin.jpg",
-        "tags": []
-      },
-      {
-        "name_de": "Meditation",
-        "name_en": "Meditation",
-        "name_ru": "Медитация",
-        "price": "im Abo",
-        "desc_de": "Geführte Meditationen, Pranayama, Yoga Nidra. Für innere Ruhe und Klarheit.",
-        "desc_en": "Guided meditations, pranayama, yoga nidra. For inner calm and clarity.",
-        "desc_ru": "Управляемые медитации, пранаяма, йога-нидра. Для внутреннего покоя и ясности.",
-        "image": "/media/presets/yoga_studio/services/meditation.jpg",
-        "tags": []
-      },
-      {
-        "name_de": "Monatskarte",
-        "name_en": "Monthly Pass",
-        "name_ru": "Месячный абонемент",
-        "price": "89€/Monat",
-        "desc_de": "Unbegrenzte Kurse, alle Stile. Monatlich kündbar. Inkl. 1 Privatstunde pro Quartal.",
-        "desc_en": "Unlimited classes, all styles. Monthly cancellable. Incl. 1 private lesson per quarter.",
-        "desc_ru": "Неограниченные занятия, все стили. Ежемесячная отмена. Включая 1 индивидуальный урок в квартал.",
-        "image": "/media/presets/yoga_studio/services/pass.jpg",
-        "tags": ["Empfehlung"]
-      },
-      {
-        "name_de": "Probestunde",
-        "name_en": "Trial Class",
-        "name_ru": "Пробный урок",
-        "price": "15€",
-        "desc_de": "Einmalig alle Stile kennenlernen. Matte und Hilfsmittel werden gestellt.",
-        "desc_en": "Try all styles once. Mat and props provided.",
-        "desc_ru": "Попробуйте все стили один раз. Коврик и реквизит предоставляются.",
-        "image": "/media/presets/yoga_studio/services/trial.jpg",
-        "tags": ["Einsteiger"]
-      }
+      { "name_de": "Kern Pilates™", "name_en": "Core Pilates™", "name_ru": "Core Pilates™", "price": "im Abo", "desc_de": "360° Kerntraining. Stärker werden von innen.", "desc_en": "360° core training. Get stronger from within.", "desc_ru": "360° тренировка кора. Стать сильнее изнутри.", "tags": ["Signature"] },
+      { "name_de": "Stark Pilates™", "name_en": "Strong Pilates™", "name_ru": "Strong Pilates™", "price": "im Abo", "desc_de": "Muskeln aufbauen mit Pilates. Ja, das geht.", "desc_en": "Build muscle with Pilates. Yes, it works.", "desc_ru": "Строить мышцы с пилатесом. Да, это работает.", "tags": ["Beliebt"] },
+      { "name_de": "Flow Pilates™", "name_en": "Flow Pilates™", "name_ru": "Flow Pilates™", "price": "im Abo", "desc_de": "Pilates trifft Yoga trifft Tanz. Restorative.", "desc_en": "Pilates meets yoga meets dance. Restorative.", "desc_ru": "Пилатес встречает йогу встречает танец. Восстановительный.", "tags": [] },
+      { "name_de": "Einsteiger-Kurse", "name_en": "Beginner Classes", "name_ru": "Курсы для начинающих", "price": "im Abo", "desc_de": "Tutorials für Anfänger. Schritt für Schritt.", "desc_en": "Tutorials for beginners. Step by step.", "desc_ru": "Туториалы для начинающих. Шаг за шагом.", "tags": ["Einsteiger"] },
+      { "name_de": "5-Minuten-Kurse", "name_en": "5-Minute Classes", "name_ru": "5-минутные занятия", "price": "im Abo", "desc_de": "Wenn die Zeit knapp ist. Immer noch effektiv.", "desc_en": "When time is short. Still effective.", "desc_ru": "Когда времени мало. Всё равно эффективно.", "tags": [] },
+      { "name_de": "Kostenlose Probestunde", "name_en": "Free Trial Class", "name_ru": "Бесплатный пробный урок", "price": "Kostenlos", "desc_de": "Wir schicken dir einen exklusiven Kurs direkt in dein Postfach.", "desc_en": "We'll send an exclusive class straight to your inbox.", "desc_ru": "Мы пришлём эксклюзивный урок прямо на твою почту.", "tags": ["Gratis"] }
     ],
     "testimonials": [
       {
         "name": "Clara M.",
-        "location_de": "Stuttgart",
-        "text_de": "Atma Yoga hat mein Leben verändert. Ich kam mit Rückenschmerzen und chronischem Stress — nach 3 Monaten bin ich ein anderer Mensch. Priya ist eine außergewöhnliche Lehrerin.",
-        "text_en": "Atma Yoga changed my life. I came with back pain and chronic stress — after 3 months I am a different person. Priya is an extraordinary teacher.",
-        "text_ru": "Atma Yoga изменила мою жизнь. Я пришла с болями в спине и хроническим стрессом — через 3 месяца я другой человек. Прия — выдающийся преподаватель.",
-        "rating": 5,
-        "source": "Google",
-        "avatar": "/media/presets/yoga_studio/avatars/clara.jpg"
+        "text_de": "Diese Kurse haben meinen Körper komplett transformiert.",
+        "text_en": "These classes have completely transformed my body.",
+        "text_ru": "Эти занятия полностью трансформировали моё тело.",
+        "rating": 5
       },
       {
         "name": "Thomas B.",
-        "location_de": "Stuttgart-Mitte",
-        "text_de": "Als Mann war ich skeptisch. Jetzt komme ich dreimal pro Woche. Der Yin-Kurs am Donnerstagabend ist mein Highlight der Woche. Die kleine Gruppengröße macht den Unterschied.",
-        "text_en": "As a man I was sceptical. Now I come three times a week. The yin class on Thursday evening is my highlight of the week. The small group size makes the difference.",
-        "text_ru": "Как мужчина я был скептичен. Теперь хожу три раза в неделю. Инь-занятие в четверг вечером — мой еженедельный хайлайт. Небольшой размер группы имеет значение.",
-        "rating": 5,
-        "source": "Google",
-        "avatar": "/media/presets/yoga_studio/avatars/thomas.jpg"
+        "text_de": "Mein Körper wäre ohne diese Trainerin nicht so stark.",
+        "text_en": "My body would not be as strong without this instructor.",
+        "text_ru": "Моё тело не было бы таким сильным без этого тренера.",
+        "rating": 5
       },
       {
         "name": "Lena K.",
-        "location_de": "Stuttgart",
-        "text_de": "Ich habe viele Studios ausprobiert. Atma ist das einzige, wo ich mich wirklich gesehen fühle. Priya kennt jeden Schüler persönlich und passt die Stunden individuell an.",
-        "text_en": "I have tried many studios. Atma is the only one where I truly feel seen. Priya knows every student personally and adapts the classes individually.",
-        "text_ru": "Я пробовала много студий. Atma — единственная, где я действительно чувствую себя замеченной. Прия знает каждого ученика лично и адаптирует занятия индивидуально.",
-        "rating": 5,
-        "source": "Google",
-        "avatar": "/media/presets/yoga_studio/avatars/lena.jpg"
+        "text_de": "Hat meine Gesundheit und mein Leben transformiert.",
+        "text_en": "Transformed my health and life.",
+        "text_ru": "Трансформировало моё здоровье и жизнь.",
+        "rating": 5
+      },
+      {
+        "name": "Stefan H.",
+        "text_de": "Das beste Training-Abo, das ich je gemacht habe.",
+        "text_en": "The best training subscription I've ever done.",
+        "text_ru": "Лучшая тренировочная подписка, которую я когда-либо делал.",
+        "rating": 5
       }
     ],
     "faq": [
@@ -243,55 +258,48 @@
         "q_de": "Brauche ich Vorkenntnisse?",
         "q_en": "Do I need prior experience?",
         "q_ru": "Нужен ли предварительный опыт?",
-        "a_de": "Nein. Unsere Hatha-Kurse sind explizit für Einsteiger geeignet. Bitte bei der Buchung angeben, dass Sie Anfänger sind.",
-        "a_en": "No. Our Hatha classes are explicitly suitable for beginners. Please indicate when booking that you are a beginner.",
-        "a_ru": "Нет. Наши занятия Хатха явно подходят для начинающих. Пожалуйста, укажите при бронировании, что вы новичок."
+        "a_de": "Nein. Wir haben Einsteiger-Tutorials, 5-Minuten-Kurse und Kurse für jedes Level. Fang einfach an.",
+        "a_en": "No. We have beginner tutorials, 5-minute classes and classes for every level. Just start.",
+        "a_ru": "Нет. У нас есть туториалы для начинающих, 5-минутные занятия и курсы для каждого уровня."
       },
       {
-        "q_de": "Was soll ich mitbringen?",
-        "q_en": "What should I bring?",
-        "q_ru": "Что нужно взять с собой?",
-        "a_de": "Bequeme Kleidung und Socken. Matten, Blöcke und Gurte stellen wir. Wasser ist willkommen.",
-        "a_en": "Comfortable clothing and socks. We provide mats, blocks and straps. Water is welcome.",
-        "a_ru": "Удобная одежда и носки. Коврики, блоки и ремни мы предоставляем. Вода приветствуется."
+        "q_de": "Was brauche ich für die Online-Kurse?",
+        "q_en": "What do I need for the online classes?",
+        "q_ru": "Что нужно для онлайн-занятий?",
+        "a_de": "Eine Matte und etwas Platz. Für manche Kurse optional: Fitness-Kreis, Hanteln, Widerstandsband.",
+        "a_en": "A mat and some space. For some classes optionally: fitness circle, hand weights, resistance band.",
+        "a_ru": "Коврик и немного места. Для некоторых занятий опционально: фитнес-круг, гантели, резинка."
       },
       {
-        "q_de": "Gibt es Online-Kurse?",
-        "q_en": "Are there online classes?",
-        "q_ru": "Есть ли онлайн-занятия?",
-        "a_de": "Ja, alle Kurse sind auch als Live-Stream buchbar. Aufzeichnungen sind 7 Tage verfügbar.",
-        "a_en": "Yes, all classes are also bookable as live stream. Recordings are available for 7 days.",
-        "a_ru": "Да, все занятия также доступны в прямом эфире. Записи доступны 7 дней."
+        "q_de": "Kann ich jederzeit kündigen?",
+        "q_en": "Can I cancel at any time?",
+        "q_ru": "Можно ли отменить в любое время?",
+        "a_de": "Ja. Monatliche Mitgliedschaft jederzeit kündbar. Keine versteckten Kosten.",
+        "a_en": "Yes. Monthly membership cancellable at any time. No hidden costs.",
+        "a_ru": "Да. Ежемесячное членство отменяется в любое время. Без скрытых расходов."
       }
     ],
     "contact": {
       "address": "Calwer Straße 22, 70173 Stuttgart-Mitte",
       "phone": "+49 711 2233 4455",
-      "email": "namaste@atma-yoga.de",
-      "hours_de": "Mo–Fr: 07:00–21:00 Uhr · Sa–So: 08:00–18:00 Uhr",
-      "hours_en": "Mon–Fri: 7:00 AM–9:00 PM · Sat–Sun: 8:00 AM–6:00 PM",
-      "hours_ru": "Пн–Пт: 07:00–21:00 · Сб–Вс: 08:00–18:00"
+      "email": "hallo@kraftwerk-pilates.de",
+      "hours_de": "Online: 24/7 · Studio Mo–Fr: 07:00–21:00 · Sa–So: 08:00–18:00",
+      "hours_en": "Online: 24/7 · Studio Mon–Fri: 7:00 AM–9:00 PM · Sat–Sun: 8:00 AM–6:00 PM",
+      "hours_ru": "Онлайн: 24/7 · Студия Пн–Пт: 07:00–21:00 · Сб–Вс: 08:00–18:00"
     },
     "legal": {
-      "priceNote_de": "Alle Preise inkl. MwSt. Monatskarte monatlich kündbar. Keine Aufnahmegebühr.",
-      "cancellationPolicy_de": "Kursstornierung bis 2 Stunden vor Beginn kostenlos. Danach wird die Einheit vom Kontingent abgezogen."
+      "priceNote_de": "Alle Preise inkl. MwSt. Monatliche Mitgliedschaft jederzeit kündbar.",
+      "cancellationPolicy_de": "Kündigung jederzeit per E-Mail möglich."
     }
   },
-  "booking": {
-    "enabled": true,
-    "slots": ["07:00", "08:30", "10:00", "12:00", "17:30", "19:00", "20:30"],
-    "duration": 75,
-    "maxGuests": 12,
-    "note_de": "Maximale Gruppengröße: 12 Personen. Bitte rechtzeitig buchen."
-  },
   "logo": {
-    "text": "Atma",
-    "tagline": "YOGA · STUTTGART",
+    "text": "Kraftwerk",
+    "tagline": "PILATES · ONLINE & STUDIO",
     "font": "Raleway",
     "style": "text_light"
   },
   "social": {
-    "instagram": "https://instagram.com/atma.yoga.stuttgart",
-    "facebook": "https://facebook.com/atmayogastuttgart"
+    "instagram": "https://instagram.com/kraftwerk.pilates",
+    "facebook": "https://facebook.com/kraftwerkpilates"
   }
 }
