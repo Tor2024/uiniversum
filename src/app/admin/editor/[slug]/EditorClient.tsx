@@ -269,6 +269,208 @@ const inputStyle: React.CSSProperties = {
   boxSizing: "border-box",
 };
 
+// ─── Block Editor Tabs (Content + Styles) ────────────────────────────────────
+
+function BlockEditorTabs({
+  block,
+  onChange,
+  onClose,
+}: {
+  block: BlockData;
+  onChange: (updated: BlockData) => void;
+  onClose: () => void;
+}) {
+  const [tab, setTab] = useState<"content" | "styles">("content");
+
+  const updateStyle = (key: string, value: unknown) => {
+    onChange({ ...block, styles: { ...block.styles, [key]: value } });
+  };
+
+  const tabBtn = (id: "content" | "styles", label: string) => (
+    <button
+      onClick={() => setTab(id)}
+      style={{
+        padding: "8px 16px",
+        border: "none",
+        borderBottom: `2px solid ${tab === id ? "#6366f1" : "transparent"}`,
+        background: "transparent",
+        fontSize: "12px",
+        fontWeight: tab === id ? 700 : 500,
+        color: tab === id ? "#6366f1" : "#6b7280",
+        cursor: "pointer",
+      }}
+    >
+      {label}
+    </button>
+  );
+
+  return (
+    <div>
+      {/* Tab bar */}
+      <div style={{ display: "flex", borderBottom: "1px solid #f3f4f6", padding: "0 14px" }}>
+        {tabBtn("content", "✏️ Контент")}
+        {tabBtn("styles", "🎨 Стили")}
+        <div style={{ flex: 1 }} />
+        <button
+          onClick={onClose}
+          style={{ padding: "8px 12px", border: "none", background: "transparent", fontSize: "12px", color: "#9ca3af", cursor: "pointer" }}
+        >
+          ✓ Готово
+        </button>
+      </div>
+
+      <div style={{ padding: "16px 14px" }}>
+        {tab === "content" ? (
+          <BlockFieldEditor block={block} onChange={onChange} />
+        ) : (
+          <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+
+            {/* Padding */}
+            <div>
+              <label style={labelStyle}>Отступ сверху (px)</label>
+              <div style={{ display: "flex", gap: "8px", alignItems: "center" }}>
+                <input
+                  type="range"
+                  min={0}
+                  max={160}
+                  step={8}
+                  value={block.styles.paddingTop ?? 60}
+                  onChange={(e) => updateStyle("paddingTop", Number(e.target.value))}
+                  style={{ flex: 1 }}
+                />
+                <span style={{ fontSize: "13px", fontWeight: 600, color: "#374151", width: "40px", textAlign: "right" }}>
+                  {block.styles.paddingTop ?? 60}px
+                </span>
+              </div>
+            </div>
+            <div>
+              <label style={labelStyle}>Отступ снизу (px)</label>
+              <div style={{ display: "flex", gap: "8px", alignItems: "center" }}>
+                <input
+                  type="range"
+                  min={0}
+                  max={160}
+                  step={8}
+                  value={block.styles.paddingBottom ?? 60}
+                  onChange={(e) => updateStyle("paddingBottom", Number(e.target.value))}
+                  style={{ flex: 1 }}
+                />
+                <span style={{ fontSize: "13px", fontWeight: 600, color: "#374151", width: "40px", textAlign: "right" }}>
+                  {block.styles.paddingBottom ?? 60}px
+                </span>
+              </div>
+            </div>
+
+            {/* Background color */}
+            <div>
+              <label style={labelStyle}>Цвет фона</label>
+              <div style={{ display: "flex", gap: "8px", alignItems: "center" }}>
+                <input
+                  type="color"
+                  value={block.styles.backgroundColor && block.styles.backgroundColor !== "" && !block.styles.backgroundColor.startsWith("var") ? block.styles.backgroundColor : "#ffffff"}
+                  onChange={(e) => updateStyle("backgroundColor", e.target.value)}
+                  style={{ width: "44px", height: "36px", border: "none", borderRadius: "6px", cursor: "pointer", padding: "2px" }}
+                />
+                <input
+                  type="text"
+                  value={block.styles.backgroundColor || ""}
+                  onChange={(e) => updateStyle("backgroundColor", e.target.value)}
+                  placeholder="var(--color-surface) или #ffffff"
+                  style={{ ...inputStyle, flex: 1 }}
+                />
+                <button
+                  onClick={() => updateStyle("backgroundColor", "")}
+                  title="Сбросить"
+                  style={{ padding: "8px 10px", border: "1px solid #e5e7eb", borderRadius: "6px", background: "#fff", cursor: "pointer", fontSize: "12px", color: "#6b7280" }}
+                >
+                  ✕
+                </button>
+              </div>
+              <div style={{ display: "flex", gap: "6px", marginTop: "8px", flexWrap: "wrap" }}>
+                {[
+                  { label: "Фон", val: "var(--color-background)" },
+                  { label: "Поверхность", val: "var(--color-surface)" },
+                  { label: "Акцент", val: "var(--color-accent)" },
+                  { label: "Прозрачный", val: "" },
+                ].map((p) => (
+                  <button
+                    key={p.label}
+                    onClick={() => updateStyle("backgroundColor", p.val)}
+                    style={{
+                      padding: "4px 10px",
+                      border: `1px solid ${block.styles.backgroundColor === p.val ? "#6366f1" : "#e5e7eb"}`,
+                      borderRadius: "6px",
+                      background: block.styles.backgroundColor === p.val ? "#ede9fe" : "#fff",
+                      fontSize: "11px",
+                      color: block.styles.backgroundColor === p.val ? "#6366f1" : "#374151",
+                      cursor: "pointer",
+                    }}
+                  >
+                    {p.label}
+                  </button>
+                ))}
+              </div>
+            </div>
+
+            {/* Text align */}
+            <div>
+              <label style={labelStyle}>Выравнивание текста</label>
+              <div style={{ display: "flex", gap: "6px" }}>
+                {(["left", "center", "right"] as const).map((align) => (
+                  <button
+                    key={align}
+                    onClick={() => updateStyle("textAlign", align)}
+                    style={{
+                      flex: 1,
+                      padding: "8px",
+                      border: `2px solid ${block.styles.textAlign === align ? "#6366f1" : "#e5e7eb"}`,
+                      borderRadius: "8px",
+                      background: block.styles.textAlign === align ? "#ede9fe" : "#fff",
+                      cursor: "pointer",
+                      fontSize: "16px",
+                    }}
+                  >
+                    {align === "left" ? "⬅" : align === "center" ? "↔" : "➡"}
+                  </button>
+                ))}
+              </div>
+            </div>
+
+            {/* Max width */}
+            <div>
+              <label style={labelStyle}>Максимальная ширина</label>
+              <div style={{ display: "flex", gap: "6px", flexWrap: "wrap" }}>
+                {["sm", "md", "lg", "xl", "full"].map((w) => (
+                  <button
+                    key={w}
+                    onClick={() => updateStyle("maxWidth", w)}
+                    style={{
+                      padding: "6px 12px",
+                      border: `2px solid ${block.styles.maxWidth === w ? "#6366f1" : "#e5e7eb"}`,
+                      borderRadius: "8px",
+                      background: block.styles.maxWidth === w ? "#ede9fe" : "#fff",
+                      cursor: "pointer",
+                      fontSize: "12px",
+                      fontWeight: 600,
+                      color: block.styles.maxWidth === w ? "#6366f1" : "#374151",
+                    }}
+                  >
+                    {w}
+                  </button>
+                ))}
+              </div>
+              <p style={{ fontSize: "11px", color: "#9ca3af", marginTop: "4px" }}>
+                sm=640px · md=768px · lg=1024px · xl=1280px · full=100%
+              </p>
+            </div>
+
+          </div>
+        )}
+      </div>
+    </div>
+  );
+}
+
 // ─── Main Editor ──────────────────────────────────────────────────────────────
 
 export default function EditorClient({ slug, initialData }: EditorClientProps) {
@@ -586,20 +788,11 @@ export default function EditorClient({ slug, initialData }: EditorClientProps) {
                 {isEditing && (
                   <div style={{
                     borderTop: "1px solid #f3f4f6",
-                    padding: "16px 14px",
                     background: "#fafafa",
                     borderRadius: "0 0 10px 10px",
                   }}>
-                    <p style={{ fontSize: "11px", fontWeight: 700, color: "#6366f1", textTransform: "uppercase", letterSpacing: "0.5px", margin: "0 0 12px" }}>
-                      Редактирование: {BLOCK_NAMES[block.type]}
-                    </p>
-                    <BlockFieldEditor block={block} onChange={updateBlock} />
-                    <button
-                      onClick={() => setEditingId(null)}
-                      style={{ marginTop: "8px", padding: "6px 14px", background: "#6366f1", color: "#fff", border: "none", borderRadius: "6px", fontSize: "12px", fontWeight: 600, cursor: "pointer" }}
-                    >
-                      ✓ Готово
-                    </button>
+                    {/* Tabs */}
+                    <BlockEditorTabs block={block} onChange={updateBlock} onClose={() => setEditingId(null)} />
                   </div>
                 )}
               </div>
