@@ -92,42 +92,16 @@
       "styles": {
         "paddingTop": 0,
         "paddingBottom": 0,
-        "backgroundColor": "",
+        "backgroundColor": "#ef2e2e",
         "textAlign": "center",
         "maxWidth": "xl"
-      }
-    },
-    {
-      "id": "text-1",
-      "type": "text_rich",
-      "visible": true,
-      "order": 2,
-      "settings": {
-        "content": {
-          "en": {
-            "title": "About Us",
-            "text": "We treat your car like it's our own. Transparent pricing and expert diagnostics."
-          },
-          "de": {
-            "title": "Über uns",
-            "text": "Wir behandeln Ihr Auto, wie unseres. Transparente Preise."
-          },
-          "ru": "[object Object] хватит плакать"
-        }
-      },
-      "styles": {
-        "paddingTop": 60,
-        "paddingBottom": 60,
-        "backgroundColor": "var(--color-surface)",
-        "textAlign": "left",
-        "maxWidth": "md"
       }
     },
     {
       "id": "logo_cloud-1778184182036",
       "type": "logo_cloud",
       "visible": true,
-      "order": 3,
+      "order": 2,
       "settings": {
         "title": {
           "de": "Unsere Partner",
@@ -154,7 +128,7 @@
       "id": "logo_cloud-1778184182980",
       "type": "logo_cloud",
       "visible": true,
-      "order": 4,
+      "order": 3,
       "settings": {
         "title": {
           "de": "Unsere Partner",
@@ -181,7 +155,7 @@
       "id": "contact_form-1778184186068",
       "type": "contact_form",
       "visible": true,
-      "order": 5,
+      "order": 4,
       "settings": {
         "title": {
           "de": "Kontakt",
@@ -216,7 +190,7 @@
       "id": "menu_food-1778184188308",
       "type": "menu_food",
       "visible": true,
-      "order": 6,
+      "order": 5,
       "settings": {
         "title": {
           "de": "Speisekarte",
@@ -261,7 +235,7 @@
       "id": "map_embed-1778184190948",
       "type": "map_embed",
       "visible": true,
-      "order": 7,
+      "order": 6,
       "settings": {
         "address": "",
         "embedUrl": "",
@@ -280,7 +254,7 @@
       "id": "countdown-1778184191700",
       "type": "countdown",
       "visible": true,
-      "order": 8,
+      "order": 7,
       "settings": {
         "title": {
           "de": "Bald verfügbar",
