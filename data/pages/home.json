@@ -81,10 +81,27 @@
       }
     },
     {
+      "id": "divider-1778184194780",
+      "type": "divider",
+      "visible": true,
+      "order": 1,
+      "settings": {
+        "style": "line",
+        "color": "var(--color-border)"
+      },
+      "styles": {
+        "paddingTop": 0,
+        "paddingBottom": 0,
+        "backgroundColor": "",
+        "textAlign": "center",
+        "maxWidth": "xl"
+      }
+    },
+    {
       "id": "text-1",
       "type": "text_rich",
       "visible": true,
-      "order": 1,
+      "order": 2,
       "settings": {
         "content": {
           "en": {
@@ -104,6 +121,184 @@
         "backgroundColor": "var(--color-surface)",
         "textAlign": "left",
         "maxWidth": "md"
+      }
+    },
+    {
+      "id": "logo_cloud-1778184182036",
+      "type": "logo_cloud",
+      "visible": true,
+      "order": 3,
+      "settings": {
+        "title": {
+          "de": "Unsere Partner",
+          "en": "Our Partners",
+          "ru": "Наши партнёры"
+        },
+        "logos": [
+          {
+            "src": "",
+            "alt": "Partner 1",
+            "url": ""
+          }
+        ]
+      },
+      "styles": {
+        "paddingTop": 60,
+        "paddingBottom": 60,
+        "backgroundColor": "",
+        "textAlign": "center",
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "logo_cloud-1778184182980",
+      "type": "logo_cloud",
+      "visible": true,
+      "order": 4,
+      "settings": {
+        "title": {
+          "de": "Unsere Partner",
+          "en": "Our Partners",
+          "ru": "Наши партнёры"
+        },
+        "logos": [
+          {
+            "src": "",
+            "alt": "Partner 1",
+            "url": ""
+          }
+        ]
+      },
+      "styles": {
+        "paddingTop": 60,
+        "paddingBottom": 60,
+        "backgroundColor": "",
+        "textAlign": "center",
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "contact_form-1778184186068",
+      "type": "contact_form",
+      "visible": true,
+      "order": 5,
+      "settings": {
+        "title": {
+          "de": "Kontakt",
+          "en": "Contact",
+          "ru": "Контакт"
+        },
+        "subtitle": {
+          "de": "Schreiben Sie uns",
+          "en": "Write to us",
+          "ru": "Напишите нам"
+        },
+        "buttonText": {
+          "de": "Senden",
+          "en": "Send",
+          "ru": "Отправить"
+        },
+        "successMessage": {
+          "de": "Vielen Dank!",
+          "en": "Thank you!",
+          "ru": "Спасибо!"
+        }
+      },
+      "styles": {
+        "paddingTop": 60,
+        "paddingBottom": 60,
+        "backgroundColor": "",
+        "textAlign": "center",
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "menu_food-1778184188308",
+      "type": "menu_food",
+      "visible": true,
+      "order": 6,
+      "settings": {
+        "title": {
+          "de": "Speisekarte",
+          "en": "Menu",
+          "ru": "Меню"
+        },
+        "categories": [
+          {
+            "name": {
+              "de": "Vorspeisen",
+              "en": "Starters",
+              "ru": "Закуски"
+            },
+            "items": [
+              {
+                "name": {
+                  "de": "Gericht 1",
+                  "en": "Dish 1",
+                  "ru": "Блюдо 1"
+                },
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "ru": ""
+                },
+                "price": "9.90",
+                "image": ""
+              }
+            ]
+          }
+        ]
+      },
+      "styles": {
+        "paddingTop": 60,
+        "paddingBottom": 60,
+        "backgroundColor": "",
+        "textAlign": "left",
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "map_embed-1778184190948",
+      "type": "map_embed",
+      "visible": true,
+      "order": 7,
+      "settings": {
+        "address": "",
+        "embedUrl": "",
+        "zoom": 15,
+        "showAddress": true
+      },
+      "styles": {
+        "paddingTop": 0,
+        "paddingBottom": 0,
+        "backgroundColor": "",
+        "textAlign": "center",
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "countdown-1778184191700",
+      "type": "countdown",
+      "visible": true,
+      "order": 8,
+      "settings": {
+        "title": {
+          "de": "Bald verfügbar",
+          "en": "Coming Soon",
+          "ru": "Скоро"
+        },
+        "targetDate": "",
+        "showDays": true,
+        "showHours": true,
+        "showMinutes": true,
+        "showSeconds": true
+      },
+      "styles": {
+        "paddingTop": 60,
+        "paddingBottom": 60,
+        "backgroundColor": "",
+        "textAlign": "center",
+        "maxWidth": "xl"
       }
     }
   ]
