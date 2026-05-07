@@ -507,6 +507,25 @@ export default async function PresetsPage() {
                   >
                     👁 Vorschau
                   </a>
+                  <a
+                    href={`/admin/presets/${p.id}`}
+                    style={{
+                      flex: 1,
+                      padding: '10px',
+                      background: 'transparent',
+                      color: '#6366f1',
+                      border: '1.5px solid #6366f1',
+                      borderRadius: '8px',
+                      fontSize: '13px',
+                      fontWeight: 600,
+                      cursor: 'pointer',
+                      textAlign: 'center',
+                      textDecoration: 'none',
+                      display: 'block',
+                    }}
+                  >
+                    ✏️ Редактировать
+                  </a>
                   <form action="/api/clone-preset" method="POST" style={{ flex: 1 }}>
                     <input type="hidden" name="presetId" value={p.id} />
                     <button type="submit" style={{
