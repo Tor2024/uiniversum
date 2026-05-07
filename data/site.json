@@ -1,34 +1,34 @@
 {
   "meta": {
-    "title": "Goldkruste | Handwerksbäckerei",
-    "description": "Wir machen Köln süßer! Seit 1987 backen wir Brote, Torten und Gebäck für ganz Köln. Maßgefertigte Torten für jeden Anlass.",
-    "favicon": "/media/presets/bakery/favicon.ico",
-    "language": "de",
+    "title": "Pro Mechanic | Auto Service",
+    "description": "Expert car repair and maintenance. Honest service you can trust.",
+    "favicon": "/media/presets/auto_service/favicon.ico",
+    "language": "en",
     "availableLanguages": [
-      "de",
       "en",
+      "de",
       "ru"
     ]
   },
   "design": {
-    "preset": "bakery",
+    "preset": "auto_service",
     "tokens": {
-      "colorBackground": "#FFF8F0",
+      "colorBackground": "#2F4F4F",
       "colorSurface": "#FFFFFF",
-      "colorPrimary": "#3D2B1F",
-      "colorSecondary": "#7A6050",
-      "colorBorder": "#EDD9C8",
-      "colorAccent": "#8B4513",
-      "colorAccentHover": "#A0522D",
-      "fontDisplay": "Playfair Display",
-      "fontHeading": "Nunito",
-      "fontBody": "Nunito",
-      "fontCaption": "Nunito",
+      "colorPrimary": "#FF4500",
+      "colorSecondary": "#6C757D",
+      "colorBorder": "#DEE2E6",
+      "colorAccent": "#FFD700",
+      "colorAccentHover": "#FFD700",
+      "fontDisplay": "Staatliches",
+      "fontHeading": "Staatliches",
+      "fontBody": "Oswald",
+      "fontCaption": "Oswald",
       "fontMono": "Roboto Mono",
       "fontSizeDisplay": "72px",
-      "fontSizeHeading": "34px",
+      "fontSizeHeading": "36px",
       "fontSizeBody": "17px",
-      "lineHeightBody": "1.8",
+      "lineHeightBody": "1.7",
       "lineHeightHeading": "1.3",
       "spacingUnit": "8px",
       "spacingSection": "120px",
@@ -37,37 +37,46 @@
       "spacingButtonVertical": "16px",
       "spacingButtonHorizontal": "32px",
       "maxWidthContent": "1200px",
-      "maxWidthText": "660px",
+      "maxWidthText": "700px",
       "gridColumns": "12",
-      "gridGutter": "28px",
+      "gridGutter": "30px",
       "horizontalPaddingMobile": "20px",
-      "horizontalPaddingTablet": "48px",
+      "horizontalPaddingTablet": "50px",
       "horizontalPaddingDesktop": "80px",
-      "borderRadius": "12",
-      "borderRadiusSmall": "6px",
-      "borderRadiusMedium": "12px",
-      "borderRadiusLarge": "20px",
-      "shadowStyle": "warm",
-      "shadowResting": "0 4px 20px rgba(61,43,31,0.08)",
-      "shadowHover": "0 10px 36px rgba(61,43,31,0.14)",
+      "borderRadius": "8",
+      "borderRadiusSmall": "4px",
+      "borderRadiusMedium": "8px",
+      "borderRadiusLarge": "16px",
+      "shadowStyle": "soft",
+      "shadowResting": "0 4px 14px rgba(0,0,0,0.05)",
+      "shadowHover": "0 8px 24px rgba(0,0,0,0.1)",
       "transitionDuration": "200ms",
-      "transitionTiming": "ease-out",
-      "imageRatioHero": "16:9",
+      "transitionTiming": "ease-in-out",
+      "imageRatioHero": "21:9",
       "imageRatioCard": "4:3",
       "imageRatioAvatar": "1:1"
     },
     "customCss": ""
   },
   "seo": {
-    "ogImage": "/media/presets/bakery/og-default.jpg",
+    "ogImage": "/media/presets/auto_service/og-default.jpg",
     "twitterCard": "summary_large_image",
     "googleAnalyticsId": "",
-    "keywords": "Bäckerei Köln, Maßgefertigte Torten, Sauerteigbrot, Handwerk, frisch gebacken"
+    "keywords": "auto, mechanic, repair"
+  },
+  "booking": {
+    "enabled": true,
+    "slots": [
+      "09:00",
+      "10:00",
+      "14:00",
+      "16:00"
+    ],
+    "duration": 60
   },
   "logo": {
-    "text": "Goldkruste",
-    "tagline": "HANDWERKSBÄCKEREI · SEIT 1987",
-    "font": "Playfair Display",
-    "style": "text_serif"
+    "text": "PRO",
+    "tagline": "MECHANIC",
+    "font": "Staatliches"
   }
 }
