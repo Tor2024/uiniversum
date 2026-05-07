@@ -1,8 +1,8 @@
 {
   "meta": {
-    "title": "Tranquil Spa | Wellness Center",
-    "description": "Rejuvenate your mind and body with our luxury spa treatments.",
-    "favicon": "/media/presets/spa/favicon.ico",
+    "title": "Strandblick Wellness | Massage & Aesthetik",
+    "description": "Fortgeschrittene Haut-, Koerper- und Schoenheitsbehandlungen in Kiel. Expertenmassage, Microneedling und Schoenheitsbehandlungen in einem ruhigen Kuestenatelier.",
+    "favicon": "/media/presets/spa_center/favicon.ico",
     "language": "de",
     "availableLanguages": [
       "de",
@@ -52,124 +52,328 @@
       "shadowHover": "0 10px 40px rgba(61,43,31,0.12)",
       "transitionDuration": "250ms",
       "transitionTiming": "ease-out",
-      "imageRatioHero": "21:9",
+      "imageRatioHero": "16:9",
       "imageRatioCard": "4:3",
       "imageRatioAvatar": "1:1"
-    },
-    "customCss": ""
+    }
   },
   "seo": {
-    "ogImage": "/media/presets/spa/og-default.jpg",
+    "ogImage": "/media/presets/spa_center/og-default.jpg",
     "twitterCard": "summary_large_image",
     "googleAnalyticsId": "",
-    "keywords": "spa, wellness, relaxation"
+    "keywords": "Massage Kiel, Microneedling, Gesichtsbehandlung, Maderotherapie, Wimpern, Brauen"
+  },
+  "layout": {
+    "style": "clean_minimal",
+    "heroType": "centered_with_booking_cta",
+    "navStyle": "light_warm",
+    "fiveStarBadge": true,
+    "marqueeText": true,
+    "coreSpecialtiesGrid": true,
+    "featuredNewTreatment": true,
+    "whyChooseUs": true,
+    "meetTherapist": true,
+    "faqAccordion": true,
+    "coastalCta": true,
+    "testimonialsLayout": "light_background",
+    "footerStyle": "warm_minimal"
   },
   "content": {
     "slogans": {
-      "en": [
-        "Relax & Rejuvenate",
-        "Pure Bliss",
-        "Inner Harmony"
-      ],
       "de": [
-        "Entspannen & Verjüngen",
-        "Reine Seligkeit",
-        "Innere Harmonie"
+        "Kuestliche Selbstfuersorge in Kiel",
+        "Behandlungen, die sich so gut anfuehlen, wie sie aussehen",
+        "Ruhig. Privat. Professionell."
+      ],
+      "en": [
+        "Coastal self-care in Kiel",
+        "Treatments designed for how you want to feel",
+        "Calm. Private. Professional."
       ],
       "ru": [
-        "Расслабься и обновись",
-        "Чистое блаженство",
-        "Внутренняя гармония"
+        "Прибрежный уход за собой в Киле",
+        "Процедуры, созданные для того, как вы хотите себя чувствовать",
+        "Спокойно. Приватно. Профессионально."
       ]
+    },
+    "marquee": {
+      "de": "JEDEN TAG * SCHOENHEIT, DIE SICH GUT ANFUEHLT *",
+      "en": "EVERY DAY * BEAUTY THAT FEELS AS GOOD *",
+      "ru": "КАЖДЫЙ ДЕНЬ * КРАСОТА, КОТОРАЯ ОЩУЩАЕТСЯ ТАК ЖЕ ХОРОШО *"
     },
     "hero": {
       "de": {
-        "heading": "Entspannen & Verjüngen",
-        "subheading": "Rejuvenate your mind and body with our luxury spa treatments.",
-        "cta": "Termin buchen",
-        "image": "/media/presets/spa/hero.jpg"
+        "heading": "Fortgeschrittene Haut-, Koerper- und Schoenheitsbehandlungen in Kiel",
+        "subheading": "Expertenmassage, Microneedling und Schoenheitsbehandlungen in einem ruhigen Kuestenatelier. Nur Premium-Naturprodukte.",
+        "cta": "Behandlung buchen",
+        "secondaryCta": "Alle Behandlungen ansehen",
+        "note_de": "Sichere Online-Buchung.",
+        "image": "/media/presets/spa_center/hero.jpg",
+        "imageAlt": "Strandblick Wellness Kiel"
       },
       "en": {
-        "heading": "Relax & Rejuvenate",
-        "subheading": "Rejuvenate your mind and body with our luxury spa treatments.",
-        "cta": "Book a Treatment",
-        "image": "/media/presets/spa/hero.jpg"
+        "heading": "Advanced Skin, Body & Beauty Treatments in Kiel",
+        "subheading": "Expert massage, microneedling, and beauty treatments in a tranquil coastal studio. Using only premium natural products.",
+        "cta": "Book Your Treatment",
+        "secondaryCta": "View All Treatments",
+        "note_en": "Secure online booking.",
+        "image": "/media/presets/spa_center/hero.jpg",
+        "imageAlt": "Strandblick Wellness Kiel"
       },
       "ru": {
-        "heading": "Расслабься и обновись",
-        "subheading": "Rejuvenate your mind and body with our luxury spa treatments.",
-        "cta": "Записаться",
-        "image": "/media/presets/spa/hero.jpg"
+        "heading": "Продвинутые процедуры для кожи, тела и красоты в Киле",
+        "subheading": "Экспертный массаж, микронидлинг и косметические процедуры в спокойной прибрежной студии. Только премиальные натуральные продукты.",
+        "cta": "Записаться на процедуру",
+        "secondaryCta": "Все процедуры",
+        "image": "/media/presets/spa_center/hero.jpg",
+        "imageAlt": "Strandblick Wellness Kiel"
       }
     },
-    "about": {
-      "de": {
-        "title": "Unsere Philosophie",
-        "text": "Eine Oase der Ruhe mit organischen Produkten."
+    "coreSpecialties": [
+      {
+        "id": "massage",
+        "name_de": "Massage, MLD & Maderotherapie",
+        "name_en": "Massage, MLD & Maderotherapy",
+        "name_ru": "Массаж, МЛД и Мадеротерапия",
+        "desc_de": "Experten-Lymphdrainage und Massage zur Unterstuetzung der Heilung, Reduzierung von Schwellungen und Foerderung tiefer Entspannung.",
+        "desc_en": "Expert lymphatic drainage and massage to support healing, reduce swelling, and promote deep relaxation.",
+        "desc_ru": "Экспертный лимфодренаж и массаж для поддержки заживления, уменьшения отёков и глубокого расслабления.",
+        "image": "/media/presets/spa_center/massage.jpg"
       },
-      "en": {
-        "title": "Our Philosophy",
-        "text": "An oasis of calm where we use organic products to soothe your senses."
+      {
+        "id": "facials",
+        "name_de": "Gesichtsbehandlungen & Hautpflege",
+        "name_en": "Facials & Skincare",
+        "name_ru": "Уход за лицом и кожей",
+        "desc_de": "Von sanften Glow-up-Facials bis hin zu fortgeschrittenen Cliniccare-Peelings und Microneedling fuer glattere Textur, Klarheit und Strahlkraft.",
+        "desc_en": "From gentle glow up facials, advanced Cliniccare peels and Microneedling for smoother texture, clarity and radiance.",
+        "desc_ru": "От нежных glow-up-фейшиалов до продвинутых пилингов Cliniccare и микронидлинга для более гладкой текстуры и сияния.",
+        "image": "/media/presets/spa_center/facials.jpg"
       },
-      "ru": {
-        "title": "Наша философия",
-        "text": "Оазис спокойствия с органическими продуктами."
+      {
+        "id": "brows",
+        "name_de": "Brauen & Wimpern",
+        "name_en": "Brows & Lashes",
+        "name_ru": "Брови и ресницы",
+        "desc_de": "Natuerlich aussehende Definition, damit Sie aufwachen und sich gepflegter fuehlen — mit minimalem Aufwand.",
+        "desc_en": "Natural-looking definition so you wake up feeling more polished — with minimal effort.",
+        "desc_ru": "Естественно выglядящая чёткость, чтобы вы просыпались более ухоженными — с минимальными усилиями.",
+        "image": "/media/presets/spa_center/brows.jpg"
       }
+    ],
+    "featuredNewTreatment": {
+      "badge_de": "NEU IN KIEL",
+      "badge_en": "NEW TO KIEL",
+      "badge_ru": "НОВИНКА В КИЛЕ",
+      "title_de": "Fuehlen Sie sich leichter und geformter mit Maderotherapie",
+      "title_en": "Feel lighter and more sculpted with Maderotherapy",
+      "title_ru": "Почувствуйте себя легче и стройнее с мадеротерапией",
+      "desc_de": "Maderotherapie (Holztherapie) ist eine spezialisierte Ganzkoepersmassage mit glatten, praezise gefertigten Holzwerkzeugen. Diese Behandlung stimuliert die Lymphdrainage, unterstuetzt die Durchblutung und hilft dem Koerper, Fluessigkeitsretention und Stauungen abzubauen.",
+      "desc_en": "Maderotherapy (Wood Therapy) is a specialised full-body massage using smooth, precision-crafted wooden tools. This treatment stimulates lymphatic drainage, supports circulation and helps the body release fluid retention and congestion.",
+      "desc_ru": "Мадеротерапия (деревянная терапия) — специализированный массаж всего тела с использованием гладких деревянных инструментов. Стимулирует лимфодренаж, поддерживает кровообращение.",
+      "benefits": [
+        {
+          "de": "Hilft, Fluessigkeitsretention zu reduzieren und das Erscheinungsbild von Cellulite zu verbessern",
+          "en": "Helps reduce fluid retention and soften the appearance of cellulite",
+          "ru": "Помогает уменьшить задержку жидкости и улучшить вид целлюлита"
+        },
+        {
+          "de": "Unterstuetzt die postoperative Erholung durch verbesserten Lymphfluss",
+          "en": "Aids post-operative recovery through improved lymph flow",
+          "ru": "Помогает послеоперационному восстановлению через улучшение лимфотока"
+        },
+        {
+          "de": "Foerdert ein Gefuehl von Leichtigkeit und allgemeinem Wohlbefinden",
+          "en": "Promotes a feeling of lightness and overall wellbeing",
+          "ru": "Способствует ощущению лёгкости и общего благополучия"
+        },
+        {
+          "de": "Zielt auf hartnackige Bereiche ab und loest tiefe Muskelspannung",
+          "en": "Targets stubborn areas while releasing deep muscular tension",
+          "ru": "Воздействует на проблемные зоны, снимая глубокое мышечное напряжение"
+        }
+      ],
+      "cta_de": "Maderotherapie buchen",
+      "cta_en": "Book Maderotherapy",
+      "cta_ru": "Записаться на мадеротерапию",
+      "image": "/media/presets/spa_center/maderotherapy.jpg"
+    },
+    "whyChooseUs": [
+      {
+        "title_de": "Spezialisierte Behandlungen, auf Sie zugeschnitten",
+        "title_en": "Specialist treatments, tailored to you",
+        "title_ru": "Специализированные процедуры, подобранные для вас",
+        "desc_de": "Fortgeschrittene Massage, Maderotherapie und Hautpflege — bei jedem Termin personalisiert, damit Sie sich wirklich besser fuehlen.",
+        "desc_en": "Advanced massage, Maderotherapy and skincare — personalised at every appointment so you leave feeling genuinely better, never rushed.",
+        "desc_ru": "Продвинутый массаж, мадеротерапия и уход за кожей — персонализированные на каждом приёме.",
+        "image": "/media/presets/spa_center/why1.jpg"
+      },
+      {
+        "title_de": "Ruhiges, privates Atelier",
+        "title_en": "Calm, private studio",
+        "title_ru": "Спокойная, приватная студия",
+        "desc_de": "Ein gemuetlicher, kuestlicher Raum in Kiel, leicht erreichbar aus Flensburg, Rendsburg und Neumunster, der Ihnen hilft, sich vollstaendig zu entspannen.",
+        "desc_en": "A cosy, coastal space in Kiel, easily reached from Flensburg, Rendsburg and Neumunster, designed to help you fully unwind.",
+        "desc_ru": "Уютное прибрежное пространство в Киле, легко доступное из Фленсбурга, Рендсбурга и Ноймюнстера.",
+        "image": "/media/presets/spa_center/why2.jpg"
+      },
+      {
+        "title_de": "Erfahrene, qualifizierte Therapeutin",
+        "title_en": "Experienced, qualified therapist you can trust",
+        "title_ru": "Опытный, квалифицированный терапевт, которому можно доверять",
+        "desc_de": "Mit 12 Jahren Erfahrung in Schoenheit und Wohlbefinden nimmt sich Lea die Zeit, Ihre Ziele zu verstehen und einen Behandlungsplan zu erstellen, der zu Ihrem Leben passt.",
+        "desc_en": "With 12 years in beauty and wellbeing, Lea takes the time to understand your goals and create a treatment plan that fits your life and budget.",
+        "desc_ru": "С 12-летним опытом в красоте и велнесе Леа уделяет время, чтобы понять ваши цели и создать план лечения.",
+        "image": "/media/presets/spa_center/why3.jpg"
+      }
+    ],
+    "therapist": {
+      "name": "Lea Mueller",
+      "quote_de": "Ich bin Lea, die Therapeutin hinter Strandblick Wellness. Mit ueber 12 Jahren Erfahrung in Schoenheit und Wohlbefinden habe ich dieses Atelier als ruhigen, kuestlichen Raum in Kiel geschaffen fuer diejenigen, die sowohl sichtbare Ergebnisse als auch tiefe Entspannung suchen.",
+      "quote_en": "I'm Lea, the therapist behind Strandblick Wellness. With over 12 years' experience in beauty and wellbeing, I created this studio as a calm, coastal space in Kiel for those seeking both visible results and deep relaxation.",
+      "quote_ru": "Я Леа, терапевт Strandblick Wellness. С более чем 12-летним опытом в красоте и велнесе я создала эту студию как спокойное прибрежное пространство в Киле.",
+      "credentials_de": "NVQ Level 3 & ABT-akkreditierte Schoenheitstherapeutin. Spezialisiert auf fortgeschrittene Hautpflege, klinische Peelings und Maderotherapie.",
+      "credentials_en": "NVQ Level 3 & ABT Accredited Beauty Therapist. Specializing in advanced skincare, clinical peels, and Maderotherapy.",
+      "credentials_ru": "NVQ Level 3 & ABT аккредитованный косметолог. Специализация: продвинутый уход за кожей, клинические пилинги и мадеротерапия.",
+      "image": "/media/presets/spa_center/therapist.jpg"
     },
     "services": [
       {
-        "name_en": "Deep Tissue Massage",
-        "name_de": "Tiefengewebsmassage",
-        "name_ru": "Глубокий массаж",
-        "price": "$120",
-        "desc_en": "Release tension and stress.",
-        "image": "/media/presets/spa_center/services/massage.jpg"
+        "name_de": "Entspannungsmassage 60 Min.",
+        "name_en": "Relaxation Massage 60 min",
+        "name_ru": "Расслабляющий массаж 60 мин",
+        "price": "75 EUR",
+        "desc_de": "Klassische Entspannungsmassage fuer Koerper und Geist.",
+        "desc_en": "Classic relaxation massage for body and mind.",
+        "desc_ru": "Классический расслабляющий массаж для тела и разума.",
+        "tags": [
+          "Beliebt"
+        ]
       },
       {
-        "name_en": "Facial Treatment",
-        "name_de": "Gesichtsbehandlung",
-        "name_ru": "Уход за лицом",
-        "price": "$90",
-        "desc_en": "Glowing skin guaranteed.",
-        "image": "/media/presets/spa_center/services/facial.jpg"
+        "name_de": "Maderotherapie 60 Min.",
+        "name_en": "Maderotherapy 60 min",
+        "name_ru": "Мадеротерапия 60 мин",
+        "price": "85 EUR",
+        "desc_de": "Holztherapie fuer Lymphdrainage und Koerperformung.",
+        "desc_en": "Wood therapy for lymphatic drainage and body sculpting.",
+        "desc_ru": "Деревянная терапия для лимфодренажа и моделирования тела.",
+        "tags": [
+          "NEU"
+        ]
+      },
+      {
+        "name_de": "Glow-up Facial 60 Min.",
+        "name_en": "Glow-up Facial 60 min",
+        "name_ru": "Glow-up фейшиал 60 мин",
+        "price": "80 EUR",
+        "desc_de": "Sanfte Gesichtsbehandlung fuer strahlende Haut.",
+        "desc_en": "Gentle facial treatment for radiant skin.",
+        "desc_ru": "Нежная процедура для сияющей кожи.",
+        "tags": []
+      },
+      {
+        "name_de": "Cliniccare Peeling",
+        "name_en": "Cliniccare Peel",
+        "name_ru": "Пилинг Cliniccare",
+        "price": "95 EUR",
+        "desc_de": "Fortgeschrittenes chemisches Peeling fuer Textur und Klarheit.",
+        "desc_en": "Advanced chemical peel for texture and clarity.",
+        "desc_ru": "Продвинутый химический пилинг для текстуры и ясности.",
+        "tags": [
+          "Premium"
+        ]
+      },
+      {
+        "name_de": "Microneedling",
+        "name_en": "Microneedling",
+        "name_ru": "Микронидлинг",
+        "price": "120 EUR",
+        "desc_de": "Kollagenstimulation fuer juengere, straffere Haut.",
+        "desc_en": "Collagen stimulation for younger, firmer skin.",
+        "desc_ru": "Стимуляция коллагена для более молодой, упругой кожи.",
+        "tags": [
+          "Premium"
+        ]
+      },
+      {
+        "name_de": "Brauen & Wimpern Paket",
+        "name_en": "Brows & Lashes Package",
+        "name_ru": "Пакет брови и ресницы",
+        "price": "65 EUR",
+        "desc_de": "Brauen-Styling und Wimpernlifting fuer natuerliche Definition.",
+        "desc_en": "Brow styling and lash lift for natural definition.",
+        "desc_ru": "Стайлинг бровей и ламинирование ресниц для естественной чёткости.",
+        "tags": []
       }
     ],
     "testimonials": [
       {
-        "name": "Relaxed R.",
-        "text_en": "Best massage of my life. I feel like a new person.",
-        "text_de": "Best massage of my life. I feel like a new person.",
-        "text_ru": "Best massage of my life. I feel like a new person.",
+        "name": "Sandra K.",
+        "location_de": "Kiel",
+        "text_de": "Lea ist unglaublich. Die Maderotherapie hat meine Beine nach der Operation so viel besser gemacht. Ich fuehle mich leichter und die Schwellung ist deutlich zurueckgegangen. Absolut empfehlenswert.",
+        "text_en": "Lea is incredible. The maderotherapy has made my legs so much better after surgery. I feel lighter and the swelling has gone down significantly. Absolutely recommended.",
+        "text_ru": "Леа невероятна. Мадеротерапия значительно улучшила состояние моих ног после операции. Чувствую себя легче, отёк заметно уменьшился.",
         "rating": 5,
-        "avatar": "/media/presets/spa_center/avatars/relaxed.jpg"
+        "source": "Google"
+      },
+      {
+        "name": "Maria T.",
+        "location_de": "Kiel",
+        "text_de": "Das Glow-up Facial war wunderschoen. Meine Haut strahlt seit Wochen. Lea nimmt sich wirklich Zeit fuer jeden Kunden und erklaert alles genau.",
+        "text_en": "The glow-up facial was wonderful. My skin has been glowing for weeks. Lea really takes time for each client and explains everything precisely.",
+        "text_ru": "Glow-up фейшиал был прекрасен. Моя кожа сияет уже несколько недель. Леа действительно уделяет время каждому клиенту.",
+        "rating": 5,
+        "source": "Google"
+      }
+    ],
+    "faq": [
+      {
+        "q_de": "Wie buche ich und bezahle ich?",
+        "q_en": "How do I book and pay?",
+        "q_ru": "Как записаться и оплатить?",
+        "a_de": "Online ueber Fresha oder telefonisch. Zahlung per Karte oder bar vor Ort.",
+        "a_en": "Online via Fresha or by phone. Payment by card or cash on site.",
+        "a_ru": "Онлайн через Fresha или по телефону. Оплата картой или наличными на месте."
+      },
+      {
+        "q_de": "Kann ich stornieren oder umbuchen?",
+        "q_en": "Can I cancel or reschedule?",
+        "q_ru": "Можно ли отменить или перенести?",
+        "a_de": "Kostenlose Stornierung bis 24 Stunden vor dem Termin. Spaetere Stornierungen koennen eine Gebuehr verursachen.",
+        "a_en": "Free cancellation up to 24 hours before the appointment. Later cancellations may incur a fee.",
+        "a_ru": "Бесплатная отмена за 24 часа. Более поздние отмены могут повлечь комиссию."
+      },
+      {
+        "q_de": "Brauche ich einen Patch-Test fuer Brauen- oder Wimpernbehandlungen?",
+        "q_en": "Do I need a patch test for brow or lash treatments?",
+        "q_ru": "Нужен ли патч-тест для процедур с бровями или ресницами?",
+        "a_de": "Ja, ein Patch-Test ist 48 Stunden vor der Behandlung erforderlich. Bitte kontaktieren Sie uns im Voraus.",
+        "a_en": "Yes, a patch test is required 48 hours before the treatment. Please contact us in advance.",
+        "a_ru": "Да, патч-тест необходим за 48 часов до процедуры. Пожалуйста, свяжитесь с нами заранее."
+      },
+      {
+        "q_de": "Was passiert bei meinem ersten Besuch?",
+        "q_en": "What happens at my first visit?",
+        "q_ru": "Что происходит при первом визите?",
+        "a_de": "Wir beginnen mit einer kurzen Beratung, um Ihre Ziele und Beduerfnisse zu verstehen, bevor wir mit der Behandlung beginnen.",
+        "a_en": "We start with a brief consultation to understand your goals and needs before beginning the treatment.",
+        "a_ru": "Мы начинаем с краткой консультации, чтобы понять ваши цели и потребности перед началом процедуры."
       }
     ],
     "contact": {
-      "address": "Kurfürstendamm 45, 10707 Berlin",
-      "phone": "+49 30 8877 6655",
-      "email": "info@tranquil-spa.de",
-      "hours_de": "Mo-Fr: 10:00 - 20:00 Uhr · Sa-So: 09:00 - 19:00 Uhr",
-      "hours_en": "Mon-Fri: 10:00 AM - 8:00 PM · Sat-Sun: 9:00 AM - 7:00 PM",
-      "hours_ru": "Пн-Пт: 10:00 - 20:00 · Сб-Вс: 09:00 - 19:00"
+      "address": "Holstenstrasse 45, 24103 Kiel",
+      "phone": "+49 431 5566 7788",
+      "email": "lea@strandblick-wellness.de",
+      "hours_de": "Di-Fr: 10:00-19:00 Uhr | Sa: 09:00-17:00 Uhr | Mo & So: Ruhetag",
+      "hours_en": "Tue-Fri: 10:00 AM-7:00 PM | Sat: 9:00 AM-5:00 PM | Mon & Sun: Closed",
+      "hours_ru": "Вт-Пт: 10:00-19:00 | Сб: 09:00-17:00 | Пн и Вс: выходной"
     },
-    "faq": [
-      {
-        "q_de": "Muss ich einen Termin buchen?",
-        "q_en": "Do I need to book an appointment?",
-        "q_ru": "Нужно ли записываться заранее?",
-        "a_de": "Wir empfehlen eine Voranmeldung, nehmen aber auch Laufkundschaft an, sofern Kapazitäten frei sind.",
-        "a_en": "We recommend booking in advance, but we also accept walk-ins if capacity allows.",
-        "a_ru": "Рекомендуем записываться заранее, но принимаем и без записи при наличии свободных мест."
-      },
-      {
-        "q_de": "Welche Produkte verwenden Sie?",
-        "q_en": "What products do you use?",
-        "q_ru": "Какие продукты вы используете?",
-        "a_de": "Wir arbeiten ausschließlich mit zertifizierten Bio-Produkten von Thalgo und Comfort Zone.",
-        "a_en": "We work exclusively with certified organic products from Thalgo and Comfort Zone.",
-        "a_ru": "Мы работаем исключительно с сертифицированными органическими продуктами Thalgo и Comfort Zone."
-      }
-    ]
+    "legal": {
+      "hwgNote_de": "Diese Praxis unterliegt dem Heilmittelwerbegesetz (HWG).",
+      "priceNote_de": "Alle Preise inkl. MwSt. (19%).",
+      "privacyNote_de": "Ihre Daten werden gemaess DSGVO verarbeitet."
+    }
   },
   "booking": {
     "enabled": true,
@@ -181,11 +385,17 @@
       "16:00",
       "17:30"
     ],
-    "duration": 90
+    "duration": 60,
+    "maxGuests": 1
   },
   "logo": {
-    "text": "TRANQUIL",
-    "tagline": "SPA",
-    "font": "Cinzel"
+    "text": "Strandblick",
+    "tagline": "WELLNESS KIEL",
+    "font": "Cormorant Garamond",
+    "style": "text_serif"
+  },
+  "social": {
+    "instagram": "https://instagram.com/strandblick.wellness",
+    "facebook": "https://facebook.com/strandblickwellness"
   }
 }

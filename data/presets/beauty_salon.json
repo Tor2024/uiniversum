@@ -1,10 +1,14 @@
 {
   "meta": {
-    "title": "Lumière Beauty | Premium Salon",
-    "description": "Ihr Premium-Schönheitssalon in München. Haare, Make-up, Nägel und Hautpflege von zertifizierten Expertinnen. Jetzt Termin buchen.",
+    "title": "Lumiere Aesthetics | Aesthetische Behandlungen",
+    "description": "Red Banks vertrauenswuerdiges Ziel fuer personalisierte aesthetische Behandlungen und natuerlich aussehende Ergebnisse. Injectables, Microneedling, medizinische Hautpflege.",
     "favicon": "/media/presets/beauty_salon/favicon.ico",
     "language": "de",
-    "availableLanguages": ["de", "en", "ru"]
+    "availableLanguages": [
+      "de",
+      "en",
+      "ru"
+    ]
   },
   "design": {
     "preset": "beauty_salon",
@@ -51,254 +55,403 @@
       "imageRatioHero": "16:9",
       "imageRatioCard": "3:4",
       "imageRatioAvatar": "1:1"
-    },
-    "customCss": ""
+    }
   },
   "seo": {
     "ogImage": "/media/presets/beauty_salon/og-default.jpg",
     "twitterCard": "summary_large_image",
     "googleAnalyticsId": "",
-    "keywords": "Beauty Salon München, Haare, Make-up, Nägel, Hautpflege, Termin buchen"
+    "keywords": "Aesthetische Behandlungen Berlin, Botox, Filler, Microneedling, RF Microneedling, Haarrestaurierung"
   },
   "layout": {
     "style": "clean_minimal",
-    "heroType": "split_screen",
-    "navStyle": "light_rose",
-    "servicesLayout": "grid_3col_with_price",
-    "testimonialsLayout": "light_background",
-    "footerStyle": "light_elegant"
+    "heroType": "split_screen_with_cta",
+    "announcementBar": true,
+    "navStyle": "light_with_book_cta",
+    "credentialsBar": true,
+    "serviceCategoriesGrid": true,
+    "bodyMapSection": true,
+    "featuredTreatmentSpotlight": true,
+    "hairRestorationSection": true,
+    "popularTreatmentsGrid": true,
+    "testimonialsLayout": "google_reviews_carousel",
+    "medicalSkincareSection": true,
+    "meetFounderSection": true,
+    "consultationCta": true,
+    "footerStyle": "clean_minimal"
   },
   "content": {
+    "announcementBar": {
+      "de": "10 EUR/EINHEIT TOX fuer Neukunden · Jetzt buchen",
+      "en": "$10/UNIT TOX for new clients only · Buy Now",
+      "ru": "10 EUR/ЕДИНИЦА TOX для новых клиентов · Купить сейчас"
+    },
     "slogans": {
-      "de": ["Schönheit, die von innen strahlt", "Ihr Moment der Verwöhnung", "Expertinnen für Ihre Schönheit"],
-      "en": ["Beauty that radiates from within", "Your moment of indulgence", "Experts for your beauty"],
-      "ru": ["Красота, которая сияет изнутри", "Ваш момент удовольствия", "Эксперты вашей красоты"]
+      "de": [
+        "Selbstbewusst fuehlen. Strahlend aussehen.",
+        "Natuerliche Ergebnisse. Expertenpflege.",
+        "Ihre Schoenheit, verstaerkt."
+      ],
+      "en": [
+        "Feel Confident. Look Radiant.",
+        "Natural Results. Expert Care.",
+        "Your Beauty, Amplified."
+      ],
+      "ru": [
+        "Чувствуй уверенность. Выгляди сияюще.",
+        "Естественные результаты. Экспертный уход.",
+        "Ваша красота, усиленная."
+      ]
     },
     "hero": {
       "de": {
-        "heading": "Schönheit, die von innen strahlt.",
-        "subheading": "Lumière Beauty vereint Wissenschaft und Ästhetik. Unsere zertifizierten Expertinnen begleiten Sie auf Ihrem Weg zu Ihrer schönsten Version.",
-        "cta": "Termin buchen",
-        "secondaryCta": "Leistungen entdecken",
+        "heading": "SELBSTBEWUSST FUEHLEN.\nSTRAHLEND AUSSEHEN.",
+        "subheading": "Berlins vertrauenswuerdiges Ziel fuer personalisierte aesthetische Behandlungen und natuerlich aussehende Ergebnisse.",
+        "cta": "Online buchen",
+        "secondaryCta": "Unsere Leistungen",
         "image": "/media/presets/beauty_salon/hero.jpg",
-        "imageAlt": "Eleganter Schönheitssalon mit warmem Licht"
+        "imageAlt": "Lumiere Aesthetics Berlin"
       },
       "en": {
-        "heading": "Beauty that radiates from within.",
-        "subheading": "Lumière Beauty combines science and aesthetics. Our certified experts guide you on your journey to your most beautiful self.",
-        "cta": "Book Appointment",
-        "secondaryCta": "Discover Services",
+        "heading": "FEEL CONFIDENT.\nLOOK RADIANT.",
+        "subheading": "Berlin's trusted destination for personalized aesthetic treatments and natural-looking results.",
+        "cta": "Book Online",
+        "secondaryCta": "Our Services",
         "image": "/media/presets/beauty_salon/hero.jpg",
-        "imageAlt": "Elegant beauty salon with warm lighting"
+        "imageAlt": "Lumiere Aesthetics Berlin"
       },
       "ru": {
-        "heading": "Красота, которая сияет изнутри.",
-        "subheading": "Lumière Beauty объединяет науку и эстетику. Наши сертифицированные эксперты сопровождают вас на пути к вашей лучшей версии.",
-        "cta": "Записаться",
+        "heading": "ЧУВСТВУЙ УВЕРЕННОСТЬ.\nВЫГЛЯДИ СИЯЮЩЕ.",
+        "subheading": "Надёжное место в Берлине для персонализированных эстетических процедур и естественно выглядящих результатов.",
+        "cta": "Записаться онлайн",
         "secondaryCta": "Наши услуги",
         "image": "/media/presets/beauty_salon/hero.jpg",
-        "imageAlt": "Элегантный салон красоты с тёплым освещением"
+        "imageAlt": "Lumiere Aesthetics Berlin"
       }
     },
-    "about": {
-      "de": {
-        "title": "Schönheit mit Seele",
-        "subtitle": "Seit 2012 in München-Schwabing",
-        "text": "Lumière Beauty entstand aus der Überzeugung, dass wahre Schönheit Pflege, Zeit und Expertise verdient. Unsere Gründerin Marie-Claire Hoffmann, ausgebildet in Paris und London, hat ein Team von zwölf Spezialistinnen aufgebaut, die jeden Besuch zu einem persönlichen Erlebnis machen. Wir arbeiten ausschließlich mit zertifizierten, tierversuchsfreien Produkten.",
-        "image": "/media/presets/beauty_salon/about.jpg",
-        "imageAlt": "Innenansicht des Lumière Beauty Salons",
-        "stats": [
-          { "value": "12", "label": "Jahre Erfahrung" },
-          { "value": "12", "label": "Spezialistinnen" },
-          { "value": "8.000+", "label": "Zufriedene Kundinnen" }
-        ]
-      },
-      "en": {
-        "title": "Beauty with Soul",
-        "subtitle": "Since 2012 in Munich-Schwabing",
-        "text": "Lumière Beauty was born from the conviction that true beauty deserves care, time and expertise. Our founder Marie-Claire Hoffmann, trained in Paris and London, has built a team of twelve specialists who make every visit a personal experience. We work exclusively with certified, cruelty-free products.",
-        "image": "/media/presets/beauty_salon/about.jpg",
-        "imageAlt": "Interior of Lumière Beauty Salon",
-        "stats": [
-          { "value": "12", "label": "Years of experience" },
-          { "value": "12", "label": "Specialists" },
-          { "value": "8,000+", "label": "Happy clients" }
-        ]
-      },
-      "ru": {
-        "title": "Красота с душой",
-        "subtitle": "С 2012 года в Мюнхен-Швабинге",
-        "text": "Lumière Beauty родился из убеждения, что настоящая красота заслуживает ухода, времени и экспертизы. Наша основательница Мари-Клер Хоффманн, обученная в Париже и Лондоне, создала команду из двенадцати специалистов, которые делают каждый визит личным опытом. Мы работаем исключительно с сертифицированными продуктами без тестирования на животных.",
-        "image": "/media/presets/beauty_salon/about.jpg",
-        "imageAlt": "Интерьер салона Lumière Beauty",
-        "stats": [
-          { "value": "12", "label": "Лет опыта" },
-          { "value": "12", "label": "Специалистов" },
-          { "value": "8.000+", "label": "Довольных клиентов" }
-        ]
-      }
-    },
-    "services": [
+    "credentials": [
       {
-        "name_de": "Haarpflege & Styling",
-        "name_en": "Hair Care & Styling",
-        "name_ru": "Уход за волосами и укладка",
-        "price": "ab 65€",
-        "duration_de": "60–120 Min.",
-        "desc_de": "Schnitt, Farbe, Balayage, Keratin-Behandlung. Maßgeschneidert für Ihren Haartyp.",
-        "desc_en": "Cut, colour, balayage, keratin treatment. Tailored to your hair type.",
-        "desc_ru": "Стрижка, окрашивание, балаяж, кератиновое выпрямление. Подобрано под ваш тип волос.",
-        "image": "/media/presets/beauty_salon/services/hair.jpg",
-        "tags": ["Beliebt"]
+        "name": "Deutsche Gesellschaft fuer Aesthetische Medizin (DGAM)",
+        "logo": "/media/presets/beauty_salon/creds/dgam.png"
       },
       {
-        "name_de": "Gesichtspflege & Peeling",
-        "name_en": "Facial & Peeling",
-        "name_ru": "Уход за лицом и пилинг",
-        "price": "ab 85€",
-        "duration_de": "60–90 Min.",
-        "desc_de": "Tiefenreinigung, Hyaluron-Infusion, chemisches Peeling. Für strahlende Haut.",
-        "desc_en": "Deep cleansing, hyaluronic infusion, chemical peel. For radiant skin.",
-        "desc_ru": "Глубокое очищение, гиалуроновая инфузия, химический пилинг. Для сияющей кожи.",
-        "image": "/media/presets/beauty_salon/services/facial.jpg",
-        "tags": ["Premium"]
+        "name": "Berufsverband der Aesthetischen Medizin (BVAM)",
+        "logo": "/media/presets/beauty_salon/creds/bvam.png"
       },
       {
-        "name_de": "Maniküre & Nägel",
-        "name_en": "Manicure & Nails",
-        "name_ru": "Маникюр и ногти",
-        "price": "ab 45€",
-        "duration_de": "45–75 Min.",
-        "desc_de": "Klassische Maniküre, Gel-Nägel, Nail Art. Langanhaltende Ergebnisse.",
-        "desc_en": "Classic manicure, gel nails, nail art. Long-lasting results.",
-        "desc_ru": "Классический маникюр, гель-ногти, нейл-арт. Долговременный результат.",
-        "image": "/media/presets/beauty_salon/services/nails.jpg",
-        "tags": []
+        "name": "Zertifizierte Injektorin",
+        "logo": "/media/presets/beauty_salon/creds/cert.png"
       },
       {
-        "name_de": "Braut-Paket",
-        "name_en": "Bridal Package",
-        "name_ru": "Свадебный пакет",
-        "price": "ab 280€",
-        "duration_de": "3–4 Std.",
-        "desc_de": "Haare, Make-up und Nägel für Ihren besonderen Tag. Inklusive Probe-Termin.",
-        "desc_en": "Hair, make-up and nails for your special day. Including trial appointment.",
-        "desc_ru": "Волосы, макияж и ногти для вашего особого дня. Включая пробный визит.",
-        "image": "/media/presets/beauty_salon/services/bridal.jpg",
-        "tags": ["Beliebt", "Paket"]
-      },
-      {
-        "name_de": "Wimpern & Brauen",
-        "name_en": "Lashes & Brows",
-        "name_ru": "Ресницы и брови",
-        "price": "ab 55€",
-        "duration_de": "45–90 Min.",
-        "desc_de": "Wimpernverlängerung, Laminierung, Microblading. Für ausdrucksstarke Augen.",
-        "desc_en": "Lash extensions, lamination, microblading. For expressive eyes.",
-        "desc_ru": "Наращивание ресниц, ламинирование, микроблейдинг. Для выразительных глаз.",
-        "image": "/media/presets/beauty_salon/services/lashes.jpg",
-        "tags": ["Trend"]
-      },
-      {
-        "name_de": "Make-up & Styling",
-        "name_en": "Make-up & Styling",
-        "name_ru": "Макияж и стайлинг",
-        "price": "ab 75€",
-        "duration_de": "60 Min.",
-        "desc_de": "Tages-, Abend- und Event-Make-up. Mit professionellen Produkten von Charlotte Tilbury.",
-        "desc_en": "Day, evening and event make-up. With professional products by Charlotte Tilbury.",
-        "desc_ru": "Дневной, вечерний и событийный макияж. С профессиональными продуктами Charlotte Tilbury.",
-        "image": "/media/presets/beauty_salon/services/makeup.jpg",
-        "tags": []
+        "name": "Medizinische Fachkraft",
+        "logo": "/media/presets/beauty_salon/creds/medical.png"
       }
     ],
+    "serviceCategories": [
+      {
+        "id": "skincare",
+        "name_de": "HAUTPFLEGE",
+        "name_en": "SKIN CARE",
+        "name_ru": "УХОД ЗА КОЖЕЙ",
+        "image": "/media/presets/beauty_salon/categories/skincare.jpg",
+        "services": [
+          {
+            "name_de": "Chemisches Peeling",
+            "name_en": "Chemical Peels",
+            "name_ru": "Химический пилинг"
+          },
+          {
+            "name_de": "SkinPen Microneedling",
+            "name_en": "SkinPen Microneedling",
+            "name_ru": "SkinPen Микронидлинг"
+          },
+          {
+            "name_de": "SYLFIRM-X RF Microneedling",
+            "name_en": "SYLFIRM-X RF Microneedling",
+            "name_ru": "SYLFIRM-X RF Микронидлинг"
+          },
+          {
+            "name_de": "Glo2Facial",
+            "name_en": "Glo2Facial",
+            "name_ru": "Glo2Facial"
+          },
+          {
+            "name_de": "Medizinische Hautpflege",
+            "name_en": "Medical Grade Skincare",
+            "name_ru": "Медицинская косметика"
+          }
+        ]
+      },
+      {
+        "id": "wellness",
+        "name_de": "WELLNESS",
+        "name_en": "WELLNESS",
+        "name_ru": "ВЕЛНЕС",
+        "image": "/media/presets/beauty_salon/categories/wellness.jpg",
+        "services": [
+          {
+            "name_de": "Concierge Wellness-Injektionen",
+            "name_en": "Concierge Wellness Injections",
+            "name_ru": "Велнес-инъекции"
+          }
+        ]
+      },
+      {
+        "id": "injectables",
+        "name_de": "INJECTABLES",
+        "name_en": "INJECTABLES",
+        "name_ru": "ИНЪЕКЦИИ",
+        "image": "/media/presets/beauty_salon/categories/injectables.jpg",
+        "services": [
+          {
+            "name_de": "Botox",
+            "name_en": "Botox",
+            "name_ru": "Ботокс"
+          },
+          {
+            "name_de": "Dysport",
+            "name_en": "Dysport",
+            "name_ru": "Диспорт"
+          },
+          {
+            "name_de": "Dermale Filler",
+            "name_en": "Dermal Fillers",
+            "name_ru": "Дермальные филлеры"
+          }
+        ]
+      }
+    ],
+    "bodyMap": {
+      "title_de": "Behandlungsbereiche",
+      "title_en": "Treatment Areas",
+      "title_ru": "Зоны лечения",
+      "areas": [
+        "Kopfhaut",
+        "Unter den Augen",
+        "Kiefer",
+        "Hals",
+        "Gesicht",
+        "Haende",
+        "Dekollete"
+      ]
+    },
+    "featuredTreatment": {
+      "id": "sylfirm",
+      "badge_de": "SYLFIRM X RF MICRONEEDLING",
+      "badge_en": "SYLFIRM X RF MICRONEEDLING",
+      "badge_ru": "SYLFIRM X RF МИКРОНИДЛИНГ",
+      "title_de": "DIE ULTIMATIVE BEHANDLUNG FUER STRAFFUNG, FESTIGUNG UND AUFHELLUNG DER HAUT",
+      "title_en": "THE ULTIMATE TREATMENT FOR SKIN LIFTING, FIRMING & BRIGHTENING",
+      "title_ru": "ЛУЧШАЯ ПРОЦЕДУРА ДЛЯ ЛИФТИНГА, УКРЕПЛЕНИЯ И ОСВЕТЛЕНИЯ КОЖИ",
+      "desc_de": "Erleben Sie die naechste Generation der Hautverjüngung. SYLFIRM X ist die erste und einzige Dual-Wave-RF-Microneedling-Technologie, die speziell entwickelt wurde, um feine Linien, Schlaffheit, Textur und sogar hartnäckige Pigmentierung zu behandeln. Durch die Kombination von präzisem Microneedling mit fortschrittlicher Radiofrequenzenergie stimuliert SYLFIRM X die tiefe Kollagenerneuerung.",
+      "desc_en": "Experience the next generation of skin rejuvenation. Sylfirm X is the first and only dual-wave RF microneedling technology, uniquely designed to target fine lines, laxity, texture, and even stubborn pigmentation. By combining precise microneedling with advanced radiofrequency energy, Sylfirm X stimulates deep collagen renewal.",
+      "desc_ru": "Испытайте следующее поколение омоложения кожи. SYLFIRM X — первая и единственная технология двойной волны RF-микронидлинга, разработанная для борьбы с морщинами, дряблостью, текстурой и пигментацией.",
+      "cta_de": "Beratung buchen",
+      "cta_en": "Book Consultation",
+      "cta_ru": "Записаться на консультацию",
+      "image": "/media/presets/beauty_salon/sylfirm.jpg"
+    },
+    "hairRestoration": {
+      "badge_de": "HAARRESTAURIERUNG",
+      "badge_en": "HAIR RESTORATION",
+      "badge_ru": "ВОССТАНОВЛЕНИЕ ВОЛОС",
+      "title_de": "REVITALISIEREN SIE IHR HAAR. GEWINNEN SIE IHR SELBSTVERTRAUEN ZURUECK.",
+      "title_en": "REVIVE YOUR HAIR. RECLAIM YOUR CONFIDENCE.",
+      "title_ru": "ОЖИВИТЕ ВОЛОСЫ. ВЕРНИТЕ УВЕРЕННОСТЬ.",
+      "desc_de": "Haarausfall? Wir haben die Loesung. Unsere nicht-chirurgische Haarrestaurierungsbehandlung nutzt die natuerliche regenerative Kraft Ihres Koerpers, um ruhende Follikel zu reaktivieren und vorhandene Straehnen zu staerken.",
+      "desc_en": "Thinning hair? We've got you. Our non-surgical hair restoration treatment uses your body's natural regenerative power to help reactivate dormant follicles, strengthen existing strands, and support fuller, healthier-looking hair.",
+      "desc_ru": "Редеющие волосы? Мы поможем. Наша нехирургическая процедура восстановления волос использует естественную регенеративную силу вашего тела для реактивации спящих фолликулов.",
+      "image": "/media/presets/beauty_salon/hair-restoration.jpg"
+    },
     "testimonials": [
       {
-        "name": "Laura M.",
-        "location_de": "München",
-        "text_de": "Lumière ist mein Wohlfühlort. Marie-Claire und ihr Team verstehen genau, was ich möchte — und liefern jedes Mal mehr als erwartet. Die Balayage-Behandlung hat mein Haar komplett transformiert.",
-        "text_en": "Lumière is my happy place. Marie-Claire and her team understand exactly what I want — and deliver more than expected every time. The balayage treatment completely transformed my hair.",
-        "text_ru": "Lumière — моё место счастья. Мари-Клер и её команда точно понимают, чего я хочу — и каждый раз превосходят ожидания. Балаяж полностью преобразил мои волосы.",
+        "name": "Daniela M.",
+        "location_de": "Berlin",
+        "text_de": "Ich kenne Britta aus einer ihrer frueheren Praxen und war so begeistert, als ich hoerte, dass sie Lumiere Aesthetics eroeffnet hat! Ich arbeite regelmaessig mit ihr und habe in kurzer Zeit einen grossen Unterschied in meiner Haut gesehen.",
+        "text_en": "I have known Britta from one of her former practices and was so excited when I heard she opened Lumiere Aesthetics! I have been working with her regularly and have seen such a difference in my skin in a short time.",
+        "text_ru": "Я знаю Бритту по одной из её прежних практик и была так рада, когда узнала, что она открыла Lumiere Aesthetics! Работаю с ней регулярно и вижу большую разницу в коже за короткое время.",
         "rating": 5,
         "source": "Google",
-        "avatar": "/media/presets/beauty_salon/avatars/laura.jpg"
+        "treatment_de": "Microneedling"
       },
       {
-        "name": "Sophie K.",
-        "location_de": "München-Schwabing",
-        "text_de": "Für meine Hochzeit war Lumière die beste Wahl. Das Braut-Paket war perfekt organisiert, der Probe-Termin hat mir so viel Sicherheit gegeben. Ich habe mich wie eine Prinzessin gefühlt.",
-        "text_en": "For my wedding, Lumière was the best choice. The bridal package was perfectly organised, the trial appointment gave me so much confidence. I felt like a princess.",
-        "text_ru": "Для свадьбы Lumière был лучшим выбором. Свадебный пакет был идеально организован, пробный визит дал мне уверенность. Я чувствовала себя принцессой.",
+        "name": "Caroline S.",
+        "location_de": "Berlin-Mitte",
+        "text_de": "Britta ist eine hochqualifizierte Injektorin und sehr gut darin, zu sehen, was getan werden muss. Ich habe auch ihr Glow-Peeling entdeckt. Sie ist auch super freundlich.",
+        "text_en": "Britta is a highly skilled injector and is very good at seeing what needs to be done. I also just discovered her glow peel. She is also super kind.",
+        "text_ru": "Бритта — высококвалифицированный инъектор и очень хорошо видит, что нужно сделать. Я также только что открыла для себя её glow-пилинг. Она также очень добра.",
         "rating": 5,
         "source": "Google",
-        "avatar": "/media/presets/beauty_salon/avatars/sophie.jpg"
+        "treatment_de": "Injectables"
       },
       {
-        "name": "Anna B.",
-        "location_de": "München",
-        "text_de": "Die Gesichtsbehandlung mit Hyaluron war ein Erlebnis. Meine Haut strahlt seit Wochen. Das Team ist professionell, herzlich und nimmt sich wirklich Zeit für jeden Kunden.",
-        "text_en": "The hyaluronic facial was an experience. My skin has been glowing for weeks. The team is professional, warm and really takes time for each client.",
-        "text_ru": "Процедура с гиалуроном была незабываемой. Моя кожа сияет уже несколько недель. Команда профессиональна, сердечна и действительно уделяет время каждому клиенту.",
+        "name": "Noelle T.",
+        "location_de": "Berlin",
+        "text_de": "Als ich Britta kontaktierte, vereinbarte sie sofort einen Termin. Als ich ankam, war ich voellig beeindruckt, wie schoen Lumiere Aesthetics ist. Sie hoerte zu und beurteilte mein Gesicht aus allen Winkeln. Sie machte mich komfortabel.",
+        "text_en": "When I reached out to Britta, she immediately made an appointment. When I arrived I was completely blown away how beautiful Lumiere Aesthetics is. She listened and assessed my face from all angles. She made me feel comfortable.",
+        "text_ru": "Когда я обратилась к Бритте, она сразу же назначила встречу. Когда я пришла, я была полностью поражена тем, насколько красив Lumiere Aesthetics. Она слушала и оценивала моё лицо со всех сторон.",
         "rating": 5,
-        "source": "Instagram",
-        "avatar": "/media/presets/beauty_salon/avatars/anna.jpg"
+        "source": "Google",
+        "treatment_de": "Injectables"
       }
     ],
+    "reviewsCount": "250+",
+    "medicalSkincare": {
+      "badge_de": "MEDIZINISCHE HAUTPFLEGE",
+      "badge_en": "MEDICAL GRADE SKINCARE",
+      "badge_ru": "МЕДИЦИНСКАЯ КОСМЕТИКА",
+      "title_de": "PROFESSIONELLE HAUTPFLEGE, PERSONALISIERT FUER SIE",
+      "title_en": "PROFESSIONAL SKINCARE, PERSONALIZED FOR YOU",
+      "title_ru": "ПРОФЕССИОНАЛЬНЫЙ УХОД ЗА КОЖЕЙ, ПЕРСОНАЛИЗИРОВАННЫЙ ДЛЯ ВАС",
+      "desc_de": "Erhoehen Sie Ihre Hautpflegeroutine mit ergebnisorientierten Formeln, die entwickelt wurden, um gesundere, staerkere und strahlendere Haut zu unterstuetzen. Wir bieten medizinische Hautpflege von Dermalogica und Cliniccare an.",
+      "desc_en": "Elevate your skincare routine with results-driven formulas designed to support healthier, stronger, more radiant skin. We proudly offer medical grade skincare from Dermalogica and Cliniccare.",
+      "desc_ru": "Улучшите свой уход за кожей с формулами, ориентированными на результат. Мы предлагаем медицинскую косметику от Dermalogica и Cliniccare.",
+      "benefits": [
+        {
+          "de": "Tiefere Penetration",
+          "en": "Deeper Penetration",
+          "ru": "Более глубокое проникновение"
+        },
+        {
+          "de": "Schnellere Ergebnisse",
+          "en": "Faster Results",
+          "ru": "Более быстрые результаты"
+        },
+        {
+          "de": "Gezielte Behandlung",
+          "en": "Targeted Treatment",
+          "ru": "Целенаправленное лечение"
+        },
+        {
+          "de": "Saubere Formulierungen",
+          "en": "Clean Formulations",
+          "ru": "Чистые формулировки"
+        },
+        {
+          "de": "Langfristige Korrektur",
+          "en": "Long-Term Correction",
+          "ru": "Долгосрочная коррекция"
+        },
+        {
+          "de": "Professionelle Beratung",
+          "en": "Professional Guidance",
+          "ru": "Профессиональное руководство"
+        }
+      ]
+    },
+    "founder": {
+      "badge_de": "LERNEN SIE BRITTA HOFFMANN KENNEN, AESTHETISCHE FACHKRAFT",
+      "badge_en": "MEET BRITTA HOFFMANN, AESTHETIC NURSE",
+      "badge_ru": "ПОЗНАКОМЬТЕСЬ С БРИТТОЙ ХОФФМАНН, ЭСТЕТИЧЕСКОЙ МЕДСЕСТРОЙ",
+      "title_de": "UNTERNEHMERIN. MUTTER. MEDIZINISCHE FACHKRAFT.",
+      "title_en": "BUSINESS LEADER. WORKING MOM. MEDICAL PROFESSIONAL.",
+      "title_ru": "ПРЕДПРИНИМАТЕЛЬ. РАБОТАЮЩАЯ МАМА. МЕДИЦИНСКИЙ СПЕЦИАЛИСТ.",
+      "desc_de": "Als eine der ersten medizinischen Fachkraefte, die den Schritt als Unternehmerin in dieser Branche gewagt hat, kombiniert sie ihre medizinische Expertise mit ihrer Leidenschaft fuer Schoenheit, um ein wirklich einzigartiges Erlebnis fuer jeden Kunden zu schaffen.",
+      "desc_en": "As one of the first medical professionals to take the leap as a small business leader in this industry, she combines her medical expertise with her passion for beauty to create a truly unique and high-level experience for every client.",
+      "desc_ru": "Как один из первых медицинских специалистов, сделавших шаг в качестве предпринимателя в этой отрасли, она сочетает медицинскую экспертизу со страстью к красоте.",
+      "stats": [
+        {
+          "value": "10+",
+          "label_de": "Jahre in der Aesthetik",
+          "label_en": "Years in Aesthetics",
+          "label_ru": "Лет в эстетике"
+        },
+        {
+          "value": "5.000+",
+          "label_de": "Einheiten Botox",
+          "label_en": "Units of Botox",
+          "label_ru": "Единиц ботокса"
+        },
+        {
+          "value": "2.000+",
+          "label_de": "Betreute Kunden",
+          "label_en": "Clients Cared For",
+          "label_ru": "Клиентов"
+        },
+        {
+          "value": "100%",
+          "label_de": "Professionalitaet",
+          "label_en": "Professionalism",
+          "label_ru": "Профессионализм"
+        }
+      ],
+      "image": "/media/presets/beauty_salon/founder.jpg"
+    },
+    "consultationCta": {
+      "title_de": "NICHT SICHER, WELCHE BEHANDLUNG DIE RICHTIGE IST?",
+      "title_en": "NOT SURE WHICH PROCEDURE IS RIGHT FOR YOU?",
+      "title_ru": "НЕ УВЕРЕНЫ, КАКАЯ ПРОЦЕДУРА ВАМ ПОДХОДИТ?",
+      "desc_de": "Vereinbaren Sie eine Beratung mit unseren Experten, um Ihre aesthetischen Beduerfnisse zu besprechen.",
+      "desc_en": "Schedule a consultation with our expert providers to discuss your aesthetic needs.",
+      "desc_ru": "Запишитесь на консультацию к нашим экспертам, чтобы обсудить ваши эстетические потребности.",
+      "cta_de": "Beratung anfragen",
+      "cta_en": "Request a Consultation",
+      "cta_ru": "Запросить консультацию"
+    },
     "faq": [
       {
         "q_de": "Wie buche ich einen Termin?",
         "q_en": "How do I book an appointment?",
         "q_ru": "Как записаться на приём?",
-        "a_de": "Online über unser Buchungsformular, telefonisch oder per E-Mail. Wir empfehlen mindestens 1 Woche Vorlauf, besonders für Braut-Pakete.",
-        "a_en": "Online via our booking form, by phone or email. We recommend at least 1 week in advance, especially for bridal packages.",
-        "a_ru": "Онлайн через форму бронирования, по телефону или электронной почте. Рекомендуем записываться минимум за 1 неделю, особенно для свадебных пакетов."
+        "a_de": "Online ueber unser Buchungsformular, telefonisch oder per E-Mail. Wir empfehlen mindestens 1 Woche Vorlauf.",
+        "a_en": "Online via our booking form, by phone or email. We recommend at least 1 week in advance.",
+        "a_ru": "Онлайн через форму бронирования, по телефону или электронной почте."
       },
       {
-        "q_de": "Verwenden Sie tierversuchsfreie Produkte?",
-        "q_en": "Do you use cruelty-free products?",
-        "q_ru": "Используете ли вы продукты без тестирования на животных?",
-        "a_de": "Ja, wir arbeiten ausschließlich mit zertifizierten, tierversuchsfreien Marken: Aveda, Wella Professionals und Charlotte Tilbury.",
-        "a_en": "Yes, we work exclusively with certified cruelty-free brands: Aveda, Wella Professionals and Charlotte Tilbury.",
-        "a_ru": "Да, мы работаем исключительно с сертифицированными брендами без тестирования на животных: Aveda, Wella Professionals и Charlotte Tilbury."
+        "q_de": "Sind die Behandlungen schmerzhaft?",
+        "q_en": "Are the treatments painful?",
+        "q_ru": "Болезненны ли процедуры?",
+        "a_de": "Wir verwenden topische Betaeubungsmittel fuer alle Behandlungen, die Unbehagen verursachen koennten. Die meisten Kunden berichten von minimalem Unbehagen.",
+        "a_en": "We use topical numbing for all treatments that may cause discomfort. Most clients report minimal discomfort.",
+        "a_ru": "Мы используем местное обезболивание для всех процедур, которые могут вызвать дискомфорт."
       },
       {
         "q_de": "Gibt es eine Stornierungsrichtlinie?",
         "q_en": "Is there a cancellation policy?",
         "q_ru": "Есть ли политика отмены?",
-        "a_de": "Kostenlose Stornierung bis 24 Stunden vor dem Termin. Bei Nichterscheinen berechnen wir 50% des Servicepreises.",
-        "a_en": "Free cancellation up to 24 hours before the appointment. No-shows are charged 50% of the service price.",
-        "a_ru": "Бесплатная отмена за 24 часа до визита. При неявке взимается 50% стоимости услуги."
+        "a_de": "Kostenlose Stornierung bis 24 Stunden vor dem Termin. Spaetere Stornierungen koennen eine Gebuehr von 50% verursachen.",
+        "a_en": "Free cancellation up to 24 hours before the appointment. Later cancellations may incur a 50% fee.",
+        "a_ru": "Бесплатная отмена за 24 часа до визита. Более поздние отмены могут повлечь комиссию 50%."
       }
     ],
     "contact": {
-      "address": "Leopoldstraße 88, 80802 München-Schwabing",
-      "phone": "+49 89 3456 7890",
-      "email": "termin@lumiere-beauty.de",
-      "hours_de": "Di–Fr: 09:00–19:00 Uhr · Sa: 09:00–17:00 Uhr · Mo & So: Ruhetag",
-      "hours_en": "Tue–Fri: 9:00 AM–7:00 PM · Sat: 9:00 AM–5:00 PM · Mon & Sun: Closed",
-      "hours_ru": "Вт–Пт: 09:00–19:00 · Сб: 09:00–17:00 · Пн и Вс: выходной"
+      "address": "Kurfuerstendamm 45, 10707 Berlin-Charlottenburg",
+      "phone": "+49 30 8877 6655",
+      "email": "info@lumiere-aesthetics.de",
+      "hours_de": "Di-Fr: 10:00-19:00 Uhr | Sa: 10:00-17:00 Uhr | Mo & So: Ruhetag",
+      "hours_en": "Tue-Fri: 10:00 AM-7:00 PM | Sat: 10:00 AM-5:00 PM | Mon & Sun: Closed",
+      "hours_ru": "Вт-Пт: 10:00-19:00 | Сб: 10:00-17:00 | Пн и Вс: выходной"
     },
     "legal": {
-      "priceNote_de": "Alle Preise sind Endpreise gemäß PAngV inkl. gesetzlicher MwSt. (19%). Preise können je nach Haarlänge und Aufwand variieren.",
-      "cancellationPolicy_de": "Kostenlose Stornierung bis 24 Stunden vor dem Termin. Bei Nichterscheinen ohne Absage behalten wir uns vor, 50% des Servicepreises zu berechnen.",
-      "privacyNote_de": "Ihre Daten werden gemäß DSGVO verarbeitet und nicht an Dritte weitergegeben."
+      "hwgNote_de": "Diese Praxis unterliegt dem Heilmittelwerbegesetz (HWG). Alle Aussagen zu Behandlungsergebnissen sind individuelle Erfahrungsberichte.",
+      "priceNote_de": "Alle Preise sind Endpreise inkl. MwSt. (19%). Preise koennen je nach Behandlungsaufwand variieren.",
+      "privacyNote_de": "Ihre Daten werden gemaess DSGVO verarbeitet."
     }
   },
   "booking": {
     "enabled": true,
-    "slots": ["09:00", "10:00", "11:00", "12:00", "13:30", "14:30", "15:30", "16:30", "17:30"],
+    "slots": [
+      "10:00",
+      "11:00",
+      "12:00",
+      "13:30",
+      "14:30",
+      "15:30",
+      "16:30",
+      "17:30"
+    ],
     "duration": 60,
     "maxGuests": 1,
-    "note_de": "Bitte wählen Sie Ihre gewünschte Leistung und Spezialistin bei der Buchung."
+    "note_de": "Bitte waehlen Sie Ihre gewuenschte Behandlung bei der Buchung."
   },
   "logo": {
-    "text": "Lumière",
-    "tagline": "BEAUTY · MÜNCHEN",
+    "text": "Lumiere",
+    "tagline": "AESTHETICS BERLIN",
     "font": "Cormorant Garamond",
     "style": "text_italic"
   },
   "social": {
-    "instagram": "https://instagram.com/lumiere.beauty.munich",
-    "facebook": "https://facebook.com/lumierebeautymuenchen"
+    "instagram": "https://instagram.com/lumiere.aesthetics.berlin",
+    "facebook": "https://facebook.com/lumiereaestheticsberlin"
   }
 }
