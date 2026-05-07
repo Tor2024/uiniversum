@@ -13,16 +13,16 @@
   "design": {
     "preset": "restaurant_modern",
     "tokens": {
-      "colorBackground": "#f0ece0",
-      "colorSurface": "#e6e0ce",
-      "colorPrimary": "#2c2018",
-      "colorSecondary": "#6b5a42",
-      "colorBorder": "#c4b89a",
-      "colorAccent": "#c8973a",
-      "colorAccentHover": "#b07d28",
-      "colorDark": "#1a1410",
-      "colorDarkText": "#f0ece0",
-      "colorRed": "#8b1a1a",
+      "colorBackground": "#F0ECE0",
+      "colorSurface": "#E6E0CE",
+      "colorPrimary": "#2C2018",
+      "colorSecondary": "#6B5A42",
+      "colorBorder": "#C4B89A",
+      "colorAccent": "#C8973A",
+      "colorAccentHover": "#B07D28",
+      "colorDark": "#1A1410",
+      "colorDarkText": "#F0ECE0",
+      "colorRed": "#8B1A1A",
       "fontDisplay": "Playfair Display",
       "fontHeading": "Playfair Display",
       "fontBody": "EB Garamond",
@@ -31,7 +31,7 @@
       "fontSizeDisplay": "48px",
       "fontSizeHeading": "28px",
       "fontSizeBody": "15px",
-      "lineHeightBody": "1.6",
+      "lineHeightBody": "1.7",
       "lineHeightHeading": "1.3",
       "spacingUnit": "8px",
       "spacingSection": "56px",
@@ -42,10 +42,10 @@
       "maxWidthContent": "820px",
       "maxWidthText": "560px",
       "gridColumns": "12",
-      "gridGutter": "32px",
+      "gridGutter": "40px",
       "horizontalPaddingMobile": "20px",
       "horizontalPaddingTablet": "40px",
-      "horizontalPaddingDesktop": "60px",
+      "horizontalPaddingDesktop": "40px",
       "borderRadius": "0",
       "borderRadiusSmall": "0px",
       "borderRadiusMedium": "0px",
@@ -57,7 +57,13 @@
       "transitionTiming": "ease-out",
       "imageRatioHero": "21:9",
       "imageRatioCard": "3:2",
-      "imageRatioAvatar": "1:1"
+      "imageRatioAvatar": "1:1",
+      "colorDashedBorder": "#D4C4A0",
+      "colorSourcingBg": "#E8E0CC",
+      "colorNavLink": "#D4C9B0",
+      "colorFooterLink": "#9A8C74",
+      "colorFooterDivider": "#3A3020",
+      "colorFooterBottom": "#6B5E48"
     }
   },
   "seo": {
@@ -79,10 +85,9 @@
     "serviceChargeNote": true,
     "brandSignature": true,
     "locationsSection": true,
-    "storeSection": true,
     "newsletterSection": true,
-    "testimonialsLayout": "none",
-    "footerStyle": "dark_four_columns"
+    "footerStyle": "dark_four_columns",
+    "announcementBar": false
   },
   "content": {
     "slogans": {

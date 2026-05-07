@@ -51,152 +51,105 @@ function tf(obj: AnyObj | undefined, field: string, locale: Locale): string {
 function PresetNav({ preset, locale }: PresetRendererProps) {
   const [open, setOpen] = useState(false);
   const tokens = preset.design?.tokens || {};
-  const isDark = isColorDark(tokens.colorBackground || "#fff");
   const navStyle = preset.layout?.navStyle || "transparent_dark";
-  const isTransparent = navStyle.includes("transparent");
+  const isDishoom = navStyle === "dark_serif_gold_cta";
 
-  const navBg = isTransparent
-    ? isDark
-      ? "rgba(0,0,0,0.75)"
-      : "rgba(255,255,255,0.88)"
-    : tokens.colorSurface || "#fff";
+  // Dishoom: always dark navbar #1A1410
+  // Others: transparent or surface
+  const isDark = isColorDark(tokens.colorBackground || "#fff");
+  const isTransparent = navStyle.includes("transparent");
+  const navBg = isDishoom
+    ? (tokens.colorDark || "#1A1410")
+    : isTransparent
+      ? isDark ? "rgba(0,0,0,0.75)" : "rgba(255,255,255,0.88)"
+      : tokens.colorSurface || "#fff";
+
+  const navTextColor = isDishoom ? (tokens.colorNavLink || "#D4C9B0") : (tokens.colorSecondary || tokens.colorPrimary);
+  const logoColor = isDishoom ? (tokens.colorDarkText || "#F0ECE0") : (tokens.colorAccent || tokens.colorPrimary);
 
   const logo = preset.logo || {};
   const links: string[] = preset.navigation?.links || ["Über uns", "Leistungen", "Kontakt"];
   const accentDark = isColorDark(tokens.colorAccent || "#000");
 
   return (
-    <nav
-      style={{
-        position: "sticky",
-        top: 0,
-        zIndex: 100,
-        background: navBg,
-        backdropFilter: "blur(12px)",
-        WebkitBackdropFilter: "blur(12px)",
-        borderBottom: `1px solid ${tokens.colorBorder || "#e5e5e5"}`,
-        padding: "0 clamp(16px, 5vw, 80px)",
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "space-between",
-        height: "64px",
-        fontFamily: "var(--font-body)",
-      }}
-    >
+    <nav style={{
+      position: "sticky",
+      top: 0,
+      zIndex: 100,
+      background: navBg,
+      backdropFilter: isDishoom ? "none" : "blur(12px)",
+      WebkitBackdropFilter: isDishoom ? "none" : "blur(12px)",
+      borderBottom: isDishoom ? "none" : `1px solid ${tokens.colorBorder || "#e5e5e5"}`,
+      padding: `0 ${tokens.horizontalPaddingDesktop || "40px"}`,
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "space-between",
+      height: isDishoom ? "54px" : "64px",
+      fontFamily: "var(--font-body)",
+    }}>
       {/* Logo */}
       <div style={{ display: "flex", flexDirection: "column", lineHeight: 1.1 }}>
-        <span
-          style={{
-            fontFamily: "var(--font-display)",
-            fontSize: "20px",
-            fontWeight: 700,
-            color: tokens.colorAccent || tokens.colorPrimary,
-            letterSpacing: "-0.3px",
-          }}
-        >
+        <span style={{
+          fontFamily: isDishoom ? "var(--font-display)" : "var(--font-display)",
+          fontSize: isDishoom ? "18px" : "20px",
+          fontWeight: isDishoom ? 400 : 700,
+          color: logoColor,
+          letterSpacing: isDishoom ? "3px" : "-0.3px",
+          textTransform: isDishoom ? "uppercase" : "none",
+        }}>
           {logo.text || preset.meta?.title?.split("|")[0]?.trim() || "Logo"}
         </span>
-        {logo.tagline && (
-          <span
-            style={{
-              fontSize: "9px",
-              letterSpacing: "2px",
-              textTransform: "uppercase",
-              color: tokens.colorSecondary,
-            }}
-          >
+        {logo.tagline && !isDishoom && (
+          <span style={{ fontSize: "9px", letterSpacing: "2px", textTransform: "uppercase", color: tokens.colorSecondary }}>
             {logo.tagline}
           </span>
         )}
       </div>
 
       {/* Desktop links */}
-      <div style={{ display: "flex", gap: "28px", alignItems: "center" }}>
+      <div style={{ display: "flex", gap: isDishoom ? "0" : "28px", alignItems: "center" }}>
         {links.slice(0, -1).map((link: string, i: number) => (
-          <a
-            key={i}
-            href={`#section-${i}`}
-            style={{
-              fontSize: "14px",
-              color: tokens.colorSecondary || tokens.colorPrimary,
-              textDecoration: "none",
-              fontFamily: "var(--font-body)",
-              transition: "color 0.2s",
-            }}
-          >
+          <a key={i} href={`#section-${i}`} style={{
+            fontSize: isDishoom ? "13px" : "14px",
+            color: navTextColor,
+            textDecoration: "none",
+            fontFamily: "var(--font-body)",
+            transition: "color 0.2s",
+            textTransform: isDishoom ? "uppercase" : "none",
+            letterSpacing: isDishoom ? "1.5px" : "0",
+            padding: isDishoom ? "0 16px" : "0",
+          }}>
             {link}
           </a>
         ))}
-        <a
-          href="#contact"
-          style={{
-            background: tokens.colorAccent,
-            color: accentDark ? "#fff" : "#000",
-            padding: "8px 20px",
-            borderRadius: `${tokens.borderRadius || 8}px`,
-            fontSize: "13px",
-            fontWeight: 600,
-            textDecoration: "none",
-          }}
-        >
+        <a href="#contact" style={{
+          background: tokens.colorAccent,
+          color: accentDark ? "#fff" : "#000",
+          padding: isDishoom ? "8px 16px" : "8px 20px",
+          borderRadius: `${tokens.borderRadius || 0}px`,
+          fontSize: isDishoom ? "12px" : "13px",
+          fontWeight: isDishoom ? 400 : 600,
+          textDecoration: "none",
+          fontFamily: "var(--font-body)",
+          textTransform: isDishoom ? "uppercase" : "none",
+          letterSpacing: isDishoom ? "2px" : "0",
+        }}>
           {links[links.length - 1] || "Kontakt"}
         </a>
       </div>
 
       {/* Mobile burger */}
-      <button
-        onClick={() => setOpen(!open)}
-        style={{
-          display: "none",
-          background: "none",
-          border: "none",
-          cursor: "pointer",
-          padding: "8px",
-          color: tokens.colorPrimary,
-        }}
-        aria-label="Menu"
-        className="preset-burger"
-      >
+      <button onClick={() => setOpen(!open)} style={{ display: "none", background: "none", border: "none", cursor: "pointer", padding: "8px", color: isDishoom ? (tokens.colorDarkText || "#F0ECE0") : tokens.colorPrimary }} aria-label="Menu" className="preset-burger">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-          {open ? (
-            <path d="M18 6L6 18M6 6l12 12" />
-          ) : (
-            <>
-              <line x1="3" y1="6" x2="21" y2="6" />
-              <line x1="3" y1="12" x2="21" y2="12" />
-              <line x1="3" y1="18" x2="21" y2="18" />
-            </>
-          )}
+          {open ? <path d="M18 6L6 18M6 6l12 12" /> : <><line x1="3" y1="6" x2="21" y2="6" /><line x1="3" y1="12" x2="21" y2="12" /><line x1="3" y1="18" x2="21" y2="18" /></>}
         </svg>
       </button>
 
       {/* Mobile dropdown */}
       {open && (
-        <div
-          style={{
-            position: "absolute",
-            top: "64px",
-            left: 0,
-            right: 0,
-            background: tokens.colorSurface || "#fff",
-            borderBottom: `1px solid ${tokens.colorBorder}`,
-            padding: "16px 24px",
-            display: "flex",
-            flexDirection: "column",
-            gap: "16px",
-          }}
-        >
+        <div style={{ position: "absolute", top: isDishoom ? "54px" : "64px", left: 0, right: 0, background: isDishoom ? (tokens.colorDark || "#1A1410") : (tokens.colorSurface || "#fff"), borderBottom: `1px solid ${tokens.colorBorder}`, padding: "16px 24px", display: "flex", flexDirection: "column", gap: "16px" }}>
           {links.map((link: string, i: number) => (
-            <a
-              key={i}
-              href={`#section-${i}`}
-              onClick={() => setOpen(false)}
-              style={{
-                fontSize: "16px",
-                color: tokens.colorPrimary,
-                textDecoration: "none",
-              }}
-            >
+            <a key={i} href={`#section-${i}`} onClick={() => setOpen(false)} style={{ fontSize: isDishoom ? "18px" : "16px", color: isDishoom ? (tokens.colorDarkText || "#F0ECE0") : tokens.colorPrimary, textDecoration: "none", fontFamily: isDishoom ? "var(--font-display)" : "var(--font-body)" }}>
               {link}
             </a>
           ))}
@@ -205,6 +158,7 @@ function PresetNav({ preset, locale }: PresetRendererProps) {
     </nav>
   );
 }
+
 
 // ─── HERO ─────────────────────────────────────────────────────────────────────
 
@@ -2287,42 +2241,339 @@ function PresetNewsletter({ preset, locale }: PresetRendererProps) {
   );
 }
 
+// ─── DISHOOM MENU TABS ────────────────────────────────────────────────────────
+
+function PresetMenuTabs({ preset, locale }: PresetRendererProps) {
+  const tokens = preset.design?.tokens || {};
+  const tabs: AnyObj[] = preset.content?.menuTabs || [];
+  if (!tabs.length) return null;
+  return (
+    <div style={{
+      borderTop: `1px solid ${tokens.colorBorder}`,
+      borderBottom: `1px solid ${tokens.colorBorder}`,
+      background: tokens.colorBackground,
+      overflowX: "auto",
+    }}>
+      <div style={{
+        display: "flex",
+        maxWidth: tokens.maxWidthContent || "820px",
+        margin: "0 auto",
+        padding: `0 ${tokens.horizontalPaddingDesktop || "40px"}`,
+        whiteSpace: "nowrap",
+      }}>
+        {tabs.map((tab: AnyObj, i: number) => {
+          const label = tab[`label_${locale}`] || tab.label_de || tab.label_en || "";
+          const isActive = tab.active;
+          return (
+            <a key={i} href={`#menu-${tab.id}`} style={{
+              display: "inline-block",
+              padding: "14px 18px",
+              fontFamily: "var(--font-body)",
+              fontSize: "13px",
+              textTransform: "uppercase",
+              letterSpacing: "2px",
+              color: isActive ? tokens.colorPrimary : tokens.colorSecondary,
+              textDecoration: "none",
+              borderBottom: isActive ? `2px solid ${tokens.colorAccent}` : "2px solid transparent",
+              transition: "color 0.2s ease, border-color 0.2s ease",
+            }}>
+              {label}
+            </a>
+          );
+        })}
+      </div>
+    </div>
+  );
+}
+
+// ─── DISHOOM INTRO QUOTE ──────────────────────────────────────────────────────
+
+function PresetIntroQuote({ preset, locale }: PresetRendererProps) {
+  const tokens = preset.design?.tokens || {};
+  const quote = preset.content?.introQuote;
+  if (!quote) return null;
+  const text = typeof quote === "string" ? quote : (quote[locale] || quote.de || quote.en || "");
+  if (!text) return null;
+  return (
+    <div style={{
+      maxWidth: tokens.maxWidthText || "560px",
+      margin: "36px auto 28px",
+      padding: `0 ${tokens.horizontalPaddingDesktop || "40px"}`,
+      fontFamily: "var(--font-body)",
+      fontSize: "16px",
+      fontStyle: "italic",
+      color: tokens.colorSecondary,
+      lineHeight: 1.7,
+      textAlign: "center",
+    }}>
+      {text}
+    </div>
+  );
+}
+
+// ─── DISHOOM SOURCING BLOCK ───────────────────────────────────────────────────
+
+function PresetSourcingBlock({ preset, locale }: PresetRendererProps) {
+  const tokens = preset.design?.tokens || {};
+  const sourcing = preset.content?.sourcing;
+  if (!sourcing) return null;
+  const text = typeof sourcing === "string" ? sourcing : (sourcing[locale] || sourcing.de || sourcing.en || "");
+  if (!text) return null;
+  return (
+    <div style={{
+      background: tokens.colorSourcingBg || "#E8E0CC",
+      borderLeft: `3px solid ${tokens.colorAccent}`,
+      padding: "16px 20px",
+      margin: `0 ${tokens.horizontalPaddingDesktop || "40px"} 32px`,
+      fontFamily: "var(--font-body)",
+      fontSize: "13.5px",
+      color: tokens.colorSecondary,
+      fontStyle: "italic",
+      lineHeight: 1.7,
+    }}>
+      {text}
+    </div>
+  );
+}
+
+// ─── DISHOOM DIETARY LEGEND ───────────────────────────────────────────────────
+
+function PresetDietaryLegend({ preset, locale }: PresetRendererProps) {
+  const tokens = preset.design?.tokens || {};
+  const legend = preset.content?.dietaryLegend;
+  if (!legend) return null;
+  const text = typeof legend === "string" ? legend : (legend[locale] || legend.de || legend.en || "");
+  if (!text) return null;
+  return (
+    <div style={{
+      borderTop: `1px solid ${tokens.colorBorder}`,
+      borderBottom: `1px solid ${tokens.colorBorder}`,
+      padding: "12px 40px",
+      textAlign: "center",
+      fontFamily: "var(--font-body)",
+      fontSize: "13px",
+      color: tokens.colorSecondary,
+      letterSpacing: "0.5px",
+      margin: "0 0 8px",
+    }}>
+      {text}
+    </div>
+  );
+}
+
+// ─── DISHOOM MENU LIST ────────────────────────────────────────────────────────
+
+function PresetDishoomMenu({ preset, locale }: PresetRendererProps) {
+  const tokens = preset.design?.tokens || {};
+  const menu: AnyObj[] = preset.content?.menu || [];
+  if (!menu.length) return null;
+  const pad = tokens.horizontalPaddingDesktop || "40px";
+  const maxW = tokens.maxWidthContent || "820px";
+  return (
+    <div style={{ maxWidth: maxW, margin: "0 auto", padding: `0 ${pad}` }}>
+      {menu.map((section: AnyObj, si: number) => {
+        const catName = section[`category_${locale}`] || section.category_de || section.category_en || "";
+        const items: AnyObj[] = section.items || [];
+        return (
+          <div key={si} id={`menu-section-${si}`}>
+            {/* Ornament divider */}
+            <div style={{
+              display: "flex",
+              alignItems: "center",
+              margin: "36px 0 0",
+            }}>
+              <div style={{ flex: 1, height: "1px", background: tokens.colorBorder }} />
+              <span style={{ color: tokens.colorAccent, fontSize: "18px", margin: "0 12px" }}>✦</span>
+              <div style={{ flex: 1, height: "1px", background: tokens.colorBorder }} />
+            </div>
+            {/* Section title */}
+            <h3 style={{
+              fontFamily: "var(--font-display)",
+              fontSize: "28px",
+              fontWeight: 400,
+              color: tokens.colorPrimary,
+              textAlign: "center",
+              padding: "24px 0 8px",
+              letterSpacing: "0.5px",
+              margin: 0,
+            }}>
+              {catName}
+            </h3>
+            {/* Items */}
+            {items.map((item: AnyObj, ii: number) => {
+              const name = item[`name_${locale}`] || item.name_de || item.name_en || "";
+              const desc = item[`desc_${locale}`] || item.desc_de || item.desc_en || "";
+              const tags: string[] = item.tags || [];
+              const isLast = ii === items.length - 1;
+              return (
+                <div key={ii} style={{
+                  display: "flex",
+                  justifyContent: "space-between",
+                  alignItems: "flex-start",
+                  gap: "24px",
+                  padding: "18px 0",
+                  borderBottom: isLast ? "none" : `1px dashed ${tokens.colorDashedBorder || "#D4C4A0"}`,
+                }}>
+                  <div style={{ flex: 1 }}>
+                    <div style={{
+                      fontFamily: "var(--font-display)",
+                      fontSize: "17px",
+                      fontWeight: 400,
+                      color: tokens.colorPrimary,
+                      marginBottom: "5px",
+                    }}>
+                      {name}
+                    </div>
+                    {desc && (
+                      <div style={{
+                        fontFamily: "var(--font-body)",
+                        fontSize: "14px",
+                        fontStyle: "italic",
+                        color: tokens.colorSecondary,
+                        lineHeight: 1.6,
+                        marginBottom: tags.length ? "3px" : 0,
+                      }}>
+                        {desc}
+                      </div>
+                    )}
+                    {tags.length > 0 && (
+                      <div style={{
+                        fontFamily: "var(--font-body)",
+                        fontSize: "11px",
+                        color: tokens.colorAccent,
+                        marginTop: "3px",
+                      }}>
+                        {tags.map((t: string) => `(${t})`).join(" ")}
+                      </div>
+                    )}
+                  </div>
+                  {item.price && (
+                    <div style={{
+                      fontFamily: "var(--font-display)",
+                      fontSize: "17px",
+                      fontWeight: 400,
+                      color: tokens.colorPrimary,
+                      flexShrink: 0,
+                      paddingTop: "1px",
+                    }}>
+                      {item.price}
+                    </div>
+                  )}
+                </div>
+              );
+            })}
+          </div>
+        );
+      })}
+    </div>
+  );
+}
+
+// ─── DISHOOM SERVICE CHARGE NOTE ─────────────────────────────────────────────
+
+function PresetServiceChargeNote({ preset, locale }: PresetRendererProps) {
+  const tokens = preset.design?.tokens || {};
+  const note = preset.content?.serviceChargeNote;
+  if (!note) return null;
+  const text = typeof note === "string" ? note : (note[locale] || note.de || note.en || "");
+  if (!text) return null;
+  return (
+    <div style={{
+      maxWidth: tokens.maxWidthContent || "820px",
+      margin: "0 auto",
+      padding: `18px ${tokens.horizontalPaddingDesktop || "60px"}`,
+      fontFamily: "var(--font-body)",
+      fontSize: "13px",
+      fontStyle: "italic",
+      color: tokens.colorSecondary,
+      textAlign: "center",
+      lineHeight: 1.7,
+    }}>
+      {text}
+    </div>
+  );
+}
+
+// ─── DISHOOM BRAND SIGNATURE ──────────────────────────────────────────────────
+
+function PresetBrandSignature({ preset, locale }: PresetRendererProps) {
+  const tokens = preset.design?.tokens || {};
+  const sig = preset.content?.brandSignature;
+  if (!sig) return null;
+  const text = sig[`text_${locale}`] || sig.text_de || sig.text_en || "";
+  if (!text) return null;
+  return (
+    <div style={{
+      textAlign: "center",
+      padding: "40px 0",
+      borderTop: `1px solid ${tokens.colorBorder}`,
+    }}>
+      <span style={{
+        fontFamily: "var(--font-display)",
+        fontSize: "22px",
+        fontStyle: "italic",
+        color: tokens.colorRed || "#8B1A1A",
+        letterSpacing: "0.5px",
+      }}>
+        ✦ {text} ✦
+      </span>
+    </div>
+  );
+}
+
 // ─── MAIN EXPORT ──────────────────────────────────────────────────────────────
 
 export function PresetRenderer({ preset, locale }: PresetRendererProps) {
   const layout = preset.layout || {};
+  const isDishoom = layout.style === "dishoom_irani_cafe";
+
   return (
     <div style={{ fontFamily: "var(--font-body)", color: "var(--color-primary)", background: "var(--color-background)", minHeight: "100vh" }}>
       {layout.announcementBar && preset.content?.announcementBar && <PresetAnnouncementBar preset={preset} locale={locale} />}
       <PresetNav preset={preset} locale={locale} />
       <PresetHero preset={preset} locale={locale} />
-      {layout.quickLinksSection && preset.content?.quickLinks && <PresetQuickLinks preset={preset} locale={locale} />}
-      {layout.credentialsBar && preset.content?.credentials && <PresetCredentials preset={preset} locale={locale} />}
-      {layout.serviceCategoriesGrid && preset.content?.serviceCategories && <PresetServiceCategories preset={preset} locale={locale} />}
-      {layout.bodyMapSection && preset.content?.bodyMap && <PresetBodyMap preset={preset} locale={locale} />}
-      {layout.featuredTreatmentSpotlight && preset.content?.featuredTreatment && <PresetFeaturedTreatment preset={preset} locale={locale} />}
-      {layout.featuredNewTreatment && preset.content?.featuredNewTreatment && <PresetFeaturedTreatment preset={preset} locale={locale} isSpa />}
-      {layout.hairRestorationSection && preset.content?.hairRestoration && <PresetHairRestoration preset={preset} locale={locale} />}
-      {layout.coreSpecialtiesGrid && preset.content?.coreSpecialties && <PresetCoreSpecialties preset={preset} locale={locale} />}
-      {layout.whyChooseUs && preset.content?.whyChooseUs && <PresetWhyChooseUs preset={preset} locale={locale} />}
-      <PresetAbout preset={preset} locale={locale} />
-      {preset.content?.vision && <PresetVision preset={preset} locale={locale} />}
-      {preset.content?.coreValues && <PresetCoreValues preset={preset} locale={locale} />}
-      {layout.meetTherapist && preset.content?.therapist && <PresetMeetTherapist preset={preset} locale={locale} />}
-      {layout.meetFounderSection && preset.content?.founder && <PresetMeetFounder preset={preset} locale={locale} />}
-      {preset.content?.hairstyleGuide && <PresetHairstyleGuide preset={preset} locale={locale} />}
-      <PresetServices preset={preset} locale={locale} />
-      {layout.productsSection && preset.content?.products && <PresetProducts preset={preset} locale={locale} />}
-      {preset.content?.hiitFacts && <PresetHiitFacts preset={preset} locale={locale} />}
-      {preset.content?.trainingOptions && <PresetTrainingOptions preset={preset} locale={locale} />}
-      {preset.content?.signatureSeries && <PresetSignatureSeries preset={preset} locale={locale} />}
-      {preset.content?.pricing && <PresetPricing preset={preset} locale={locale} />}
-      {layout.medicalSkincareSection && preset.content?.medicalSkincare && <PresetMedicalSkincare preset={preset} locale={locale} />}
-      {layout.consultationCta && preset.content?.consultationCta && <PresetConsultationCta preset={preset} locale={locale} />}
-      {layout.branchesSection && preset.content?.branches && <PresetBranches preset={preset} locale={locale} />}
-      {preset.content?.locations && !layout.branchesSection && <PresetLocations preset={preset} locale={locale} />}
-      {layout.lifestyleCollections && preset.content?.lifestyleCollections && <PresetLifestyleCollections preset={preset} locale={locale} />}
-      {preset.content?.whyUs && <PresetWhyUs preset={preset} locale={locale} />}
+
+      {/* Dishoom-specific: menu tabs under hero */}
+      {isDishoom && layout.menuTabsBar && preset.content?.menuTabs && <PresetMenuTabs preset={preset} locale={locale} />}
+      {isDishoom && preset.content?.introQuote && <PresetIntroQuote preset={preset} locale={locale} />}
+      {isDishoom && layout.sourcingBlock && preset.content?.sourcing && <PresetSourcingBlock preset={preset} locale={locale} />}
+      {isDishoom && layout.dietaryLegend && preset.content?.dietaryLegend && <PresetDietaryLegend preset={preset} locale={locale} />}
+      {isDishoom && preset.content?.menu && <PresetDishoomMenu preset={preset} locale={locale} />}
+      {isDishoom && layout.serviceChargeNote && preset.content?.serviceChargeNote && <PresetServiceChargeNote preset={preset} locale={locale} />}
+      {isDishoom && layout.brandSignature && preset.content?.brandSignature && <PresetBrandSignature preset={preset} locale={locale} />}
+
+      {/* Standard sections for non-Dishoom presets */}
+      {!isDishoom && layout.quickLinksSection && preset.content?.quickLinks && <PresetQuickLinks preset={preset} locale={locale} />}
+      {!isDishoom && layout.credentialsBar && preset.content?.credentials && <PresetCredentials preset={preset} locale={locale} />}
+      {!isDishoom && layout.serviceCategoriesGrid && preset.content?.serviceCategories && <PresetServiceCategories preset={preset} locale={locale} />}
+      {!isDishoom && layout.bodyMapSection && preset.content?.bodyMap && <PresetBodyMap preset={preset} locale={locale} />}
+      {!isDishoom && layout.featuredTreatmentSpotlight && preset.content?.featuredTreatment && <PresetFeaturedTreatment preset={preset} locale={locale} />}
+      {!isDishoom && layout.featuredNewTreatment && preset.content?.featuredNewTreatment && <PresetFeaturedTreatment preset={preset} locale={locale} isSpa />}
+      {!isDishoom && layout.hairRestorationSection && preset.content?.hairRestoration && <PresetHairRestoration preset={preset} locale={locale} />}
+      {!isDishoom && layout.coreSpecialtiesGrid && preset.content?.coreSpecialties && <PresetCoreSpecialties preset={preset} locale={locale} />}
+      {!isDishoom && layout.whyChooseUs && preset.content?.whyChooseUs && <PresetWhyChooseUs preset={preset} locale={locale} />}
+
+      {!isDishoom && <PresetAbout preset={preset} locale={locale} />}
+      {!isDishoom && preset.content?.vision && <PresetVision preset={preset} locale={locale} />}
+      {!isDishoom && preset.content?.coreValues && <PresetCoreValues preset={preset} locale={locale} />}
+      {!isDishoom && layout.meetTherapist && preset.content?.therapist && <PresetMeetTherapist preset={preset} locale={locale} />}
+      {!isDishoom && layout.meetFounderSection && preset.content?.founder && <PresetMeetFounder preset={preset} locale={locale} />}
+      {!isDishoom && preset.content?.hairstyleGuide && <PresetHairstyleGuide preset={preset} locale={locale} />}
+      {!isDishoom && <PresetServices preset={preset} locale={locale} />}
+      {!isDishoom && layout.productsSection && preset.content?.products && <PresetProducts preset={preset} locale={locale} />}
+      {!isDishoom && preset.content?.hiitFacts && <PresetHiitFacts preset={preset} locale={locale} />}
+      {!isDishoom && preset.content?.trainingOptions && <PresetTrainingOptions preset={preset} locale={locale} />}
+      {!isDishoom && preset.content?.signatureSeries && <PresetSignatureSeries preset={preset} locale={locale} />}
+      {!isDishoom && preset.content?.pricing && <PresetPricing preset={preset} locale={locale} />}
+      {!isDishoom && layout.medicalSkincareSection && preset.content?.medicalSkincare && <PresetMedicalSkincare preset={preset} locale={locale} />}
+      {!isDishoom && layout.consultationCta && preset.content?.consultationCta && <PresetConsultationCta preset={preset} locale={locale} />}
+      {!isDishoom && layout.branchesSection && preset.content?.branches && <PresetBranches preset={preset} locale={locale} />}
+      {!isDishoom && preset.content?.locations && !layout.branchesSection && <PresetLocations preset={preset} locale={locale} />}
+      {!isDishoom && layout.lifestyleCollections && preset.content?.lifestyleCollections && <PresetLifestyleCollections preset={preset} locale={locale} />}
+      {!isDishoom && preset.content?.whyUs && <PresetWhyUs preset={preset} locale={locale} />}
+
+      {/* Shared sections */}
+      {isDishoom && <PresetAbout preset={preset} locale={locale} />}
       <PresetTestimonials preset={preset} locale={locale} />
       <PresetFAQ preset={preset} locale={locale} />
       {layout.newsletterSection && preset.content?.newsletter && <PresetNewsletter preset={preset} locale={locale} />}
