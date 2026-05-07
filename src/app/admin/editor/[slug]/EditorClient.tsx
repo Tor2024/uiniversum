@@ -2,6 +2,11 @@
 
 import { useState, useCallback } from "react";
 import { blocksRegistry, BlockData, BlockRegistryItem } from "@/lib/blocks-registry";
+import dynamic from "next/dynamic";
+
+// Lazy-load MediaClient to avoid SSR issues
+const MediaClient = dynamic(() => import("../../media/MediaClient"), { ssr: false });
+
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 
@@ -63,6 +68,8 @@ function BlockFieldEditor({
   block: BlockData;
   onChange: (updated: BlockData) => void;
 }) {
+  const [mediaPicker, setMediaPicker] = useState<string | null>(null); // key of field being picked
+
   const updateSetting = (key: string, value: unknown) => {
     onChange({
       ...block,
@@ -76,6 +83,10 @@ function BlockFieldEditor({
     obj[lang] = value;
     updateSetting(key, obj);
   };
+
+  // Detect if a field key is likely an image/media field
+  const isMediaField = (key: string) =>
+    /image|photo|avatar|background|src|logo|cover|thumb|poster|video/i.test(key);
 
   const renderField = (key: string, value: unknown) => {
     // Skip complex nested arrays for now — show as JSON
@@ -151,13 +162,51 @@ function BlockFieldEditor({
       );
     }
 
-    // String
+    // String — check if media field
     const strVal = String(value ?? "");
+    const isMedia = isMediaField(key);
     const isLong = strVal.length > 80 || key === "html" || key === "content";
+
     return (
       <div key={key} style={{ marginBottom: "12px" }}>
         <label style={labelStyle}>{key}</label>
-        {isLong ? (
+
+        {/* Media field: show thumbnail + picker button */}
+        {isMedia ? (
+          <div>
+            {strVal && (
+              <div style={{ marginBottom: "6px", borderRadius: "6px", overflow: "hidden", border: "1px solid #e5e7eb", maxHeight: "80px", display: "flex", alignItems: "center", justifyContent: "center", background: "#f9fafb" }}>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src={strVal} alt="" style={{ maxHeight: "80px", maxWidth: "100%", objectFit: "contain" }} onError={(e) => { (e.target as HTMLImageElement).style.display = "none"; }} />
+              </div>
+            )}
+            <div style={{ display: "flex", gap: "6px" }}>
+              <input
+                type="text"
+                defaultValue={strVal}
+                placeholder="/media/..."
+                style={{ ...inputStyle, flex: 1 }}
+                onBlur={(e) => updateSetting(key, e.target.value)}
+              />
+              <button
+                onClick={() => setMediaPicker(key)}
+                style={{
+                  padding: "8px 12px",
+                  background: "#6366f1",
+                  color: "#fff",
+                  border: "none",
+                  borderRadius: "6px",
+                  fontSize: "12px",
+                  fontWeight: 600,
+                  cursor: "pointer",
+                  flexShrink: 0,
+                }}
+              >
+                🖼️
+              </button>
+            </div>
+          </div>
+        ) : isLong ? (
           <textarea
             defaultValue={strVal}
             rows={4}
@@ -179,6 +228,19 @@ function BlockFieldEditor({
   return (
     <div>
       {Object.entries(block.settings).map(([key, value]) => renderField(key, value))}
+
+      {/* Media picker modal */}
+      {mediaPicker && (
+        <MediaClient
+          initialFiles={[]}
+          pickerMode
+          onPick={(path) => {
+            updateSetting(mediaPicker, path);
+            setMediaPicker(null);
+          }}
+          onClose={() => setMediaPicker(null)}
+        />
+      )}
     </div>
   );
 }
