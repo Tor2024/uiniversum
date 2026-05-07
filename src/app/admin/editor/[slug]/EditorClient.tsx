@@ -1,8 +1,9 @@
 "use client";
 
-import { useState, useCallback } from "react";
+import { useState, useCallback, useRef, useEffect } from "react";
 import { blocksRegistry, BlockData, BlockRegistryItem } from "@/lib/blocks-registry";
 import dynamic from "next/dynamic";
+import { generateCssVariables, DesignTokens } from "@/lib/design-tokens";
 
 // Lazy-load MediaClient to avoid SSR issues
 const MediaClient = dynamic(() => import("../../media/MediaClient"), { ssr: false });
@@ -482,11 +483,50 @@ export default function EditorClient({ slug, initialData }: EditorClientProps) {
   const [saveStatus, setSaveStatus] = useState<"idle" | "saving" | "saved" | "error">("idle");
   const [dragOverId, setDragOverId] = useState<string | null>(null);
   const [dragId, setDragId] = useState<string | null>(null);
+  const [showPreview, setShowPreview] = useState(false);
+  const [previewToken] = useState(() => `preview_${Date.now()}_${Math.random().toString(36).slice(2)}`);
+  const iframeRef = useRef<HTMLIFrameElement>(null);
+  const previewInitialized = useRef(false);
 
   const pageTitle =
     typeof initialData.title === "object"
       ? (initialData.title.ru || initialData.title.de || initialData.title.en || slug)
       : (initialData.title || slug);
+
+  // ── Send blocks to preview iframe ─────────────────────────────────────────
+
+  const sendPreviewUpdate = useCallback((currentBlocks: BlockData[]) => {
+    if (!iframeRef.current?.contentWindow) return;
+    iframeRef.current.contentWindow.postMessage({
+      type: "PREVIEW_UPDATE",
+      blocks: currentBlocks,
+    }, "*");
+  }, []);
+
+  // Initialize preview data when preview opens
+  const initPreview = useCallback(async (currentBlocks: BlockData[]) => {
+    if (previewInitialized.current) return;
+    previewInitialized.current = true;
+    try {
+      await fetch("/api/preview-data", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          token: previewToken,
+          data: { blocks: currentBlocks, cssVars: "" },
+        }),
+      });
+    } catch {
+      // ignore
+    }
+  }, [previewToken]);
+
+  // Send update whenever blocks change and preview is open
+  useEffect(() => {
+    if (showPreview) {
+      sendPreviewUpdate(blocks);
+    }
+  }, [blocks, showPreview, sendPreviewUpdate]);
 
   // ── Save to GitHub via /api/publish ──────────────────────────────────────
 
@@ -670,14 +710,26 @@ export default function EditorClient({ slug, initialData }: EditorClientProps) {
             {saveStatus === "error" && (
               <span style={{ fontSize: "12px", color: "#ef4444", fontWeight: 600 }}>✗ Ошибка</span>
             )}
-            <a
-              href={`/de`}
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{ padding: "7px 12px", border: "1px solid #e5e7eb", borderRadius: "7px", fontSize: "12px", color: "#374151", textDecoration: "none", background: "#fff" }}
+            <button
+              onClick={async () => {
+                if (!showPreview) {
+                  await initPreview(blocks);
+                }
+                setShowPreview(!showPreview);
+              }}
+              style={{
+                padding: "7px 12px",
+                border: `1px solid ${showPreview ? "#6366f1" : "#e5e7eb"}`,
+                borderRadius: "7px",
+                fontSize: "12px",
+                color: showPreview ? "#6366f1" : "#374151",
+                background: showPreview ? "#ede9fe" : "#fff",
+                cursor: "pointer",
+                fontWeight: showPreview ? 700 : 400,
+              }}
             >
-              👁 Предпросмотр
-            </a>
+              {showPreview ? "✕ Скрыть превью" : "👁 Live Preview"}
+            </button>
             <button
               onClick={handlePublish}
               disabled={saving}
@@ -874,6 +926,52 @@ export default function EditorClient({ slug, initialData }: EditorClientProps) {
           </div>
         </div>
       </aside>
+
+      {/* ── LIVE PREVIEW PANEL ── */}
+      {showPreview && (
+        <div style={{
+          width: "480px",
+          flexShrink: 0,
+          borderLeft: "1px solid #e5e7eb",
+          display: "flex",
+          flexDirection: "column",
+          background: "#f3f4f6",
+        }}>
+          <div style={{
+            padding: "10px 14px",
+            background: "#fff",
+            borderBottom: "1px solid #e5e7eb",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "space-between",
+          }}>
+            <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+              <span style={{ fontSize: "14px" }}>👁</span>
+              <span style={{ fontSize: "13px", fontWeight: 700, color: "#374151" }}>Live Preview</span>
+              <span style={{ fontSize: "11px", color: "#9ca3af", background: "#f3f4f6", padding: "2px 8px", borderRadius: "10px" }}>
+                Обновляется автоматически
+              </span>
+            </div>
+            <a
+              href="/de"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ fontSize: "11px", color: "#6b7280", textDecoration: "none", padding: "4px 8px", border: "1px solid #e5e7eb", borderRadius: "5px", background: "#fff" }}
+            >
+              ↗ Открыть
+            </a>
+          </div>
+          <div style={{ flex: 1, position: "relative", overflow: "hidden" }}>
+            <iframe
+              ref={iframeRef}
+              src={`/admin/editor/${slug}/preview?token=${previewToken}`}
+              style={{ width: "100%", height: "100%", border: "none", background: "#fff" }}
+              title="Live Preview"
+              onLoad={() => { setTimeout(() => sendPreviewUpdate(blocks), 150); }}
+            />
+          </div>
+        </div>
+      )}
     </div>
   );
 }
