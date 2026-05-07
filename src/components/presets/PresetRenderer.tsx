@@ -2241,6 +2241,325 @@ function PresetNewsletter({ preset, locale }: PresetRendererProps) {
   );
 }
 
+// ─── PIZZA: DOUGH STORY ──────────────────────────────────────────────────────
+
+function PresetDoughStory({ preset, locale }: PresetRendererProps) {
+  const tokens = preset.design?.tokens || {};
+  const d = preset.content?.doughStory || {};
+  if (!d[`title_${locale}`] && !d.title_de) return null;
+  const title = d[`title_${locale}`] || d.title_de || d.title_en || "";
+  const subtitle = d[`subtitle_${locale}`] || d.subtitle_de || d.subtitle_en || "";
+  const doughTitle = d[`doughTitle_${locale}`] || d.doughTitle_de || d.doughTitle_en || "";
+  const doughText = d[`doughText_${locale}`] || d.doughText_de || d.doughText_en || "";
+  const ovenText = d[`ovenText_${locale}`] || d.ovenText_de || d.ovenText_en || "";
+  const accentDark = isColorDark(tokens.colorAccent || "#000");
+  return (
+    <section style={{ background: tokens.colorBackground, padding: "100px clamp(16px, 5vw, 80px)", borderTop: `1px solid ${tokens.colorBorder}` }}>
+      <div style={{ maxWidth: tokens.maxWidthContent || "1100px", margin: "0 auto" }}>
+        <div style={{ textAlign: "center", marginBottom: "64px" }}>
+          <h2 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(24px, 3vw, 40px)", fontWeight: 700, color: tokens.colorPrimary, letterSpacing: "2px", marginBottom: "16px" }}>{title}</h2>
+          <p style={{ fontFamily: "var(--font-body)", fontSize: "18px", fontStyle: "italic", color: tokens.colorSecondary, maxWidth: "600px", margin: "0 auto" }}>{subtitle}</p>
+        </div>
+        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "80px", alignItems: "center" }}>
+          <div>
+            <h3 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(28px, 3.5vw, 44px)", fontWeight: 700, color: tokens.colorPrimary, marginBottom: "24px" }}>{doughTitle}</h3>
+            <p style={{ fontFamily: "var(--font-body)", fontSize: "17px", color: tokens.colorSecondary, lineHeight: 1.8, marginBottom: "24px" }}>{doughText}</p>
+            <p style={{ fontFamily: "var(--font-body)", fontSize: "15px", color: tokens.colorSecondary, lineHeight: 1.7, fontStyle: "italic", borderLeft: `3px solid ${tokens.colorAccent}`, paddingLeft: "16px" }}>{ovenText}</p>
+          </div>
+          <div style={{ aspectRatio: "4/3", background: `linear-gradient(135deg, ${tokens.colorBorder}44 0%, ${tokens.colorAccent}22 100%)`, borderRadius: `${tokens.borderRadiusMedium || "2px"}`, display: "flex", alignItems: "center", justifyContent: "center" }}>
+            <span style={{ fontSize: "80px", opacity: 0.4 }}>🍕</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+// ─── PIZZA: SEASONAL SECTION ──────────────────────────────────────────────────
+
+function PresetSeasonal({ preset, locale }: PresetRendererProps) {
+  const tokens = preset.design?.tokens || {};
+  const s = preset.content?.seasonal || {};
+  if (!s[`title_${locale}`] && !s.title_de) return null;
+  const title = s[`title_${locale}`] || s.title_de || s.title_en || "";
+  const subtitle = s[`subtitle_${locale}`] || s.subtitle_de || s.subtitle_en || "";
+  const cta = s[`cta_${locale}`] || s.cta_de || s.cta_en || "";
+  const food: AnyObj[] = s.food || [];
+  const drinks: AnyObj[] = s.drinks || [];
+  const accentDark = isColorDark(tokens.colorAccent || "#000");
+  return (
+    <section style={{ background: tokens.colorSurface, padding: "100px clamp(16px, 5vw, 80px)", borderTop: `1px solid ${tokens.colorBorder}` }}>
+      <div style={{ maxWidth: tokens.maxWidthContent || "1100px", margin: "0 auto" }}>
+        <div style={{ textAlign: "center", marginBottom: "48px" }}>
+          <h2 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(28px, 3.5vw, 44px)", fontWeight: 700, color: tokens.colorPrimary, letterSpacing: "2px", marginBottom: "12px" }}>{title}</h2>
+          <p style={{ fontFamily: "var(--font-body)", fontSize: "16px", color: tokens.colorSecondary }}>{subtitle}</p>
+        </div>
+        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "48px", marginBottom: "40px" }}>
+          {food.length > 0 && (
+            <div>
+              <h4 style={{ fontFamily: "var(--font-body)", fontSize: "12px", fontWeight: 700, letterSpacing: "2px", textTransform: "uppercase", color: tokens.colorAccent, marginBottom: "16px" }}>
+                {locale === "de" ? "Speisen" : locale === "ru" ? "Еда" : "Food"}
+              </h4>
+              <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
+                {food.map((item: AnyObj, i: number) => (
+                  <li key={i} style={{ fontFamily: "var(--font-body)", fontSize: "16px", color: tokens.colorPrimary, padding: "6px 0", borderBottom: `1px solid ${tokens.colorBorder}`, display: "flex", alignItems: "center", gap: "8px" }}>
+                    <span style={{ color: tokens.colorAccent }}>•</span>
+                    {item[`name_${locale}`] || item.name_de || item.name_en || ""}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+          {drinks.length > 0 && (
+            <div>
+              <h4 style={{ fontFamily: "var(--font-body)", fontSize: "12px", fontWeight: 700, letterSpacing: "2px", textTransform: "uppercase", color: tokens.colorAccent, marginBottom: "16px" }}>
+                {locale === "de" ? "Getränke" : locale === "ru" ? "Напитки" : "Drinks"}
+              </h4>
+              <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
+                {drinks.map((item: AnyObj, i: number) => (
+                  <li key={i} style={{ fontFamily: "var(--font-body)", fontSize: "16px", color: tokens.colorPrimary, padding: "6px 0", borderBottom: `1px solid ${tokens.colorBorder}`, display: "flex", alignItems: "center", gap: "8px" }}>
+                    <span style={{ color: tokens.colorAccent }}>•</span>
+                    {item[`name_${locale}`] || item.name_de || item.name_en || ""}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+        </div>
+        {cta && (
+          <div style={{ textAlign: "center" }}>
+            <a href="#contact" style={{ display: "inline-block", background: tokens.colorAccent, color: accentDark ? "#fff" : "#000", padding: "14px 36px", borderRadius: `${tokens.borderRadius || 0}px`, fontSize: "14px", fontWeight: 700, textDecoration: "none", fontFamily: "var(--font-body)", letterSpacing: "1px", textTransform: "uppercase" }}>{cta}</a>
+          </div>
+        )}
+      </div>
+    </section>
+  );
+}
+
+// ─── PIZZA: LIMONCELLO ────────────────────────────────────────────────────────
+
+function PresetLimoncello({ preset, locale }: PresetRendererProps) {
+  const tokens = preset.design?.tokens || {};
+  const l = preset.content?.limoncello || {};
+  if (!l[`title_${locale}`] && !l.title_de) return null;
+  const title = l[`title_${locale}`] || l.title_de || l.title_en || "";
+  const text = l[`text_${locale}`] || l.text_de || l.text_en || "";
+  return (
+    <section style={{ background: tokens.colorBackground, padding: "100px clamp(16px, 5vw, 80px)", borderTop: `1px solid ${tokens.colorBorder}` }}>
+      <div style={{ maxWidth: tokens.maxWidthContent || "1100px", margin: "0 auto", display: "grid", gridTemplateColumns: "1fr 1fr", gap: "80px", alignItems: "center" }}>
+        <div style={{ aspectRatio: "4/3", background: `linear-gradient(135deg, #FFF9C4 0%, #FFE082 100%)`, borderRadius: `${tokens.borderRadiusMedium || "2px"}`, display: "flex", alignItems: "center", justifyContent: "center" }}>
+          <span style={{ fontSize: "80px" }}>🍋</span>
+        </div>
+        <div>
+          <h2 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(24px, 3vw, 36px)", fontWeight: 700, color: tokens.colorPrimary, letterSpacing: "1px", marginBottom: "24px" }}>{title}</h2>
+          <p style={{ fontFamily: "var(--font-body)", fontSize: "17px", color: tokens.colorSecondary, lineHeight: 1.8 }}>{text}</p>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+// ─── WEDDING: PRESS QUOTE ─────────────────────────────────────────────────────
+
+function PresetPressQuote({ preset, locale }: PresetRendererProps) {
+  const tokens = preset.design?.tokens || {};
+  const pq = preset.content?.pressQuote || {};
+  if (!pq[`text_${locale}`] && !pq.text_de) return null;
+  const text = pq[`text_${locale}`] || pq.text_de || pq.text_en || "";
+  const source = pq.source || "";
+  return (
+    <section style={{ background: tokens.colorSurface, padding: "80px clamp(16px, 5vw, 80px)", borderTop: `1px solid ${tokens.colorBorder}`, textAlign: "center" }}>
+      <div style={{ maxWidth: "700px", margin: "0 auto" }}>
+        <p style={{ fontFamily: "var(--font-display)", fontSize: "clamp(20px, 2.5vw, 28px)", fontStyle: "italic", color: tokens.colorPrimary, lineHeight: 1.5, marginBottom: "20px" }}>
+          &ldquo;{text}&rdquo;
+        </p>
+        {source && (
+          <p style={{ fontFamily: "var(--font-body)", fontSize: "12px", fontWeight: 700, letterSpacing: "3px", textTransform: "uppercase", color: tokens.colorSecondary }}>{source}</p>
+        )}
+      </div>
+    </section>
+  );
+}
+
+// ─── WEDDING: FEATURED WEDDINGS ───────────────────────────────────────────────
+
+function PresetFeaturedWeddings({ preset, locale }: PresetRendererProps) {
+  const tokens = preset.design?.tokens || {};
+  const weddings: AnyObj[] = preset.content?.featuredWeddings || [];
+  if (!weddings.length) return null;
+  const accentDark = isColorDark(tokens.colorAccent || "#000");
+  return (
+    <section style={{ background: tokens.colorBackground, padding: "100px clamp(16px, 5vw, 80px)", borderTop: `1px solid ${tokens.colorBorder}` }}>
+      <div style={{ maxWidth: tokens.maxWidthContent || "1400px", margin: "0 auto" }}>
+        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-end", marginBottom: "48px" }}>
+          <h2 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(28px, 3.5vw, 48px)", fontWeight: 700, color: tokens.colorPrimary, lineHeight: 1.1 }}>
+            {locale === "de" ? "Unsere echten Hochzeiten" : locale === "ru" ? "Наши настоящие свадьбы" : "Our real weddings"}
+          </h2>
+          <a href="#contact" style={{ fontFamily: "var(--font-body)", fontSize: "13px", fontWeight: 700, color: tokens.colorAccent, textDecoration: "none", textTransform: "uppercase", letterSpacing: "1.5px", borderBottom: `1px solid ${tokens.colorAccent}`, paddingBottom: "2px", flexShrink: 0 }}>
+            {locale === "de" ? "Alle ansehen" : locale === "ru" ? "Смотреть все" : "See all weddings"}
+          </a>
+        </div>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))", gap: "8px" }}>
+          {weddings.map((w: AnyObj, i: number) => {
+            const title = w[`title_${locale}`] || w.title_de || w.title_en || "";
+            return (
+              <div key={i} style={{ position: "relative", aspectRatio: "2/3", background: `linear-gradient(135deg, ${tokens.colorBorder}66 0%, ${tokens.colorPrimary}22 100%)`, overflow: "hidden", cursor: "pointer" }}>
+                <div style={{ position: "absolute", inset: 0, background: `linear-gradient(to top, ${tokens.colorPrimary}cc 0%, transparent 50%)` }} />
+                <div style={{ position: "absolute", bottom: 0, left: 0, right: 0, padding: "24px 20px" }}>
+                  <p style={{ fontFamily: "var(--font-display)", fontSize: "18px", fontWeight: 400, color: "#fff", lineHeight: 1.3, marginBottom: "4px" }}>{title}</p>
+                  {w.location && <p style={{ fontFamily: "var(--font-body)", fontSize: "12px", color: "rgba(255,255,255,0.7)", letterSpacing: "1px", textTransform: "uppercase" }}>{w.location}</p>}
+                  <a href="#contact" style={{ display: "inline-block", marginTop: "8px", fontSize: "11px", fontWeight: 700, color: "#fff", textDecoration: "none", textTransform: "uppercase", letterSpacing: "1.5px", borderBottom: "1px solid rgba(255,255,255,0.5)", paddingBottom: "1px" }}>
+                    {locale === "de" ? "Mehr ansehen" : locale === "ru" ? "Подробнее" : "Explore more"}
+                  </a>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+// ─── SAAS: PROBLEM/SOLUTION ───────────────────────────────────────────────────
+
+function PresetProblemSolution({ preset, locale }: PresetRendererProps) {
+  const tokens = preset.design?.tokens || {};
+  const items: AnyObj[] = preset.content?.problemSolution || [];
+  if (!items.length) return null;
+  return (
+    <section style={{ background: tokens.colorSurface, padding: "100px clamp(16px, 5vw, 80px)", borderTop: `1px solid ${tokens.colorBorder}` }}>
+      <div style={{ maxWidth: tokens.maxWidthContent || "1200px", margin: "0 auto" }}>
+        <div style={{ textAlign: "center", marginBottom: "64px" }}>
+          <h2 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(28px, 3.5vw, 44px)", fontWeight: 700, color: tokens.colorPrimary, marginBottom: "12px" }}>
+            {locale === "de" ? "Von Chaos zu Klarheit" : locale === "ru" ? "От хаоса к ясности" : "From Chaos to Clarity"}
+          </h2>
+          <p style={{ fontFamily: "var(--font-body)", fontSize: "16px", color: tokens.colorSecondary }}>
+            {locale === "de" ? "Beheben Sie das Wichtigste schnell" : locale === "ru" ? "Исправьте важное быстро" : "Fix What Matters Fast"}
+          </p>
+        </div>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "32px" }}>
+          {items.map((item: AnyObj, i: number) => {
+            const problem = item[`problem_${locale}`] || item.problem_de || item.problem_en || "";
+            const solution = item[`solution_${locale}`] || item.solution_de || item.solution_en || "";
+            return (
+              <div key={i} style={{ padding: "32px 28px", border: `1px solid ${tokens.colorBorder}`, borderRadius: `${tokens.borderRadiusMedium || "8px"}`, display: "flex", flexDirection: "column", gap: "12px" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
+                  <span style={{ color: tokens.colorAccent, fontSize: "20px" }}>✗</span>
+                  <h3 style={{ fontFamily: "var(--font-body)", fontSize: "16px", fontWeight: 700, color: tokens.colorSecondary, margin: 0 }}>{problem}</h3>
+                </div>
+                <div style={{ display: "flex", alignItems: "flex-start", gap: "10px" }}>
+                  <span style={{ color: tokens.colorAccent, fontSize: "20px", flexShrink: 0 }}>✓</span>
+                  <p style={{ fontFamily: "var(--font-body)", fontSize: "15px", color: tokens.colorPrimary, lineHeight: 1.6, margin: 0 }}>{solution}</p>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+// ─── SAAS: OUTCOMES ───────────────────────────────────────────────────────────
+
+function PresetOutcomes({ preset, locale }: PresetRendererProps) {
+  const tokens = preset.design?.tokens || {};
+  const outcomes: AnyObj[] = preset.content?.outcomes || [];
+  if (!outcomes.length) return null;
+  const accentDark = isColorDark(tokens.colorAccent || "#000");
+  return (
+    <section style={{ background: tokens.colorBackground, padding: "100px clamp(16px, 5vw, 80px)", borderTop: `1px solid ${tokens.colorBorder}` }}>
+      <div style={{ maxWidth: tokens.maxWidthContent || "1200px", margin: "0 auto" }}>
+        <div style={{ textAlign: "center", marginBottom: "64px" }}>
+          <div style={{ width: "40px", height: "2px", background: tokens.colorAccent, margin: "0 auto 20px" }} />
+          <h2 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(28px, 3.5vw, 44px)", fontWeight: 700, color: tokens.colorPrimary }}>
+            {locale === "de" ? "Ergebnisse" : locale === "ru" ? "Результаты" : "Outcomes"}
+          </h2>
+        </div>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "24px" }}>
+          {outcomes.map((o: AnyObj, i: number) => {
+            const title = o[`title_${locale}`] || o.title_de || o.title_en || "";
+            const desc = o[`desc_${locale}`] || o.desc_de || o.desc_en || "";
+            return (
+              <div key={i} style={{ background: tokens.colorSurface, border: `1px solid ${tokens.colorBorder}`, borderRadius: `${tokens.borderRadiusMedium || "8px"}`, padding: "32px 28px", display: "flex", flexDirection: "column", gap: "16px" }}>
+                <span style={{ fontSize: "32px" }}>{o.icon || "✅"}</span>
+                <h3 style={{ fontFamily: "var(--font-heading, var(--font-display))", fontSize: "20px", fontWeight: 700, color: tokens.colorPrimary, margin: 0 }}>{title}</h3>
+                <p style={{ fontFamily: "var(--font-body)", fontSize: "15px", color: tokens.colorSecondary, lineHeight: 1.7, margin: 0, flex: 1 }}>{desc}</p>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+// ─── SAAS: TEAM PERSONAS ──────────────────────────────────────────────────────
+
+function PresetTeamPersonas({ preset, locale }: PresetRendererProps) {
+  const tokens = preset.design?.tokens || {};
+  const personas: AnyObj[] = preset.content?.teamPersonas || [];
+  if (!personas.length) return null;
+  return (
+    <section style={{ background: tokens.colorSurface, padding: "100px clamp(16px, 5vw, 80px)", borderTop: `1px solid ${tokens.colorBorder}` }}>
+      <div style={{ maxWidth: tokens.maxWidthContent || "1200px", margin: "0 auto" }}>
+        <div style={{ textAlign: "center", marginBottom: "64px" }}>
+          <h2 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(28px, 3.5vw, 44px)", fontWeight: 700, color: tokens.colorPrimary }}>
+            {locale === "de" ? "Gebaut für Ihr Team" : locale === "ru" ? "Создано для вашей команды" : "Built for your Team"}
+          </h2>
+        </div>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))", gap: "24px" }}>
+          {personas.map((p: AnyObj, i: number) => {
+            const role = p[`role_${locale}`] || p.role_de || p.role_en || "";
+            const desc = p[`desc_${locale}`] || p.desc_de || p.desc_en || "";
+            return (
+              <div key={i} style={{ padding: "28px 24px", border: `1px solid ${tokens.colorBorder}`, borderRadius: `${tokens.borderRadiusMedium || "8px"}`, display: "flex", flexDirection: "column", gap: "12px" }}>
+                <span style={{ fontSize: "28px" }}>{p.icon || "👤"}</span>
+                <h3 style={{ fontFamily: "var(--font-body)", fontSize: "16px", fontWeight: 700, color: tokens.colorPrimary, margin: 0 }}>{role}</h3>
+                <p style={{ fontFamily: "var(--font-body)", fontSize: "14px", color: tokens.colorSecondary, lineHeight: 1.6, margin: 0 }}>{desc}</p>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+// ─── SAAS: CAPABILITIES ───────────────────────────────────────────────────────
+
+function PresetCapabilities({ preset, locale }: PresetRendererProps) {
+  const tokens = preset.design?.tokens || {};
+  const caps: AnyObj[] = preset.content?.capabilities || [];
+  if (!caps.length) return null;
+  return (
+    <section style={{ background: tokens.colorBackground, padding: "100px clamp(16px, 5vw, 80px)", borderTop: `1px solid ${tokens.colorBorder}` }}>
+      <div style={{ maxWidth: tokens.maxWidthContent || "1200px", margin: "0 auto" }}>
+        <div style={{ textAlign: "center", marginBottom: "64px" }}>
+          <div style={{ width: "40px", height: "2px", background: tokens.colorAccent, margin: "0 auto 20px" }} />
+          <h2 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(28px, 3.5vw, 44px)", fontWeight: 700, color: tokens.colorPrimary }}>
+            {locale === "de" ? "Kernfunktionen" : locale === "ru" ? "Основные возможности" : "Core Capabilities"}
+          </h2>
+        </div>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))", gap: "24px" }}>
+          {caps.map((c: AnyObj, i: number) => {
+            const title = c[`title_${locale}`] || c.title_de || c.title_en || "";
+            const desc = c[`desc_${locale}`] || c.desc_de || c.desc_en || "";
+            return (
+              <div key={i} style={{ padding: "28px 24px", background: tokens.colorSurface, border: `1px solid ${tokens.colorBorder}`, borderRadius: `${tokens.borderRadiusMedium || "8px"}`, display: "flex", flexDirection: "column", gap: "12px" }}>
+                <span style={{ fontSize: "28px" }}>{c.icon || "⚡"}</span>
+                <h3 style={{ fontFamily: "var(--font-heading, var(--font-display))", fontSize: "17px", fontWeight: 700, color: tokens.colorPrimary, margin: 0 }}>{title}</h3>
+                <p style={{ fontFamily: "var(--font-body)", fontSize: "14px", color: tokens.colorSecondary, lineHeight: 1.6, margin: 0 }}>{desc}</p>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    </section>
+  );
+}
+
 // ─── DISHOOM MENU TABS ────────────────────────────────────────────────────────
 
 function PresetMenuTabs({ preset, locale }: PresetRendererProps) {
@@ -2533,6 +2852,10 @@ export function PresetRenderer({ preset, locale }: PresetRendererProps) {
       <PresetNav preset={preset} locale={locale} />
       <PresetHero preset={preset} locale={locale} />
 
+      {/* Pizza-specific sections */}
+      {layout.doughStorySection && preset.content?.doughStory && <PresetDoughStory preset={preset} locale={locale} />}
+      {layout.seasonalSection && preset.content?.seasonal && <PresetSeasonal preset={preset} locale={locale} />}
+
       {/* Dishoom-specific: menu tabs under hero */}
       {isDishoom && layout.menuTabsBar && preset.content?.menuTabs && <PresetMenuTabs preset={preset} locale={locale} />}
       {isDishoom && preset.content?.introQuote && <PresetIntroQuote preset={preset} locale={locale} />}
@@ -2541,6 +2864,12 @@ export function PresetRenderer({ preset, locale }: PresetRendererProps) {
       {isDishoom && preset.content?.menu && <PresetDishoomMenu preset={preset} locale={locale} />}
       {isDishoom && layout.serviceChargeNote && preset.content?.serviceChargeNote && <PresetServiceChargeNote preset={preset} locale={locale} />}
       {isDishoom && layout.brandSignature && preset.content?.brandSignature && <PresetBrandSignature preset={preset} locale={locale} />}
+
+      {/* Pizza limoncello after menu */}
+      {layout.limoncelloSection && preset.content?.limoncello && <PresetLimoncello preset={preset} locale={locale} />}
+
+      {/* Wedding-specific sections */}
+      {layout.pressQuoteSection && preset.content?.pressQuote && <PresetPressQuote preset={preset} locale={locale} />}
 
       {/* Standard sections for non-Dishoom presets */}
       {!isDishoom && layout.quickLinksSection && preset.content?.quickLinks && <PresetQuickLinks preset={preset} locale={locale} />}
@@ -2571,6 +2900,15 @@ export function PresetRenderer({ preset, locale }: PresetRendererProps) {
       {!isDishoom && preset.content?.locations && !layout.branchesSection && <PresetLocations preset={preset} locale={locale} />}
       {!isDishoom && layout.lifestyleCollections && preset.content?.lifestyleCollections && <PresetLifestyleCollections preset={preset} locale={locale} />}
       {!isDishoom && preset.content?.whyUs && <PresetWhyUs preset={preset} locale={locale} />}
+
+      {/* SaaS-specific sections */}
+      {preset.content?.problemSolution && <PresetProblemSolution preset={preset} locale={locale} />}
+      {preset.content?.outcomes && <PresetOutcomes preset={preset} locale={locale} />}
+      {preset.content?.teamPersonas && <PresetTeamPersonas preset={preset} locale={locale} />}
+      {preset.content?.capabilities && <PresetCapabilities preset={preset} locale={locale} />}
+
+      {/* Wedding featured weddings */}
+      {layout.realWeddingsSection && preset.content?.featuredWeddings && <PresetFeaturedWeddings preset={preset} locale={locale} />}
 
       {/* Shared sections */}
       {isDishoom && <PresetAbout preset={preset} locale={locale} />}
