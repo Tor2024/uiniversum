@@ -118,30 +118,97 @@
     },
     "services": [
       {
-        "name_en": "Residential Design",
-        "name_de": "Wohndesign",
-        "name_ru": "Дизайн жилья",
-        "price": "$5000+",
-        "desc_en": "Full home interior makeover.",
-        "image": "/media/presets/interior_designer/services/residential.jpg"
+        "name_de": "Wohnraumgestaltung",
+        "name_en": "Living Space Design",
+        "name_ru": "Дизайн жилых помещений",
+        "price": "ab 3.500 EUR",
+        "desc_de": "Komplette Innenraumgestaltung fuer Wohnzimmer, Schlafzimmer, Kueche. Von der Idee bis zur Umsetzung.",
+        "desc_en": "Complete interior design for living room, bedroom, kitchen. From idea to implementation.",
+        "desc_ru": "Полный дизайн интерьера для гостиной, спальни, кухни. От идеи до реализации.",
+        "tags": [
+          "Beliebt"
+        ]
       },
       {
-        "name_en": "Commercial Spaces",
-        "name_de": "Gewerbliche Räume",
-        "name_ru": "Коммерческие помещения",
-        "price": "$10000+",
-        "desc_en": "Office and retail design.",
-        "image": "/media/presets/interior_designer/services/commercial.jpg"
+        "name_de": "Buerogestaltung",
+        "name_en": "Office Design",
+        "name_ru": "Дизайн офиса",
+        "price": "ab 5.000 EUR",
+        "desc_de": "Moderne Buerokonzepte, die Produktivitaet und Wohlbefinden foerdern.",
+        "desc_en": "Modern office concepts that promote productivity and wellbeing.",
+        "desc_ru": "Современные офисные концепции, повышающие продуктивность и благополучие.",
+        "tags": []
+      },
+      {
+        "name_de": "3D-Visualisierung",
+        "name_en": "3D Visualization",
+        "name_ru": "3D-визуализация",
+        "price": "ab 800 EUR",
+        "desc_de": "Realistische 3D-Renderings Ihres zukuenftigen Raums. Sehen Sie das Ergebnis vor dem Umbau.",
+        "desc_en": "Realistic 3D renderings of your future space. See the result before the renovation.",
+        "desc_ru": "Реалистичные 3D-рендеры вашего будущего пространства. Увидьте результат до ремонта.",
+        "tags": []
+      },
+      {
+        "name_de": "Farbberatung",
+        "name_en": "Colour Consultation",
+        "name_ru": "Консультация по цвету",
+        "price": "ab 350 EUR",
+        "desc_de": "Professionelle Farbberatung fuer Waende, Moebel und Accessoires. Harmonie durch Farbe.",
+        "desc_en": "Professional colour consultation for walls, furniture and accessories. Harmony through colour.",
+        "desc_ru": "Профессиональная консультация по цвету для стен, мебели и аксессуаров.",
+        "tags": []
+      },
+      {
+        "name_de": "Moebel und Beschaffung",
+        "name_en": "Furniture and Procurement",
+        "name_ru": "Мебель и закупки",
+        "price": "auf Anfrage",
+        "desc_de": "Wir beschaffen Moebel, Leuchten und Accessoires zu Grosshandelspreisen.",
+        "desc_en": "We procure furniture, lighting and accessories at wholesale prices.",
+        "desc_ru": "Закупаем мебель, освещение и аксессуары по оптовым ценам.",
+        "tags": []
+      },
+      {
+        "name_de": "Erstberatung",
+        "name_en": "Initial Consultation",
+        "name_ru": "Первичная консультация",
+        "price": "Kostenlos",
+        "desc_de": "60-minuetige kostenlose Erstberatung vor Ort. Wir besprechen Ihre Wuensche und Moeglichkeiten.",
+        "desc_en": "60-minute free on-site initial consultation. We discuss your wishes and possibilities.",
+        "desc_ru": "60-минутная бесплатная первичная консультация на месте.",
+        "tags": [
+          "Kostenlos"
+        ]
       }
     ],
     "testimonials": [
       {
-        "name": "Anna B.",
-        "text_en": "They transformed my small apartment into a palace!",
-        "text_de": "They transformed my small apartment into a palace!",
-        "text_ru": "They transformed my small apartment into a palace!",
+        "name": "Familie Weber",
+        "location_de": "Berlin",
+        "text_de": "Unser Wohnzimmer ist jetzt ein Traum. Das Team hat unsere Wuensche perfekt umgesetzt und sogar Ideen eingebracht, die wir nie gedacht haetten.",
+        "text_en": "Our living room is now a dream. The team perfectly implemented our wishes and even brought ideas we would never have thought of.",
+        "text_ru": "Наша гостиная теперь мечта. Команда идеально воплотила наши пожелания и предложила идеи, о которых мы не думали.",
         "rating": 5,
-        "avatar": "/media/presets/interior_designer/avatars/anna.jpg"
+        "source": "Google"
+      },
+      {
+        "name": "TechStartup GmbH",
+        "location_de": "Berlin",
+        "text_de": "Das neue Buero hat unsere Unternehmenskultur transformiert. Mitarbeiter sind produktiver und gluecklicher. Beste Investition!",
+        "text_en": "The new office has transformed our company culture. Employees are more productive and happier. Best investment!",
+        "text_ru": "Новый офис трансформировал нашу корпоративную культуру. Сотрудники продуктивнее и счастливее.",
+        "rating": 5,
+        "source": "Google"
+      },
+      {
+        "name": "Anna K.",
+        "location_de": "Berlin",
+        "text_de": "Die 3D-Visualisierung war ein Gamechanger. Ich konnte genau sehen, wie alles aussehen wuerde, bevor ein einziger Nagel eingeschlagen wurde.",
+        "text_en": "The 3D visualization was a game changer. I could see exactly how everything would look before a single nail was hammered.",
+        "text_ru": "Трёхмерная визуализация изменила всё. Я точно видела, как всё будет выглядеть до начала работ.",
+        "rating": 5,
+        "source": "Google"
       }
     ],
     "contact": {
@@ -154,12 +221,28 @@
     },
     "faq": [
       {
-        "q_en": "How to start?",
-        "q_de": "Wie anfangen?",
-        "q_ru": "Как начать?",
-        "a_en": "Contact us today!",
-        "a_de": "Kontaktieren Sie uns!",
-        "a_ru": "Свяжитесь с нами!"
+        "q_de": "Wie laeuft ein Projekt ab?",
+        "q_en": "How does a project work?",
+        "q_ru": "Как проходит проект?",
+        "a_de": "Erstberatung -> Konzept -> 3D-Visualisierung -> Freigabe -> Umsetzung -> Abnahme. Wir begleiten Sie durch jeden Schritt.",
+        "a_en": "Initial consultation -> Concept -> 3D visualization -> Approval -> Implementation -> Acceptance. We guide you through every step.",
+        "a_ru": "Первичная консультация -> Концепция -> 3D-визуализация -> Утверждение -> Реализация -> Приёмка."
+      },
+      {
+        "q_de": "Arbeiten Sie mit eigenen Handwerkern?",
+        "q_en": "Do you work with your own craftsmen?",
+        "q_ru": "Работаете ли вы с собственными мастерами?",
+        "a_de": "Ja, wir haben ein Netzwerk von vertrauenswuerdigen Handwerkern. Alles aus einer Hand.",
+        "a_en": "Yes, we have a network of trusted craftsmen. Everything from one source.",
+        "a_ru": "Да, у нас есть сеть проверенных мастеров. Всё из одних рук."
+      },
+      {
+        "q_de": "Koennen Sie auch einzelne Raeume gestalten?",
+        "q_en": "Can you also design individual rooms?",
+        "q_ru": "Можете ли вы оформить отдельные комнаты?",
+        "a_de": "Ja, wir gestalten auch einzelne Raeume oder geben Beratung fuer DIY-Projekte.",
+        "a_en": "Yes, we also design individual rooms or give advice for DIY projects.",
+        "a_ru": "Да, оформляем отдельные комнаты или консультируем по DIY-проектам."
       }
     ]
   },

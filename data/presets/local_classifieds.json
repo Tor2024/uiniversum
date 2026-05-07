@@ -4,7 +4,11 @@
     "description": "Бесплатные объявления для жителей города. Аренда, работа, услуги, обмен. Все в одном месте.",
     "favicon": "/media/presets/classifieds/favicon.ico",
     "language": "ru",
-    "availableLanguages": ["ru", "de", "en"],
+    "availableLanguages": [
+      "ru",
+      "de",
+      "en"
+    ],
     "category": "classifieds"
   },
   "design": {
@@ -63,9 +67,21 @@
   },
   "content": {
     "slogans": {
-      "ru": ["Находи то, что нужно рядом", "Бесплатные объявления для своих", "Твой город — твои возможности"],
-      "de": ["Finde was du brauchst", "Kostenlose Anzeigen für Nachbarn", "Deine Stadt, deine Chancen"],
-      "en": ["Find what you need nearby", "Free ads for locals", "Your city, your opportunities"]
+      "ru": [
+        "Находи то, что нужно рядом",
+        "Бесплатные объявления для своих",
+        "Твой город — твои возможности"
+      ],
+      "de": [
+        "Finde was du brauchst",
+        "Kostenlose Anzeigen für Nachbarn",
+        "Deine Stadt, deine Chancen"
+      ],
+      "en": [
+        "Find what you need nearby",
+        "Free ads for locals",
+        "Your city, your opportunities"
+      ]
     },
     "hero": {
       "ru": {
@@ -108,9 +124,24 @@
         "name_de": "Immobilien",
         "name_en": "Real Estate",
         "icon": "home",
-        "subcategories_ru": ["Аренда квартир", "Продажа домов", "Коммерческая недвижимость", "Дачи и участки"],
-        "subcategories_de": ["Wohnungsmiete", "Häuser verkaufen", "Gewerbeimmobilien", "Datschen und Grundstücke"],
-        "subcategories_en": ["Apartment Rental", "House Sales", "Commercial Real Estate", "Dachas & Plots"]
+        "subcategories_ru": [
+          "Аренда квартир",
+          "Продажа домов",
+          "Коммерческая недвижимость",
+          "Дачи и участки"
+        ],
+        "subcategories_de": [
+          "Wohnungsmiete",
+          "Häuser verkaufen",
+          "Gewerbeimmobilien",
+          "Datschen und Grundstücke"
+        ],
+        "subcategories_en": [
+          "Apartment Rental",
+          "House Sales",
+          "Commercial Real Estate",
+          "Dachas & Plots"
+        ]
       },
       {
         "id": "jobs",
@@ -118,9 +149,24 @@
         "name_de": "Jobs",
         "name_en": "Jobs",
         "icon": "briefcase",
-        "subcategories_ru": ["Вакансии", "Резюме", "Подработка", "Удаленная работа"],
-        "subcategories_de": ["Stellenangebote", "Bewerbungen", "Nebenjobs", "Homeoffice"],
-        "subcategories_en": ["Vacancies", "Resumes", "Part-time", "Remote Work"]
+        "subcategories_ru": [
+          "Вакансии",
+          "Резюме",
+          "Подработка",
+          "Удаленная работа"
+        ],
+        "subcategories_de": [
+          "Stellenangebote",
+          "Bewerbungen",
+          "Nebenjobs",
+          "Homeoffice"
+        ],
+        "subcategories_en": [
+          "Vacancies",
+          "Resumes",
+          "Part-time",
+          "Remote Work"
+        ]
       },
       {
         "id": "services",
@@ -128,9 +174,24 @@
         "name_de": "Dienstleistungen",
         "name_en": "Services",
         "icon": "tools",
-        "subcategories_ru": ["Ремонт и строительство", "Красота и здоровье", "Автоуслуги", "Компьютерная помощь"],
-        "subcategories_de": ["Reparatur & Bau", "Schönheit & Gesundheit", "Auto services", "IT-Hilfe"],
-        "subcategories_en": ["Repair & Construction", "Beauty & Health", "Auto Services", "Computer Help"]
+        "subcategories_ru": [
+          "Ремонт и строительство",
+          "Красота и здоровье",
+          "Автоуслуги",
+          "Компьютерная помощь"
+        ],
+        "subcategories_de": [
+          "Reparatur & Bau",
+          "Schönheit & Gesundheit",
+          "Auto services",
+          "IT-Hilfe"
+        ],
+        "subcategories_en": [
+          "Repair & Construction",
+          "Beauty & Health",
+          "Auto Services",
+          "Computer Help"
+        ]
       },
       {
         "id": "electronics",
@@ -138,9 +199,24 @@
         "name_de": "Elektronik",
         "name_en": "Electronics",
         "icon": "smartphone",
-        "subcategories_ru": ["Телефоны", "Ноутбуки", "Бытовая техника", "Фото и видео"],
-        "subcategories_de": ["Handys", "Laptops", "Haushaltsgeräte", "Foto & Video"],
-        "subcategories_en": ["Phones", "Laptops", "Appliances", "Photo & Video"]
+        "subcategories_ru": [
+          "Телефоны",
+          "Ноутбуки",
+          "Бытовая техника",
+          "Фото и видео"
+        ],
+        "subcategories_de": [
+          "Handys",
+          "Laptops",
+          "Haushaltsgeräte",
+          "Foto & Video"
+        ],
+        "subcategories_en": [
+          "Phones",
+          "Laptops",
+          "Appliances",
+          "Photo & Video"
+        ]
       },
       {
         "id": "clothing",
@@ -148,9 +224,24 @@
         "name_de": "Kleidung & Schuhe",
         "name_en": "Clothing & Shoes",
         "icon": "shirt",
-        "subcategories_ru": ["Женская одежда", "Мужская одежда", "Детская одежда", "Спорт и аутдор"],
-        "subcategories_de": ["Damenmode", "Herrenmode", "Kindermode", "Sport & Outdoor"],
-        "subcategories_en": ["Women's Clothing", "Men's Clothing", "Kids' Clothing", "Sport & Outdoor"]
+        "subcategories_ru": [
+          "Женская одежда",
+          "Мужская одежда",
+          "Детская одежда",
+          "Спорт и аутдор"
+        ],
+        "subcategories_de": [
+          "Damenmode",
+          "Herrenmode",
+          "Kindermode",
+          "Sport & Outdoor"
+        ],
+        "subcategories_en": [
+          "Women's Clothing",
+          "Men's Clothing",
+          "Kids' Clothing",
+          "Sport & Outdoor"
+        ]
       },
       {
         "id": "transport",
@@ -158,9 +249,24 @@
         "name_de": "Fahrzeuge",
         "name_en": "Transport",
         "icon": "car",
-        "subcategories_ru": ["Автомобили", "Мотоциклы", "Запчасти", "Спецтехника"],
-        "subcategories_de": ["Autos", "Motorräder", "Ersatzteile", "Baumaschinen"],
-        "subcategories_en": ["Cars", "Motorcycles", "Parts", "Special Machinery"]
+        "subcategories_ru": [
+          "Автомобили",
+          "Мотоциклы",
+          "Запчасти",
+          "Спецтехника"
+        ],
+        "subcategories_de": [
+          "Autos",
+          "Motorräder",
+          "Ersatzteile",
+          "Baumaschinen"
+        ],
+        "subcategories_en": [
+          "Cars",
+          "Motorcycles",
+          "Parts",
+          "Special Machinery"
+        ]
       }
     ],
     "sample_ads": [
@@ -235,20 +341,123 @@
     },
     "faq": [
       {
-        "q_ru": "Как разместить объявление?",
         "q_de": "Wie schalte ich eine Anzeige?",
-        "q_en": "How do I post an ad?",
-        "a_ru": "Нажмите кнопку 'Разместить объявление', выберите категорию, заполните форму и загрузите фото. Все бесплатно!",
-        "a_de": "Klicken Sie auf 'Anzeige aufgeben', wählen Sie eine Kategorie, füllen Sie das Formular aus und laden Sie Fotos hoch. Alles kostenlos!",
-        "a_en": "Click 'Post an ad', select a category, fill out the form and upload photos. All free!"
+        "q_en": "How do I post a listing?",
+        "q_ru": "Как разместить объявление?",
+        "a_de": "Registrieren, Kategorie waehlen, Anzeige erstellen, Fotos hochladen, veroeffentlichen. In 5 Minuten fertig.",
+        "a_en": "Register, choose category, create listing, upload photos, publish. Done in 5 minutes.",
+        "a_ru": "Зарегистрируйтесь, выберите категорию, создайте объявление, загрузите фото, опубликуйте. Готово за 5 минут."
       },
       {
-        "q_ru": "Можно ли продавать товары?",
-        "q_de": "Kann man Waren verkaufen?",
-        "q_en": "Can I sell goods?",
-        "a_ru": "Да, вы можете продавать как новые, так и б/у товары. Главное — соблюдать правила сообщества.",
-        "a_de": "Ja, Sie können sowohl neue als auch gebrauchte Waren verkaufen. Halten Sie sich nur an die Community-Regeln.",
-        "a_en": "Yes, you can sell both new and used goods. Just follow the community rules."
+        "q_de": "Wie lange ist eine Anzeige aktiv?",
+        "q_en": "How long is a listing active?",
+        "q_ru": "Как долго активно объявление?",
+        "a_de": "Kostenlose Anzeigen: 30 Tage. Premium: 60 Tage. Danach koennen Sie verlaengern.",
+        "a_en": "Free listings: 30 days. Premium: 60 days. After that you can extend.",
+        "a_ru": "Бесплатные объявления: 30 дней. Премиум: 60 дней. После этого можно продлить."
+      },
+      {
+        "q_de": "Ist die Plattform sicher?",
+        "q_en": "Is the platform safe?",
+        "q_ru": "Безопасна ли платформа?",
+        "a_de": "Ja, alle Nutzer werden verifiziert. Betrugsschutz und sichere Zahlungsabwicklung inklusive.",
+        "a_en": "Yes, all users are verified. Fraud protection and secure payment processing included.",
+        "a_ru": "Да, все пользователи верифицированы. Защита от мошенничества и безопасная оплата включены."
+      }
+    ],
+    "services": [
+      {
+        "name_de": "Kostenlose Anzeige",
+        "name_en": "Free Listing",
+        "name_ru": "Бесплатное объявление",
+        "price": "Kostenlos",
+        "desc_de": "Schalten Sie Ihre Anzeige kostenlos. Bis zu 5 Fotos, 30 Tage Laufzeit.",
+        "desc_en": "Post your listing for free. Up to 5 photos, 30 days duration.",
+        "desc_ru": "Разместите объявление бесплатно. До 5 фото, 30 дней размещения.",
+        "tags": [
+          "Kostenlos"
+        ]
+      },
+      {
+        "name_de": "Premium Anzeige",
+        "name_en": "Premium Listing",
+        "name_ru": "Премиум объявление",
+        "price": "9,99 EUR",
+        "desc_de": "Hervorgehobene Anzeige ganz oben. 20 Fotos, 60 Tage, mehr Sichtbarkeit.",
+        "desc_en": "Featured listing at the top. 20 photos, 60 days, more visibility.",
+        "desc_ru": "Выделенное объявление вверху. 20 фото, 60 дней, больше видимости.",
+        "tags": [
+          "Beliebt"
+        ]
+      },
+      {
+        "name_de": "Immobilien",
+        "name_en": "Real Estate",
+        "name_ru": "Недвижимость",
+        "price": "ab 29 EUR",
+        "desc_de": "Wohnungen, Haeuser, Gewerbe. Grosse Reichweite in Ihrer Region.",
+        "desc_en": "Apartments, houses, commercial. Wide reach in your region.",
+        "desc_ru": "Квартиры, дома, коммерческая недвижимость. Широкий охват в вашем регионе.",
+        "tags": []
+      },
+      {
+        "name_de": "Fahrzeuge",
+        "name_en": "Vehicles",
+        "name_ru": "Транспортные средства",
+        "price": "ab 19 EUR",
+        "desc_de": "Autos, Motorraeder, Fahrraeder. Verkaufen Sie schnell und sicher.",
+        "desc_en": "Cars, motorcycles, bicycles. Sell quickly and safely.",
+        "desc_ru": "Автомобили, мотоциклы, велосипеды. Продавайте быстро и безопасно.",
+        "tags": []
+      },
+      {
+        "name_de": "Jobs und Karriere",
+        "name_en": "Jobs and Career",
+        "name_ru": "Работа и карьера",
+        "price": "ab 49 EUR",
+        "desc_de": "Stellenanzeigen fuer Arbeitgeber. Finden Sie die besten Talente in Ihrer Region.",
+        "desc_en": "Job listings for employers. Find the best talent in your region.",
+        "desc_ru": "Вакансии для работодателей. Найдите лучшие таланты в вашем регионе.",
+        "tags": []
+      },
+      {
+        "name_de": "Dienstleistungen",
+        "name_en": "Services",
+        "name_ru": "Услуги",
+        "price": "ab 9,99 EUR",
+        "desc_de": "Handwerker, Nachhilfe, Haushaltshilfe. Lokale Dienstleister finden und anbieten.",
+        "desc_en": "Craftsmen, tutoring, household help. Find and offer local services.",
+        "desc_ru": "Мастера, репетиторы, помощь по дому. Находите и предлагайте местные услуги.",
+        "tags": []
+      }
+    ],
+    "testimonials": [
+      {
+        "name": "Klaus M.",
+        "location_de": "Berlin",
+        "text_de": "Mein Auto war in 3 Tagen verkauft! Die Premium-Anzeige hat sich definitiv gelohnt. Viele Anfragen, schnelle Abwicklung.",
+        "text_en": "My car was sold in 3 days! The premium listing was definitely worth it. Many enquiries, fast processing.",
+        "text_ru": "Моя машина была продана за 3 дня! Премиум-объявление определённо окупилось.",
+        "rating": 5,
+        "source": "Google"
+      },
+      {
+        "name": "Immobilien GmbH",
+        "location_de": "Berlin",
+        "text_de": "Wir schalten alle unsere Immobilienanzeigen hier. Grosse Reichweite, guenstige Preise, professionelle Plattform.",
+        "text_en": "We post all our real estate listings here. Wide reach, competitive prices, professional platform.",
+        "text_ru": "Размещаем все наши объявления о недвижимости здесь. Широкий охват, конкурентные цены.",
+        "rating": 5,
+        "source": "Google"
+      },
+      {
+        "name": "Anna K.",
+        "location_de": "Berlin",
+        "text_de": "Habe meinen Handwerker ueber diese Plattform gefunden. Schnell, einfach, zuverlaessig. Sehr empfehlenswert!",
+        "text_en": "Found my craftsman through this platform. Fast, simple, reliable. Highly recommended!",
+        "text_ru": "Нашла своего мастера через эту платформу. Быстро, просто, надёжно.",
+        "rating": 5,
+        "source": "Google"
       }
     ]
   },

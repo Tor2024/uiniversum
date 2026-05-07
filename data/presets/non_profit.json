@@ -118,30 +118,95 @@
     },
     "services": [
       {
-        "name_en": "Food Drives",
-        "name_de": "Lebensmittelsammlungen",
-        "name_ru": "Сбор продуктов",
-        "price": "Donation",
-        "desc_en": "Fighting hunger locally.",
-        "image": "/media/presets/non_profit/services/food.jpg"
+        "name_de": "Lebensmittelhilfe",
+        "name_en": "Food Aid",
+        "name_ru": "Продовольственная помощь",
+        "price": "Spende",
+        "desc_de": "Woechentliche Lebensmittelausgabe fuer Beduerftige. Frische Produkte, wuerdevolle Hilfe.",
+        "desc_en": "Weekly food distribution for those in need. Fresh products, dignified help.",
+        "desc_ru": "Еженедельная раздача продуктов нуждающимся. Свежие продукты, достойная помощь.",
+        "tags": []
       },
       {
-        "name_en": "Education Fund",
-        "name_de": "Bildungsfonds",
-        "name_ru": "Фонд образования",
-        "price": "Sponsorship",
-        "desc_en": "Sponsoring children's education.",
-        "image": "/media/presets/non_profit/services/edu.jpg"
+        "name_de": "Bildungsprogramme",
+        "name_en": "Education Programs",
+        "name_ru": "Образовательные программы",
+        "price": "Kostenlos",
+        "desc_de": "Nachhilfe, Sprachkurse, Berufsberatung. Bildung als Weg aus der Armut.",
+        "desc_en": "Tutoring, language courses, career counselling. Education as a way out of poverty.",
+        "desc_ru": "Репетиторство, языковые курсы, профориентация. Образование как путь из бедности.",
+        "tags": []
+      },
+      {
+        "name_de": "Obdachlosenhilfe",
+        "name_en": "Homeless Support",
+        "name_ru": "Помощь бездомным",
+        "price": "Spende",
+        "desc_de": "Notunterkunft, Mahlzeiten, Beratung. Wir helfen Menschen in der schwersten Zeit.",
+        "desc_en": "Emergency shelter, meals, counselling. We help people in their hardest time.",
+        "desc_ru": "Временное жильё, питание, консультации. Помогаем людям в самое трудное время.",
+        "tags": []
+      },
+      {
+        "name_de": "Kinderfoerderung",
+        "name_en": "Child Support",
+        "name_ru": "Поддержка детей",
+        "price": "Patenschaft",
+        "desc_de": "Patenschaften, Freizeitangebote, Schulunterstuetzung fuer Kinder aus einkommensschwachen Familien.",
+        "desc_en": "Sponsorships, leisure activities, school support for children from low-income families.",
+        "desc_ru": "Шефство, досуг, школьная поддержка для детей из малообеспеченных семей.",
+        "tags": []
+      },
+      {
+        "name_de": "Ehrenamt",
+        "name_en": "Volunteering",
+        "name_ru": "Волонтёрство",
+        "price": "Kostenlos",
+        "desc_de": "Werden Sie Teil unseres Teams. Jede Stunde zaehlt, jede Hilfe macht einen Unterschied.",
+        "desc_en": "Become part of our team. Every hour counts, every help makes a difference.",
+        "desc_ru": "Станьте частью нашей команды. Каждый час важен, каждая помощь имеет значение.",
+        "tags": [
+          "Mitmachen"
+        ]
+      },
+      {
+        "name_de": "Spenden",
+        "name_en": "Donations",
+        "name_ru": "Пожертвования",
+        "price": "Jeder Betrag",
+        "desc_de": "Ihre Spende hilft direkt. 100% der Spenden gehen an unsere Projekte.",
+        "desc_en": "Your donation helps directly. 100% of donations go to our projects.",
+        "desc_ru": "Ваше пожертвование помогает напрямую. 100% пожертвований идут на наши проекты.",
+        "tags": []
       }
     ],
     "testimonials": [
       {
         "name": "Volunteer M.",
-        "text_en": "The most rewarding experience of my life.",
-        "text_de": "The most rewarding experience of my life.",
-        "text_ru": "The most rewarding experience of my life.",
+        "location_de": "Berlin",
+        "text_de": "Die sinnvollste Erfahrung meines Lebens. Ich sehe direkt, wie meine Zeit und Energie das Leben anderer veraendert.",
+        "text_en": "The most meaningful experience of my life. I see directly how my time and energy changes the lives of others.",
+        "text_ru": "Самый значимый опыт в моей жизни. Вижу напрямую, как моё время и энергия меняют жизни других.",
         "rating": 5,
-        "avatar": "/media/presets/non_profit/avatars/volunteer.jpg"
+        "source": "Google"
+      },
+      {
+        "name": "Spenderin Anna K.",
+        "location_de": "Berlin",
+        "text_de": "Ich spende seit 3 Jahren und bekomme immer transparente Berichte darueber, wie mein Geld verwendet wird. Volle Vertrauenswuerdigkeit.",
+        "text_en": "I have been donating for 3 years and always receive transparent reports on how my money is used. Full trustworthiness.",
+        "text_ru": "Жертвую 3 года и всегда получаю прозрачные отчёты о том, как используются мои деньги.",
+        "rating": 5,
+        "source": "Google"
+      },
+      {
+        "name": "Familie Schulz",
+        "location_de": "Berlin",
+        "text_de": "Die Bildungsprogramme haben unserem Sohn geholfen, die Schule zu bestehen. Ohne diese Hilfe waere es sehr schwer gewesen.",
+        "text_en": "The education programs helped our son pass school. Without this help it would have been very difficult.",
+        "text_ru": "Образовательные программы помогли нашему сыну окончить школу. Без этой помощи было бы очень трудно.",
+        "rating": 5,
+        "source": "Google"
       }
     ],
     "contact": {
@@ -154,12 +219,28 @@
     },
     "faq": [
       {
-        "q_en": "How to start?",
-        "q_de": "Wie anfangen?",
-        "q_ru": "Как начать?",
-        "a_en": "Contact us today!",
-        "a_de": "Kontaktieren Sie uns!",
-        "a_ru": "Свяжитесь с нами!"
+        "q_de": "Wie kann ich spenden?",
+        "q_en": "How can I donate?",
+        "q_ru": "Как я могу пожертвовать?",
+        "a_de": "Online per Kreditkarte, PayPal oder Bankueberweisung. Alle Spenden sind steuerlich absetzbar.",
+        "a_en": "Online by credit card, PayPal or bank transfer. All donations are tax deductible.",
+        "a_ru": "Онлайн кредитной картой, PayPal или банковским переводом. Все пожертвования вычитаются из налогов."
+      },
+      {
+        "q_de": "Wie werde ich Ehrenamtlicher?",
+        "q_en": "How do I become a volunteer?",
+        "q_ru": "Как стать волонтёром?",
+        "a_de": "Einfach kontaktieren und ein kurzes Gespraech vereinbaren. Wir finden die passende Aufgabe fuer Sie.",
+        "a_en": "Simply contact us and arrange a short conversation. We will find the right task for you.",
+        "a_ru": "Просто свяжитесь с нами и договоритесь о коротком разговоре. Найдём подходящую задачу для вас."
+      },
+      {
+        "q_de": "Wie wird meine Spende verwendet?",
+        "q_en": "How is my donation used?",
+        "q_ru": "Как используется моё пожертвование?",
+        "a_de": "100% der Spenden gehen direkt in unsere Projekte. Verwaltungskosten werden separat finanziert.",
+        "a_en": "100% of donations go directly to our projects. Administrative costs are financed separately.",
+        "a_ru": "100% пожертвований идут напрямую в наши проекты. Административные расходы финансируются отдельно."
       }
     ]
   },

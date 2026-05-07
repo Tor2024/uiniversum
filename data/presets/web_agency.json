@@ -118,30 +118,97 @@
     },
     "services": [
       {
-        "name_en": "Web Development",
         "name_de": "Webentwicklung",
+        "name_en": "Web Development",
         "name_ru": "Веб-разработка",
-        "price": "$5000+",
-        "desc_en": "Custom websites and platforms.",
-        "image": "/media/presets/web_agency/services/web.jpg"
+        "price": "ab 5.000 EUR",
+        "desc_de": "Massgeschneiderte Websites und Web-Apps. React, Next.js, moderne Technologien.",
+        "desc_en": "Custom websites and web apps. React, Next.js, modern technologies.",
+        "desc_ru": "Сайты и веб-приложения на заказ. React, Next.js, современные технологии.",
+        "tags": [
+          "Beliebt"
+        ]
       },
       {
-        "name_en": "UI/UX Design",
         "name_de": "UI/UX Design",
+        "name_en": "UI/UX Design",
         "name_ru": "UI/UX Дизайн",
-        "price": "$3000+",
-        "desc_en": "User-centered design strategies.",
-        "image": "/media/presets/web_agency/services/uiux.jpg"
+        "price": "ab 3.000 EUR",
+        "desc_de": "Nutzerzentriertes Design, das konvertiert. Figma, Prototyping, User Testing.",
+        "desc_en": "User-centred design that converts. Figma, prototyping, user testing.",
+        "desc_ru": "Дизайн, ориентированный на пользователя, который конвертирует. Figma, прототипирование.",
+        "tags": []
+      },
+      {
+        "name_de": "E-Commerce",
+        "name_en": "E-Commerce",
+        "name_ru": "Электронная коммерция",
+        "price": "ab 8.000 EUR",
+        "desc_de": "Online-Shops mit Shopify, WooCommerce oder massgeschneidert. Mehr Umsatz online.",
+        "desc_en": "Online shops with Shopify, WooCommerce or custom. More revenue online.",
+        "desc_ru": "Интернет-магазины на Shopify, WooCommerce или на заказ. Больше выручки онлайн.",
+        "tags": []
+      },
+      {
+        "name_de": "SEO und Performance",
+        "name_en": "SEO and Performance",
+        "name_ru": "SEO и производительность",
+        "price": "ab 1.500 EUR",
+        "desc_de": "Technisches SEO, Core Web Vitals, Ladezeit-Optimierung. Mehr Sichtbarkeit in Google.",
+        "desc_en": "Technical SEO, Core Web Vitals, loading time optimization. More visibility in Google.",
+        "desc_ru": "Технический SEO, Core Web Vitals, оптимизация скорости. Больше видимости в Google.",
+        "tags": []
+      },
+      {
+        "name_de": "Wartung und Support",
+        "name_en": "Maintenance and Support",
+        "name_ru": "Обслуживание и поддержка",
+        "price": "ab 299 EUR/Monat",
+        "desc_de": "Monatliche Wartung, Updates, Sicherheit, Backups. Ihr Website in besten Haenden.",
+        "desc_en": "Monthly maintenance, updates, security, backups. Your website in the best hands.",
+        "desc_ru": "Ежемесячное обслуживание, обновления, безопасность, резервные копии.",
+        "tags": []
+      },
+      {
+        "name_de": "Kostenlose Beratung",
+        "name_en": "Free Consultation",
+        "name_ru": "Бесплатная консультация",
+        "price": "Kostenlos",
+        "desc_de": "30-minuetige kostenlose Erstberatung. Wir analysieren Ihre aktuelle Website und zeigen Potenziale.",
+        "desc_en": "30-minute free initial consultation. We analyze your current website and show potential.",
+        "desc_ru": "30-минутная бесплатная первичная консультация. Анализируем ваш сайт и показываем потенциал.",
+        "tags": [
+          "Kostenlos"
+        ]
       }
     ],
     "testimonials": [
       {
-        "name": "TechCorp",
-        "text_en": "Our new website increased leads by 200%. Incredible work.",
-        "text_de": "Our new website increased leads by 200%. Incredible work.",
-        "text_ru": "Our new website increased leads by 200%. Incredible work.",
+        "name": "TechCorp GmbH",
+        "location_de": "Berlin",
+        "text_de": "Unsere neue Website hat die Leads um 200% gesteigert. Das Team hat unsere Vision perfekt umgesetzt und war immer erreichbar.",
+        "text_en": "Our new website increased leads by 200%. The team perfectly implemented our vision and was always reachable.",
+        "text_ru": "Наш новый сайт увеличил количество лидов на 200%. Команда идеально воплотила нашу идею.",
         "rating": 5,
-        "avatar": "/media/presets/web_agency/avatars/techcorp.jpg"
+        "source": "Google"
+      },
+      {
+        "name": "Fashion Store Berlin",
+        "location_de": "Berlin",
+        "text_de": "Der Online-Shop hat unseren Umsatz verdoppelt. Professionelle Umsetzung, schnelle Lieferung, top Support.",
+        "text_en": "The online shop doubled our revenue. Professional implementation, fast delivery, top support.",
+        "text_ru": "Интернет-магазин удвоил нашу выручку. Профессиональная реализация, быстрая сдача, отличная поддержка.",
+        "rating": 5,
+        "source": "Google"
+      },
+      {
+        "name": "Startup XYZ",
+        "location_de": "Berlin",
+        "text_de": "Von der Idee bis zum Launch in 6 Wochen. Das Team ist schnell, kreativ und versteht, was wir brauchen.",
+        "text_en": "From idea to launch in 6 weeks. The team is fast, creative and understands what we need.",
+        "text_ru": "От идеи до запуска за 6 недель. Команда быстрая, креативная и понимает, что нам нужно.",
+        "rating": 5,
+        "source": "Google"
       }
     ],
     "contact": {
@@ -154,12 +221,28 @@
     },
     "faq": [
       {
-        "q_en": "How long does a project take?",
-        "q_de": "Wie lange dauert ein Projekt?",
-        "q_ru": "Сколько длится проект?",
-        "a_en": "Typically 3-6 months depending on scope.",
-        "a_de": "In der Regel 3-6 Monate je nach Umfang.",
-        "a_ru": "Обычно 3-6 месяцев в зависимости от объёма."
+        "q_de": "Wie lange dauert ein Webprojekt?",
+        "q_en": "How long does a web project take?",
+        "q_ru": "Сколько времени занимает веб-проект?",
+        "a_de": "Eine einfache Website: 4-6 Wochen. Ein komplexes Projekt: 3-6 Monate. Wir erstellen einen detaillierten Zeitplan.",
+        "a_en": "A simple website: 4-6 weeks. A complex project: 3-6 months. We create a detailed schedule.",
+        "a_ru": "Простой сайт: 4-6 недель. Сложный проект: 3-6 месяцев. Составляем детальный план."
+      },
+      {
+        "q_de": "Koennen Sie auch bestehende Websites verbessern?",
+        "q_en": "Can you also improve existing websites?",
+        "q_ru": "Можете ли вы улучшить существующие сайты?",
+        "a_de": "Ja, wir analysieren Ihre bestehende Website und optimieren Design, Performance und SEO.",
+        "a_en": "Yes, we analyze your existing website and optimize design, performance and SEO.",
+        "a_ru": "Да, анализируем ваш существующий сайт и оптимизируем дизайн, производительность и SEO."
+      },
+      {
+        "q_de": "Was kostet die Wartung?",
+        "q_en": "What does maintenance cost?",
+        "q_ru": "Сколько стоит обслуживание?",
+        "a_de": "Ab 299 EUR/Monat fuer Updates, Sicherheit und Support. Individuelle Pakete auf Anfrage.",
+        "a_en": "From 299 EUR/month for updates, security and support. Individual packages on request.",
+        "a_ru": "От 299 EUR/месяц за обновления, безопасность и поддержку. Индивидуальные пакеты по запросу."
       }
     ]
   },

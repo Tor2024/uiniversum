@@ -118,30 +118,97 @@
     },
     "services": [
       {
+        "name_de": "Hot Desk",
         "name_en": "Hot Desk",
-        "name_de": "Flex-Arbeitsplatz",
         "name_ru": "Горячее место",
-        "price": "$25/day",
-        "desc_en": "Flexible seating in open space.",
-        "image": "/media/presets/coworking_space/services/hotdesk.jpg"
+        "price": "25 EUR/Tag",
+        "desc_de": "Flexibler Arbeitsplatz im Open Space. Inklusive WLAN, Kaffee und Drucker.",
+        "desc_en": "Flexible workspace in open space. Includes WiFi, coffee and printer.",
+        "desc_ru": "Гибкое рабочее место в открытом пространстве. Включает WiFi, кофе и принтер.",
+        "tags": []
       },
       {
-        "name_en": "Meeting Room",
+        "name_de": "Fester Schreibtisch",
+        "name_en": "Dedicated Desk",
+        "name_ru": "Постоянное место",
+        "price": "350 EUR/Monat",
+        "desc_de": "Ihr eigener Schreibtisch, immer verfuegbar. Mit abschliessbarem Rollcontainer.",
+        "desc_en": "Your own desk, always available. With lockable pedestal.",
+        "desc_ru": "Ваш собственный стол, всегда доступный. С запирающейся тумбой.",
+        "tags": [
+          "Beliebt"
+        ]
+      },
+      {
+        "name_de": "Privates Buero",
+        "name_en": "Private Office",
+        "name_ru": "Частный офис",
+        "price": "ab 800 EUR/Monat",
+        "desc_de": "Abgeschlossenes Buero fuer 2-8 Personen. Volle Privatsphare, eigene Adresse.",
+        "desc_en": "Enclosed office for 2-8 people. Full privacy, own address.",
+        "desc_ru": "Закрытый офис для 2-8 человек. Полная приватность, собственный адрес.",
+        "tags": []
+      },
+      {
         "name_de": "Besprechungsraum",
+        "name_en": "Meeting Room",
         "name_ru": "Переговорная",
-        "price": "$50/hr",
-        "desc_en": "Equipped for presentations.",
-        "image": "/media/presets/coworking_space/services/meeting.jpg"
+        "price": "50 EUR/Stunde",
+        "desc_de": "Professionelle Besprechungsraeume fuer 4-20 Personen. Mit Beamer und Whiteboard.",
+        "desc_en": "Professional meeting rooms for 4-20 people. With projector and whiteboard.",
+        "desc_ru": "Профессиональные переговорные для 4-20 человек. С проектором и доской.",
+        "tags": []
+      },
+      {
+        "name_de": "Virtuelle Adresse",
+        "name_en": "Virtual Address",
+        "name_ru": "Виртуальный адрес",
+        "price": "49 EUR/Monat",
+        "desc_de": "Geschaeftsadresse ohne physischen Arbeitsplatz. Postweiterleitung inklusive.",
+        "desc_en": "Business address without physical workspace. Mail forwarding included.",
+        "desc_ru": "Деловой адрес без физического рабочего места. Пересылка почты включена.",
+        "tags": []
+      },
+      {
+        "name_de": "Tagespass",
+        "name_en": "Day Pass",
+        "name_ru": "Дневной пропуск",
+        "price": "20 EUR",
+        "desc_de": "Einmalig reinschnuppern. Kein Abo, keine Verpflichtung.",
+        "desc_en": "Try it once. No subscription, no commitment.",
+        "desc_ru": "Попробуйте один раз. Без подписки, без обязательств.",
+        "tags": [
+          "Gratis"
+        ]
       }
     ],
     "testimonials": [
       {
-        "name": "Startup X",
-        "text_en": "The networking opportunities here are incredible.",
-        "text_de": "The networking opportunities here are incredible.",
-        "text_ru": "The networking opportunities here are incredible.",
+        "name": "Lisa M., Freelancerin",
+        "location_de": "Berlin",
+        "text_de": "Das beste Coworking in Berlin. Die Community ist unglaublich, die Infrastruktur top. Ich bin seit 2 Jahren hier und moechte nirgendwo anders arbeiten.",
+        "text_en": "The best coworking in Berlin. The community is incredible, the infrastructure top. I have been here for 2 years and do not want to work anywhere else.",
+        "text_ru": "Лучший коворкинг в Берлине. Сообщество невероятное, инфраструктура отличная.",
         "rating": 5,
-        "avatar": "/media/presets/coworking_space/avatars/startup.jpg"
+        "source": "Google"
+      },
+      {
+        "name": "Startup XYZ",
+        "location_de": "Berlin",
+        "text_de": "Wir haben hier als 3-koepfiges Team angefangen und sind jetzt 15 Personen. Das private Buero war der perfekte Schritt fuer uns.",
+        "text_en": "We started here as a 3-person team and are now 15 people. The private office was the perfect step for us.",
+        "text_ru": "Начинали здесь командой из 3 человек, теперь нас 15. Частный офис был идеальным шагом.",
+        "rating": 5,
+        "source": "Google"
+      },
+      {
+        "name": "Marco R., Berater",
+        "location_de": "Berlin",
+        "text_de": "Die Besprechungsraeume sind professionell und gut ausgestattet. Meine Kunden sind immer beeindruckt.",
+        "text_en": "The meeting rooms are professional and well equipped. My clients are always impressed.",
+        "text_ru": "Переговорные профессиональные и хорошо оснащённые. Мои клиенты всегда впечатлены.",
+        "rating": 5,
+        "source": "Google"
       }
     ],
     "contact": {
@@ -154,12 +221,28 @@
     },
     "faq": [
       {
-        "q_en": "How to start?",
-        "q_de": "Wie anfangen?",
-        "q_ru": "Как начать?",
-        "a_en": "Contact us today!",
-        "a_de": "Kontaktieren Sie uns!",
-        "a_ru": "Свяжитесь с нами!"
+        "q_de": "Gibt es eine Mindestmietdauer?",
+        "q_en": "Is there a minimum rental period?",
+        "q_ru": "Есть ли минимальный срок аренды?",
+        "a_de": "Nein. Hot Desks und Tagespasse sind ohne Bindung. Monatliche Mitgliedschaften sind monatlich kuendbar.",
+        "a_en": "No. Hot desks and day passes have no commitment. Monthly memberships are cancellable monthly.",
+        "a_ru": "Нет. Горячие места и дневные пропуска без обязательств. Ежемесячные членства отменяются ежемесячно."
+      },
+      {
+        "q_de": "Ist das Gebaude 24/7 zugaenglich?",
+        "q_en": "Is the building accessible 24/7?",
+        "q_ru": "Доступно ли здание 24/7?",
+        "a_de": "Ja, Mitglieder mit festem Schreibtisch oder privatem Buero haben rund um die Uhr Zugang.",
+        "a_en": "Yes, members with dedicated desks or private offices have round-the-clock access.",
+        "a_ru": "Да, участники с постоянным местом или частным офисом имеют круглосуточный доступ."
+      },
+      {
+        "q_de": "Gibt es Parkplaetze?",
+        "q_en": "Is there parking?",
+        "q_ru": "Есть ли парковка?",
+        "a_de": "Ja, Tiefgaragenplaetze sind gegen Aufpreis verfuegbar. Fahrradstellplaetze kostenlos.",
+        "a_en": "Yes, underground parking spaces are available at extra cost. Bicycle parking is free.",
+        "a_ru": "Да, места в подземном гараже доступны за доплату. Велопарковка бесплатно."
       }
     ]
   },

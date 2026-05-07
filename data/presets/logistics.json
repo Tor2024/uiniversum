@@ -118,30 +118,95 @@
     },
     "services": [
       {
-        "name_en": "Freight Shipping",
-        "name_de": "Frachtschifffahrt",
-        "name_ru": "Грузоперевозки",
-        "price": "Quote",
-        "desc_en": "Sea, air, and land.",
-        "image": "/media/presets/logistics/services/freight.jpg"
+        "name_de": "Strassentransport",
+        "name_en": "Road Transport",
+        "name_ru": "Автомобильные перевозки",
+        "price": "auf Anfrage",
+        "desc_de": "Nationaler und internationaler LKW-Transport. Termingerecht und zuverlaessig.",
+        "desc_en": "National and international truck transport. On time and reliable.",
+        "desc_ru": "Национальные и международные грузоперевозки. Точно в срок и надёжно.",
+        "tags": [
+          "Beliebt"
+        ]
       },
       {
-        "name_en": "Warehousing",
         "name_de": "Lagerhaltung",
+        "name_en": "Warehousing",
         "name_ru": "Складские услуги",
-        "price": "$2/pallet",
-        "desc_en": "Secure storage solutions.",
-        "image": "/media/presets/logistics/services/warehouse.jpg"
+        "price": "2 EUR/Palette/Tag",
+        "desc_de": "Sichere Lagerung in unseren modernen Lagerhallen. Kommissionierung und Verpackung inklusive.",
+        "desc_en": "Secure storage in our modern warehouses. Picking and packing included.",
+        "desc_ru": "Безопасное хранение в наших современных складах. Комплектация и упаковка включены.",
+        "tags": []
+      },
+      {
+        "name_de": "Expresszustellung",
+        "name_en": "Express Delivery",
+        "name_ru": "Экспресс-доставка",
+        "price": "ab 25 EUR",
+        "desc_de": "Same-Day und Next-Day Lieferung. Wenn es schnell gehen muss.",
+        "desc_en": "Same-day and next-day delivery. When speed is essential.",
+        "desc_ru": "Доставка в тот же день и на следующий день. Когда нужна скорость.",
+        "tags": []
+      },
+      {
+        "name_de": "Seefracht",
+        "name_en": "Sea Freight",
+        "name_ru": "Морские перевозки",
+        "price": "auf Anfrage",
+        "desc_de": "FCL und LCL Seefracht weltweit. Guenstige Preise fuer grosse Mengen.",
+        "desc_en": "FCL and LCL sea freight worldwide. Competitive prices for large volumes.",
+        "desc_ru": "FCL и LCL морские перевозки по всему миру. Конкурентные цены для больших объёмов.",
+        "tags": []
+      },
+      {
+        "name_de": "Luftfracht",
+        "name_en": "Air Freight",
+        "name_ru": "Авиаперевозки",
+        "price": "auf Anfrage",
+        "desc_de": "Schnelle Luftfracht fuer zeitkritische Sendungen. Weltweit in 24-72 Stunden.",
+        "desc_en": "Fast air freight for time-critical shipments. Worldwide in 24-72 hours.",
+        "desc_ru": "Быстрые авиаперевозки для срочных грузов. По всему миру за 24-72 часа.",
+        "tags": []
+      },
+      {
+        "name_de": "Zollabwicklung",
+        "name_en": "Customs Clearance",
+        "name_ru": "Таможенное оформление",
+        "price": "ab 150 EUR",
+        "desc_de": "Professionelle Zollabwicklung fuer Import und Export. Wir kennen alle Vorschriften.",
+        "desc_en": "Professional customs clearance for import and export. We know all regulations.",
+        "desc_ru": "Профессиональное таможенное оформление для импорта и экспорта. Знаем все правила.",
+        "tags": []
       }
     ],
     "testimonials": [
       {
-        "name": "Logistics Mgr",
-        "text_en": "Reduced our shipping costs by 30%. Highly efficient.",
-        "text_de": "Reduced our shipping costs by 30%. Highly efficient.",
-        "text_ru": "Reduced our shipping costs by 30%. Highly efficient.",
+        "name": "Logistics Manager, AutoCorp",
+        "location_de": "Berlin",
+        "text_de": "Wir haben unsere Versandkosten um 30% reduziert und die Lieferzeiten verbessert. Professioneller Partner, dem wir vertrauen.",
+        "text_en": "We reduced our shipping costs by 30% and improved delivery times. Professional partner we trust.",
+        "text_ru": "Снизили затраты на доставку на 30% и улучшили сроки. Профессиональный партнёр, которому доверяем.",
         "rating": 5,
-        "avatar": "/media/presets/logistics/avatars/mgr.jpg"
+        "source": "Google"
+      },
+      {
+        "name": "E-Commerce GmbH",
+        "location_de": "Hamburg",
+        "text_de": "Die Lagerhaltung und Kommissionierung laeuft reibungslos. Unsere Kunden sind zufrieden, wir sind zufrieden.",
+        "text_en": "Warehousing and picking runs smoothly. Our customers are satisfied, we are satisfied.",
+        "text_ru": "Складирование и комплектация работают без сбоев. Наши клиенты довольны, мы довольны.",
+        "rating": 5,
+        "source": "Google"
+      },
+      {
+        "name": "Import/Export AG",
+        "location_de": "Frankfurt",
+        "text_de": "Die Zollabwicklung war immer ein Alptraum. Jetzt laeuft alles automatisch und fehlerfrei. Danke!",
+        "text_en": "Customs clearance was always a nightmare. Now everything runs automatically and error-free. Thank you!",
+        "text_ru": "Таможенное оформление всегда было кошмаром. Теперь всё работает автоматически и без ошибок.",
+        "rating": 5,
+        "source": "Google"
       }
     ],
     "contact": {
@@ -154,12 +219,28 @@
     },
     "faq": [
       {
-        "q_en": "How to start?",
-        "q_de": "Wie anfangen?",
-        "q_ru": "Как начать?",
-        "a_en": "Contact us today!",
-        "a_de": "Kontaktieren Sie uns!",
-        "a_ru": "Свяжитесь с нами!"
+        "q_de": "In welche Laender liefern Sie?",
+        "q_en": "Which countries do you deliver to?",
+        "q_ru": "В какие страны вы доставляете?",
+        "a_de": "Weltweit. Schwerpunkte: Europa, USA, Asien. Fuer spezielle Destinationen bitte anfragen.",
+        "a_en": "Worldwide. Focus: Europe, USA, Asia. For special destinations please enquire.",
+        "a_ru": "По всему миру. Основные направления: Европа, США, Азия. Для особых направлений уточняйте."
+      },
+      {
+        "q_de": "Wie verfolge ich meine Sendung?",
+        "q_en": "How do I track my shipment?",
+        "q_ru": "Как отслеживать мой груз?",
+        "a_de": "Echtzeit-Tracking ueber unser Online-Portal. Sie sehen immer, wo Ihre Sendung ist.",
+        "a_en": "Real-time tracking via our online portal. You always see where your shipment is.",
+        "a_ru": "Отслеживание в реальном времени через наш онлайн-портал. Всегда видите, где ваш груз."
+      },
+      {
+        "q_de": "Was passiert bei Beschaedigung?",
+        "q_en": "What happens if goods are damaged?",
+        "q_ru": "Что происходит при повреждении?",
+        "a_de": "Alle Sendungen sind versichert. Bei Schaeden erstatten wir den Warenwert gemaess CMR.",
+        "a_en": "All shipments are insured. In case of damage we reimburse the goods value per CMR.",
+        "a_ru": "Все грузы застрахованы. При повреждении возмещаем стоимость товара согласно CMR."
       }
     ]
   },

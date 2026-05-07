@@ -118,30 +118,97 @@
     },
     "services": [
       {
-        "name_en": "Honeymoon Packages",
-        "name_de": "Flitterwochenpakete",
-        "name_ru": "Свадебные путешествия",
-        "price": "$3000+",
-        "desc_en": "Romantic getaways.",
-        "image": "/media/presets/travel_agency/services/honeymoon.jpg"
+        "name_de": "Pauschalreisen",
+        "name_en": "Package Holidays",
+        "name_ru": "Пакетные туры",
+        "price": "ab 799 EUR",
+        "desc_de": "All-inclusive Reisen in die beliebtesten Destinationen. Flug, Hotel, Transfer inklusive.",
+        "desc_en": "All-inclusive trips to the most popular destinations. Flight, hotel, transfer included.",
+        "desc_ru": "Туры всё включено в самые популярные направления. Перелёт, отель, трансфер включены.",
+        "tags": [
+          "Beliebt"
+        ]
       },
       {
-        "name_en": "Adventure Tours",
-        "name_de": "Abenteuertouren",
-        "name_ru": "Туры с приключениями",
-        "price": "$1500+",
-        "desc_en": "Hiking and extreme sports.",
-        "image": "/media/presets/travel_agency/services/adventure.jpg"
+        "name_de": "Individualreisen",
+        "name_en": "Individual Travel",
+        "name_ru": "Индивидуальные туры",
+        "price": "ab 1.200 EUR",
+        "desc_de": "Massgeschneiderte Reisen nach Ihren Wuenschen. Wir planen jeden Detail.",
+        "desc_en": "Tailor-made trips according to your wishes. We plan every detail.",
+        "desc_ru": "Туры на заказ по вашим пожеланиям. Планируем каждую деталь.",
+        "tags": []
+      },
+      {
+        "name_de": "Hochzeitsreisen",
+        "name_en": "Honeymoon",
+        "name_ru": "Свадебные путешествия",
+        "price": "ab 2.500 EUR",
+        "desc_de": "Romantische Flitterwochen auf den Malediven, Bali oder der Karibik. Unvergesslich.",
+        "desc_en": "Romantic honeymoons in the Maldives, Bali or the Caribbean. Unforgettable.",
+        "desc_ru": "Романтический медовый месяц на Мальдивах, Бали или Карибах. Незабываемо.",
+        "tags": []
+      },
+      {
+        "name_de": "Gruppenreisen",
+        "name_en": "Group Travel",
+        "name_ru": "Групповые туры",
+        "price": "ab 599 EUR/Person",
+        "desc_de": "Reisen mit Gleichgesinnten. Kulturreisen, Abenteuertouren, Studienreisen.",
+        "desc_en": "Travel with like-minded people. Cultural trips, adventure tours, study trips.",
+        "desc_ru": "Путешествия с единомышленниками. Культурные туры, приключения, учебные поездки.",
+        "tags": []
+      },
+      {
+        "name_de": "Kreuzfahrten",
+        "name_en": "Cruises",
+        "name_ru": "Круизы",
+        "price": "ab 1.500 EUR",
+        "desc_de": "Mittelmeer, Karibik, Norwegen. Die Welt vom Schiff aus entdecken.",
+        "desc_en": "Mediterranean, Caribbean, Norway. Discover the world from the ship.",
+        "desc_ru": "Средиземноморье, Карибы, Норвегия. Открывайте мир с корабля.",
+        "tags": []
+      },
+      {
+        "name_de": "Reiseberatung",
+        "name_en": "Travel Consultation",
+        "name_ru": "Консультация по путешествиям",
+        "price": "Kostenlos",
+        "desc_de": "Persoenliche Beratung in unserem Reisebuero. Wir finden die perfekte Reise fuer Sie.",
+        "desc_en": "Personal consultation in our travel agency. We find the perfect trip for you.",
+        "desc_ru": "Личная консультация в нашем турагентстве. Найдём идеальное путешествие для вас.",
+        "tags": [
+          "Kostenlos"
+        ]
       }
     ],
     "testimonials": [
       {
-        "name": "Traveler J.",
-        "text_en": "They booked the perfect honeymoon. Exceeded expectations!",
-        "text_de": "They booked the perfect honeymoon. Exceeded expectations!",
-        "text_ru": "They booked the perfect honeymoon. Exceeded expectations!",
+        "name": "Familie Weber",
+        "location_de": "Berlin",
+        "text_de": "Unsere Malediven-Hochzeitsreise war ein Traum. Alles war perfekt organisiert, keine einzige Ueberraschung. Wir kommen definitiv wieder!",
+        "text_en": "Our Maldives honeymoon was a dream. Everything was perfectly organised, not a single surprise. We will definitely come back!",
+        "text_ru": "Наш медовый месяц на Мальдивах был мечтой. Всё было идеально организовано, ни одного сюрприза.",
         "rating": 5,
-        "avatar": "/media/presets/travel_agency/avatars/traveler.jpg"
+        "source": "Google"
+      },
+      {
+        "name": "Thomas K.",
+        "location_de": "Berlin",
+        "text_de": "Die Individualreise nach Japan war das Beste, was ich je erlebt habe. Jedes Detail war durchdacht, jede Empfehlung war Gold wert.",
+        "text_en": "The individual trip to Japan was the best thing I have ever experienced. Every detail was thought through, every recommendation was worth its weight in gold.",
+        "text_ru": "Индивидуальный тур в Японию был лучшим, что я когда-либо переживал.",
+        "rating": 5,
+        "source": "Google"
+      },
+      {
+        "name": "Reisegruppe Berlin",
+        "location_de": "Berlin",
+        "text_de": "Unsere Gruppenreise nach Peru war unvergesslich. Perfekte Organisation, tolle Guides, einmalige Erlebnisse.",
+        "text_en": "Our group trip to Peru was unforgettable. Perfect organisation, great guides, unique experiences.",
+        "text_ru": "Наш групповой тур в Перу был незабываемым. Идеальная организация, отличные гиды.",
+        "rating": 5,
+        "source": "Google"
       }
     ],
     "contact": {
@@ -154,12 +221,28 @@
     },
     "faq": [
       {
-        "q_en": "How to start?",
-        "q_de": "Wie anfangen?",
-        "q_ru": "Как начать?",
-        "a_en": "Contact us today!",
-        "a_de": "Kontaktieren Sie uns!",
-        "a_ru": "Свяжитесь с нами!"
+        "q_de": "Wie frueh sollte ich buchen?",
+        "q_en": "How early should I book?",
+        "q_ru": "За сколько нужно бронировать?",
+        "a_de": "Fuer Hochsaison empfehlen wir 6-12 Monate im Voraus. Fuer Kreuzfahrten noch frueher.",
+        "a_en": "For peak season we recommend 6-12 months in advance. For cruises even earlier.",
+        "a_ru": "Для высокого сезона рекомендуем за 6-12 месяцев. Для круизов ещё раньше."
+      },
+      {
+        "q_de": "Was passiert bei Stornierung?",
+        "q_en": "What happens if I cancel?",
+        "q_ru": "Что происходит при отмене?",
+        "a_de": "Wir empfehlen eine Reiseruecktrittsversicherung. Die Stornobedingungen haengen vom Anbieter ab.",
+        "a_en": "We recommend travel cancellation insurance. Cancellation conditions depend on the provider.",
+        "a_ru": "Рекомендуем страховку от отмены поездки. Условия отмены зависят от поставщика."
+      },
+      {
+        "q_de": "Bieten Sie Visaservice an?",
+        "q_en": "Do you offer visa service?",
+        "q_ru": "Предлагаете ли вы визовый сервис?",
+        "a_de": "Ja, wir unterstuetzen Sie bei der Visabeantragung fuer alle gaengigen Reiseziele.",
+        "a_en": "Yes, we support you with visa applications for all common destinations.",
+        "a_ru": "Да, помогаем с оформлением виз для всех популярных направлений."
       }
     ]
   },

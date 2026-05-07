@@ -118,30 +118,97 @@
     },
     "services": [
       {
-        "name_en": "Early Learning",
-        "name_de": "Frühe Bildung",
-        "name_ru": "Раннее развитие",
-        "price": "$800/mo",
-        "desc_en": "ABCs and 123s.",
-        "image": "/media/presets/kindergarten/services/learning.jpg"
+        "name_de": "Krippe (0-3 Jahre)",
+        "name_en": "Nursery (0-3 years)",
+        "name_ru": "Ясли (0-3 года)",
+        "price": "800 EUR/Monat",
+        "desc_de": "Liebevolle Betreuung fuer die Kleinsten. Kleine Gruppen, erfahrene Erzieherinnen.",
+        "desc_en": "Loving care for the youngest. Small groups, experienced educators.",
+        "desc_ru": "Любящий уход за самыми маленькими. Небольшие группы, опытные воспитатели.",
+        "tags": []
       },
       {
-        "name_en": "Arts & Crafts",
-        "name_de": "Kunst & Handwerk",
-        "name_ru": "Творчество",
-        "price": "Included",
-        "desc_en": "Unleashing creativity.",
-        "image": "/media/presets/kindergarten/services/art.jpg"
+        "name_de": "Kindergarten (3-6 Jahre)",
+        "name_en": "Kindergarten (3-6 years)",
+        "name_ru": "Детский сад (3-6 лет)",
+        "price": "650 EUR/Monat",
+        "desc_de": "Spielerisches Lernen, soziale Entwicklung, Vorbereitung auf die Schule.",
+        "desc_en": "Playful learning, social development, preparation for school.",
+        "desc_ru": "Игровое обучение, социальное развитие, подготовка к школе.",
+        "tags": [
+          "Beliebt"
+        ]
+      },
+      {
+        "name_de": "Hort (6-12 Jahre)",
+        "name_en": "After-School Care (6-12 years)",
+        "name_ru": "Продлёнка (6-12 лет)",
+        "price": "450 EUR/Monat",
+        "desc_de": "Nachmittagsbetreuung nach der Schule. Hausaufgabenhilfe, Freizeitaktivitaeten.",
+        "desc_en": "Afternoon care after school. Homework help, leisure activities.",
+        "desc_ru": "Послеобеденный уход после школы. Помощь с домашними заданиями, досуг.",
+        "tags": []
+      },
+      {
+        "name_de": "Sprachfoerderung",
+        "name_en": "Language Support",
+        "name_ru": "Языковая поддержка",
+        "price": "Inklusive",
+        "desc_de": "Deutsch und Englisch von Anfang an. Spielerisch und altersgerecht.",
+        "desc_en": "German and English from the start. Playful and age-appropriate.",
+        "desc_ru": "Немецкий и английский с самого начала. Игровым и возрастным способом.",
+        "tags": []
+      },
+      {
+        "name_de": "Musikalische Fruehfoerderung",
+        "name_en": "Early Music Education",
+        "name_ru": "Раннее музыкальное воспитание",
+        "price": "Inklusive",
+        "desc_de": "Singen, Rhythmus, erste Instrumente. Musik foerdert die Entwicklung.",
+        "desc_en": "Singing, rhythm, first instruments. Music promotes development.",
+        "desc_ru": "Пение, ритм, первые инструменты. Музыка способствует развитию.",
+        "tags": []
+      },
+      {
+        "name_de": "Schnuppertag",
+        "name_en": "Trial Day",
+        "name_ru": "Пробный день",
+        "price": "Kostenlos",
+        "desc_de": "Lernen Sie uns kennen! Ihr Kind kann einen Tag bei uns verbringen.",
+        "desc_en": "Get to know us! Your child can spend a day with us.",
+        "desc_ru": "Познакомьтесь с нами! Ваш ребёнок может провести у нас день.",
+        "tags": [
+          "Kostenlos"
+        ]
       }
     ],
     "testimonials": [
       {
-        "name": "Mom T.",
-        "text_en": "My daughter loves it here! She learns so much every day.",
-        "text_de": "My daughter loves it here! She learns so much every day.",
-        "text_ru": "My daughter loves it here! She learns so much every day.",
+        "name": "Familie Mueller",
+        "location_de": "Berlin",
+        "text_de": "Unsere Tochter liebt es hier! Sie hat so viel gelernt und so viele Freunde gefunden. Das Team ist wunderbar und immer ansprechbar.",
+        "text_en": "Our daughter loves it here! She has learned so much and made so many friends. The team is wonderful and always approachable.",
+        "text_ru": "Наша дочь обожает здесь! Она так много узнала и нашла столько друзей. Команда замечательная.",
         "rating": 5,
-        "avatar": "/media/presets/kindergarten/avatars/mom.jpg"
+        "source": "Google"
+      },
+      {
+        "name": "Familie Schmidt",
+        "location_de": "Berlin",
+        "text_de": "Die Sprachfoerderung ist ausgezeichnet. Unser Sohn spricht jetzt fliessend Deutsch und Englisch. Wir sind sehr dankbar.",
+        "text_en": "The language support is excellent. Our son now speaks fluent German and English. We are very grateful.",
+        "text_ru": "Языковая поддержка превосходная. Наш сын теперь свободно говорит по-немецки и по-английски.",
+        "rating": 5,
+        "source": "Google"
+      },
+      {
+        "name": "Familie Weber",
+        "location_de": "Berlin",
+        "text_de": "Sauber, sicher, liebevoll. Wir koennen beruhigt arbeiten, weil wir wissen, dass unser Kind in guten Haenden ist.",
+        "text_en": "Clean, safe, loving. We can work in peace knowing our child is in good hands.",
+        "text_ru": "Чисто, безопасно, с любовью. Можем спокойно работать, зная, что ребёнок в хороших руках.",
+        "rating": 5,
+        "source": "Google"
       }
     ],
     "contact": {
@@ -154,12 +221,28 @@
     },
     "faq": [
       {
-        "q_en": "How to start?",
-        "q_de": "Wie anfangen?",
-        "q_ru": "Как начать?",
-        "a_en": "Contact us today!",
-        "a_de": "Kontaktieren Sie uns!",
-        "a_ru": "Свяжитесь с нами!"
+        "q_de": "Wie ist das Betreuungsverhaeltnis?",
+        "q_en": "What is the care ratio?",
+        "q_ru": "Каково соотношение воспитателей и детей?",
+        "a_de": "Krippe: 1:4, Kindergarten: 1:8. Wir halten die gesetzlichen Vorgaben ein und gehen darueber hinaus.",
+        "a_en": "Nursery: 1:4, Kindergarten: 1:8. We comply with legal requirements and go beyond.",
+        "a_ru": "Ясли: 1:4, детский сад: 1:8. Соблюдаем законодательные требования и превышаем их."
+      },
+      {
+        "q_de": "Gibt es Foerdermoeglichkeiten?",
+        "q_en": "Are there funding options?",
+        "q_ru": "Есть ли варианты финансирования?",
+        "a_de": "Ja, wir helfen Ihnen bei der Beantragung von Kita-Gutscheinen und anderen Foerderungen.",
+        "a_en": "Yes, we help you apply for childcare vouchers and other subsidies.",
+        "a_ru": "Да, помогаем с оформлением ваучеров на детский сад и других субсидий."
+      },
+      {
+        "q_de": "Wie ist die Ernaehrung?",
+        "q_en": "What about nutrition?",
+        "q_ru": "Как обстоит дело с питанием?",
+        "a_de": "Frisch gekochtes Mittagessen taeglich. Vegetarische und vegane Optionen verfuegbar. Allergien werden beruecksichtigt.",
+        "a_en": "Freshly cooked lunch daily. Vegetarian and vegan options available. Allergies are considered.",
+        "a_ru": "Свежеприготовленный обед ежедневно. Вегетарианские и веганские варианты. Аллергии учитываются."
       }
     ]
   },

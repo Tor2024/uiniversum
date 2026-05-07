@@ -118,30 +118,97 @@
     },
     "services": [
       {
-        "name_en": "Market Analysis",
-        "name_de": "Marktanalyse",
-        "name_ru": "Анализ рынка",
-        "price": "$2000",
-        "desc_en": "Deep dive into market trends.",
-        "image": "/media/presets/business_consulting/services/market.jpg"
+        "name_de": "Strategieberatung",
+        "name_en": "Strategy Consulting",
+        "name_ru": "Стратегический консалтинг",
+        "price": "ab 2.500 EUR",
+        "desc_de": "Marktanalyse, Wettbewerbsanalyse, Wachstumsstrategie. Fuer Unternehmen jeder Groesse.",
+        "desc_en": "Market analysis, competitive analysis, growth strategy. For companies of all sizes.",
+        "desc_ru": "Анализ рынка, конкурентный анализ, стратегия роста. Для компаний любого размера.",
+        "tags": [
+          "Beliebt"
+        ]
       },
       {
-        "name_en": "Financial Planning",
-        "name_de": "Finanzplanung",
-        "name_ru": "Финансовое планирование",
-        "price": "$3000",
-        "desc_en": "Secure your company's future.",
-        "image": "/media/presets/business_consulting/services/finance.jpg"
+        "name_de": "Finanzberatung",
+        "name_en": "Financial Advisory",
+        "name_ru": "Финансовый консалтинг",
+        "price": "ab 1.800 EUR",
+        "desc_de": "Finanzplanung, Budgetierung, Investitionsanalyse. Sichern Sie die Zukunft Ihres Unternehmens.",
+        "desc_en": "Financial planning, budgeting, investment analysis. Secure your company future.",
+        "desc_ru": "Финансовое планирование, бюджетирование, инвестиционный анализ.",
+        "tags": []
+      },
+      {
+        "name_de": "Prozessoptimierung",
+        "name_en": "Process Optimization",
+        "name_ru": "Оптимизация процессов",
+        "price": "ab 3.000 EUR",
+        "desc_de": "Analyse und Optimierung von Geschaeftsprozessen. Effizienz steigern, Kosten senken.",
+        "desc_en": "Analysis and optimization of business processes. Increase efficiency, reduce costs.",
+        "desc_ru": "Анализ и оптимизация бизнес-процессов. Повышение эффективности, снижение затрат.",
+        "tags": []
+      },
+      {
+        "name_de": "Change Management",
+        "name_en": "Change Management",
+        "name_ru": "Управление изменениями",
+        "price": "ab 4.000 EUR",
+        "desc_de": "Begleitung bei Unternehmenstransformationen. Mitarbeiter mitnehmen, Widerstande ueberwinden.",
+        "desc_en": "Support during company transformations. Bring employees along, overcome resistance.",
+        "desc_ru": "Сопровождение трансформаций компании. Вовлечение сотрудников, преодоление сопротивления.",
+        "tags": []
+      },
+      {
+        "name_de": "Digitalisierung",
+        "name_en": "Digitalization",
+        "name_ru": "Цифровизация",
+        "price": "ab 5.000 EUR",
+        "desc_de": "Digitale Transformation Ihres Unternehmens. Von der Strategie bis zur Umsetzung.",
+        "desc_en": "Digital transformation of your company. From strategy to implementation.",
+        "desc_ru": "Цифровая трансформация вашей компании. От стратегии до реализации.",
+        "tags": []
+      },
+      {
+        "name_de": "Erstberatung",
+        "name_en": "Initial Consultation",
+        "name_ru": "Первичная консультация",
+        "price": "Kostenlos",
+        "desc_de": "60-minuetige kostenlose Erstberatung. Wir analysieren Ihre Situation und zeigen Moeglichkeiten auf.",
+        "desc_en": "60-minute free initial consultation. We analyze your situation and show possibilities.",
+        "desc_ru": "60-минутная бесплатная первичная консультация. Анализируем ситуацию и показываем возможности.",
+        "tags": [
+          "Kostenlos"
+        ]
       }
     ],
     "testimonials": [
       {
-        "name": "CEO Corp",
-        "text_en": "Their insights saved our Q3. Highly recommended.",
-        "text_de": "Their insights saved our Q3. Highly recommended.",
-        "text_ru": "Their insights saved our Q3. Highly recommended.",
+        "name": "Dr. Michael S., CEO",
+        "location_de": "Frankfurt",
+        "text_de": "Die Strategieberatung hat unser Unternehmen auf ein neues Level gebracht. Innerhalb von 6 Monaten haben wir den Umsatz um 40% gesteigert.",
+        "text_en": "The strategy consulting took our company to a new level. Within 6 months we increased revenue by 40%.",
+        "text_ru": "Стратегический консалтинг вывел нашу компанию на новый уровень. За 6 месяцев выручка выросла на 40%.",
         "rating": 5,
-        "avatar": "/media/presets/business_consulting/avatars/ceo.jpg"
+        "source": "Google"
+      },
+      {
+        "name": "Anna W., CFO",
+        "location_de": "Berlin",
+        "text_de": "Professionelle Finanzberatung, die wirklich Ergebnisse liefert. Das Team versteht unsere Branche und spricht unsere Sprache.",
+        "text_en": "Professional financial advice that really delivers results. The team understands our industry and speaks our language.",
+        "text_ru": "Профессиональный финансовый консалтинг, который реально даёт результаты.",
+        "rating": 5,
+        "source": "Google"
+      },
+      {
+        "name": "Thomas K., Inhaber",
+        "location_de": "Muenchen",
+        "text_de": "Die Prozessoptimierung hat uns 30% der Betriebskosten gespart. Beste Investition des Jahres.",
+        "text_en": "Process optimization saved us 30% of operating costs. Best investment of the year.",
+        "text_ru": "Оптимизация процессов сэкономила нам 30% операционных затрат. Лучшая инвестиция года.",
+        "rating": 5,
+        "source": "Google"
       }
     ],
     "contact": {
@@ -154,12 +221,28 @@
     },
     "faq": [
       {
-        "q_en": "How to start?",
-        "q_de": "Wie anfangen?",
-        "q_ru": "Как начать?",
-        "a_en": "Contact us today!",
-        "a_de": "Kontaktieren Sie uns!",
-        "a_ru": "Свяжитесь с нами!"
+        "q_de": "Wie laeuft eine Zusammenarbeit ab?",
+        "q_en": "How does a collaboration work?",
+        "q_ru": "Как проходит сотрудничество?",
+        "a_de": "Erstberatung -> Analyse -> Strategie -> Umsetzung -> Erfolgsmessung. Wir begleiten Sie durch jeden Schritt.",
+        "a_en": "Initial consultation -> Analysis -> Strategy -> Implementation -> Success measurement. We guide you through every step.",
+        "a_ru": "Первичная консультация -> Анализ -> Стратегия -> Реализация -> Измерение результатов."
+      },
+      {
+        "q_de": "Fuer welche Unternehmensgroessen sind Sie taetig?",
+        "q_en": "What company sizes do you work with?",
+        "q_ru": "С компаниями какого размера вы работаете?",
+        "a_de": "Von Startups bis zu mittelstaendischen Unternehmen mit bis zu 500 Mitarbeitern.",
+        "a_en": "From startups to medium-sized companies with up to 500 employees.",
+        "a_ru": "От стартапов до средних компаний с численностью до 500 сотрудников."
+      },
+      {
+        "q_de": "Wie messen Sie den Erfolg?",
+        "q_en": "How do you measure success?",
+        "q_ru": "Как вы измеряете успех?",
+        "a_de": "Wir definieren zu Beginn klare KPIs und messen den Fortschritt regelmaessig. Transparenz ist uns wichtig.",
+        "a_en": "We define clear KPIs at the start and measure progress regularly. Transparency is important to us.",
+        "a_ru": "В начале определяем чёткие KPI и регулярно измеряем прогресс. Прозрачность для нас важна."
       }
     ]
   },

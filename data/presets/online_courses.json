@@ -118,30 +118,97 @@
     },
     "services": [
       {
+        "name_de": "Webentwicklung Bootcamp",
         "name_en": "Web Development Bootcamp",
-        "name_de": "Web Development Bootcamp",
         "name_ru": "Буткемп по веб-разработке",
-        "price": "$500",
-        "desc_en": "Full-stack curriculum.",
-        "image": "/media/presets/online_courses/services/web_course.jpg"
+        "price": "499 EUR",
+        "desc_de": "12 Wochen intensives Training. HTML, CSS, JavaScript, React. Von Null zum Junior Developer.",
+        "desc_en": "12 weeks intensive training. HTML, CSS, JavaScript, React. From zero to junior developer.",
+        "desc_ru": "12 недель интенсивного обучения. HTML, CSS, JavaScript, React. От нуля до junior-разработчика.",
+        "tags": [
+          "Beliebt"
+        ]
       },
       {
+        "name_de": "Digital Marketing",
         "name_en": "Digital Marketing",
-        "name_de": "Digitales Marketing",
         "name_ru": "Цифровой маркетинг",
-        "price": "$300",
-        "desc_en": "Master online ads and SEO.",
-        "image": "/media/presets/online_courses/services/marketing.jpg"
+        "price": "299 EUR",
+        "desc_de": "SEO, Social Media, Google Ads, E-Mail-Marketing. Alles fuer Ihren Online-Erfolg.",
+        "desc_en": "SEO, social media, Google Ads, email marketing. Everything for your online success.",
+        "desc_ru": "SEO, социальные сети, Google Ads, email-маркетинг. Всё для вашего онлайн-успеха.",
+        "tags": []
+      },
+      {
+        "name_de": "Datenwissenschaft",
+        "name_en": "Data Science",
+        "name_ru": "Наука о данных",
+        "price": "599 EUR",
+        "desc_de": "Python, Machine Learning, Datenanalyse. Der Beruf der Zukunft.",
+        "desc_en": "Python, machine learning, data analysis. The profession of the future.",
+        "desc_ru": "Python, машинное обучение, анализ данных. Профессия будущего.",
+        "tags": []
+      },
+      {
+        "name_de": "UX/UI Design",
+        "name_en": "UX/UI Design",
+        "name_ru": "UX/UI Дизайн",
+        "price": "399 EUR",
+        "desc_de": "Figma, Prototyping, User Research. Gestalten Sie digitale Produkte, die Menschen lieben.",
+        "desc_en": "Figma, prototyping, user research. Design digital products people love.",
+        "desc_ru": "Figma, прототипирование, исследование пользователей. Создавайте цифровые продукты, которые любят люди.",
+        "tags": []
+      },
+      {
+        "name_de": "Projektmanagement",
+        "name_en": "Project Management",
+        "name_ru": "Управление проектами",
+        "price": "249 EUR",
+        "desc_de": "Agile, Scrum, Kanban. Zertifizierungsvorbereitung inklusive.",
+        "desc_en": "Agile, Scrum, Kanban. Certification preparation included.",
+        "desc_ru": "Agile, Scrum, Kanban. Подготовка к сертификации включена.",
+        "tags": []
+      },
+      {
+        "name_de": "Kostenloser Schnupperkurs",
+        "name_en": "Free Trial Course",
+        "name_ru": "Бесплатный пробный курс",
+        "price": "Kostenlos",
+        "desc_de": "Testen Sie unsere Plattform mit einem kostenlosen Kurs. Kein Kreditkarte erforderlich.",
+        "desc_en": "Test our platform with a free course. No credit card required.",
+        "desc_ru": "Протестируйте нашу платформу с бесплатным курсом. Кредитная карта не нужна.",
+        "tags": [
+          "Kostenlos"
+        ]
       }
     ],
     "testimonials": [
       {
-        "name": "Student A.",
-        "text_en": "Changed my career path completely. Best investment ever.",
-        "text_de": "Changed my career path completely. Best investment ever.",
-        "text_ru": "Changed my career path completely. Best investment ever.",
+        "name": "Max K.",
+        "location_de": "Berlin",
+        "text_de": "Das Webentwicklung-Bootcamp hat mein Leben veraendert. Nach 3 Monaten hatte ich meinen ersten Job als Junior Developer. Unglaublich!",
+        "text_en": "The web development bootcamp changed my life. After 3 months I had my first job as junior developer. Incredible!",
+        "text_ru": "Буткемп по веб-разработке изменил мою жизнь. Через 3 месяца получил первую работу junior-разработчиком.",
         "rating": 5,
-        "avatar": "/media/presets/online_courses/avatars/student.jpg"
+        "source": "Google"
+      },
+      {
+        "name": "Lisa M.",
+        "location_de": "Hamburg",
+        "text_de": "Der Digital Marketing Kurs war praxisnah und aktuell. Ich habe sofort angefangen, das Gelernte in meinem Unternehmen umzusetzen.",
+        "text_en": "The digital marketing course was practical and up to date. I immediately started implementing what I learned in my company.",
+        "text_ru": "Курс по цифровому маркетингу был практичным и актуальным. Сразу начала применять знания в своей компании.",
+        "rating": 5,
+        "source": "Google"
+      },
+      {
+        "name": "Thomas B.",
+        "location_de": "Muenchen",
+        "text_de": "Beste Online-Lernplattform, die ich je genutzt habe. Die Dozenten sind Experten, die Inhalte sind top aktuell.",
+        "text_en": "Best online learning platform I have ever used. The instructors are experts, the content is top current.",
+        "text_ru": "Лучшая онлайн-платформа для обучения, которую я когда-либо использовал.",
+        "rating": 5,
+        "source": "Google"
       }
     ],
     "contact": {
@@ -154,12 +221,28 @@
     },
     "faq": [
       {
-        "q_en": "How to start?",
-        "q_de": "Wie anfangen?",
-        "q_ru": "Как начать?",
-        "a_en": "Contact us today!",
-        "a_de": "Kontaktieren Sie uns!",
-        "a_ru": "Свяжитесь с нами!"
+        "q_de": "Wie lange habe ich Zugang zu den Kursen?",
+        "q_en": "How long do I have access to the courses?",
+        "q_ru": "Как долго у меня есть доступ к курсам?",
+        "a_de": "Lebenslanger Zugang nach dem Kauf. Alle Updates inklusive.",
+        "a_en": "Lifetime access after purchase. All updates included.",
+        "a_ru": "Пожизненный доступ после покупки. Все обновления включены."
+      },
+      {
+        "q_de": "Gibt es Zertifikate?",
+        "q_en": "Are there certificates?",
+        "q_ru": "Есть ли сертификаты?",
+        "a_de": "Ja, nach Abschluss jedes Kurses erhalten Sie ein Zertifikat, das Sie auf LinkedIn teilen koennen.",
+        "a_en": "Yes, after completing each course you receive a certificate you can share on LinkedIn.",
+        "a_ru": "Да, после завершения каждого курса получаете сертификат, которым можно поделиться в LinkedIn."
+      },
+      {
+        "q_de": "Kann ich auf Raten zahlen?",
+        "q_en": "Can I pay in instalments?",
+        "q_ru": "Можно ли платить в рассрочку?",
+        "a_de": "Ja, fuer Kurse ab 299 EUR bieten wir zinsfreie Ratenzahlung in 3 oder 6 Monaten an.",
+        "a_en": "Yes, for courses from 299 EUR we offer interest-free instalments over 3 or 6 months.",
+        "a_ru": "Да, для курсов от 299 EUR предлагаем беспроцентную рассрочку на 3 или 6 месяцев."
       }
     ]
   },

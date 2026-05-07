@@ -118,30 +118,95 @@
     },
     "services": [
       {
-        "name_en": "Studio Recording",
         "name_de": "Studioaufnahme",
+        "name_en": "Studio Recording",
         "name_ru": "Студийная запись",
-        "price": "$100/hr",
-        "desc_en": "Top-tier microphones and gear.",
-        "image": "/media/presets/musician/services/recording.jpg"
+        "price": "100 EUR/Std.",
+        "desc_de": "Professionelle Aufnahmen in unserem vollausgestatteten Studio. Alle Genres.",
+        "desc_en": "Professional recordings in our fully equipped studio. All genres.",
+        "desc_ru": "Профессиональные записи в нашей полностью оснащённой студии. Все жанры.",
+        "tags": [
+          "Beliebt"
+        ]
       },
       {
-        "name_en": "Mixing & Mastering",
-        "name_de": "Mixing & Mastering",
+        "name_de": "Mixing und Mastering",
+        "name_en": "Mixing and Mastering",
         "name_ru": "Сведение и мастеринг",
-        "price": "$500/track",
-        "desc_en": "Radio-ready sound.",
-        "image": "/media/presets/musician/services/mixing.jpg"
+        "price": "500 EUR/Track",
+        "desc_de": "Radio-ready Sound. Professionelles Mixing und Mastering fuer alle Plattformen.",
+        "desc_en": "Radio-ready sound. Professional mixing and mastering for all platforms.",
+        "desc_ru": "Звук, готовый к радио. Профессиональное сведение и мастеринг для всех платформ.",
+        "tags": []
+      },
+      {
+        "name_de": "Live-Auftritt",
+        "name_en": "Live Performance",
+        "name_ru": "Живое выступление",
+        "price": "ab 800 EUR",
+        "desc_de": "Hochzeiten, Firmenevents, Festivals. Unvergessliche Live-Erlebnisse.",
+        "desc_en": "Weddings, corporate events, festivals. Unforgettable live experiences.",
+        "desc_ru": "Свадьбы, корпоративы, фестивали. Незабываемые живые выступления.",
+        "tags": []
+      },
+      {
+        "name_de": "Musikproduktion",
+        "name_en": "Music Production",
+        "name_ru": "Музыкальная продюсирование",
+        "price": "ab 1.500 EUR",
+        "desc_de": "Komplette Musikproduktion von der Idee bis zum fertigen Track. Beats, Arrangements, Produktion.",
+        "desc_en": "Complete music production from idea to finished track. Beats, arrangements, production.",
+        "desc_ru": "Полное музыкальное продюсирование от идеи до готового трека.",
+        "tags": []
+      },
+      {
+        "name_de": "Gesangsunterricht",
+        "name_en": "Singing Lessons",
+        "name_ru": "Уроки вокала",
+        "price": "80 EUR/Std.",
+        "desc_de": "Einzelunterricht fuer Anfaenger und Fortgeschrittene. Technik, Ausdruck, Buehnenperformance.",
+        "desc_en": "Individual lessons for beginners and advanced. Technique, expression, stage performance.",
+        "desc_ru": "Индивидуальные уроки для начинающих и продвинутых. Техника, выразительность, сценическое выступление.",
+        "tags": []
+      },
+      {
+        "name_de": "Jingle und Werbung",
+        "name_en": "Jingle and Advertising",
+        "name_ru": "Джингл и реклама",
+        "price": "ab 500 EUR",
+        "desc_de": "Massgeschneiderte Musik fuer Werbung, Podcasts, YouTube. GEMA-frei auf Anfrage.",
+        "desc_en": "Custom music for advertising, podcasts, YouTube. GEMA-free on request.",
+        "desc_ru": "Музыка на заказ для рекламы, подкастов, YouTube. Без GEMA по запросу.",
+        "tags": []
       }
     ],
     "testimonials": [
       {
         "name": "DJ Pulse",
-        "text_en": "The acoustics in this studio are out of this world.",
-        "text_de": "The acoustics in this studio are out of this world.",
-        "text_ru": "The acoustics in this studio are out of this world.",
+        "location_de": "Berlin",
+        "text_de": "Die Akustik in diesem Studio ist aussergewoehnlich. Mein Album klingt besser als je zuvor. Professionelles Team, top Equipment.",
+        "text_en": "The acoustics in this studio are extraordinary. My album sounds better than ever. Professional team, top equipment.",
+        "text_ru": "Акустика в этой студии исключительная. Мой альбом звучит лучше, чем когда-либо.",
         "rating": 5,
-        "avatar": "/media/presets/musician/avatars/dj.jpg"
+        "source": "Google"
+      },
+      {
+        "name": "Band Neon Dreams",
+        "location_de": "Berlin",
+        "text_de": "Wir haben hier unsere erste EP aufgenommen. Das Mixing war perfekt, der Sound genau das, was wir wollten.",
+        "text_en": "We recorded our first EP here. The mixing was perfect, the sound exactly what we wanted.",
+        "text_ru": "Здесь мы записали наш первый EP. Сведение было идеальным, звук именно таким, каким мы хотели.",
+        "rating": 5,
+        "source": "Google"
+      },
+      {
+        "name": "Maria S.",
+        "location_de": "Berlin",
+        "text_de": "Der Gesangsunterricht hat meine Stimme transformiert. Nach 6 Monaten singe ich auf einem Level, das ich nie fuer moeglich gehalten haette.",
+        "text_en": "The singing lessons transformed my voice. After 6 months I sing at a level I never thought possible.",
+        "text_ru": "Уроки вокала трансформировали мой голос. После 6 месяцев пою на уровне, который никогда не считала возможным.",
+        "rating": 5,
+        "source": "Google"
       }
     ],
     "contact": {
@@ -154,12 +219,28 @@
     },
     "faq": [
       {
-        "q_en": "How to start?",
-        "q_de": "Wie anfangen?",
-        "q_ru": "Как начать?",
-        "a_en": "Contact us today!",
-        "a_de": "Kontaktieren Sie uns!",
-        "a_ru": "Свяжитесь с нами!"
+        "q_de": "Muss ich eigene Instrumente mitbringen?",
+        "q_en": "Do I need to bring my own instruments?",
+        "q_ru": "Нужно ли приносить свои инструменты?",
+        "a_de": "Nein, wir haben ein vollstaendiges Instrumentarium. Gitarren, Keyboards, Drums, Mikrofone.",
+        "a_en": "No, we have a complete set of instruments. Guitars, keyboards, drums, microphones.",
+        "a_ru": "Нет, у нас есть полный набор инструментов. Гитары, клавишные, барабаны, микрофоны."
+      },
+      {
+        "q_de": "Wie lange dauert eine Aufnahme?",
+        "q_en": "How long does a recording take?",
+        "q_ru": "Сколько времени занимает запись?",
+        "a_de": "Ein einzelner Track dauert typischerweise 4-8 Stunden. Ein Album 2-4 Wochen.",
+        "a_en": "A single track typically takes 4-8 hours. An album 2-4 weeks.",
+        "a_ru": "Один трек обычно занимает 4-8 часов. Альбом — 2-4 недели."
+      },
+      {
+        "q_de": "Sind die Aufnahmen GEMA-pflichtig?",
+        "q_en": "Are the recordings subject to GEMA?",
+        "q_ru": "Подпадают ли записи под GEMA?",
+        "a_de": "Das haengt von Ihren Rechten ab. Wir beraten Sie gerne zu GEMA-Anmeldung und Lizenzierung.",
+        "a_en": "That depends on your rights. We are happy to advise you on GEMA registration and licensing.",
+        "a_ru": "Это зависит от ваших прав. Консультируем по регистрации GEMA и лицензированию."
       }
     ]
   },

@@ -118,30 +118,95 @@
     },
     "services": [
       {
+        "name_de": "Portrait-Session",
         "name_en": "Portrait Session",
-        "name_de": "Porträt-Session",
-        "name_ru": "Сессия портрета",
-        "price": "$300",
-        "desc_en": "Professional indoor/outdoor portraits.",
-        "image": "/media/presets/photographer_portfolio/services/portrait.jpg"
+        "name_ru": "Портретная сессия",
+        "price": "ab 250 EUR",
+        "desc_de": "Professionelle Portraitfotos fuer LinkedIn, Bewerbungen oder persoenliche Erinnerungen.",
+        "desc_en": "Professional portrait photos for LinkedIn, applications or personal memories.",
+        "desc_ru": "Профессиональные портреты для LinkedIn, резюме или личных воспоминаний.",
+        "tags": [
+          "Beliebt"
+        ]
       },
       {
-        "name_en": "Wedding Day",
-        "name_de": "Hochzeitstag",
-        "name_ru": "Свадебный день",
-        "price": "$2000",
-        "desc_en": "Full day coverage of your special day.",
-        "image": "/media/presets/photographer_portfolio/services/wedding.jpg"
+        "name_de": "Businessfotografie",
+        "name_en": "Business Photography",
+        "name_ru": "Деловая фотография",
+        "price": "ab 500 EUR",
+        "desc_de": "Teamfotos, Buerofotos, Produktfotos. Professionelles Bild fuer Ihr Unternehmen.",
+        "desc_en": "Team photos, office photos, product photos. Professional image for your company.",
+        "desc_ru": "Командные фото, офисные фото, предметная съёмка. Профессиональный образ для вашей компании.",
+        "tags": []
+      },
+      {
+        "name_de": "Eventfotografie",
+        "name_en": "Event Photography",
+        "name_ru": "Событийная фотография",
+        "price": "ab 800 EUR",
+        "desc_de": "Konferenzen, Firmenfeiern, Konzerte. Jeder Moment festgehalten.",
+        "desc_en": "Conferences, company parties, concerts. Every moment captured.",
+        "desc_ru": "Конференции, корпоративы, концерты. Каждый момент запечатлён.",
+        "tags": []
+      },
+      {
+        "name_de": "Produktfotografie",
+        "name_en": "Product Photography",
+        "name_ru": "Предметная съёмка",
+        "price": "ab 300 EUR",
+        "desc_de": "Professionelle Produktfotos fuer Online-Shops, Kataloge und Werbung.",
+        "desc_en": "Professional product photos for online shops, catalogues and advertising.",
+        "desc_ru": "Профессиональные фото товаров для интернет-магазинов, каталогов и рекламы.",
+        "tags": []
+      },
+      {
+        "name_de": "Architekturfotografie",
+        "name_en": "Architecture Photography",
+        "name_ru": "Архитектурная фотография",
+        "price": "ab 600 EUR",
+        "desc_de": "Immobilien, Innenraeume, Gebaeude. Perfekte Beleuchtung, perfekte Perspektive.",
+        "desc_en": "Real estate, interiors, buildings. Perfect lighting, perfect perspective.",
+        "desc_ru": "Недвижимость, интерьеры, здания. Идеальное освещение, идеальная перспектива.",
+        "tags": []
+      },
+      {
+        "name_de": "Retusche und Bearbeitung",
+        "name_en": "Retouching and Editing",
+        "name_ru": "Ретушь и обработка",
+        "price": "ab 50 EUR/Bild",
+        "desc_de": "Professionelle Bildbearbeitung und Retusche. Ihre Fotos im besten Licht.",
+        "desc_en": "Professional image editing and retouching. Your photos in the best light.",
+        "desc_ru": "Профессиональная обработка и ретушь фотографий. Ваши фото в лучшем свете.",
+        "tags": []
       }
     ],
     "testimonials": [
       {
         "name": "Emma W.",
-        "text_en": "Absolutely stunning photos! She captured our day perfectly.",
-        "text_de": "Absolutely stunning photos! She captured our day perfectly.",
-        "text_ru": "Absolutely stunning photos! She captured our day perfectly.",
+        "location_de": "Berlin",
+        "text_de": "Absolut atemberaubende Fotos! Die Portraitsession war entspannt und das Ergebnis hat alle meine Erwartungen uebertroffen.",
+        "text_en": "Absolutely breathtaking photos! The portrait session was relaxed and the result exceeded all my expectations.",
+        "text_ru": "Абсолютно захватывающие фотографии! Портретная сессия была расслабленной, результат превзошёл все ожидания.",
         "rating": 5,
-        "avatar": "/media/presets/photographer_portfolio/avatars/emma.jpg"
+        "source": "Google"
+      },
+      {
+        "name": "TechCorp GmbH",
+        "location_de": "Berlin",
+        "text_de": "Die Businessfotos haben unser Unternehmensimage komplett transformiert. Professionell, schnell, perfektes Ergebnis.",
+        "text_en": "The business photos completely transformed our company image. Professional, fast, perfect result.",
+        "text_ru": "Деловые фотографии полностью трансформировали образ нашей компании.",
+        "rating": 5,
+        "source": "Google"
+      },
+      {
+        "name": "Immobilien Berlin",
+        "location_de": "Berlin",
+        "text_de": "Die Immobilienfotos haben unsere Verkaufszeit halbiert. Professionelle Beleuchtung und Perspektive machen den Unterschied.",
+        "text_en": "The real estate photos halved our selling time. Professional lighting and perspective make the difference.",
+        "text_ru": "Фотографии недвижимости сократили время продажи вдвое.",
+        "rating": 5,
+        "source": "Google"
       }
     ],
     "contact": {
@@ -154,12 +219,28 @@
     },
     "faq": [
       {
-        "q_en": "How long is a session?",
-        "q_de": "Wie lange dauert eine Sitzung?",
-        "q_ru": "Как долго длится сессия?",
-        "a_en": "Typically 2 hours depending on the package.",
-        "a_de": "In der Regel 2 Stunden, je nach Paket.",
-        "a_ru": "Обычно 2 часа, в зависимости от пакета."
+        "q_de": "Wie lange dauert eine Session?",
+        "q_en": "How long does a session take?",
+        "q_ru": "Сколько длится сессия?",
+        "a_de": "Portrait-Sessions dauern 1-2 Stunden. Business-Shootings 2-4 Stunden. Events nach Bedarf.",
+        "a_en": "Portrait sessions take 1-2 hours. Business shoots 2-4 hours. Events as needed.",
+        "a_ru": "Портретные сессии занимают 1-2 часа. Деловые съёмки 2-4 часа. Мероприятия по необходимости."
+      },
+      {
+        "q_de": "Wann erhalte ich die Fotos?",
+        "q_en": "When will I receive the photos?",
+        "q_ru": "Когда я получу фотографии?",
+        "a_de": "Innerhalb von 5-7 Werktagen erhalten Sie Ihre bearbeiteten Fotos als Download-Link.",
+        "a_en": "Within 5-7 business days you will receive your edited photos as a download link.",
+        "a_ru": "В течение 5-7 рабочих дней получите обработанные фотографии в виде ссылки для скачивания."
+      },
+      {
+        "q_de": "Koennen wir den Ort selbst waehlen?",
+        "q_en": "Can we choose the location ourselves?",
+        "q_ru": "Можем ли мы выбрать место сами?",
+        "a_de": "Ja, wir kommen zu Ihnen oder Sie kommen in unser Studio. Outdoor-Shootings sind auch moeglich.",
+        "a_en": "Yes, we come to you or you come to our studio. Outdoor shoots are also possible.",
+        "a_ru": "Да, приедем к вам или вы придёте в нашу студию. Съёмки на природе тоже возможны."
       }
     ]
   },

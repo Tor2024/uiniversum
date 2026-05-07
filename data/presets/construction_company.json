@@ -118,30 +118,97 @@
     },
     "services": [
       {
-        "name_en": "Home Renovation",
-        "name_de": "Hausrenovierung",
-        "name_ru": "Ремонт дома",
-        "price": "$10k+",
-        "desc_en": "Transform your living space.",
-        "image": "/media/presets/construction_company/services/reno.jpg"
+        "name_de": "Neubau",
+        "name_en": "New Construction",
+        "name_ru": "Новое строительство",
+        "price": "ab 1.500 EUR/m2",
+        "desc_de": "Schluesselfertige Haeuser und Gewerbebauten. Von der Planung bis zur Uebergabe.",
+        "desc_en": "Turnkey houses and commercial buildings. From planning to handover.",
+        "desc_ru": "Дома и коммерческие здания под ключ. От планирования до сдачи.",
+        "tags": []
       },
       {
-        "name_en": "New Build",
-        "name_de": "Neubau",
-        "name_ru": "Новое строительство",
-        "price": "$100k+",
-        "desc_en": "From foundation to roof.",
-        "image": "/media/presets/construction_company/services/build.jpg"
+        "name_de": "Renovierung",
+        "name_en": "Renovation",
+        "name_ru": "Ремонт и реновация",
+        "price": "ab 800 EUR/m2",
+        "desc_de": "Komplettsanierung, Modernisierung, energetische Sanierung. Ihr Zuhause neu erfunden.",
+        "desc_en": "Complete renovation, modernization, energy renovation. Your home reinvented.",
+        "desc_ru": "Полный ремонт, модернизация, энергетическая санация. Ваш дом заново.",
+        "tags": [
+          "Beliebt"
+        ]
+      },
+      {
+        "name_de": "Anbau und Erweiterung",
+        "name_en": "Extension and Expansion",
+        "name_ru": "Пристройка и расширение",
+        "price": "auf Anfrage",
+        "desc_de": "Wintergaerten, Garagen, Aufstockungen. Mehr Platz fuer Ihre Familie.",
+        "desc_en": "Conservatories, garages, additional floors. More space for your family.",
+        "desc_ru": "Зимние сады, гаражи, надстройки. Больше пространства для вашей семьи.",
+        "tags": []
+      },
+      {
+        "name_de": "Badezimmer und Kueche",
+        "name_en": "Bathroom and Kitchen",
+        "name_ru": "Ванная и кухня",
+        "price": "ab 15.000 EUR",
+        "desc_de": "Komplettumbau von Bad und Kueche. Planung, Handwerk, Materialien aus einer Hand.",
+        "desc_en": "Complete bathroom and kitchen renovation. Planning, craftsmanship, materials from one source.",
+        "desc_ru": "Полная переделка ванной и кухни. Планирование, работы, материалы из одних рук.",
+        "tags": []
+      },
+      {
+        "name_de": "Dach und Fassade",
+        "name_en": "Roof and Facade",
+        "name_ru": "Крыша и фасад",
+        "price": "auf Anfrage",
+        "desc_de": "Dachreparatur, Neueindeckung, Fassadendaemmung. Schutz fuer Ihr Gebaeude.",
+        "desc_en": "Roof repair, re-roofing, facade insulation. Protection for your building.",
+        "desc_ru": "Ремонт крыши, перекрытие, утепление фасада. Защита вашего здания.",
+        "tags": []
+      },
+      {
+        "name_de": "Kostenlose Beratung",
+        "name_en": "Free Consultation",
+        "name_ru": "Бесплатная консультация",
+        "price": "Kostenlos",
+        "desc_de": "Vor-Ort-Besichtigung und kostenloser Kostenvoranschlag. Wir kommen zu Ihnen.",
+        "desc_en": "On-site inspection and free quote. We come to you.",
+        "desc_ru": "Выезд на объект и бесплатная смета. Приедем к вам.",
+        "tags": [
+          "Kostenlos"
+        ]
       }
     ],
     "testimonials": [
       {
-        "name": "Homeowner",
-        "text_en": "Professional team, clean work, amazing results.",
-        "text_de": "Professional team, clean work, amazing results.",
-        "text_ru": "Professional team, clean work, amazing results.",
+        "name": "Familie Schneider",
+        "location_de": "Berlin",
+        "text_de": "Unser Haus wurde in 8 Monaten gebaut — puenktlich, im Budget und mit hoechster Qualitaet. Das Team war immer erreichbar und professionell.",
+        "text_en": "Our house was built in 8 months — on time, on budget and with the highest quality. The team was always reachable and professional.",
+        "text_ru": "Наш дом был построен за 8 месяцев — вовремя, в бюджете и с высочайшим качеством.",
         "rating": 5,
-        "avatar": "/media/presets/construction_company/avatars/home.jpg"
+        "source": "Google"
+      },
+      {
+        "name": "Klaus M.",
+        "location_de": "Potsdam",
+        "text_de": "Die Badsanierung war ein Traum. Sauber, schnell, perfektes Ergebnis. Ich wuerde sie jederzeit wieder beauftragen.",
+        "text_en": "The bathroom renovation was a dream. Clean, fast, perfect result. I would hire them again anytime.",
+        "text_ru": "Ремонт ванной был мечтой. Чисто, быстро, идеальный результат.",
+        "rating": 5,
+        "source": "Google"
+      },
+      {
+        "name": "Petra H.",
+        "location_de": "Berlin",
+        "text_de": "Renovierung unseres Altbaus war komplex, aber das Team hat alles perfekt koordiniert. Sehr empfehlenswert!",
+        "text_en": "Renovation of our old building was complex, but the team coordinated everything perfectly. Highly recommended!",
+        "text_ru": "Реновация нашего старого здания была сложной, но команда всё идеально скоординировала.",
+        "rating": 5,
+        "source": "Google"
       }
     ],
     "contact": {
@@ -154,12 +221,28 @@
     },
     "faq": [
       {
-        "q_en": "How to start?",
-        "q_de": "Wie anfangen?",
-        "q_ru": "Как начать?",
-        "a_en": "Contact us today!",
-        "a_de": "Kontaktieren Sie uns!",
-        "a_ru": "Свяжитесь с нами!"
+        "q_de": "Wie lange dauert ein Neubau?",
+        "q_en": "How long does new construction take?",
+        "q_ru": "Сколько времени занимает новое строительство?",
+        "a_de": "Ein Einfamilienhaus dauert typischerweise 8-12 Monate. Wir erstellen einen detaillierten Zeitplan.",
+        "a_en": "A single-family house typically takes 8-12 months. We create a detailed schedule.",
+        "a_ru": "Одноквартирный дом обычно занимает 8-12 месяцев. Составляем детальный план."
+      },
+      {
+        "q_de": "Koennen Sie auch Foerderungen beantragen?",
+        "q_en": "Can you also apply for subsidies?",
+        "q_ru": "Можете ли вы подать заявку на субсидии?",
+        "a_de": "Ja, wir unterstuetzen Sie bei KfW-Foerderungen und anderen Foerderprogrammen.",
+        "a_en": "Yes, we support you with KfW subsidies and other funding programs.",
+        "a_ru": "Да, помогаем с субсидиями KfW и другими программами финансирования."
+      },
+      {
+        "q_de": "Gibt es eine Gewaehrleistung?",
+        "q_en": "Is there a warranty?",
+        "q_ru": "Есть ли гарантия?",
+        "a_de": "5 Jahre Gewaehrleistung auf alle Bauleistungen gemaess BGB. Wir stehen fuer unsere Arbeit.",
+        "a_en": "5-year warranty on all construction work per BGB. We stand behind our work.",
+        "a_ru": "5 лет гарантии на все строительные работы согласно BGB. Мы отвечаем за свою работу."
       }
     ]
   },

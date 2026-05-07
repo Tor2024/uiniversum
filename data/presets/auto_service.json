@@ -118,30 +118,95 @@
     },
     "services": [
       {
-        "name_en": "Oil Change",
-        "name_de": "Ölwechsel",
-        "name_ru": "Замена масла",
-        "price": "$50",
-        "desc_en": "Synthetic and conventional.",
-        "image": "/media/presets/auto_service/services/oil.jpg"
+        "name_de": "Inspektion und Wartung",
+        "name_en": "Inspection and Maintenance",
+        "name_ru": "Техосмотр и обслуживание",
+        "price": "ab 89 EUR",
+        "desc_de": "Vollstaendige Fahrzeuginspektion nach Herstellervorgaben. Oelwechsel, Filter, Fluessigkeiten.",
+        "desc_en": "Complete vehicle inspection per manufacturer specs. Oil change, filters, fluids.",
+        "desc_ru": "Полная диагностика по стандартам производителя. Замена масла, фильтров, жидкостей.",
+        "tags": [
+          "Beliebt"
+        ]
       },
       {
-        "name_en": "Brake Service",
         "name_de": "Bremsenservice",
+        "name_en": "Brake Service",
         "name_ru": "Обслуживание тормозов",
-        "price": "$300",
-        "desc_en": "Safety first.",
-        "image": "/media/presets/auto_service/services/brakes.jpg"
+        "price": "ab 149 EUR",
+        "desc_de": "Bremsbelaege, Bremsscheiben, Bremsfluessigkeit. Sicherheit geht vor.",
+        "desc_en": "Brake pads, discs, brake fluid. Safety first.",
+        "desc_ru": "Тормозные колодки, диски, жидкость. Безопасность прежде всего.",
+        "tags": []
+      },
+      {
+        "name_de": "Reifenservice",
+        "name_en": "Tyre Service",
+        "name_ru": "Шиномонтаж",
+        "price": "ab 59 EUR",
+        "desc_de": "Reifenwechsel, Auswuchten, Reifendruck. Sommer- und Winterreifen.",
+        "desc_en": "Tyre change, balancing, pressure check. Summer and winter tyres.",
+        "desc_ru": "Замена шин, балансировка, проверка давления. Летние и зимние шины.",
+        "tags": []
+      },
+      {
+        "name_de": "Klimaanlage",
+        "name_en": "Air Conditioning",
+        "name_ru": "Кондиционер",
+        "price": "ab 79 EUR",
+        "desc_de": "Klimaanlage befuellen, pruefen und desinfizieren. Fuer angenehmes Fahren.",
+        "desc_en": "AC recharge, check and disinfection. For comfortable driving.",
+        "desc_ru": "Заправка, проверка и дезинфекция кондиционера. Для комфортной езды.",
+        "tags": []
+      },
+      {
+        "name_de": "Hauptuntersuchung (HU)",
+        "name_en": "Main Inspection (HU)",
+        "name_ru": "Технический осмотр (HU)",
+        "price": "ab 120 EUR",
+        "desc_de": "TUeV-Vorbereitung und Hauptuntersuchung. Wir begleiten Sie durch den Prozess.",
+        "desc_en": "TUeV preparation and main inspection. We guide you through the process.",
+        "desc_ru": "Подготовка к TUeV и технический осмотр. Сопровождаем через весь процесс.",
+        "tags": []
+      },
+      {
+        "name_de": "Unfallreparatur",
+        "name_en": "Accident Repair",
+        "name_ru": "Ремонт после ДТП",
+        "price": "auf Anfrage",
+        "desc_de": "Karosserie, Lackierung, Glasreparatur. Direktabrechnung mit Versicherungen.",
+        "desc_en": "Bodywork, painting, glass repair. Direct billing with insurance companies.",
+        "desc_ru": "Кузовные работы, покраска, стекло. Прямые расчёты со страховыми.",
+        "tags": []
       }
     ],
     "testimonials": [
       {
-        "name": "Driver P.",
-        "text_en": "Finally an honest mechanic. Fast and reliable work.",
-        "text_de": "Finally an honest mechanic. Fast and reliable work.",
-        "text_ru": "Finally an honest mechanic. Fast and reliable work.",
+        "name": "Klaus M.",
+        "location_de": "Berlin",
+        "text_de": "Endlich ein ehrlicher Mechaniker. Schnelle Diagnose, faire Preise, saubere Arbeit. Ich komme seit 3 Jahren hierher.",
+        "text_en": "Finally an honest mechanic. Fast diagnosis, fair prices, clean work. I have been coming here for 3 years.",
+        "text_ru": "Наконец честный механик. Быстрая диагностика, честные цены, чистая работа. Хожу сюда 3 года.",
         "rating": 5,
-        "avatar": "/media/presets/auto_service/avatars/driver.jpg"
+        "source": "Google"
+      },
+      {
+        "name": "Sandra K.",
+        "location_de": "Berlin",
+        "text_de": "Mein Auto war nach dem Unfall in 5 Tagen wieder wie neu. Perfekte Lackierung, direkter Kontakt mit der Versicherung. Sehr empfehlenswert!",
+        "text_en": "My car was like new again in 5 days after the accident. Perfect paint job, direct contact with insurance. Highly recommended!",
+        "text_ru": "Моя машина была как новая через 5 дней после аварии. Идеальная покраска, прямой контакт со страховой.",
+        "rating": 5,
+        "source": "Google"
+      },
+      {
+        "name": "Thomas B.",
+        "location_de": "Berlin",
+        "text_de": "Professionell, zuverlaessig und transparent. Ich bekomme immer einen detaillierten Kostenvoranschlag bevor die Arbeit beginnt.",
+        "text_en": "Professional, reliable and transparent. I always get a detailed quote before work begins.",
+        "text_ru": "Профессионально, надёжно и прозрачно. Всегда получаю детальную смету до начала работ.",
+        "rating": 5,
+        "source": "Google"
       }
     ],
     "contact": {
@@ -154,12 +219,28 @@
     },
     "faq": [
       {
-        "q_en": "How to start?",
-        "q_de": "Wie anfangen?",
-        "q_ru": "Как начать?",
-        "a_en": "Contact us today!",
-        "a_de": "Kontaktieren Sie uns!",
-        "a_ru": "Свяжитесь с нами!"
+        "q_de": "Brauche ich einen Termin?",
+        "q_en": "Do I need an appointment?",
+        "q_ru": "Нужна ли запись?",
+        "a_de": "Fuer Wartungsarbeiten empfehlen wir einen Termin. Notfaelle nehmen wir sofort an.",
+        "a_en": "For maintenance we recommend an appointment. Emergencies are taken immediately.",
+        "a_ru": "Для обслуживания рекомендуем запись. Аварийные случаи принимаем сразу."
+      },
+      {
+        "q_de": "Welche Marken reparieren Sie?",
+        "q_en": "Which brands do you repair?",
+        "q_ru": "Какие марки вы ремонтируете?",
+        "a_de": "Alle gaengigen Marken: VW, BMW, Mercedes, Audi, Ford, Opel und viele mehr.",
+        "a_en": "All common brands: VW, BMW, Mercedes, Audi, Ford, Opel and many more.",
+        "a_ru": "Все распространённые марки: VW, BMW, Mercedes, Audi, Ford, Opel и многие другие."
+      },
+      {
+        "q_de": "Gibt es Ersatzfahrzeuge?",
+        "q_en": "Are replacement vehicles available?",
+        "q_ru": "Есть ли замена на время ремонта?",
+        "a_de": "Ja, wir haben Leihwagen fuer die Dauer der Reparatur. Bitte bei der Buchung anfragen.",
+        "a_en": "Yes, we have loan cars for the duration of the repair. Please ask when booking.",
+        "a_ru": "Да, у нас есть автомобили на замену на время ремонта. Уточняйте при записи."
       }
     ]
   },

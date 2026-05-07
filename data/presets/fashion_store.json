@@ -118,30 +118,101 @@
     },
     "services": [
       {
-        "name_en": "Summer Collection",
-        "name_de": "Sommerkollektion",
-        "name_ru": "Летняя коллекция",
-        "price": "$50+",
-        "desc_en": "Light and breathable fabrics.",
-        "image": "/media/presets/fashion_store/services/summer.jpg"
+        "name_de": "Damenmode",
+        "name_en": "Womenswear",
+        "name_ru": "Женская мода",
+        "price": "ab 49 EUR",
+        "desc_de": "Kleider, Blusen, Hosen, Jacken. Aktuelle Kollektionen fuer jeden Anlass.",
+        "desc_en": "Dresses, blouses, trousers, jackets. Current collections for every occasion.",
+        "desc_ru": "Платья, блузки, брюки, куртки. Актуальные коллекции для любого случая.",
+        "tags": [
+          "Beliebt"
+        ]
       },
       {
-        "name_en": "Accessories",
+        "name_de": "Herrenmode",
+        "name_en": "Menswear",
+        "name_ru": "Мужская мода",
+        "price": "ab 59 EUR",
+        "desc_de": "Hemden, Anzuege, Jeans, Casual. Stil fuer den modernen Mann.",
+        "desc_en": "Shirts, suits, jeans, casual. Style for the modern man.",
+        "desc_ru": "Рубашки, костюмы, джинсы, кэжуал. Стиль для современного мужчины.",
+        "tags": []
+      },
+      {
         "name_de": "Accessoires",
+        "name_en": "Accessories",
         "name_ru": "Аксессуары",
-        "price": "$30+",
-        "desc_en": "Complete your look.",
-        "image": "/media/presets/fashion_store/services/accessories.jpg"
+        "price": "ab 19 EUR",
+        "desc_de": "Taschen, Guertel, Schals, Schmuck. Das perfekte Finishing Touch.",
+        "desc_en": "Bags, belts, scarves, jewellery. The perfect finishing touch.",
+        "desc_ru": "Сумки, ремни, шарфы, украшения. Идеальный завершающий штрих.",
+        "tags": []
+      },
+      {
+        "name_de": "Neue Kollektion",
+        "name_en": "New Collection",
+        "name_ru": "Новая коллекция",
+        "price": "ab 79 EUR",
+        "desc_de": "Unsere neueste Kollektion ist da. Frische Styles, aktuelle Trends.",
+        "desc_en": "Our latest collection is here. Fresh styles, current trends.",
+        "desc_ru": "Наша новейшая коллекция здесь. Свежие стили, актуальные тренды.",
+        "tags": [
+          "NEU"
+        ]
+      },
+      {
+        "name_de": "Sale",
+        "name_en": "Sale",
+        "name_ru": "Распродажа",
+        "price": "bis -50%",
+        "desc_de": "Ausgewaehlte Stuecke aus vergangenen Kollektionen. Grosse Auswahl, kleine Preise.",
+        "desc_en": "Selected pieces from past collections. Great selection, small prices.",
+        "desc_ru": "Избранные вещи из прошлых коллекций. Большой выбор, маленькие цены.",
+        "tags": [
+          "SALE"
+        ]
+      },
+      {
+        "name_de": "Styling-Beratung",
+        "name_en": "Styling Consultation",
+        "name_ru": "Консультация стилиста",
+        "price": "Kostenlos",
+        "desc_de": "Persoenliche Stilberatung von unseren Experten. Finden Sie Ihren Look.",
+        "desc_en": "Personal style consultation from our experts. Find your look.",
+        "desc_ru": "Персональная консультация по стилю от наших экспертов. Найдите свой образ.",
+        "tags": [
+          "Kostenlos"
+        ]
       }
     ],
     "testimonials": [
       {
-        "name": "Olivia F.",
-        "text_en": "Always find something unique here. Love the quality!",
-        "text_de": "Always find something unique here. Love the quality!",
-        "text_ru": "Always find something unique here. Love the quality!",
+        "name": "Sophie K.",
+        "location_de": "Berlin",
+        "text_de": "Mein Lieblingsgeschaeft in Berlin! Die Auswahl ist fantastisch und das Personal hilft immer mit ehrlichem Rat. Ich kaufe hier seit Jahren.",
+        "text_en": "My favourite shop in Berlin! The selection is fantastic and the staff always helps with honest advice. I have been shopping here for years.",
+        "text_ru": "Мой любимый магазин в Берлине! Выбор фантастический, персонал всегда помогает честным советом.",
         "rating": 5,
-        "avatar": "/media/presets/fashion_store/avatars/olivia.jpg"
+        "source": "Google"
+      },
+      {
+        "name": "Marcus T.",
+        "location_de": "Berlin",
+        "text_de": "Endlich ein Herrenmodegeschaeft, das wirklich Stil versteht. Die Styling-Beratung war Gold wert.",
+        "text_en": "Finally a menswear shop that really understands style. The styling consultation was worth its weight in gold.",
+        "text_ru": "Наконец магазин мужской одежды, который действительно понимает стиль.",
+        "rating": 5,
+        "source": "Google"
+      },
+      {
+        "name": "Anna M.",
+        "location_de": "Berlin",
+        "text_de": "Qualitaet, die man sieht und fuehlt. Nicht billig, aber jeden Euro wert. Meine Kleider halten Jahre.",
+        "text_en": "Quality you can see and feel. Not cheap, but worth every euro. My clothes last for years.",
+        "text_ru": "Качество, которое видно и чувствуется. Не дёшево, но стоит каждого евро.",
+        "rating": 5,
+        "source": "Google"
       }
     ],
     "contact": {
@@ -154,12 +225,28 @@
     },
     "faq": [
       {
-        "q_en": "Do you offer international shipping?",
-        "q_de": "Bieten Sie internationalen Versand an?",
-        "q_ru": "Вы делаете международную доставку?",
-        "a_en": "Yes, we ship worldwide with DHL Express.",
-        "a_de": "Ja, wir versenden weltweit mit DHL Express.",
-        "a_ru": "Да, мы доставляем по всему миру через DHL Express."
+        "q_de": "Gibt es kostenlose Retouren?",
+        "q_en": "Are returns free?",
+        "q_ru": "Бесплатный возврат?",
+        "a_de": "Ja, kostenlose Retouren innerhalb von 30 Tagen. Artikel muessen ungetragen und mit Etikett sein.",
+        "a_en": "Yes, free returns within 30 days. Items must be unworn and with tag.",
+        "a_ru": "Да, бесплатный возврат в течение 30 дней. Вещи должны быть неношеными с этикеткой."
+      },
+      {
+        "q_de": "Gibt es Online-Shopping?",
+        "q_en": "Is there online shopping?",
+        "q_ru": "Есть ли онлайн-магазин?",
+        "a_de": "Ja, unser Online-Shop ist 24/7 verfuegbar. Lieferung in 2-3 Werktagen, kostenlos ab 80 EUR.",
+        "a_en": "Yes, our online shop is available 24/7. Delivery in 2-3 business days, free from 80 EUR.",
+        "a_ru": "Да, наш онлайн-магазин доступен 24/7. Доставка за 2-3 рабочих дня, бесплатно от 80 EUR."
+      },
+      {
+        "q_de": "Bieten Sie Geschenkverpackung an?",
+        "q_en": "Do you offer gift wrapping?",
+        "q_ru": "Есть ли подарочная упаковка?",
+        "a_de": "Ja, kostenlose Geschenkverpackung fuer alle Artikel. Einfach bei der Bestellung angeben.",
+        "a_en": "Yes, free gift wrapping for all items. Simply indicate when ordering.",
+        "a_ru": "Да, бесплатная подарочная упаковка для всех товаров. Просто укажите при заказе."
       }
     ]
   },
