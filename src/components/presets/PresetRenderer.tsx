@@ -1426,24 +1426,906 @@ function PresetFooter({ preset, locale }: PresetRendererProps) {
   );
 }
 
-// ─── MAIN EXPORT ─────────────────────────────────────────────────────────────
+
+
+// ─── ANNOUNCEMENT BAR ────────────────────────────────────────────────────────
+
+function PresetAnnouncementBar({ preset, locale }: PresetRendererProps) {
+  const tokens = preset.design?.tokens || {};
+  const raw = preset.content?.announcementBar;
+  const text = typeof raw === "string" ? raw : tl(raw, locale);
+  if (!text) return null;
+  const accentDark = isColorDark(tokens.colorAccent || "#000");
+  return (
+    <div style={{
+      background: tokens.colorAccent,
+      color: accentDark ? "#fff" : "#000",
+      textAlign: "center",
+      padding: "10px 24px",
+      fontSize: "13px",
+      fontWeight: 600,
+      fontFamily: "var(--font-body)",
+      letterSpacing: "0.3px",
+    }}>
+      {text}
+    </div>
+  );
+}
+
+// ─── QUICK LINKS ─────────────────────────────────────────────────────────────
+
+function PresetQuickLinks({ preset, locale }: PresetRendererProps) {
+  const tokens = preset.design?.tokens || {};
+  const links: AnyObj[] = preset.content?.quickLinks || [];
+  if (!links.length) return null;
+  return (
+    <section style={{
+      background: tokens.colorSurface,
+      borderBottom: `1px solid ${tokens.colorBorder}`,
+    }}>
+      <div style={{
+        maxWidth: "1280px",
+        margin: "0 auto",
+        display: "grid",
+        gridTemplateColumns: `repeat(${links.length}, 1fr)`,
+      }}>
+        {links.map((link: AnyObj, i: number) => (
+          <a key={i} href={link.href || "#"} style={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            gap: "8px",
+            padding: "28px 16px",
+            textDecoration: "none",
+            borderRight: i < links.length - 1 ? `1px solid ${tokens.colorBorder}` : "none",
+          }}>
+            <span style={{ fontSize: "24px" }}>{link.icon}</span>
+            <span style={{
+              fontFamily: "var(--font-body)",
+              fontSize: "13px",
+              fontWeight: 700,
+              color: tokens.colorPrimary,
+              textTransform: "uppercase",
+              letterSpacing: "1px",
+              textAlign: "center",
+            }}>
+              {link[`label_${locale}`] || link.label_de || link.label_en || ""}
+            </span>
+          </a>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+// ─── CREDENTIALS BAR ─────────────────────────────────────────────────────────
+
+function PresetCredentials({ preset, locale }: PresetRendererProps) {
+  const tokens = preset.design?.tokens || {};
+  const creds: AnyObj[] = preset.content?.credentials || [];
+  if (!creds.length) return null;
+  return (
+    <section style={{
+      background: tokens.colorSurface,
+      borderBottom: `1px solid ${tokens.colorBorder}`,
+      padding: "20px clamp(16px, 5vw, 80px)",
+    }}>
+      <div style={{
+        maxWidth: "1200px",
+        margin: "0 auto",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        gap: "40px",
+        flexWrap: "wrap",
+      }}>
+        <span style={{
+          fontSize: "11px",
+          fontWeight: 700,
+          color: tokens.colorSecondary,
+          textTransform: "uppercase",
+          letterSpacing: "1.5px",
+          fontFamily: "var(--font-body)",
+        }}>
+          {locale === "de" ? "ZERTIFIZIERUNGEN:" : locale === "ru" ? "СЕРТИФИКАТЫ:" : "CREDENTIALS:"}
+        </span>
+        {creds.map((c: AnyObj, i: number) => (
+          <span key={i} style={{
+            fontSize: "12px",
+            color: tokens.colorSecondary,
+            fontFamily: "var(--font-body)",
+            fontWeight: 500,
+          }}>{c.name}</span>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+// ─── SERVICE CATEGORIES ───────────────────────────────────────────────────────
+
+function PresetServiceCategories({ preset, locale }: PresetRendererProps) {
+  const tokens = preset.design?.tokens || {};
+  const cats: AnyObj[] = preset.content?.serviceCategories || [];
+  if (!cats.length) return null;
+  return (
+    <section style={{ background: tokens.colorBackground, padding: "80px clamp(16px, 5vw, 80px)" }}>
+      <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "2px" }}>
+          {cats.map((cat: AnyObj, i: number) => (
+            <div key={i} style={{ position: "relative", aspectRatio: "3/4", background: tokens.colorSurface, overflow: "hidden", display: "flex", flexDirection: "column", justifyContent: "flex-end" }}>
+              <div style={{ position: "absolute", inset: 0, background: `linear-gradient(to top, ${tokens.colorBackground}ee 0%, transparent 60%)` }} />
+              <div style={{ position: "relative", padding: "32px 24px", zIndex: 1 }}>
+                <h3 style={{ fontFamily: "var(--font-display)", fontSize: "22px", fontWeight: 700, color: tokens.colorPrimary, marginBottom: "16px", letterSpacing: "2px" }}>
+                  {cat[`name_${locale}`] || cat.name_de || cat.name_en || ""}
+                </h3>
+                <ul style={{ listStyle: "none", padding: 0, margin: "0 0 20px" }}>
+                  {(cat.services || []).slice(0, 4).map((s: AnyObj, si: number) => (
+                    <li key={si} style={{ fontFamily: "var(--font-body)", fontSize: "13px", color: tokens.colorSecondary, padding: "3px 0" }}>
+                      {s[`name_${locale}`] || s.name_de || s.name_en || ""}
+                    </li>
+                  ))}
+                </ul>
+                <a href="#contact" style={{ fontSize: "12px", fontWeight: 700, color: tokens.colorAccent, textDecoration: "none", textTransform: "uppercase", letterSpacing: "1.5px", borderBottom: `1px solid ${tokens.colorAccent}`, paddingBottom: "2px" }}>
+                  {locale === "de" ? "MEHR ANSEHEN" : locale === "ru" ? "ПОДРОБНЕЕ" : "VIEW MORE"}
+                </a>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+// ─── BODY MAP ─────────────────────────────────────────────────────────────────
+
+function PresetBodyMap({ preset, locale }: PresetRendererProps) {
+  const tokens = preset.design?.tokens || {};
+  const bodyMap = preset.content?.bodyMap || {};
+  const areas: string[] = bodyMap.areas || [];
+  const title = bodyMap[`title_${locale}`] || bodyMap.title_de || bodyMap.title_en || "";
+  if (!areas.length) return null;
+  return (
+    <section style={{ background: tokens.colorSurface, padding: "80px clamp(16px, 5vw, 80px)", borderTop: `1px solid ${tokens.colorBorder}` }}>
+      <div style={{ maxWidth: "1200px", margin: "0 auto", textAlign: "center" }}>
+        <h2 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(24px, 3vw, 36px)", fontWeight: 700, color: tokens.colorPrimary, marginBottom: "40px" }}>{title}</h2>
+        <div style={{ display: "flex", flexWrap: "wrap", gap: "12px", justifyContent: "center" }}>
+          {areas.map((area: string, i: number) => (
+            <span key={i} style={{ padding: "10px 20px", border: `1px solid ${tokens.colorBorder}`, borderRadius: `${tokens.borderRadius || 8}px`, fontFamily: "var(--font-body)", fontSize: "14px", color: tokens.colorPrimary, cursor: "pointer" }}>{area}</span>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+// ─── FEATURED TREATMENT ───────────────────────────────────────────────────────
+
+function PresetFeaturedTreatment({ preset, locale, isSpa }: PresetRendererProps & { isSpa?: boolean }) {
+  const tokens = preset.design?.tokens || {};
+  const ft = isSpa ? preset.content?.featuredNewTreatment : preset.content?.featuredTreatment;
+  if (!ft) return null;
+  const accentDark = isColorDark(tokens.colorAccent || "#000");
+  const badge = ft[`badge_${locale}`] || ft.badge_de || ft.badge_en || "";
+  const title = ft[`title_${locale}`] || ft.title_de || ft.title_en || "";
+  const desc = ft[`desc_${locale}`] || ft.desc_de || ft.desc_en || "";
+  const cta = ft[`cta_${locale}`] || ft.cta_de || ft.cta_en || "";
+  const benefits: AnyObj[] = ft.benefits || [];
+  return (
+    <section style={{ background: tokens.colorSurface, padding: "100px clamp(16px, 5vw, 80px)", borderTop: `1px solid ${tokens.colorBorder}` }}>
+      <div style={{ maxWidth: "1200px", margin: "0 auto", display: "grid", gridTemplateColumns: "1fr 1fr", gap: "80px", alignItems: "center" }}>
+        <div>
+          {badge && <p style={{ fontFamily: "var(--font-body)", fontSize: "11px", fontWeight: 700, letterSpacing: "2px", textTransform: "uppercase", color: tokens.colorAccent, marginBottom: "16px" }}>{badge}</p>}
+          <h2 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(24px, 3vw, 40px)", fontWeight: 700, color: tokens.colorPrimary, lineHeight: 1.2, marginBottom: "24px" }}>{title}</h2>
+          <p style={{ fontFamily: "var(--font-body)", fontSize: "16px", color: tokens.colorSecondary, lineHeight: 1.8, marginBottom: "32px" }}>{desc}</p>
+          {benefits.length > 0 && (
+            <ul style={{ listStyle: "none", padding: 0, margin: "0 0 32px" }}>
+              {benefits.map((b: AnyObj, i: number) => (
+                <li key={i} style={{ display: "flex", gap: "12px", alignItems: "flex-start", padding: "8px 0", fontFamily: "var(--font-body)", fontSize: "14px", color: tokens.colorSecondary, borderBottom: `1px solid ${tokens.colorBorder}` }}>
+                  <span style={{ color: tokens.colorAccent, flexShrink: 0 }}>✓</span>
+                  {b[locale] || b.de || b.en || ""}
+                </li>
+              ))}
+            </ul>
+          )}
+          {cta && <a href="#contact" style={{ display: "inline-block", background: tokens.colorAccent, color: accentDark ? "#fff" : "#000", padding: "14px 32px", borderRadius: `${tokens.borderRadius || 8}px`, fontSize: "14px", fontWeight: 700, textDecoration: "none", fontFamily: "var(--font-body)" }}>{cta}</a>}
+        </div>
+        <div style={{ aspectRatio: "4/5", background: `linear-gradient(135deg, ${tokens.colorBorder}44 0%, ${tokens.colorAccent}22 100%)`, borderRadius: `${tokens.borderRadiusMedium || "12px"}`, display: "flex", alignItems: "center", justifyContent: "center" }}>
+          <span style={{ fontSize: "64px", opacity: 0.4 }}>✨</span>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+// ─── HAIR RESTORATION ─────────────────────────────────────────────────────────
+
+function PresetHairRestoration({ preset, locale }: PresetRendererProps) {
+  const tokens = preset.design?.tokens || {};
+  const hr = preset.content?.hairRestoration || {};
+  const badge = hr[`badge_${locale}`] || hr.badge_de || "";
+  const title = hr[`title_${locale}`] || hr.title_de || "";
+  const desc = hr[`desc_${locale}`] || hr.desc_de || "";
+  if (!title) return null;
+  return (
+    <section style={{ background: tokens.colorBackground, padding: "100px clamp(16px, 5vw, 80px)", borderTop: `1px solid ${tokens.colorBorder}` }}>
+      <div style={{ maxWidth: "1200px", margin: "0 auto", display: "grid", gridTemplateColumns: "1fr 1fr", gap: "80px", alignItems: "center" }}>
+        <div style={{ aspectRatio: "4/5", background: `linear-gradient(135deg, ${tokens.colorBorder}44 0%, ${tokens.colorAccent}22 100%)`, borderRadius: `${tokens.borderRadiusMedium || "12px"}`, display: "flex", alignItems: "center", justifyContent: "center" }}>
+          <span style={{ fontSize: "64px", opacity: 0.4 }}>💆</span>
+        </div>
+        <div>
+          {badge && <p style={{ fontFamily: "var(--font-body)", fontSize: "11px", fontWeight: 700, letterSpacing: "2px", textTransform: "uppercase", color: tokens.colorAccent, marginBottom: "16px" }}>{badge}</p>}
+          <h2 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(24px, 3vw, 40px)", fontWeight: 700, color: tokens.colorPrimary, lineHeight: 1.2, marginBottom: "24px" }}>{title}</h2>
+          <p style={{ fontFamily: "var(--font-body)", fontSize: "16px", color: tokens.colorSecondary, lineHeight: 1.8, marginBottom: "32px" }}>{desc}</p>
+          <a href="#contact" style={{ display: "inline-block", border: `2px solid ${tokens.colorAccent}`, color: tokens.colorAccent, padding: "12px 28px", borderRadius: `${tokens.borderRadius || 8}px`, fontSize: "14px", fontWeight: 700, textDecoration: "none", fontFamily: "var(--font-body)" }}>
+            {locale === "de" ? "MEHR ERFAHREN" : locale === "ru" ? "УЗНАТЬ БОЛЬШЕ" : "LEARN MORE"}
+          </a>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+// ─── CORE SPECIALTIES ─────────────────────────────────────────────────────────
+
+function PresetCoreSpecialties({ preset, locale }: PresetRendererProps) {
+  const tokens = preset.design?.tokens || {};
+  const specs: AnyObj[] = preset.content?.coreSpecialties || [];
+  if (!specs.length) return null;
+  return (
+    <section style={{ background: tokens.colorBackground, padding: "100px clamp(16px, 5vw, 80px)" }}>
+      <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
+        <div style={{ textAlign: "center", marginBottom: "64px" }}>
+          <div style={{ width: "40px", height: "2px", background: tokens.colorAccent, margin: "0 auto 20px" }} />
+          <h2 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(28px, 3.5vw, 44px)", fontWeight: 700, color: tokens.colorPrimary }}>
+            {locale === "de" ? "Behandlungen für Ihr Wohlbefinden" : locale === "ru" ? "Процедуры для вашего благополучия" : "Treatments designed for how you want to feel"}
+          </h2>
+        </div>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "2px" }}>
+          {specs.map((spec: AnyObj, i: number) => (
+            <div key={i} style={{ background: tokens.colorSurface, padding: "48px 36px", display: "flex", flexDirection: "column", gap: "16px" }}>
+              <div style={{ width: "32px", height: "2px", background: tokens.colorAccent }} />
+              <h3 style={{ fontFamily: "var(--font-display)", fontSize: "22px", fontWeight: 700, color: tokens.colorPrimary, lineHeight: 1.3 }}>
+                {spec[`name_${locale}`] || spec.name_de || spec.name_en || ""}
+              </h3>
+              <p style={{ fontFamily: "var(--font-body)", fontSize: "15px", color: tokens.colorSecondary, lineHeight: 1.7, flex: 1 }}>
+                {spec[`desc_${locale}`] || spec.desc_de || spec.desc_en || ""}
+              </p>
+              <a href="#contact" style={{ fontSize: "12px", fontWeight: 700, color: tokens.colorAccent, textDecoration: "none", textTransform: "uppercase", letterSpacing: "1.5px", borderBottom: `1px solid ${tokens.colorAccent}`, paddingBottom: "2px", alignSelf: "flex-start" }}>
+                {locale === "de" ? "ANSEHEN" : locale === "ru" ? "ПОДРОБНЕЕ" : "VIEW"}
+              </a>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+// ─── WHY CHOOSE US ────────────────────────────────────────────────────────────
+
+function PresetWhyChooseUs({ preset, locale }: PresetRendererProps) {
+  const tokens = preset.design?.tokens || {};
+  const items: AnyObj[] = preset.content?.whyChooseUs || [];
+  if (!items.length) return null;
+  const icons = ["🌿", "🏠", "⭐"];
+  return (
+    <section style={{ background: tokens.colorSurface, padding: "100px clamp(16px, 5vw, 80px)", borderTop: `1px solid ${tokens.colorBorder}` }}>
+      <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
+        <div style={{ textAlign: "center", marginBottom: "64px" }}>
+          <div style={{ width: "40px", height: "2px", background: tokens.colorAccent, margin: "0 auto 20px" }} />
+          <h2 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(28px, 3.5vw, 44px)", fontWeight: 700, color: tokens.colorPrimary }}>
+            {locale === "de" ? "Warum Kunden uns wählen" : locale === "ru" ? "Почему клиенты выбирают нас" : "Why clients choose us"}
+          </h2>
+        </div>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "40px" }}>
+          {items.map((item: AnyObj, i: number) => (
+            <div key={i} style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <div style={{ width: "56px", height: "56px", background: `${tokens.colorAccent}22`, borderRadius: "50%", display: "flex", alignItems: "center", justifyContent: "center", fontSize: "24px" }}>
+                {icons[i] || "✓"}
+              </div>
+              <h3 style={{ fontFamily: "var(--font-heading, var(--font-display))", fontSize: "18px", fontWeight: 700, color: tokens.colorPrimary }}>
+                {item[`title_${locale}`] || item.title_de || item.title_en || ""}
+              </h3>
+              <p style={{ fontFamily: "var(--font-body)", fontSize: "15px", color: tokens.colorSecondary, lineHeight: 1.7 }}>
+                {item[`desc_${locale}`] || item.desc_de || item.desc_en || ""}
+              </p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+// ─── MEET THERAPIST ───────────────────────────────────────────────────────────
+
+function PresetMeetTherapist({ preset, locale }: PresetRendererProps) {
+  const tokens = preset.design?.tokens || {};
+  const t = preset.content?.therapist || {};
+  const accentDark = isColorDark(tokens.colorAccent || "#000");
+  const quote = t[`quote_${locale}`] || t.quote_de || t.quote_en || "";
+  const creds = t[`credentials_${locale}`] || t.credentials_de || t.credentials_en || "";
+  if (!t.name) return null;
+  return (
+    <section style={{ background: tokens.colorBackground, padding: "100px clamp(16px, 5vw, 80px)", borderTop: `1px solid ${tokens.colorBorder}` }}>
+      <div style={{ maxWidth: "1200px", margin: "0 auto", display: "grid", gridTemplateColumns: "1fr 1fr", gap: "80px", alignItems: "center" }}>
+        <div style={{ aspectRatio: "3/4", background: `linear-gradient(135deg, ${tokens.colorBorder}66 0%, ${tokens.colorAccent}22 100%)`, borderRadius: `${tokens.borderRadiusMedium || "12px"}`, display: "flex", alignItems: "center", justifyContent: "center" }}>
+          <span style={{ fontSize: "64px", opacity: 0.4 }}>👩‍⚕️</span>
+        </div>
+        <div>
+          <div style={{ width: "40px", height: "2px", background: tokens.colorAccent, marginBottom: "24px" }} />
+          <h2 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(28px, 3vw, 40px)", fontWeight: 700, color: tokens.colorPrimary, marginBottom: "8px" }}>
+            {locale === "de" ? "Lernen Sie Ihre Therapeutin kennen" : locale === "ru" ? "Познакомьтесь с вашим терапевтом" : "Meet your therapist"}
+          </h2>
+          <p style={{ fontFamily: "var(--font-body)", fontSize: "14px", fontWeight: 700, color: tokens.colorAccent, textTransform: "uppercase", letterSpacing: "1px", marginBottom: "24px" }}>{t.name}</p>
+          {quote && <blockquote style={{ fontFamily: "var(--font-display)", fontSize: "18px", fontStyle: "italic", color: tokens.colorPrimary, lineHeight: 1.7, borderLeft: `3px solid ${tokens.colorAccent}`, paddingLeft: "20px", marginBottom: "24px" }}>&ldquo;{quote}&rdquo;</blockquote>}
+          {creds && <p style={{ fontFamily: "var(--font-body)", fontSize: "14px", color: tokens.colorSecondary, lineHeight: 1.7, marginBottom: "32px" }}>{creds}</p>}
+          <a href="#contact" style={{ display: "inline-block", background: tokens.colorAccent, color: accentDark ? "#fff" : "#000", padding: "12px 28px", borderRadius: `${tokens.borderRadius || 8}px`, fontSize: "13px", fontWeight: 700, textDecoration: "none", fontFamily: "var(--font-body)" }}>
+            {locale === "de" ? "Geschichte lesen" : locale === "ru" ? "Читать историю" : "Read full story"}
+          </a>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+// ─── VISION ───────────────────────────────────────────────────────────────────
+
+function PresetVision({ preset, locale }: PresetRendererProps) {
+  const tokens = preset.design?.tokens || {};
+  const v = tl(preset.content?.vision, locale) as AnyObj || {};
+  if (!v.title) return null;
+  return (
+    <section style={{ background: tokens.colorSurface, padding: "100px clamp(16px, 5vw, 80px)", borderTop: `1px solid ${tokens.colorBorder}` }}>
+      <div style={{ maxWidth: "1200px", margin: "0 auto", display: "grid", gridTemplateColumns: "1fr 1fr", gap: "80px", alignItems: "center" }}>
+        <div>
+          <p style={{ fontFamily: "var(--font-body)", fontSize: "11px", fontWeight: 700, letterSpacing: "2px", textTransform: "uppercase", color: tokens.colorAccent, marginBottom: "16px" }}>{v.title}</p>
+          <h2 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(24px, 3vw, 40px)", fontWeight: 700, color: tokens.colorPrimary, lineHeight: 1.25, marginBottom: "24px" }}>{v.subtitle}</h2>
+          <p style={{ fontFamily: "var(--font-body)", fontSize: "16px", color: tokens.colorSecondary, lineHeight: 1.8, marginBottom: "32px" }}>{v.text}</p>
+          <a href="#services" style={{ display: "inline-block", border: `2px solid ${tokens.colorAccent}`, color: tokens.colorAccent, padding: "12px 28px", borderRadius: `${tokens.borderRadius || 8}px`, fontSize: "13px", fontWeight: 700, textDecoration: "none", fontFamily: "var(--font-body)" }}>
+            {locale === "de" ? "Leistungen ansehen" : locale === "ru" ? "Наши услуги" : "View Our Services"}
+          </a>
+        </div>
+        <div style={{ aspectRatio: "4/3", background: `linear-gradient(135deg, ${tokens.colorBackground} 0%, ${tokens.colorBorder} 100%)`, borderRadius: `${tokens.borderRadiusMedium || "12px"}`, display: "flex", alignItems: "center", justifyContent: "center" }}>
+          <span style={{ fontSize: "64px", opacity: 0.3 }}>🎯</span>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+// ─── CORE VALUES ──────────────────────────────────────────────────────────────
+
+function PresetCoreValues({ preset, locale }: PresetRendererProps) {
+  const tokens = preset.design?.tokens || {};
+  const values: string[] = tl(preset.content?.coreValues, locale) as string[] || [];
+  if (!values.length) return null;
+  return (
+    <section style={{ background: tokens.colorBackground, padding: "100px clamp(16px, 5vw, 80px)", borderTop: `1px solid ${tokens.colorBorder}` }}>
+      <div style={{ maxWidth: "1200px", margin: "0 auto", textAlign: "center" }}>
+        <div style={{ width: "40px", height: "2px", background: tokens.colorAccent, margin: "0 auto 20px" }} />
+        <h2 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(28px, 3.5vw, 44px)", fontWeight: 700, color: tokens.colorPrimary, marginBottom: "56px" }}>
+          {locale === "de" ? "Unsere Kernwerte" : locale === "ru" ? "Наши ценности" : "Our Core Values"}
+        </h2>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "2px" }}>
+          {values.map((val: string, i: number) => (
+            <div key={i} style={{ background: tokens.colorSurface, padding: "32px 24px", display: "flex", flexDirection: "column", alignItems: "center", gap: "12px" }}>
+              <span style={{ fontFamily: "var(--font-display)", fontSize: "32px", fontWeight: 700, color: tokens.colorAccent }}>{String(i + 1).padStart(2, "0")}</span>
+              <p style={{ fontFamily: "var(--font-body)", fontSize: "14px", color: tokens.colorPrimary, lineHeight: 1.5, textAlign: "center" }}>{val}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+// ─── HAIRSTYLE GUIDE ──────────────────────────────────────────────────────────
+
+function PresetHairstyleGuide({ preset, locale }: PresetRendererProps) {
+  const tokens = preset.design?.tokens || {};
+  const styles: AnyObj[] = preset.content?.hairstyleGuide || [];
+  if (!styles.length) return null;
+  return (
+    <section style={{ background: tokens.colorSurface, padding: "100px clamp(16px, 5vw, 80px)", borderTop: `1px solid ${tokens.colorBorder}` }}>
+      <div style={{ maxWidth: "1280px", margin: "0 auto" }}>
+        <div style={{ textAlign: "center", marginBottom: "64px" }}>
+          <div style={{ width: "40px", height: "2px", background: tokens.colorAccent, margin: "0 auto 20px" }} />
+          <h2 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(28px, 3.5vw, 44px)", fontWeight: 700, color: tokens.colorPrimary }}>
+            {locale === "de" ? "Frisuren-Guide" : locale === "ru" ? "Гид по стрижкам" : "Hairstyle Guide"}
+          </h2>
+        </div>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(180px, 1fr))", gap: "2px" }}>
+          {styles.map((style: AnyObj, i: number) => (
+            <div key={i} style={{ background: tokens.colorBackground, padding: "32px 20px", textAlign: "center", display: "flex", flexDirection: "column", gap: "8px" }}>
+              <div style={{ width: "80px", height: "80px", borderRadius: "50%", background: `${tokens.colorAccent}22`, margin: "0 auto 8px", display: "flex", alignItems: "center", justifyContent: "center", fontSize: "32px" }}>✂️</div>
+              <h3 style={{ fontFamily: "var(--font-display)", fontSize: "18px", fontWeight: 700, color: tokens.colorPrimary }}>
+                {style[`name_${locale}`] || style.name_de || style.name_en || ""}
+              </h3>
+              <p style={{ fontFamily: "var(--font-body)", fontSize: "13px", color: tokens.colorSecondary, lineHeight: 1.5 }}>
+                {style[`desc_${locale}`] || style.desc_de || style.desc_en || ""}
+              </p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+// ─── PRODUCTS ─────────────────────────────────────────────────────────────────
+
+function PresetProducts({ preset, locale }: PresetRendererProps) {
+  const tokens = preset.design?.tokens || {};
+  const products = preset.content?.products || {};
+  const items: AnyObj[] = products.items || [];
+  const accentDark = isColorDark(tokens.colorAccent || "#000");
+  const title = products[`title_${locale}`] || products.title_de || products.title_en || "";
+  const desc = products[`desc_${locale}`] || products.desc_de || products.desc_en || "";
+  const tabs: string[] = products[`tabs_${locale}`] || products.tabs_de || products.tabs_en || [];
+  if (!items.length) return null;
+  return (
+    <section style={{ background: tokens.colorSurface, padding: "100px clamp(16px, 5vw, 80px)", borderTop: `1px solid ${tokens.colorBorder}` }}>
+      <div style={{ maxWidth: "1280px", margin: "0 auto" }}>
+        <div style={{ display: "grid", gridTemplateColumns: "1fr 2fr", gap: "80px", alignItems: "start", marginBottom: "48px" }}>
+          <div>
+            <div style={{ width: "40px", height: "2px", background: tokens.colorAccent, marginBottom: "20px" }} />
+            <h2 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(28px, 3vw, 40px)", fontWeight: 700, color: tokens.colorPrimary, marginBottom: "16px" }}>{title}</h2>
+            <p style={{ fontFamily: "var(--font-body)", fontSize: "15px", color: tokens.colorSecondary, lineHeight: 1.7 }}>{desc}</p>
+          </div>
+          <div style={{ display: "flex", gap: "8px", flexWrap: "wrap", alignItems: "flex-start" }}>
+            {tabs.map((tab: string, i: number) => (
+              <span key={i} style={{ padding: "8px 20px", border: `1px solid ${i === 0 ? tokens.colorAccent : tokens.colorBorder}`, borderRadius: `${tokens.borderRadius || 8}px`, fontFamily: "var(--font-body)", fontSize: "13px", fontWeight: i === 0 ? 700 : 400, color: i === 0 ? tokens.colorAccent : tokens.colorSecondary, cursor: "pointer" }}>{tab}</span>
+            ))}
+          </div>
+        </div>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(220px, 1fr))", gap: "24px" }}>
+          {items.map((item: AnyObj, i: number) => {
+            const badge = item[`badge_${locale}`] || item.badge_de || "";
+            return (
+              <div key={i} style={{ background: tokens.colorBackground, border: `1px solid ${tokens.colorBorder}`, borderRadius: `${tokens.borderRadiusMedium || "12px"}`, overflow: "hidden" }}>
+                <div style={{ aspectRatio: "1", background: `${tokens.colorAccent}11`, display: "flex", alignItems: "center", justifyContent: "center", position: "relative" }}>
+                  <span style={{ fontSize: "48px", opacity: 0.4 }}>🧴</span>
+                  {badge && <span style={{ position: "absolute", top: "12px", left: "12px", background: tokens.colorAccent, color: accentDark ? "#fff" : "#000", fontSize: "10px", fontWeight: 700, padding: "3px 8px", borderRadius: "4px" }}>{badge}</span>}
+                </div>
+                <div style={{ padding: "16px" }}>
+                  <p style={{ fontFamily: "var(--font-body)", fontSize: "14px", fontWeight: 600, color: tokens.colorPrimary, marginBottom: "4px" }}>{item[`name_${locale}`] || item.name_de || item.name_en || ""}</p>
+                  <p style={{ fontFamily: "var(--font-body)", fontSize: "15px", fontWeight: 700, color: tokens.colorAccent }}>{item.price}</p>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+// ─── HIIT FACTS ───────────────────────────────────────────────────────────────
+
+function PresetHiitFacts({ preset, locale }: PresetRendererProps) {
+  const tokens = preset.design?.tokens || {};
+  const facts: AnyObj[] = preset.content?.hiitFacts || [];
+  if (!facts.length) return null;
+  return (
+    <section style={{ background: tokens.colorSurface, padding: "80px clamp(16px, 5vw, 80px)", borderTop: `1px solid ${tokens.colorBorder}` }}>
+      <div style={{ maxWidth: "1280px", margin: "0 auto", display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))", gap: "2px" }}>
+        {facts.map((fact: AnyObj, i: number) => (
+          <div key={i} style={{ background: tokens.colorBackground, padding: "40px 32px", display: "flex", flexDirection: "column", gap: "12px" }}>
+            <span style={{ fontFamily: "var(--font-display)", fontSize: "48px", fontWeight: 900, color: tokens.colorAccent, lineHeight: 1 }}>0{i + 1}</span>
+            <h3 style={{ fontFamily: "var(--font-heading, var(--font-display))", fontSize: "16px", fontWeight: 700, color: tokens.colorPrimary, textTransform: "uppercase", letterSpacing: "1px" }}>
+              {fact[`title_${locale}`] || fact.title_de || fact.title_en || ""}
+            </h3>
+            <p style={{ fontFamily: "var(--font-body)", fontSize: "14px", color: tokens.colorSecondary, lineHeight: 1.6 }}>
+              {fact[`desc_${locale}`] || fact.desc_de || fact.desc_en || ""}
+            </p>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+// ─── TRAINING OPTIONS ─────────────────────────────────────────────────────────
+
+function PresetTrainingOptions({ preset, locale }: PresetRendererProps) {
+  const tokens = preset.design?.tokens || {};
+  const options: AnyObj[] = preset.content?.trainingOptions || [];
+  if (!options.length) return null;
+  const accentDark = isColorDark(tokens.colorAccent || "#000");
+  return (
+    <section style={{ background: tokens.colorBackground, padding: "100px clamp(16px, 5vw, 80px)", borderTop: `1px solid ${tokens.colorBorder}` }}>
+      <div style={{ maxWidth: "1280px", margin: "0 auto" }}>
+        <div style={{ textAlign: "center", marginBottom: "64px" }}>
+          <h2 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(28px, 3.5vw, 44px)", fontWeight: 900, color: tokens.colorPrimary, textTransform: "uppercase", letterSpacing: "2px" }}>
+            {locale === "de" ? "Mehr Wege, FIT zu werden" : locale === "ru" ? "Больше способов быть в форме" : "More ways to get FIT"}
+          </h2>
+        </div>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "2px" }}>
+          {options.map((opt: AnyObj, i: number) => (
+            <div key={i} style={{ background: tokens.colorSurface, padding: "48px 36px", display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontFamily: "var(--font-body)", fontSize: "11px", fontWeight: 700, letterSpacing: "2px", color: tokens.colorAccent, textTransform: "uppercase" }}>
+                {opt[`title_${locale}`] || opt.title_de || opt.title_en || ""}
+              </p>
+              <p style={{ fontFamily: "var(--font-body)", fontSize: "15px", color: tokens.colorSecondary, lineHeight: 1.7, flex: 1 }}>
+                {opt[`desc_${locale}`] || opt.desc_de || opt.desc_en || ""}
+              </p>
+              <a href="#contact" style={{ display: "inline-block", background: tokens.colorAccent, color: accentDark ? "#fff" : "#000", padding: "10px 24px", borderRadius: `${tokens.borderRadius || 4}px`, fontSize: "12px", fontWeight: 700, textDecoration: "none", textTransform: "uppercase", letterSpacing: "1px", alignSelf: "flex-start" }}>
+                {opt[`cta_${locale}`] || opt.cta_de || opt.cta_en || ""}
+              </a>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+// ─── SIGNATURE SERIES ─────────────────────────────────────────────────────────
+
+function PresetSignatureSeries({ preset, locale }: PresetRendererProps) {
+  const tokens = preset.design?.tokens || {};
+  const series: AnyObj[] = preset.content?.signatureSeries || [];
+  if (!series.length) return null;
+  return (
+    <section style={{ background: tokens.colorSurface, padding: "100px clamp(16px, 5vw, 80px)", borderTop: `1px solid ${tokens.colorBorder}` }}>
+      <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
+        <div style={{ textAlign: "center", marginBottom: "64px" }}>
+          <div style={{ width: "40px", height: "2px", background: tokens.colorAccent, margin: "0 auto 20px" }} />
+          <h2 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(28px, 3.5vw, 44px)", fontWeight: 700, color: tokens.colorPrimary }}>
+            {locale === "de" ? "200+ Kurse für jedes Level" : locale === "ru" ? "200+ занятий для каждого уровня" : "200+ Classes For Every Level"}
+          </h2>
+        </div>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "32px" }}>
+          {series.map((s: AnyObj, i: number) => (
+            <div key={i} style={{ background: tokens.colorBackground, border: `1px solid ${tokens.colorBorder}`, borderRadius: `${tokens.borderRadiusMedium || "12px"}`, padding: "36px 28px", display: "flex", flexDirection: "column", gap: "16px" }}>
+              <span style={{ display: "inline-block", background: `${tokens.colorAccent}22`, color: tokens.colorAccent, fontSize: "11px", fontWeight: 700, padding: "4px 12px", borderRadius: "20px", letterSpacing: "1px", alignSelf: "flex-start" }}>
+                {s[`name_${locale}`] || s.name_de || s.name_en || ""}
+              </span>
+              <p style={{ fontFamily: "var(--font-body)", fontSize: "15px", color: tokens.colorSecondary, lineHeight: 1.7, flex: 1 }}>
+                {s[`desc_${locale}`] || s.desc_de || s.desc_en || ""}
+              </p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+// ─── PRICING CARDS ────────────────────────────────────────────────────────────
+
+function PresetPricing({ preset, locale }: PresetRendererProps) {
+  const tokens = preset.design?.tokens || {};
+  const plans: AnyObj[] = preset.content?.pricing || [];
+  if (!plans.length) return null;
+  const accentDark = isColorDark(tokens.colorAccent || "#000");
+  return (
+    <section style={{ background: tokens.colorBackground, padding: "100px clamp(16px, 5vw, 80px)", borderTop: `1px solid ${tokens.colorBorder}` }}>
+      <div style={{ maxWidth: "800px", margin: "0 auto" }}>
+        <div style={{ textAlign: "center", marginBottom: "64px" }}>
+          <div style={{ width: "40px", height: "2px", background: tokens.colorAccent, margin: "0 auto 20px" }} />
+          <h2 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(28px, 3.5vw, 44px)", fontWeight: 700, color: tokens.colorPrimary }}>
+            {locale === "de" ? "Die Preise" : locale === "ru" ? "Цены" : "The Pricing"}
+          </h2>
+        </div>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "24px" }}>
+          {plans.map((plan: AnyObj, i: number) => {
+            const label = plan[`label_${locale}`] || plan.label_de || plan.label_en || "";
+            const desc = plan[`desc_${locale}`] || plan.desc_de || plan.desc_en || "";
+            const cta = plan[`cta_${locale}`] || plan.cta_de || plan.cta_en || "";
+            const period = plan[`period_${locale}`] || plan.period_de || plan.period_en || "";
+            const bg = plan.popular ? tokens.colorAccent : tokens.colorSurface;
+            const textCol = plan.popular ? (accentDark ? "#fff" : "#000") : tokens.colorPrimary;
+            const subCol = plan.popular ? (accentDark ? "rgba(255,255,255,0.7)" : "rgba(0,0,0,0.6)") : tokens.colorSecondary;
+            return (
+              <div key={i} style={{ background: bg, border: `2px solid ${plan.popular ? tokens.colorAccent : tokens.colorBorder}`, borderRadius: `${tokens.borderRadiusMedium || "12px"}`, padding: "40px 32px", display: "flex", flexDirection: "column", gap: "16px", position: "relative" }}>
+                {plan.popular && <span style={{ position: "absolute", top: "-12px", left: "50%", transform: "translateX(-50%)", background: tokens.colorPrimary, color: tokens.colorBackground, fontSize: "10px", fontWeight: 700, padding: "4px 16px", borderRadius: "20px", whiteSpace: "nowrap" }}>
+                  {locale === "de" ? "AM BELIEBTESTEN" : locale === "ru" ? "ПОПУЛЯРНЫЙ" : "MOST POPULAR"}
+                </span>}
+                <p style={{ fontFamily: "var(--font-body)", fontSize: "11px", fontWeight: 700, letterSpacing: "2px", textTransform: "uppercase", color: subCol }}>{label}</p>
+                <div>
+                  <span style={{ fontFamily: "var(--font-display)", fontSize: "56px", fontWeight: 700, color: textCol, lineHeight: 1 }}>{plan.price}</span>
+                  <span style={{ fontFamily: "var(--font-body)", fontSize: "14px", color: subCol, marginLeft: "8px" }}>{period}</span>
+                </div>
+                <p style={{ fontFamily: "var(--font-body)", fontSize: "14px", color: subCol, lineHeight: 1.6, flex: 1 }}>{desc}</p>
+                <a href="#contact" style={{ display: "block", background: plan.popular ? (accentDark ? "#fff" : "#000") : tokens.colorAccent, color: plan.popular ? tokens.colorAccent : (accentDark ? "#fff" : "#000"), padding: "14px 24px", borderRadius: `${tokens.borderRadius || 8}px`, fontSize: "13px", fontWeight: 700, textDecoration: "none", textAlign: "center", fontFamily: "var(--font-body)" }}>{cta}</a>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+// ─── MEET FOUNDER ─────────────────────────────────────────────────────────────
+
+function PresetMeetFounder({ preset, locale }: PresetRendererProps) {
+  const tokens = preset.design?.tokens || {};
+  const fo = preset.content?.founder || {};
+  const badge = fo[`badge_${locale}`] || fo.badge_de || fo.badge_en || "";
+  const title = fo[`title_${locale}`] || fo.title_de || fo.title_en || "";
+  const desc = fo[`desc_${locale}`] || fo.desc_de || fo.desc_en || "";
+  const stats: AnyObj[] = fo.stats || [];
+  if (!title) return null;
+  return (
+    <section style={{ background: tokens.colorSurface, padding: "100px clamp(16px, 5vw, 80px)", borderTop: `1px solid ${tokens.colorBorder}` }}>
+      <div style={{ maxWidth: "1200px", margin: "0 auto", display: "grid", gridTemplateColumns: "1fr 1fr", gap: "80px", alignItems: "center" }}>
+        <div>
+          {badge && <p style={{ fontFamily: "var(--font-body)", fontSize: "11px", fontWeight: 700, letterSpacing: "2px", textTransform: "uppercase", color: tokens.colorAccent, marginBottom: "16px" }}>{badge}</p>}
+          <h2 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(24px, 3vw, 40px)", fontWeight: 700, color: tokens.colorPrimary, lineHeight: 1.2, marginBottom: "24px" }}>{title}</h2>
+          <p style={{ fontFamily: "var(--font-body)", fontSize: "16px", color: tokens.colorSecondary, lineHeight: 1.8, marginBottom: "40px" }}>{desc}</p>
+          {stats.length > 0 && (
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(2, 1fr)", gap: "16px" }}>
+              {stats.map((stat: AnyObj, i: number) => (
+                <div key={i} style={{ padding: "20px", background: tokens.colorBackground, borderRadius: `${tokens.borderRadiusMedium || "12px"}`, textAlign: "center" }}>
+                  <div style={{ fontFamily: "var(--font-display)", fontSize: "32px", fontWeight: 700, color: tokens.colorAccent, lineHeight: 1, marginBottom: "8px" }}>{stat.value}</div>
+                  <div style={{ fontFamily: "var(--font-body)", fontSize: "12px", color: tokens.colorSecondary }}>{stat[`label_${locale}`] || stat.label_de || stat.label_en || ""}</div>
+                </div>
+              ))}
+            </div>
+          )}
+        </div>
+        <div style={{ aspectRatio: "3/4", background: `linear-gradient(135deg, ${tokens.colorBorder}44 0%, ${tokens.colorAccent}22 100%)`, borderRadius: `${tokens.borderRadiusMedium || "12px"}`, display: "flex", alignItems: "center", justifyContent: "center" }}>
+          <span style={{ fontSize: "64px", opacity: 0.4 }}>👩‍⚕️</span>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+// ─── MEDICAL SKINCARE ─────────────────────────────────────────────────────────
+
+function PresetMedicalSkincare({ preset, locale }: PresetRendererProps) {
+  const tokens = preset.design?.tokens || {};
+  const ms = preset.content?.medicalSkincare || {};
+  const badge = ms[`badge_${locale}`] || ms.badge_de || ms.badge_en || "";
+  const title = ms[`title_${locale}`] || ms.title_de || ms.title_en || "";
+  const desc = ms[`desc_${locale}`] || ms.desc_de || ms.desc_en || "";
+  const benefits: AnyObj[] = ms.benefits || [];
+  if (!title) return null;
+  return (
+    <section style={{ background: tokens.colorBackground, padding: "100px clamp(16px, 5vw, 80px)", borderTop: `1px solid ${tokens.colorBorder}` }}>
+      <div style={{ maxWidth: "1200px", margin: "0 auto", display: "grid", gridTemplateColumns: "1fr 1fr", gap: "80px", alignItems: "center" }}>
+        <div style={{ aspectRatio: "4/3", background: `linear-gradient(135deg, ${tokens.colorBorder}44 0%, ${tokens.colorAccent}22 100%)`, borderRadius: `${tokens.borderRadiusMedium || "12px"}`, display: "flex", alignItems: "center", justifyContent: "center" }}>
+          <span style={{ fontSize: "64px", opacity: 0.4 }}>🧪</span>
+        </div>
+        <div>
+          {badge && <p style={{ fontFamily: "var(--font-body)", fontSize: "11px", fontWeight: 700, letterSpacing: "2px", textTransform: "uppercase", color: tokens.colorAccent, marginBottom: "16px" }}>{badge}</p>}
+          <h2 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(24px, 3vw, 40px)", fontWeight: 700, color: tokens.colorPrimary, lineHeight: 1.2, marginBottom: "24px" }}>{title}</h2>
+          <p style={{ fontFamily: "var(--font-body)", fontSize: "16px", color: tokens.colorSecondary, lineHeight: 1.8, marginBottom: "32px" }}>{desc}</p>
+          {benefits.length > 0 && (
+            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "12px" }}>
+              {benefits.map((b: AnyObj, i: number) => (
+                <div key={i} style={{ display: "flex", gap: "8px", alignItems: "center" }}>
+                  <span style={{ color: tokens.colorAccent, fontSize: "16px", flexShrink: 0 }}>✓</span>
+                  <span style={{ fontFamily: "var(--font-body)", fontSize: "13px", color: tokens.colorPrimary }}>{b[locale] || b.de || b.en || ""}</span>
+                </div>
+              ))}
+            </div>
+          )}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+// ─── CONSULTATION CTA ─────────────────────────────────────────────────────────
+
+function PresetConsultationCta({ preset, locale }: PresetRendererProps) {
+  const tokens = preset.design?.tokens || {};
+  const cta = preset.content?.consultationCta || {};
+  const accentDark = isColorDark(tokens.colorAccent || "#000");
+  const title = cta[`title_${locale}`] || cta.title_de || cta.title_en || "";
+  const desc = cta[`desc_${locale}`] || cta.desc_de || cta.desc_en || "";
+  const ctaText = cta[`cta_${locale}`] || cta.cta_de || cta.cta_en || "";
+  if (!title) return null;
+  return (
+    <section style={{ background: tokens.colorSurface, padding: "80px clamp(16px, 5vw, 80px)", borderTop: `1px solid ${tokens.colorBorder}`, textAlign: "center" }}>
+      <div style={{ maxWidth: "700px", margin: "0 auto" }}>
+        <h2 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(24px, 3vw, 36px)", fontWeight: 700, color: tokens.colorPrimary, marginBottom: "16px" }}>{title}</h2>
+        <p style={{ fontFamily: "var(--font-body)", fontSize: "16px", color: tokens.colorSecondary, lineHeight: 1.7, marginBottom: "32px" }}>{desc}</p>
+        <a href="#contact" style={{ display: "inline-block", background: tokens.colorAccent, color: accentDark ? "#fff" : "#000", padding: "16px 40px", borderRadius: `${tokens.borderRadius || 8}px`, fontSize: "14px", fontWeight: 700, textDecoration: "none", fontFamily: "var(--font-body)", textTransform: "uppercase", letterSpacing: "1px" }}>{ctaText}</a>
+      </div>
+    </section>
+  );
+}
+
+// ─── BRANCHES ─────────────────────────────────────────────────────────────────
+
+function PresetBranches({ preset, locale }: PresetRendererProps) {
+  const tokens = preset.design?.tokens || {};
+  const branches: AnyObj[] = preset.content?.branches || [];
+  if (!branches.length) return null;
+  const accentDark = isColorDark(tokens.colorAccent || "#000");
+  return (
+    <section style={{ background: tokens.colorBackground, padding: "100px clamp(16px, 5vw, 80px)", borderTop: `1px solid ${tokens.colorBorder}` }}>
+      <div style={{ maxWidth: "1280px", margin: "0 auto" }}>
+        <div style={{ textAlign: "center", marginBottom: "64px" }}>
+          <div style={{ width: "40px", height: "2px", background: tokens.colorAccent, margin: "0 auto 20px" }} />
+          <h2 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(28px, 3.5vw, 44px)", fontWeight: 700, color: tokens.colorPrimary, marginBottom: "12px" }}>
+            {locale === "de" ? "Filialen" : locale === "ru" ? "Филиалы" : "Branches"}
+          </h2>
+          <p style={{ fontFamily: "var(--font-body)", fontSize: "16px", color: tokens.colorSecondary }}>
+            {locale === "de" ? "Wir sind gleich um die Ecke." : locale === "ru" ? "Мы рядом с вами." : "We're right around the corner."}
+          </p>
+        </div>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))", gap: "24px" }}>
+          {branches.map((branch: AnyObj, i: number) => (
+            <div key={i} style={{ background: tokens.colorSurface, border: `1px solid ${tokens.colorBorder}`, borderRadius: `${tokens.borderRadiusMedium || "12px"}`, overflow: "hidden" }}>
+              <div style={{ aspectRatio: "16/9", background: `linear-gradient(135deg, ${tokens.colorBorder}66 0%, ${tokens.colorAccent}22 100%)`, display: "flex", alignItems: "center", justifyContent: "center" }}>
+                <span style={{ fontSize: "48px", opacity: 0.4 }}>📍</span>
+              </div>
+              <div style={{ padding: "24px" }}>
+                <h3 style={{ fontFamily: "var(--font-display)", fontSize: "20px", fontWeight: 700, color: tokens.colorPrimary, marginBottom: "8px" }}>{branch.name}</h3>
+                <p style={{ fontFamily: "var(--font-body)", fontSize: "14px", color: tokens.colorSecondary, marginBottom: "4px" }}>{branch.address}</p>
+                {branch.hours_de && <p style={{ fontFamily: "var(--font-body)", fontSize: "13px", color: tokens.colorSecondary, marginBottom: "16px" }}>{branch.hours_de}</p>}
+                <a href="#contact" style={{ display: "inline-block", background: tokens.colorAccent, color: accentDark ? "#fff" : "#000", padding: "10px 24px", borderRadius: `${tokens.borderRadius || 4}px`, fontSize: "13px", fontWeight: 700, textDecoration: "none", fontFamily: "var(--font-body)" }}>
+                  {locale === "de" ? "Termin buchen" : locale === "ru" ? "Записаться" : "Book Now"}
+                </a>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+// ─── LOCATIONS (coffee shop) ──────────────────────────────────────────────────
+
+function PresetLocations({ preset, locale }: PresetRendererProps) {
+  const tokens = preset.design?.tokens || {};
+  const locations: AnyObj[] = preset.content?.locations || [];
+  if (!locations.length) return null;
+  return (
+    <section style={{ background: tokens.colorSurface, padding: "80px clamp(16px, 5vw, 80px)", borderTop: `1px solid ${tokens.colorBorder}` }}>
+      <div style={{ maxWidth: "800px", margin: "0 auto", textAlign: "center" }}>
+        <div style={{ width: "40px", height: "1px", background: tokens.colorAccent, margin: "0 auto 32px" }} />
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))", gap: "48px" }}>
+          {locations.map((loc: AnyObj, i: number) => (
+            <div key={i}>
+              <h3 style={{ fontFamily: "var(--font-display)", fontSize: "20px", fontWeight: 700, color: tokens.colorPrimary, marginBottom: "8px" }}>{loc.name}</h3>
+              <p style={{ fontFamily: "var(--font-body)", fontSize: "14px", color: tokens.colorSecondary, lineHeight: 1.6, marginBottom: "8px" }}>{loc.address}</p>
+              {loc.hours_de && <p style={{ fontFamily: "var(--font-body)", fontSize: "13px", color: tokens.colorSecondary }}>{loc.hours_de}</p>}
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+// ─── LIFESTYLE COLLECTIONS ────────────────────────────────────────────────────
+
+function PresetLifestyleCollections({ preset, locale }: PresetRendererProps) {
+  const tokens = preset.design?.tokens || {};
+  const collections: AnyObj[] = preset.content?.lifestyleCollections || [];
+  if (!collections.length) return null;
+  return (
+    <section style={{ background: tokens.colorSurface, padding: "80px clamp(16px, 5vw, 80px)", borderTop: `1px solid ${tokens.colorBorder}` }}>
+      <div style={{ maxWidth: "1280px", margin: "0 auto" }}>
+        <div style={{ textAlign: "center", marginBottom: "48px" }}>
+          <h2 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(24px, 3vw, 36px)", fontWeight: 700, color: tokens.colorPrimary }}>
+            {locale === "de" ? "Immobilien für Ihren Lebensstil" : locale === "ru" ? "Недвижимость под ваш образ жизни" : "Homes to Match Your Lifestyle"}
+          </h2>
+        </div>
+        <div style={{ display: "flex", flexWrap: "wrap", gap: "12px", justifyContent: "center" }}>
+          {collections.map((col: AnyObj, i: number) => (
+            <a key={i} href="#contact" style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "8px", padding: "20px 24px", border: `1px solid ${tokens.colorBorder}`, borderRadius: `${tokens.borderRadius || 4}px`, textDecoration: "none", minWidth: "120px" }}>
+              <span style={{ fontSize: "24px" }}>🏠</span>
+              <span style={{ fontFamily: "var(--font-body)", fontSize: "12px", fontWeight: 600, color: tokens.colorPrimary, textAlign: "center" }}>
+                {col[`label_${locale}`] || col.label_de || col.label_en || ""}
+              </span>
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+// ─── WHY US (law firm) ────────────────────────────────────────────────────────
+
+function PresetWhyUs({ preset, locale }: PresetRendererProps) {
+  const tokens = preset.design?.tokens || {};
+  const items: AnyObj[] = preset.content?.whyUs || [];
+  if (!items.length) return null;
+  return (
+    <section style={{ background: tokens.colorSurface, padding: "100px clamp(16px, 5vw, 80px)", borderTop: `1px solid ${tokens.colorBorder}` }}>
+      <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
+        <div style={{ textAlign: "center", marginBottom: "64px" }}>
+          <div style={{ width: "40px", height: "2px", background: tokens.colorAccent, margin: "0 auto 20px" }} />
+          <h2 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(28px, 3.5vw, 44px)", fontWeight: 700, color: tokens.colorPrimary }}>
+            {locale === "de" ? "Warum Mandanten uns wählen" : locale === "ru" ? "Почему клиенты выбирают нас" : "Why Clients Choose Us"}
+          </h2>
+        </div>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "32px" }}>
+          {items.map((item: AnyObj, i: number) => (
+            <div key={i} style={{ padding: "36px 28px", border: `1px solid ${tokens.colorBorder}`, borderRadius: `${tokens.borderRadiusMedium || "12px"}`, display: "flex", flexDirection: "column", gap: "16px" }}>
+              <div style={{ width: "32px", height: "2px", background: tokens.colorAccent }} />
+              <h3 style={{ fontFamily: "var(--font-display)", fontSize: "20px", fontWeight: 700, color: tokens.colorPrimary }}>
+                {item[`title_${locale}`] || item.title_de || item.title_en || ""}
+              </h3>
+              <p style={{ fontFamily: "var(--font-body)", fontSize: "15px", color: tokens.colorSecondary, lineHeight: 1.7 }}>
+                {item[`desc_${locale}`] || item.desc_de || item.desc_en || ""}
+              </p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+// ─── NEWSLETTER ───────────────────────────────────────────────────────────────
+
+function PresetNewsletter({ preset, locale }: PresetRendererProps) {
+  const tokens = preset.design?.tokens || {};
+  const nl = preset.content?.newsletter || {};
+  const isDark = isColorDark(tokens.colorBackground || "#fff");
+  const accentDark = isColorDark(tokens.colorAccent || "#000");
+  const title = nl[`title_${locale}`] || nl.title_de || nl.title_en || "";
+  const desc = nl[`desc_${locale}`] || nl.desc_de || nl.desc_en || "";
+  if (!title) return null;
+  return (
+    <section style={{ background: tokens.colorSurface, padding: "80px clamp(16px, 5vw, 80px)", borderTop: `1px solid ${tokens.colorBorder}`, textAlign: "center" }}>
+      <div style={{ maxWidth: "560px", margin: "0 auto" }}>
+        <h2 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(24px, 3vw, 36px)", fontWeight: 700, color: tokens.colorPrimary, marginBottom: "12px", letterSpacing: isDark ? "2px" : "0", textTransform: isDark ? "uppercase" : "none" }}>{title}</h2>
+        <p style={{ fontFamily: "var(--font-body)", fontSize: "15px", color: tokens.colorSecondary, lineHeight: 1.7, marginBottom: "32px" }}>{desc}</p>
+        <div style={{ display: "flex", gap: "8px", maxWidth: "400px", margin: "0 auto" }}>
+          <input type="email" placeholder={locale === "de" ? "Ihre E-Mail-Adresse" : locale === "ru" ? "Ваш email" : "Your email address"} style={{ flex: 1, padding: "12px 16px", background: tokens.colorBackground, border: `1px solid ${tokens.colorBorder}`, borderRadius: `${tokens.borderRadius || 4}px`, fontFamily: "var(--font-body)", fontSize: "14px", color: tokens.colorPrimary, outline: "none" }} />
+          <button style={{ background: tokens.colorAccent, color: accentDark ? "#fff" : "#000", border: "none", padding: "12px 20px", borderRadius: `${tokens.borderRadius || 4}px`, fontSize: "13px", fontWeight: 700, cursor: "pointer", fontFamily: "var(--font-body)", whiteSpace: "nowrap" }}>
+            {locale === "de" ? "Anmelden" : locale === "ru" ? "Подписаться" : "Subscribe"}
+          </button>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+// ─── MAIN EXPORT ──────────────────────────────────────────────────────────────
 
 export function PresetRenderer({ preset, locale }: PresetRendererProps) {
+  const layout = preset.layout || {};
   return (
-    <div
-      style={{
-        fontFamily: "var(--font-body)",
-        color: "var(--color-primary)",
-        background: "var(--color-background)",
-        minHeight: "100vh",
-      }}
-    >
+    <div style={{ fontFamily: "var(--font-body)", color: "var(--color-primary)", background: "var(--color-background)", minHeight: "100vh" }}>
+      {layout.announcementBar && preset.content?.announcementBar && <PresetAnnouncementBar preset={preset} locale={locale} />}
       <PresetNav preset={preset} locale={locale} />
       <PresetHero preset={preset} locale={locale} />
+      {layout.quickLinksSection && preset.content?.quickLinks && <PresetQuickLinks preset={preset} locale={locale} />}
+      {layout.credentialsBar && preset.content?.credentials && <PresetCredentials preset={preset} locale={locale} />}
+      {layout.serviceCategoriesGrid && preset.content?.serviceCategories && <PresetServiceCategories preset={preset} locale={locale} />}
+      {layout.bodyMapSection && preset.content?.bodyMap && <PresetBodyMap preset={preset} locale={locale} />}
+      {layout.featuredTreatmentSpotlight && preset.content?.featuredTreatment && <PresetFeaturedTreatment preset={preset} locale={locale} />}
+      {layout.featuredNewTreatment && preset.content?.featuredNewTreatment && <PresetFeaturedTreatment preset={preset} locale={locale} isSpa />}
+      {layout.hairRestorationSection && preset.content?.hairRestoration && <PresetHairRestoration preset={preset} locale={locale} />}
+      {layout.coreSpecialtiesGrid && preset.content?.coreSpecialties && <PresetCoreSpecialties preset={preset} locale={locale} />}
+      {layout.whyChooseUs && preset.content?.whyChooseUs && <PresetWhyChooseUs preset={preset} locale={locale} />}
       <PresetAbout preset={preset} locale={locale} />
+      {preset.content?.vision && <PresetVision preset={preset} locale={locale} />}
+      {preset.content?.coreValues && <PresetCoreValues preset={preset} locale={locale} />}
+      {layout.meetTherapist && preset.content?.therapist && <PresetMeetTherapist preset={preset} locale={locale} />}
+      {layout.meetFounderSection && preset.content?.founder && <PresetMeetFounder preset={preset} locale={locale} />}
+      {preset.content?.hairstyleGuide && <PresetHairstyleGuide preset={preset} locale={locale} />}
       <PresetServices preset={preset} locale={locale} />
+      {layout.productsSection && preset.content?.products && <PresetProducts preset={preset} locale={locale} />}
+      {preset.content?.hiitFacts && <PresetHiitFacts preset={preset} locale={locale} />}
+      {preset.content?.trainingOptions && <PresetTrainingOptions preset={preset} locale={locale} />}
+      {preset.content?.signatureSeries && <PresetSignatureSeries preset={preset} locale={locale} />}
+      {preset.content?.pricing && <PresetPricing preset={preset} locale={locale} />}
+      {layout.medicalSkincareSection && preset.content?.medicalSkincare && <PresetMedicalSkincare preset={preset} locale={locale} />}
+      {layout.consultationCta && preset.content?.consultationCta && <PresetConsultationCta preset={preset} locale={locale} />}
+      {layout.branchesSection && preset.content?.branches && <PresetBranches preset={preset} locale={locale} />}
+      {preset.content?.locations && !layout.branchesSection && <PresetLocations preset={preset} locale={locale} />}
+      {layout.lifestyleCollections && preset.content?.lifestyleCollections && <PresetLifestyleCollections preset={preset} locale={locale} />}
+      {preset.content?.whyUs && <PresetWhyUs preset={preset} locale={locale} />}
       <PresetTestimonials preset={preset} locale={locale} />
       <PresetFAQ preset={preset} locale={locale} />
+      {layout.newsletterSection && preset.content?.newsletter && <PresetNewsletter preset={preset} locale={locale} />}
       <PresetContact preset={preset} locale={locale} />
       <PresetFooter preset={preset} locale={locale} />
     </div>
