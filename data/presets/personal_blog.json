@@ -1,181 +1,313 @@
 {
   "meta": {
-    "title": "Life Unscripted | Personal Blog",
-    "description": "Thoughts on life, travel, and everything in between. Join the journey.",
+    "title": "Studio 121 | Craft Hair Studio",
+    "description": "Ein Einzelstuhl-Salon-Studio, wo Sie meine ungeteilte Aufmerksamkeit haben. Entspannt, komfortabel, persoenlich.",
     "favicon": "/media/presets/personal_blog/favicon.ico",
-    "language": "en",
+    "language": "de",
     "availableLanguages": [
-      "en",
       "de",
+      "en",
       "ru"
     ]
   },
   "design": {
     "preset": "personal_blog",
     "tokens": {
-      "colorBackground": "#FFFEF7",
+      "colorBackground": "#FAFAF8",
       "colorSurface": "#FFFFFF",
-      "colorPrimary": "#333333",
-      "colorSecondary": "#6C757D",
-      "colorBorder": "#DEE2E6",
-      "colorAccent": "#FF6B6B",
-      "colorAccentHover": "#FF6B6B",
-      "fontDisplay": "Libre Baskerville",
-      "fontHeading": "Libre Baskerville",
-      "fontBody": "Merriweather",
-      "fontCaption": "Merriweather",
-      "fontMono": "Roboto Mono",
-      "fontSizeDisplay": "72px",
-      "fontSizeHeading": "36px",
-      "fontSizeBody": "17px",
-      "lineHeightBody": "1.7",
+      "colorPrimary": "#1A1A1A",
+      "colorSecondary": "#6B7280",
+      "colorBorder": "#E5E7EB",
+      "colorAccent": "#6B9E78",
+      "colorAccentHover": "#5A8A67",
+      "fontDisplay": "Lora",
+      "fontHeading": "Lora",
+      "fontBody": "Inter",
+      "fontCaption": "Inter",
+      "fontMono": "JetBrains Mono",
+      "fontSizeDisplay": "64px",
+      "fontSizeHeading": "32px",
+      "fontSizeBody": "16px",
+      "lineHeightBody": "1.8",
       "lineHeightHeading": "1.3",
       "spacingUnit": "8px",
-      "spacingSection": "120px",
+      "spacingSection": "100px",
       "spacingElement": "24px",
-      "spacingCard": "32px",
-      "spacingButtonVertical": "16px",
-      "spacingButtonHorizontal": "32px",
-      "maxWidthContent": "1200px",
-      "maxWidthText": "700px",
+      "spacingCard": "28px",
+      "spacingButtonVertical": "14px",
+      "spacingButtonHorizontal": "28px",
+      "maxWidthContent": "900px",
+      "maxWidthText": "640px",
       "gridColumns": "12",
-      "gridGutter": "30px",
+      "gridGutter": "24px",
       "horizontalPaddingMobile": "20px",
-      "horizontalPaddingTablet": "50px",
+      "horizontalPaddingTablet": "48px",
       "horizontalPaddingDesktop": "80px",
       "borderRadius": "8",
       "borderRadiusSmall": "4px",
       "borderRadiusMedium": "8px",
       "borderRadiusLarge": "16px",
       "shadowStyle": "soft",
-      "shadowResting": "0 4px 14px rgba(0,0,0,0.05)",
-      "shadowHover": "0 8px 24px rgba(0,0,0,0.1)",
+      "shadowResting": "0 2px 12px rgba(0,0,0,0.06)",
+      "shadowHover": "0 6px 24px rgba(107,158,120,0.15)",
       "transitionDuration": "200ms",
-      "transitionTiming": "ease-in-out",
-      "imageRatioHero": "21:9",
+      "transitionTiming": "ease-out",
+      "imageRatioHero": "16:9",
       "imageRatioCard": "4:3",
       "imageRatioAvatar": "1:1"
-    },
-    "customCss": ""
+    }
   },
   "seo": {
     "ogImage": "/media/presets/personal_blog/og-default.jpg",
     "twitterCard": "summary_large_image",
     "googleAnalyticsId": "",
-    "keywords": "blog, lifestyle, travel"
+    "keywords": "Friseur, Hairstudio, Einzelstuhl, persoenlich, Windham, Termin"
+  },
+  "layout": {
+    "style": "clean_minimal",
+    "heroType": "split_screen_personal",
+    "navStyle": "minimal_with_book",
+    "servicesLayout": "simple_list",
+    "testimonialsLayout": "light_background",
+    "footerStyle": "minimal_contact"
   },
   "content": {
     "slogans": {
-      "en": [
-        "Stories & Thoughts",
-        "Live Authentic",
-        "Unscripted Life"
-      ],
       "de": [
-        "Geschichten & Gedanken",
-        "Leb authentisch",
-        "Unscripted Leben"
+        "Willkommen!",
+        "Ein Einzelstuhl-Studio, wo Sie meine ungeteilte Aufmerksamkeit haben.",
+        "Ich kann es kaum erwarten, Sie kennenzulernen!"
+      ],
+      "en": [
+        "Welcome!",
+        "A single chair salon studio where you have my undivided attention.",
+        "I can not wait to meet you!"
       ],
       "ru": [
-        "Истории и мысли",
-        "Живи аутентично",
-        "Несценарная жизнь"
+        "Добро пожаловать!",
+        "Студия с одним креслом, где вы получаете моё безраздельное внимание.",
+        "Не могу дождаться встречи с вами!"
       ]
     },
     "hero": {
-      "en": {
-        "heading": "Stories & Thoughts",
-        "subheading": "Thoughts on life, travel, and everything in between. Join the journey.",
-        "cta": "Get Started",
-        "image": "/media/presets/personal_blog/hero.jpg"
-      },
       "de": {
-        "heading": "Geschichten & Gedanken",
-        "subheading": "Thoughts on life, travel, and everything in between. Join the journey.",
-        "cta": "Jetzt starten",
-        "image": "/media/presets/personal_blog/hero.jpg"
+        "heading": "WILLKOMMEN!",
+        "subheading": "Studio 121 bietet eine entspannte und komfortable Erfahrung. Ein Einzelstuhl-Salon-Studio, wo Sie meine ungeteilte Aufmerksamkeit haben. Ich kann es kaum erwarten, Sie kennenzulernen! — Deirdre",
+        "cta": "Termin buchen",
+        "secondaryCta": "Leistungen ansehen",
+        "image": "/media/presets/personal_blog/hero.jpg",
+        "imageAlt": "Studio 121 Friseur"
+      },
+      "en": {
+        "heading": "WELCOME!",
+        "subheading": "Studio 121 provides a relaxing and comfortable experience. A single chair salon studio where you have my undivided attention. I can not wait to meet you! — Deirdre",
+        "cta": "Book Now",
+        "secondaryCta": "View Services",
+        "image": "/media/presets/personal_blog/hero.jpg",
+        "imageAlt": "Studio 121 Hair Studio"
       },
       "ru": {
-        "heading": "Истории и мысли",
-        "subheading": "Thoughts on life, travel, and everything in between. Join the journey.",
-        "cta": "Начать",
-        "image": "/media/presets/personal_blog/hero.jpg"
+        "heading": "ДОБРО ПОЖАЛОВАТЬ!",
+        "subheading": "Studio 121 предлагает расслабляющий и комфортный опыт. Студия с одним креслом, где вы получаете моё безраздельное внимание. Не могу дождаться встречи с вами! — Deirdre",
+        "cta": "Записаться",
+        "secondaryCta": "Наши услуги",
+        "image": "/media/presets/personal_blog/hero.jpg",
+        "imageAlt": "Studio 121 Парикмахерская"
       }
     },
     "about": {
-      "en": {
-        "title": "About Us",
-        "text": "A personal journey through the ups and downs of life, shared with honesty."
-      },
       "de": {
-        "title": "Über uns",
-        "text": "Eine persönliche Reise durch das Leben, ehrlich geteilt."
+        "title": "Ueber mich",
+        "subtitle": "Deirdre — Meisterfriseurin",
+        "text": "Ich bin Deirdre, Inhaberin und Meisterfriseurin des Studio 121. Mit ueber 15 Jahren Erfahrung in der Haarpflege biete ich Ihnen einen persoenlichen, entspannten Service in meinem privaten Einzelstuhl-Studio. Kein Stress, keine Wartezeiten — nur Sie und ich.",
+        "image": "/media/presets/personal_blog/about.jpg",
+        "imageAlt": "Deirdre im Studio 121",
+        "stats": [
+          {
+            "value": "15+",
+            "label": "Jahre Erfahrung"
+          },
+          {
+            "value": "1",
+            "label": "Stuhl — volle Aufmerksamkeit"
+          },
+          {
+            "value": "5★",
+            "label": "Durchschnittliche Bewertung"
+          }
+        ]
+      },
+      "en": {
+        "title": "About Me",
+        "subtitle": "Deirdre — Master Stylist",
+        "text": "I am Deirdre, owner and master stylist of Studio 121. With over 15 years of experience in hair care, I offer you a personal, relaxed service in my private single-chair studio. No stress, no waiting — just you and me.",
+        "image": "/media/presets/personal_blog/about.jpg",
+        "imageAlt": "Deirdre at Studio 121",
+        "stats": [
+          {
+            "value": "15+",
+            "label": "Years of experience"
+          },
+          {
+            "value": "1",
+            "label": "Chair — full attention"
+          },
+          {
+            "value": "5★",
+            "label": "Average rating"
+          }
+        ]
       },
       "ru": {
-        "title": "О нас",
-        "text": "Личное путешествие по жизни, честно поделенное с вами."
+        "title": "Обо мне",
+        "subtitle": "Deirdre — Мастер-стилист",
+        "text": "Я Deirdre, владелица и мастер-стилист Studio 121. С более чем 15-летним опытом в уходе за волосами я предлагаю вам личный, расслабленный сервис в моей частной студии с одним креслом.",
+        "image": "/media/presets/personal_blog/about.jpg",
+        "imageAlt": "Deirdre в Studio 121",
+        "stats": [
+          {
+            "value": "15+",
+            "label": "Лет опыта"
+          },
+          {
+            "value": "1",
+            "label": "Кресло — полное внимание"
+          },
+          {
+            "value": "5★",
+            "label": "Средняя оценка"
+          }
+        ]
       }
     },
     "services": [
       {
-        "name_en": "Weekly Posts",
-        "name_de": "Wöchentliche Posts",
-        "name_ru": "Еженедельные посты",
-        "price": "Free",
-        "desc_en": "Deep dives into topics.",
-        "image": "/media/presets/personal_blog/services/posts.jpg"
+        "name_de": "Haarschnitt",
+        "name_en": "Haircut",
+        "name_ru": "Стрижка",
+        "price": "ab 65 EUR",
+        "desc_de": "Waschen, Schneiden, Foehnen. Massgeschneidert fuer Ihren Haartyp.",
+        "desc_en": "Wash, cut, blowdry. Tailored to your hair type.",
+        "desc_ru": "Мытьё, стрижка, укладка. Подобрано под ваш тип волос.",
+        "tags": [
+          "Beliebt"
+        ]
       },
       {
-        "name_en": "Newsletter",
-        "name_de": "Newsletter",
-        "name_ru": "Рассылка",
-        "price": "$5/mo",
-        "desc_en": "Exclusive content.",
-        "image": "/media/presets/personal_blog/services/newsletter.jpg"
+        "name_de": "Farbe und Highlights",
+        "name_en": "Color and Highlights",
+        "name_ru": "Окрашивание и мелирование",
+        "price": "ab 85 EUR",
+        "desc_de": "Vollfarbe, Balayage, Highlights. Natuerliche Ergebnisse.",
+        "desc_en": "Full color, balayage, highlights. Natural results.",
+        "desc_ru": "Полное окрашивание, балаяж, мелирование. Естественные результаты.",
+        "tags": []
+      },
+      {
+        "name_de": "Behandlungen",
+        "name_en": "Treatments",
+        "name_ru": "Процедуры",
+        "price": "ab 45 EUR",
+        "desc_de": "Tiefenpflege, Keratin, Reparatur. Fuer gesundes, glaenzendes Haar.",
+        "desc_en": "Deep conditioning, keratin, repair. For healthy, shiny hair.",
+        "desc_ru": "Глубокое кондиционирование, кератин, восстановление. Для здоровых блестящих волос.",
+        "tags": []
+      },
+      {
+        "name_de": "Styling",
+        "name_en": "Styling",
+        "name_ru": "Укладка",
+        "price": "ab 40 EUR",
+        "desc_de": "Hochsteckfrisur, Wellen, Glaetten. Fuer besondere Anlaesse.",
+        "desc_en": "Updo, waves, straightening. For special occasions.",
+        "desc_ru": "Причёска, волны, выпрямление. Для особых случаев.",
+        "tags": []
       }
     ],
     "testimonials": [
       {
-        "name": "Reader R.",
-        "text_en": "Your blog is my weekly dose of inspiration. Thank you!",
-        "text_de": "Your blog is my weekly dose of inspiration. Thank you!",
-        "text_ru": "Your blog is my weekly dose of inspiration. Thank you!",
+        "name": "Sharon T.",
+        "location_de": "Windham",
+        "text_de": "Deirdre stylt mein Haar seit vielen Jahren. Ich habe immer ihrer Expertise vertraut. Sie ist eine wahre Kuenstlerin!",
+        "text_en": "Deirdre has been styling my hair for many years. I have always trusted her expertise. She is a true artist!",
+        "text_ru": "Deirdre делает мне причёску уже много лет. Я всегда доверяла её экспертизе. Она настоящий художник!",
         "rating": 5,
-        "avatar": "/media/presets/personal_blog/avatars/reader.jpg"
+        "source": "Google"
+      },
+      {
+        "name": "Jenny F.",
+        "location_de": "Windham",
+        "text_de": "Sie enttaeuscht nie! Die Farbkorrektur, die sie an den Haaren meiner Tochter vorgenommen hat, war nichts weniger als wundersam!",
+        "text_en": "You never disappoint! The color correction you did on my daughter's hair was nothing short of miraculous!",
+        "text_ru": "Никогда не разочаровывает! Коррекция цвета, которую она сделала волосам моей дочери, была просто чудесной!",
+        "rating": 5,
+        "source": "Google"
+      },
+      {
+        "name": "Lindsey M.",
+        "location_de": "Windham",
+        "text_de": "Deirdre arbeitet seit einem Jahrzehnt Wunder an meinen widerspenstigen Haaren. Sie ist bodenstaendig, hat einen tollen Sinn fuer Humor und ist eine Meisterin ihres Handwerks.",
+        "text_en": "Deirdre has been working magic on my unruly hair for a decade. She is down to earth, has a great sense of humor and is a master of her craft.",
+        "text_ru": "Deirdre творит чудеса с моими непослушными волосами уже десять лет. Она приземлённая, с отличным чувством юмора и мастер своего дела.",
+        "rating": 5,
+        "source": "Google"
+      }
+    ],
+    "faq": [
+      {
+        "q_de": "Wie buche ich einen Termin?",
+        "q_en": "How do I book an appointment?",
+        "q_ru": "Как записаться на приём?",
+        "a_de": "Nur nach Vereinbarung. Online buchen oder anrufen/schreiben. Ich antworte innerhalb von 24 Stunden.",
+        "a_en": "By appointment only. Book online or call/text. I respond within 24 hours.",
+        "a_ru": "Только по записи. Запишитесь онлайн или позвоните/напишите. Отвечаю в течение 24 часов."
+      },
+      {
+        "q_de": "Gibt es Parkplaetze?",
+        "q_en": "Is there parking?",
+        "q_ru": "Есть ли парковка?",
+        "a_de": "Ja, kostenlose Parkplaetze direkt vor dem Studio.",
+        "a_en": "Yes, free parking directly in front of the studio.",
+        "a_ru": "Да, бесплатная парковка прямо перед студией."
       }
     ],
     "contact": {
-      "address": "123 Main St, City",
-      "phone": "+1 234 567 890",
-      "email": "info@personal_blog.com",
-      "hours_en": "Mon-Fri: 9:00 AM - 6:00 PM",
-      "hours_de": "Mo-Fr: 09:00 - 18:00 Uhr",
-      "hours_ru": "Пн-Пт: 09:00 - 18:00"
+      "address": "Hauptstrasse 121, 10115 Berlin-Mitte",
+      "phone": "+49 30 1234 5678",
+      "email": "hallo@studio121-berlin.de",
+      "hours_de": "Mo-Fr: 09:00-18:00 Uhr | Sa: 10:00-14:00 Uhr | So: Geschlossen",
+      "hours_en": "Mon-Fri: 9:00 AM-6:00 PM | Sat: 10:00 AM-2:00 PM | Sun: Closed",
+      "hours_ru": "Пн-Пт: 09:00-18:00 | Сб: 10:00-14:00 | Вс: Закрыто"
     },
-    "faq": [
-      {
-        "q_en": "How to start?",
-        "q_de": "Wie anfangen?",
-        "q_ru": "Как начать?",
-        "a_en": "Contact us today!",
-        "a_de": "Kontaktieren Sie uns!",
-        "a_ru": "Свяжитесь с нами!"
-      }
-    ]
+    "legal": {
+      "priceNote_de": "Alle Preise inkl. MwSt. (19%). Endpreise nach Beratung.",
+      "cancellationPolicy_de": "Kostenlose Stornierung bis 24 Stunden vor dem Termin.",
+      "privacyNote_de": "Ihre Daten werden gemaess DSGVO verarbeitet."
+    }
   },
   "booking": {
     "enabled": true,
     "slots": [
       "09:00",
       "10:00",
+      "11:00",
+      "13:00",
       "14:00",
+      "15:00",
       "16:00"
     ],
-    "duration": 60
+    "duration": 60,
+    "maxGuests": 1,
+    "note_de": "Nur nach Vereinbarung. Einzelstuhl-Studio."
   },
   "logo": {
-    "text": "LIFE",
-    "tagline": "UNSCRIPTED",
-    "font": "Libre Baskerville"
+    "text": "Studio 121",
+    "tagline": "CRAFT HAIR STUDIO",
+    "font": "Lora",
+    "style": "text_serif"
+  },
+  "social": {
+    "instagram": "https://instagram.com/studio121.berlin",
+    "facebook": "https://facebook.com/studio121berlin"
   }
 }

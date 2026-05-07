@@ -1,181 +1,328 @@
 {
   "meta": {
-    "title": "CloudScale | SaaS Platform",
-    "description": "Scalable cloud solutions for modern businesses. Automate and grow.",
+    "title": "Nexus AI | Alles sehen. Alles kontrollieren.",
+    "description": "Eine KI-Plattform fuer Ausgaben, Risiken und Compliance. Jedes Team weiss was passiert, was zu beheben ist und wo zu sparen ist.",
     "favicon": "/media/presets/saas_startup/favicon.ico",
-    "language": "en",
+    "language": "de",
     "availableLanguages": [
-      "en",
       "de",
+      "en",
       "ru"
     ]
   },
   "design": {
     "preset": "saas_startup",
     "tokens": {
-      "colorBackground": "#0D1117",
-      "colorSurface": "#FFFFFF",
-      "colorPrimary": "#00FFAA",
-      "colorSecondary": "#6C757D",
-      "colorBorder": "#DEE2E6",
-      "colorAccent": "#7B61FF",
-      "colorAccentHover": "#7B61FF",
-      "fontDisplay": "Orbitron",
-      "fontHeading": "Orbitron",
-      "fontBody": "IBM Plex Sans",
-      "fontCaption": "IBM Plex Sans",
-      "fontMono": "Roboto Mono",
+      "colorBackground": "#0A0F1E",
+      "colorSurface": "#111827",
+      "colorPrimary": "#F9FAFB",
+      "colorSecondary": "#9CA3AF",
+      "colorBorder": "#1F2937",
+      "colorAccent": "#00D4FF",
+      "colorAccentHover": "#00B8E0",
+      "fontDisplay": "Inter",
+      "fontHeading": "Inter",
+      "fontBody": "Inter",
+      "fontCaption": "Inter",
+      "fontMono": "JetBrains Mono",
       "fontSizeDisplay": "72px",
       "fontSizeHeading": "36px",
-      "fontSizeBody": "17px",
+      "fontSizeBody": "16px",
       "lineHeightBody": "1.7",
-      "lineHeightHeading": "1.3",
+      "lineHeightHeading": "1.2",
       "spacingUnit": "8px",
       "spacingSection": "120px",
       "spacingElement": "24px",
-      "spacingCard": "32px",
-      "spacingButtonVertical": "16px",
-      "spacingButtonHorizontal": "32px",
+      "spacingCard": "28px",
+      "spacingButtonVertical": "14px",
+      "spacingButtonHorizontal": "28px",
       "maxWidthContent": "1200px",
       "maxWidthText": "700px",
       "gridColumns": "12",
-      "gridGutter": "30px",
+      "gridGutter": "28px",
       "horizontalPaddingMobile": "20px",
-      "horizontalPaddingTablet": "50px",
+      "horizontalPaddingTablet": "48px",
       "horizontalPaddingDesktop": "80px",
       "borderRadius": "8",
       "borderRadiusSmall": "4px",
       "borderRadiusMedium": "8px",
       "borderRadiusLarge": "16px",
-      "shadowStyle": "soft",
-      "shadowResting": "0 4px 14px rgba(0,0,0,0.05)",
-      "shadowHover": "0 8px 24px rgba(0,0,0,0.1)",
+      "shadowStyle": "dark",
+      "shadowResting": "0 4px 24px rgba(0,0,0,0.4)",
+      "shadowHover": "0 8px 40px rgba(0,212,255,0.15)",
       "transitionDuration": "200ms",
-      "transitionTiming": "ease-in-out",
-      "imageRatioHero": "21:9",
+      "transitionTiming": "ease-out",
+      "imageRatioHero": "16:9",
       "imageRatioCard": "4:3",
       "imageRatioAvatar": "1:1"
-    },
-    "customCss": ""
+    }
   },
   "seo": {
     "ogImage": "/media/presets/saas_startup/og-default.jpg",
     "twitterCard": "summary_large_image",
     "googleAnalyticsId": "",
-    "keywords": "saas, cloud, tech"
+    "keywords": "SaaS, KI, Ausgaben, Compliance, Risiko, Dashboard, Automatisierung"
+  },
+  "layout": {
+    "style": "dark_masculine",
+    "heroType": "centered_with_dashboard",
+    "navStyle": "dark_with_cta",
+    "problemSolutionSection": true,
+    "outcomesSection": true,
+    "teamPersonasSection": true,
+    "capabilitiesSection": true,
+    "ctaSection": true,
+    "testimonialsLayout": "none",
+    "footerStyle": "dark_four_columns"
   },
   "content": {
     "slogans": {
-      "en": [
-        "Scale Infinite",
-        "Future Ready",
-        "Cloud Native"
-      ],
       "de": [
-        "Unendlich skalieren",
-        "Zukunftsbereit",
-        "Cloud Native"
+        "Alles sehen. Alles kontrollieren. Alles optimieren.",
+        "Von Chaos zu Klarheit.",
+        "KI-Plattform fuer moderne Teams."
+      ],
+      "en": [
+        "See Everything. Control Anything. Optimize Everything.",
+        "From Chaos to Clarity.",
+        "AI platform for modern teams."
       ],
       "ru": [
-        "Бесконечный масштаб",
-        "Готов к будущему",
-        "Облачные технологии"
+        "Видеть всё. Контролировать всё. Оптимизировать всё.",
+        "От хаоса к ясности.",
+        "ИИ-платформа для современных команд."
       ]
     },
     "hero": {
-      "en": {
-        "heading": "Scale Infinite",
-        "subheading": "Scalable cloud solutions for modern businesses. Automate and grow.",
-        "cta": "Get Started",
-        "image": "/media/presets/saas_startup/hero.jpg"
-      },
       "de": {
-        "heading": "Unendlich skalieren",
-        "subheading": "Scalable cloud solutions for modern businesses. Automate and grow.",
-        "cta": "Jetzt starten",
-        "image": "/media/presets/saas_startup/hero.jpg"
+        "heading": "Alles sehen.\nAlles kontrollieren.\nAlles optimieren.",
+        "subheading": "Eine KI-Plattform fuer Ausgaben, Risiken und Compliance — damit jedes Team weiss, was passiert, was zu beheben ist und wo zu sparen ist.",
+        "cta": "Sofortige Sichtbarkeit",
+        "secondaryCta": "Demo buchen",
+        "image": "/media/presets/saas_startup/hero.jpg",
+        "imageAlt": "Nexus AI Dashboard"
+      },
+      "en": {
+        "heading": "See Everything.\nControl Anything.\nOptimize Everything.",
+        "subheading": "One AI platform to unify spend, risk, and compliance so every team knows what is happening, what to fix, and where to save.",
+        "cta": "Get Instant Visibility",
+        "secondaryCta": "Book a Demo",
+        "image": "/media/presets/saas_startup/hero.jpg",
+        "imageAlt": "Nexus AI Dashboard"
       },
       "ru": {
-        "heading": "Бесконечный масштаб",
-        "subheading": "Scalable cloud solutions for modern businesses. Automate and grow.",
-        "cta": "Начать",
-        "image": "/media/presets/saas_startup/hero.jpg"
+        "heading": "Видеть всё.\nКонтролировать всё.\nОптимизировать всё.",
+        "subheading": "Единая ИИ-платформа для объединения расходов, рисков и соответствия требованиям — чтобы каждая команда знала, что происходит.",
+        "cta": "Мгновенная видимость",
+        "secondaryCta": "Забронировать демо",
+        "image": "/media/presets/saas_startup/hero.jpg",
+        "imageAlt": "Nexus AI Dashboard"
       }
     },
-    "about": {
-      "en": {
-        "title": "About Us",
-        "text": "Building the infrastructure that powers the next generation of digital products."
-      },
-      "de": {
-        "title": "Über uns",
-        "text": "Wir bauen die Infrastruktur für die nächste Generation."
-      },
-      "ru": {
-        "title": "О нас",
-        "text": "Мы строим инфраструктуру для следующего поколения продуктов."
-      }
-    },
-    "services": [
+    "problemSolution": [
       {
-        "name_en": "CRM Setup",
-        "name_de": "CRM-Einrichtung",
-        "name_ru": "Настройка CRM",
-        "price": "$500/mo",
-        "desc_en": "Manage your leads effectively.",
-        "image": "/media/presets/saas_startup/services/crm.jpg"
+        "problem_de": "Blinde Ausgaben?",
+        "problem_en": "Blind Spend?",
+        "problem_ru": "Слепые расходы?",
+        "solution_de": "Inaktive Lizenzen und doppelte Tools in Minuten identifizieren.",
+        "solution_en": "Flag idle seats and duplicate tools in minutes.",
+        "solution_ru": "Выявляйте неактивные лицензии и дублирующие инструменты за минуты."
       },
       {
-        "name_en": "Data Analytics",
-        "name_de": "Datenanalyse",
-        "name_ru": "Аналитика данных",
-        "price": "$800/mo",
-        "desc_en": "Make data-driven decisions.",
-        "image": "/media/presets/saas_startup/services/analytics.jpg"
+        "problem_de": "Verstecktes Risiko?",
+        "problem_en": "Hidden risk?",
+        "problem_ru": "Скрытый риск?",
+        "solution_de": "Fehlkonfigurationen und Zugriffsabweichungen nach Auswirkung priorisieren.",
+        "solution_en": "Prioritize misconfigurations and access drift by impact.",
+        "solution_ru": "Приоритизируйте неправильные конфигурации и отклонения доступа по влиянию."
+      },
+      {
+        "problem_de": "Audit-Muedigkeit?",
+        "problem_en": "Audit fatigue?",
+        "problem_ru": "Усталость от аудитов?",
+        "solution_de": "Nachweispakete auf Abruf generieren.",
+        "solution_en": "Generate evidence packages on demand.",
+        "solution_ru": "Генерируйте пакеты доказательств по запросу."
       }
     ],
-    "testimonials": [
+    "outcomes": [
       {
-        "name": "Dev Inc",
-        "text_en": "CloudScale helped us handle 10x traffic overnight.",
-        "text_de": "CloudScale helped us handle 10x traffic overnight.",
-        "text_ru": "CloudScale helped us handle 10x traffic overnight.",
-        "rating": 5,
-        "avatar": "/media/presets/saas_startup/avatars/dev.jpg"
+        "title_de": "Ausgaben optimieren",
+        "title_en": "Optimize Spend",
+        "title_ru": "Оптимизировать расходы",
+        "desc_de": "Verschwendung beseitigen, Tiers anpassen und genau prognostizieren.",
+        "desc_en": "Remove waste, right-size tiers, and forecast accurately.",
+        "desc_ru": "Устраняйте потери, оптимизируйте уровни и точно прогнозируйте.",
+        "icon": "💰"
+      },
+      {
+        "title_de": "Compliance nachweisen",
+        "title_en": "Prove Compliance",
+        "title_ru": "Доказать соответствие",
+        "desc_de": "Kontrollen zuordnen; SOC 2 / ISO 27001 / DSGVO-Berichte exportieren.",
+        "desc_en": "Map controls; export SOC 2 / ISO 27001 / GDPR reports.",
+        "desc_ru": "Сопоставляйте контроли; экспортируйте отчёты SOC 2 / ISO 27001 / GDPR.",
+        "icon": "✅"
+      },
+      {
+        "title_de": "Risiko reduzieren",
+        "title_en": "Reduce Risk",
+        "title_ru": "Снизить риск",
+        "desc_de": "Riskante Konfigurationen und Zugriffe erkennen; Richtlinien kontinuierlich durchsetzen.",
+        "desc_en": "Detect risky configs and access; enforce policies continuously.",
+        "desc_ru": "Обнаруживайте рискованные конфигурации; применяйте политики непрерывно.",
+        "icon": "🛡️"
+      }
+    ],
+    "teamPersonas": [
+      {
+        "role_de": "Finanzen und Einkauf",
+        "role_en": "Finance and Procurement",
+        "role_ru": "Финансы и закупки",
+        "desc_de": "ROI fuer jeden Euro nachweisen; Anbieter konsolidieren.",
+        "desc_en": "Prove ROI on every dollar; consolidate vendors.",
+        "desc_ru": "Доказывайте ROI на каждый евро; консолидируйте поставщиков.",
+        "icon": "📊"
+      },
+      {
+        "role_de": "CISOs und Sicherheit",
+        "role_en": "CISOs and Security",
+        "role_ru": "CISO и безопасность",
+        "desc_de": "Exposition mit kontinuierlichen Pruefungen und Richtliniendurchsetzung reduzieren.",
+        "desc_en": "Reduce exposure with continuous checks and policy enforcement.",
+        "desc_ru": "Снижайте уязвимость с помощью непрерывных проверок.",
+        "icon": "🔒"
+      },
+      {
+        "role_de": "IT und Plattform",
+        "role_en": "IT and Platform",
+        "role_ru": "IT и платформа",
+        "desc_de": "Bereitstellung, Bereinigung und Lebenszyklusvorgaenge optimieren.",
+        "desc_en": "Streamline provisioning, cleanup, and lifecycle ops.",
+        "desc_ru": "Оптимизируйте подготовку, очистку и операции жизненного цикла.",
+        "icon": "⚙️"
+      },
+      {
+        "role_de": "Risiko und Compliance",
+        "role_en": "Risk and Compliance",
+        "role_ru": "Риск и соответствие",
+        "desc_de": "Nachweise automatisieren und prueferfertige Berichte liefern.",
+        "desc_en": "Automate evidence and ship auditor-ready reports.",
+        "desc_ru": "Автоматизируйте доказательства и создавайте готовые для аудита отчёты.",
+        "icon": "📋"
+      }
+    ],
+    "capabilities": [
+      {
+        "title_de": "Einheitliches Dashboard",
+        "title_en": "Unified Dashboard",
+        "title_ru": "Единый дашборд",
+        "desc_de": "Eine Ansicht fuer Ausgaben, Risiken und Compliance.",
+        "desc_en": "One view of spend, risk, and compliance.",
+        "desc_ru": "Единый вид расходов, рисков и соответствия.",
+        "icon": "🖥️"
+      },
+      {
+        "title_de": "KI-Einblicke",
+        "title_en": "AI Insights",
+        "title_ru": "ИИ-аналитика",
+        "desc_de": "Probleme nach Geschaeftsauswirkung eingestuft.",
+        "desc_en": "Issues ranked by business impact.",
+        "desc_ru": "Проблемы, ранжированные по бизнес-влиянию.",
+        "icon": "🤖"
+      },
+      {
+        "title_de": "Richtlinien-Engine",
+        "title_en": "Policy Engine",
+        "title_ru": "Движок политик",
+        "desc_de": "Einmal erstellen, ueberall durchsetzen.",
+        "desc_en": "Create once, enforce everywhere.",
+        "desc_ru": "Создайте один раз, применяйте везде.",
+        "icon": "⚡"
+      },
+      {
+        "title_de": "Berichterstattung",
+        "title_en": "Reporting",
+        "title_ru": "Отчётность",
+        "desc_de": "Berichte und Nachweise per Klick exportieren.",
+        "desc_en": "Click-to-export reports and evidence.",
+        "desc_ru": "Экспортируйте отчёты и доказательства одним кликом.",
+        "icon": "📈"
+      }
+    ],
+    "services": [
+      {
+        "name_de": "Starter",
+        "name_en": "Starter",
+        "name_ru": "Стартер",
+        "price": "49 EUR/Monat",
+        "desc_de": "Bis zu 10 Nutzer. Dashboard, KI-Einblicke, Basis-Berichte.",
+        "desc_en": "Up to 10 users. Dashboard, AI insights, basic reports.",
+        "desc_ru": "До 10 пользователей. Дашборд, ИИ-аналитика, базовые отчёты.",
+        "tags": []
+      },
+      {
+        "name_de": "Professional",
+        "name_en": "Professional",
+        "name_ru": "Профессиональный",
+        "price": "149 EUR/Monat",
+        "desc_de": "Bis zu 50 Nutzer. Alle Funktionen + Compliance-Berichte + Integrationen.",
+        "desc_en": "Up to 50 users. All features + compliance reports + integrations.",
+        "desc_ru": "До 50 пользователей. Все функции + отчёты о соответствии + интеграции.",
+        "tags": [
+          "Beliebt"
+        ]
+      },
+      {
+        "name_de": "Enterprise",
+        "name_en": "Enterprise",
+        "name_ru": "Корпоративный",
+        "price": "Auf Anfrage",
+        "desc_de": "Unbegrenzte Nutzer. Dedizierter Support, SLA, Custom Integrationen.",
+        "desc_en": "Unlimited users. Dedicated support, SLA, custom integrations.",
+        "desc_ru": "Неограниченные пользователи. Выделенная поддержка, SLA, кастомные интеграции.",
+        "tags": []
+      }
+    ],
+    "faq": [
+      {
+        "q_de": "Wie schnell kann ich starten?",
+        "q_en": "How quickly can I get started?",
+        "q_ru": "Как быстро можно начать?",
+        "a_de": "In weniger als 30 Minuten. Verbinden Sie Ihre Tools, und Nexus AI beginnt sofort mit der Analyse.",
+        "a_en": "In less than 30 minutes. Connect your tools and Nexus AI starts analyzing immediately.",
+        "a_ru": "Менее чем за 30 минут. Подключите свои инструменты, и Nexus AI сразу начнёт анализ."
+      },
+      {
+        "q_de": "Welche Integrationen werden unterstuetzt?",
+        "q_en": "What integrations are supported?",
+        "q_ru": "Какие интеграции поддерживаются?",
+        "a_de": "Ueber 200 Integrationen: AWS, Azure, Google Cloud, Salesforce, Slack, Jira und viele mehr.",
+        "a_en": "Over 200 integrations: AWS, Azure, Google Cloud, Salesforce, Slack, Jira and many more.",
+        "a_ru": "Более 200 интеграций: AWS, Azure, Google Cloud, Salesforce, Slack, Jira и многие другие."
       }
     ],
     "contact": {
-      "address": "123 Main St, City",
-      "phone": "+1 234 567 890",
-      "email": "info@saas_startup.com",
-      "hours_en": "Mon-Fri: 9:00 AM - 6:00 PM",
-      "hours_de": "Mo-Fr: 09:00 - 18:00 Uhr",
-      "hours_ru": "Пн-Пт: 09:00 - 18:00"
+      "address": "Unter den Linden 10, 10117 Berlin",
+      "phone": "+49 30 1234 5678",
+      "email": "hello@nexus-ai.de",
+      "hours_de": "Mo-Fr: 09:00-18:00 Uhr",
+      "hours_en": "Mon-Fri: 9:00 AM-6:00 PM",
+      "hours_ru": "Пн-Пт: 09:00-18:00"
     },
-    "faq": [
-      {
-        "q_en": "How to start?",
-        "q_de": "Wie anfangen?",
-        "q_ru": "Как начать?",
-        "a_en": "Contact us today!",
-        "a_de": "Kontaktieren Sie uns!",
-        "a_ru": "Свяжитесь с нами!"
-      }
-    ]
-  },
-  "booking": {
-    "enabled": true,
-    "slots": [
-      "09:00",
-      "10:00",
-      "14:00",
-      "16:00"
-    ],
-    "duration": 60
+    "legal": {
+      "privacyNote_de": "Ihre Daten werden gemaess DSGVO verarbeitet.",
+      "priceNote_de": "Alle Preise inkl. MwSt. Jaehrliche Abrechnung verfuegbar mit 20% Rabatt."
+    }
   },
   "logo": {
-    "text": "CLOUD",
-    "tagline": "SCALE",
-    "font": "Orbitron"
+    "text": "Nexus",
+    "tagline": "AI PLATFORM",
+    "font": "Inter",
+    "style": "text_bold"
+  },
+  "social": {
+    "instagram": "",
+    "linkedin": "https://linkedin.com/company/nexus-ai"
   }
 }

@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Lichtmomente | Hochzeitsfotografie",
-    "description": "Hochzeitsfotografie in einem rohen, kinematografischen Stil. Dokumentarisch trifft Editorial. Eure Geschichte, erzaehlt in Bildern.",
+    "description": "Echte editoriale Hochzeitsfotografie. Wir erlauben Ihren einzigartigen Momenten, wuerdevoll zu altern. Weltweit.",
     "favicon": "/media/presets/wedding_photographer/favicon.ico",
     "language": "de",
     "availableLanguages": [
@@ -15,28 +15,28 @@
     "tokens": {
       "colorBackground": "#FAFAF8",
       "colorSurface": "#FFFFFF",
-      "colorPrimary": "#1A1A1A",
+      "colorPrimary": "#0A0A0A",
       "colorSecondary": "#6B6B6B",
       "colorBorder": "#E8E8E8",
-      "colorAccent": "#C9A96E",
-      "colorAccentHover": "#B8945A",
+      "colorAccent": "#0A0A0A",
+      "colorAccentHover": "#333333",
       "fontDisplay": "Cormorant Garamond",
       "fontHeading": "Cormorant Garamond",
       "fontBody": "Inter",
       "fontCaption": "Inter",
       "fontMono": "JetBrains Mono",
-      "fontSizeDisplay": "80px",
-      "fontSizeHeading": "40px",
-      "fontSizeBody": "16px",
+      "fontSizeDisplay": "96px",
+      "fontSizeHeading": "48px",
+      "fontSizeBody": "15px",
       "lineHeightBody": "1.8",
-      "lineHeightHeading": "1.2",
+      "lineHeightHeading": "1.0",
       "spacingUnit": "8px",
-      "spacingSection": "140px",
-      "spacingElement": "28px",
-      "spacingCard": "32px",
+      "spacingSection": "160px",
+      "spacingElement": "32px",
+      "spacingCard": "8px",
       "spacingButtonVertical": "14px",
       "spacingButtonHorizontal": "32px",
-      "maxWidthContent": "1200px",
+      "maxWidthContent": "1400px",
       "maxWidthText": "680px",
       "gridColumns": "12",
       "gridGutter": "8px",
@@ -45,8 +45,8 @@
       "horizontalPaddingDesktop": "80px",
       "borderRadius": "0",
       "borderRadiusSmall": "0px",
-      "borderRadiusMedium": "2px",
-      "borderRadiusLarge": "4px",
+      "borderRadiusMedium": "0px",
+      "borderRadiusLarge": "0px",
       "shadowStyle": "none",
       "shadowResting": "none",
       "shadowHover": "none",
@@ -61,124 +61,126 @@
     "ogImage": "/media/presets/wedding_photographer/og-default.jpg",
     "twitterCard": "summary_large_image",
     "googleAnalyticsId": "",
-    "keywords": "Hochzeitsfotograf, Hochzeitsfotografie, Brautpaar, Reportage, Editorial"
+    "keywords": "Hochzeitsfotograf, Hochzeitsfotografie, editorial, cinematic, weltweit"
   },
   "layout": {
-    "style": "clean_minimal",
-    "heroType": "fullscreen_portfolio",
+    "style": "editorial_minimal",
+    "heroType": "editorial_bold_text",
     "navStyle": "minimal_text_only",
-    "portfolioGallery": true,
-    "featuredWeddingsSection": true,
-    "pricingSection": true,
+    "pressQuoteSection": true,
+    "realWeddingsSection": true,
+    "portfolioGrid": true,
     "aboutSection": true,
-    "testimonialsLayout": "minimal_quotes",
+    "contactFormCustom": true,
+    "instagramSection": true,
+    "testimonialsLayout": "none",
     "footerStyle": "minimal_social"
   },
   "content": {
     "slogans": {
       "de": [
-        "Eure Verbindung. Roh. Kinematografisch.",
-        "Eure Geschichte in Bildern.",
-        "Dokumentarisch trifft Editorial."
+        "Hochzeitsfotografie neu definiert.",
+        "Echte editoriale Hochzeitsfotografie.",
+        "Wir erlauben Ihren Momenten, wuerdevoll zu altern."
       ],
       "en": [
-        "Your connection. Raw. Cinematic.",
-        "Your story told in images.",
-        "Documentary meets editorial."
+        "Wedding Photography Redefined.",
+        "Real editorial wedding photography.",
+        "Allowing your unique moments to age gracefully."
       ],
       "ru": [
-        "Ваша связь. Сырая. Кинематографичная.",
-        "Ваша история в снимках.",
-        "Документальное встречает редакционное."
+        "Свадебная фотография переосмыслена.",
+        "Настоящая редакционная свадебная фотография.",
+        "Позволяем вашим моментам стареть достойно."
       ]
     },
     "hero": {
       "de": {
-        "heading": "Eure Geschichte.\nIn Bildern erzaehlt.",
-        "subheading": "Hochzeitsfotografie in einem rohen, kinematografischen Stil — dokumentarisch trifft editorial.",
+        "heading": "HOCHZEITS-\nFOTOGRAFIE\nneu definiert",
+        "subheading": "Echte editoriale Hochzeitsfotografie — Ihre einzigartigen Momente wuerdevoll festgehalten.",
         "cta": "Portfolio ansehen",
         "secondaryCta": "Kontakt aufnehmen",
         "image": "/media/presets/wedding_photographer/hero.jpg",
         "imageAlt": "Lichtmomente Hochzeitsfotografie"
       },
       "en": {
-        "heading": "Your story.\nTold in images.",
-        "subheading": "Wedding photography in a raw, cinematic style — documentary meets editorial.",
+        "heading": "WEDDING\nPHOTOGRAPHY\nRedefined",
+        "subheading": "Real editorial wedding photography — allowing your unique moments to age gracefully.",
         "cta": "View Portfolio",
         "secondaryCta": "Get in Touch",
         "image": "/media/presets/wedding_photographer/hero.jpg",
         "imageAlt": "Lichtmomente Wedding Photography"
       },
       "ru": {
-        "heading": "Ваша история.\nРассказанная в снимках.",
-        "subheading": "Свадебная фотография в сыром, кинематографичном стиле — документальное встречает редакционное.",
+        "heading": "СВАДЕБНАЯ\nФОТОГРАФИЯ\nПереосмыслена",
+        "subheading": "Настоящая редакционная свадебная фотография — ваши уникальные моменты, запечатлённые достойно.",
         "cta": "Смотреть портфолио",
         "secondaryCta": "Связаться",
         "image": "/media/presets/wedding_photographer/hero.jpg",
         "imageAlt": "Lichtmomente Свадебная фотография"
       }
     },
+    "pressQuote": {
+      "text_de": "Gibt es jemanden, der Liebe so festhalten kann wie Lichtmomente?",
+      "text_en": "Is there anyone who can perpetuate love as Lichtmomente can?",
+      "text_ru": "Есть ли кто-то, кто может увековечить любовь так, как Lichtmomente?",
+      "source": "VOGUE DEUTSCHLAND"
+    },
     "about": {
       "de": {
-        "title": "Ueber mich",
-        "subtitle": "Lichtmomente Fotografie",
-        "text": "Bei Lichtmomente lieben wir es, wunderschoene Geschichten zu gestalten und eure Verbindung auf eine rohe, kinematografische Weise einzufangen — dokumentarisch trifft editorial. Schaut euch gerne um. Oder wenn ihr ein Gespraech moechtet, nehmt Kontakt auf und wir koennen ueber eure Wuensche fuer euren Tag sprechen.",
-        "image": "/media/presets/wedding_photographer/about.jpg",
-        "imageAlt": "Fotografin bei der Arbeit",
+        "title": "Von Menschen inspiriert.\nVon Mode beeinflusst.",
+        "subtitle": "Ein Team von Fotografen mit globalem Geschmack und europaeischem Flair.",
+        "text": "Wir kuemmern uns nur darum, Ihre Hochzeit unvergesslich zu machen. Zehn Jahre damit verbracht, Hochzeitsfotografie auf der ganzen Welt zu perfektionieren und zu verstehen, wie sehr manche Tage den Lauf Ihres Lebens veraendern.",
         "stats": [
           {
-            "value": "200+",
-            "label": "Hochzeiten fotografiert"
-          },
-          {
-            "value": "8",
+            "value": "10+",
             "label": "Jahre Erfahrung"
           },
           {
-            "value": "5★",
-            "label": "Durchschnittliche Bewertung"
+            "value": "500+",
+            "label": "Hochzeiten weltweit"
+          },
+          {
+            "value": "3h",
+            "label": "Antwortzeit"
           }
         ]
       },
       "en": {
-        "title": "About me",
-        "subtitle": "Lichtmomente Photography",
-        "text": "At Lichtmomente we love crafting beautiful stories capturing your connection in a raw, cinematic way blending documentary with fashion, editorial elements to ensure you have your wedding the way you want it.",
-        "image": "/media/presets/wedding_photographer/about.jpg",
-        "imageAlt": "Photographer at work",
+        "title": "Inspired by people.\nInfluenced by fashion.",
+        "subtitle": "A team of photographers with global flavour and European spice.",
+        "text": "Caring only about making your wedding unforgettable. Ten years of perfecting wedding photography around the globe and understanding how much some days change the course of your life.",
         "stats": [
           {
-            "value": "200+",
-            "label": "Weddings photographed"
-          },
-          {
-            "value": "8",
+            "value": "10+",
             "label": "Years of experience"
           },
           {
-            "value": "5★",
-            "label": "Average rating"
+            "value": "500+",
+            "label": "Weddings worldwide"
+          },
+          {
+            "value": "3h",
+            "label": "Response time"
           }
         ]
       },
       "ru": {
-        "title": "Обо мне",
-        "subtitle": "Lichtmomente Фотография",
-        "text": "В Lichtmomente мы любим создавать красивые истории, запечатлевая вашу связь в сыром, кинематографичном стиле, сочетая документальное с модным, редакционным подходом.",
-        "image": "/media/presets/wedding_photographer/about.jpg",
-        "imageAlt": "Фотограф за работой",
+        "title": "Вдохновлены людьми.\nПод влиянием моды.",
+        "subtitle": "Команда фотографов с глобальным вкусом и европейским шармом.",
+        "text": "Мы заботимся только о том, чтобы сделать вашу свадьбу незабываемой. Десять лет совершенствования свадебной фотографии по всему миру.",
         "stats": [
           {
-            "value": "200+",
-            "label": "Свадеб снято"
-          },
-          {
-            "value": "8",
+            "value": "10+",
             "label": "Лет опыта"
           },
           {
-            "value": "5★",
-            "label": "Средняя оценка"
+            "value": "500+",
+            "label": "Свадеб по всему миру"
+          },
+          {
+            "value": "3ч",
+            "label": "Время ответа"
           }
         ]
       }
@@ -188,74 +190,67 @@
         "name_de": "Elopement Paket",
         "name_en": "Elopement Package",
         "name_ru": "Пакет Elopement",
-        "price": "ab 1.200 EUR",
-        "desc_de": "Bis zu 4 Stunden. Perfekt fuer intime Zeremonien und Paarshooting. Digitale Galerie mit 200+ Bildern.",
-        "desc_en": "Up to 4 hours. Perfect for intimate ceremonies and couple shoots. Digital gallery with 200+ images.",
-        "desc_ru": "До 4 часов. Идеально для интимных церемоний и съёмки пары. Цифровая галерея с 200+ снимками.",
+        "price": "ab 1.500 EUR",
+        "desc_de": "Bis zu 4 Stunden. Perfekt fuer intime Zeremonien. Digitale Galerie mit 200+ Bildern.",
+        "desc_en": "Up to 4 hours. Perfect for intimate ceremonies. Digital gallery with 200+ images.",
+        "desc_ru": "До 4 часов. Идеально для интимных церемоний. Цифровая галерея с 200+ снимками.",
         "tags": []
       },
       {
         "name_de": "Ganztages Paket",
         "name_en": "Full Day Package",
         "name_ru": "Пакет на весь день",
-        "price": "ab 2.400 EUR",
-        "desc_de": "Von der Vorbereitung bis zur Party. 8-10 Stunden. Digitale Galerie mit 500+ Bildern. Zweite Fotografin optional.",
-        "desc_en": "From preparation to party. 8-10 hours. Digital gallery with 500+ images. Second photographer optional.",
-        "desc_ru": "От подготовки до вечеринки. 8-10 часов. Цифровая галерея с 500+ снимками. Второй фотограф опционально.",
+        "price": "ab 3.500 EUR",
+        "desc_de": "Von der Vorbereitung bis zur Party. 10-12 Stunden. 600+ Bilder. Zweite Fotografin inklusive.",
+        "desc_en": "From preparation to party. 10-12 hours. 600+ images. Second photographer included.",
+        "desc_ru": "От подготовки до вечеринки. 10-12 часов. 600+ снимков. Второй фотограф включён.",
         "tags": [
           "Beliebt"
         ]
       },
       {
-        "name_de": "Verlobungs-Shooting",
-        "name_en": "Engagement Shoot",
-        "name_ru": "Съёмка помолвки",
-        "price": "ab 400 EUR",
-        "desc_de": "1-2 Stunden. Lernt mich kennen, bevor der grosse Tag kommt. Digitale Galerie mit 80+ Bildern.",
-        "desc_en": "1-2 hours. Get to know me before the big day. Digital gallery with 80+ images.",
-        "desc_ru": "1-2 часа. Познакомьтесь со мной до большого дня. Цифровая галерея с 80+ снимками.",
-        "tags": []
+        "name_de": "Destination Wedding",
+        "name_en": "Destination Wedding",
+        "name_ru": "Свадьба за рубежом",
+        "price": "auf Anfrage",
+        "desc_de": "Weltweit. Italien, Frankreich, Griechenland und mehr. Reisekosten inklusive.",
+        "desc_en": "Worldwide. Italy, France, Greece and more. Travel costs included.",
+        "desc_ru": "По всему миру. Италия, Франция, Греция и другие. Транспортные расходы включены.",
+        "tags": [
+          "Premium"
+        ]
       }
     ],
     "featuredWeddings": [
       {
-        "title_de": "Anna & Markus — Schloss Heidelberg",
-        "title_en": "Anna & Markus — Heidelberg Castle",
-        "title_ru": "Анна и Маркус — Замок Гейдельберг",
+        "title_de": "Zeitlose Hochzeit an der Villa Pizzo, Comer See",
+        "title_en": "A Timeless Destination Wedding at Villa Pizzo, Lake Como",
+        "title_ru": "Вневременная свадьба на вилле Пиццо, озеро Комо",
         "image": "/media/presets/wedding_photographer/featured/1.jpg",
-        "date": "Juni 2024"
+        "location": "Lake Como, Italy"
       },
       {
-        "title_de": "Sophie & Jan — Schwarzwald",
-        "title_en": "Sophie & Jan — Black Forest",
-        "title_ru": "Зофи и Ян — Шварцвальд",
+        "title_de": "Eleganz im Schloss Neuschwanstein",
+        "title_en": "Old-World Elegance at Neuschwanstein Castle",
+        "title_ru": "Элегантность старого света в замке Нойшванштайн",
         "image": "/media/presets/wedding_photographer/featured/2.jpg",
-        "date": "August 2024"
+        "location": "Bavaria, Germany"
       },
       {
-        "title_de": "Lisa & Tom — Bodensee",
-        "title_en": "Lisa & Tom — Lake Constance",
-        "title_ru": "Лиза и Том — Боденское озеро",
+        "title_de": "Erinnerungen am Bodensee",
+        "title_en": "Lakeside Memories at Lake Constance",
+        "title_ru": "Воспоминания у Боденского озера",
         "image": "/media/presets/wedding_photographer/featured/3.jpg",
-        "date": "September 2024"
+        "location": "Lake Constance, Germany"
       }
     ],
     "testimonials": [
       {
-        "name": "Anna & Markus",
+        "name": "Anna und Markus",
         "location_de": "Heidelberg",
-        "text_de": "Die Fotos sind atemberaubend. Sie hat unseren Tag perfekt eingefangen — die kleinen Momente, die man sonst vergisst. Wir koennen sie nur waermstens empfehlen.",
-        "text_en": "The photos are breathtaking. She captured our day perfectly — the small moments you would otherwise forget. We can only warmly recommend her.",
-        "text_ru": "Фотографии захватывают дух. Она идеально запечатлела наш день — маленькие моменты, которые иначе забываются. Горячо рекомендуем.",
-        "rating": 5,
-        "source": "Google"
-      },
-      {
-        "name": "Sophie & Jan",
-        "location_de": "Freiburg",
-        "text_de": "Wir haben uns von Anfang an wohlgefuehlt. Der Stil ist genau das, was wir wollten — natuerlich, emotional, zeitlos.",
-        "text_en": "We felt comfortable from the start. The style is exactly what we wanted — natural, emotional, timeless.",
-        "text_ru": "Мы чувствовали себя комфортно с самого начала. Стиль именно такой, какой мы хотели — естественный, эмоциональный, вневременной.",
+        "text_de": "Die Fotos sind atemberaubend. Sie hat unseren Tag perfekt eingefangen — die kleinen Momente, die man sonst vergisst. Absolut empfehlenswert.",
+        "text_en": "The photos are breathtaking. She captured our day perfectly — the small moments you would otherwise forget. Absolutely recommended.",
+        "text_ru": "Фотографии захватывают дух. Она идеально запечатлела наш день. Горячо рекомендуем.",
         "rating": 5,
         "source": "Google"
       }
@@ -265,39 +260,31 @@
         "q_de": "Wie weit im Voraus soll ich buchen?",
         "q_en": "How far in advance should I book?",
         "q_ru": "За сколько нужно бронировать?",
-        "a_de": "Ich empfehle mindestens 6-12 Monate im Voraus, besonders fuer Sommer-Hochzeiten. Kontaktiert mich fruehzeitig!",
-        "a_en": "I recommend at least 6-12 months in advance, especially for summer weddings. Contact me early!",
-        "a_ru": "Рекомендую минимум за 6-12 месяцев, особенно для летних свадеб. Свяжитесь со мной заранее!"
+        "a_de": "Wir empfehlen mindestens 6-12 Monate im Voraus, besonders fuer Sommer-Hochzeiten und Destination Weddings.",
+        "a_en": "We recommend at least 6-12 months in advance, especially for summer weddings and destination weddings.",
+        "a_ru": "Рекомендуем минимум за 6-12 месяцев, особенно для летних свадеб и свадеб за рубежом."
       },
       {
-        "q_de": "Reist du auch?",
+        "q_de": "Reist ihr auch?",
         "q_en": "Do you travel?",
         "q_ru": "Вы выезжаете?",
-        "a_de": "Ja! Ich fotografiere Hochzeiten in ganz Deutschland und Europa. Reisekosten werden separat berechnet.",
-        "a_en": "Yes! I photograph weddings throughout Germany and Europe. Travel costs are calculated separately.",
-        "a_ru": "Да! Снимаю свадьбы по всей Германии и Европе. Транспортные расходы рассчитываются отдельно."
-      },
-      {
-        "q_de": "Wann erhalte ich meine Fotos?",
-        "q_en": "When will I receive my photos?",
-        "q_ru": "Когда я получу фотографии?",
-        "a_de": "Innerhalb von 6-8 Wochen nach eurer Hochzeit erhaltet ihr eure vollstaendige digitale Galerie.",
-        "a_en": "Within 6-8 weeks after your wedding you will receive your complete digital gallery.",
-        "a_ru": "В течение 6-8 недель после свадьбы вы получите полную цифровую галерею."
+        "a_de": "Ja! Wir fotografieren Hochzeiten in ganz Deutschland und Europa. Reisekosten werden separat berechnet.",
+        "a_en": "Yes! We photograph weddings throughout Germany and Europe. Travel costs are calculated separately.",
+        "a_ru": "Да! Снимаем свадьбы по всей Германии и Европе. Транспортные расходы рассчитываются отдельно."
       }
     ],
     "contact": {
       "address": "Freiburg im Breisgau, Deutschland",
       "phone": "+49 761 9876 5432",
       "email": "hallo@lichtmomente-foto.de",
-      "hours_de": "Antwort innerhalb von 24 Stunden",
-      "hours_en": "Response within 24 hours",
-      "hours_ru": "Ответ в течение 24 часов"
+      "hours_de": "Antwort innerhalb von 3 Stunden",
+      "hours_en": "Response within 3 hours",
+      "hours_ru": "Ответ в течение 3 часов"
     },
     "legal": {
-      "priceNote_de": "Alle Preise inkl. MwSt. (19%). Anzahlung von 30% bei Buchung. Restbetrag 4 Wochen vor dem Termin.",
-      "cancellationPolicy_de": "Stornierung bis 3 Monate vor dem Termin: 50% Rueckerstattung. Spaetere Stornierungen: keine Rueckerstattung.",
-      "privacyNote_de": "Ihre Daten werden gemaess DSGVO verarbeitet. Fotos werden nur mit Ihrer Zustimmung veroeffentlicht."
+      "priceNote_de": "Alle Preise inkl. MwSt. (19%). Anzahlung von 30% bei Buchung.",
+      "cancellationPolicy_de": "Stornierung bis 3 Monate vor dem Termin: 50% Rueckerstattung.",
+      "privacyNote_de": "Fotos werden nur mit Ihrer Zustimmung veroeffentlicht. DSGVO-konform."
     }
   },
   "logo": {

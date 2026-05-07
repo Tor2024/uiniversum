@@ -1,10 +1,14 @@
 {
   "meta": {
     "title": "Napoli Vera | Authentische Neapolitanische Pizza",
-    "description": "Echte neapolitanische Pizza nach traditionellem Rezept. Unser Teig reift 72 Stunden, wird bei 485°C gebacken und mit den besten saisonalen Zutaten belegt.",
+    "description": "4 Tage. 4 Zutaten. Authentische neapolitanische Pizza in Berlin. Unser Teig fermentiert 4 Tage lang fuer die perfekte Kruste.",
     "favicon": "/media/presets/restaurant_pizza/favicon.ico",
     "language": "de",
-    "availableLanguages": ["de", "en", "ru"]
+    "availableLanguages": [
+      "de",
+      "en",
+      "ru"
+    ]
   },
   "design": {
     "preset": "restaurant_pizza",
@@ -13,274 +17,486 @@
       "colorSurface": "#FFFFFF",
       "colorPrimary": "#1A1A1A",
       "colorSecondary": "#6B6B6B",
-      "colorBorder": "#E8E8E4",
+      "colorBorder": "#E5E5E5",
       "colorAccent": "#D63B1F",
-      "colorAccentHover": "#B82E14",
+      "colorAccentHover": "#B82E15",
       "fontDisplay": "DM Serif Display",
       "fontHeading": "DM Serif Display",
-      "fontBody": "DM Sans",
-      "fontCaption": "DM Sans",
-      "fontMono": "Roboto Mono",
-      "fontSizeDisplay": "88px",
+      "fontBody": "Inter",
+      "fontCaption": "Inter",
+      "fontMono": "JetBrains Mono",
+      "fontSizeDisplay": "80px",
       "fontSizeHeading": "40px",
-      "fontSizeBody": "17px",
-      "lineHeightBody": "1.75",
-      "lineHeightHeading": "1.2",
+      "fontSizeBody": "16px",
+      "lineHeightBody": "1.7",
+      "lineHeightHeading": "1.1",
       "spacingUnit": "8px",
-      "spacingSection": "160px",
-      "spacingElement": "32px",
-      "spacingCard": "40px",
-      "spacingButtonVertical": "16px",
-      "spacingButtonHorizontal": "36px",
-      "maxWidthContent": "1200px",
+      "spacingSection": "120px",
+      "spacingElement": "24px",
+      "spacingCard": "28px",
+      "spacingButtonVertical": "14px",
+      "spacingButtonHorizontal": "32px",
+      "maxWidthContent": "1100px",
       "maxWidthText": "680px",
       "gridColumns": "12",
-      "gridGutter": "32px",
-      "horizontalPaddingMobile": "24px",
+      "gridGutter": "28px",
+      "horizontalPaddingMobile": "20px",
       "horizontalPaddingTablet": "48px",
-      "horizontalPaddingDesktop": "96px",
+      "horizontalPaddingDesktop": "80px",
       "borderRadius": "0",
       "borderRadiusSmall": "0px",
       "borderRadiusMedium": "2px",
       "borderRadiusLarge": "4px",
-      "shadowStyle": "minimal",
-      "shadowResting": "0 1px 4px rgba(0,0,0,0.06)",
-      "shadowHover": "0 4px 16px rgba(0,0,0,0.1)",
+      "shadowStyle": "none",
+      "shadowResting": "none",
+      "shadowHover": "none",
       "transitionDuration": "200ms",
       "transitionTiming": "ease-out",
       "imageRatioHero": "16:9",
       "imageRatioCard": "4:3",
       "imageRatioAvatar": "1:1"
-    },
-    "customCss": ""
+    }
   },
   "seo": {
     "ogImage": "/media/presets/restaurant_pizza/og-default.jpg",
     "twitterCard": "summary_large_image",
     "googleAnalyticsId": "",
-    "keywords": "Neapolitanische Pizza, Pizzeria Berlin, Holzofen, Authentisch, Pizza bestellen"
+    "keywords": "Pizzeria Berlin, Neapolitanische Pizza, Sauerteig, authentisch, Holzofen"
   },
   "layout": {
     "style": "clean_minimal",
-    "heroType": "fullscreen_text_center",
-    "navStyle": "minimal_white",
-    "menuLayout": "storytelling_scroll",
-    "aboutLayout": "text_center_wide",
-    "testimonialsLayout": "light_background",
-    "footerStyle": "minimal_clean"
+    "heroType": "fullscreen_bold_text",
+    "announcementBar": true,
+    "navStyle": "minimal_text_only",
+    "doughStorySection": true,
+    "seasonalSection": true,
+    "menuTabsBar": true,
+    "menuStyle": "pizza_list",
+    "limoncelloSection": true,
+    "newsletterSection": true,
+    "footerStyle": "minimal_social"
   },
   "content": {
+    "announcementBar": {
+      "de": "PV PERKS! 5 EUR Rabatt fuer je 50 EUR Umsatz. Jetzt anmelden.",
+      "en": "PV PERKS! Earn 5 EUR back for every 50 EUR spent. Sign Up.",
+      "ru": "PV PERKS! 5 EUR скидка за каждые 50 EUR. Зарегистрируйтесь."
+    },
     "slogans": {
-      "de": ["4 Zutaten. 72 Stunden. Eine Pizza.", "Perfektion braucht Zeit.", "Neapel in Berlin."],
-      "en": ["4 Ingredients. 72 Hours. One Pizza.", "Perfection takes time.", "Naples in Berlin."],
-      "ru": ["4 ингредиента. 72 часа. Одна пицца.", "Совершенство требует времени.", "Неаполь в Берлине."]
+      "de": [
+        "4 Tage. 4 Zutaten.",
+        "Die Kunst der authentischen neapolitanischen Pizza.",
+        "Perfekt unvollkommen."
+      ],
+      "en": [
+        "4 days. 4 ingredients.",
+        "The art of authentic Neapolitan pizza.",
+        "Perfectly imperfect."
+      ],
+      "ru": [
+        "4 дня. 4 ингредиента.",
+        "Искусство настоящей неаполитанской пиццы.",
+        "Идеально несовершенная."
+      ]
     },
     "hero": {
       "de": {
-        "heading": "4 Zutaten. 72 Stunden.",
-        "subheading": "Unser Teig wird aus Wasser, Mehl, Salz und Hefe hergestellt — und reift 72 Stunden lang. Das Ergebnis: eine Pizza, die Sie nie vergessen werden.",
+        "heading": "4 TAGE.\n4 ZUTATEN.",
+        "subheading": "In Berlin-Mitte, Prenzlauer Berg und Kreuzberg.",
         "cta": "Speisekarte ansehen",
-        "secondaryCta": "Tisch reservieren",
+        "secondaryCta": "Online bestellen",
         "image": "/media/presets/restaurant_pizza/hero.jpg",
-        "imageAlt": "Frisch gebackene neapolitanische Pizza aus dem Holzofen"
+        "imageAlt": "Napoli Vera Pizza Berlin"
       },
       "en": {
-        "heading": "4 Ingredients. 72 Hours.",
-        "subheading": "Our dough is made from water, flour, salt and yeast — and ferments for 72 hours. The result: a pizza you will never forget.",
-        "cta": "View Menu",
-        "secondaryCta": "Reserve a Table",
+        "heading": "4 DAYS.\n4 INGREDIENTS.",
+        "subheading": "Located in Berlin-Mitte, Prenzlauer Berg and Kreuzberg.",
+        "cta": "See the Menu",
+        "secondaryCta": "Order Online",
         "image": "/media/presets/restaurant_pizza/hero.jpg",
-        "imageAlt": "Freshly baked Neapolitan pizza from the wood-fired oven"
+        "imageAlt": "Napoli Vera Pizza Berlin"
       },
       "ru": {
-        "heading": "4 ингредиента. 72 часа.",
-        "subheading": "Наше тесто готовится из воды, муки, соли и дрожжей — и ферментируется 72 часа. Результат: пицца, которую вы никогда не забудете.",
+        "heading": "4 ДНЯ.\n4 ИНГРЕДИЕНТА.",
+        "subheading": "В Берлин-Митте, Пренцлауэр-Берге и Кройцберге.",
         "cta": "Смотреть меню",
-        "secondaryCta": "Забронировать столик",
+        "secondaryCta": "Заказать онлайн",
         "image": "/media/presets/restaurant_pizza/hero.jpg",
-        "imageAlt": "Свежеиспечённая неаполитанская пицца из дровяной печи"
+        "imageAlt": "Napoli Vera Pizza Berlin"
       }
     },
-    "story": {
-      "de": {
-        "title": "Die Kunst des Teigs",
-        "blocks": [
-          {
-            "heading": "Der Teig",
-            "text": "Unser Teig besteht aus vier Zutaten: Wasser, Tipo-00-Mehl aus Neapel, Meersalz und frischer Hefe. Er wird von Hand geknetet und reift 72 Stunden bei kontrollierter Temperatur. Diese langsame Fermentation erzeugt die charakteristischen Luftblasen — das sogenannte Leoparding — und einen Geschmack, den kein Schnellverfahren erreichen kann.",
-            "image": "/media/presets/restaurant_pizza/story/dough.jpg",
-            "imageAlt": "Pizzateig wird von Hand geknetet"
-          },
-          {
-            "heading": "Der Ofen",
-            "text": "Unser Holzofen aus Neapel erreicht 485°C. Bei dieser Temperatur backt eine Pizza in 90 Sekunden — mit einem knusprigen Rand, einem weichen Boden und dem unverwechselbaren Rauchgeschmack, der nur im echten Holzofen entsteht.",
-            "image": "/media/presets/restaurant_pizza/story/oven.jpg",
-            "imageAlt": "Holzofen bei 485 Grad"
-          },
-          {
-            "heading": "Die Zutaten",
-            "text": "San-Marzano-Tomaten aus dem Vesuv-Gebiet. Büffelmozzarella aus Kampanien. Basilikum aus unserem Kräutergarten. Olivenöl extra vergine aus Sizilien. Wir kompromittieren nicht bei den Zutaten — denn eine gute Pizza braucht keine Tricks.",
-            "image": "/media/presets/restaurant_pizza/story/ingredients.jpg",
-            "imageAlt": "Frische Zutaten: San-Marzano-Tomaten und Büffelmozzarella"
-          }
-        ]
-      }
+    "doughStory": {
+      "title_de": "DIE KUNST DER AUTHENTISCHEN NEAPOLITANISCHEN PIZZA",
+      "title_en": "THE ART OF AUTHENTIC NEAPOLITAN PIZZA",
+      "title_ru": "ИСКУССТВО НАСТОЯЩЕЙ НЕАПОЛИТАНСКОЙ ПИЦЦЫ",
+      "subtitle_de": "Keine zwei Pizzen bei Napoli Vera sind gleich. Perfekt unvollkommen.",
+      "subtitle_en": "No two pizzas at Napoli Vera are the same. Perfectly imperfect.",
+      "subtitle_ru": "Никакие две пиццы в Napoli Vera не одинаковы. Идеально несовершенные.",
+      "doughTitle_de": "DER TEIG",
+      "doughTitle_en": "THE DOUGH",
+      "doughTitle_ru": "ТЕСТО",
+      "doughText_de": "Unser Teig wird aus vier Zutaten hergestellt und vier Tage lang fermentiert. Diese Liebesarbeit schafft eine zaehere und knusprigere Textur mit verkohlten Blasen, bekannt als Leoparding.",
+      "doughText_en": "Our dough is made with four ingredients and fermented for four days, always. This labor of love creates a chewy and crunchy texture with charred bubbles known as leoparding.",
+      "doughText_ru": "Наше тесто готовится из четырёх ингредиентов и ферментируется четыре дня. Этот труд любви создаёт жевательную текстуру с обугленными пузырями, известными как леопардинг.",
+      "ovenText_de": "Unsere Pizza wird bei 650 Grad in unseren offenen Kuechen gebacken und mit den besten saisonalen Zutaten fertiggestellt.",
+      "ovenText_en": "Our pizza is cooked at 650 degrees in our open kitchens and finished with the best seasonal ingredients.",
+      "ovenText_ru": "Наша пицца готовится при 650 градусах в открытых кухнях и завершается лучшими сезонными ингредиентами.",
+      "image": "/media/presets/restaurant_pizza/dough.jpg"
     },
+    "seasonal": {
+      "title_de": "FRISCH UND SAISONAL",
+      "title_en": "FEELIN FRESH",
+      "title_ru": "СВЕЖЕЕ И СЕЗОННОЕ",
+      "subtitle_de": "Unsere aktuellen Saisonspezialitaeten:",
+      "subtitle_en": "Check out our current seasonal items:",
+      "subtitle_ru": "Наши текущие сезонные позиции:",
+      "food": [
+        {
+          "name_de": "Wild-Pesto-Pizza",
+          "name_en": "Wild Pesto Pizza",
+          "name_ru": "Пицца с диким песто"
+        },
+        {
+          "name_de": "Lamm-Puttanesca-Pizza",
+          "name_en": "Lamb Puttanesca Pizza",
+          "name_ru": "Пицца Ягнёнок Путтанеска"
+        },
+        {
+          "name_de": "Pilze",
+          "name_en": "Shrooms",
+          "name_ru": "Грибы"
+        },
+        {
+          "name_de": "Erdbeer-Burrata-Salat",
+          "name_en": "Strawberry Burrata Salad",
+          "name_ru": "Салат Клубника-Буррата"
+        }
+      ],
+      "drinks": [
+        {
+          "name_de": "Fruehlings-Sangria",
+          "name_en": "Spring Sangria",
+          "name_ru": "Весенняя Сангрия"
+        },
+        {
+          "name_de": "PV Margarita",
+          "name_en": "PV Margarita",
+          "name_ru": "PV Маргарита"
+        },
+        {
+          "name_de": "Basilikum Smash",
+          "name_en": "Basil Smash",
+          "name_ru": "Базиликовый Смэш"
+        }
+      ],
+      "cta_de": "Speisekarte ansehen",
+      "cta_en": "See the Menu",
+      "cta_ru": "Смотреть меню"
+    },
+    "menuTabs": [
+      {
+        "id": "food",
+        "label_de": "Speisen",
+        "label_en": "Food",
+        "label_ru": "Еда",
+        "active": true
+      },
+      {
+        "id": "drinks",
+        "label_de": "Getraenke",
+        "label_en": "Drinks",
+        "label_ru": "Напитки"
+      },
+      {
+        "id": "desserts",
+        "label_de": "Desserts",
+        "label_en": "Desserts",
+        "label_ru": "Десерты"
+      }
+    ],
     "menu": [
-      {
-        "category_de": "Klassiker",
-        "category_en": "Classics",
-        "category_ru": "Классика",
-        "items": [
-          {
-            "name_de": "Margherita",
-            "name_en": "Margherita",
-            "name_ru": "Маргарита",
-            "price": "14€",
-            "desc_de": "San-Marzano-Tomaten, Büffelmozzarella, frisches Basilikum, Olivenöl (V)",
-            "desc_en": "San Marzano tomatoes, buffalo mozzarella, fresh basil, olive oil (V)",
-            "desc_ru": "Томаты Сан-Марцано, моцарелла из буйволиного молока, свежий базилик, оливковое масло (V)",
-            "allergens_de": "Enthält: Milch, Gluten",
-            "image": "/media/presets/restaurant_pizza/menu/margherita.jpg",
-            "tags": ["Klassiker", "Vegetarisch"]
-          },
-          {
-            "name_de": "Marinara",
-            "name_en": "Marinara",
-            "name_ru": "Маринара",
-            "price": "12€",
-            "desc_de": "San-Marzano-Tomaten, Knoblauch, Oregano, Olivenöl (Ve)",
-            "desc_en": "San Marzano tomatoes, garlic, oregano, olive oil (Ve)",
-            "desc_ru": "Томаты Сан-Марцано, чеснок, орегано, оливковое масло (Ve)",
-            "allergens_de": "Enthält: Gluten",
-            "image": "/media/presets/restaurant_pizza/menu/marinara.jpg",
-            "tags": ["Vegan", "Klassiker"]
-          },
-          {
-            "name_de": "Diavola",
-            "name_en": "Diavola",
-            "name_ru": "Дьявола",
-            "price": "17€",
-            "desc_de": "San-Marzano-Tomaten, Fior di Latte, scharfe Salami, Chili, Basilikum",
-            "desc_en": "San Marzano tomatoes, fior di latte, spicy salami, chilli, basil",
-            "desc_ru": "Томаты Сан-Марцано, фиор ди латте, острая салями, чили, базилик",
-            "allergens_de": "Enthält: Milch, Gluten",
-            "image": "/media/presets/restaurant_pizza/menu/diavola.jpg",
-            "tags": ["Scharf"]
-          }
-        ]
-      },
-      {
-        "category_de": "Saisonale Spezialitäten",
-        "category_en": "Seasonal Specials",
-        "category_ru": "Сезонные специалитеты",
-        "items": [
-          {
-            "name_de": "Tartufo Bianco",
-            "name_en": "White Truffle",
-            "name_ru": "Белый трюфель",
-            "price": "28€",
-            "desc_de": "Fior di Latte, Parmigiano Reggiano 24 Monate, weißes Trüffelöl, frischer Rucola",
-            "desc_en": "Fior di latte, Parmigiano Reggiano 24 months, white truffle oil, fresh rocket",
-            "desc_ru": "Фиор ди латте, Пармиджано Реджано 24 месяца, масло белого трюфеля, свежая рукола",
-            "allergens_de": "Enthält: Milch, Gluten",
-            "image": "/media/presets/restaurant_pizza/menu/tartufo.jpg",
-            "tags": ["Saisonal", "Premium"]
-          }
-        ]
-      },
       {
         "category_de": "Antipasti",
         "category_en": "Antipasti",
         "category_ru": "Антипасти",
         "items": [
           {
-            "name_de": "Burrata con Pomodori",
-            "name_en": "Burrata with Tomatoes",
-            "name_ru": "Буррата с томатами",
-            "price": "16€",
-            "desc_de": "Frische Burrata, Heirloom-Tomaten, Basilikum-Pesto, Olivenöl (V)",
-            "desc_en": "Fresh burrata, heirloom tomatoes, basil pesto, olive oil (V)",
-            "desc_ru": "Свежая буррата, томаты хейрлум, песто из базилика, оливковое масло (V)",
-            "allergens_de": "Enthält: Milch, Schalenfrüchte",
-            "image": "/media/presets/restaurant_pizza/menu/burrata.jpg",
-            "tags": ["Vegetarisch"]
+            "name_de": "Rotolo",
+            "name_en": "Rotolo",
+            "name_ru": "Ротоло",
+            "price": "7,00",
+            "desc_de": "Pizzateig, Mortadella, Ricotta, Pistazien-Pesto",
+            "desc_en": "Pizza dough, mortadella, ricotta, pistachio pesto",
+            "desc_ru": "Тесто, мортаделла, рикотта, фисташковый песто",
+            "tags": []
+          },
+          {
+            "name_de": "Fleischbaellchen",
+            "name_en": "Meatballs",
+            "name_ru": "Фрикадельки",
+            "price": "12,00",
+            "desc_de": "Schweinefleisch, Marinara, Parmesan, Petersilie",
+            "desc_en": "Pork, marinara, parmesan, parsley",
+            "desc_ru": "Свинина, маринара, пармезан, петрушка",
+            "tags": []
+          },
+          {
+            "name_de": "Prosciutto und Burrata",
+            "name_en": "Prosciutto and Burrata Board",
+            "name_ru": "Прошутто и Буррата",
+            "price": "17,00",
+            "desc_de": "Lioni Burrata, 15 Monate gereifter Prosciutto, Brotstangen",
+            "desc_en": "Lioni burrata, 15-month aged prosciutto, breadsticks",
+            "desc_ru": "Буррата Lioni, прошутто 15-месячной выдержки, хлебные палочки",
+            "tags": []
+          }
+        ]
+      },
+      {
+        "category_de": "Pizza — Neapolitanisch 30cm oder Gross 70cm",
+        "category_en": "Pizza — Neapolitan 12 inch or Large 28 inch",
+        "category_ru": "Пицца — Неаполитанская 30см или Большая 70см",
+        "items": [
+          {
+            "name_de": "Margherita",
+            "name_en": "Margherita",
+            "name_ru": "Маргарита",
+            "price": "18,00 / 34,00",
+            "desc_de": "Tomatensauce, Basilikum, Mozzarella",
+            "desc_en": "Tomato sauce, basil, mozzarella",
+            "desc_ru": "Томатный соус, базилик, моцарелла",
+            "tags": [
+              "V"
+            ]
+          },
+          {
+            "name_de": "Marinara",
+            "name_en": "Marinara",
+            "name_ru": "Маринара",
+            "price": "15,00 / 28,00",
+            "desc_de": "Hausgemachte Marinara, Oregano, Meersalz, Knoblauchoel",
+            "desc_en": "House-made marinara, oregano, sea salt, garlic oil",
+            "desc_ru": "Домашняя маринара, орегано, морская соль, чесночное масло",
+            "tags": [
+              "Ve"
+            ]
+          },
+          {
+            "name_de": "Pepperoni",
+            "name_en": "Pepperoni",
+            "name_ru": "Пепперони",
+            "price": "20,00 / 38,00",
+            "desc_de": "Tomatensauce, Mozzarella, frischer Oregano",
+            "desc_en": "Tomato sauce, mozzarella, fresh oregano",
+            "desc_ru": "Томатный соус, моцарелла, свежий орегано",
+            "tags": []
+          },
+          {
+            "name_de": "Crudo",
+            "name_en": "Crudo",
+            "name_ru": "Крудо",
+            "price": "23,00 / 44,00",
+            "desc_de": "Prosciutto crudo, Bufala-Mozzarella, Parmesan",
+            "desc_en": "Prosciutto crudo, bufala mozzarella, parmesan",
+            "desc_ru": "Прошутто крудо, буфала моцарелла, пармезан",
+            "tags": []
+          },
+          {
+            "name_de": "Pilze",
+            "name_en": "Shroom",
+            "name_ru": "Грибная",
+            "price": "19,00 / 36,00",
+            "desc_de": "Gebratene Saisonpilze, Zwiebeln, Mozzarella, schwarzes Knoblauch-Aioli",
+            "desc_en": "Roasted seasonal mushrooms, baby onions, mozzarella, black garlic aioli",
+            "desc_ru": "Жареные сезонные грибы, лук, моцарелла, чёрный чесночный айоли",
+            "tags": [
+              "V"
+            ]
+          },
+          {
+            "name_de": "Fenchel-Wurst",
+            "name_en": "Fennel Sausage",
+            "name_ru": "Фенхельная колбаса",
+            "price": "20,00 / 38,00",
+            "desc_de": "Gebratener Fenchel, Tomatensauce, Mozzarella, Parmesan",
+            "desc_en": "Roasted fennel, tomato sauce, mozzarella, parmesan",
+            "desc_ru": "Жареный фенхель, томатный соус, моцарелла, пармезан",
+            "tags": []
+          }
+        ]
+      },
+      {
+        "category_de": "Salate",
+        "category_en": "Salads",
+        "category_ru": "Салаты",
+        "items": [
+          {
+            "name_de": "Erdbeer-Burrata",
+            "name_en": "Strawberry Burrata",
+            "name_ru": "Клубника-Буррата",
+            "price": "15,00",
+            "desc_de": "Rucola, Spinat, Sonnenblumenkerne, Basilikum-Vinaigrette",
+            "desc_en": "Arugula, spinach, sunflower seeds, basil vinaigrette",
+            "desc_ru": "Руккола, шпинат, семена подсолнечника, базиликовый винегрет",
+            "tags": [
+              "V"
+            ]
+          },
+          {
+            "name_de": "Italienischer Caesar",
+            "name_en": "Italian Caesar",
+            "name_ru": "Итальянский Цезарь",
+            "price": "12,00",
+            "desc_de": "Gruener Salat, Parmesan, Ei, Sardelle, Pizza-Croutons",
+            "desc_en": "Greens, parmesan, egg, anchovy, pizza croutons",
+            "desc_ru": "Зелень, пармезан, яйцо, анчоус, пицца-крутоны",
+            "tags": []
+          }
+        ]
+      },
+      {
+        "category_de": "Calzone",
+        "category_en": "Calzone",
+        "category_ru": "Кальцоне",
+        "items": [
+          {
+            "name_de": "Wurst-Calzone",
+            "name_en": "Sausage Calzone",
+            "name_ru": "Кальцоне с колбасой",
+            "price": "17,00",
+            "desc_de": "Geroesteter Fenchelsamen, Mozzarella, Parmesan, Tomatensauce",
+            "desc_en": "Toasted fennel seed, mozzarella, parmesan, tomato sauce",
+            "desc_ru": "Поджаренные семена фенхеля, моцарелла, пармезан, томатный соус",
+            "tags": []
+          },
+          {
+            "name_de": "Hot Honey Pepperoni Calzone",
+            "name_en": "Hot Honey Pep Calzone",
+            "name_ru": "Острый мёд Пепперони Кальцоне",
+            "price": "18,00",
+            "desc_de": "Pepperoni, heisser Honig, Mozzarella, Parmesan, Ricotta",
+            "desc_en": "Pepperoni, hot honey, mozzarella, parmesan, ricotta",
+            "desc_ru": "Пепперони, острый мёд, моцарелла, пармезан, рикотта",
+            "tags": []
           }
         ]
       }
     ],
-    "testimonials": [
-      {
-        "name": "Andreas K.",
-        "location_de": "Berlin-Prenzlauer Berg",
-        "text_de": "Die beste Pizza, die ich außerhalb Neapels gegessen habe. Der Teig ist unglaublich — leicht, luftig, mit diesem charakteristischen Geschmack. Ich komme jede Woche.",
-        "text_en": "The best pizza I have eaten outside Naples. The dough is incredible — light, airy, with that characteristic flavour. I come every week.",
-        "text_ru": "Лучшая пицца, которую я ел за пределами Неаполя. Тесто невероятное — лёгкое, воздушное, с характерным вкусом. Прихожу каждую неделю.",
-        "rating": 5,
-        "source": "Google",
-        "avatar": "/media/presets/restaurant_pizza/avatars/andreas.jpg"
+    "limoncello": {
+      "title_de": "HAUSGEMACHTER LIMONCELLO UND ORANGENCELLO",
+      "title_en": "HOMEMADE LIMONCELLO AND ORANGECELLO",
+      "title_ru": "ДОМАШНИЙ ЛИМОНЧЕЛЛО И АПЕЛЬСИНЧЕЛЛО",
+      "text_de": "Wie unser Teig wird unser Limoncello aus 4 Zutaten ueber 4 Wochen hergestellt. Dieser goldgelbe Likoer symbolisiert das Handwerk unseres Berufs.",
+      "text_en": "Like our dough, our limoncello is homemade with 4 ingredients over 4 weeks. This golden yellow liqueur symbolizes the craftsmanship of our trade.",
+      "text_ru": "Как и наше тесто, наш лимончелло готовится из 4 ингредиентов в течение 4 недель. Этот золотисто-жёлтый ликёр символизирует мастерство нашего ремесла.",
+      "image": "/media/presets/restaurant_pizza/limoncello.jpg"
+    },
+    "about": {
+      "de": {
+        "title": "Unsere Geschichte",
+        "subtitle": "Seit 2018 in Berlin",
+        "text": "Napoli Vera entstand aus einer einfachen Ueberzeugung: echte neapolitanische Pizza braucht Zeit, Geduld und die besten Zutaten. Unser Teig fermentiert 4 Tage lang. Keine Kompromisse.",
+        "stats": [
+          {
+            "value": "4",
+            "label": "Tage Fermentation"
+          },
+          {
+            "value": "650 Grad",
+            "label": "Backtemperatur"
+          },
+          {
+            "value": "3",
+            "label": "Standorte in Berlin"
+          }
+        ]
       },
-      {
-        "name": "Marie L.",
-        "location_de": "Berlin-Mitte",
-        "text_de": "Endlich eine echte neapolitanische Pizza in Berlin. Das Leoparding am Rand, die perfekte Sauce, der Büffelmozzarella — alles stimmt. Danke!",
-        "text_en": "Finally a real Neapolitan pizza in Berlin. The leoparding on the crust, the perfect sauce, the buffalo mozzarella — everything is right. Thank you!",
-        "text_ru": "Наконец-то настоящая неаполитанская пицца в Берлине. Леопардинг на корже, идеальный соус, моцарелла из буйволиного молока — всё на месте. Спасибо!",
-        "rating": 5,
-        "source": "TripAdvisor",
-        "avatar": "/media/presets/restaurant_pizza/avatars/marie.jpg"
+      "en": {
+        "title": "Our Story",
+        "subtitle": "Since 2018 in Berlin",
+        "text": "Napoli Vera was born from a simple conviction: real Neapolitan pizza needs time, patience and the best ingredients. Our dough ferments for 4 days. No compromises.",
+        "stats": [
+          {
+            "value": "4",
+            "label": "Days fermentation"
+          },
+          {
+            "value": "650 deg",
+            "label": "Baking temperature"
+          },
+          {
+            "value": "3",
+            "label": "Berlin locations"
+          }
+        ]
+      },
+      "ru": {
+        "title": "Наша история",
+        "subtitle": "С 2018 года в Берлине",
+        "text": "Napoli Vera родилась из простого убеждения: настоящая неаполитанская пицца требует времени, терпения и лучших ингредиентов. Наше тесто ферментируется 4 дня. Без компромиссов.",
+        "stats": [
+          {
+            "value": "4",
+            "label": "Дня ферментации"
+          },
+          {
+            "value": "650 гр.",
+            "label": "Температура выпечки"
+          },
+          {
+            "value": "3",
+            "label": "Локации в Берлине"
+          }
+        ]
       }
-    ],
-    "contact": {
-      "address": "Kastanienallee 12, 10435 Berlin-Prenzlauer Berg",
-      "phone": "+49 30 4455 6677",
-      "email": "ciao@napolivera-berlin.de",
-      "hours_de": "Mo–Fr: 12:00–15:00 & 18:00–23:00 Uhr · Sa–So: 12:00–23:00 Uhr (durchgehend)",
-      "hours_en": "Mon–Fri: 12:00–3:00 PM & 6:00–11:00 PM · Sat–Sun: 12:00–11:00 PM (continuous)",
-      "hours_ru": "Пн–Пт: 12:00–15:00 и 18:00–23:00 · Сб–Вс: 12:00–23:00 (без перерыва)",
-      "mapEmbed": "https://maps.google.com/?q=Kastanienallee+12,+10435+Berlin",
-      "transport_de": "U-Bahn: Eberswalder Straße (U2), 2 Minuten zu Fuß"
     },
     "faq": [
       {
-        "q_de": "Nehmen Sie auch Laufkundschaft an?",
-        "q_en": "Do you accept walk-ins?",
-        "q_ru": "Принимаете ли вы без записи?",
-        "a_de": "Ja, wir nehmen gerne Laufkundschaft an — solange Plätze verfügbar sind. Für Freitag- und Samstagabend empfehlen wir jedoch eine Reservierung.",
-        "a_en": "Yes, we welcome walk-ins — as long as seats are available. However, we recommend a reservation for Friday and Saturday evenings.",
-        "a_ru": "Да, мы принимаем без записи — при наличии мест. Однако для пятничных и субботних вечеров рекомендуем бронировать."
+        "q_de": "Was bedeutet neapolitanische Pizza?",
+        "q_en": "What does Neapolitan pizza mean?",
+        "q_ru": "Что означает неаполитанская пицца?",
+        "a_de": "Echte neapolitanische Pizza wird nach strengen Regeln hergestellt: langer Teig-Fermentation, Holzofen bei 450-500 Grad, spezifische Zutaten aus Kampanien.",
+        "a_en": "Real Neapolitan pizza is made according to strict rules: long dough fermentation, wood-fired oven at 450-500 degrees, specific ingredients from Campania.",
+        "a_ru": "Настоящая неаполитанская пицца готовится по строгим правилам: длительная ферментация теста, дровяная печь при 450-500 градусах."
       },
       {
-        "q_de": "Bieten Sie glutenfreien Teig an?",
-        "q_en": "Do you offer gluten-free dough?",
-        "q_ru": "Есть ли безглютеновое тесто?",
-        "a_de": "Wir bieten glutenfreien Teig auf Anfrage an. Bitte beachten Sie, dass wir in einer Küche arbeiten, in der Gluten verarbeitet wird — eine vollständige Kreuzverunreinigung kann nicht ausgeschlossen werden.",
-        "a_en": "We offer gluten-free dough on request. Please note that we work in a kitchen where gluten is processed — complete cross-contamination cannot be excluded.",
-        "a_ru": "Мы предлагаем безглютеновое тесто по запросу. Обратите внимание, что мы работаем на кухне, где обрабатывается глютен — полное исключение перекрёстного загрязнения невозможно."
+        "q_de": "Gibt es glutenfreie Optionen?",
+        "q_en": "Are there gluten-free options?",
+        "q_ru": "Есть ли безглютеновые варианты?",
+        "a_de": "Ja, wir bieten glutenfreien Teig an. Bitte bei der Bestellung angeben. Aufpreis: 3 EUR.",
+        "a_en": "Yes, we offer gluten-free dough. Please indicate when ordering. Surcharge: 3 EUR.",
+        "a_ru": "Да, мы предлагаем безглютеновое тесто. Укажите при заказе. Доплата: 3 EUR."
       }
     ],
+    "contact": {
+      "address": "Rosenthaler Strasse 40, 10178 Berlin-Mitte",
+      "phone": "+49 30 9876 5432",
+      "email": "ciao@napolivera-berlin.de",
+      "hours_de": "Mo-Do: 12:00-22:00 Uhr | Fr-Sa: 12:00-23:00 Uhr | So: 12:00-21:00 Uhr",
+      "hours_en": "Mon-Thu: 12:00-10:00 PM | Fri-Sat: 12:00-11:00 PM | Sun: 12:00-9:00 PM",
+      "hours_ru": "Пн-Чт: 12:00-22:00 | Пт-Сб: 12:00-23:00 | Вс: 12:00-21:00"
+    },
+    "newsletter": {
+      "title_de": "BLEIBEN SIE AUF DEM LAUFENDEN",
+      "title_en": "STAY IN THE LOOP",
+      "title_ru": "БУДЬТЕ В КУРСЕ",
+      "desc_de": "Melden Sie sich an und erfahren Sie als Erster von neuen Angeboten und saisonalen Spezialitaeten.",
+      "desc_en": "Sign up and be the first to know about new offers and seasonal specials.",
+      "desc_ru": "Подпишитесь и первым узнавайте о новых предложениях и сезонных специальностях."
+    },
     "legal": {
-      "allergenNote_de": "Alle Allergene sind gemäß LMIV (EU Nr. 1169/2011) gekennzeichnet. (V) = Vegetarisch · (Ve) = Vegan · (S) = Scharf. Trotz sorgfältiger Zubereitung können Spuren von Allergenen nicht ausgeschlossen werden.",
-      "serviceChargeNote_de": "Alle Preise sind Endpreise inkl. gesetzlicher MwSt. (7% auf Speisen, 19% auf Getränke). Kein Serviceentgelt — Trinkgeld ist freiwillig.",
-      "alcoholNote_de": "Alkohol nur für Personen ab 18 Jahren."
+      "allergenNote_de": "Alle Allergene auf Anfrage. (V) = Vegetarisch, (Ve) = Vegan. MwSt. 7% auf Speisen, 19% auf Getraenke.",
+      "priceNote_de": "Alle Preise inkl. MwSt. Preise koennen saisonal variieren."
     }
-  },
-  "booking": {
-    "enabled": true,
-    "slots": ["12:00", "12:30", "13:00", "18:00", "18:30", "19:00", "19:30", "20:00", "20:30", "21:00"],
-    "duration": 90,
-    "maxGuests": 6,
-    "note_de": "Für Gruppen ab 7 Personen bitte telefonisch anfragen.",
-    "cancellationPolicy_de": "Kostenlose Stornierung bis 4 Stunden vor dem Termin."
   },
   "logo": {
     "text": "Napoli Vera",
     "tagline": "BERLIN",
     "font": "DM Serif Display",
-    "style": "minimal_text"
+    "style": "text_serif"
   },
   "social": {
     "instagram": "https://instagram.com/napolivera.berlin",
-    "facebook": "https://facebook.com/napoliveraberlin"
+    "facebook": "https://facebook.com/napolivera"
   }
 }
