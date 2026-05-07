@@ -1,5 +1,5 @@
 {
-  "title": "Skill Up | Online Courses",
+  "title": "Goldkruste | Handwerksbäckerei",
   "blocks": [
     {
       "id": "hero-1",
@@ -8,63 +8,81 @@
       "order": 0,
       "settings": {
         "heading": {
-          "en": {
-            "heading": "Learn Without Limits",
-            "subheading": "Learn new skills from industry experts. Flexible learning anytime, anywhere.",
-            "cta": "Get Started",
-            "image": "/media/presets/online_courses/hero.jpg"
-          },
           "de": {
-            "heading": "Lernen ohne Grenzen",
-            "subheading": "Learn new skills from industry experts. Flexible learning anytime, anywhere.",
-            "cta": "Jetzt starten",
-            "image": "/media/presets/online_courses/hero.jpg"
+            "heading": "Wir machen Köln süßer!",
+            "subheading": "Seit November 1987 backt und kreiert Goldkruste köstliche Brote, Torten und Gebäck für ganz Köln. In unseren Filialen in Ehrenfeld, Nippes und Sülz.",
+            "cta": "Sortiment entdecken",
+            "secondaryCta": "Torte bestellen",
+            "image": "/media/presets/bakery/hero.jpg",
+            "imageAlt": "Frisch gebackene Brote und Torten bei Goldkruste"
+          },
+          "en": {
+            "heading": "We make Cologne sweeter!",
+            "subheading": "Since November 1987, Goldkruste has been baking and crafting delicious breads, cakes and pastries for all of Cologne. At our locations in Ehrenfeld, Nippes and Sülz.",
+            "cta": "Discover Our Range",
+            "secondaryCta": "Order a Cake",
+            "image": "/media/presets/bakery/hero.jpg",
+            "imageAlt": "Freshly baked breads and cakes at Goldkruste"
           },
           "ru": {
-            "heading": "Учись без границ",
-            "subheading": "Learn new skills from industry experts. Flexible learning anytime, anywhere.",
-            "cta": "Начать",
-            "image": "/media/presets/online_courses/hero.jpg"
+            "heading": "Мы делаем Кёльн слаще!",
+            "subheading": "С ноября 1987 года Goldkruste выпекает вкусный хлеб, торты и выпечку для всего Кёльна. В наших филиалах в Эренфельде, Ниппесе и Зюльце.",
+            "cta": "Наш ассортимент",
+            "secondaryCta": "Заказать торт",
+            "image": "/media/presets/bakery/hero.jpg",
+            "imageAlt": "Свежеиспечённый хлеб и торты в Goldkruste"
           }
         },
         "subheading": {
-          "en": {
-            "heading": "Learn Without Limits",
-            "subheading": "Learn new skills from industry experts. Flexible learning anytime, anywhere.",
-            "cta": "Get Started",
-            "image": "/media/presets/online_courses/hero.jpg"
-          },
           "de": {
-            "heading": "Lernen ohne Grenzen",
-            "subheading": "Learn new skills from industry experts. Flexible learning anytime, anywhere.",
-            "cta": "Jetzt starten",
-            "image": "/media/presets/online_courses/hero.jpg"
+            "heading": "Wir machen Köln süßer!",
+            "subheading": "Seit November 1987 backt und kreiert Goldkruste köstliche Brote, Torten und Gebäck für ganz Köln. In unseren Filialen in Ehrenfeld, Nippes und Sülz.",
+            "cta": "Sortiment entdecken",
+            "secondaryCta": "Torte bestellen",
+            "image": "/media/presets/bakery/hero.jpg",
+            "imageAlt": "Frisch gebackene Brote und Torten bei Goldkruste"
+          },
+          "en": {
+            "heading": "We make Cologne sweeter!",
+            "subheading": "Since November 1987, Goldkruste has been baking and crafting delicious breads, cakes and pastries for all of Cologne. At our locations in Ehrenfeld, Nippes and Sülz.",
+            "cta": "Discover Our Range",
+            "secondaryCta": "Order a Cake",
+            "image": "/media/presets/bakery/hero.jpg",
+            "imageAlt": "Freshly baked breads and cakes at Goldkruste"
           },
           "ru": {
-            "heading": "Учись без границ",
-            "subheading": "Learn new skills from industry experts. Flexible learning anytime, anywhere.",
-            "cta": "Начать",
-            "image": "/media/presets/online_courses/hero.jpg"
+            "heading": "Мы делаем Кёльн слаще!",
+            "subheading": "С ноября 1987 года Goldkruste выпекает вкусный хлеб, торты и выпечку для всего Кёльна. В наших филиалах в Эренфельде, Ниппесе и Зюльце.",
+            "cta": "Наш ассортимент",
+            "secondaryCta": "Заказать торт",
+            "image": "/media/presets/bakery/hero.jpg",
+            "imageAlt": "Свежеиспечённый хлеб и торты в Goldkruste"
           }
         },
         "buttonText": {
-          "en": {
-            "heading": "Learn Without Limits",
-            "subheading": "Learn new skills from industry experts. Flexible learning anytime, anywhere.",
-            "cta": "Get Started",
-            "image": "/media/presets/online_courses/hero.jpg"
-          },
           "de": {
-            "heading": "Lernen ohne Grenzen",
-            "subheading": "Learn new skills from industry experts. Flexible learning anytime, anywhere.",
-            "cta": "Jetzt starten",
-            "image": "/media/presets/online_courses/hero.jpg"
+            "heading": "Wir machen Köln süßer!",
+            "subheading": "Seit November 1987 backt und kreiert Goldkruste köstliche Brote, Torten und Gebäck für ganz Köln. In unseren Filialen in Ehrenfeld, Nippes und Sülz.",
+            "cta": "Sortiment entdecken",
+            "secondaryCta": "Torte bestellen",
+            "image": "/media/presets/bakery/hero.jpg",
+            "imageAlt": "Frisch gebackene Brote und Torten bei Goldkruste"
+          },
+          "en": {
+            "heading": "We make Cologne sweeter!",
+            "subheading": "Since November 1987, Goldkruste has been baking and crafting delicious breads, cakes and pastries for all of Cologne. At our locations in Ehrenfeld, Nippes and Sülz.",
+            "cta": "Discover Our Range",
+            "secondaryCta": "Order a Cake",
+            "image": "/media/presets/bakery/hero.jpg",
+            "imageAlt": "Freshly baked breads and cakes at Goldkruste"
           },
           "ru": {
-            "heading": "Учись без границ",
-            "subheading": "Learn new skills from industry experts. Flexible learning anytime, anywhere.",
-            "cta": "Начать",
-            "image": "/media/presets/online_courses/hero.jpg"
+            "heading": "Мы делаем Кёльн слаще!",
+            "subheading": "С ноября 1987 года Goldkruste выпекает вкусный хлеб, торты и выпечку для всего Кёльна. В наших филиалах в Эренфельде, Ниппесе и Зюльце.",
+            "cta": "Наш ассортимент",
+            "secondaryCta": "Заказать торт",
+            "image": "/media/presets/bakery/hero.jpg",
+            "imageAlt": "Свежеиспечённый хлеб и торты в Goldkruste"
           }
         },
         "buttonUrl": "#contact",
@@ -87,17 +105,68 @@
       "order": 1,
       "settings": {
         "content": {
-          "en": {
-            "title": "About Us",
-            "text": "Empowering individuals with knowledge and skills to advance their careers."
-          },
           "de": {
-            "title": "Über uns",
-            "text": "Wir stärken Individuen mit Wissen für ihre Karriere."
+            "title": "Drei Generationen Handwerk",
+            "subtitle": "Seit 1987 in Köln-Ehrenfeld",
+            "text": "Was 1987 als kleine Backstube von Heinrich Bauer begann, ist heute eine der bekanntesten Handwerksbäckereien Kölns. Sein Sohn Thomas und Enkelin Lisa führen das Erbe weiter — mit denselben Rezepten, denselben langen Reifezeiten und derselben Überzeugung: Gutes Brot braucht Zeit.",
+            "image": "/media/presets/bakery/about.jpg",
+            "imageAlt": "Bäcker bei der Arbeit in der Goldkruste Backstube",
+            "stats": [
+              {
+                "value": "37",
+                "label": "Jahre Tradition"
+              },
+              {
+                "value": "3",
+                "label": "Filialen in Köln"
+              },
+              {
+                "value": "40+",
+                "label": "Brotsorten"
+              }
+            ]
+          },
+          "en": {
+            "title": "Three Generations of Craft",
+            "subtitle": "Since 1987 in Cologne-Ehrenfeld",
+            "text": "What began in 1987 as a small bakery by Heinrich Bauer is today one of Cologne's best-known artisan bakeries. His son Thomas and granddaughter Lisa carry on the legacy — with the same recipes, the same long maturation times and the same conviction: good bread needs time.",
+            "image": "/media/presets/bakery/about.jpg",
+            "imageAlt": "Baker at work in the Goldkruste bakery",
+            "stats": [
+              {
+                "value": "37",
+                "label": "Years of tradition"
+              },
+              {
+                "value": "3",
+                "label": "Locations in Cologne"
+              },
+              {
+                "value": "40+",
+                "label": "Bread varieties"
+              }
+            ]
           },
           "ru": {
-            "title": "О нас",
-            "text": "Мы наделяем людей знаниями для продвижения по карьерной лестнице."
+            "title": "Три поколения мастерства",
+            "subtitle": "С 1987 года в Кёльн-Эренфельде",
+            "text": "То, что в 1987 году началось как небольшая пекарня Генриха Бауэра, сегодня является одной из самых известных ремесленных пекарен Кёльна. Его сын Томас и внучка Лиза продолжают наследие.",
+            "image": "/media/presets/bakery/about.jpg",
+            "imageAlt": "Пекарь за работой в пекарне Goldkruste",
+            "stats": [
+              {
+                "value": "37",
+                "label": "Лет традиции"
+              },
+              {
+                "value": "3",
+                "label": "Филиала в Кёльне"
+              },
+              {
+                "value": "40+",
+                "label": "Сортов хлеба"
+              }
+            ]
           }
         }
       },
