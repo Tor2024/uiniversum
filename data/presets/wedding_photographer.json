@@ -1,181 +1,313 @@
 {
   "meta": {
-    "title": "Eternal Moments | Wedding Photo",
-    "description": "Capturing the romance and joy of your wedding day with artistic flair.",
+    "title": "Lichtmomente | Hochzeitsfotografie",
+    "description": "Hochzeitsfotografie in einem rohen, kinematografischen Stil. Dokumentarisch trifft Editorial. Eure Geschichte, erzaehlt in Bildern.",
     "favicon": "/media/presets/wedding_photographer/favicon.ico",
-    "language": "en",
+    "language": "de",
     "availableLanguages": [
-      "en",
       "de",
+      "en",
       "ru"
     ]
   },
   "design": {
     "preset": "wedding_photographer",
     "tokens": {
-      "colorBackground": "#FFF8DC",
+      "colorBackground": "#FAFAF8",
       "colorSurface": "#FFFFFF",
-      "colorPrimary": "#B8860B",
-      "colorSecondary": "#6C757D",
-      "colorBorder": "#DEE2E6",
-      "colorAccent": "#FFD700",
-      "colorAccentHover": "#FFD700",
-      "fontDisplay": "Great Vibes",
-      "fontHeading": "Great Vibes",
-      "fontBody": "Josefin Sans",
-      "fontCaption": "Josefin Sans",
-      "fontMono": "Roboto Mono",
-      "fontSizeDisplay": "72px",
-      "fontSizeHeading": "36px",
-      "fontSizeBody": "17px",
-      "lineHeightBody": "1.7",
-      "lineHeightHeading": "1.3",
+      "colorPrimary": "#1A1A1A",
+      "colorSecondary": "#6B6B6B",
+      "colorBorder": "#E8E8E8",
+      "colorAccent": "#C9A96E",
+      "colorAccentHover": "#B8945A",
+      "fontDisplay": "Cormorant Garamond",
+      "fontHeading": "Cormorant Garamond",
+      "fontBody": "Inter",
+      "fontCaption": "Inter",
+      "fontMono": "JetBrains Mono",
+      "fontSizeDisplay": "80px",
+      "fontSizeHeading": "40px",
+      "fontSizeBody": "16px",
+      "lineHeightBody": "1.8",
+      "lineHeightHeading": "1.2",
       "spacingUnit": "8px",
-      "spacingSection": "120px",
-      "spacingElement": "24px",
+      "spacingSection": "140px",
+      "spacingElement": "28px",
       "spacingCard": "32px",
-      "spacingButtonVertical": "16px",
+      "spacingButtonVertical": "14px",
       "spacingButtonHorizontal": "32px",
       "maxWidthContent": "1200px",
-      "maxWidthText": "700px",
+      "maxWidthText": "680px",
       "gridColumns": "12",
-      "gridGutter": "30px",
+      "gridGutter": "8px",
       "horizontalPaddingMobile": "20px",
-      "horizontalPaddingTablet": "50px",
+      "horizontalPaddingTablet": "48px",
       "horizontalPaddingDesktop": "80px",
-      "borderRadius": "8",
-      "borderRadiusSmall": "4px",
-      "borderRadiusMedium": "8px",
-      "borderRadiusLarge": "16px",
-      "shadowStyle": "soft",
-      "shadowResting": "0 4px 14px rgba(0,0,0,0.05)",
-      "shadowHover": "0 8px 24px rgba(0,0,0,0.1)",
-      "transitionDuration": "200ms",
-      "transitionTiming": "ease-in-out",
-      "imageRatioHero": "21:9",
-      "imageRatioCard": "4:3",
+      "borderRadius": "0",
+      "borderRadiusSmall": "0px",
+      "borderRadiusMedium": "2px",
+      "borderRadiusLarge": "4px",
+      "shadowStyle": "none",
+      "shadowResting": "none",
+      "shadowHover": "none",
+      "transitionDuration": "300ms",
+      "transitionTiming": "ease-out",
+      "imageRatioHero": "16:9",
+      "imageRatioCard": "2:3",
       "imageRatioAvatar": "1:1"
-    },
-    "customCss": ""
+    }
   },
   "seo": {
     "ogImage": "/media/presets/wedding_photographer/og-default.jpg",
     "twitterCard": "summary_large_image",
     "googleAnalyticsId": "",
-    "keywords": "wedding, photo, love"
+    "keywords": "Hochzeitsfotograf, Hochzeitsfotografie, Brautpaar, Reportage, Editorial"
+  },
+  "layout": {
+    "style": "clean_minimal",
+    "heroType": "fullscreen_portfolio",
+    "navStyle": "minimal_text_only",
+    "portfolioGallery": true,
+    "featuredWeddingsSection": true,
+    "pricingSection": true,
+    "aboutSection": true,
+    "testimonialsLayout": "minimal_quotes",
+    "footerStyle": "minimal_social"
   },
   "content": {
     "slogans": {
-      "en": [
-        "Love Stories",
-        "Forever Yours",
-        "Pure Emotion"
-      ],
       "de": [
-        "Liebesgeschichten",
-        "Für immer dir",
-        "Reine Emotion"
+        "Eure Verbindung. Roh. Kinematografisch.",
+        "Eure Geschichte in Bildern.",
+        "Dokumentarisch trifft Editorial."
+      ],
+      "en": [
+        "Your connection. Raw. Cinematic.",
+        "Your story told in images.",
+        "Documentary meets editorial."
       ],
       "ru": [
-        "Истории любви",
-        "Навеки твое",
-        "Чистая эмоция"
+        "Ваша связь. Сырая. Кинематографичная.",
+        "Ваша история в снимках.",
+        "Документальное встречает редакционное."
       ]
     },
     "hero": {
-      "en": {
-        "heading": "Love Stories",
-        "subheading": "Capturing the romance and joy of your wedding day with artistic flair.",
-        "cta": "Get Started",
-        "image": "/media/presets/wedding_photographer/hero.jpg"
-      },
       "de": {
-        "heading": "Liebesgeschichten",
-        "subheading": "Capturing the romance and joy of your wedding day with artistic flair.",
-        "cta": "Jetzt starten",
-        "image": "/media/presets/wedding_photographer/hero.jpg"
+        "heading": "Eure Geschichte.\nIn Bildern erzaehlt.",
+        "subheading": "Hochzeitsfotografie in einem rohen, kinematografischen Stil — dokumentarisch trifft editorial.",
+        "cta": "Portfolio ansehen",
+        "secondaryCta": "Kontakt aufnehmen",
+        "image": "/media/presets/wedding_photographer/hero.jpg",
+        "imageAlt": "Lichtmomente Hochzeitsfotografie"
+      },
+      "en": {
+        "heading": "Your story.\nTold in images.",
+        "subheading": "Wedding photography in a raw, cinematic style — documentary meets editorial.",
+        "cta": "View Portfolio",
+        "secondaryCta": "Get in Touch",
+        "image": "/media/presets/wedding_photographer/hero.jpg",
+        "imageAlt": "Lichtmomente Wedding Photography"
       },
       "ru": {
-        "heading": "Истории любви",
-        "subheading": "Capturing the romance and joy of your wedding day with artistic flair.",
-        "cta": "Начать",
-        "image": "/media/presets/wedding_photographer/hero.jpg"
+        "heading": "Ваша история.\nРассказанная в снимках.",
+        "subheading": "Свадебная фотография в сыром, кинематографичном стиле — документальное встречает редакционное.",
+        "cta": "Смотреть портфолио",
+        "secondaryCta": "Связаться",
+        "image": "/media/presets/wedding_photographer/hero.jpg",
+        "imageAlt": "Lichtmomente Свадебная фотография"
       }
     },
     "about": {
-      "en": {
-        "title": "About Us",
-        "text": "We specialize in candid wedding photography that tells your unique love story."
-      },
       "de": {
-        "title": "Über uns",
-        "text": "Wir spezialisieren uns auf natürliche Hochzeitsfotografie."
+        "title": "Ueber mich",
+        "subtitle": "Lichtmomente Fotografie",
+        "text": "Bei Lichtmomente lieben wir es, wunderschoene Geschichten zu gestalten und eure Verbindung auf eine rohe, kinematografische Weise einzufangen — dokumentarisch trifft editorial. Schaut euch gerne um. Oder wenn ihr ein Gespraech moechtet, nehmt Kontakt auf und wir koennen ueber eure Wuensche fuer euren Tag sprechen.",
+        "image": "/media/presets/wedding_photographer/about.jpg",
+        "imageAlt": "Fotografin bei der Arbeit",
+        "stats": [
+          {
+            "value": "200+",
+            "label": "Hochzeiten fotografiert"
+          },
+          {
+            "value": "8",
+            "label": "Jahre Erfahrung"
+          },
+          {
+            "value": "5★",
+            "label": "Durchschnittliche Bewertung"
+          }
+        ]
+      },
+      "en": {
+        "title": "About me",
+        "subtitle": "Lichtmomente Photography",
+        "text": "At Lichtmomente we love crafting beautiful stories capturing your connection in a raw, cinematic way blending documentary with fashion, editorial elements to ensure you have your wedding the way you want it.",
+        "image": "/media/presets/wedding_photographer/about.jpg",
+        "imageAlt": "Photographer at work",
+        "stats": [
+          {
+            "value": "200+",
+            "label": "Weddings photographed"
+          },
+          {
+            "value": "8",
+            "label": "Years of experience"
+          },
+          {
+            "value": "5★",
+            "label": "Average rating"
+          }
+        ]
       },
       "ru": {
-        "title": "О нас",
-        "text": "Мы специализируемся на естественной свадебной фотографии."
+        "title": "Обо мне",
+        "subtitle": "Lichtmomente Фотография",
+        "text": "В Lichtmomente мы любим создавать красивые истории, запечатлевая вашу связь в сыром, кинематографичном стиле, сочетая документальное с модным, редакционным подходом.",
+        "image": "/media/presets/wedding_photographer/about.jpg",
+        "imageAlt": "Фотограф за работой",
+        "stats": [
+          {
+            "value": "200+",
+            "label": "Свадеб снято"
+          },
+          {
+            "value": "8",
+            "label": "Лет опыта"
+          },
+          {
+            "value": "5★",
+            "label": "Средняя оценка"
+          }
+        ]
       }
     },
     "services": [
       {
-        "name_en": "Full Day Package",
-        "name_de": "Ganztagespaket",
-        "name_ru": "Пакет на весь день",
-        "price": "$2500",
-        "desc_en": "From preparation to party.",
-        "image": "/media/presets/wedding_photographer/services/full_day.jpg"
+        "name_de": "Elopement Paket",
+        "name_en": "Elopement Package",
+        "name_ru": "Пакет Elopement",
+        "price": "ab 1.200 EUR",
+        "desc_de": "Bis zu 4 Stunden. Perfekt fuer intime Zeremonien und Paarshooting. Digitale Galerie mit 200+ Bildern.",
+        "desc_en": "Up to 4 hours. Perfect for intimate ceremonies and couple shoots. Digital gallery with 200+ images.",
+        "desc_ru": "До 4 часов. Идеально для интимных церемоний и съёмки пары. Цифровая галерея с 200+ снимками.",
+        "tags": []
       },
       {
-        "name_en": "Engagement Shoot",
+        "name_de": "Ganztages Paket",
+        "name_en": "Full Day Package",
+        "name_ru": "Пакет на весь день",
+        "price": "ab 2.400 EUR",
+        "desc_de": "Von der Vorbereitung bis zur Party. 8-10 Stunden. Digitale Galerie mit 500+ Bildern. Zweite Fotografin optional.",
+        "desc_en": "From preparation to party. 8-10 hours. Digital gallery with 500+ images. Second photographer optional.",
+        "desc_ru": "От подготовки до вечеринки. 8-10 часов. Цифровая галерея с 500+ снимками. Второй фотограф опционально.",
+        "tags": [
+          "Beliebt"
+        ]
+      },
+      {
         "name_de": "Verlobungs-Shooting",
-        "name_ru": "Love Story съемка",
-        "price": "$400",
-        "desc_en": "Beautiful pre-wedding memories.",
-        "image": "/media/presets/wedding_photographer/services/engagement.jpg"
+        "name_en": "Engagement Shoot",
+        "name_ru": "Съёмка помолвки",
+        "price": "ab 400 EUR",
+        "desc_de": "1-2 Stunden. Lernt mich kennen, bevor der grosse Tag kommt. Digitale Galerie mit 80+ Bildern.",
+        "desc_en": "1-2 hours. Get to know me before the big day. Digital gallery with 80+ images.",
+        "desc_ru": "1-2 часа. Познакомьтесь со мной до большого дня. Цифровая галерея с 80+ снимками.",
+        "tags": []
+      }
+    ],
+    "featuredWeddings": [
+      {
+        "title_de": "Anna & Markus — Schloss Heidelberg",
+        "title_en": "Anna & Markus — Heidelberg Castle",
+        "title_ru": "Анна и Маркус — Замок Гейдельберг",
+        "image": "/media/presets/wedding_photographer/featured/1.jpg",
+        "date": "Juni 2024"
+      },
+      {
+        "title_de": "Sophie & Jan — Schwarzwald",
+        "title_en": "Sophie & Jan — Black Forest",
+        "title_ru": "Зофи и Ян — Шварцвальд",
+        "image": "/media/presets/wedding_photographer/featured/2.jpg",
+        "date": "August 2024"
+      },
+      {
+        "title_de": "Lisa & Tom — Bodensee",
+        "title_en": "Lisa & Tom — Lake Constance",
+        "title_ru": "Лиза и Том — Боденское озеро",
+        "image": "/media/presets/wedding_photographer/featured/3.jpg",
+        "date": "September 2024"
       }
     ],
     "testimonials": [
       {
-        "name": "James & Lily",
-        "text_en": "Our photos are breathtaking. Thank you for everything!",
-        "text_de": "Our photos are breathtaking. Thank you for everything!",
-        "text_ru": "Our photos are breathtaking. Thank you for everything!",
+        "name": "Anna & Markus",
+        "location_de": "Heidelberg",
+        "text_de": "Die Fotos sind atemberaubend. Sie hat unseren Tag perfekt eingefangen — die kleinen Momente, die man sonst vergisst. Wir koennen sie nur waermstens empfehlen.",
+        "text_en": "The photos are breathtaking. She captured our day perfectly — the small moments you would otherwise forget. We can only warmly recommend her.",
+        "text_ru": "Фотографии захватывают дух. Она идеально запечатлела наш день — маленькие моменты, которые иначе забываются. Горячо рекомендуем.",
         "rating": 5,
-        "avatar": "/media/presets/wedding_photographer/avatars/couple.jpg"
+        "source": "Google"
+      },
+      {
+        "name": "Sophie & Jan",
+        "location_de": "Freiburg",
+        "text_de": "Wir haben uns von Anfang an wohlgefuehlt. Der Stil ist genau das, was wir wollten — natuerlich, emotional, zeitlos.",
+        "text_en": "We felt comfortable from the start. The style is exactly what we wanted — natural, emotional, timeless.",
+        "text_ru": "Мы чувствовали себя комфортно с самого начала. Стиль именно такой, какой мы хотели — естественный, эмоциональный, вневременной.",
+        "rating": 5,
+        "source": "Google"
+      }
+    ],
+    "faq": [
+      {
+        "q_de": "Wie weit im Voraus soll ich buchen?",
+        "q_en": "How far in advance should I book?",
+        "q_ru": "За сколько нужно бронировать?",
+        "a_de": "Ich empfehle mindestens 6-12 Monate im Voraus, besonders fuer Sommer-Hochzeiten. Kontaktiert mich fruehzeitig!",
+        "a_en": "I recommend at least 6-12 months in advance, especially for summer weddings. Contact me early!",
+        "a_ru": "Рекомендую минимум за 6-12 месяцев, особенно для летних свадеб. Свяжитесь со мной заранее!"
+      },
+      {
+        "q_de": "Reist du auch?",
+        "q_en": "Do you travel?",
+        "q_ru": "Вы выезжаете?",
+        "a_de": "Ja! Ich fotografiere Hochzeiten in ganz Deutschland und Europa. Reisekosten werden separat berechnet.",
+        "a_en": "Yes! I photograph weddings throughout Germany and Europe. Travel costs are calculated separately.",
+        "a_ru": "Да! Снимаю свадьбы по всей Германии и Европе. Транспортные расходы рассчитываются отдельно."
+      },
+      {
+        "q_de": "Wann erhalte ich meine Fotos?",
+        "q_en": "When will I receive my photos?",
+        "q_ru": "Когда я получу фотографии?",
+        "a_de": "Innerhalb von 6-8 Wochen nach eurer Hochzeit erhaltet ihr eure vollstaendige digitale Galerie.",
+        "a_en": "Within 6-8 weeks after your wedding you will receive your complete digital gallery.",
+        "a_ru": "В течение 6-8 недель после свадьбы вы получите полную цифровую галерею."
       }
     ],
     "contact": {
-      "address": "123 Main St, City",
-      "phone": "+1 234 567 890",
-      "email": "info@wedding_photographer.com",
-      "hours_en": "Mon-Fri: 9:00 AM - 6:00 PM",
-      "hours_de": "Mo-Fr: 09:00 - 18:00 Uhr",
-      "hours_ru": "Пн-Пт: 09:00 - 18:00"
+      "address": "Freiburg im Breisgau, Deutschland",
+      "phone": "+49 761 9876 5432",
+      "email": "hallo@lichtmomente-foto.de",
+      "hours_de": "Antwort innerhalb von 24 Stunden",
+      "hours_en": "Response within 24 hours",
+      "hours_ru": "Ответ в течение 24 часов"
     },
-    "faq": [
-      {
-        "q_en": "How to start?",
-        "q_de": "Wie anfangen?",
-        "q_ru": "Как начать?",
-        "a_en": "Contact us today!",
-        "a_de": "Kontaktieren Sie uns!",
-        "a_ru": "Свяжитесь с нами!"
-      }
-    ]
-  },
-  "booking": {
-    "enabled": true,
-    "slots": [
-      "09:00",
-      "10:00",
-      "14:00",
-      "16:00"
-    ],
-    "duration": 60
+    "legal": {
+      "priceNote_de": "Alle Preise inkl. MwSt. (19%). Anzahlung von 30% bei Buchung. Restbetrag 4 Wochen vor dem Termin.",
+      "cancellationPolicy_de": "Stornierung bis 3 Monate vor dem Termin: 50% Rueckerstattung. Spaetere Stornierungen: keine Rueckerstattung.",
+      "privacyNote_de": "Ihre Daten werden gemaess DSGVO verarbeitet. Fotos werden nur mit Ihrer Zustimmung veroeffentlicht."
+    }
   },
   "logo": {
-    "text": "ETERNAL",
-    "tagline": "MOMENTS",
-    "font": "Great Vibes"
+    "text": "Lichtmomente",
+    "tagline": "HOCHZEITSFOTOGRAFIE",
+    "font": "Cormorant Garamond",
+    "style": "text_italic"
+  },
+  "social": {
+    "instagram": "https://instagram.com/lichtmomente.foto",
+    "facebook": "https://facebook.com/lichtmomente"
   }
 }

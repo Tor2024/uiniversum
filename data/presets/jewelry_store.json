@@ -1,181 +1,445 @@
 {
   "meta": {
-    "title": "Gem Gallery | Jewelry Store",
-    "description": "Exquisite jewelry pieces crafted with precision and passion.",
+    "title": "Lumina Schmuck | Alltagsschmuck",
+    "description": "Hochwertiger, hypoallergener Schmuck fuer jeden Tag. 18k Gold PVD und Sterling Silber. Wasserfest, schweissfest, langlebig. Kostenloser Versand ab 30 EUR.",
     "favicon": "/media/presets/jewelry_store/favicon.ico",
-    "language": "en",
+    "language": "de",
     "availableLanguages": [
-      "en",
       "de",
+      "en",
       "ru"
     ]
   },
   "design": {
     "preset": "jewelry_store",
     "tokens": {
-      "colorBackground": "#000000",
-      "colorSurface": "#FFFFFF",
-      "colorPrimary": "#FFD700",
-      "colorSecondary": "#6C757D",
-      "colorBorder": "#DEE2E6",
-      "colorAccent": "#FFFFFF",
-      "colorAccentHover": "#FFFFFF",
-      "fontDisplay": "Cormorant",
-      "fontHeading": "Cormorant",
-      "fontBody": "Raleway",
-      "fontCaption": "Raleway",
-      "fontMono": "Roboto Mono",
+      "colorBackground": "#FFFFFF",
+      "colorSurface": "#F8F8F8",
+      "colorPrimary": "#1A1A1A",
+      "colorSecondary": "#6B6B6B",
+      "colorBorder": "#E5E5E5",
+      "colorAccent": "#C9A96E",
+      "colorAccentHover": "#B8945A",
+      "fontDisplay": "Cormorant Garamond",
+      "fontHeading": "Inter",
+      "fontBody": "Inter",
+      "fontCaption": "Inter",
+      "fontMono": "JetBrains Mono",
       "fontSizeDisplay": "72px",
-      "fontSizeHeading": "36px",
-      "fontSizeBody": "17px",
+      "fontSizeHeading": "32px",
+      "fontSizeBody": "15px",
       "lineHeightBody": "1.7",
-      "lineHeightHeading": "1.3",
+      "lineHeightHeading": "1.2",
       "spacingUnit": "8px",
-      "spacingSection": "120px",
-      "spacingElement": "24px",
-      "spacingCard": "32px",
-      "spacingButtonVertical": "16px",
-      "spacingButtonHorizontal": "32px",
-      "maxWidthContent": "1200px",
-      "maxWidthText": "700px",
+      "spacingSection": "100px",
+      "spacingElement": "20px",
+      "spacingCard": "24px",
+      "spacingButtonVertical": "14px",
+      "spacingButtonHorizontal": "28px",
+      "maxWidthContent": "1280px",
+      "maxWidthText": "640px",
       "gridColumns": "12",
-      "gridGutter": "30px",
-      "horizontalPaddingMobile": "20px",
-      "horizontalPaddingTablet": "50px",
+      "gridGutter": "20px",
+      "horizontalPaddingMobile": "16px",
+      "horizontalPaddingTablet": "40px",
       "horizontalPaddingDesktop": "80px",
-      "borderRadius": "8",
-      "borderRadiusSmall": "4px",
-      "borderRadiusMedium": "8px",
-      "borderRadiusLarge": "16px",
-      "shadowStyle": "soft",
-      "shadowResting": "0 4px 14px rgba(0,0,0,0.05)",
-      "shadowHover": "0 8px 24px rgba(0,0,0,0.1)",
+      "borderRadius": "0",
+      "borderRadiusSmall": "0px",
+      "borderRadiusMedium": "2px",
+      "borderRadiusLarge": "4px",
+      "shadowStyle": "none",
+      "shadowResting": "none",
+      "shadowHover": "0 4px 20px rgba(0,0,0,0.08)",
       "transitionDuration": "200ms",
-      "transitionTiming": "ease-in-out",
-      "imageRatioHero": "21:9",
-      "imageRatioCard": "4:3",
+      "transitionTiming": "ease-out",
+      "imageRatioHero": "16:9",
+      "imageRatioCard": "3:4",
       "imageRatioAvatar": "1:1"
-    },
-    "customCss": ""
+    }
   },
   "seo": {
     "ogImage": "/media/presets/jewelry_store/og-default.jpg",
     "twitterCard": "summary_large_image",
     "googleAnalyticsId": "",
-    "keywords": "jewelry, luxury, gems"
+    "keywords": "Schmuck online kaufen, Gold Schmuck, Silber Schmuck, Halskette, Armband, Ohrringe, Ring"
+  },
+  "layout": {
+    "style": "clean_minimal",
+    "heroType": "fullscreen_product_hero",
+    "announcementBar": true,
+    "navStyle": "minimal_with_cart",
+    "newArrivalsGrid": true,
+    "categoryScrollSection": true,
+    "shopTheLookSection": true,
+    "brandStorySection": true,
+    "reviewsCarousel": true,
+    "newsletterSection": true,
+    "footerStyle": "shop_footer"
   },
   "content": {
+    "announcementBar": {
+      "de": "KOSTENLOSER VERSAND AB 30 EUR ✦ PREMIUM GESCHENKVERPACKUNG BEI JEDER BESTELLUNG",
+      "en": "FREE DELIVERY ON ALL ORDERS OVER £30 ✦ PREMIUM GIFT PACKAGING WITH EVERY ORDER",
+      "ru": "БЕСПЛАТНАЯ ДОСТАВКА ОТ 30 EUR ✦ ПРЕМИАЛЬНАЯ ПОДАРОЧНАЯ УПАКОВКА С КАЖДЫМ ЗАКАЗОМ"
+    },
     "slogans": {
-      "en": [
-        "Timeless Elegance",
-        "Shine Bright",
-        "Exquisite Gems"
-      ],
       "de": [
-        "Zeitlose Eleganz",
-        "Strahlend schön",
-        "Exquisite Edelsteine"
+        "Fuer den Alltag gemacht.",
+        "Schmuck, der bleibt.",
+        "Qualitaet, die man sieht."
+      ],
+      "en": [
+        "Made for everyday wear.",
+        "Jewellery that stays.",
+        "Quality you can see."
       ],
       "ru": [
-        "Вечная элегантность",
-        "Сияй ярко",
-        "Изысканные камни"
+        "Создано для каждого дня.",
+        "Украшения, которые остаются.",
+        "Качество, которое видно."
       ]
     },
     "hero": {
-      "en": {
-        "heading": "Timeless Elegance",
-        "subheading": "Exquisite jewelry pieces crafted with precision and passion.",
-        "cta": "Get Started",
-        "image": "/media/presets/jewelry_store/hero.jpg"
-      },
       "de": {
-        "heading": "Zeitlose Eleganz",
-        "subheading": "Exquisite jewelry pieces crafted with precision and passion.",
-        "cta": "Jetzt starten",
-        "image": "/media/presets/jewelry_store/hero.jpg"
+        "heading": "NEUE KOLLEKTION\nFUER DEN ALLTAG GEMACHT",
+        "subheading": "18k Gold PVD und Sterling Silber. Wasserfest. Schweissfest. Hypoallergen.",
+        "cta": "JETZT SHOPPEN",
+        "badge": "NEUE KOLLEKTION",
+        "image": "/media/presets/jewelry_store/hero.jpg",
+        "imageAlt": "Lumina Schmuck neue Kollektion"
+      },
+      "en": {
+        "heading": "NEW COLLECTION\nMADE FOR EVERYDAY WEAR",
+        "subheading": "18k Gold PVD and Sterling Silver. Waterproof. Sweatproof. Hypoallergenic.",
+        "cta": "SHOP NOW",
+        "badge": "NEW COLLECTION",
+        "image": "/media/presets/jewelry_store/hero.jpg",
+        "imageAlt": "Lumina Jewellery new collection"
       },
       "ru": {
-        "heading": "Вечная элегантность",
-        "subheading": "Exquisite jewelry pieces crafted with precision and passion.",
-        "cta": "Начать",
-        "image": "/media/presets/jewelry_store/hero.jpg"
+        "heading": "НОВАЯ КОЛЛЕКЦИЯ\nСОЗДАНА ДЛЯ КАЖДОГО ДНЯ",
+        "subheading": "18k Gold PVD и стерлинговое серебро. Водостойкое. Потостойкое. Гипоаллергенное.",
+        "cta": "КУПИТЬ СЕЙЧАС",
+        "badge": "НОВАЯ КОЛЛЕКЦИЯ",
+        "image": "/media/presets/jewelry_store/hero.jpg",
+        "imageAlt": "Lumina украшения новая коллекция"
       }
     },
-    "about": {
-      "en": {
-        "title": "About Us",
-        "text": "Every piece tells a story. We craft jewelry that becomes a family heirloom."
+    "categories": [
+      {
+        "id": "necklaces",
+        "name_de": "Halsketten",
+        "name_en": "Necklaces",
+        "name_ru": "Ожерелья",
+        "image": "/media/presets/jewelry_store/cat/necklaces.jpg"
       },
-      "de": {
-        "title": "Über uns",
-        "text": "Jedes Stück erzählt eine Geschichte. Wir fertigen Schmuck für Generationen."
+      {
+        "id": "bracelets",
+        "name_de": "Armbander",
+        "name_en": "Bracelets",
+        "name_ru": "Браслеты",
+        "image": "/media/presets/jewelry_store/cat/bracelets.jpg"
       },
-      "ru": {
-        "title": "О нас",
-        "text": "Каждое изделие рассказывает историю. Мы создаем украшения на поколения."
+      {
+        "id": "earrings",
+        "name_de": "Ohrringe",
+        "name_en": "Earrings",
+        "name_ru": "Серьги",
+        "image": "/media/presets/jewelry_store/cat/earrings.jpg"
+      },
+      {
+        "id": "rings",
+        "name_de": "Ringe",
+        "name_en": "Rings",
+        "name_ru": "Кольца",
+        "image": "/media/presets/jewelry_store/cat/rings.jpg"
+      },
+      {
+        "id": "anklets",
+        "name_de": "Fusskettchen",
+        "name_en": "Anklets",
+        "name_ru": "Анклеты",
+        "image": "/media/presets/jewelry_store/cat/anklets.jpg"
       }
-    },
+    ],
     "services": [
       {
-        "name_en": "Custom Rings",
-        "name_de": "Maßgefertigte Ringe",
-        "name_ru": "Кольца на заказ",
-        "price": "$1000+",
-        "desc_en": "Engagement and wedding rings.",
-        "image": "/media/presets/jewelry_store/services/rings.jpg"
+        "name_de": "Perlen-Kreuz-Halskette | 18k Gold",
+        "name_en": "Pearl Cross Necklace | 18k Gold",
+        "name_ru": "Жемчужное крест-ожерелье | 18k Gold",
+        "price": "24,00 EUR",
+        "image": "/media/presets/jewelry_store/products/necklace1.jpg",
+        "badge_de": "",
+        "badge_en": "",
+        "badge_ru": "",
+        "category": "necklaces"
       },
       {
-        "name_en": "Watch Collection",
-        "name_de": "Uhrensammlung",
-        "name_ru": "Коллекция часов",
-        "price": "$500+",
-        "desc_en": "Luxury timepieces.",
-        "image": "/media/presets/jewelry_store/services/watches.jpg"
+        "name_de": "Wassertropfen-Ohrringe | 18k Gold",
+        "name_en": "Waterdrop Earrings | 18k Gold",
+        "name_ru": "Серьги-капли | 18k Gold",
+        "price": "22,00 EUR",
+        "image": "/media/presets/jewelry_store/products/earrings1.jpg",
+        "badge_de": "",
+        "badge_en": "",
+        "badge_ru": "",
+        "category": "earrings"
+      },
+      {
+        "name_de": "Sofia Armband | 18k Gold",
+        "name_en": "Sofia Bipartite Bracelet | 18k Gold",
+        "name_ru": "Браслет Sofia | 18k Gold",
+        "price": "28,00 EUR",
+        "image": "/media/presets/jewelry_store/products/bracelet1.jpg",
+        "badge_de": "BELIEBT",
+        "badge_en": "HOT",
+        "badge_ru": "ХИТ",
+        "category": "bracelets"
+      },
+      {
+        "name_de": "Cherub Herz-Ring | 18k Gold",
+        "name_en": "Cherub Heart Signet Ring | 18k Gold",
+        "name_ru": "Кольцо Cherub Heart | 18k Gold",
+        "price": "28,00 EUR",
+        "image": "/media/presets/jewelry_store/products/ring1.jpg",
+        "badge_de": "",
+        "badge_en": "",
+        "badge_ru": "",
+        "category": "rings"
+      },
+      {
+        "name_de": "Celestial Opal Ohrringe | S925",
+        "name_en": "Celestial Opal Earrings | S925",
+        "name_ru": "Серьги Celestial Opal | S925",
+        "price": "30,00 EUR",
+        "image": "/media/presets/jewelry_store/products/earrings2.jpg",
+        "badge_de": "",
+        "badge_en": "",
+        "badge_ru": "",
+        "category": "earrings"
+      },
+      {
+        "name_de": "Alicia Princess Cut Ring | 18k Gold",
+        "name_en": "Alicia Princess Cut Ring | 18k Gold",
+        "name_ru": "Кольцо Alicia Princess Cut | 18k Gold",
+        "price_original": "30,00 EUR",
+        "price": "22,00 EUR",
+        "image": "/media/presets/jewelry_store/products/ring2.jpg",
+        "badge_de": "SALE",
+        "badge_en": "SALE",
+        "badge_ru": "СКИДКА",
+        "category": "rings"
+      },
+      {
+        "name_de": "Wellenbangle | 18k Gold",
+        "name_en": "Wavy Bangle | 18k Gold",
+        "name_ru": "Браслет-волна | 18k Gold",
+        "price": "22,00 EUR",
+        "image": "/media/presets/jewelry_store/products/bracelet2.jpg",
+        "badge_de": "BELIEBT",
+        "badge_en": "HOT",
+        "badge_ru": "ХИТ",
+        "category": "bracelets"
+      },
+      {
+        "name_de": "Perla Celestial Ohrringe | 18k Gold",
+        "name_en": "Perla Celestial Earrings | 18k Gold",
+        "name_ru": "Серьги Perla Celestial | 18k Gold",
+        "price": "32,00 EUR",
+        "image": "/media/presets/jewelry_store/products/earrings3.jpg",
+        "badge_de": "BELIEBT",
+        "badge_en": "HOT",
+        "badge_ru": "ХИТ",
+        "category": "earrings"
       }
     ],
+    "shopTheLook": {
+      "title_de": "JETZT IM TREND",
+      "title_en": "NOW TRENDING",
+      "title_ru": "СЕЙЧАС В ТРЕНДЕ",
+      "subtitle_de": "ARMBAND-STACK",
+      "subtitle_en": "BRACELET STACK",
+      "subtitle_ru": "СТЕК БРАСЛЕТОВ",
+      "items": [
+        {
+          "number": 1,
+          "name_de": "Brillar CZ Armband | 18k Gold",
+          "name_en": "Brillar CZ Bracelet | 18k Gold",
+          "name_ru": "Браслет Brillar CZ | 18k Gold",
+          "price": "28,00 EUR"
+        },
+        {
+          "number": 2,
+          "name_de": "Uhrenarmband | 18k Gold",
+          "name_en": "Watch Strap Bracelet | 18k Gold",
+          "name_ru": "Браслет-ремешок | 18k Gold",
+          "price": "24,00 EUR"
+        },
+        {
+          "number": 3,
+          "name_de": "Havana Armband 8mm | 18k Gold",
+          "name_en": "Havana Bracelet 8mm | 18k Gold",
+          "name_ru": "Браслет Havana 8мм | 18k Gold",
+          "price": "22,00 EUR"
+        },
+        {
+          "number": 4,
+          "name_de": "Schlangen-Armband | 18k Gold",
+          "name_en": "Fused Snake Bracelet | 18k Gold",
+          "name_ru": "Браслет-змея | 18k Gold",
+          "price": "24,00 EUR"
+        }
+      ],
+      "totalPrice": "98,00 EUR",
+      "cta_de": "ALLE IN DEN WARENKORB",
+      "cta_en": "ADD TO CART",
+      "cta_ru": "ДОБАВИТЬ ВСЁ В КОРЗИНУ",
+      "image": "/media/presets/jewelry_store/shop-the-look.jpg"
+    },
+    "about": {
+      "de": {
+        "title": "Entdecke Lumina",
+        "subtitle": "Qualitaet, der man vertrauen kann",
+        "text": "Wir stehen fuer Schmuck, der Tag fuer Tag wunderschoen bleibt. Jedes Stueck ist gold PVD-beschichtet oder aus Sterling Silber — es verblasst nicht, auch nicht im Wasser. Unser Schmuck verbindet hohe Qualitaet mit Erschwinglichkeit und bietet dir Alltagsessentials mit einem Hauch Stil.",
+        "stats": [
+          {
+            "value": "1.000+",
+            "label": "Zufriedene Kundinnen"
+          },
+          {
+            "value": "10x",
+            "label": "Staerker als normale Vergoldung"
+          },
+          {
+            "value": "100%",
+            "label": "Hypoallergen"
+          }
+        ]
+      },
+      "en": {
+        "title": "Discover Lumina",
+        "subtitle": "Quality You Can Trust",
+        "text": "We are all about jewellery that stays gorgeous, day after day. Every piece is gold PVD plated or sterling silver, so it won't fade even in water. Our jewellery combines high quality with affordability, giving you everyday essentials with a touch of flair.",
+        "stats": [
+          {
+            "value": "1,000+",
+            "label": "Happy customers"
+          },
+          {
+            "value": "10x",
+            "label": "Stronger than regular gold plating"
+          },
+          {
+            "value": "100%",
+            "label": "Hypoallergenic"
+          }
+        ]
+      },
+      "ru": {
+        "title": "Откройте для себя Lumina",
+        "subtitle": "Качество, которому можно доверять",
+        "text": "Мы создаём украшения, которые остаются прекрасными день за днём. Каждое изделие покрыто золотом PVD или изготовлено из стерлингового серебра — не тускнеет даже в воде. Наши украшения сочетают высокое качество с доступностью.",
+        "stats": [
+          {
+            "value": "1.000+",
+            "label": "Довольных клиентов"
+          },
+          {
+            "value": "10x",
+            "label": "Прочнее обычного золочения"
+          },
+          {
+            "value": "100%",
+            "label": "Гипоаллергенно"
+          }
+        ]
+      }
+    },
     "testimonials": [
       {
-        "name": "Fiance M.",
-        "text_en": "She said yes! The ring is absolutely stunning.",
-        "text_de": "She said yes! The ring is absolutely stunning.",
-        "text_ru": "She said yes! The ring is absolutely stunning.",
+        "name": "Katarzyna L.",
+        "text_de": "Heute kam mein Paket mit Expressgeschwindigkeit an, alles ist wunderbar und von hoher Qualitaet. Wunderschoen verpackt mit Liebe zum Detail. Meine Armbander passen perfekt. Ich bin begeistert!",
+        "text_en": "Today I got my package at express speed, everything is wonderful and of high quality. Beautifully packaged with attention to every detail. My bracelets fit perfectly. I am delighted!",
+        "text_ru": "Сегодня получила посылку с экспресс-скоростью, всё замечательно и высокого качества. Красиво упаковано с вниманием к деталям. Браслеты подошли идеально. Я в восторге!",
         "rating": 5,
-        "avatar": "/media/presets/jewelry_store/avatars/fiance.jpg"
+        "verified": true,
+        "source": "Verified"
+      },
+      {
+        "name": "Natalia B.",
+        "text_de": "Wunderschoener Schmuck, sehr langlebig. Ich habe bereits mehrere Stuecke von dieser Seite und bin sehr zufrieden mit der Qualitaet. Ausserdem super schneller Versand!",
+        "text_en": "Beautiful jewellery, very durable. I already have several items from this site and I am very happy with the quality. Another plus is super fast shipping!",
+        "text_ru": "Красивые украшения, очень долговечные. У меня уже несколько изделий с этого сайта, очень довольна качеством. Плюс супербыстрая доставка!",
+        "rating": 5,
+        "verified": true,
+        "source": "Verified"
+      },
+      {
+        "name": "Monika S.",
+        "text_de": "Toller Schmuck, ich empfehle ihn. Er sieht aus wie massives Gold und man kann damit schwimmen und in der Sonne liegen. Vor allem ist er hypoallergen und original.",
+        "text_en": "Great jewellery, I recommend it. It looks like solid gold and you can swim and sunbathe in it. Above all it is hypoallergenic and original.",
+        "text_ru": "Отличные украшения, рекомендую. Выглядит как массивное золото, можно купаться и загорать. Главное — гипоаллергенно и оригинально.",
+        "rating": 5,
+        "verified": true,
+        "source": "Verified"
       }
     ],
-    "contact": {
-      "address": "123 Main St, City",
-      "phone": "+1 234 567 890",
-      "email": "info@jewelry_store.com",
-      "hours_en": "Mon-Fri: 9:00 AM - 6:00 PM",
-      "hours_de": "Mo-Fr: 09:00 - 18:00 Uhr",
-      "hours_ru": "Пн-Пт: 09:00 - 18:00"
+    "newsletter": {
+      "title_de": "ABONNIEREN",
+      "title_en": "SUBSCRIBE",
+      "title_ru": "ПОДПИСАТЬСЯ",
+      "desc_de": "Abonniere und erfahre als Erste von neuen Angeboten und Rabatten.",
+      "desc_en": "Subscribe and be first to know about new offers and discounts.",
+      "desc_ru": "Подпишись и первой узнавай о новых предложениях и скидках."
     },
     "faq": [
       {
-        "q_en": "How to start?",
-        "q_de": "Wie anfangen?",
-        "q_ru": "Как начать?",
-        "a_en": "Contact us today!",
-        "a_de": "Kontaktieren Sie uns!",
-        "a_ru": "Свяжитесь с нами!"
+        "q_de": "Ist der Schmuck wasserfest?",
+        "q_en": "Is the jewellery waterproof?",
+        "q_ru": "Украшения водостойкие?",
+        "a_de": "Ja! Alle unsere Stuecke sind aus 18k Gold PVD oder Sterling Silber S925 — wasserfest, schweissfest und parfuemfest.",
+        "a_en": "Yes! All our pieces are 18k Gold PVD or Sterling Silver S925 — waterproof, sweatproof and perfume-safe.",
+        "a_ru": "Да! Все наши изделия из 18k Gold PVD или стерлингового серебра S925 — водостойкие, потостойкие и безопасны для духов."
+      },
+      {
+        "q_de": "Wie lange dauert die Lieferung?",
+        "q_en": "How long does delivery take?",
+        "q_ru": "Сколько времени занимает доставка?",
+        "a_de": "Standard: 3-5 Werktage. Express: 1-2 Werktage. Kostenloser Versand ab 30 EUR.",
+        "a_en": "Standard: 3-5 business days. Express: 1-2 business days. Free shipping over £30.",
+        "a_ru": "Стандарт: 3-5 рабочих дней. Экспресс: 1-2 рабочих дня. Бесплатная доставка от 30 EUR."
+      },
+      {
+        "q_de": "Kann ich zurueckgeben?",
+        "q_en": "Can I return items?",
+        "q_ru": "Можно ли вернуть товар?",
+        "a_de": "Ja, 30 Tage Rueckgaberecht gemaess Widerrufsrecht. Artikel muessen ungetragen und in Originalverpackung sein.",
+        "a_en": "Yes, 30-day return policy. Items must be unworn and in original packaging.",
+        "a_ru": "Да, 30 дней на возврат. Изделия должны быть неношеными и в оригинальной упаковке."
       }
-    ]
-  },
-  "booking": {
-    "enabled": true,
-    "slots": [
-      "09:00",
-      "10:00",
-      "14:00",
-      "16:00"
     ],
-    "duration": 60
+    "contact": {
+      "address": "Kurfuerstendamm 12, 10719 Berlin",
+      "phone": "+49 30 1234 5678",
+      "email": "hallo@lumina-schmuck.de",
+      "hours_de": "Mo-Fr: 09:00-18:00 Uhr",
+      "hours_en": "Mon-Fri: 9:00 AM-6:00 PM",
+      "hours_ru": "Пн-Пт: 09:00-18:00"
+    },
+    "legal": {
+      "widerrufsrecht_de": "Sie haben das Recht, binnen 14 Tagen ohne Angabe von Gruenden diesen Vertrag zu widerrufen (Widerrufsrecht gemaess BGB).",
+      "priceNote_de": "Alle Preise inkl. MwSt. (19%). Versandkosten werden an der Kasse berechnet.",
+      "privacyNote_de": "Ihre Daten werden gemaess DSGVO verarbeitet."
+    }
   },
   "logo": {
-    "text": "GEM",
-    "tagline": "GALLERY",
-    "font": "Cormorant"
+    "text": "LUMINA",
+    "tagline": "SCHMUCK",
+    "font": "Cormorant Garamond",
+    "style": "text_uppercase"
+  },
+  "social": {
+    "instagram": "https://instagram.com/lumina.schmuck",
+    "facebook": "https://facebook.com/luminaschmuck"
   }
 }
