@@ -1,5 +1,5 @@
 {
-  "title": "Hotel Zum Eichenhain | Boutique Hotel",
+  "title": "Pro Mechanic | Auto Service",
   "blocks": [
     {
       "id": "hero-1",
@@ -8,81 +8,63 @@
       "order": 0,
       "settings": {
         "heading": {
-          "de": {
-            "heading": "Willkommen im Hotel Zum Eichenhain.",
-            "subheading": "Zimmer, Restaurant, Pub",
-            "cta": "Zimmer buchen",
-            "secondaryCta": "Im Briar essen",
-            "image": "/media/presets/boutique_hotel/hero.jpg",
-            "imageAlt": "Hotel Zum Eichenhain Freiburg"
-          },
           "en": {
-            "heading": "Welcome to Hotel Zum Eichenhain.",
-            "subheading": "Rooms, restaurant, pub",
-            "cta": "Book a Room",
-            "secondaryCta": "Eat at Briar",
-            "image": "/media/presets/boutique_hotel/hero.jpg",
-            "imageAlt": "Hotel Zum Eichenhain Freiburg"
+            "heading": "Drive with Confidence",
+            "subheading": "Expert car repair and maintenance. Honest service you can trust.",
+            "cta": "Get Started",
+            "image": "/media/presets/auto_service/hero.jpg"
+          },
+          "de": {
+            "heading": "Fahren mit Vertrauen",
+            "subheading": "Expert car repair and maintenance. Honest service you can trust.",
+            "cta": "Jetzt starten",
+            "image": "/media/presets/auto_service/hero.jpg"
           },
           "ru": {
-            "heading": "Добро пожаловать в Hotel Zum Eichenhain.",
-            "subheading": "Номера, ресторан, паб",
-            "cta": "Забронировать номер",
-            "secondaryCta": "Ресторан Briar",
-            "image": "/media/presets/boutique_hotel/hero.jpg",
-            "imageAlt": "Hotel Zum Eichenhain Freiburg"
+            "heading": "Води с уверенностью",
+            "subheading": "Expert car repair and maintenance. Honest service you can trust.",
+            "cta": "Начать",
+            "image": "/media/presets/auto_service/hero.jpg"
           }
         },
         "subheading": {
-          "de": {
-            "heading": "Willkommen im Hotel Zum Eichenhain.",
-            "subheading": "Zimmer, Restaurant, Pub",
-            "cta": "Zimmer buchen",
-            "secondaryCta": "Im Briar essen",
-            "image": "/media/presets/boutique_hotel/hero.jpg",
-            "imageAlt": "Hotel Zum Eichenhain Freiburg"
-          },
           "en": {
-            "heading": "Welcome to Hotel Zum Eichenhain.",
-            "subheading": "Rooms, restaurant, pub",
-            "cta": "Book a Room",
-            "secondaryCta": "Eat at Briar",
-            "image": "/media/presets/boutique_hotel/hero.jpg",
-            "imageAlt": "Hotel Zum Eichenhain Freiburg"
+            "heading": "Drive with Confidence",
+            "subheading": "Expert car repair and maintenance. Honest service you can trust.",
+            "cta": "Get Started",
+            "image": "/media/presets/auto_service/hero.jpg"
+          },
+          "de": {
+            "heading": "Fahren mit Vertrauen",
+            "subheading": "Expert car repair and maintenance. Honest service you can trust.",
+            "cta": "Jetzt starten",
+            "image": "/media/presets/auto_service/hero.jpg"
           },
           "ru": {
-            "heading": "Добро пожаловать в Hotel Zum Eichenhain.",
-            "subheading": "Номера, ресторан, паб",
-            "cta": "Забронировать номер",
-            "secondaryCta": "Ресторан Briar",
-            "image": "/media/presets/boutique_hotel/hero.jpg",
-            "imageAlt": "Hotel Zum Eichenhain Freiburg"
+            "heading": "Води с уверенностью",
+            "subheading": "Expert car repair and maintenance. Honest service you can trust.",
+            "cta": "Начать",
+            "image": "/media/presets/auto_service/hero.jpg"
           }
         },
         "buttonText": {
-          "de": {
-            "heading": "Willkommen im Hotel Zum Eichenhain.",
-            "subheading": "Zimmer, Restaurant, Pub",
-            "cta": "Zimmer buchen",
-            "secondaryCta": "Im Briar essen",
-            "image": "/media/presets/boutique_hotel/hero.jpg",
-            "imageAlt": "Hotel Zum Eichenhain Freiburg"
-          },
           "en": {
-            "heading": "Welcome to Hotel Zum Eichenhain.",
-            "subheading": "Rooms, restaurant, pub",
-            "cta": "Book a Room",
-            "secondaryCta": "Eat at Briar",
-            "image": "/media/presets/boutique_hotel/hero.jpg",
-            "imageAlt": "Hotel Zum Eichenhain Freiburg"
+            "heading": "Drive with Confidence",
+            "subheading": "Expert car repair and maintenance. Honest service you can trust.",
+            "cta": "Get Started",
+            "image": "/media/presets/auto_service/hero.jpg"
+          },
+          "de": {
+            "heading": "Fahren mit Vertrauen",
+            "subheading": "Expert car repair and maintenance. Honest service you can trust.",
+            "cta": "Jetzt starten",
+            "image": "/media/presets/auto_service/hero.jpg"
           },
           "ru": {
-            "heading": "Добро пожаловать в Hotel Zum Eichenhain.",
-            "subheading": "Номера, ресторан, паб",
-            "cta": "Забронировать номер",
-            "secondaryCta": "Ресторан Briar",
-            "image": "/media/presets/boutique_hotel/hero.jpg",
-            "imageAlt": "Hotel Zum Eichenhain Freiburg"
+            "heading": "Води с уверенностью",
+            "subheading": "Expert car repair and maintenance. Honest service you can trust.",
+            "cta": "Начать",
+            "image": "/media/presets/auto_service/hero.jpg"
           }
         },
         "buttonUrl": "#contact",
@@ -105,69 +87,15 @@
       "order": 1,
       "settings": {
         "content": {
-          "de": {
-            "title": "Ein vollstaendiges Reiseziel",
-            "subtitle": "Freiburg im Breisgau",
-            "text": "Hotel Zum Eichenhain ist ein preisgekroentes Boutique Hotel, Restaurant und Pub im Herzen des historischen Freiburgs. Mit zwoelf individuell gestalteten Zimmern, unserem Restaurant Briar mit saisonaler, regional inspirierter Kueche und dem historischen Eichenhain Pub bieten wir ein vollstaendiges Reiseziel. Dem Handwerk des Schwarzwalds, seiner Kunst, seinen Produkten und seiner Kultur verpflichtet, sind wir ein authentischer Rueckzugsort vom Stadtleben.",
-            "image": "/media/presets/boutique_hotel/about.jpg",
-            "imageAlt": "Hotel Zum Eichenhain Innenansicht",
-            "stats": [
-              {
-                "value": "12",
-                "label": "Individuelle Zimmer"
-              },
-              {
-                "value": "3",
-                "label": "Auszeichnungen"
-              },
-              {
-                "value": "100%",
-                "label": "Regional & saisonal"
-              }
-            ]
-          },
           "en": {
-            "title": "A complete destination",
-            "subtitle": "Freiburg im Breisgau",
-            "text": "Hotel Zum Eichenhain is an award-winning boutique hotel, restaurant and pub in the heart of historic Freiburg. With twelve individually designed bedrooms, our restaurant Briar serving seasonal, locally inspired dishes, and the historic Eichenhain Pub, we offer a complete destination. Devoted to the Black Forest craft heritage, artistry, produce and culture, we are an authentic retreat from city life.",
-            "image": "/media/presets/boutique_hotel/about.jpg",
-            "imageAlt": "Hotel Zum Eichenhain interior",
-            "stats": [
-              {
-                "value": "12",
-                "label": "Individual rooms"
-              },
-              {
-                "value": "3",
-                "label": "Awards"
-              },
-              {
-                "value": "100%",
-                "label": "Regional & seasonal"
-              }
-            ]
+            "title": "About Us",
+            "text": "We treat your car like it's our own. Transparent pricing and expert diagnostics."
           },
-          "ru": {
-            "title": "Полноценное место назначения",
-            "subtitle": "Фрайбург-им-Брайсгау",
-            "text": "Hotel Zum Eichenhain — отмеченный наградами бутик-отель, ресторан и паб в сердце исторического Фрайбурга. Двенадцать индивидуально оформленных номеров, ресторан Briar с сезонной кухней и исторический паб Eichenhain.",
-            "image": "/media/presets/boutique_hotel/about.jpg",
-            "imageAlt": "Интерьер Hotel Zum Eichenhain",
-            "stats": [
-              {
-                "value": "12",
-                "label": "Индивидуальных номеров"
-              },
-              {
-                "value": "3",
-                "label": "Награды"
-              },
-              {
-                "value": "100%",
-                "label": "Региональное и сезонное"
-              }
-            ]
-          }
+          "de": {
+            "title": "Über uns",
+            "text": "Wir behandeln Ihr Auto, wie unseres. Transparente Preise."
+          },
+          "ru": "[object Object] хватит плакать"
         }
       },
       "styles": {
