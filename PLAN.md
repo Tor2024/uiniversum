@@ -161,3 +161,31 @@ git add -A && git commit -m "описание" && git push origin master
 - `src/lib/design-tokens.ts` — Дизайн-система
 - `public/media/references/` — Скриншоты сайтов-образцов
 - `.env.local` — Пароли, GitHub токены, Telegram
+
+
+---
+
+## АКТУАЛЬНЫЙ СТАТУС (обновлено)
+
+### Что реально сделано и работает:
+
+**Фронт сайта:**
+- src/components/blocks/renderer.tsx — ВСЕ 22 типа блоков реализованы с реальными стилями
+- hero, text_rich, image_single, image_gallery, video_embed, cards_grid, testimonials, faq, pricing, cta_banner, contact_form, map_embed, countdown, stats, timeline, divider, logo_cloud, team, blog_feed, menu_food, booking_form, custom_html
+
+**Админ-панель:**
+- Редактор блоков: добавить/удалить/переставить/редактировать/стили/медиапикер/drag-drop/сохранение
+- Дизайн: color picker, 30+ шрифтов, радиусы, тени, свой CSS
+- Медиатека: загрузка на GitHub, просмотр
+- Настройки: название, лого, SEO, запись
+
+**Пресеты — 32 штуки, 14 качественных по реальным сайтам**
+
+**PresetRenderer — 40+ секций** для всех типов бизнеса
+
+### Следующие задачи по приоритету:
+1. Редактор навигации (/admin/menu) — сейчас заглушка
+2. Редактирование пресет-данных через UI (hero/about/services)
+3. Улучшить 18 базовых пресетов
+4. Live preview в редакторе
+5. Переделать по скриншотам: law_firm, real_estate, web_agency, photographer_portfolio
