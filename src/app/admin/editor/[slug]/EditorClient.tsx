@@ -62,6 +62,47 @@ function getStringValue(val: unknown): string {
   return String(val ?? "");
 }
 
+// ─── Field hints dictionary ───────────────────────────────────────────────────
+
+const FIELD_HINTS: Record<string, { label: string; hint: string; placeholder?: string }> = {
+  heading:         { label: "Заголовок", hint: "Главный текст блока. Будет крупным и заметным.", placeholder: "Например: Добро пожаловать!" },
+  subheading:      { label: "Подзаголовок", hint: "Дополнительный текст под заголовком. Обычно 1-2 предложения.", placeholder: "Например: Мы помогаем вашему бизнесу расти" },
+  buttonText:      { label: "Текст кнопки", hint: "Надпись на главной кнопке.", placeholder: "Например: Записаться, Узнать больше" },
+  buttonUrl:       { label: "Ссылка кнопки", hint: "Куда ведёт кнопка. Используйте #contact для формы или /about для страницы.", placeholder: "#contact" },
+  backgroundImage: { label: "Фоновое изображение", hint: "Путь к фото для фона. Нажмите 🖼️ чтобы выбрать из медиатеки.", placeholder: "/media/hero.jpg" },
+  backgroundOverlay: { label: "Затемнение фона (%)", hint: "0 = без затемнения, 100 = полностью чёрный. Обычно 30-50 для читаемости текста.", placeholder: "40" },
+  height:          { label: "Высота блока", hint: "large = на весь экран, medium = половина экрана, small = компактный", placeholder: "large" },
+  content:         { label: "Текст", hint: "Основной текст блока. Поддерживает HTML: <b>жирный</b>, <i>курсив</i>", placeholder: "<p>Ваш текст здесь...</p>" },
+  src:             { label: "Изображение", hint: "Путь к изображению. Нажмите 🖼️ чтобы выбрать из медиатеки.", placeholder: "/media/photo.jpg" },
+  alt:             { label: "Описание изображения", hint: "Текст для поисковиков и людей с нарушением зрения. Опишите что на фото.", placeholder: "Фото нашего офиса" },
+  caption:         { label: "Подпись", hint: "Небольшой текст под изображением.", placeholder: "Наша команда, 2024" },
+  title:           { label: "Заголовок секции", hint: "Название раздела страницы.", placeholder: "Наши услуги" },
+  columns:         { label: "Количество колонок", hint: "Сколько карточек в ряд. Рекомендуется 2-4.", placeholder: "3" },
+  url:             { label: "Ссылка на видео", hint: "Вставьте ссылку YouTube или Vimeo.", placeholder: "https://youtube.com/watch?v=..." },
+  address:         { label: "Адрес", hint: "Физический адрес для карты Google Maps.", placeholder: "Hauptstraße 1, 10115 Berlin" },
+  embedUrl:        { label: "Ссылка для встраивания карты", hint: "Откройте Google Maps → Поделиться → Встроить карту → скопируйте src из iframe.", placeholder: "https://maps.google.com/maps?..." },
+  targetDate:      { label: "Дата события", hint: "Формат: YYYY-MM-DD или YYYY-MM-DDTHH:MM", placeholder: "2025-12-31" },
+  html:            { label: "HTML код", hint: "Произвольный HTML/CSS/JS. Используйте осторожно.", placeholder: "<div>Ваш код здесь</div>" },
+  backgroundColor: { label: "Цвет фона", hint: "Цвет фона кнопки CTA. Используйте var(--color-accent) для акцентного цвета.", placeholder: "var(--color-accent)" },
+  image:           { label: "Изображение", hint: "Нажмите 🖼️ чтобы выбрать из медиатеки.", placeholder: "/media/photo.jpg" },
+  photo:           { label: "Фото", hint: "Нажмите 🖼️ чтобы выбрать из медиатеки.", placeholder: "/media/photo.jpg" },
+  logo:            { label: "Логотип", hint: "Нажмите 🖼️ чтобы выбрать из медиатеки.", placeholder: "/media/logo.png" },
+  cover:           { label: "Обложка", hint: "Нажмите 🖼️ чтобы выбрать из медиатеки.", placeholder: "/media/cover.jpg" },
+  showAddress:     { label: "Показывать адрес", hint: "Отображать адрес над картой" },
+  autoplay:        { label: "Автовоспроизведение", hint: "Видео начнёт играть автоматически (без звука)" },
+  muted:           { label: "Без звука", hint: "Видео будет воспроизводиться без звука" },
+  showDays:        { label: "Показывать дни", hint: "" },
+  showHours:       { label: "Показывать часы", hint: "" },
+  showMinutes:     { label: "Показывать минуты", hint: "" },
+  showSeconds:     { label: "Показывать секунды", hint: "" },
+  showGuestsField: { label: "Поле «Количество гостей»", hint: "Добавить поле для указания числа гостей" },
+  showMessageField:{ label: "Поле «Сообщение»", hint: "Добавить текстовое поле для сообщения" },
+};
+
+function getFieldMeta(key: string) {
+  return FIELD_HINTS[key] || { label: key, hint: "", placeholder: "" };
+}
+
 function BlockFieldEditor({
   block,
   onChange,
@@ -90,11 +131,14 @@ function BlockFieldEditor({
     /image|photo|avatar|background|src|logo|cover|thumb|poster|video/i.test(key);
 
   const renderField = (key: string, value: unknown) => {
+    const meta = getFieldMeta(key);
+
     // Skip complex nested arrays for now — show as JSON
     if (Array.isArray(value)) {
       return (
         <div key={key} style={{ marginBottom: "16px" }}>
-          <label style={labelStyle}>{key}</label>
+          <label style={labelStyle}>{meta.label}</label>
+          {meta.hint && <p style={{ fontSize: "11px", color: "#6366f1", margin: "0 0 6px", lineHeight: 1.4 }}>💡 {meta.hint}</p>}
           <textarea
             defaultValue={JSON.stringify(value, null, 2)}
             rows={6}
@@ -107,7 +151,7 @@ function BlockFieldEditor({
               }
             }}
           />
-          <p style={{ fontSize: "11px", color: "#9ca3af", marginTop: "4px" }}>JSON-редактор</p>
+          <p style={{ fontSize: "11px", color: "#9ca3af", marginTop: "4px" }}>Редактируется как JSON</p>
         </div>
       );
     }
@@ -117,7 +161,8 @@ function BlockFieldEditor({
       const obj = value as Record<string, string>;
       return (
         <div key={key} style={{ marginBottom: "16px" }}>
-          <label style={labelStyle}>{key}</label>
+          <label style={labelStyle}>{meta.label}</label>
+          {meta.hint && <p style={{ fontSize: "11px", color: "#6366f1", margin: "0 0 6px", lineHeight: 1.4 }}>💡 {meta.hint}</p>}
           {(["de", "en", "ru"] as const).map((lang) => (
             <div key={lang} style={{ display: "flex", gap: "6px", marginBottom: "6px", alignItems: "center" }}>
               <span style={{ fontSize: "11px", color: "#6b7280", width: "24px", flexShrink: 0 }}>{lang}</span>
@@ -136,14 +181,17 @@ function BlockFieldEditor({
     // Boolean
     if (typeof value === "boolean") {
       return (
-        <div key={key} style={{ marginBottom: "12px", display: "flex", alignItems: "center", gap: "8px" }}>
+        <div key={key} style={{ marginBottom: "12px", display: "flex", alignItems: "flex-start", gap: "8px" }}>
           <input
             type="checkbox"
             defaultChecked={value}
             onChange={(e) => updateSetting(key, e.target.checked)}
-            style={{ width: "16px", height: "16px", cursor: "pointer" }}
+            style={{ width: "16px", height: "16px", cursor: "pointer", marginTop: "2px", flexShrink: 0 }}
           />
-          <label style={{ fontSize: "13px", color: "#374151", cursor: "pointer" }}>{key}</label>
+          <div>
+            <label style={{ fontSize: "13px", color: "#374151", cursor: "pointer", fontWeight: 600 }}>{meta.label}</label>
+            {meta.hint && <p style={{ fontSize: "11px", color: "#9ca3af", margin: "2px 0 0" }}>{meta.hint}</p>}
+          </div>
         </div>
       );
     }
@@ -152,11 +200,12 @@ function BlockFieldEditor({
     if (typeof value === "number") {
       return (
         <div key={key} style={{ marginBottom: "12px" }}>
-          <label style={labelStyle}>{key}</label>
+          <label style={labelStyle}>{meta.label}</label>
+          {meta.hint && <p style={{ fontSize: "11px", color: "#6366f1", margin: "0 0 6px", lineHeight: 1.4 }}>💡 {meta.hint}</p>}
           <input
             type="number"
             defaultValue={value}
-            style={{ ...inputStyle, width: "100px" }}
+            style={{ ...inputStyle, width: "120px" }}
             onBlur={(e) => updateSetting(key, Number(e.target.value))}
           />
         </div>
@@ -170,7 +219,8 @@ function BlockFieldEditor({
 
     return (
       <div key={key} style={{ marginBottom: "12px" }}>
-        <label style={labelStyle}>{key}</label>
+        <label style={labelStyle}>{meta.label}</label>
+        {meta.hint && <p style={{ fontSize: "11px", color: "#6366f1", margin: "0 0 6px", lineHeight: 1.4 }}>💡 {meta.hint}</p>}
 
         {/* Media field: show thumbnail + picker button */}
         {isMedia ? (
@@ -185,7 +235,7 @@ function BlockFieldEditor({
               <input
                 type="text"
                 defaultValue={strVal}
-                placeholder="/media/..."
+                placeholder={meta.placeholder || "/media/..."}
                 style={{ ...inputStyle, flex: 1 }}
                 onBlur={(e) => updateSetting(key, e.target.value)}
               />
@@ -211,6 +261,7 @@ function BlockFieldEditor({
           <textarea
             defaultValue={strVal}
             rows={4}
+            placeholder={meta.placeholder}
             style={{ ...inputStyle, resize: "vertical" }}
             onBlur={(e) => updateSetting(key, e.target.value)}
           />
@@ -218,6 +269,7 @@ function BlockFieldEditor({
           <input
             type="text"
             defaultValue={strVal}
+            placeholder={meta.placeholder}
             style={inputStyle}
             onBlur={(e) => updateSetting(key, e.target.value)}
           />

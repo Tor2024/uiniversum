@@ -25,19 +25,23 @@ interface DesignClientProps {
 const FONT_GROUPS = [
   {
     label: "Serif — элегантные",
-    fonts: ["Playfair Display", "Cormorant Garamond", "EB Garamond", "Libre Baskerville", "Lora", "Merriweather", "Crimson Text"],
+    fonts: ["Playfair Display", "Cormorant Garamond", "EB Garamond", "Libre Baskerville", "Lora", "Merriweather", "Crimson Text", "Spectral", "Bitter", "Zilla Slab", "Cardo", "Vollkorn"],
   },
   {
     label: "Sans-Serif — чистые",
-    fonts: ["Inter", "DM Sans", "Raleway", "Nunito", "Lato", "Open Sans", "Source Sans Pro", "Roboto"],
+    fonts: ["Inter", "DM Sans", "Raleway", "Nunito", "Lato", "Open Sans", "Source Sans Pro", "Roboto", "Noto Sans", "Mulish", "Outfit", "Plus Jakarta Sans", "Figtree", "Manrope"],
   },
   {
     label: "Display — выразительные",
-    fonts: ["Oswald", "Montserrat", "Space Grotesk", "Syne", "Bebas Neue", "Archivo Black", "Poppins"],
+    fonts: ["Oswald", "Montserrat", "Space Grotesk", "Syne", "Bebas Neue", "Archivo Black", "Poppins", "Barlow", "Exo 2", "Josefin Sans", "Kanit", "Righteous", "Teko"],
   },
   {
     label: "Handwriting — рукописные",
-    fonts: ["Dancing Script", "Pacifico", "Great Vibes", "Caveat", "Sacramento"],
+    fonts: ["Dancing Script", "Pacifico", "Great Vibes", "Caveat", "Sacramento", "Satisfy", "Kaushan Script", "Lobster"],
+  },
+  {
+    label: "Mono — технические",
+    fonts: ["JetBrains Mono", "Fira Code", "Source Code Pro", "Space Mono", "Roboto Mono"],
   },
 ];
 
@@ -232,9 +236,10 @@ export default function DesignClient({ initialData }: DesignClientProps) {
 
         {/* ── COLORS ── */}
         <div style={cardStyle}>
-          <h2 style={{ fontSize: "16px", fontWeight: 700, color: "#111", margin: "0 0 16px" }}>
-            🎨 Цвета
-          </h2>
+          <h2 style={{ fontSize: "16px", fontWeight: 700, color: "#111", margin: "0 0 8px" }}>🎨 Цвета</h2>
+          <p style={{ fontSize: "12px", color: "#6b7280", margin: "0 0 16px", lineHeight: 1.5 }}>
+            💡 Нажмите на цветной квадрат чтобы открыть палитру. Или введите HEX-код вручную (например #FF5500). Используйте «Быстрые палитры» для мгновенного применения готовой цветовой схемы.
+          </p>
           <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
             {COLOR_FIELDS.map((f) => (
               <div key={f.key} style={{ display: "flex", alignItems: "center", gap: "12px" }}>
@@ -324,9 +329,10 @@ export default function DesignClient({ initialData }: DesignClientProps) {
 
         {/* ── FONTS ── */}
         <div style={cardStyle}>
-          <h2 style={{ fontSize: "16px", fontWeight: 700, color: "#111", margin: "0 0 16px" }}>
-            🔤 Шрифты
-          </h2>
+          <h2 style={{ fontSize: "16px", fontWeight: 700, color: "#111", margin: "0 0 8px" }}>🔤 Шрифты</h2>
+          <p style={{ fontSize: "12px", color: "#6b7280", margin: "0 0 16px", lineHeight: 1.5 }}>
+            💡 Display — крупные заголовки (Hero). Heading — заголовки секций. Body — основной текст. Выберите из 50+ Google Fonts или введите своё название.
+          </p>
           {[
             { key: "fontDisplay", label: "Display — крупные заголовки", size: "28px", weight: 700 },
             { key: "fontHeading", label: "Heading — заголовки секций", size: "20px", weight: 600 },
@@ -393,6 +399,28 @@ export default function DesignClient({ initialData }: DesignClientProps) {
                 {tokens.fontSizeBody || "17px"}
               </span>
             </div>
+          </div>
+
+          {/* Custom font URL */}
+          <div style={{ paddingTop: "16px", borderTop: "1px solid #f3f4f6" }}>
+            <label style={labelStyle}>Свой шрифт (Google Fonts URL)</label>
+            <p style={{ fontSize: "11px", color: "#6b7280", margin: "0 0 8px", lineHeight: 1.5 }}>
+              💡 Зайдите на <a href="https://fonts.google.com" target="_blank" rel="noopener noreferrer" style={{ color: "#6366f1" }}>fonts.google.com</a>, выберите шрифт, скопируйте название и вставьте ниже
+            </p>
+            <input
+              type="text"
+              placeholder="Например: Nunito Sans"
+              style={{ width: "100%", padding: "8px 10px", border: "1px solid #e5e7eb", borderRadius: "6px", fontSize: "13px", color: "#374151", boxSizing: "border-box" }}
+              onBlur={(e) => {
+                const val = e.target.value.trim();
+                if (val) {
+                  updateToken("fontDisplay", val);
+                  updateToken("fontHeading", val);
+                  updateToken("fontBody", val);
+                }
+              }}
+            />
+            <p style={{ fontSize: "11px", color: "#9ca3af", margin: "4px 0 0" }}>Введите название шрифта — он применится ко всему сайту</p>
           </div>
         </div>
 
